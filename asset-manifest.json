@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/almost-dead-net/static/css/main.5f361e03.chunk.css",
+    "main.js": "/almost-dead-net/static/js/main.c0ded2ff.chunk.js",
+    "main.js.map": "/almost-dead-net/static/js/main.c0ded2ff.chunk.js.map",
+    "runtime-main.js": "/almost-dead-net/static/js/runtime-main.ee5a381c.js",
+    "runtime-main.js.map": "/almost-dead-net/static/js/runtime-main.ee5a381c.js.map",
+    "static/js/2.65f34841.chunk.js": "/almost-dead-net/static/js/2.65f34841.chunk.js",
+    "static/js/2.65f34841.chunk.js.map": "/almost-dead-net/static/js/2.65f34841.chunk.js.map",
+    "index.html": "/almost-dead-net/index.html",
+    "precache-manifest.8627af0ff2973f3af6f11e131f8a1c86.js": "/almost-dead-net/precache-manifest.8627af0ff2973f3af6f11e131f8a1c86.js",
+    "service-worker.js": "/almost-dead-net/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/almost-dead-net/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.65f34841.chunk.js.LICENSE.txt": "/almost-dead-net/static/js/2.65f34841.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/almost-dead-net/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ee5a381c.js",
+    "static/js/2.65f34841.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.c0ded2ff.chunk.js"
+  ]
+}
