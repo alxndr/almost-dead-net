@@ -1,8 +1,8 @@
 {
   "name": "almost-dead-net",
-  "homepage": "https://alxndr.github.com/tease-tracker",
+  "homepage": "https://alxndr.github.io/almost-dead-net",
   "version": "0.1.0",
-  "repository": "https://github.com/alxndr/tease-tracker",
+  "repository": "https://github.com/alxndr/almost-dead-net",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -15,7 +15,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "git checkout gh-pages && npm run build && echo not yet complete",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages --branch gh-pages --dist build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -33,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
