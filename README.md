@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## TODO
+
+* [ ] clean up README
+* [ ] stash data into localStorage once fetched
+
 ## Available Scripts
 
 In the project directory, you can run:
