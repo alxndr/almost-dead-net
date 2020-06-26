@@ -33,18 +33,18 @@ function Error() {
 }
 
 function App() {
-  const URL_ROUTING_BASE = releaseStage() === 'canary'
-    ? '/almost-dead-net' // https://alxndr.github.io/almost-dead-net
+  const URL_ROUTING_BASE_WITH_SLASH = releaseStage() === 'canary'
+    ? '/almost-dead-net/' // https://alxndr.github.io/almost-dead-net
     : '/'
-  console.log({URL_ROUTING_BASE})
+  console.log({URL_ROUTING_BASE_WITH_SLASH})
   return <>
     <div className={`App ${releaseStage()}`}>
-      <a id="logo" href={URL_ROUTING_BASE}><img src="https://i.imgur.com/tvtgYVY.png" alt="Good Ol' Almost Dead" /></a>
+      <a id="logo" href={URL_ROUTING_BASE_WITH_SLASH}><img src="https://i.imgur.com/tvtgYVY.png" alt="Good Ol' Almost Dead" /></a>
       <BrowserRouter>
         <Switch>
-          <Route path={URL_ROUTING_BASE} exact component={Home} />
-          <Route path={`${URL_ROUTING_BASE}show/:id`} component={Show} />
-          <Route path={`${URL_ROUTING_BASE}:path`} component={Error} />
+          <Route path={URL_ROUTING_BASE_WITH_SLASH} exact component={Home} />
+          <Route path={`${URL_ROUTING_BASE_WITH_SLASH}show/:id`} component={Show} />
+          <Route path={`${URL_ROUTING_BASE_WITH_SLASH}:path`} component={Error} />
         </Switch>
       </BrowserRouter>
     </div>
