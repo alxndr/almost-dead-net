@@ -19,10 +19,6 @@ function releaseStage() {
   }
 }
 
-const URL_ROUTING_BASE = releaseStage() === 'canary'
-  ? '/almost-dead-net' // alxndr.github.io/almost-dead-net
-  : '/'
-
 function Error() {
   return <>
     <h1>Uh oh!</h1>
@@ -32,6 +28,9 @@ function Error() {
 }
 
 function App() {
+  const URL_ROUTING_BASE = releaseStage() === 'canary'
+    ? '/almost-dead-net' // https://alxndr.github.io/almost-dead-net
+    : '/'
   return <>
     <div className={`App ${releaseStage()}`}>
       <a id="logo" href="/"><img src="https://i.imgur.com/tvtgYVY.png" alt="Good Ol' Almost Dead" /></a>
