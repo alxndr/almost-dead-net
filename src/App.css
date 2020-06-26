@@ -1,4 +1,17 @@
+h1 {
+  font-weight: bold;
+}
+.App:not(.prod) h1 {
+  text-shadow: 2px 3px 5px navy;
+}
+
+samp {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
 #root {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -6,7 +19,6 @@
 .App {
   flex-grow: 2;
   min-height: 100%;
-  text-align: center;
 }
 
 #logo {
@@ -18,10 +30,8 @@
   width: 100%;
 }
 
-.App:not(.prod) h1 {
-  color: lime;
-}
-
 #site-footer {
-  margin-top: 2em;
+  padding: 3em;
+  text-align: center;
+  background: #dabbff;
 }

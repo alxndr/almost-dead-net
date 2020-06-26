@@ -1,0 +1,24 @@
+h1 {
+  margin: 0.5em;
+}
+
+.pagetitle--number {
+  font-family: monospace;
+}
+.pagetitle--number:before {
+  content: 'show #';
+}
+
+.pagetitle--date {
+  display: block;
+}
+.pagetitle--date:before {
+  content: 'on ';
+}
+
+.pagetitle--venue {
+  display: block;
+}
+.pagetitle--venue:before {
+  content: 'at ';
+}
