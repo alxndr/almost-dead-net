@@ -1,11 +1,13 @@
 import React, {useState, useEffect} from 'react'
 import Papa from 'papaparse'
 
+import routes from '../routes';
+
 import {SHOWS_URL} from '../data'
 
 function ShowEntry({date, id}) {
   return <li>
-    <a href={`/show/${id}`}>{date}</a>
+    <a href={routes.show.replace(':id', id)}>{date}</a>
   </li>
 }
 
