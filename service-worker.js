@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/almost-dead-net/precache-manifest.8627af0ff2973f3af6f11e131f8a1c86.js"
+  "/almost-dead-net/precache-manifest.fbbe29bb05cdc4a19c08adc3db92b199.js"
 );
 
 self.addEventListener('message', (event) => {
