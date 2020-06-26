@@ -1,8 +1,13 @@
+@keyframes background-color-change {
+  0%   {background: cyan;}
+  33%  {background: magenta;}
+  66%  {background: yellow;}
+  100% {background: cyan;}
+}
+
 h1 {
   font-weight: bold;
-}
-.App:not(.prod) h1 {
-  text-shadow: 2px 3px 5px navy;
+  text-shadow: 2px 3px 5px gray;
 }
 
 samp {
@@ -25,6 +30,16 @@ samp {
   display: block;
   float: right;
   max-width: 25%;
+}
+.App.canary #logo {
+  background: yellow;
+}
+.App.unknown #logo {
+  background: plum;
+}
+.App.dev #logo {
+  animation: background-color-change 175s linear;
+  clip-path: circle(50% at center);
 }
 #logo img {
   width: 100%;

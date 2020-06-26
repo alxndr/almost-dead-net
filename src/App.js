@@ -4,10 +4,24 @@ import { BrowserRouter, Link, Route, Switch } from 'react-router-dom'
 import {Home, Show} from './pages'
 import './App.css'
 
-function isProduction(glbl) {
-  return document && document.location && document.location.hostname &&
-    (document.location.hostname === 'almost-dead.net' || document.location.hostname === 'alxndr.github.io')
+function releaseStage() {
+  if (!document || !document.location || !document.location.hostname)
+    return 'unknown'
+  switch (document.location.hostname) {
+    case 'almost-dead.net':
+      return 'prod'
+    case 'alxndr.github.io':
+      return 'canary'
+    case 'localhost':
+      return 'dev'
+    default:
+      return 'unknown'
+  }
 }
+
+const URL_ROUTING_BASE = releaseStage() === 'canary'
+  ? '/almost-dead-net' // alxndr.github.io/almost-dead-net
+  : '/'
 
 function Error() {
   return <>
@@ -19,13 +33,13 @@ function Error() {
 
 function App() {
   return <>
-    <div className={`App ${isProduction() ? 'prod' : ''}`}>
+    <div className={`App ${releaseStage()}`}>
       <a id="logo" href="/"><img src="https://i.imgur.com/tvtgYVY.png" alt="Good Ol' Almost Dead" /></a>
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/show/:id" component={Show} />
-          <Route path="/:path" component={Error} />
+          <Route path={URL_ROUTING_BASE} exact component={Home} />
+          <Route path={`${URL_ROUTING_BASE}show/:id`} component={Show} />
+          <Route path={`${URL_ROUTING_BASE}:path`} component={Error} />
         </Switch>
       </BrowserRouter>
     </div>
