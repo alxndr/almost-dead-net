@@ -1,29 +1,34 @@
 import React from 'react'
-import { BrowserRouter, Link, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import {Home, Show} from './pages'
 import './App.css'
 
+const STAGES = {
+  CANARY: 'canary',
+  DEV: 'dev',
+  PROD: 'prod',
+  UNKNOWN: 'unknown',
+}
+
 function releaseStage() {
   if (!document || !document.location || !document.location.hostname)
-    return 'unknown'
+    return STAGES.UNKNOWN
   switch (document.location.hostname) {
     case 'almost-dead.net':
-      return 'prod'
+      return STAGES.PROD
     case 'alxndr.github.io':
-      return 'canary'
+      return STAGES.CANARY
     case 'localhost':
-      return 'dev'
+      return STAGES.DEV
     default:
-      return 'unknown'
+      return STAGES.UNKNOWN
   }
 }
 
 function Error() {
   return <>
-    <h1>Uh oh!</h1>
-    <p>Error... Please visit the <Link to="/">home page</Link> and try again.</p>
-    <p><samp>TODO:</samp> figure out how to 301-redirect?</p>
+    <h1>Uh oh! Error</h1>
   </>
 }
 
@@ -31,9 +36,10 @@ function App() {
   const URL_ROUTING_BASE = releaseStage() === 'canary'
     ? '/almost-dead-net' // https://alxndr.github.io/almost-dead-net
     : '/'
+  console.log({URL_ROUTING_BASE})
   return <>
     <div className={`App ${releaseStage()}`}>
-      <a id="logo" href="/"><img src="https://i.imgur.com/tvtgYVY.png" alt="Good Ol' Almost Dead" /></a>
+      <a id="logo" href={URL_ROUTING_BASE}><img src="https://i.imgur.com/tvtgYVY.png" alt="Good Ol' Almost Dead" /></a>
       <BrowserRouter>
         <Switch>
           <Route path={URL_ROUTING_BASE} exact component={Home} />
