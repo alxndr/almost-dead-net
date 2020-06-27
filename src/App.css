@@ -38,7 +38,7 @@ samp {
   background: plum;
 }
 .App.dev #logo {
-  animation: background-color-change 175s linear;
+  animation: background-color-change 10s infinite;
   clip-path: circle(50% at center);
 }
 #logo img {

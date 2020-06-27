@@ -2,19 +2,12 @@ import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import {releaseStage} from './release-stages'
-import {Home, Show} from './pages'
+import {Error, Home, Show} from './pages'
 import routes from './routes'
 
 import './App.css'
 
-function Error() {
-  return <>
-    <h1>Uh oh! Error</h1>
-  </>
-}
-
 function App() {
-  console.log({routes})
   return <>
     <div className={`App ${releaseStage()}`}>
       <a id="logo" href={routes.home}><img src="https://i.imgur.com/tvtgYVY.png" alt="Good Ol' Almost Dead" /></a>
@@ -26,7 +19,11 @@ function App() {
         </Switch>
       </BrowserRouter>
     </div>
-    <footer id="site-footer">Contributions / corrections: <a href="https://twitter.com/AlmostDeadNet" target="_new">@AlmostDeadNet on Twitter</a></footer>
+    <footer id="site-footer">
+      Contributions / corrections:
+      <br />
+      <a href="https://twitter.com/AlmostDeadNet" target="_new">@AlmostDeadNet on Twitter</a>
+    </footer>
   </>
 }
 

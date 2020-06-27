@@ -4,8 +4,7 @@ import ShowsList from '../components/shows_list'
 
 export default function Home(props) {
   return <>
-    <h1>Almost-Dead.net</h1>
-    <p>JRAD setlists:</p>
+    <h1>JRAD Setlists</h1>
     <ShowsList />
     <hr />
     <p>Coming eventually...</p>

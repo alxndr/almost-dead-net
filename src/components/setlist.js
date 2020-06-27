@@ -4,7 +4,7 @@ import {find, propEq} from 'ramda'
 
 import {SONG_PERFORMANCES_URL} from '../data'
 
-const findById = (id) => find(propEq('id', id))
+const findById = (id) => find(propEq('id', Number(id)))
 
 const papaOptions = {
   download: true,
@@ -14,7 +14,7 @@ const papaOptions = {
 }
 
 export default function Setlist(props) {
-  console.log('setlist seeing...', props)
+  console.log('setlist seeing...', props) // props.setlist is array of strings
   const [performances, setPerformances] = useState(null)
   useEffect(() => {
     Papa.parse(SONG_PERFORMANCES_URL, { ...papaOptions,
@@ -32,6 +32,7 @@ export default function Setlist(props) {
     return <p>Uh oh, no sets found...</p>
   }
   global.console.log({performances})
+  // const findPerformance = find(propEq('id', Number(venue_id)))
   return <>
     {props.isEncore
       ? <p>Encore {props.which > 1 && props.which}</p>
@@ -39,7 +40,7 @@ export default function Setlist(props) {
     }
     <ol>
       {props.setlist.map(perf_id => {
-        const perf = findById(perf_id)(performances)
+        const perf = findById(Number(perf_id))(performances)
         global.console.log({perf})
         return <li>{perf.song_name}</li>
       })}

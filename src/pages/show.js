@@ -1,46 +1,24 @@
 import React, {useEffect, useState} from 'react'
-import Papa from 'papaparse'
+// import Papa from 'papaparse'
 import {find, propEq} from 'ramda'
 
-import {SETS_URL, SHOWS_URL, VENUES_URL} from '../data'
+import {SEGUES_URL, SETS_URL, SHOWS_URL, VENUES_URL} from '../data'
+import {getCsv} from '../fetch'
 
-import Setlist from '../components/setlist.js'
+import Setlist from '../components/setlist'
 
 import './show.css'
 
-const papaOptions = {
-  download: true,
-  dynamicTyping: true,
-  header: true,
-  worker: true,
-}
-
 export default function Show({match: {params}}) {
+  const [segues, setSegues] = useState(null)
   const [shows, setShows] = useState(null)
   const [sets, setSets] = useState(null)
   const [venues, setVenues] = useState(null)
   useEffect(() => {
-    Papa.parse(SHOWS_URL, { ...papaOptions,
-      complete: ({data, errors, meta}) => {
-        if (errors.length)
-          throw new Error('Ruh roh', {data, errors, meta})
-        setShows(data)
-      },
-    })
-    Papa.parse(SETS_URL, { ...papaOptions,
-      complete: ({data, errors, meta}) => {
-        if (errors.length)
-          throw new Error('Ruh roh', {data, errors, meta})
-        setSets(data)
-      },
-    })
-    Papa.parse(VENUES_URL, { ...papaOptions,
-      complete: ({data, errors, meta}) => {
-        if (errors.length)
-          throw new Error('Ruh roh', {data, errors, meta})
-        setVenues(data)
-      },
-    })
+    getCsv(SEGUES_URL, setSegues)
+    getCsv(SHOWS_URL, setShows)
+    getCsv(SETS_URL, setSets)
+    getCsv(VENUES_URL, setVenues)
   }, [])
   if (!shows) {
     return <p>Loading shows...</p>
@@ -48,17 +26,23 @@ export default function Show({match: {params}}) {
   if (!venues) {
     return <p>Loading venues...</p>
   }
+  if (!sets) {
+    return <p>Loading sets...</p>
+  }
+  if (!segues) {
+    return <p>Loading segues...</p>
+  }
   if (!shows.length) {
     return <p>Uh oh, no shows found...</p>
   }
   if (!venues.length) {
     return <p>Uh oh, no venues found...</p>
   }
-  if (!sets) {
-    return <p>Loading sets...</p>
-  }
   if (!sets.length) {
     return <p>Uh oh, no sets found...</p>
+  }
+  if (!segues.length) {
+    return <p>Uh oh, no segues found...</p>
   }
   const findShow = find(propEq('id', Number(params.id)))
   const showData = findShow(shows)
@@ -66,38 +50,28 @@ export default function Show({match: {params}}) {
     return <p>Uh oh, no show data found...</p>
   }
   const {date, venue_id} = showData
-  const findVenue = find(propEq('id', venue_id))
+  const findVenue = find(propEq('id', Number(venue_id)))
   const venueData = findVenue(venues)
+  if (!venueData) {
+    return <p>Uh oh, no venue data found...</p>
+  }
   const {name, location} = venueData
-  const setlists = []
-  if (showData.set1) {
-    const setData = find(propEq('id', Number(showData.set1)))(sets)
-    console.log('raw set data!!', setData)
-    const setlist = <Setlist isEncore={false} which={1} id={setData.id} setlist={[setData['song performances']]} />
-    setlists.push(setlist)
-  }
-  if (showData.set2) {
-    const setData = find(propEq('id', Number(showData.set2)))(sets)
-    const setlist = <Setlist isEncore={false} which={2} id={setData.id} setlist={[setData['song performances']]} />
-    setlists.push(setlist)
-  }
-  if (showData.set3) {
-    const setData = find(propEq('id', Number(showData.set3)))(sets)
-    const setlist = <Setlist isEncore={false} which={2} id={setData.id} setlist={[setData['song performances']]} />
-    setlists.push(setlist)
-  }
-  const encores = []
-  if (showData.encore1) {
-    const setData = find(propEq('id', Number(showData.encore1)))(sets)
-    const setlist = <Setlist isEncore={true} which={1} id={setData.id} setlist={[setData['song performances']]} />
-    setlists.push(setlist)
-  }
-  if (showData.encore2) {
-    const setData = find(propEq('id', Number(showData.encore2)))(sets)
-    const setlist = <Setlist isEncore={true} which={2} id={setData.id} setlist={[setData['song performances']]} />
-    setlists.push(setlist)
-  }
-  console.log({sets, encores})
+  const setlists = [1, 2, 3].reduce((stlsts, which) => {
+    if (showData[`set${which}`]) {
+      const setId = showData[`set${which}`]
+      const setData = find(propEq('id', Number(setId)))(sets)
+      return stlsts.concat([<Setlist isEncore={false} which={which} id={setData.id} setlist={typeof setData.setlist === "number" ? [setData.setlist] : setData.setlist.split(':')} />])
+    }
+    return stlsts
+  }, [])
+  const encores = [1, 2].reduce((encrs, which) => {
+    if (showData[`encore${which}`]) {
+      const setId = showData[`encore${which}`]
+      const setData = find(propEq('id', Number(setId)))(sets)
+      return encrs.concat([<Setlist isEncore={true} which={which} id={setData.id} setlist={typeof setData.setlist === "number" ? [setData.setlist] : setData.setlist.split(':')} />])
+    }
+    return encrs
+  }, [])
   return <>
     <h1 className="pagetitle">
       <span className="pagetitle--number">{showData.id}</span>
@@ -105,10 +79,14 @@ export default function Show({match: {params}}) {
       <span className="pagetitle--venue">{name}, {location}</span>
     </h1>
     <section>
-      {setlists.length
-        ? setlists
-        : <p>Uh oh, no sets found.</p>
-      }
+    {setlists.length
+      ? setlists
+      : <p>Uh oh, no sets found.</p>
+    }
+    {encores.length
+      ? encores
+      : <p>(no encore)</p>
+    }
     </section>
-  </>
+    </>
 }

@@ -8,8 +8,6 @@ export const anyPath = `${URL_ROUTING_BASE_WITH_SLASH}:path`
 export const home = `${URL_ROUTING_BASE_WITH_SLASH}`
 export const show = `${URL_ROUTING_BASE_WITH_SLASH}show/:id`
 
-console.log({URL_ROUTING_BASE_WITH_SLASH})
-
 export default {
   anyPath,
   home,
