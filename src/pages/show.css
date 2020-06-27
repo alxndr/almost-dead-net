@@ -1,24 +1,24 @@
-h1 {
-  margin: 0.5em;
+.showpage {
+  padding: 1em;
 }
 
-.pagetitle--number {
+.showpage__pagetitle--number {
   font-family: monospace;
 }
-.pagetitle--number:before {
+.showpage__pagetitle--number:before {
   content: 'show #';
 }
 
-.pagetitle--date {
+.showpage__pagetitle--date {
   display: block;
 }
-.pagetitle--date:before {
+.showpage__pagetitle--date:before {
   content: 'on ';
 }
 
-.pagetitle--venue {
+.showpage__pagetitle--venue {
   display: block;
 }
-.pagetitle--venue:before {
+.showpage__pagetitle--venue:before {
   content: 'at ';
 }

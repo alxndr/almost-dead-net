@@ -1,38 +1,36 @@
 import React, {useEffect, useState} from 'react'
-import Papa from 'papaparse'
 import {find, propEq} from 'ramda'
 
-import {SONG_PERFORMANCES_URL} from '../data'
+import {getCsv} from '../fetch'
+import Segue from './segue'
 
-const findById = (id) => find(propEq('id', Number(id)))
+import {
+  SEGUES_URL,
+  SONG_PERFORMANCES_URL,
+} from '../data'
 
-const papaOptions = {
-  download: true,
-  dynamicTyping: true,
-  header: true,
-  worker: true,
-}
+const findByIntegerId = (id) => find(propEq('id', Number(id)))
 
 export default function Setlist(props) {
-  console.log('setlist seeing...', props) // props.setlist is array of strings
   const [performances, setPerformances] = useState(null)
+  const [segues, setSegues] = useState(null)
   useEffect(() => {
-    Papa.parse(SONG_PERFORMANCES_URL, { ...papaOptions,
-      complete: ({data, errors, meta}) => {
-        if (errors.length)
-          throw new Error('Ruh roh', {data, errors, meta})
-        setPerformances(data)
-      },
-    })
+    getCsv(SONG_PERFORMANCES_URL, setPerformances)
+    getCsv(SEGUES_URL, setSegues)
   }, [])
   if (!performances) {
     return <p>Loading sets...</p>
   }
+  if (!segues) {
+    return <p>Loading segues...</p>
+  }
   if (!performances.length) {
     return <p>Uh oh, no sets found...</p>
   }
-  global.console.log({performances})
-  // const findPerformance = find(propEq('id', Number(venue_id)))
+  if (!segues.length) {
+    return <p>Uh oh, no segues found...</p>
+  }
+  global.console.log({performances, segues})
   return <>
     {props.isEncore
       ? <p>Encore {props.which > 1 && props.which}</p>
@@ -40,9 +38,13 @@ export default function Setlist(props) {
     }
     <ol>
       {props.setlist.map(perf_id => {
-        const perf = findById(Number(perf_id))(performances)
-        global.console.log({perf})
-        return <li>{perf.song_name}</li>
+        const performanceData = findByIntegerId(perf_id)(performances)
+        const segueData = find(propEq('from_perf_id', Number(performanceData.id)))(segues)
+        console.log({performanceData, segueData})
+        return <li>
+          {performanceData.song_name}
+          {segueData && <Segue {...segueData} />}
+          </li>
       })}
     </ol>
   </>

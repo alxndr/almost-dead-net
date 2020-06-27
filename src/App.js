@@ -11,7 +11,7 @@ import './App.css'
 Sentry.init({dsn: "https://174349d7133f4877ba279f589bf54642@o412799.ingest.sentry.io/5293476"});
 
 function App() {
-  console.log('routes...', routes)
+  // console.log('routes...', routes)
   return <>
     <div className={`App ${releaseStage()}`}>
       <a id="logo" href={routes.home}><img src="https://i.imgur.com/tvtgYVY.png" alt="Good Ol' Almost Dead" /></a>
