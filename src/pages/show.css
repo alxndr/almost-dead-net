@@ -22,3 +22,8 @@
 .showpage__pagetitle--venue:before {
   content: 'at ';
 }
+
+.showpage__notes {
+  padding: 1.5em;
+  background: #dabbff;
+}

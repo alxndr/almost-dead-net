@@ -40,7 +40,7 @@ export default function Show({match: {params}}) {
   if (!showData) {
     return <p>Uh oh, no show data found...</p>
   }
-  const {date, venue_id} = showData
+  const {date, notes, venue_id} = showData
   const findVenue = find(propEq('id', Number(venue_id)))
   const venueData = findVenue(venues)
   if (!venueData) {
@@ -81,5 +81,10 @@ export default function Show({match: {params}}) {
       ? encores
       : <p>(no encore)</p>
     }
+    {notes
+      ? <div className="showpage__notes">
+        {notes}
+      </div>
+      : false}
   </section>
 }
