@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fbd3af2f79c16bc81a49f7c166da0a92",
+    "revision": "a08f35b6f5b1d26bc865c7733c1328f8",
     "url": "/almost-dead-net/index.html"
   },
   {
-    "revision": "af29aeed2cfcb6f2c2b9",
+    "revision": "575cb2b67c2d3efee86b",
     "url": "/almost-dead-net/static/css/main.3c7e40fc.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/almost-dead-net/static/js/2.82afe13a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "af29aeed2cfcb6f2c2b9",
-    "url": "/almost-dead-net/static/js/main.64d6b93e.chunk.js"
+    "revision": "575cb2b67c2d3efee86b",
+    "url": "/almost-dead-net/static/js/main.6f87ad6a.chunk.js"
   },
   {
     "revision": "1bd51437984f06b06063",
