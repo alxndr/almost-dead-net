@@ -3,7 +3,7 @@ import React from 'react'
 import { HashRouter, Route, Switch } from 'react-router-dom'
 
 import {releaseStage} from './release-stages'
-import {Error, Home, Show} from './pages'
+import {Error, Home, Show, Song} from './pages'
 import routes from './routes'
 
 import './App.css'
@@ -18,6 +18,7 @@ function App() {
         <Switch>
           <Route path={routes.home} exact component={Home} />
           <Route path={routes.show}       component={Show} />
+          <Route path={routes.song}       component={Song} />
           <Route path={routes.anyPath}    component={Error} />
         </Switch>
       </HashRouter>

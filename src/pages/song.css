@@ -1,3 +1,7 @@
+.songpage {
+  padding: 1em;
+}
+
 .songpage__name:before {
   content: '"';
 }

@@ -1,13 +1,15 @@
 import React, {useEffect, useState} from 'react'
+import { Link } from 'react-router-dom'
 import {find, propEq} from 'ramda'
-
-import {getCsv} from '../fetch'
-import Segue from './segue'
 
 import {
   SEGUES_URL,
   SONG_PERFORMANCES_URL,
 } from '../data'
+import {getCsv} from '../fetch'
+import routes, {url} from '../routes'
+
+import Segue from './segue'
 
 const findByIntegerId = (id) => find(propEq('id', Number(id)))
 
@@ -40,7 +42,9 @@ export default function Setlist(props) {
         const performanceData = findByIntegerId(perf_id)(performances)
         const segueData = find(propEq('from_perf_id', Number(performanceData.id)))(segues)
         return <li key={performanceData.id}>
-          {performanceData.song_name}
+          <Link to={url(routes.song, {id: performanceData.song_id})}>
+            {performanceData.song_name}
+          </Link>
           {segueData && <Segue {...segueData} />}
           </li>
       })}
