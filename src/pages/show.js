@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react'
-// import Papa from 'papaparse'
 import {find, propEq} from 'ramda'
 
 import {SETS_URL, SHOWS_URL, VENUES_URL} from '../data'
@@ -49,20 +48,24 @@ export default function Show({match: {params}}) {
   }
   const {name, location} = venueData
   const setlists = [1, 2, 3].reduce((setlists, which) => {
-    if (showData[`set${which}`]) {
-      const setId = showData[`set${which}`]
-      const setData = find(propEq('id', Number(setId)))(sets)
-      return setlists.concat([<Setlist isEncore={false} which={which} id={setData.id} setlist={typeof setData.setlist === "number" ? [setData.setlist] : setData.setlist.split(':')} />])
+    if (!showData[`set${which}`]) {
+      return setlists
     }
-    return setlists
+    const setData = find(propEq('id', Number(showData[`set${which}`])))(sets)
+    const setlist = typeof setData.setlist === "number"
+      ? [setData.setlist]
+      : setData.setlist.split(':')
+    return setlists.concat([<Setlist isEncore={false} which={which} key={setData.id} setlist={setlist} />])
   }, [])
   const encores = [1, 2].reduce((encores, which) => {
-    if (showData[`encore${which}`]) {
-      const setId = showData[`encore${which}`]
-      const setData = find(propEq('id', Number(setId)))(sets)
-      return encores.concat([<Setlist isEncore={true} which={which} id={setData.id} setlist={typeof setData.setlist === "number" ? [setData.setlist] : setData.setlist.split(':')} />])
+    if (!showData[`encore${which}`]) {
+      return encores
     }
-    return encores
+    const setData = find(propEq('id', Number(showData[`encore${which}`])))(sets)
+    const setlist = typeof setData.setlist === "number"
+      ? [setData.setlist]
+      : setData.setlist.split(':')
+    return encores.concat([<Setlist isEncore={true} which={which} key={setData.id} setlist={setlist} />])
   }, [])
   return <section className="showpage">
     <h1 className="showpage__pagetitle">

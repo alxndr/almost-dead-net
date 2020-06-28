@@ -41,7 +41,7 @@ export default function Setlist(props) {
         const performanceData = findByIntegerId(perf_id)(performances)
         const segueData = find(propEq('from_perf_id', Number(performanceData.id)))(segues)
         console.log({performanceData, segueData})
-        return <li>
+        return <li key={performanceData.id}>
           {performanceData.song_name}
           {segueData && <Segue {...segueData} />}
           </li>
