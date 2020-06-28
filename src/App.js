@@ -13,7 +13,7 @@ Sentry.init({dsn: "https://174349d7133f4877ba279f589bf54642@o412799.ingest.sentr
 function App() {
   return <>
     <div className={`App ${releaseStage()}`}>
-      <a id="logo" href={routes.home}><img src="https://i.imgur.com/tvtgYVY.png" alt="Good Ol' Almost Dead" /></a>
+      <a id="logo" href="#"><img src="https://i.imgur.com/tvtgYVY.png" alt="Good Ol' Almost Dead" /></a>
       <HashRouter>
         <Switch>
           <Route path={routes.home} exact component={Home} />
