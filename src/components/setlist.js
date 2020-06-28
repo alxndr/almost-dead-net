@@ -30,7 +30,6 @@ export default function Setlist(props) {
   if (!segues.length) {
     return <p>Uh oh, no segues found...</p>
   }
-  global.console.log({performances, segues})
   return <>
     {props.isEncore
       ? <p>Encore {props.which > 1 && props.which}</p>
@@ -40,7 +39,6 @@ export default function Setlist(props) {
       {props.setlist.map(perf_id => {
         const performanceData = findByIntegerId(perf_id)(performances)
         const segueData = find(propEq('from_perf_id', Number(performanceData.id)))(segues)
-        console.log({performanceData, segueData})
         return <li key={performanceData.id}>
           {performanceData.song_name}
           {segueData && <Segue {...segueData} />}
