@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import { Link } from 'react-router-dom'
 
 import {getCsv} from '../fetch'
 import routes from '../routes';
@@ -9,7 +10,7 @@ import './shows_list.css'
 
 function ShowEntry({date, id}) {
   return <li>
-    <a href={routes.show.replace(':id', id)}>{date}</a>
+    <Link to={routes.show.replace(':id', id)}>{date}</Link>
   </li>
 }
 
