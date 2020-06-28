@@ -1,0 +1,6 @@
+.songpage__name:before {
+  content: '"';
+}
+.songpage__name:after {
+  content: '"';
+}
