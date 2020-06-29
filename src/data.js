@@ -1,4 +1,4 @@
-const URL_BASE = 'https://gist.githubusercontent.com/alxndr/5f64cf477d5202c004856772ad2222db/raw/b7641111fcae4a95364eedf2efaac326fa960986'
+const URL_BASE = 'https://gist.githubusercontent.com/alxndr/5f64cf477d5202c004856772ad2222db/raw/5365a980fb3addea4fbaef19766dad446355c410'
 const SEGUES_URL = `${URL_BASE}/segues.csv`
 const SETS_URL = `${URL_BASE}/sets.csv`
 const SHOWS_URL = `${URL_BASE}/shows.csv`

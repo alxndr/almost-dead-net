@@ -21,7 +21,6 @@ export default function ShowsList() {
   useEffect(() => {
     getCsv(SHOWS_URL, setShows)
   }, [])
-  console.log(shows)
   if (shows === UNDEF) {
     return <p>Loading...</p>
   }

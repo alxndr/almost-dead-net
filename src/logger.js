@@ -1,5 +1,5 @@
 const defaultStyleObj = {
-  background: '#222',
+  'background-color': '#222',
   color: 'white',
   padding: '0.1em 0.4em',
   'border-radius': '0.4em',
@@ -16,7 +16,7 @@ export default class Logger {
     this.label = label
     this.styleString = transformStyleObject({
       ...defaultStyleObj,
-      styleObj,
+      ...styleObj,
     })
   }
 

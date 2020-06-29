@@ -46,7 +46,7 @@ export default function Setlist(props) {
             {performanceData.song_name}
           </Link>
           {segueData && <Segue {...segueData} />}
-          </li>
+        </li>
       })}
     </ol>
   </>

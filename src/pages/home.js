@@ -11,9 +11,8 @@ export default function Home(props) {
     <hr />
     <p>Coming eventually...</p>
     <ul>
-      <li>links to Archive.org</li>
-      <li>videos</li>
-      <li>tease notations</li>
+      <li>links to Archive.org & Youtube</li>
+      <li>tease / feint notations</li>
     </ul>
     </section>
 }

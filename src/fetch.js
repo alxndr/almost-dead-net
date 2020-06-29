@@ -12,6 +12,8 @@ export function getCsv(csvUrl, callback, papaParseOptions = {}) {
     ...papaParseOptions,
     ...defaultPapaParseOptions,
     complete: (response) => {
+      if (!response)
+        throw new Error('No response when fetching', {csvUrl})
       const {data, errors} = response
       if (errors.length)
         throw new Error('Error fetching', {csvUrl, response})
