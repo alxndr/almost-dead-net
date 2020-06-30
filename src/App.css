@@ -21,14 +21,13 @@ h1 {
   max-width: 25%;
 }
 .App.canary #logo {
-  background: yellow;
+  background: radial-gradient(circle, yellow 0%, khaki 49%, rgba(255,255,255,0) 50%);
 }
 .App.unknown #logo {
-  background: plum;
+  background: radial-gradient(circle, plum 0%, chartreuse 49%, rgba(255,255,255,0) 50%);
 }
 .App.dev #logo {
-  animation: background-color-change 10s infinite;
-  clip-path: circle(50% at center);
+  background: radial-gradient(circle, magenta 0%, indigo 49%, rgba(255,255,255,0) 50%);
 }
 #logo img {
   width: 100%;
@@ -38,11 +37,4 @@ h1 {
   padding: 3em;
   text-align: center;
   background: #ddd;
-}
-
-@keyframes background-color-change {
-  0%   {background: cyan;}
-  33%  {background: magenta;}
-  66%  {background: yellow;}
-  100% {background: cyan;}
 }
