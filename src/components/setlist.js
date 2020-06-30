@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom'
+import {Tooltip} from 'react-tippy'
 import {find, propEq} from 'ramda'
 
 import {
@@ -11,6 +12,15 @@ import routes, {url} from '../routes'
 
 import Segue from './segue'
 
+import './setlist.css'
+import 'react-tippy/dist/tippy.css'
+
+function PerformanceNote({notes}) {
+  return <Tooltip title={notes} position="right" trigger="click">
+    <span className="setlist__songnote" aria-label="notes" role="img">📓 </span>
+  </Tooltip>
+}
+
 const findByIntegerId = (id) => find(propEq('id', Number(id)))
 
 export default function Setlist(props) {
@@ -20,11 +30,8 @@ export default function Setlist(props) {
     getCsv(SONG_PERFORMANCES_URL, setPerformances)
     getCsv(SEGUES_URL, setSegues)
   }, [])
-  if (!performances) {
-    return <p>Loading sets...</p>
-  }
-  if (!segues) {
-    return <p>Loading segues...</p>
+  if (!(performances && segues)) {
+    return <p>Loading...</p>
   }
   if (!performances.length) {
     return <p>Uh oh, no sets found...</p>
@@ -45,6 +52,7 @@ export default function Setlist(props) {
           <Link to={url(routes.song, {id: performanceData.song_id})}>
             {performanceData.song_name}
           </Link>
+          {performanceData.notes && <PerformanceNote notes={performanceData.notes} />}
           {segueData && <Segue {...segueData} />}
         </li>
       })}

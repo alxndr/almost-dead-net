@@ -9,8 +9,6 @@ import Setlist from '../components/setlist'
 
 import './show.css'
 
-const lgr = new Logger('Show page')
-
 export default function Show({match: {params}}) {
   const [shows, setShows] = useState(null)
   const [sets, setSets] = useState(null)
@@ -43,7 +41,6 @@ export default function Show({match: {params}}) {
   if (!showData) {
     return <p>Uh oh, no show data found...</p>
   }
-  lgr.log('show data', showData)
   const {date, notes, venue_id} = showData
   const findVenue = find(propEq('id', Number(venue_id)))
   const venueData = findVenue(venues)
