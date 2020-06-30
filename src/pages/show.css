@@ -2,28 +2,20 @@
   padding: 1em;
 }
 
-.showpage__pagetitle--number {
-  font-family: monospace;
-}
-.showpage__pagetitle--number:before {
-  content: 'show #';
-}
-
-.showpage__pagetitle--date {
+.showpage__pagetitle > span {
   display: block;
 }
-.showpage__pagetitle--date:before {
-  content: 'on ';
-}
 
-.showpage__pagetitle--venue {
-  display: block;
-}
 .showpage__pagetitle--venue:before {
   content: 'at ';
 }
 
+.showpage__pagetitle--number {
+  font-family: monospace;
+}
+
 .showpage__notes {
+  margin: 0.5em 3em;
   padding: 1.5em;
   background: #dabbff;
 }

@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react'
 import {find, propEq} from 'ramda'
 
-import Logger from '../logger'
 import {SETS_URL, SHOWS_URL, VENUES_URL} from '../data'
 import {getCsv} from '../fetch'
 
 import Setlist from '../components/setlist'
+import ShowPaginator from '../components/show_paginator'
 
 import './show.css'
 
@@ -36,11 +36,12 @@ export default function Show({match: {params}}) {
   if (!sets.length) {
     return <p>Uh oh, no sets found...</p>
   }
-  const findShow = find(propEq('id', Number(params.id)))
-  const showData = findShow(shows)
+  const showData = find(propEq('id', Number(params.id)))(shows)
   if (!showData) {
     return <p>Uh oh, no show data found...</p>
   }
+  const nextShow = find(propEq('id', Number(params.id) + 1))(shows)
+  const prevShow = find(propEq('id', Number(params.id) - 1))(shows)
   const {date, notes, venue_id} = showData
   const findVenue = find(propEq('id', Number(venue_id)))
   const venueData = findVenue(venues)
@@ -68,24 +69,23 @@ export default function Show({match: {params}}) {
       : setData.setlist.split(':')
     return encores.concat([<Setlist isEncore={true} which={which} key={setData.id} setlist={setlist} />])
   }, [])
-  return <section className="showpage">
-    <h1 className="showpage__pagetitle">
-      <span className="showpage__pagetitle--number">{showData.id}</span>
-      <span className="showpage__pagetitle--date">{date}</span>
-      <span className="showpage__pagetitle--venue">{name}, {location}</span>
-    </h1>
-    {setlists.length
-      ? setlists
-      : <p>Uh oh, no sets found.</p>
-    }
-    {encores.length
-      ? encores
-      : <p>(no encore)</p>
-    }
-    {notes
-      ? <div className="showpage__notes">
-        {notes}
-      </div>
-      : false}
-  </section>
+  return <div className="showpage">
+    <section>
+      <h1 className="showpage__pagetitle">
+        <span className="showpage__pagetitle--date">{date}</span>
+        <span className="showpage__pagetitle--venue">{name}, {location}</span>
+        <span className="showpage__pagetitle--number">show #{showData.id}</span>
+      </h1>
+      {setlists.length
+        ? setlists
+        : <p>Uh oh, no sets found.</p>
+      }
+      {encores.length
+        ? encores
+        : <p>(no encore)</p>
+      }
+      {notes && <div className="showpage__notes">{notes}</div>}
+    </section>
+    <ShowPaginator prev={prevShow} next={nextShow} />
+  </div>
 }

@@ -1,0 +1,9 @@
+.setlist__songnote {
+  padding-left: 0.3em;
+  cursor: pointer;
+  line-height: 1em;
+}
+
+.setlist__songnote .hidden {
+  display: none;
+}

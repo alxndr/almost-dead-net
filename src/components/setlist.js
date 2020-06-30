@@ -16,8 +16,10 @@ import './setlist.css'
 import 'react-tippy/dist/tippy.css'
 
 function PerformanceNote({notes}) {
-  return <Tooltip title={notes} position="right" trigger="click">
-    <span className="setlist__songnote" aria-label="notes" role="img">📓 </span>
+  return <Tooltip title={notes} trigger="mouseenter focus click">
+    <span className="setlist__songnote" aria-label="notes" role="img">📓
+      <span className="hidden">{notes}</span>
+    </span>
   </Tooltip>
 }
 
