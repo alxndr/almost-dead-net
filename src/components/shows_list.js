@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
+import { filter, prop } from 'ramda'
 
 import {getCsv} from '../fetch'
 import routes from '../routes';
@@ -8,8 +9,10 @@ import {SHOWS_URL} from '../data'
 
 import './shows_list.css'
 
+const hasDate = filter(prop('date'))
+
 function ShowEntry({date, id}) {
-  return <li>
+  return <li value={id}>
     <Link to={routes.show.replace(':id', id)}>{date}</Link>
   </li>
 }
@@ -19,7 +22,7 @@ const UNDEF = undefined
 export default function ShowsList() {
   const [shows, setShows] = useState(UNDEF)
   useEffect(() => {
-    getCsv(SHOWS_URL, setShows)
+    getCsv(SHOWS_URL, (showData) => setShows(hasDate(showData)))
   }, [])
   if (shows === UNDEF) {
     return <p>Loading...</p>
