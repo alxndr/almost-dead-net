@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import {find, propEq} from 'ramda'
+import dompurify from 'dompurify'
 
 import {SETS_URL, SHOWS_URL, VENUES_URL} from '../data'
 import {getCsv} from '../fetch'
@@ -8,6 +9,14 @@ import Setlist from '../components/setlist'
 import ShowPaginator from '../components/show_paginator'
 
 import './show.css'
+
+function linkShowNotes(text) {
+  return <>{text.split(/\s/g).flatMap(word => word.startsWith('https://')
+    ? [<a href={word} rel="noopener noreferrer" target="_blank">{dompurify.sanitize(word)}</a>, ' ']
+    : [dompurify.sanitize(word), ' '])
+    }
+  </>
+}
 
 export default function Show({match: {params}}) {
   const [shows, setShows] = useState(null)
@@ -76,7 +85,7 @@ export default function Show({match: {params}}) {
         <span className="showpage__pagetitle--venue">{name}, {location}</span>
         <span className="showpage__pagetitle--number">show #{showData.id}</span>
       </h1>
-      {notes && <div className="showpage__notes">{notes}</div>}
+      {notes && <div className="showpage__notes">{linkShowNotes(notes)}</div>}
       {setlists.length
         ? setlists
         : <p>Uh oh, no sets found.</p>
