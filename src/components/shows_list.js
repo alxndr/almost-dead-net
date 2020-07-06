@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import { filter, prop } from 'ramda'
 
-import {getCsv} from '../fetch'
+import {parseWithCache} from '../fetch'
 import routes from '../routes';
 
 import {SHOWS_URL} from '../data'
@@ -22,7 +22,7 @@ const UNDEF = undefined
 export default function ShowsList() {
   const [shows, setShows] = useState(UNDEF)
   useEffect(() => {
-    getCsv(SHOWS_URL, (showData) => setShows(hasDate(showData)))
+    parseWithCache(SHOWS_URL, (showData) => setShows(hasDate(showData)))
   }, [])
   if (shows === UNDEF) {
     return <p>Loading...</p>

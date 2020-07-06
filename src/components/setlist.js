@@ -7,7 +7,7 @@ import {
   SEGUES_URL,
   SONG_PERFORMANCES_URL,
 } from '../data'
-import {getCsv} from '../fetch'
+import {parseWithCache} from '../fetch'
 import routes, {url} from '../routes'
 
 import Segue from './segue'
@@ -29,8 +29,8 @@ export default function Setlist(props) {
   const [performances, setPerformances] = useState(null)
   const [segues, setSegues] = useState(null)
   useEffect(() => {
-    getCsv(SONG_PERFORMANCES_URL, setPerformances)
-    getCsv(SEGUES_URL, setSegues)
+    parseWithCache(SONG_PERFORMANCES_URL, setPerformances)
+    parseWithCache(SEGUES_URL, setSegues)
   }, [])
   if (!(performances && segues)) {
     return <p>Loading...</p>

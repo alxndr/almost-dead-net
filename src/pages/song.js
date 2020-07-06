@@ -7,7 +7,7 @@ import {
   SONG_PERFORMANCES_URL,
   SONGS_URL,
 } from '../data'
-import {getCsv} from '../fetch'
+import {parseWithCache} from '../fetch'
 import routes, {url} from '../routes'
 
 import './song.css'
@@ -36,9 +36,9 @@ export default function Song({match: {params}}) {
   const [songs, setSongs] = useState(null)
   const [performances, setPerformances] = useState(null)
   useEffect(() => {
-    getCsv(SHOWS_URL, setShows)
-    getCsv(SONGS_URL, setSongs)
-    getCsv(SONG_PERFORMANCES_URL, setPerformances)
+    parseWithCache(SHOWS_URL, setShows)
+    parseWithCache(SONGS_URL, setSongs)
+    parseWithCache(SONG_PERFORMANCES_URL, setPerformances)
   }, [])
   if (!(songs && performances && shows)) {
     return <p>Loading...</p>

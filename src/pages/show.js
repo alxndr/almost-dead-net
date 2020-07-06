@@ -3,7 +3,7 @@ import {find, propEq} from 'ramda'
 import dompurify from 'dompurify'
 
 import {SETS_URL, SHOWS_URL, VENUES_URL} from '../data'
-import {getCsv} from '../fetch'
+import {parseWithCache} from '../fetch'
 
 import Setlist from '../components/setlist'
 import ShowPaginator from '../components/show_paginator'
@@ -23,9 +23,9 @@ export default function Show({match: {params}}) {
   const [sets, setSets] = useState(null)
   const [venues, setVenues] = useState(null)
   useEffect(() => {
-    getCsv(SHOWS_URL, setShows)
-    getCsv(SETS_URL, setSets)
-    getCsv(VENUES_URL, setVenues)
+    parseWithCache(SHOWS_URL, setShows)
+    parseWithCache(SETS_URL, setSets)
+    parseWithCache(VENUES_URL, setVenues)
   }, [])
   if (!shows) {
     return <p>Loading shows...</p>
