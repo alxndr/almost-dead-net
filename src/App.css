@@ -17,6 +17,10 @@ a:active, a:visited {
   color: #636;
 }
 
+.hidden {
+  display: none;
+}
+
 #root {
   min-height: 100vh;
   display: flex;
