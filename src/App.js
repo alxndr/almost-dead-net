@@ -8,10 +8,21 @@ import routes from './routes'
 
 import './App.css'
 
+function determineRelease() {
+  if (process.env.GIT_SHA && process.env.GIT_SHA.length) {
+    return process.env.GIT_SHA
+  }
+  if (process.env.NODE_ENV === 'development') {
+    return 'develop'
+  }
+  return 'unknown'
+}
+
 Sentry.init({
-  dsn: "https://174349d7133f4877ba279f589bf54642@o412799.ingest.sentry.io/5293476",
-  environment: releaseStage()
-});
+  dsn: 'https://174349d7133f4877ba279f589bf54642@o412799.ingest.sentry.io/5293476',
+  environment: releaseStage(),
+  release: determineRelease(),
+})
 
 function App() {
   return <>
