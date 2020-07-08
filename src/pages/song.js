@@ -71,13 +71,16 @@ export default function Song({match: {params}}) {
     ?  <>
       <h2>Performances</h2>
       <ul>
-        {performancesData.map(performanceData => {
+        {performancesData.filter(data => !data.variation).map(performanceData => {
           const showData = find(propEq('id', Number(performanceData.show_id)))(shows)
+          if (!showData) { // TODO explore this more — only happens for soundchecks? how to reuse...
+            return false
+          }
           const whichSet = Object.entries(SET_MAPPING).find(([col_name, readable_name]) => showData[col_name] === performanceData.set_id)[1]
           return <li key={performanceData.id}>
             <Link to={url(routes.show, {id: showData.id})}>
-              {showData.date}
-            </Link> {whichSet}
+              {showData.date} {whichSet}
+            </Link>
           </li>
         })}
       </ul>
@@ -85,7 +88,6 @@ export default function Song({match: {params}}) {
     : false
 
   const teasesData = filter(propEq('song_id', songId))(teases)
-  console.log('teases', teasesData)
   const teasesComponent = teasesData.length > 0
     ? <>
       <h2>Teases</h2>
