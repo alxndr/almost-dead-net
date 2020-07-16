@@ -76,12 +76,14 @@ export default function Setlist(props) {
                   ? songData.nicknames.split(';', 1)
                   : songData.title
                 const teasesArray = filter(propEq('performance_id', performanceData.id))(teases)
+                const segueData = find(propEq('from_perf_id', performanceData.id))(segues)
                 return <li key={performanceData.id}>
                   <Link to={url(routes.song, {id: songData.id})}>
                     {displayName}
                   </Link>
                   {performanceData.notes && <PerfNote notes={performanceData.notes} />}
                   {teasesArray.length ? <TeasesNote list={teasesArray} /> : false}
+                  {segueData && <Segue {...segueData} />}
                 </li>
               })}
             </ul>
