@@ -85,7 +85,6 @@ export default function Show({match: {params}}) {
         <span className="showpage__pagetitle--venue">{name}, {location}</span>
         <span className="showpage__pagetitle--number">show #{showData.id}</span>
       </h1>
-      {notes && <div className="showpage__notes">{linkShowNotes(notes)}</div>}
       {setlists.length
         ? setlists
         : <p>Uh oh, no sets found.</p>
@@ -94,6 +93,7 @@ export default function Show({match: {params}}) {
         ? encores
         : <p>(no encore)</p>
       }
+      {notes && <div className="showpage__notes">{linkShowNotes(notes)}</div>}
     </section>
     <ShowPaginator prev={prevShow} next={nextShow} />
   </div>

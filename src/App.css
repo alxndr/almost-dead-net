@@ -6,7 +6,7 @@ h1 {
   text-shadow: 0.1em 0.1em 0.2em rgba(0,0,0, 0.5);
 }
 a {
-  color: #039;
+  color: #013;
   text-decoration: none;
   text-shadow: 0.1em 0.1em 0.2em rgba(0,0,0, 0.5);
 }
@@ -14,7 +14,7 @@ a:hover {
   text-decoration: underline;
 }
 a:active, a:visited {
-  color: #636;
+  color: #313;
 }
 
 .hidden {

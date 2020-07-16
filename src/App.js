@@ -10,6 +10,7 @@ import './App.css'
 
 function determineRelease() {
   if (process.env.GIT_SHA && process.env.GIT_SHA.length) {
+    // TODO this doesn't work when served from gh-pages...
     return process.env.GIT_SHA
   }
   if (process.env.NODE_ENV === 'development') {
@@ -17,6 +18,7 @@ function determineRelease() {
   }
   return 'unknown'
 }
+console.log('release...', determineRelease())
 
 Sentry.init({
   dsn: 'https://174349d7133f4877ba279f589bf54642@o412799.ingest.sentry.io/5293476',
@@ -38,7 +40,7 @@ function App() {
       </HashRouter>
     </div>
     <footer id="site-footer">
-      Contributions / corrections:
+      Contributions / corrections / design advice:
       <br />
       <a href="https://twitter.com/AlmostDeadNet" target="_new" rel="noopener noreferrer">@AlmostDeadNet on Twitter</a>
     </footer>

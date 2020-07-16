@@ -11,8 +11,10 @@ export default function Home(props) {
     <hr />
     <p>Coming eventually...</p>
     <ul>
+      <li>easier navigation??</li>
       <li>more setlists</li>
       <li>more links to Archive.org & Youtube</li>
+      <li>fun stats</li>
     </ul>
     </section>
 }

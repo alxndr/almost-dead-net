@@ -71,7 +71,7 @@ export default function Song({match: {params}}) {
     ?  <>
       <h2>Performances</h2>
       <ul>
-        {performancesData.filter(data => !data.variation).map(performanceData => {
+        {performancesData.map(performanceData => {
           const showData = find(propEq('id', Number(performanceData.show_id)))(shows)
           if (!showData) { // TODO explore this more — only happens for soundchecks? how to reuse...
             return false
