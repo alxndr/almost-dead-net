@@ -1,8 +1,13 @@
 import React, {useEffect, useState} from 'react'
-import {find, propEq} from 'ramda'
+import {filter, find, includes, propEq, where} from 'ramda'
 import dompurify from 'dompurify'
 
-import {SETS_URL, SHOWS_URL, VENUES_URL} from '../data'
+import {
+  GUESTS_URL,
+  SETS_URL,
+  SHOWS_URL,
+  VENUES_URL
+} from '../data'
 import {parseWithCache} from '../fetch'
 
 import Setlist from '../components/setlist'
@@ -22,10 +27,12 @@ export default function Show({match: {params}}) {
   const [shows, setShows] = useState(null)
   const [sets, setSets] = useState(null)
   const [venues, setVenues] = useState(null)
+  const [guests, setGuests] = useState(null)
   useEffect(() => {
     parseWithCache(SHOWS_URL, setShows)
     parseWithCache(SETS_URL, setSets)
     parseWithCache(VENUES_URL, setVenues)
+    parseWithCache(GUESTS_URL, setGuests)
   }, [])
   if (!shows) {
     return <p>Loading shows...</p>
@@ -36,6 +43,9 @@ export default function Show({match: {params}}) {
   if (!sets) {
     return <p>Loading sets...</p>
   }
+  if (!guests) {
+    return <p>Loading guests...</p>
+  }
   if (!shows.length) {
     return <p>Uh oh, no shows found...</p>
   }
@@ -45,12 +55,16 @@ export default function Show({match: {params}}) {
   if (!sets.length) {
     return <p>Uh oh, no sets found...</p>
   }
-  const showData = find(propEq('id', Number(params.id)))(shows)
+  if (!guests.length) {
+    return <p>Uh oh, no guests found...</p>
+  }
+  const inputId = Number(params.id)
+  const showData = find(propEq('id', inputId))(shows)
   if (!showData) {
     return <p>Uh oh, no show data found...</p>
   }
-  const nextShow = find(propEq('id', Number(params.id) + 1))(shows)
-  const prevShow = find(propEq('id', Number(params.id) - 1))(shows)
+  const nextShow = find(propEq('id', inputId + 1))(shows)
+  const prevShow = find(propEq('id', inputId - 1))(shows)
   const {date, notes, venue_id} = showData
   const findVenue = find(propEq('id', Number(venue_id)))
   const venueData = findVenue(venues)
@@ -58,6 +72,27 @@ export default function Show({match: {params}}) {
     return <p>Uh oh, no venue data found...</p>
   }
   const {name, location} = venueData
+
+  const guestsWithSplitShows = guests.map((guestData) => {
+    if (!guestData) {
+      return null
+    }
+    if (!guestData.shows) {
+      return null
+    }
+    if (Number.isInteger(guestData.shows)) {
+      return {
+        ...guestData,
+        shows: [guestData.shows]
+      }
+    }
+    return {
+      ...guestData,
+      shows: guestData.shows.split(':').map(Number.bind(null))
+    }
+  }).filter((data) => !!data)
+  const showGuests = filter(where({shows: includes(inputId)}))(guestsWithSplitShows)
+
   const setlists = [1, 2, 3].reduce((setlists, which) => {
     if (!showData[`set${which}`]) {
       return setlists
@@ -85,6 +120,10 @@ export default function Show({match: {params}}) {
         <span className="showpage__pagetitle--venue">{name}, {location}</span>
         <span className="showpage__pagetitle--number">show #{showData.id}</span>
       </h1>
+      {showGuests.length
+        ? <p>With {showGuests.map((guest) => guest.name).join(', ')}</p>
+        : false
+      }
       {setlists.length
         ? setlists
         : <p>Uh oh, no sets found.</p>
