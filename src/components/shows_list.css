@@ -1,2 +1,35 @@
-ol.showslist {
+.showslist__years {
+  margin: 1em;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.showslist__years h3 {
+  margin: 0;
+  border-radius: 1em;
+  padding: 0.7em;
+  background: #dabbff;
+}
+.showslist__years > li {
+  display: flex;
+  background: #eee;
+  border-radius: 1em;
+  margin: 0.1em;
+}
+
+.showslist__years__shows {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.showslist__years__shows li {
+  margin: 0.3em;
+}
+
+.showslist__years__shows a {
+  padding: 0.5em;
 }
