@@ -32,8 +32,14 @@ a:active, a:visited {
 
 #logo {
   display: block;
-  float: right;
+  position: absolute;
   max-width: 25%;
+  top: 0.5em;
+  right: 0.5em;
+  opacity: 0.2;
+}
+#logo:hover {
+  opacity: 0.9;
 }
 .App.canary #logo {
   background: radial-gradient(circle, yellow 0%, khaki 49%, rgba(255,255,255,0) 50%);
