@@ -1,4 +1,3 @@
-import * as Sentry from '@sentry/browser';
 import React from 'react'
 import { HashRouter, Route, Switch } from 'react-router-dom'
 
@@ -8,28 +7,10 @@ import routes from './routes'
 
 import './App.css'
 
-function determineRelease() {
-  if (process.env.GIT_SHA && process.env.GIT_SHA.length) {
-    // TODO this doesn't work when served from gh-pages...
-    return process.env.GIT_SHA
-  }
-  if (process.env.NODE_ENV === 'development') {
-    return 'develop'
-  }
-  return 'unknown'
-}
-console.log('release...', determineRelease())
-
-Sentry.init({
-  dsn: 'https://174349d7133f4877ba279f589bf54642@o412799.ingest.sentry.io/5293476',
-  environment: releaseStage(),
-  release: determineRelease(),
-})
-
 function App() {
   return <>
     <div className={`App ${releaseStage()}`}>
-      <a id="logo" href="#"><img src="https://i.imgur.com/tvtgYVY.png" alt="Good Ol' Almost Dead" /></a>
+      <a id="logo" href="?#" title="return to home page"><img src="https://i.imgur.com/tvtgYVY.png" alt="Good Ol' Almost Dead" /></a>
       <HashRouter>
         <Switch>
           <Route path={routes.home} exact component={Home} />
