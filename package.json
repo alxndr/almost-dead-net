@@ -46,7 +46,17 @@
       "browser": true,
       "node": true
     },
-    "extends": "react-app"
+    "extends": "react-app",
+    "ignorePatterns": [
+      "serviceWorker.js",
+      "setupTests.js"
+    ],
+    "rules": {
+      "semi": [
+        "warn",
+        "never"
+      ]
+    }
   },
   "browserslist": {
     "production": [
