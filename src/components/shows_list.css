@@ -31,5 +31,8 @@
 }
 
 .showslist__years__shows a {
+  display: block;
+  min-width: 2.5em;
   padding: 0.5em;
+  text-align: center;
 }
