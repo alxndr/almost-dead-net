@@ -4,6 +4,7 @@ import {filter, find, propEq} from 'ramda'
 
 import {
   SHOWS_URL,
+  SETS_URL,
   SONG_PERFORMANCES_URL,
   SONGS_URL,
   TEASES_URL,
@@ -34,11 +35,13 @@ const SET_MAPPING = { // 'show table column name' to 'human readable set name'
 
 export default function Song({match: {params}}) {
   const [shows, setShows] = useState(null)
+  const [sets, setSets] = useState(null)
   const [songs, setSongs] = useState(null)
   const [performances, setPerformances] = useState(null)
   const [teases, setTeases] = useState(null)
   useEffect(() => {
     parseWithCache(SHOWS_URL, setShows)
+    parseWithCache(SETS_URL, setSets)
     parseWithCache(SONGS_URL, setSongs)
     parseWithCache(SONG_PERFORMANCES_URL, setPerformances)
     parseWithCache(TEASES_URL, setTeases)
@@ -71,18 +74,20 @@ export default function Song({match: {params}}) {
     ?  <>
       <h2>Performances</h2>
       <ul>
-        {performancesData.map(performanceData => {
-          const showData = find(propEq('id', Number(performanceData.show_id)))(shows)
-          if (!showData) { // TODO explore this more — only happens for soundchecks? how to reuse...
-            return false
-          }
-          const whichSet = Object.entries(SET_MAPPING).find(([col_name, readable_name]) => showData[col_name] === performanceData.set_id)[1]
-          return <li key={performanceData.id}>
-            <Link to={url(routes.show, {id: showData.id})}>
-              {showData.date} {whichSet}
-            </Link>
-          </li>
-        })}
+        {performancesData
+          .map(performanceData => {
+            const setData = find((set) => set.setlist.toString().split(':').includes(performanceData.id.toString()))(sets)
+            const showData = find((show) => [show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(shows)
+            if (!showData) { // TODO still needed?
+              return false
+            }
+            const whichSet = Object.entries(SET_MAPPING).find(([col_name, readable_name]) => showData[col_name] === setData.id)[1]
+            return <li key={performanceData.id}>
+              <Link to={url(routes.show, {id: showData.id})}>
+                {showData.date} {whichSet}
+              </Link>
+            </li>
+          })}
       </ul>
     </>
     : false
@@ -94,7 +99,8 @@ export default function Song({match: {params}}) {
       <ul>
         {teasesData.map(teaseData => {
           const performanceData = find(propEq('id', Number(teaseData.performance_id)))(performances)
-          const showData = find(propEq('id', performanceData.show_id))(shows)
+          const setData = find((set) => set.setlist.toString().split(':').includes(performanceData.id.toString()))(sets)
+          const showData = find((show) => [show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(shows)
           return <li key={teaseData.id}>
             within <Link to={url(routes.show, {id: showData.id})}>{teaseData.within} — {showData.date}</Link>
           </li>
