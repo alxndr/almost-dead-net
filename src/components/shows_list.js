@@ -17,9 +17,7 @@ const hasDate = filter(prop('date'))
 function ShowEntry({children, show}) {
   const {date, event, id, venue} = show
   const title = `#${id}: ${date}${event ? ` ${event}` : ''} @ ${venue.name} (${venue.location})`
-  return <li>
-    <Link to={routes.show.replace(':id', id)} title={title}>{children || date}</Link>
-  </li>
+  return <Link to={routes.show.replace(':id', id)} title={title}>{children || date}</Link>
 }
 
 const UNDEF = undefined
@@ -47,11 +45,11 @@ export default function ShowsList() {
   }, {})
   return <ul className="showslist__years">
     {Object.entries(showsByYear).reverse().map(([year, showsInYear]) => {
-      return <li className={`showslist__years--${year}`}>
+      return <li className={`showslist__years--${year}`} key={year}>
         <h3>{year}</h3>
         <ul className="showslist__years__shows">
           {Object.entries(showsInYear).map(([monthAndDay, show]) => {
-            return <li className={`showslist__years__shows__${monthAndDay}`}>
+            return <li className={`showslist__years__shows__${monthAndDay}`} key={monthAndDay}>
               <ShowEntry key={show.id} show={show}>{monthAndDay}</ShowEntry>
             </li>
           })}
