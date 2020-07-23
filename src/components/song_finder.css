@@ -1,0 +1,11 @@
+.songfinder {
+  display: inline-block;
+}
+
+.songfinder .react-autosuggest__suggestions-container.react-autosuggest__suggestions-container--open {
+  position: relative;
+  top: 1em;
+  left: 1em;
+  background: #ddd;
+  box-shadow: 0.1em 0.1em 0.3em rgba(0,0,0,0.4) inset;
+}

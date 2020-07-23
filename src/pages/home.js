@@ -1,5 +1,6 @@
 import React from 'react'
 
+import SongFinder from '../components/song_finder'
 import ShowsList from '../components/shows_list'
 
 import './home.css'
@@ -7,6 +8,9 @@ import './home.css'
 export default function Home(props) {
   return <section className="homepage">
     <h1>JRAD Setlists</h1>
+    <p>Find a song:</p>
+    <SongFinder />
+    <hr />
     <p>Find a past show:</p>
     <ShowsList />
     <hr />
