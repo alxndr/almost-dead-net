@@ -10,8 +10,12 @@
 }
 
 .songfinder .react-autosuggest__suggestions-container ul {
-  list-style: none;
+  list-style: inside '☞ ';
   padding: 0;
+}
+
+.songfinder .react-autosuggest__suggestions-container li {
+  padding: 0.2em 0.5em;
 }
 
 .songfinder .songfinder__suggestion--author {
