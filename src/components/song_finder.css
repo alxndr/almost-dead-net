@@ -1,11 +1,23 @@
 .songfinder {
-  display: inline-block;
+  overflow: auto;
 }
 
-.songfinder .react-autosuggest__suggestions-container.react-autosuggest__suggestions-container--open {
-  position: relative;
-  top: 1em;
-  left: 1em;
+.songfinder .react-autosuggest__suggestions-container {
+  max-width: 50%;
+  padding: 0;
   background: #ddd;
   box-shadow: 0.1em 0.1em 0.3em rgba(0,0,0,0.4) inset;
+}
+
+.songfinder .react-autosuggest__suggestions-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.songfinder .songfinder__suggestion--author {
+  font-size: 0.85em;
+}
+
+.songfinder .songfinder__suggestion--author:before {
+  content: ' — by ';
 }

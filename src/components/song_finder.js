@@ -38,26 +38,44 @@ export default function SongFinder(props) {
     if (!searchString || searchString.length < 2) {
       return []
     }
-    return songs.filter(({title}) => title && sanitizeString(title).includes(searchString))
+    const searchRegex = new RegExp(`\\b${searchString}`)
+    return songs.filter(({title = '', author = ''}) => {
+      if (title && searchRegex.test(sanitizeString(title))) {
+        return true
+      }
+      if (author && searchRegex.test(sanitizeString(author))) {
+        return true
+      }
+      return false
+    })
   }
-  const renderSuggestion = (suggestion) => <>{suggestion.title}</>
+  const renderSuggestion = (songData) => {
+    const author = songData.author
+      ? <span className="songfinder__suggestion--author">{songData.author}</span>
+      : false
+    return <span className="songfinder__suggestion">
+      {songData.title}
+      {author}
+    </span>
+  }
   return <div className="songfinder">
     <Autosuggest
       suggestions={suggestions}
+      highlightFirstSuggestion={true}
       onSuggestionsClearRequested={() => setSuggestions([])}
       onSuggestionsFetchRequested={({value}) => {
         setValue(value)
         setSuggestions(getSuggestions(value))
       }}
-      getSuggestionValue={(suggestion) => suggestion.id.toString()}
+      getSuggestionValue={(songData) => songData.title}
       renderSuggestion={renderSuggestion}
       inputProps={{
         onChange: (_, {newValue}) => setValue(newValue),
         placeholder: 'type a song name',
         value,
       }}
-      onSuggestionSelected={(_, {suggestionValue}) => {
-        setRedirect(url(routes.song, {id: suggestionValue}))
+      onSuggestionSelected={(_, {suggestion}) => {
+        setRedirect(url(routes.song, {id: suggestion.id}))
       }}
     />
   </div>
