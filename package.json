@@ -7,11 +7,12 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "echo building... && GIT_SHA=$(git rev-parse --verify --quiet) react-scripts build",
-      "predeploy": "npm run build",
+    "predeploy": "npm run build && npm run git-tag",
     "deploy": "echo deploying... && gh-pages --branch gh-pages --dist build && echo cleaning up... && gh-pages-clean",
-      "pretest": "npm run lint",
+    "git-tag": "TAG=deploy-$(date '+%F-%H%M%S-%Z') && echo tagging as: $TAG && git tag $TAG && git push --tags",
+    "pretest": "npm run lint",
     "test": "react-scripts test",
-    "lint": "eslint src/ && echo Successfully linted JS",
+    "lint": "echo linting... && eslint src/ && echo Successfully linted JS",
     "eject": "react-scripts eject"
   },
   "dependencies": {
