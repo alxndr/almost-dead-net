@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/almost-dead-net/static/css/main.8a05243f.chunk.css",
-    "main.js": "/almost-dead-net/static/js/main.200a000a.chunk.js",
-    "main.js.map": "/almost-dead-net/static/js/main.200a000a.chunk.js.map",
+    "main.css": "/almost-dead-net/static/css/main.3fb7ab24.chunk.css",
+    "main.js": "/almost-dead-net/static/js/main.048fd586.chunk.js",
+    "main.js.map": "/almost-dead-net/static/js/main.048fd586.chunk.js.map",
     "runtime-main.js": "/almost-dead-net/static/js/runtime-main.ee5a381c.js",
     "runtime-main.js.map": "/almost-dead-net/static/js/runtime-main.ee5a381c.js.map",
     "static/css/2.e22355b1.chunk.css": "/almost-dead-net/static/css/2.e22355b1.chunk.css",
     "static/js/2.8759ba41.chunk.js": "/almost-dead-net/static/js/2.8759ba41.chunk.js",
     "static/js/2.8759ba41.chunk.js.map": "/almost-dead-net/static/js/2.8759ba41.chunk.js.map",
     "index.html": "/almost-dead-net/index.html",
-    "precache-manifest.138d4b29df23e90f7bfd64eb55e11606.js": "/almost-dead-net/precache-manifest.138d4b29df23e90f7bfd64eb55e11606.js",
+    "precache-manifest.be6d04f5393d7a2bfb041f036f152386.js": "/almost-dead-net/precache-manifest.be6d04f5393d7a2bfb041f036f152386.js",
     "service-worker.js": "/almost-dead-net/service-worker.js",
     "static/css/2.e22355b1.chunk.css.map": "/almost-dead-net/static/css/2.e22355b1.chunk.css.map",
-    "static/css/main.8a05243f.chunk.css.map": "/almost-dead-net/static/css/main.8a05243f.chunk.css.map",
+    "static/css/main.3fb7ab24.chunk.css.map": "/almost-dead-net/static/css/main.3fb7ab24.chunk.css.map",
     "static/js/2.8759ba41.chunk.js.LICENSE.txt": "/almost-dead-net/static/js/2.8759ba41.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ee5a381c.js",
     "static/css/2.e22355b1.chunk.css",
     "static/js/2.8759ba41.chunk.js",
-    "static/css/main.8a05243f.chunk.css",
-    "static/js/main.200a000a.chunk.js"
+    "static/css/main.3fb7ab24.chunk.css",
+    "static/js/main.048fd586.chunk.js"
   ]
 }
