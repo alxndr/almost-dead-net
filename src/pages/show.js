@@ -34,17 +34,8 @@ export default function Show({match: {params}}) {
     parseWithCache(VENUES_URL, setVenues)
     parseWithCache(GUESTS_URL, setGuests)
   }, [])
-  if (!shows) {
-    return <p>Loading shows...</p>
-  }
-  if (!venues) {
-    return <p>Loading venues...</p>
-  }
-  if (!sets) {
-    return <p>Loading sets...</p>
-  }
-  if (!guests) {
-    return <p>Loading guests...</p>
+  if (!shows || !venues || !sets || !guests) {
+    return <p>Loading...</p>
   }
   if (!shows.length) {
     return <p>Uh oh, no shows found...</p>
