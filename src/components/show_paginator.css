@@ -19,8 +19,6 @@
   text-align: left;
 }
 .showpaginator .showpaginator__prev a {
-  background: linear-gradient(270deg, white 85%, rgba(13, 13, 13, 0.8) 95%);
-  box-shadow: 1px 1px 1px rgba(13, 13, 13, 0.8);
 }
 .showpaginator .showpaginator__prev a:before {
   content: "<";
@@ -30,8 +28,6 @@
   text-align: right;
 }
 .showpaginator .showpaginator__next a {
-  background: linear-gradient(90deg, white 85%, rgba(13, 13, 13, 0.8) 95%);
-  box-shadow: -1px 1px 1px rgba(13, 13, 13, 0.8);
 }
 .showpaginator .showpaginator__next a:after {
   content: ">";

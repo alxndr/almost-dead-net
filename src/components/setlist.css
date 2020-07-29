@@ -1,6 +1,6 @@
 .setlist__songnote,
 .setlist__songteases {
-  padding-left: 0.3em;
+  padding-left: 1em;
   cursor: pointer;
   line-height: 1em;
 }

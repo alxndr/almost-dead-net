@@ -20,6 +20,22 @@ import 'react-tippy/dist/tippy.css'
 
 const findByIntegerId = (id) => find(propEq('id', Number(id)))
 
+function SetlistEntry({performanceData, songData, segues, teases}) {
+  const displayName = /*songData.nicknames ? songData.nicknames.split(';', 1) :*/ songData.title
+  const segueData = find(propEq('from_perf_id', performanceData.id))(segues)
+  const teasesArray = filter(propEq('performance_id', performanceData.id))(teases)
+  return <li>
+    <Link to={url(routes.song, {id: performanceData.song_id})}>
+      {displayName}
+    </Link>
+    {' '}
+    {performanceData.variation || false}
+    {segueData && <Segue {...segueData} />}
+    {performanceData.notes && <PerfNote notes={performanceData.notes} />}
+    {teasesArray.length ? <TeasesNote list={teasesArray} /> : false}
+  </li>
+}
+
 export default function Setlist(props) {
   const [performances, setPerformances] = useState(null)
   const [segues, setSegues] = useState(null)
@@ -72,35 +88,20 @@ export default function Setlist(props) {
             {songOrSuite[0].suite} suite:
             <ul>
               {songOrSuite.map(({songData, performanceData}) => {
-                const displayName = songData.nicknames
-                  ? songData.nicknames.split(';', 1)
-                  : songData.title
-                const teasesArray = filter(propEq('performance_id', performanceData.id))(teases)
-                const segueData = find(propEq('from_perf_id', performanceData.id))(segues)
-                return <li key={performanceData.id}>
-                  <Link to={url(routes.song, {id: songData.id})}>
-                    {displayName}
-                  </Link>
-                  {performanceData.notes && <PerfNote notes={performanceData.notes} />}
-                  {teasesArray.length ? <TeasesNote list={teasesArray} /> : false}
-                  {segueData && <Segue {...segueData} />}
-                </li>
+                return <SetlistEntry
+                  key={performanceData.id}
+                  performanceData={performanceData}
+                  songData={songData}
+                  segues={segues}
+                  teases={teases}
+                />
               })}
             </ul>
           </li>
         }
         // regularly scheduled programming
         const [{performanceData, songData}] = songOrSuite
-        const segueData = find(propEq('from_perf_id', performanceData.id))(segues)
-        const teasesArray = filter(propEq('performance_id', performanceData.id))(teases)
-        return <li key={performanceData.id}>
-          <Link to={url(routes.song, {id: performanceData.song_id})}>
-            {songData.title}
-          </Link> {performanceData.variation || false}
-          {performanceData.notes && <PerfNote notes={performanceData.notes} />}
-          {teasesArray.length ? <TeasesNote list={teasesArray} /> : false}
-          {segueData && <Segue {...segueData} />}
-          </li>
+        return <SetlistEntry key={performanceData.id} performanceData={performanceData} songData={songData} segues={segues} teases={teases} />
       })}
         </ol>
     </>
