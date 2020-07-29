@@ -56,7 +56,7 @@ export default function Show({match: {params}}) {
   }
   const nextShow = find(propEq('id', inputId + 1))(shows)
   const prevShow = find(propEq('id', inputId - 1))(shows)
-  const {date, notes, venue_id} = showData
+  const {date, event, notes, venue_id} = showData
   const findVenue = find(propEq('id', Number(venue_id)))
   const venueData = findVenue(venues)
   if (!venueData) {
@@ -107,7 +107,9 @@ export default function Show({match: {params}}) {
   return <div className="showpage">
     <section>
       <h1 className="showpage__pagetitle">
+        <span className="showpage__pagetitle--band">Joe Russo's Almost Dead</span>
         <span className="showpage__pagetitle--date">{date}</span>
+        <span className="showpage__pagetitle--event">{event || false}</span>
         <span className="showpage__pagetitle--venue">{name}, {location}</span>
         <span className="showpage__pagetitle--number">show #{showData.id}</span>
       </h1>
