@@ -77,14 +77,22 @@ export default function Song({match: {params}}) {
         {performancesData
           .map(performanceData => {
             const setData = find((set) => set.setlist.toString().split(':').includes(performanceData.id.toString()))(sets)
+            if (!setData || !setData.id) {
+              console.warn(`missing setData...`, {performanceData, sets})
+              return false
+            }
             const showData = find((show) => [show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(shows)
-            if (!showData) { // TODO still needed?
+            if (!showData || !showData.id) {
+              console.warn(`missing showData...`, {performanceData, setData})
               return false
             }
             const whichSet = Object.entries(SET_MAPPING).find(([col_name, readable_name]) => showData[col_name] === setData.id)[1]
+            const variation = performanceData.variation
+              ? `(${performanceData.variation})`
+              : false
             return <li key={performanceData.id}>
               <Link to={url(routes.show, {id: showData.id})}>
-                {showData.date} {whichSet}
+                {showData.date} {variation} in {whichSet}
               </Link>
             </li>
           })}
