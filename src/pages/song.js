@@ -17,7 +17,7 @@ import './song.css'
 function authorInfo(author = null) {
   switch (author) {
     case null:
-      return <p>(originally by the Grateful Dead)</p>
+      return false
     case 'traditional':
       return <p>(traditional)</p>
     default:
