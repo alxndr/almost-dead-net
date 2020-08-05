@@ -1,3 +1,7 @@
+.setlist {
+  line-height: 1.5em;
+}
+
 .setlist__songnote,
 .setlist__songteases {
   padding-left: 1em;

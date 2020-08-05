@@ -103,6 +103,6 @@ export default function Setlist(props) {
         const [{performanceData, songData}] = songOrSuite
         return <SetlistEntry key={performanceData.id} performanceData={performanceData} songData={songData} segues={segues} teases={teases} />
       })}
-        </ol>
-    </>
+    </ol>
+  </>
 }
