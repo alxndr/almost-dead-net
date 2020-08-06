@@ -8,7 +8,7 @@
     "start": "react-scripts start",
     "build": "echo building... && GIT_SHA=$(git rev-parse --verify --quiet) react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "TAG=deploy-$(date '+%F-%H%M%S-%Z') && echo deploying... && NODE_DEBUG=gh-pages gh-pages --dotfiles --branch gh-pages --dist build --tag $TAG --src '{src/**,.well-known/**,_config.yml}' && echo cleaning up... && gh-pages-clean",
+    "deploy": "TAG=deploy-$(date '+%F-%H%M%S-%Z') && echo deploying... && NODE_DEBUG=gh-pages gh-pages --dotfiles --branch gh-pages --dist build --tag $TAG && echo cleaning up... && gh-pages-clean",
     "pretest": "npm run lint",
     "test": "react-scripts test",
     "lint": "echo linting... && eslint src/ && echo Successfully linted JS",
