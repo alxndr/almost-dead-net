@@ -18,6 +18,10 @@
   padding: 0.2em 0.5em;
 }
 
+.songfinder .songfinder__suggestion:hover {
+  cursor: pointer;
+}
+
 .songfinder .songfinder__suggestion--author {
   font-size: 0.85em;
 }

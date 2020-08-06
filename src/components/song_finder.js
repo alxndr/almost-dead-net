@@ -12,8 +12,13 @@ import routes, {url} from '../routes'
 import './song_finder.css'
 
 const REGEX_NON_ALNUMSPACE = /[^a-z0-9 ]+/g
+const REGEX_WORD_SEPARATING_PUNCTUATION = /[-—/–+,()[\]{}…]+/g
 function sanitizeString(string) {
-  return string.toLowerCase().replace(REGEX_NON_ALNUMSPACE, '').trim()
+  return string
+    .toLowerCase()
+    .replace(REGEX_WORD_SEPARATING_PUNCTUATION, ' ')
+    .replace(REGEX_NON_ALNUMSPACE, '')
+    .trim()
 }
 
 export default function SongFinder(props) {
