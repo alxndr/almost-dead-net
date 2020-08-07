@@ -31,4 +31,13 @@ export function storageAvailable(type) {
   }
 }
 
+export function urlToKeyCSV(url) {
+  // assumes the URL is a raw Gist URL
+  return url.split('/').slice(-2).join('/')
+}
+
+export function urlToKey(url) {
+  // assumes the URL is a raw Gist URL
+  return url.split('/').slice(-2).join('/').split('.')[0]
+}
 
