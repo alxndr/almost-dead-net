@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import routes, {url} from '../routes';
+import routes, {url} from '../routes'
 
 import './show_paginator.css'
 

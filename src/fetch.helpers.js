@@ -1,3 +1,5 @@
+/* eslint-disable semi */
+
 /**
  * Determine whether localStorage is available and behaves to spec.
  * https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API

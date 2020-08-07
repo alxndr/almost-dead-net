@@ -21,9 +21,9 @@ function App() {
       </HashRouter>
     </div>
     <footer id="site-footer">
-      Contributions / corrections / design advice:
+      Corrections? Contributions?
       <br />
-      <a href="https://twitter.com/AlmostDeadNet" target="_new" rel="noopener noreferrer">@AlmostDeadNet on Twitter</a>
+      Contact: <a href="https://twitter.com/AlmostDeadNet" target="_new" rel="noopener noreferrer">@AlmostDeadNet on Twitter</a>
     </footer>
   </>
 }

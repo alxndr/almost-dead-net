@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## TODO
 
 * [ ] clean up README
-* [ ] stash data into localStorage once fetched
+* [x] stash data into localStorage once fetched
 
 ## Available Scripts
 

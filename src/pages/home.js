@@ -17,8 +17,7 @@ export default function Home(props) {
     <p>Coming eventually...</p>
     <ul>
       <li>easier navigation??</li>
-      <li>teases!</li>
-      <li>the rest of the setlists</li>
+      <li>more teases!</li>
       <li>more links to Archive.org & Youtube</li>
       <li>fun stats</li>
     </ul>
