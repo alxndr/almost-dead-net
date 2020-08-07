@@ -54,17 +54,7 @@ export async function parseWithCache(url, callback, papaParseOptions) {
   })
 }
 
-/* Return an object containing the data within the CSV rows, using each row's `id` value as the key
- * within the object. This is ideal for accessing values when the ID is known.
- */
-function transform(data) {
-  return data.reduce((acc, elem) => {
-    acc[elem.id] = elem
-    return acc
-  }, {})
-}
-
-export async function parseIntoObjectWithCache(url, callback, papaParseOptions) {
+export async function parseIntoObjectWithCache(url, callback, papaParseOptions = {}, isValidEntry = (_) => true) {
   if (!localStorage) {
     // TODO handle if no localStorage
     throw new Error("Ruh roh, no localStorage")
@@ -82,6 +72,17 @@ export async function parseIntoObjectWithCache(url, callback, papaParseOptions) 
     throw new Error('Uh oh, could not fetch...', {url, data}) // ...or return Promise.reject(new Error()) ?
   }
   const rawText = await data.text()
+  /* Return an object containing the data within the CSV rows, using each row's `id` value as the key
+   * within the object. This is ideal for accessing values when the ID is known.
+   */
+  function transform(data) {
+    return data.reduce((transformed, elem) => {
+      if (isValidEntry(elem)) {
+        transformed[elem.id] = elem
+      }
+      return transformed
+    }, {})
+  }
   return Papa.parse(rawText, {
     dynamicTyping: true, // TODO remove this... gonna do some conversions ourselves though
     header: true,

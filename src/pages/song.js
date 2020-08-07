@@ -9,7 +9,7 @@ import {
   SONGS_URL,
   TEASES_URL,
 } from '../data'
-import {parseWithCache} from '../fetch'
+import {parseIntoObjectWithCache} from '../fetch'
 import routes, {url} from '../routes'
 
 import './song.css'
@@ -34,54 +34,45 @@ const SET_MAPPING = { // 'show table column name' to 'human readable set name'
 }
 
 export default function Song({match: {params}}) {
-  const [shows, setShows] = useState(null)
-  const [sets, setSets] = useState(null)
-  const [songs, setSongs] = useState(null)
-  const [performances, setPerformances] = useState(null)
-  const [teases, setTeases] = useState(null)
+  const [showsObject, setShows] = useState(null)
+  const [setsObject, setSets] = useState(null)
+  const [songsObject, setSongs] = useState(null)
+  const [performancesObject, setPerformances] = useState(null)
+  const [teasesObject, setTeases] = useState(null)
   useEffect(() => {
-    parseWithCache(SHOWS_URL, setShows)
-    parseWithCache(SETS_URL, setSets)
-    parseWithCache(SONGS_URL, setSongs)
-    parseWithCache(SONG_PERFORMANCES_URL, setPerformances)
-    parseWithCache(TEASES_URL, setTeases)
+    parseIntoObjectWithCache(SHOWS_URL, setShows)
+    parseIntoObjectWithCache(SETS_URL, setSets)
+    parseIntoObjectWithCache(SONGS_URL, setSongs)
+    parseIntoObjectWithCache(SONG_PERFORMANCES_URL, setPerformances, null, (rowData) => !!rowData.song_id)
+    parseIntoObjectWithCache(TEASES_URL, setTeases)
   }, [])
 
-  if (!(songs && performances && shows && teases)) {
+  if (!(songsObject && performancesObject && showsObject && teasesObject)) {
     return <p>Loading...</p>
   }
-  if (!songs.length) {
-    return <p>Uh oh, no songs found...</p>
-  }
-  if (!performances.length) {
-    return <p>Uh oh, no performances found...</p>
-  }
-  if (!shows.length) {
-    return <p>Uh oh, no shows found...</p>
-  }
-  if (!teases.length) {
-    return <p>Uh oh, no teases found...</p>
-  }
 
-  const songData = find(propEq('id', Number(params.id)))(songs)
+  const songData = songsObject[params.id]
   if (!songData) {
     return <p>Uh oh, no song data found...</p>
   }
   const songId = Number(songData.id)
 
-  const performancesData = filter(propEq('song_id', songId))(performances)
+  const performancesData = filter(propEq('song_id', songId))(Object.values(performancesObject))
   const performancesComponent = performancesData.length > 0
     ?  <>
       <h2>Performances</h2>
       <ul>
         {performancesData
           .map(performanceData => {
-            const setData = find((set) => set.setlist.toString().split(':').includes(performanceData.id.toString()))(sets)
+            const performanceIdStr = performanceData.id.toString()
+            const setData = find((set) => {
+              return set.setlist && set.setlist.toString().split(':').includes(performanceIdStr)
+            })(Object.values(setsObject))
             if (!setData || !setData.id) {
-              console.warn(`missing setData...`, {performanceData, sets})
+              console.warn(`missing setData...`, {performanceData, setsObject})
               return false
             }
-            const showData = find((show) => [show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(shows)
+            const showData = find((show) => [show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(Object.values(showsObject))
             if (!showData || !showData.id) {
               console.warn(`missing showData...`, {performanceData, setData})
               return false
@@ -100,15 +91,15 @@ export default function Song({match: {params}}) {
     </>
     : false
 
-  const teasesData = filter(propEq('song_id', songId))(teases)
+  const teasesData = filter(propEq('song_id', songId))(Object.values(teasesObject))
   const teasesComponent = teasesData.length > 0
     ? <>
       <h2>Teases</h2>
       <ul>
         {teasesData.map(teaseData => {
-          const performanceData = find(propEq('id', Number(teaseData.performance_id)))(performances)
-          const setData = find((set) => set.setlist.toString().split(':').includes(performanceData.id.toString()))(sets)
-          const showData = find((show) => [show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(shows)
+          const performanceData = performancesObject[teaseData.performance_id] //find(propEq('id', Number(teaseData.performance_id)))(performances)
+          const setData = find((set) => set.setlist.toString().split(':').includes(performanceData.id.toString()))(Object.values(setsObject))
+          const showData = find((show) => [show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(Object.values(showsObject))
           return <li key={teaseData.id}>
             within <Link to={url(routes.show, {id: showData.id})}>{teaseData.within} — {showData.date}</Link>
           </li>
