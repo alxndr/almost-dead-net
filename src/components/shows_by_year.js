@@ -11,9 +11,19 @@ function ShowEntry({children, show}) {
   return <Link to={routes.show.replace(':id', id)} title={title}>{children || date}</Link>
 }
 
-export default function ShowsList({showsObject}) {
+export default function ShowsByYear({rawShows, rawVenues}) {
+  const showsByYear = Object.values(rawShows).reduce((acc, show) => {
+    const [m, d, y] = show.date.split('/') // e.g. === ['1', '26', '2013']
+    if (!acc[y]) acc[y] = {}
+    const venue = rawVenues[show.venue_id]
+    acc[y][`${m}/${d}`] = {
+      ...show,
+      venue
+    }
+    return acc
+  }, {})
   return <ul className="showslist__years">
-    {Object.entries(showsObject).reverse().map(([year, showsInYear]) => {
+    {Object.entries(showsByYear).reverse().map(([year, showsInYear]) => {
       return <li className={`showslist__years--${year}`} key={year}>
         <h3>{year}</h3>
         <ul className="showslist__years__shows">
