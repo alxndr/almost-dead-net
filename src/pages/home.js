@@ -26,7 +26,7 @@ export default function Home(props) {
     <p>Find a song:</p>
     <SongFinder />
     <hr />
-    <p>Find a past show:</p>
+    <p>Pick a date to view the setlist and/or notes:</p>
     <ShowsByYear rawShows={shows} rawVenues={venues} />
     <hr />
     <p>Coming eventually...</p>
