@@ -1,7 +1,8 @@
-export const anyPath = `/:path`
-export const home = `/`
-export const show = `/show/:id`
-export const song = `/song/:id`
+const anyPath = `/:path`
+const home = `/`
+const show = `/show/:id`
+const song = `/song/:id`
+const songWithName = `/song/:id/:name`
 
 export function url(route, params) {
   // TODO support more than just {id: #}
@@ -13,4 +14,5 @@ export default {
   home,
   show,
   song,
+  songWithName,
 }

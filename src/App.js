@@ -14,9 +14,10 @@ function App() {
       <HashRouter>
         <Switch>
           <Route path={routes.home} exact component={Home} />
-          <Route path={routes.show}       component={Show} />
-          <Route path={routes.song}       component={Song} />
-          <Route path={routes.anyPath}    component={Error} />
+          <Route path={routes.show} exact component={Show} />
+          <Route path={routes.songWithName} component={Song} />
+          <Route path={routes.song} exact   component={Song} />
+          <Route path={routes.anyPath} component={Error} />
         </Switch>
       </HashRouter>
     </div>

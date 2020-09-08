@@ -55,6 +55,10 @@ export default function Song({match: {params}}) {
   if (!songData) {
     return <p>Uh oh, no song data found...</p>
   }
+  const songNameSlug = songData.title.toLowerCase().replace(/["'()]+/g, '').replace(/[^a-z0-9]+/g, '-')
+  if (!params.name || params.name !== songNameSlug) {
+    return <Redirect to={`/song/${songData.id}/${songNameSlug}`} />
+  }
   const songId = Number(songData.id)
 
   const performancesData = filter(propEq('song_id', songId))(Object.values(performancesObject))
