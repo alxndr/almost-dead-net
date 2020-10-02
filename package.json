@@ -29,7 +29,8 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "react-tippy": "^1.4.0"
+    "react-tippy": "^1.4.0",
+    "urlcat": "^2.0.4"
   },
   "devDependencies": {
     "eslint": "^7.4.0",
