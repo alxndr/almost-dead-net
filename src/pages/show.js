@@ -44,7 +44,7 @@ export default function Show({match: {params}}) {
     return <p>Uh oh, no venues found...</p>
   }
   if (!sets.length) {
-    return <p>Uh oh, no sets found...</p>
+    return <p>No sets yet.</p>
   }
   if (!guests.length) {
     return <p>Uh oh, no guests found...</p>
