@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Redirect, Route, Switch } from 'react-router-dom'
 import {filter, find, propEq} from 'ramda'
 
 import {
@@ -85,12 +85,27 @@ export default function Song({match: {params}}) {
             const variation = performanceData.variation
               ? `(${performanceData.variation})`
               : false
+            return {performanceData, showData, variation, whichSet}
+          })
+          .sort((perfA, perfB) => {
+            const dateA = new Date(perfA.showData.date.split('/'))
+            const dateB = new Date(perfB.showData.date.split('/'))
+            if (dateA > dateB) {
+              return -1
+            }
+            if (dateA < dateB) {
+              return 1
+            }
+            return 0
+          })
+          .map(({performanceData, showData, variation, whichSet}) => {
             return <li key={performanceData.id}>
               <Link to={url(routes.show, {id: showData.id})}>
                 {showData.date} {variation} in {whichSet}
               </Link>
             </li>
-          })}
+          })
+        }
       </ul>
     </>
     : false
