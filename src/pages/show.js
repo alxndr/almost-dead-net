@@ -91,7 +91,9 @@ export default function Show({match: {params}}) {
     const setData = find(propEq('id', Number(showData[`set${which}`])))(sets)
     const setlist = typeof setData.setlist === "number"
       ? [setData.setlist]
-      : setData.setlist.split(':')
+      : typeof setData.setlist === "string"
+        ? setData.setlist.split(':')
+        : []
     return setlists.concat([<Setlist isEncore={false} which={which} key={setData.id} setlist={setlist} />])
   }, [])
   const encores = [1, 2].reduce((encores, which) => {
@@ -123,7 +125,7 @@ export default function Show({match: {params}}) {
       }
       {encores.length
         ? encores
-        : <p>(no encore)</p>
+        : false
       }
       {notes && <div className="showpage__notes">{linkShowNotes(notes)}</div>}
     </section>
