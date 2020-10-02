@@ -23,6 +23,14 @@ function linkShowNotes(text) {
   </>
 }
 
+function normalizeSetlist(rawSetlistValue) {
+  return typeof rawSetlistValue === "number"
+    ? [rawSetlistValue]
+    : typeof rawSetlistValue === "string"
+      ? rawSetlistValue.split(':')
+      : []
+}
+
 export default function Show({match: {params}}) {
   const [shows, setShows] = useState(null)
   const [sets, setSets] = useState(null)
@@ -89,11 +97,7 @@ export default function Show({match: {params}}) {
       return setlists
     }
     const setData = find(propEq('id', Number(showData[`set${which}`])))(sets)
-    const setlist = typeof setData.setlist === "number"
-      ? [setData.setlist]
-      : typeof setData.setlist === "string"
-        ? setData.setlist.split(':')
-        : []
+    const setlist = normalizeSetlist(setData.setlist)
     return setlists.concat([<Setlist isEncore={false} which={which} key={setData.id} setlist={setlist} />])
   }, [])
   const encores = [1, 2].reduce((encores, which) => {
@@ -101,9 +105,7 @@ export default function Show({match: {params}}) {
       return encores
     }
     const setData = find(propEq('id', Number(showData[`encore${which}`])))(sets)
-    const setlist = typeof setData.setlist === "number"
-      ? [setData.setlist]
-      : setData.setlist.split(':')
+    const setlist = normalizeSetlist(setData.setlist)
     return encores.concat([<Setlist isEncore={true} which={which} key={setData.id} setlist={setlist} />])
   }, [])
   return <div className="showpage">
