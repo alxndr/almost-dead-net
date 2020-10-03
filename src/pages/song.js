@@ -47,7 +47,7 @@ export default function Song({match: {params}}) {
     parseIntoObjectWithCache(TEASES_URL, setTeases)
   }, [])
 
-  if (!(songsObject && performancesObject && showsObject && teasesObject)) {
+  if (!(songsObject && performancesObject && showsObject && teasesObject && setsObject)) {
     return <p>Loading...</p>
   }
 
