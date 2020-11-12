@@ -28,7 +28,7 @@
     "react-autosuggest": "^10.0.2",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "4.0.0",
     "react-tippy": "^1.4.0",
     "urlcat": "^2.0.4"
   },
