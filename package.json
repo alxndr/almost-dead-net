@@ -20,7 +20,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "classnames": "^2.2.6",
-    "dompurify": "^2.0.12",
+    "dompurify": "^2.0.17",
     "logrocket": "^1.0.14",
     "papaparse": "^5.2.0",
     "ramda": "^0.27.1",
