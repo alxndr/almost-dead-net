@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import { Link, Redirect, Route, Switch } from 'react-router-dom'
-import {filter, find, propEq} from 'ramda'
+import {filter, find, propEq, uniqBy} from 'ramda'
 
 import {
   SHOWS_URL,
@@ -62,50 +62,56 @@ export default function Song({match: {params}}) {
   const songId = Number(songData.id)
 
   const performancesData = filter(propEq('song_id', songId))(Object.values(performancesObject))
+  const attachMoreData = performanceData => {
+    const performanceIdStr = performanceData.id.toString()
+    const setData = find((set) => {
+      return set.setlist && set.setlist.toString().split(':').includes(performanceIdStr)
+    })(Object.values(setsObject))
+    if (!setData || !setData.id) {
+      console.warn(`missing setData...`, {performanceData, setsObject})
+      return false
+    }
+    const showData = find((show) => [show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(Object.values(showsObject))
+    if (!showData || !showData.id) {
+      console.warn(`missing showData...`, {performanceData, setData})
+      return false
+    }
+    const whichSet = Object.entries(SET_MAPPING).find(([col_name, readable_name]) => showData[col_name] === setData.id)[1]
+    const variation = performanceData.variation
+      ? `(${performanceData.variation})`
+      : false
+    return {performanceData, showData, variation, whichSet}
+  }
+
+  const performancesSorted = performancesData
+    .map(attachMoreData)
+    .filter((data) => !!data.showData)
+    .sort((perfA, perfB) => {
+      const dateA = new Date(perfA.showData.date.split('/'))
+      const dateB = new Date(perfB.showData.date.split('/'))
+      if (dateA > dateB) {
+        return -1
+      }
+      if (dateA < dateB) {
+        return 1
+      }
+      return 0
+    })
+  const uniqShows = uniqBy((perf) => perf.showData.id, performancesSorted)
+  console.log({performancesSorted, uniqShows})
+  const performances = performancesSorted
+    .map(({performanceData, showData, variation, whichSet}) => {
+      return <li key={performanceData.id}>
+        <Link to={url(routes.show, {id: showData.id})}>
+          {showData.date} {variation} in {whichSet}
+        </Link>
+      </li>
+    })
   const performancesComponent = performancesData.length > 0
     ?  <>
-      <h2>Performances</h2>
+      <h2>Performed at {`${uniqShows.length} Show${uniqShows.length === 1 ? '' : 's'}`}</h2>
       <ul>
-        {performancesData
-          .map(performanceData => {
-            const performanceIdStr = performanceData.id.toString()
-            const setData = find((set) => {
-              return set.setlist && set.setlist.toString().split(':').includes(performanceIdStr)
-            })(Object.values(setsObject))
-            if (!setData || !setData.id) {
-              console.warn(`missing setData...`, {performanceData, setsObject})
-              return false
-            }
-            const showData = find((show) => [show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(Object.values(showsObject))
-            if (!showData || !showData.id) {
-              console.warn(`missing showData...`, {performanceData, setData})
-              return false
-            }
-            const whichSet = Object.entries(SET_MAPPING).find(([col_name, readable_name]) => showData[col_name] === setData.id)[1]
-            const variation = performanceData.variation
-              ? `(${performanceData.variation})`
-              : false
-            return {performanceData, showData, variation, whichSet}
-          })
-          .sort((perfA, perfB) => {
-            const dateA = new Date(perfA.showData.date.split('/'))
-            const dateB = new Date(perfB.showData.date.split('/'))
-            if (dateA > dateB) {
-              return -1
-            }
-            if (dateA < dateB) {
-              return 1
-            }
-            return 0
-          })
-          .map(({performanceData, showData, variation, whichSet}) => {
-            return <li key={performanceData.id}>
-              <Link to={url(routes.show, {id: showData.id})}>
-                {showData.date} {variation} in {whichSet}
-              </Link>
-            </li>
-          })
-        }
+        {performances}
       </ul>
     </>
     : false
