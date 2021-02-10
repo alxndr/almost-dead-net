@@ -1,5 +1,6 @@
 import {
   GUESTS_URL,
+  RECORDINGS_URL,
   SEGUES_URL,
   SETS_URL,
   SHOWS_URL,
@@ -11,6 +12,7 @@ import {
 
 export {
   GUESTS_URL,
+  RECORDINGS_URL,
   SEGUES_URL,
   SETS_URL,
   SHOWS_URL,

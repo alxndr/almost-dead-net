@@ -4,6 +4,7 @@ import dompurify from 'dompurify'
 
 import {
   GUESTS_URL,
+  RECORDINGS_URL,
   SETS_URL,
   SHOWS_URL,
   VENUES_URL
@@ -11,7 +12,7 @@ import {
 import {parseWithCache} from '../fetch'
 
 import Setlist from '../components/setlist'
-import ShowPaginator from '../components/show_paginator'
+import Recording from '../components/recording'
 
 import './show.css'
 
@@ -36,11 +37,13 @@ export default function Show({match: {params}}) {
   const [sets, setSets] = useState(null)
   const [venues, setVenues] = useState(null)
   const [guests, setGuests] = useState(null)
+  const [recordings, setRecordings] = useState([])
   useEffect(() => {
     parseWithCache(SHOWS_URL, setShows)
     parseWithCache(SETS_URL, setSets)
     parseWithCache(VENUES_URL, setVenues)
     parseWithCache(GUESTS_URL, setGuests)
+    parseWithCache(RECORDINGS_URL, setRecordings)
   }, [])
   if (!shows || !venues || !sets || !guests) {
     return <p>Loading...</p>
@@ -62,8 +65,6 @@ export default function Show({match: {params}}) {
   if (!showData) {
     return <p>Uh oh, no show data found...</p>
   }
-  const nextShow = find(propEq('id', inputId + 1))(shows)
-  const prevShow = find(propEq('id', inputId - 1))(shows)
   const {date, event, notes, venue_id} = showData
   const findVenue = find(propEq('id', Number(venue_id)))
   const venueData = findVenue(venues)
@@ -91,6 +92,8 @@ export default function Show({match: {params}}) {
     }
   }).filter((data) => !!data)
   const showGuests = filter(where({shows: includes(inputId)}))(guestsWithSplitShows)
+
+  const showRecordings = filter(propEq('show', inputId))(recordings)
 
   const setlists = [1, 2, 3].reduce((setlists, which) => {
     if (!showData[`set${which}`]) {
@@ -131,6 +134,15 @@ export default function Show({match: {params}}) {
       }
       {notes && <div className="showpage__notes">{linkShowNotes(notes)}</div>}
     </section>
-    <ShowPaginator prev={prevShow} next={nextShow} />
+    {showRecordings.length
+      ?
+        <section className="links">
+          <h2>Recordings</h2>
+          <ul>
+            {showRecordings.map(({type, url}) => <Recording type={type} url={url} />)}
+          </ul>
+        </section>
+        : false
+    }
   </div>
 }
