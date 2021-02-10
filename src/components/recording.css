@@ -1,0 +1,7 @@
+section.showpage__recordings li {
+  margin: 1em 0;
+}
+
+section.showpage__recordings li a {
+  display: block;
+}

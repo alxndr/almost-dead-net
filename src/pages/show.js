@@ -112,7 +112,7 @@ export default function Show({match: {params}}) {
     return encores.concat([<Setlist isEncore={true} which={which} key={setData.id} setlist={setlist} />])
   }, [])
   return <div className="showpage">
-    <section>
+    <section className="showpage__setlist">
       <h1 className="showpage__pagetitle">
         <span className="showpage__pagetitle--band">Joe Russo's Almost Dead</span>
         <span className="showpage__pagetitle--date">{date}</span>
@@ -136,7 +136,7 @@ export default function Show({match: {params}}) {
     </section>
     {showRecordings.length
       ?
-        <section className="links">
+        <section className="showpage__recordings">
           <h2>Recordings</h2>
           <ul>
             {showRecordings.map(({type, url}) => <Recording type={type} url={url} />)}
