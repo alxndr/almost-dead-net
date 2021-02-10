@@ -1,13 +1,13 @@
-const URL_BASE = 'https://gist.githubusercontent.com/alxndr/5f64cf477d5202c004856772ad2222db/raw/d4c129500e934b1c857fa0ac096e178bb5c003b2'
-
-const GUESTS_URL = `${URL_BASE}/guests.csv`
-const SEGUES_URL = `${URL_BASE}/segues.csv`
-const SETS_URL = `${URL_BASE}/sets.csv`
-const SHOWS_URL = `${URL_BASE}/shows.csv`
-const SONG_PERFORMANCES_URL = `${URL_BASE}/songperformances.csv`
-const SONGS_URL = `${URL_BASE}/songs.csv`
-const TEASES_URL = `${URL_BASE}/teases.csv`
-const VENUES_URL = `${URL_BASE}/venues.csv`
+import {
+  GUESTS_URL,
+  SEGUES_URL,
+  SETS_URL,
+  SHOWS_URL,
+  SONG_PERFORMANCES_URL,
+  SONGS_URL,
+  TEASES_URL,
+  VENUES_URL,
+} from './data/urls'
 
 export {
   GUESTS_URL,
