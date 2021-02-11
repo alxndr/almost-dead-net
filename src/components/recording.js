@@ -34,9 +34,10 @@ function determineEmbed(url) {
     ></iframe>
   }
   if (url.startsWith('https://archive.org/')) {
+    const embedUrl = url.replace('/details/', '/embed/')
     return <iframe
       title="audio of the show"
-      src={url}
+      src={`${embedUrl}?playlist=1`}
       width="400"
       height="400"
       frameBorder="0"
