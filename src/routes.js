@@ -1,5 +1,6 @@
 import urlcat from 'urlcat'
 
+const about = '/about'
 const anyPath = `/:path`
 const home = `/`
 const show = `/show/:id`
@@ -11,6 +12,7 @@ export function url(route, params) {
 }
 
 export default {
+  about,
   anyPath,
   home,
   show,

@@ -56,8 +56,16 @@ a:active, a:visited {
   object-fit: scale-down;
 }
 
-#site-footer {
-  padding: 3em;
-  text-align: center;
-  background: #ddd;
+footer.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  box-shadow: 0px 2px 10px 10px #000000d4;
+}
+.footer img {
+  max-height: 2em;
+}
+.footer .footer__link-about {
+  /*flex-grow: 3;*/
 }
