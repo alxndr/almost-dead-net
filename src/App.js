@@ -31,7 +31,7 @@ function App() {
     <footer id="site-footer" className="footer">
       <a className="footer__logo" id="logo-bottom" href="?#" title="return to home page"><img src="https://i.imgur.com/tvtgYVY.png" alt="Good Ol' Almost Dead" /></a>
       <a className="footer__link-about" href="?#about" title="About the Site">About the Site</a>
-      <a className="footer__logo-lot" href="https://lot.almost-dead.net" title="JRAD Forum — The Lot"><img src="https://i.imgur.com/3NPPk5a.png" alt="The Lot — a forum for fans of Joe Russo's Almost Dead" /></a>
+      <a className="footer__logo-lot" href="https://lot.almost-dead.net" title="JRAD Forum — The Lot"><img src="https://i.imgur.com/Qi2NhJO.png" alt="The Lot — a forum for fans of Joe Russo's Almost Dead" /></a>
     </footer>
   </>
 }
