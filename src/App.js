@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import {releaseStage} from './release-stages'
 import {
@@ -17,7 +17,7 @@ function App() {
   return <>
     <div className={`App ${releaseStage()}`}>
       <a id="logo" href="?#" title="return to home page"><img src="https://i.imgur.com/tvtgYVY.png" alt="Good Ol' Almost Dead" /></a>
-      <HashRouter>
+      <BrowserRouter>
         <Switch>
           <Route path={routes.home} exact component={Home} />
           <Route path={routes.about} exact component={About} />
@@ -26,7 +26,7 @@ function App() {
           <Route path={routes.song} exact   component={Song} />
           <Route path={routes.anyPath} component={Error} />
         </Switch>
-      </HashRouter>
+      </BrowserRouter>
     </div>
     <footer id="site-footer" className="footer">
       <a className="footer__logo" id="logo-bottom" href="?#" title="return to home page"><img src="https://i.imgur.com/tvtgYVY.png" alt="Good Ol' Almost Dead" /></a>
