@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "start": "react-scripts start",
-    "build": "echo building... && cd static && GIT_SHA=$(git rev-parse --verify --quiet) react-static build",
+    "build": "echo building... && GIT_SHA=$(git rev-parse --verify --quiet) react-static build",
     "predeploy": "npm run build",
     "deploy": "TAG=deploy-$(date '+%F-%H%M%S-%Z') && gh-pages --dotfiles --branch gh-pages --dist build --tag $TAG && echo cleaning up... && gh-pages-clean",
     "pretest": "npm run lint",
