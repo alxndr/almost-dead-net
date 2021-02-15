@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
-import { Link, Redirect, Route, Switch } from 'react-router-dom'
+
+import {Link, Redirect} from 'react-router-dom'
 import {filter, find, propEq, uniqBy} from 'ramda'
 
 import {
