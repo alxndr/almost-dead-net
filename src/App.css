@@ -1,7 +1,8 @@
 h1 {
   margin-top: 0;
   font-family: 'Shadows Into Light', fantasy;
-  line-height: 1.3em;
+  font-size: 1.9em;
+  line-height: 1.1em;
 }
 a {
   color: #013;
@@ -30,30 +31,24 @@ a:active, a:visited {
   min-height: 100%;
 }
 
-#logo {
+.App__banner {
   display: block;
-  position: absolute;
-  max-width: 25%;
-  top: 0.5em;
-  right: 0.5em;
-  opacity: 0.2;
+  text-align: right;
+  opacity: 0.5;
+  border-radius: 0 0 0 100%;
 }
-#logo:hover {
+.App__banner:hover {
   opacity: 0.9;
 }
-.App.canary #logo {
-  background: radial-gradient(circle, yellow 0%, khaki 49%, rgba(255,255,255,0) 50%);
+.App.unknown .App__banner {
+  background: linear-gradient(to right, #FFFFFF00 20%, lime 90%);
 }
-.App.unknown #logo {
-  background: radial-gradient(circle, plum 0%, chartreuse 49%, rgba(255,255,255,0) 50%);
+.App.dev .App__banner {
+  background: linear-gradient(to right, #FFFFFF00 20%, magenta 90%);
 }
-.App.dev #logo {
-  background: radial-gradient(circle, magenta 0%, indigo 49%, rgba(255,255,255,0) 50%);
-}
-#logo img {
-  width: 100%;
-  max-height: 6em;
-  object-fit: scale-down;
+.App__banner img {
+  min-width: 13em;
+  max-width: 33%;
 }
 
 footer.footer {

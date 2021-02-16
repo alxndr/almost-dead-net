@@ -16,7 +16,7 @@ import './App.css'
 function App() {
   return <>
     <div className={`App ${releaseStage()}`}>
-      <a id="logo" href="?#" title="return to home page"><img src="https://i.imgur.com/tvtgYVY.png" alt="Good Ol' Almost Dead" /></a>
+      <a className="App__banner" href="/" title="Almost-Dead.net home page"><img src="https://i.imgur.com/q5cBEHG.png" alt="ALmost-Dead.net banner" /></a>
       <HashRouter>
         <Switch>
           <Route path={routes.home} exact component={Home} />
