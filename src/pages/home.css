@@ -9,18 +9,17 @@ h1 {
   width: 100%;
 }
 
-.homepage__news {
+article > section:not(.homepage__showsbyyear) {
   margin: 0.5em;
   border-radius: 1em;
   padding: 0.5em 2em;
   box-shadow: 0px 10px 13px #33333377 inset;
 }
 
+.homepage__news {
+}
+
 .homepage__songfinder {
-  margin: 0.5em;
-  border-radius: 1em;
-  padding: 0.5em 2em;
-  box-shadow: 0px 10px 13px #33333377 inset;
 }
 
 .homepage__showsbyyear {

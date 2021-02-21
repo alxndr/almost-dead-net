@@ -22,13 +22,13 @@ export default function ShowsByYear({rawShows, rawVenues}) {
     }
     return acc
   }, {})
-  return <ul className="showslist__years">
+  return <ul className="showsbyyear">
     {Object.entries(showsByYear).reverse().map(([year, showsInYear]) => {
-      return <li className={`showslist__years--${year}`} key={year}>
+      return <li className={`showsbyyear--${year}`} key={year}>
         <h3>{year}</h3>
-        <ul className="showslist__years__shows">
+        <ul className="showsbyyear__shows">
           {Object.entries(showsInYear).map(([monthAndDay, show]) => {
-            return <li className={`showslist__years__shows__${monthAndDay}`} key={monthAndDay}>
+            return <li className={`showsbyyear__shows__${monthAndDay}`} key={monthAndDay}>
               <ShowEntry key={show.id} show={show}>{monthAndDay}</ShowEntry>
             </li>
           })}
