@@ -1,26 +1,29 @@
 import React, {useState, useEffect} from 'react'
+import {useRouteData} from 'react-static'
 
 import SongFinder from '../components/song_finder'
 import ShowsByYear from '../components/shows_by_year'
 
-import {
-  SHOWS_URL,
-  VENUES_URL,
-} from '../data'
-import {parseIntoObjectWithCache} from '../fetch'
+//import {
+//  SHOWS_URL,
+//  VENUES_URL,
+//} from '../data'
+//import {parseIntoObjectWithCache} from '../fetch'
 
 import './home.css'
 
 export default function Home(props) {
-  const [shows, setShows] = useState(null)
-  const [venues, setVenues] = useState(null)
-  useEffect(() => {
-    parseIntoObjectWithCache(SHOWS_URL, setShows, null, (rowData) => !!rowData.date)
-    parseIntoObjectWithCache(VENUES_URL, setVenues, null, (rowData) => !!rowData.name && !!rowData.location)
-  }, [])
-  if (!shows || !venues) {
-    return <p>Loading...</p>
-  }
+  const {shows, venues} = useRouteData()
+  console.log('Home component...', {shows, venues})
+  //const [shows, setShows] = useState(null)
+  //const [venues, setVenues] = useState(null)
+  //useEffect(() => {
+  //  parseIntoObjectWithCache(SHOWS_URL, setShows, null, (rowData) => !!rowData.date)
+  //  parseIntoObjectWithCache(VENUES_URL, setVenues, null, (rowData) => !!rowData.name && !!rowData.location)
+  //}, [])
+  //if (!shows || !venues) {
+  //  return <p>Loading...</p>
+  //}
   return <section className="homepage">
     <h1>JRAD Setlists</h1>
     <p>Find a song:</p>

@@ -1,14 +1,14 @@
 {
   "name": "almost-dead-net",
   "homepage": "http://almost-dead.net",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "repository": "https://github.com/alxndr/almost-dead-net",
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-static start",
     "build": "echo building... && GIT_SHA=$(git rev-parse --verify --quiet) react-static build",
     "predeploy": "npm run build",
-    "deploy": "TAG=deploy-$(date '+%F-%H%M%S-%Z') && gh-pages --dotfiles --branch gh-pages --dist build --tag $TAG && echo cleaning up... && gh-pages-clean",
+    "deploy": "TAG=deploy-$(date '+%F-%H%M%S-%Z') && echo \"gh-pages --dotfiles --branch gh-pages --dist build --tag $TAG && echo cleaning up... && gh-pages-clean\"",
     "pretest": "npm run lint",
     "test": "react-scripts test",
     "lint": "echo linting... && eslint src/ && echo Successfully linted JS",
@@ -35,7 +35,9 @@
   "devDependencies": {
     "eslint": "^6.6.0",
     "gh-pages": "^3.1.0",
-    "react-hot-loader": "^4.13.0"
+    "react-hot-loader": "^4.13.0",
+    "react-static": "^7.5.3",
+    "react-static-plugin-source-filesystem": "^7.5.3"
   },
   "eslintConfig": {
     "parserOptions": {

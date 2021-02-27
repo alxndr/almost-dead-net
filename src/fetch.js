@@ -5,10 +5,6 @@ import {
   urlToKeyCSV,
 } from './fetch.helpers'
 
-export function getCsv(csvUrl, callback, papaParseOptions = {}) {
-  throw new Error('getCsv has been deprecated... check out the new hotness: fetchWithCache')
-}
-
 /**
  * Retrieve data for the given URL, either from localStorage (if available) or the network.
  * TODO:
@@ -44,10 +40,10 @@ export async function parseWithCache(url, callback, papaParseOptions) {
     header: true,
     complete: (response) => {
       if (!response)
-        throw new Error('getCsvWithCache: No response when fetching', {url})
+        throw new Error('parseWithCache: No response when fetching', {url})
       const {data, errors} = response
       if (errors.length)
-        throw new Error('getCsvWithCache: Error fetching', {url, response})
+        throw new Error('parseWithCache: Error fetching', {url, response})
       return callback(data)
     },
     ...papaParseOptions,
