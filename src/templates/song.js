@@ -3,15 +3,15 @@ import React, {useEffect, useState} from 'react'
 import {Link, Redirect} from 'react-router-dom'
 import {filter, find, propEq, uniqBy} from 'ramda'
 
-import {
-  SHOWS_URL,
-  SETS_URL,
-  SONG_PERFORMANCES_URL,
-  SONGS_URL,
-  TEASES_URL,
-} from '../data'
-import {parseIntoObjectWithCache} from '../fetch'
-import routes, {url} from '../routes'
+//import {
+//  SHOWS_URL,
+//  SETS_URL,
+//  SONG_PERFORMANCES_URL,
+//  SONGS_URL,
+//  TEASES_URL,
+//} from '../data'
+//import {parseIntoObjectWithCache} from '../fetch'
+//import routes, {url} from '../routes'
 
 import './song.css'
 
@@ -34,25 +34,11 @@ const SET_MAPPING = { // 'show table column name' to 'human readable set name'
   encore2: 'double encore',
 }
 
-export default function Song({match: {params}}) {
-  const [showsObject, setShows] = useState(null)
-  const [setsObject, setSets] = useState(null)
-  const [songsObject, setSongs] = useState(null)
-  const [performancesObject, setPerformances] = useState(null)
-  const [teasesObject, setTeases] = useState(null)
-  useEffect(() => {
-    parseIntoObjectWithCache(SHOWS_URL, setShows)
-    parseIntoObjectWithCache(SETS_URL, setSets)
-    parseIntoObjectWithCache(SONGS_URL, setSongs)
-    parseIntoObjectWithCache(SONG_PERFORMANCES_URL, setPerformances, null, (rowData) => !!rowData.song_id)
-    parseIntoObjectWithCache(TEASES_URL, setTeases)
-  }, [])
-
-  if (!(songsObject && performancesObject && showsObject && teasesObject && setsObject)) {
+export default function Song({pageContext: {shows, sets, songs, songPerformances, teases}, match: {params}}) {
+  if (!(songs && songPerformances && shows && teases && sets)) {
     return <p>Loading...</p>
   }
-
-  const songData = songsObject[params.id]
+  const songData = songs[params.id]
   if (!songData) {
     return <p>Uh oh, no song data found...</p>
   }
@@ -61,18 +47,17 @@ export default function Song({match: {params}}) {
     return <Redirect to={`/song/${songData.id}/${songNameSlug}`} />
   }
   const songId = Number(songData.id)
-
-  const performancesData = filter(propEq('song_id', songId))(Object.values(performancesObject))
+  const performancesData = filter(propEq('song_id', songId))(Object.values(songPerformances))
   const attachMoreData = performanceData => {
     const performanceIdStr = performanceData.id.toString()
     const setData = find((set) => {
       return set.setlist && set.setlist.toString().split(':').includes(performanceIdStr)
-    })(Object.values(setsObject))
+    })(Object.values(sets))
     if (!setData || !setData.id) {
-      console.warn(`missing setData...`, {performanceData, setsObject})
+      console.warn(`missing setData...`, {performanceData, sets})
       return false
     }
-    const showData = find((show) => [show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(Object.values(showsObject))
+    const showData = find((show) => [show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(Object.values(shows))
     if (!showData || !showData.id) {
       console.warn(`missing showData...`, {performanceData, setData})
       return false
@@ -99,11 +84,11 @@ export default function Song({match: {params}}) {
       return 0
     })
   const uniqShows = uniqBy((perf) => perf.showData.id, performancesSorted)
-  console.log({performancesSorted, uniqShows})
+  //console.log({performancesSorted, uniqShows})
   const performances = performancesSorted
     .map(({performanceData, showData, variation, whichSet}) => {
       return <li key={performanceData.id}>
-        <Link to={url(routes.show, {id: showData.id})}>
+        <Link to={`/show/${showData.id}`}>
           {showData.date} {variation} in {whichSet}
         </Link>
       </li>

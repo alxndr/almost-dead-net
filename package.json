@@ -1,18 +1,24 @@
 {
   "name": "almost-dead-net",
   "homepage": "http://almost-dead.net",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "repository": "https://github.com/alxndr/almost-dead-net",
   "private": true,
+  "license": "UNLICENSED",
+  "author": "@alxndr",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "echo building... && GIT_SHA=$(git rev-parse --verify --quiet) react-scripts build",
+    "_start": "react-scripts start",
+    "_build": "echo building... && GIT_SHA=$(git rev-parse --verify --quiet) react-scripts build",
+    "build": "gatsby build",
+    "clean": "gatsby clean",
     "predeploy": "npm run build",
     "deploy": "TAG=deploy-$(date '+%F-%H%M%S-%Z') && gh-pages --dotfiles --branch gh-pages --dist build --tag $TAG && echo cleaning up... && gh-pages-clean",
+    "serve": "gatsby serve",
+    "serve:dev": "GATSBY_LOGGER=ink gatsby develop",
     "pretest": "npm run lint",
     "test": "react-scripts test",
     "lint": "echo linting... && eslint src/ && echo Successfully linted JS",
-    "eject": "react-scripts eject"
+    "_eject": "react-scripts eject"
   },
   "dependencies": {
     "@sentry/browser": "^5.18.1",
@@ -21,6 +27,7 @@
     "@testing-library/user-event": "^7.2.1",
     "classnames": "^2.2.6",
     "dompurify": "^2.2.4",
+    "gatsby": "^2",
     "logrocket": "^1.0.14",
     "papaparse": "^5.3.0",
     "ramda": "^0.27.1",

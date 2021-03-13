@@ -2,14 +2,14 @@ import React, {useEffect, useState} from 'react'
 import {filter, find, includes, propEq, where} from 'ramda'
 import dompurify from 'dompurify'
 
-import {
-  GUESTS_URL,
-  RECORDINGS_URL,
-  SETS_URL,
-  SHOWS_URL,
-  VENUES_URL
-} from '../data'
-import {parseWithCache} from '../fetch'
+//import {
+//  GUESTS_URL,
+//  RECORDINGS_URL,
+//  SETS_URL,
+//  SHOWS_URL,
+//  VENUES_URL
+//} from '../data'
+//import {parseWithCache} from '../fetch'
 
 import Setlist from '../components/setlist'
 import Recording from '../components/recording'
@@ -32,19 +32,19 @@ function normalizeSetlist(rawSetlistValue) {
       : []
 }
 
-export default function Show({match: {params}}) {
-  const [shows, setShows] = useState(null)
-  const [sets, setSets] = useState(null)
-  const [venues, setVenues] = useState(null)
-  const [guests, setGuests] = useState(null)
-  const [recordings, setRecordings] = useState([])
-  useEffect(() => {
-    parseWithCache(SHOWS_URL, setShows)
-    parseWithCache(SETS_URL, setSets)
-    parseWithCache(VENUES_URL, setVenues)
-    parseWithCache(GUESTS_URL, setGuests)
-    parseWithCache(RECORDINGS_URL, setRecordings)
-  }, [])
+export default function Show({pageContext: {shows, sets, venues, guests, recordings}, {match: {params}}) {
+  //const [shows, setShows] = useState(null)
+  //const [sets, setSets] = useState(null)
+  //const [venues, setVenues] = useState(null)
+  //const [guests, setGuests] = useState(null)
+  //const [recordings, setRecordings] = useState([])
+  //useEffect(() => {
+  //  parseWithCache(SHOWS_URL, setShows)
+  //  parseWithCache(SETS_URL, setSets)
+  //  parseWithCache(VENUES_URL, setVenues)
+  //  parseWithCache(GUESTS_URL, setGuests)
+  //  parseWithCache(RECORDINGS_URL, setRecordings)
+  //}, [])
   if (!shows || !venues || !sets || !guests) {
     return <p>Loading...</p>
   }
