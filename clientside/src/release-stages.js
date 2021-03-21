@@ -19,3 +19,16 @@ export function releaseStage() {
       return STAGES.UNKNOWN
   }
 }
+
+export function determineRelease() {
+  if (process.env.GIT_SHA && process.env.GIT_SHA.length) {
+    // TODO this doesn't work when served from gh-pages...
+    return process.env.GIT_SHA
+  }
+  if (process.env.NODE_ENV === 'development') {
+    return 'develop'
+  }
+  return 'unknown'
+}
+console.log('release...', determineRelease())
+

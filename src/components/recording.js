@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './recording.css'
+//import './recording.css'
 
 const REGEX_YTID_PARAM = /[?&]v=([\w-]+)/
 const REGEX_YTID_SHORTURL = /\/\/youtu\.be\/([\w-]+)/

@@ -2,19 +2,10 @@ import React, {useEffect, useState} from 'react'
 import {filter, find, includes, propEq, where} from 'ramda'
 import dompurify from 'dompurify'
 
-//import {
-//  GUESTS_URL,
-//  RECORDINGS_URL,
-//  SETS_URL,
-//  SHOWS_URL,
-//  VENUES_URL
-//} from '../data'
-//import {parseWithCache} from '../fetch'
-
 import Setlist from '../components/setlist'
 import Recording from '../components/recording'
 
-import './show.css'
+//import './show.css'
 
 function linkShowNotes(text) {
   return <>{text.split(/\s/g).flatMap(word => word.startsWith('https://')
@@ -32,45 +23,26 @@ function normalizeSetlist(rawSetlistValue) {
       : []
 }
 
-export default function Show({pageContext: {shows, sets, venues, guests, recordings}, {match: {params}}) {
-  //const [shows, setShows] = useState(null)
-  //const [sets, setSets] = useState(null)
-  //const [venues, setVenues] = useState(null)
-  //const [guests, setGuests] = useState(null)
-  //const [recordings, setRecordings] = useState([])
-  //useEffect(() => {
-  //  parseWithCache(SHOWS_URL, setShows)
-  //  parseWithCache(SETS_URL, setSets)
-  //  parseWithCache(VENUES_URL, setVenues)
-  //  parseWithCache(GUESTS_URL, setGuests)
-  //  parseWithCache(RECORDINGS_URL, setRecordings)
-  //}, [])
-  if (!shows || !venues || !sets || !guests) {
-    return <p>Loading...</p>
-  }
-  if (!shows.length) {
-    return <p>Uh oh, no shows found...</p>
-  }
-  if (!venues.length) {
-    return <p>Uh oh, no venues found...</p>
-  }
-  if (!sets.length) {
-    return <p>No sets yet.</p>
-  }
-  if (!guests.length) {
-    return <p>Uh oh, no guests found...</p>
-  }
-  const inputId = Number(params.id)
-  const showData = find(propEq('id', inputId))(shows)
-  if (!showData) {
-    return <p>Uh oh, no show data found...</p>
-  }
+export default function Show({pageContext: {show, shows, setts, venue, guests, recordings, performances, segues, songs, teases}}) {
+  const sets = JSON.parse(setts)
+  console.log('Show.....', {sets: sets.length, shows: shows.length, recordings: recordings.length})
+  /* show:
+    date: "9/19/2014"
+    encore1: "10"
+    encore2: ""
+    event: ""
+    id: "4"
+    links: ""
+    notes: ""
+    set1: "8"
+    set2: "9"
+    set3: ""
+    soundcheck: ""
+    venue_id: "31"
+    */
+  const showData = show
   const {date, event, notes, venue_id} = showData
-  const findVenue = find(propEq('id', Number(venue_id)))
-  const venueData = findVenue(venues)
-  if (!venueData) {
-    return <p>Uh oh, no venue data found...</p>
-  }
+  const venueData = venue
   const {name, location} = venueData
 
   const guestsWithSplitShows = guests.map((guestData) => {
@@ -91,25 +63,47 @@ export default function Show({pageContext: {shows, sets, venues, guests, recordi
       shows: guestData.shows.split(':').map(Number.bind(null))
     }
   }).filter((data) => !!data)
-  const showGuests = filter(where({shows: includes(inputId)}))(guestsWithSplitShows)
+  const showGuests = filter(where({shows: includes(showData.id)}))(guestsWithSplitShows)
 
-  const showRecordings = filter(propEq('show', inputId))(recordings)
+  const showRecordings = filter(propEq('show', showData.id))(recordings)
 
   const setlists = [1, 2, 3].reduce((setlists, which) => {
     if (!showData[`set${which}`]) {
       return setlists
     }
-    const setData = find(propEq('id', Number(showData[`set${which}`])))(sets)
+    const setData = find(propEq('id', (showData[`set${which}`])))(sets)
     const setlist = normalizeSetlist(setData.setlist)
-    return setlists.concat([<Setlist isEncore={false} which={which} key={setData.id} setlist={setlist} />])
+    return setlists.concat([
+      <Setlist
+        isEncore={false}
+        which={which}
+        key={setData.id}
+        setlist={setlist}
+        performances={performances}
+        segues={segues}
+        songs={songs}
+        teases={teases}
+      />
+    ])
   }, [])
   const encores = [1, 2].reduce((encores, which) => {
     if (!showData[`encore${which}`]) {
       return encores
     }
-    const setData = find(propEq('id', Number(showData[`encore${which}`])))(sets)
+    const setData = find(propEq('id', (showData[`encore${which}`])))(sets)
     const setlist = normalizeSetlist(setData.setlist)
-    return encores.concat([<Setlist isEncore={true} which={which} key={setData.id} setlist={setlist} />])
+    return encores.concat([
+      <Setlist
+        isEncore={true}
+        which={which}
+        key={setData.id}
+        setlist={setlist}
+        performances={performances}
+        segues={segues}
+        songs={songs}
+        teases={teases}
+      />
+    ])
   }, [])
   return <div className="showpage">
     <section className="showpage__setlist">

@@ -1,8 +1,22 @@
-const path = require('path')
+require('logrocket').init('wi5hyr/a-dn')
+
 const axios = require('axios')
 const csv = require('papaparse')
 
-const ENDPOINTS = require('./src/data/urls.js')
+const URL_BASE = 'https://gist.githubusercontent.com/alxndr/5f64cf477d5202c004856772ad2222db/raw/faf319e3d91a633199ec7087ae132e7d61bda902'
+const ENDPOINTS = {
+  GUESTS_URL: `${URL_BASE}/guests.csv`,
+  RECORDINGS_URL: `${URL_BASE}/recordings.csv`,
+  SEGUES_URL: `${URL_BASE}/segues.csv`,
+  SETS_URL: `${URL_BASE}/sets.csv`,
+  SHOWS_URL: `${URL_BASE}/shows.csv`,
+  SONG_PERFORMANCES_URL: `${URL_BASE}/songperformances.csv`,
+  SONGS_URL: `${URL_BASE}/songs.csv`,
+  TEASES_URL: `${URL_BASE}/teases.csv`,
+  VENUES_URL: `${URL_BASE}/venues.csv`,
+}
+
+const Show = require.resolve('./src/pages/show.js')
 
 async function fetchCSVintoObject(url, isValidEntry) {
   const {data} = await axios.get(url)
@@ -31,34 +45,56 @@ async function fetchCSVintoObject(url, isValidEntry) {
 }
 
 exports.createPages = async ({ actions: { createPage } }) => {
+  console.log('fetching show data...')
   const shows = await fetchCSVintoObject(ENDPOINTS.SHOWS_URL, (show) => !!show.date)
+  console.log(Object.values(shows).length)
+  console.log('fetching venue data...')
   const venues = await fetchCSVintoObject(ENDPOINTS.VENUES_URL, (venue) => !!venue.name && !!venue.location)
-  //const sets = await fetchCSVintoObject(ENDPOINTS.SETS_URL, (set) => !!set.date)
-  //const songs = await fetchCSVintoObject(ENDPOINTS.SONGS_URL, (song) => !!song.title)
-  //const songPerformances = await fetchCSVintoObject(ENDPOINTS.SONG_PERFORMANCES_URL, (perf) => !!perf.song_id)
-  //const teases = await fetchCSVintoObject(ENDPOINTS.TEASES_URL, (tease) => !!tease.performance_id)
-  //const guests = await fetchCSVintoObject(ENDPOINTS.GUESTS_URL, (guest) => !!guest.name)
-  //const recordings = await fetchCSVintoObject(ENDPOINTS.RECORDINGS_URL, (recording) => !!recording.url)
-
-  createPage({
-    path: '/',
-    component: path.resolve('./src/pages/home.jsx'),
-    context: { shows, venues }
+  //console.log(venues['71'])
+  console.log(Object.values(venues).length)
+  console.log('fetching set data...')
+  const sets = await fetchCSVintoObject(ENDPOINTS.SETS_URL, (set) => !!set.id)
+  //console.log(Object.values(sets))
+  console.log(Object.values(sets).length)
+  console.log('fetching song data...')
+  const songs = await fetchCSVintoObject(ENDPOINTS.SONGS_URL, (song) => !!song.title)
+  console.log(Object.values(songs).length)
+  console.log('fetching performance data...')
+  const performances = await fetchCSVintoObject(ENDPOINTS.SONG_PERFORMANCES_URL, (perf) => !!perf.song_id)
+  console.log(Object.values(performances).length)
+  console.log('fetching tease data...')
+  const teases = await fetchCSVintoObject(ENDPOINTS.TEASES_URL, (tease) => !!tease.performance_id)
+  console.log(Object.values(teases).length)
+  console.log('fetching segue data...')
+  const segues = await fetchCSVintoObject(ENDPOINTS.SEGUES_URL, (segue) => !!segue.id)
+  console.log(Object.values(segues).length)
+  console.log('fetching guest data...')
+  const guests = await fetchCSVintoObject(ENDPOINTS.GUESTS_URL, (guest) => !!guest.name)
+  console.log(Object.values(guests).length)
+  console.log('fetching recording data...')
+  const recordings = await fetchCSVintoObject(ENDPOINTS.RECORDINGS_URL, (recording) => !!recording.url)
+  console.log(Object.values(recordings).length)
+  Object.values(shows).forEach((show) => {
+    //console.log('tryna create an individual page:', show)
+    createPage({
+      path: `/show/${show.id}`, // TODO add slug
+      component: Show,
+      context: {
+        show,
+        shows: Object.values(shows),
+        setts: JSON.stringify(Object.values(sets)), // Gatsby feeds these through GraphQL … https://docs.joshuatz.com/cheatsheets/gatsby-js/
+        venue: venues[show.venue_id],
+        guests: Object.values(guests),
+        recordings: Object.values(recordings),
+        performances: Object.values(performances),
+        segues: Object.values(segues),
+        songs: Object.values(songs),
+        teases: Object.values(teases),
+      }
+    })
   })
-
-  //shows.forEach((show) => {
-  //  createPage({
-  //    path: `/show/${show.id}`, // TODO add slug
-  //    component: './src/templates/show.js',
-  //    context: {shows, sets, venues, guests, recordings}
-  //  })
-  //})
-
-  //songs.forEach((song) => {
-  //  createPage({
-  //    path: `/song/${song.id}`, // TODO add slug
-  //    component: './src/templates/song.js',
-  //    context: {shows, sets, songs, songPerformances, teases}
-  //  })
-  //})
 }
+
+//exports.onCreateNode = ({ node }) => {
+//  console.log(`Node created of type "${node.internal.type}"`)
+//}

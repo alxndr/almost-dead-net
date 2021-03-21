@@ -1,15 +1,6 @@
 import React, {useEffect, useState} from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from 'gatsby'
 import {filter, find, groupWith, propEq} from 'ramda'
-
-import {
-  SEGUES_URL,
-  SONG_PERFORMANCES_URL,
-  SONGS_URL,
-  TEASES_URL,
-} from '../data'
-import {parseWithCache} from '../fetch'
-import routes, {url} from '../routes'
 
 import Segue from './segue'
 import PerfNote from './perf_note'
@@ -18,14 +9,14 @@ import TeasesNote from './teases_note'
 import './setlist.css'
 import 'react-tippy/dist/tippy.css'
 
-const findByIntegerId = (id) => find(propEq('id', Number(id)))
+const findById = (id) => find(propEq('id', id))
 
 function SetlistEntry({performanceData, songData, segues, teases}) {
   const displayName = /*songData.nicknames ? songData.nicknames.split(';', 1) :*/ songData.title
   const segueData = find(propEq('from_perf_id', performanceData.id))(segues)
   const teasesArray = filter(propEq('performance_id', performanceData.id))(teases)
   return <li>
-    <Link to={url(routes.song, {id: performanceData.song_id})}>
+    <Link to={`/song/${performanceData.song_id}`}>
       {displayName}
     </Link>
     {' '}
@@ -37,16 +28,12 @@ function SetlistEntry({performanceData, songData, segues, teases}) {
 }
 
 export default function Setlist(props) {
-  const [performances, setPerformances] = useState(null)
-  const [segues, setSegues] = useState(null)
-  const [songs, setSongs] = useState(null)
-  const [teases, setTeases] = useState(null)
-  useEffect(() => {
-    parseWithCache(SONG_PERFORMANCES_URL, setPerformances)
-    parseWithCache(SEGUES_URL, setSegues)
-    parseWithCache(SONGS_URL, setSongs)
-    parseWithCache(TEASES_URL, setTeases)
-  }, [])
+  const {
+    performances,
+    segues,
+    songs,
+    teases
+  } = props
   if (!(performances && songs && segues && teases)) {
     return <p>Loading...</p>
   }
@@ -65,7 +52,8 @@ export default function Setlist(props) {
   const groupedBySuite = groupWith(
     (a, b) => a.suite && a.suite === b.suite,
     props.setlist.map((perfId) => {
-      const performanceData = findByIntegerId(perfId)(performances)
+      const performanceData = findById(perfId)(performances)
+      console.log({perfId, performanceData})
       const songData = find(propEq('id', performanceData.song_id))(songs)
       return {
         suite: songData.suite,
