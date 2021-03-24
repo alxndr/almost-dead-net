@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import { Link } from 'gatsby'
+import {Link} from 'gatsby'
 import {filter, find, groupWith, propEq} from 'ramda'
 
 import Segue from './segue'
@@ -53,8 +53,7 @@ export default function Setlist(props) {
     (a, b) => a.suite && a.suite === b.suite,
     props.setlist.map((perfId) => {
       const performanceData = findById(perfId)(performances)
-      console.log({perfId, performanceData})
-      const songData = find(propEq('id', performanceData.song_id))(songs)
+      const songData = findById(performanceData.song_id)(songs)
       return {
         suite: songData.suite,
         songData,

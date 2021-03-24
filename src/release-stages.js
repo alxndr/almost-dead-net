@@ -6,7 +6,7 @@ export const STAGES = {
 }
 
 export function releaseStage() {
-  if (!document || !document.location || !document.location.hostname)
+  if (!window || !window.document || !document.location || !document.location.hostname)
     return STAGES.UNKNOWN
   switch (document.location.hostname) {
     case 'almost-dead.net':

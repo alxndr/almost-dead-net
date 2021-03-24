@@ -1,7 +1,7 @@
 import React from 'react'
 import classnames from 'classnames'
 
-//import './segue.css'
+import './segue.css'
 
 /**
  * Show a visual indication of the type of segue.

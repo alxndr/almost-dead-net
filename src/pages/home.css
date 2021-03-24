@@ -1,22 +1,24 @@
-.homepage {
+.homepage main {
   display: flex;
   flex-flow: row wrap;
   flex: 1 1 10em;
   padding: 1em;
 }
 
-h1 {
+.homepage h1 {
   width: 100%;
 }
 
-article > section:not(.homepage__showsbyyear) {
+.homepage main section:not(.homepage__showsbyyear) {
   margin: 0.5em;
   border-radius: 1em;
   padding: 0.5em 2em;
   box-shadow: 0px 10px 13px #33333377 inset;
 }
 
-.homepage__news {
+.homepage__links ul {
+  list-style: none;
+  margin: 0;
 }
 
 .homepage__songfinder {

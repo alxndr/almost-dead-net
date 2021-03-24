@@ -1,6 +1,6 @@
 import React from 'react'
 
-//import './recording.css'
+import './recording.css'
 
 const REGEX_YTID_PARAM = /[?&]v=([\w-]+)/
 const REGEX_YTID_SHORTURL = /\/\/youtu\.be\/([\w-]+)/
@@ -41,8 +41,8 @@ function determineEmbed(url) {
       width="400"
       height="400"
       frameBorder="0"
-      webkitAllowFullScreen="true"
-      mozAllowFullScreen="true"
+      webkitallowfullscreen="true"
+      mozallowfullscreen="true"
       allowFullScreen
       ></iframe>
   }

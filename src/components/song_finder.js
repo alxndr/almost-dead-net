@@ -1,13 +1,6 @@
-import React, {useEffect, useState} from 'react'
-import {Redirect} from 'react-router-dom'
+import React, {useState} from 'react'
 
 import Autosuggest from 'react-autosuggest'
-
-import {
-  SONGS_URL,
-} from '../data'
-import {parseWithCache} from '../fetch'
-import routes, {url} from '../routes'
 
 import './song_finder.css'
 
@@ -21,20 +14,13 @@ function sanitizeString(string) {
     .trim()
 }
 
-export default function SongFinder(props) {
-  const [songs, setSongs] = useState(null)
+export default function SongFinder({songs}) {
   const [value, setValue] = useState('')
   const [suggestions, setSuggestions] = useState([])
-  const [redirect, setRedirect] = useState(null)
-  useEffect(() => {
-    parseWithCache(SONGS_URL, setSongs)
-  }, [])
-  if (redirect) {
-    return <Redirect push to={redirect} />
-  }
-  if (!songs || !songs.length) {
-    return <p>Loading...</p>
-  }
+  //const [redirect, setRedirect] = useState(null)
+  //if (redirect) {
+  //  return <Redirect push to={redirect} />
+  //}
   const getSuggestions = (string) => {
     if (!string) {
       return []
@@ -80,7 +66,8 @@ export default function SongFinder(props) {
         value,
       }}
       onSuggestionSelected={(_, {suggestion}) => {
-        setRedirect(url(routes.song, {id: suggestion.id}))
+        window.location = `/song/${suggestion.id}`
+        //setRedirect(url(routes.song, {id: suggestion.id}))
       }}
     />
   </div>

@@ -1,23 +1,15 @@
-import React, {useEffect, useState} from 'react'
-
-import {Link, Redirect} from 'react-router-dom'
+import React from 'react'
+import {Link} from 'gatsby'
 import {filter, find, propEq, uniqBy} from 'ramda'
 
-//import {
-//  SHOWS_URL,
-//  SETS_URL,
-//  SONG_PERFORMANCES_URL,
-//  SONGS_URL,
-//  TEASES_URL,
-//} from '../data'
-//import {parseIntoObjectWithCache} from '../fetch'
-//import routes, {url} from '../routes'
+import Layout from '../components/layout'
 
 import './song.css'
 
 function authorInfo(author = null) {
   switch (author) {
     case null:
+    case '':
       return false
     case 'traditional':
       return <p>(traditional)</p>
@@ -34,20 +26,20 @@ const SET_MAPPING = { // 'show table column name' to 'human readable set name'
   encore2: 'double encore',
 }
 
-export default function Song({pageContext: {shows, sets, songs, songPerformances, teases}, match: {params}}) {
-  if (!(songs && songPerformances && shows && teases && sets)) {
+export default function Song({pageContext: {song, shows, sets, songs, songPerformances, teases}}) {
+  if (!(song && songs && songPerformances && shows && teases && sets)) {
     return <p>Loading...</p>
   }
-  const songData = songs[params.id]
+  const songData = song
   if (!songData) {
     return <p>Uh oh, no song data found...</p>
   }
-  const songNameSlug = songData.title.toLowerCase().replace(/["'()]+/g, '').replace(/[^a-z0-9]+/g, '-')
-  if (!params.name || params.name !== songNameSlug) {
-    return <Redirect to={`/song/${songData.id}/${songNameSlug}`} />
-  }
-  const songId = Number(songData.id)
-  const performancesData = filter(propEq('song_id', songId))(Object.values(songPerformances))
+  //const songNameSlug = songData.title.toLowerCase().replace(/["'()]+/g, '').replace(/[^a-z0-9]+/g, '-')
+  //if (!params.name || params.name !== songNameSlug) {
+  //  return <Redirect to={`/song/${songData.id}/${songNameSlug}`} />
+  //}
+  const songId = songData.id
+  const performancesData = filter(propEq('song_id', songId))(songPerformances)
   const attachMoreData = performanceData => {
     const performanceIdStr = performanceData.id.toString()
     const setData = find((set) => {
@@ -57,7 +49,7 @@ export default function Song({pageContext: {shows, sets, songs, songPerformances
       console.warn(`missing setData...`, {performanceData, sets})
       return false
     }
-    const showData = find((show) => [show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(Object.values(shows))
+    const showData = find((show) => [show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(shows)
     if (!showData || !showData.id) {
       console.warn(`missing showData...`, {performanceData, setData})
       return false
@@ -84,7 +76,6 @@ export default function Song({pageContext: {shows, sets, songs, songPerformances
       return 0
     })
   const uniqShows = uniqBy((perf) => perf.showData.id, performancesSorted)
-  //console.log({performancesSorted, uniqShows})
   const performances = performancesSorted
     .map(({performanceData, showData, variation, whichSet}) => {
       return <li key={performanceData.id}>
@@ -102,30 +93,32 @@ export default function Song({pageContext: {shows, sets, songs, songPerformances
     </>
     : false
 
-  const teasesData = filter(propEq('song_id', songId))(Object.values(teasesObject))
+  const teasesData = filter(propEq('song_id', songId))(teases)
   const teasesComponent = teasesData.length > 0
     ? <>
       <h2>Teases</h2>
       <ul>
         {teasesData.map(teaseData => {
-          const performanceData = performancesObject[teaseData.performance_id] //find(propEq('id', Number(teaseData.performance_id)))(performances)
-          const setData = find((set) => set.setlist.toString().split(':').includes(performanceData.id.toString()))(Object.values(setsObject))
-          const showData = find((show) => [show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(Object.values(showsObject))
+          const performanceData = find(propEq('id', teaseData.performance_id))(songPerformances) //performancesObject[teaseData.performance_id]
+          const setData = find((set) => set.setlist.toString().split(':').includes(performanceData.id.toString()))(sets)
+          const showData = find((show) => [show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(shows)
           return <li key={teaseData.id}>
-            within <Link to={url(routes.show, {id: showData.id})}>{teaseData.within} — {showData.date}</Link>
+            within <Link to={`/show/${showData.id}`}>{teaseData.within} — {showData.date}</Link>
           </li>
         })}
       </ul>
     </>
     : false
 
-  return <section className="songpage">
-    <h1 className="songpage__name">{songData.title}</h1>
-    <div className="songpage__info">
-      {authorInfo(songData.author)}
-      {songData.suite && <p>Part of the {songData.suite} suite</p>}
-    </div>
-    <div className="songpage__performances">{performancesComponent}</div>
-    <div className="songpage__teases">{teasesComponent}</div>
-  </section>
+  return <Layout>
+    <section className="songpage">
+      <h1 className="songpage__name">{songData.title}</h1>
+      <div className="songpage__info">
+        {authorInfo(songData.author)}
+        {songData.suite && <p>Part of the {songData.suite} suite</p>}
+      </div>
+      <div className="songpage__performances">{performancesComponent}</div>
+      <div className="songpage__teases">{teasesComponent}</div>
+    </section>
+  </Layout>
 }

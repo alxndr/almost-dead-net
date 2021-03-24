@@ -2,8 +2,9 @@ require('logrocket').init('wi5hyr/a-dn')
 
 const axios = require('axios')
 const csv = require('papaparse')
+const omit = require('lodash/omit')
 
-const URL_BASE = 'https://gist.githubusercontent.com/alxndr/5f64cf477d5202c004856772ad2222db/raw/faf319e3d91a633199ec7087ae132e7d61bda902'
+const URL_BASE = 'https://gist.githubusercontent.com/alxndr/5f64cf477d5202c004856772ad2222db/raw/a37bb52b9bafbc1ac793168ca542d900a8a24978'
 const ENDPOINTS = {
   GUESTS_URL: `${URL_BASE}/guests.csv`,
   RECORDINGS_URL: `${URL_BASE}/recordings.csv`,
@@ -16,7 +17,9 @@ const ENDPOINTS = {
   VENUES_URL: `${URL_BASE}/venues.csv`,
 }
 
-const Show = require.resolve('./src/pages/show.js')
+const HomePage = require.resolve('./src/pages/home.js')
+const ShowPage = require.resolve('./src/pages/show.js')
+const SongPage = require.resolve('./src/pages/song.js')
 
 async function fetchCSVintoObject(url, isValidEntry) {
   const {data} = await axios.get(url)
@@ -44,57 +47,66 @@ async function fetchCSVintoObject(url, isValidEntry) {
   return promise
 }
 
+function sanitizeObjectForGraphQL(objectFromCsv) {
+  // Gatsby feeds these through GraphQL … https://docs.joshuatz.com/cheatsheets/gatsby-js/
+  return Object.values(objectFromCsv)
+    .map((obj) => omit(obj, ['song performances', '']))
+}
+
 exports.createPages = async ({ actions: { createPage } }) => {
-  console.log('fetching show data...')
-  const shows = await fetchCSVintoObject(ENDPOINTS.SHOWS_URL, (show) => !!show.date)
-  console.log(Object.values(shows).length)
-  console.log('fetching venue data...')
-  const venues = await fetchCSVintoObject(ENDPOINTS.VENUES_URL, (venue) => !!venue.name && !!venue.location)
-  //console.log(venues['71'])
-  console.log(Object.values(venues).length)
-  console.log('fetching set data...')
-  const sets = await fetchCSVintoObject(ENDPOINTS.SETS_URL, (set) => !!set.id)
-  //console.log(Object.values(sets))
-  console.log(Object.values(sets).length)
-  console.log('fetching song data...')
-  const songs = await fetchCSVintoObject(ENDPOINTS.SONGS_URL, (song) => !!song.title)
-  console.log(Object.values(songs).length)
-  console.log('fetching performance data...')
-  const performances = await fetchCSVintoObject(ENDPOINTS.SONG_PERFORMANCES_URL, (perf) => !!perf.song_id)
-  console.log(Object.values(performances).length)
-  console.log('fetching tease data...')
-  const teases = await fetchCSVintoObject(ENDPOINTS.TEASES_URL, (tease) => !!tease.performance_id)
-  console.log(Object.values(teases).length)
-  console.log('fetching segue data...')
-  const segues = await fetchCSVintoObject(ENDPOINTS.SEGUES_URL, (segue) => !!segue.id)
-  console.log(Object.values(segues).length)
-  console.log('fetching guest data...')
-  const guests = await fetchCSVintoObject(ENDPOINTS.GUESTS_URL, (guest) => !!guest.name)
-  console.log(Object.values(guests).length)
-  console.log('fetching recording data...')
-  const recordings = await fetchCSVintoObject(ENDPOINTS.RECORDINGS_URL, (recording) => !!recording.url)
-  console.log(Object.values(recordings).length)
-  Object.values(shows).forEach((show) => {
-    //console.log('tryna create an individual page:', show)
+  const shows = Object.values(await fetchCSVintoObject(ENDPOINTS.SHOWS_URL, (show) => !!show.date))
+  const venues = Object.values(await fetchCSVintoObject(ENDPOINTS.VENUES_URL, (venue) => !!venue.name && !!venue.location))
+  console.log({venues})
+  const sets = sanitizeObjectForGraphQL(await fetchCSVintoObject(ENDPOINTS.SETS_URL, (set) => !!set.id))
+  const songs = Object.values(await fetchCSVintoObject(ENDPOINTS.SONGS_URL, (song) => !!song.title))
+  const performances = Object.values(await fetchCSVintoObject(ENDPOINTS.SONG_PERFORMANCES_URL, (perf) => !!perf.song_id))
+  const teases = Object.values(await fetchCSVintoObject(ENDPOINTS.TEASES_URL, (tease) => !!tease.performance_id))
+  const segues = Object.values(await fetchCSVintoObject(ENDPOINTS.SEGUES_URL, (segue) => !!segue.id))
+  const guests = Object.values(await fetchCSVintoObject(ENDPOINTS.GUESTS_URL, (guest) => !!guest.name))
+  const recordings = Object.values(await fetchCSVintoObject(ENDPOINTS.RECORDINGS_URL, (recording) => !!recording.url))
+
+  createPage({
+    path: '/', // note the path does not match the filename within src/pages/ ; this gives us control over the context provided to the component
+    // ...however `/home` will be a valid but broken page? (like `/show` and `/song` are already?)
+    component: HomePage,
+    context: {
+      shows,
+      songs,
+      venues,
+    }
+  })
+
+  shows.forEach((show) => {
     createPage({
       path: `/show/${show.id}`, // TODO add slug
-      component: Show,
+      component: ShowPage,
       context: {
         show,
-        shows: Object.values(shows),
-        setts: JSON.stringify(Object.values(sets)), // Gatsby feeds these through GraphQL … https://docs.joshuatz.com/cheatsheets/gatsby-js/
+        shows,
+        sets,
         venue: venues[show.venue_id],
-        guests: Object.values(guests),
-        recordings: Object.values(recordings),
-        performances: Object.values(performances),
-        segues: Object.values(segues),
-        songs: Object.values(songs),
-        teases: Object.values(teases),
+        guests,
+        recordings,
+        performances,
+        segues,
+        songs,
+        teases,
+      }
+    })
+  })
+
+  songs.forEach((song) => {
+    createPage({
+      path: `/song/${song.id}`,
+      component: SongPage,
+      context: {
+        song,
+        shows,
+        sets,
+        songs,
+        songPerformances: performances,
+        teases,
       }
     })
   })
 }
-
-//exports.onCreateNode = ({ node }) => {
-//  console.log(`Node created of type "${node.internal.type}"`)
-//}

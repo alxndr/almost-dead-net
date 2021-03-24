@@ -1,19 +1,11 @@
 import React, {useEffect, useState} from 'react'
 import {filter, find, includes, propEq, where} from 'ramda'
-import dompurify from 'dompurify'
 
+import Layout from '../components/layout'
 import Setlist from '../components/setlist'
 import Recording from '../components/recording'
 
-//import './show.css'
-
-function linkShowNotes(text) {
-  return <>{text.split(/\s/g).flatMap(word => word.startsWith('https://')
-    ? [<a href={word} rel="noopener noreferrer" target="_blank">{dompurify.sanitize(word)}</a>, ' ']
-    : [dompurify.sanitize(word), ' '])
-    }
-  </>
-}
+import './show.css'
 
 function normalizeSetlist(rawSetlistValue) {
   return typeof rawSetlistValue === "number"
@@ -23,23 +15,7 @@ function normalizeSetlist(rawSetlistValue) {
       : []
 }
 
-export default function Show({pageContext: {show, shows, setts, venue, guests, recordings, performances, segues, songs, teases}}) {
-  const sets = JSON.parse(setts)
-  console.log('Show.....', {sets: sets.length, shows: shows.length, recordings: recordings.length})
-  /* show:
-    date: "9/19/2014"
-    encore1: "10"
-    encore2: ""
-    event: ""
-    id: "4"
-    links: ""
-    notes: ""
-    set1: "8"
-    set2: "9"
-    set3: ""
-    soundcheck: ""
-    venue_id: "31"
-    */
+export default function Show({pageContext: {show, shows, sets, venue, guests, recordings, performances, segues, songs, teases}}) {
   const showData = show
   const {date, event, notes, venue_id} = showData
   const venueData = venue
@@ -105,38 +81,40 @@ export default function Show({pageContext: {show, shows, setts, venue, guests, r
       />
     ])
   }, [])
-  return <div className="showpage">
-    <section className="showpage__setlist">
-      <h1 className="showpage__pagetitle">
-        <span className="showpage__pagetitle--band">Joe Russo's Almost Dead</span>
-        <span className="showpage__pagetitle--date">{date}</span>
-        <span className="showpage__pagetitle--event">{event || false}</span>
-        <span className="showpage__pagetitle--venue">{name}, {location}</span>
-        <span className="showpage__pagetitle--number">show #{showData.id}</span>
-      </h1>
-      {showGuests.length
-        ? <p>With {showGuests.map((guest) => guest.name).join(', ')}</p>
+  return <Layout>
+      <div className="showpage">
+      <section className="showpage__setlist">
+        <h1 className="showpage__pagetitle">
+          <span className="showpage__pagetitle--band">Joe Russo's Almost Dead</span>
+          <span className="showpage__pagetitle--date">{date}</span>
+          <span className="showpage__pagetitle--event">{event || false}</span>
+          <span className="showpage__pagetitle--venue">{name}, {location}</span>
+          <span className="showpage__pagetitle--number">show #{showData.id}</span>
+        </h1>
+        {showGuests.length
+          ? <p>With {showGuests.map((guest) => guest.name).join(', ')}</p>
+          : false
+        }
+        {setlists.length
+          ? setlists
+          : <p>Uh oh, no sets found.</p>
+        }
+        {encores.length
+          ? encores
+          : false
+        }
+        {notes && <div className="showpage__notes">{notes}</div>}
+      </section>
+      {showRecordings.length
+        ?
+          <section className="showpage__recordings">
+            <h2>Recordings</h2>
+            <ul>
+              {showRecordings.map(({type, url}) => <Recording type={type} url={url} />)}
+            </ul>
+          </section>
         : false
       }
-      {setlists.length
-        ? setlists
-        : <p>Uh oh, no sets found.</p>
-      }
-      {encores.length
-        ? encores
-        : false
-      }
-      {notes && <div className="showpage__notes">{linkShowNotes(notes)}</div>}
-    </section>
-    {showRecordings.length
-      ?
-        <section className="showpage__recordings">
-          <h2>Recordings</h2>
-          <ul>
-            {showRecordings.map(({type, url}) => <Recording type={type} url={url} />)}
-          </ul>
-        </section>
-        : false
-    }
-  </div>
+    </div>
+  </Layout>
 }
