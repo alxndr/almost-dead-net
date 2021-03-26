@@ -8,7 +8,6 @@
 
 .showsbyyear > li {
   display: flex;
-  /*background: #edd;*/
   border-radius: 15px;
   margin: 0.5em 0.1em;
   box-shadow: 1px 2px 5px 1px #00000044,
@@ -18,7 +17,7 @@
 .showsbyyear h3 {
   margin: 0;
   border-radius: 15px 0 0 15px;
-  padding: 0.7em;
+  padding: 0.7em 0.7em 0.2em;
   background: #dabbff4e;
   box-shadow: 0px 0px 10px 2px #00000077 inset;
 }
@@ -39,5 +38,12 @@
   display: block;
   min-width: 2.5em;
   padding: 0.5em;
+  border-radius: 0.5em;
+  box-shadow: -1px -1px 5px 0px #00000063 inset;
+  font-size: 1.2em;
   text-align: center;
+  text-shadow: none;
+}
+.showsbyyear__shows a:hover {
+  background: azure;
 }
