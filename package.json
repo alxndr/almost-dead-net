@@ -9,7 +9,7 @@
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public",
+    "deploy": "export TAG=deploy-$(date '+%F-%H%M%S-%Z') && gatsby build && gh-pages --dist public --dotfiles --branch gh-pages --tag $TAG --message \"Deploy $TAG\" && echo cleaning up... && gh-pages-clean",
     "develop": "gatsby develop --verbose",
     "start": "npm run develop",
     "serve": "gatsby serve",
