@@ -16,10 +16,12 @@ function normalizeSetlist(rawSetlistValue) {
 }
 
 export default function Show({pageContext: {show, shows, sets, venue, guests, recordings, performances, segues, songs, teases}}) {
-  const showData = show
-  const {date, event, notes, venue_id} = showData
-  const venueData = venue
-  const {name, location} = venueData
+  if (!show) {
+    console.error('Show page, missing show..............')
+    return false
+  }
+
+  const {date, event, notes} = show
 
   const guestsWithSplitShows = guests.map((guestData) => {
     if (!guestData) {
@@ -39,15 +41,15 @@ export default function Show({pageContext: {show, shows, sets, venue, guests, re
       shows: guestData.shows.split(':').map(Number.bind(null))
     }
   }).filter((data) => !!data)
-  const showGuests = filter(where({shows: includes(showData.id)}))(guestsWithSplitShows)
+  const showGuests = filter(where({shows: includes(show.id)}))(guestsWithSplitShows)
 
-  const showRecordings = filter(propEq('show', showData.id))(recordings)
+  const showRecordings = filter(propEq('show', show.id))(recordings)
 
   const setlists = [1, 2, 3].reduce((setlists, which) => {
-    if (!showData[`set${which}`]) {
+    if (!show[`set${which}`]) {
       return setlists
     }
-    const setData = find(propEq('id', (showData[`set${which}`])))(sets)
+    const setData = find(propEq('id', (show[`set${which}`])))(sets)
     const setlist = normalizeSetlist(setData.setlist)
     return setlists.concat([
       <Setlist
@@ -63,10 +65,10 @@ export default function Show({pageContext: {show, shows, sets, venue, guests, re
     ])
   }, [])
   const encores = [1, 2].reduce((encores, which) => {
-    if (!showData[`encore${which}`]) {
+    if (!show[`encore${which}`]) {
       return encores
     }
-    const setData = find(propEq('id', (showData[`encore${which}`])))(sets)
+    const setData = find(propEq('id', (show[`encore${which}`])))(sets)
     const setlist = normalizeSetlist(setData.setlist)
     return encores.concat([
       <Setlist
@@ -81,40 +83,38 @@ export default function Show({pageContext: {show, shows, sets, venue, guests, re
       />
     ])
   }, [])
-  return <Layout>
-      <div className="showpage">
-      <section className="showpage__setlist">
-        <h1 className="showpage__pagetitle">
-          <span className="showpage__pagetitle--band">Joe Russo's Almost Dead</span>
-          <span className="showpage__pagetitle--date">{date}</span>
-          <span className="showpage__pagetitle--event">{event || false}</span>
-          <span className="showpage__pagetitle--venue">{name}, {location}</span>
-          <span className="showpage__pagetitle--number">show #{showData.id}</span>
-        </h1>
-        {showGuests.length
-          ? <p>With {showGuests.map((guest) => guest.name).join(', ')}</p>
-          : false
-        }
-        {setlists.length
-          ? setlists
-          : <p>Uh oh, no sets found.</p>
-        }
-        {encores.length
-          ? encores
-          : false
-        }
-        {notes && <div className="showpage__notes">{notes}</div>}
-      </section>
-      {showRecordings.length
-        ?
-          <section className="showpage__recordings">
-            <h2>Recordings</h2>
-            <ul>
-              {showRecordings.map(({type, url}) => <Recording type={type} url={url} />)}
-            </ul>
-          </section>
+  return <Layout className="showpage">
+    <h1 className="showpage__pagetitle">
+      <span className="showpage__pagetitle--band">Joe Russo's Almost Dead</span>
+      <span className="showpage__pagetitle--date">{date}</span>
+      {event && <span className="showpage__pagetitle--event">{event}</span>}
+      {venue && <span className="showpage__pagetitle--venue">{venue.name}, {venue.location}</span>}
+      <span className="showpage__pagetitle--number">show #{show.id}</span>
+    </h1>
+    <section className="showpage__setlist">
+      {showGuests.length
+        ? <p>With {showGuests.map((guest) => guest.name).join(', ')}</p>
         : false
       }
-    </div>
+      {setlists.length
+        ? setlists
+        : <p>Uh oh, no sets found.</p>
+      }
+      {encores.length
+        ? encores
+        : false
+      }
+      {notes && <div className="showpage__notes">{notes}</div>}
+    </section>
+    {showRecordings.length
+      ?
+        <section className="showpage__recordings">
+          <h2>Recordings</h2>
+          <ul>
+            {showRecordings.map(({type, url}) => <Recording type={type} url={url} />)}
+          </ul>
+        </section>
+      : false
+    }
   </Layout>
 }

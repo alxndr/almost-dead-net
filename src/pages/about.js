@@ -5,8 +5,8 @@ import Layout from '../components/layout'
 import './about.css'
 
 export default function About() {
-  return <Layout>
-    <section className="homepage">
+  return <Layout className="aboutPage">
+    <section>
       <h1>About Almost-Dead.net</h1>
       <p>In Memory of David Kay, creator of the <a href="https://docs.google.com/spreadsheets/d/1qxTKvLkiQgHycuC530OU3j-O5ggijHelXRXVjTiZLis/htmlview" target="_blank" rel="noopener noreferrer">JRAD-base spreadsheet</a></p>
       <p>This site is not officially affiliated with JRAD.</p>

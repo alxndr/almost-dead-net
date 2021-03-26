@@ -9,7 +9,7 @@ import Header from './header'
 import './reset.css'
 import './layout.css'
 
-const Layout = ({children, className}) => {
+const Layout = ({children, className = ''}) => {
   const data = {site: {siteMetadata: {title: 'a title.....'}}}
   //const data = useStaticQuery(graphql`
   //  query SiteTitleQuery {

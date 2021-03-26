@@ -49,32 +49,40 @@ async function fetchCSVintoObject(url, isValidEntry) {
 
 function sanitizeObjectForGraphQL(objectFromCsv) {
   // Gatsby feeds these through GraphQL … https://docs.joshuatz.com/cheatsheets/gatsby-js/
-  return Object.values(objectFromCsv)
-    .map((obj) => omit(obj, ['song performances', '']))
+}
+
+exports.onCreatePage = async ({page, actions: {createPage, deletePage}}) => {
+  if (page.internalComponentName === 'ComponentHome') {
+    const songs = Object.values(await fetchCSVintoObject(ENDPOINTS.SONGS_URL, (song) => !!song.title))
+    const shows = Object.values(await fetchCSVintoObject(ENDPOINTS.SHOWS_URL, (show) => !!show.date))
+    const venues = Object.values(await fetchCSVintoObject(ENDPOINTS.VENUES_URL, (venue) => !!venue.name && !!venue.location))
+      .map((venue) => ({...venue, name: venue.name.replace(/:/, '')}))
+    deletePage(page)
+    createPage({
+      ...page,
+      path: '/', // note the path does not match the filename within src/pages/ ; this gives us control over the context provided to the component
+      context: {
+        ...page.context,
+        shows,
+        songs,
+        venues,
+      },
+    })
+  }
 }
 
 exports.createPages = async ({ actions: { createPage } }) => {
   const shows = Object.values(await fetchCSVintoObject(ENDPOINTS.SHOWS_URL, (show) => !!show.date))
   const venues = Object.values(await fetchCSVintoObject(ENDPOINTS.VENUES_URL, (venue) => !!venue.name && !!venue.location))
-  console.log({venues})
-  const sets = sanitizeObjectForGraphQL(await fetchCSVintoObject(ENDPOINTS.SETS_URL, (set) => !!set.id))
+    .map((venue) => ({...venue, name: venue.name.replace(/:/, '')}))
+  const sets = Object.values(await fetchCSVintoObject(ENDPOINTS.SETS_URL, (set) => !!set.id))
+    .map((obj) => omit(obj, ['song performances', '']))
   const songs = Object.values(await fetchCSVintoObject(ENDPOINTS.SONGS_URL, (song) => !!song.title))
   const performances = Object.values(await fetchCSVintoObject(ENDPOINTS.SONG_PERFORMANCES_URL, (perf) => !!perf.song_id))
   const teases = Object.values(await fetchCSVintoObject(ENDPOINTS.TEASES_URL, (tease) => !!tease.performance_id))
   const segues = Object.values(await fetchCSVintoObject(ENDPOINTS.SEGUES_URL, (segue) => !!segue.id))
   const guests = Object.values(await fetchCSVintoObject(ENDPOINTS.GUESTS_URL, (guest) => !!guest.name))
   const recordings = Object.values(await fetchCSVintoObject(ENDPOINTS.RECORDINGS_URL, (recording) => !!recording.url))
-
-  createPage({
-    path: '/', // note the path does not match the filename within src/pages/ ; this gives us control over the context provided to the component
-    // ...however `/home` will be a valid but broken page? (like `/show` and `/song` are already?)
-    component: HomePage,
-    context: {
-      shows,
-      songs,
-      venues,
-    }
-  })
 
   shows.forEach((show) => {
     createPage({

@@ -30,15 +30,14 @@ export default function Song({pageContext: {song, shows, sets, songs, songPerfor
   if (!(song && songs && songPerformances && shows && teases && sets)) {
     return <p>Loading...</p>
   }
-  const songData = song
-  if (!songData) {
+  if (!song) {
     return <p>Uh oh, no song data found...</p>
   }
-  //const songNameSlug = songData.title.toLowerCase().replace(/["'()]+/g, '').replace(/[^a-z0-9]+/g, '-')
+  //const songNameSlug = song.title.toLowerCase().replace(/["'()]+/g, '').replace(/[^a-z0-9]+/g, '-')
   //if (!params.name || params.name !== songNameSlug) {
-  //  return <Redirect to={`/song/${songData.id}/${songNameSlug}`} />
+  //  return <Redirect to={`/song/${song.id}/${songNameSlug}`} />
   //}
-  const songId = songData.id
+  const songId = song.id
   const performancesData = filter(propEq('song_id', songId))(songPerformances)
   const attachMoreData = performanceData => {
     const performanceIdStr = performanceData.id.toString()
@@ -46,12 +45,12 @@ export default function Song({pageContext: {song, shows, sets, songs, songPerfor
       return set.setlist && set.setlist.toString().split(':').includes(performanceIdStr)
     })(Object.values(sets))
     if (!setData || !setData.id) {
-      console.warn(`missing setData...`, {performanceData, sets})
+      console.warn(`missing setData...`, {song, performanceData})
       return false
     }
     const showData = find((show) => [show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(shows)
     if (!showData || !showData.id) {
-      console.warn(`missing showData...`, {performanceData, setData})
+      console.warn(`missing showData...`, {song, performanceData, setData})
       return false
     }
     const whichSet = Object.entries(SET_MAPPING).find(([col_name, readable_name]) => showData[col_name] === setData.id)[1]
@@ -110,15 +109,13 @@ export default function Song({pageContext: {song, shows, sets, songs, songPerfor
     </>
     : false
 
-  return <Layout>
-    <section className="songpage">
-      <h1 className="songpage__name">{songData.title}</h1>
-      <div className="songpage__info">
-        {authorInfo(songData.author)}
-        {songData.suite && <p>Part of the {songData.suite} suite</p>}
-      </div>
-      <div className="songpage__performances">{performancesComponent}</div>
-      <div className="songpage__teases">{teasesComponent}</div>
-    </section>
+  return <Layout className="songpage">
+    <h1 className="songpage__name">{song.title}</h1>
+    <div className="songpage__info">
+      {authorInfo(song.author)}
+      {song.suite && <p>Part of the {song.suite} suite</p>}
+    </div>
+    <div className="songpage__performances">{performancesComponent}</div>
+    <div className="songpage__teases">{teasesComponent}</div>
   </Layout>
 }

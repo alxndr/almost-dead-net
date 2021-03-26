@@ -1,20 +1,20 @@
-.showpage {
+.showpage > main {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   padding: 1em;
 }
 
-.showpage > section {
+.showpage > main > section {
   flex: 2 1 33%;
 }
 
-.showpage > section.showpage__setlist {
+section.showpage__setlist {
   min-width: 15em;
   max-width: 35em;
 }
 
-.showpage > section.showpage__recordings {
+section.showpage__recordings {
   text-align:right;
   flex-grow: 1;
   max-width: 400px;
