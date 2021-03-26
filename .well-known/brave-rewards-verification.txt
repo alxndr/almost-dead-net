@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: almost-dead.net
-Token: 988f696ce04cd8c42b0c160adb087e465205ea82bce5952ebafb8ed33e596402
