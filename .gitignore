@@ -9,6 +9,8 @@
 
 # dev
 /.cache
+# Gatsby build destination
+/public
 
 # misc
 .DS_Store
