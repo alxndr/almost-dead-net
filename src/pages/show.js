@@ -15,6 +15,16 @@ function normalizeSetlist(rawSetlistValue) {
       : []
 }
 
+function ShowHeadline({date, event, venue, showNumber}) {
+  return <h1 className="showpage__pagetitle">
+    <span className="showpage__pagetitle--band">Joe Russo's Almost Dead</span>
+    <span className="showpage__pagetitle--date">{date}</span>
+    {event && <span className="showpage__pagetitle--event">{event}</span>}
+    {venue && <span className="showpage__pagetitle--venue">{venue.name}, {venue.location}</span>}
+    <span className="showpage__pagetitle--number">show #{showNumber}</span>
+  </h1>
+}
+
 export default function Show({pageContext: {show, shows, sets, venue, guests, recordings, performances, segues, songs, teases, lastShowId}}) {
   if (!show) {
     console.error('Show page, missing show..............')
@@ -94,14 +104,9 @@ export default function Show({pageContext: {show, shows, sets, venue, guests, re
       />
     ])
   }, [])
+
   return <Layout className="showpage">
-    <h1 className="showpage__pagetitle">
-      <span className="showpage__pagetitle--band">Joe Russo's Almost Dead</span>
-      <span className="showpage__pagetitle--date">{date}</span>
-      {event && <span className="showpage__pagetitle--event">{event}</span>}
-      {venue && <span className="showpage__pagetitle--venue">{venue.name}, {venue.location}</span>}
-      <span className="showpage__pagetitle--number">show #{show.id}</span>
-    </h1>
+    <ShowHeadline date={date} event={event} venue={venue} showNumber={show.id} />
     <section className="showpage__setlist">
       {showGuests.length
         ? <p>With {showGuests.map((guest) => guest.name).join(', ')}</p>
