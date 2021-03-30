@@ -3,6 +3,7 @@ require('logrocket').init('wi5hyr/a-dn')
 const axios = require('axios')
 const csv = require('papaparse')
 const omit = require('lodash/omit')
+const {find, propEq} = require('ramda')
 
 const URL_BASE = 'https://gist.githubusercontent.com/alxndr/5f64cf477d5202c004856772ad2222db/raw/a37bb52b9bafbc1ac793168ca542d900a8a24978'
 const ENDPOINTS = {
@@ -85,6 +86,7 @@ exports.createPages = async ({ actions: { createPage } }) => {
   const recordings = Object.values(await fetchCSVintoObject(ENDPOINTS.RECORDINGS_URL, (recording) => !!recording.url))
 
   shows.forEach((show) => {
+    const venue = find(propEq('id', show.venue_id))(venues)
     createPage({
       path: `/show/${show.id}`, // TODO add slug
       component: ShowPage,
@@ -92,7 +94,7 @@ exports.createPages = async ({ actions: { createPage } }) => {
         show,
         shows,
         sets,
-        venue: venues[show.venue_id],
+        venue,
         guests,
         recordings,
         performances,
