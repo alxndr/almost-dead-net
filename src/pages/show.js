@@ -129,7 +129,7 @@ export default function Show({pageContext: {show, shows, sets, venue, guests, re
     }
     <nav className="showpage__nav">
       {Number(show.id) > 1 && <a href={`/show/${Number(show.id) - 1}`} className="showpage__nav__prev" title="previous show">Prior show</a>}
-      {Number(show.id) < lastShowId && <a href={`/show/${Number(show.id) + 1}`} className="showpage__nav__next" title="following show">Next show</a>}
+      {Number(show.id) < Number(lastShowId) && <a href={`/show/${Number(show.id) + 1}`} className="showpage__nav__next" title="following show">Next show</a>}
     </nav>
   </Layout>
 }
