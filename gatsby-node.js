@@ -3,9 +3,9 @@ require('logrocket').init('wi5hyr/a-dn')
 const axios = require('axios')
 const csv = require('papaparse')
 const omit = require('lodash/omit')
-const {find, propEq} = require('ramda')
+const {filter, find, propEq} = require('ramda')
 
-const URL_BASE = 'https://gist.githubusercontent.com/alxndr/5f64cf477d5202c004856772ad2222db/raw/25bc8fa554a6fae75da4146f601184700e5f1afa'
+const URL_BASE = 'https://gist.githubusercontent.com/alxndr/5f64cf477d5202c004856772ad2222db/raw/457cf342d4159ec8e6636f3ffefa7ea50453e6c3'
 const ENDPOINTS = {
   GUESTS_URL: `${URL_BASE}/guests.csv`,
   RECORDINGS_URL: `${URL_BASE}/recordings.csv`,
@@ -48,10 +48,6 @@ async function fetchCSVintoObject(url, isValidEntry) {
   return promise
 }
 
-function sanitizeObjectForGraphQL(objectFromCsv) {
-  // Gatsby feeds these through GraphQL … https://docs.joshuatz.com/cheatsheets/gatsby-js/
-}
-
 exports.onCreatePage = async ({page, actions: {createPage, deletePage}}) => {
   if (page.internalComponentName === 'ComponentHome') {
     const songs = Object.values(await fetchCSVintoObject(ENDPOINTS.SONGS_URL, (song) => !!song.title))
@@ -86,17 +82,16 @@ exports.createPages = async ({ actions: { createPage } }) => {
   const recordings = Object.values(await fetchCSVintoObject(ENDPOINTS.RECORDINGS_URL, (recording) => !!recording.url))
 
   shows.forEach((show) => {
-    const venue = find(propEq('id', show.venue_id))(venues)
     createPage({
-      path: `/show/${show.id}`, // TODO add slug
+      path: `/show/${show.id}`,
       component: ShowPage,
       context: {
         show,
         shows,
         sets,
-        venue,
+        venue: find(propEq('id', show.venue_id))(venues),
         guests,
-        recordings,
+        recordings: filter(propEq('show', show.id))(recordings),
         performances,
         segues,
         songs,

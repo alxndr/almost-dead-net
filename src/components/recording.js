@@ -25,8 +25,7 @@ function determineEmbed(url) {
   if (ytId) {
     return <iframe
       title="video of the show"
-      width="280"
-      height="158"
+      width="380"
       src={`https://www.youtube.com/embed/${ytId}`}
       frameBorder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -38,8 +37,7 @@ function determineEmbed(url) {
     return <iframe
       title="audio of the show"
       src={`${embedUrl}?playlist=1`}
-      width="400"
-      height="400"
+      width="380"
       frameBorder="0"
       webkitallowfullscreen="true"
       mozallowfullscreen="true"

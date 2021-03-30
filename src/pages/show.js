@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import {filter, find, includes, propEq, where} from 'ramda'
+import {filter, find, includes, propEq, sort, where} from 'ramda'
 
 import Layout from '../components/layout'
 import Setlist from '../components/setlist'
@@ -43,7 +43,19 @@ export default function Show({pageContext: {show, shows, sets, venue, guests, re
   }).filter((data) => !!data)
   const showGuests = filter(where({shows: includes(show.id)}))(guestsWithSplitShows)
 
-  const showRecordings = filter(propEq('show', show.id))(recordings)
+  const showRecordings = sort((a, b) => {
+    if (a.type === b.type) return 0;
+    if (a.type === 'pro-shot') return -1;
+    if (b.type === 'pro-shot') return 1;
+    if (a.type === 'video') return -1;
+    if (b.type === 'video') return 1;
+    if (a.type === 'soundboard') return -1;
+    if (b.type === 'soundboard') return 1;
+    if (a.type === 'audience') return -1;
+    if (b.type === 'audience') return 1;
+    console.error('cannot sort recordings......', {a, b})
+  }, recordings)
+  console.log({recordings, showRecordings})
 
   const setlists = [1, 2, 3].reduce((setlists, which) => {
     if (!show[`set${which}`]) {
