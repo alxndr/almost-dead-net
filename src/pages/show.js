@@ -55,7 +55,6 @@ export default function Show({pageContext: {show, shows, sets, venue, guests, re
     if (b.type === 'audience') return 1;
     console.error('cannot sort recordings......', {a, b})
   }, recordings)
-  console.log({recordings, showRecordings})
 
   const setlists = [1, 2, 3].reduce((setlists, which) => {
     if (!show[`set${which}`]) {

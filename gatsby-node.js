@@ -5,7 +5,7 @@ const csv = require('papaparse')
 const omit = require('lodash/omit')
 const {filter, find, propEq} = require('ramda')
 
-const URL_BASE = 'https://gist.githubusercontent.com/alxndr/5f64cf477d5202c004856772ad2222db/raw/457cf342d4159ec8e6636f3ffefa7ea50453e6c3'
+const URL_BASE = 'https://gist.githubusercontent.com/alxndr/5f64cf477d5202c004856772ad2222db/raw/a03309c1345fabe6924f5f0750cd33621e992c9f'
 const ENDPOINTS = {
   GUESTS_URL: `${URL_BASE}/guests.csv`,
   RECORDINGS_URL: `${URL_BASE}/recordings.csv`,
