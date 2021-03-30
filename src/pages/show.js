@@ -15,7 +15,7 @@ function normalizeSetlist(rawSetlistValue) {
       : []
 }
 
-export default function Show({pageContext: {show, shows, sets, venue, guests, recordings, performances, segues, songs, teases}}) {
+export default function Show({pageContext: {show, shows, sets, venue, guests, recordings, performances, segues, songs, teases, lastShowId}}) {
   if (!show) {
     console.error('Show page, missing show..............')
     return false
@@ -127,5 +127,9 @@ export default function Show({pageContext: {show, shows, sets, venue, guests, re
         </section>
       : false
     }
+    <nav className="showpage__nav">
+      {show.id > 1 && <a href={`/show/${show.id - 1}`} className="showpage__nav__prev" title="previous show">Prior show</a>}
+      {show.id < lastShowId && <a href={`/show/${show.id + 1}`} className="showpage__nav__next" title="following show">Next show</a>}
+    </nav>
   </Layout>
 }

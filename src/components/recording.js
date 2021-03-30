@@ -44,6 +44,7 @@ function determineEmbed(url) {
       allowFullScreen
       ></iframe>
   }
+  return <span>(from {new URL(url).host.replace('www.', '')})</span>
 }
 
 export default function Recording({type, url}) {

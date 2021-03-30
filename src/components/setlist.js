@@ -12,7 +12,7 @@ import 'react-tippy/dist/tippy.css'
 const findById = (id) => find(propEq('id', id))
 
 function SetlistEntry({performanceData, songData, segues, teases}) {
-  const displayName = /*songData.nicknames ? songData.nicknames.split(';', 1) :*/ songData.title
+  const displayName = songData.title
   const segueData = find(propEq('from_perf_id', performanceData.id))(segues)
   const teasesArray = filter(propEq('performance_id', performanceData.id))(teases)
   return <li>

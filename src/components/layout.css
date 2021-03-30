@@ -63,6 +63,7 @@ code {
 .App__banner img {
   min-width: 13em;
   max-width: 33%;
+  margin-bottom: 0.2em;
 }
 
 footer.footer {
@@ -76,5 +77,4 @@ footer.footer {
   max-height: 2em;
 }
 .footer .footer__link-about {
-  /*flex-grow: 3;*/
 }

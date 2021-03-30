@@ -2,7 +2,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 1em;
+  padding: 0 1em;
 }
 
 .showpage > main > section {
@@ -29,7 +29,6 @@ section.showpage__recordings ul {
   margin: 0.5em 0;
 }
 
-
 .showpage__pagetitle > span {
   display: block;
 }
@@ -48,4 +47,24 @@ section.showpage__recordings ul {
   background: #eee;
   border-radius: 0.5em;
   box-shadow: 0.1em 0.1em 0.5em rgba(0,0,0, 0.5);
+}
+
+.showpage__nav {
+  display: flex;
+  order: -1; /* flex order to the beginning */
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+.showpage__nav a {
+  padding: 0.5em;
+  border-radius: 1em;
+}
+.showpage__nav__prev {
+  background: linear-gradient(45deg, thistle, transparent);
+  box-shadow: 1px 1px 3px 0px black;
+}
+.showpage__nav__next {
+  background: linear-gradient(315deg, thistle, transparent);
+  box-shadow: -1px 1px 3px 0px black;
 }

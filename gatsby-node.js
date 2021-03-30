@@ -96,6 +96,7 @@ exports.createPages = async ({ actions: { createPage } }) => {
         segues,
         songs,
         teases,
+        lastShowId: shows.reduce((acc, elem) => acc.id > elem.id ? acc : elem, []),
       }
     })
   })
