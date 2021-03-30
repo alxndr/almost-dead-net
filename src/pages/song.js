@@ -43,7 +43,7 @@ export default function Song({pageContext: {song, shows, sets, songs, songPerfor
     const performanceIdStr = performanceData.id.toString()
     const setData = find((set) => {
       return set.setlist && set.setlist.toString().split(':').includes(performanceIdStr)
-    })(Object.values(sets))
+    })(sets)
     if (!setData || !setData.id) {
       console.warn(`missing setData...`, {song, performanceData})
       return false
@@ -62,7 +62,7 @@ export default function Song({pageContext: {song, shows, sets, songs, songPerfor
 
   const performancesSorted = performancesData
     .map(attachMoreData)
-    .filter((data) => !!data.showData)
+    .filter((data) => data && data.showData)
     .sort((perfA, perfB) => {
       const dateA = new Date(perfA.showData.date.split('/'))
       const dateB = new Date(perfB.showData.date.split('/'))
@@ -98,7 +98,7 @@ export default function Song({pageContext: {song, shows, sets, songs, songPerfor
       <h2>Teases</h2>
       <ul>
         {teasesData.map(teaseData => {
-          const performanceData = find(propEq('id', teaseData.performance_id))(songPerformances) //performancesObject[teaseData.performance_id]
+          const performanceData = find(propEq('id', teaseData.performance_id))(songPerformances)
           const setData = find((set) => set.setlist.toString().split(':').includes(performanceData.id.toString()))(sets)
           const showData = find((show) => [show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(shows)
           return <li key={teaseData.id}>
