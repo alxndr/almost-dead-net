@@ -26,12 +26,14 @@ function ShowHeadline({date, event, venue, showNumber}) {
   </h1>
 }
 
-function ShowRecordings({recordings}) {
+function ShowRecordings({date, recordings}) {
   if (recordings.length) {
+    const [m, d, yyyy] = date.split('/')
     return <section className="showpage__recordings">
       <h2>Recordings</h2>
       <ul>
         {recordings.map(({type, url}) => <Recording type={type} url={url} />)}
+        <Recording type={'audio'} url={`https://relisten.net/jrad/${yyyy}/${m < 10 ? `0${m}` : m}/${d < 10 ? `0${d}` : d}`} />
       </ul>
     </section>
   }
@@ -128,7 +130,7 @@ export default function Show({pageContext: {show, shows, sets, venue, guests, re
       {encores.length && encores}
       {notes && <div className="showpage__notes">{notes}</div>}
     </section>
-    <ShowRecordings recordings={showRecordings} />
+    <ShowRecordings recordings={showRecordings} date={date} />
     <nav className="showpage__nav">
       {Number(show.id) > 1 && <a href={`/show/${Number(show.id) - 1}`} className="showpage__nav__prev" title="previous show">Prior show</a>}
       {Number(show.id) < Number(lastShowId) && <a href={`/show/${Number(show.id) + 1}`} className="showpage__nav__next" title="following show">Next show</a>}
