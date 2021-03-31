@@ -61,14 +61,14 @@ export default function Setlist(props) {
       }
     })
   )
-  return <>
-    <p className="setlist__label">
+  return <div className="setlist__set">
+    <p className="setlist__setlabel">
       {props.isEncore
         ? `Encore ${props.which > 1 ? props.which : ''}`
         : `Set ${props.which}`
       }
     </p>
-    <ol className="setlist">
+    <ol className="setlist__tracks">
       {groupedBySuite.map((songOrSuite) => {
         if (songOrSuite.length > 1) {
           return <li key={songOrSuite[0].performanceData.id} className="suite">
@@ -91,5 +91,5 @@ export default function Setlist(props) {
         return <SetlistEntry key={performanceData.id} performanceData={performanceData} songData={songData} segues={segues} teases={teases} />
       })}
     </ol>
-  </>
+  </div>
 }

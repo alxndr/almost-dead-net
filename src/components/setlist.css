@@ -1,4 +1,4 @@
-.setlist {
+.setlist__tracks {
   line-height: 1.5em;
 }
 
@@ -7,4 +7,14 @@
   padding-left: 1em;
   cursor: pointer;
   line-height: 1em;
+}
+
+.setlist__tracks ul {
+  display: inline;
+  margin: 0;
+  list-style: none;
+}
+.setlist__tracks ul li {
+  padding-left: 0.5em;
+  display: inline;
 }
