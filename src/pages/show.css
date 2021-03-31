@@ -6,7 +6,9 @@
 }
 
 .showpage > main > section {
-  flex: 2 1 33%;
+  flex: 2 1 33%; /* child rule for flex context of parent */
+  display: flex; /* establish flex context for child elements */
+  flex-direction: column; /* customize flex behavior of child elements */
 }
 
 section.showpage__setlist {
@@ -42,10 +44,11 @@ section.showpage__recordings ul {
 }
 
 .showpage__notes {
+  order: -1; /* place at beginning of flex order */
   margin: 0.5em 3em;
   padding: 1.5em;
   background: #eee;
-  border-radius: 0.5em;
+  border-radius: 1.5em;
   box-shadow: 0.1em 0.1em 0.5em rgba(0,0,0, 0.5);
 }
 

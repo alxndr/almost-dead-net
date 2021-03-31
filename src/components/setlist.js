@@ -61,15 +61,15 @@ export default function Setlist(props) {
       }
     })
   )
-  return <div className="setlist__set">
-    <p className="setlist__setlabel">
+  return <div className={`setlist__set setlist__set-${props.isEncore ? 'encore' : props.which}`}>
+    <h3 className="setlist__setlabel">
       {props.which === 'soundcheck'
         ? 'Soundcheck'
         : props.isEncore
           ? `Encore ${props.which > 1 ? props.which : ''}`
           : `Set ${props.which}`
       }
-    </p>
+    </h3>
     <ol className="setlist__tracks">
       {groupedBySuite.map((songOrSuite) => {
         if (songOrSuite.length > 1) {
