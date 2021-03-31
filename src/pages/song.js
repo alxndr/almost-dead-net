@@ -3,6 +3,7 @@ import {Link} from 'gatsby'
 import {filter, find, propEq, uniqBy} from 'ramda'
 
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 import './song.css'
 
@@ -110,6 +111,10 @@ export default function Song({pageContext: {song, shows, sets, songs, songPerfor
     : false
 
   return <Layout className="songpage">
+    <SEO
+      title={`"${song.title}" performances by JRAD`}
+      description={`List of performances of the song "${song.title}" by Joe Russo's Almost Dead`}
+    />
     <h1 className="songpage__name">{song.title}</h1>
     <div className="songpage__info">
       {authorInfo(song.author)}
