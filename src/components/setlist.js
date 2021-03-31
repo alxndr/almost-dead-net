@@ -1,15 +1,6 @@
 import React, {useEffect, useState} from 'react'
-import { Link } from 'react-router-dom'
+import {Link} from 'gatsby'
 import {filter, find, groupWith, propEq} from 'ramda'
-
-import {
-  SEGUES_URL,
-  SONG_PERFORMANCES_URL,
-  SONGS_URL,
-  TEASES_URL,
-} from '../data'
-import {parseWithCache} from '../fetch'
-import routes, {url} from '../routes'
 
 import Segue from './segue'
 import PerfNote from './perf_note'
@@ -18,14 +9,14 @@ import TeasesNote from './teases_note'
 import './setlist.css'
 import 'react-tippy/dist/tippy.css'
 
-const findByIntegerId = (id) => find(propEq('id', Number(id)))
+const findById = (id) => find(propEq('id', id))
 
 function SetlistEntry({performanceData, songData, segues, teases}) {
-  const displayName = /*songData.nicknames ? songData.nicknames.split(';', 1) :*/ songData.title
+  const displayName = songData.title
   const segueData = find(propEq('from_perf_id', performanceData.id))(segues)
   const teasesArray = filter(propEq('performance_id', performanceData.id))(teases)
   return <li>
-    <Link to={url(routes.song, {id: performanceData.song_id})}>
+    <Link to={`/song/${performanceData.song_id}`}>
       {displayName}
     </Link>
     {' '}
@@ -37,16 +28,12 @@ function SetlistEntry({performanceData, songData, segues, teases}) {
 }
 
 export default function Setlist(props) {
-  const [performances, setPerformances] = useState(null)
-  const [segues, setSegues] = useState(null)
-  const [songs, setSongs] = useState(null)
-  const [teases, setTeases] = useState(null)
-  useEffect(() => {
-    parseWithCache(SONG_PERFORMANCES_URL, setPerformances)
-    parseWithCache(SEGUES_URL, setSegues)
-    parseWithCache(SONGS_URL, setSongs)
-    parseWithCache(TEASES_URL, setTeases)
-  }, [])
+  const {
+    performances,
+    segues,
+    songs,
+    teases
+  } = props
   if (!(performances && songs && segues && teases)) {
     return <p>Loading...</p>
   }
@@ -65,8 +52,8 @@ export default function Setlist(props) {
   const groupedBySuite = groupWith(
     (a, b) => a.suite && a.suite === b.suite,
     props.setlist.map((perfId) => {
-      const performanceData = findByIntegerId(perfId)(performances)
-      const songData = find(propEq('id', performanceData.song_id))(songs)
+      const performanceData = findById(perfId)(performances)
+      const songData = findById(performanceData.song_id)(songs)
       return {
         suite: songData.suite,
         songData,
@@ -74,14 +61,16 @@ export default function Setlist(props) {
       }
     })
   )
-  return <>
-    <p className="setlist__label">
-      {props.isEncore
-        ? `Encore ${props.which > 1 ? props.which : ''}`
-        : `Set ${props.which}`
+  return <div className={`setlist__set setlist__set-${props.isEncore ? 'encore' : props.which}`}>
+    <h3 className="setlist__setlabel">
+      {props.which === 'soundcheck'
+        ? 'Soundcheck'
+        : props.isEncore
+          ? `Encore ${props.which > 1 ? props.which : ''}`
+          : `Set ${props.which}`
       }
-    </p>
-    <ol className="setlist">
+    </h3>
+    <ol className="setlist__tracks">
       {groupedBySuite.map((songOrSuite) => {
         if (songOrSuite.length > 1) {
           return <li key={songOrSuite[0].performanceData.id} className="suite">
@@ -104,5 +93,5 @@ export default function Setlist(props) {
         return <SetlistEntry key={performanceData.id} performanceData={performanceData} songData={songData} segues={segues} teases={teases} />
       })}
     </ol>
-  </>
+  </div>
 }

@@ -1,28 +1,12 @@
 import React, {useEffect, useState} from 'react'
-import {filter, find, includes, propEq, where} from 'ramda'
-import dompurify from 'dompurify'
+import {filter, find, includes, propEq, sort, where} from 'ramda'
 
-import {
-  GUESTS_URL,
-  RECORDINGS_URL,
-  SETS_URL,
-  SHOWS_URL,
-  VENUES_URL
-} from '../data'
-import {parseWithCache} from '../fetch'
-
+import SEO from "../components/seo"
+import Layout from '../components/layout'
 import Setlist from '../components/setlist'
 import Recording from '../components/recording'
 
 import './show.css'
-
-function linkShowNotes(text) {
-  return <>{text.split(/\s/g).flatMap(word => word.startsWith('https://')
-    ? [<a href={word} rel="noopener noreferrer" target="_blank">{dompurify.sanitize(word)}</a>, ' ']
-    : [dompurify.sanitize(word), ' '])
-    }
-  </>
-}
 
 function normalizeSetlist(rawSetlistValue) {
   return typeof rawSetlistValue === "number"
@@ -32,46 +16,66 @@ function normalizeSetlist(rawSetlistValue) {
       : []
 }
 
-export default function Show({match: {params}}) {
-  const [shows, setShows] = useState(null)
-  const [sets, setSets] = useState(null)
-  const [venues, setVenues] = useState(null)
-  const [guests, setGuests] = useState(null)
-  const [recordings, setRecordings] = useState([])
-  useEffect(() => {
-    parseWithCache(SHOWS_URL, setShows)
-    parseWithCache(SETS_URL, setSets)
-    parseWithCache(VENUES_URL, setVenues)
-    parseWithCache(GUESTS_URL, setGuests)
-    parseWithCache(RECORDINGS_URL, setRecordings)
-  }, [])
-  if (!shows || !venues || !sets || !guests) {
-    return <p>Loading...</p>
+function ShowHeadline({date, event, venue, showNumber}) {
+  return <h1 className="showpage__pagetitle">
+    <span className="showpage__pagetitle--band">Joe Russo's Almost Dead</span>
+    <span className="showpage__pagetitle--date">{date}</span>
+    {event && <span className="showpage__pagetitle--event">{event}</span>}
+    {venue && <span className="showpage__pagetitle--venue">{venue.name}, {venue.location}</span>}
+    <span className="showpage__pagetitle--number">show #{showNumber}</span>
+  </h1>
+}
+
+function ShowRecordings({date, recordings}) {
+  if (recordings.length) {
+    const [m, d, yyyy] = date.split('/')
+    return <section className="showpage__recordings">
+      <h2>Recordings</h2>
+      <ul>
+        {recordings.map(({type, url}) => <Recording type={type} url={url} />)}
+        <Recording type={'audio'} url={`https://relisten.net/jrad/${yyyy}/${m < 10 ? `0${m}` : m}/${d < 10 ? `0${d}` : d}`} />
+      </ul>
+    </section>
   }
-  if (!shows.length) {
-    return <p>Uh oh, no shows found...</p>
+  return false
+}
+
+function Guests({guests}) {
+  if (guests.length) {
+    return <p>With {guests.map((guest) => guest.name).join(', ')}</p>
   }
-  if (!venues.length) {
-    return <p>Uh oh, no venues found...</p>
+  return false
+}
+
+function Set({show, which, isEncore = false, sets, performances, segues, teases, songs}) {
+  const what = which === 'soundcheck'
+    ? 'soundcheck'
+    : `${isEncore ? 'encore' : 'set'}${which}`
+  const setId = show[what]
+  if (!setId || !sets || !sets.length) {
+    return false
   }
-  if (!sets.length) {
-    return <p>No sets yet.</p>
+  const setData = find(propEq('id', setId))(sets)
+  const setlist = normalizeSetlist(setData.setlist)
+  return <Setlist
+    isEncore={isEncore}
+    which={which}
+    key={setData.id}
+    setlist={setlist}
+    performances={performances}
+    segues={segues}
+    songs={songs}
+    teases={teases}
+  />
+}
+
+export default function Show({pageContext: {show, shows, sets, venue, guests, recordings, performances, segues, songs, teases, lastShowId}}) {
+  if (!show) {
+    console.error('Show page, missing show..............')
+    return false
   }
-  if (!guests.length) {
-    return <p>Uh oh, no guests found...</p>
-  }
-  const inputId = Number(params.id)
-  const showData = find(propEq('id', inputId))(shows)
-  if (!showData) {
-    return <p>Uh oh, no show data found...</p>
-  }
-  const {date, event, notes, venue_id} = showData
-  const findVenue = find(propEq('id', Number(venue_id)))
-  const venueData = findVenue(venues)
-  if (!venueData) {
-    return <p>Uh oh, no venue data found...</p>
-  }
-  const {name, location} = venueData
+
+  const {date, event, notes} = show
 
   const guestsWithSplitShows = guests.map((guestData) => {
     if (!guestData) {
@@ -83,66 +87,53 @@ export default function Show({match: {params}}) {
     if (Number.isInteger(guestData.shows)) {
       return {
         ...guestData,
-        shows: [guestData.shows]
+        shows: [guestData.shows.toString()]
       }
     }
     return {
       ...guestData,
-      shows: guestData.shows.split(':').map(Number.bind(null))
+      shows: guestData.shows.split(':')
     }
   }).filter((data) => !!data)
-  const showGuests = filter(where({shows: includes(inputId)}))(guestsWithSplitShows)
+  const showGuests = filter(where({shows: includes(show.id)}))(guestsWithSplitShows)
 
-  const showRecordings = filter(propEq('show', inputId))(recordings)
+  const showRecordings = sort((a, b) => {
+    if (a.type === b.type) return 0;
+    if (a.type === 'pro-shot') return -1;
+    if (b.type === 'pro-shot') return 1;
+    if (a.type === 'video') return -1;
+    if (b.type === 'video') return 1;
+    if (a.type === 'soundboard') return -1;
+    if (b.type === 'soundboard') return 1;
+    if (a.type === 'audience') return -1;
+    if (b.type === 'audience') return 1;
+    console.error('cannot sort recordings......', {a, b})
+  }, recordings)
 
-  const setlists = [1, 2, 3].reduce((setlists, which) => {
-    if (!showData[`set${which}`]) {
-      return setlists
-    }
-    const setData = find(propEq('id', Number(showData[`set${which}`])))(sets)
-    const setlist = normalizeSetlist(setData.setlist)
-    return setlists.concat([<Setlist isEncore={false} which={which} key={setData.id} setlist={setlist} />])
+  const setlist = [1, 2, 3].reduce((setlists, which) => {
+    return setlists.concat(<Set which={which} show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} />)
   }, [])
   const encores = [1, 2].reduce((encores, which) => {
-    if (!showData[`encore${which}`]) {
-      return encores
-    }
-    const setData = find(propEq('id', Number(showData[`encore${which}`])))(sets)
-    const setlist = normalizeSetlist(setData.setlist)
-    return encores.concat([<Setlist isEncore={true} which={which} key={setData.id} setlist={setlist} />])
+    return encores.concat(<Set isEncore={true} which={which} show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} />)
   }, [])
-  return <div className="showpage">
+
+  return <Layout className="showpage">
+    <SEO
+      title={`JRAD ${date} @ ${event ? `${event}, ` : ``}${venue.name} (${venue.location})`}
+      description={`Joe Russo's Almost Dead at ${event ? `${event}, ` : ``}${venue.name} (${venue.location}) ${date}${showGuests.length ? ` with ${showGuests.map((guest) => guest.name).join(' and ')}` : ''} — setlist, teases, recordings`}
+    />
+    <ShowHeadline date={date} event={event} venue={venue} showNumber={show.id} />
     <section className="showpage__setlist">
-      <h1 className="showpage__pagetitle">
-        <span className="showpage__pagetitle--band">Joe Russo's Almost Dead</span>
-        <span className="showpage__pagetitle--date">{date}</span>
-        <span className="showpage__pagetitle--event">{event || false}</span>
-        <span className="showpage__pagetitle--venue">{name}, {location}</span>
-        <span className="showpage__pagetitle--number">show #{showData.id}</span>
-      </h1>
-      {showGuests.length
-        ? <p>With {showGuests.map((guest) => guest.name).join(', ')}</p>
-        : false
-      }
-      {setlists.length
-        ? setlists
-        : <p>Uh oh, no sets found.</p>
-      }
-      {encores.length
-        ? encores
-        : false
-      }
-      {notes && <div className="showpage__notes">{linkShowNotes(notes)}</div>}
+      <Guests guests={showGuests} />
+      {show.soundcheck && <Set which="soundcheck" show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} />}
+      {setlist.length ? setlist : <p>Uh oh, no sets found.</p>}
+      {encores.length && encores}
+      {notes && <div className="showpage__notes">{notes}</div>}
     </section>
-    {showRecordings.length
-      ?
-        <section className="showpage__recordings">
-          <h2>Recordings</h2>
-          <ul>
-            {showRecordings.map(({type, url}) => <Recording type={type} url={url} />)}
-          </ul>
-        </section>
-        : false
-    }
-  </div>
+    <ShowRecordings recordings={showRecordings} date={date} />
+    <nav className="showpage__nav">
+      {Number(show.id) > 1 && <a href={`/show/${Number(show.id) - 1}`} className="showpage__nav__prev" title="previous show">Prior show</a>}
+      {Number(show.id) < Number(lastShowId) && <a href={`/show/${Number(show.id) + 1}`} className="showpage__nav__next" title="following show">Next show</a>}
+    </nav>
+  </Layout>
 }

@@ -3,13 +3,15 @@
 }
 
 .songfinder .react-autosuggest__suggestions-container {
+  position: absolute;
   padding: 0;
-  background: #dabbff4e;
+  background: #dabbff;
   box-shadow: 0.1em 0.1em 0.3em rgba(0,0,0,0.4) inset;
 }
 
 .songfinder .react-autosuggest__suggestions-container ul {
   list-style: inside '☞ ';
+  margin: 0;
   padding: 0;
 }
 
@@ -19,6 +21,7 @@
 
 .songfinder .songfinder__suggestion:hover {
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .songfinder .songfinder__suggestion--author {

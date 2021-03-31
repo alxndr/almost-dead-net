@@ -6,9 +6,7 @@ export const STAGES = {
 }
 
 export function releaseStage() {
-  if (!document || !document.location || !document.location.hostname)
-    return STAGES.UNKNOWN
-  switch (document.location.hostname) {
+  switch (global.document && global.document.location.hostname) {
     case 'almost-dead.net':
       return STAGES.PROD
     case 'alxndr.github.io':
@@ -19,16 +17,3 @@ export function releaseStage() {
       return STAGES.UNKNOWN
   }
 }
-
-export function determineRelease() {
-  if (process.env.GIT_SHA && process.env.GIT_SHA.length) {
-    // TODO this doesn't work when served from gh-pages...
-    return process.env.GIT_SHA
-  }
-  if (process.env.NODE_ENV === 'development') {
-    return 'develop'
-  }
-  return 'unknown'
-}
-console.log('release...', determineRelease())
-

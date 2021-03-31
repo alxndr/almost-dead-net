@@ -1,23 +1,16 @@
-import React, {useEffect, useState} from 'react'
-
-import {Link, Redirect} from 'react-router-dom'
+import React from 'react'
+import {Link} from 'gatsby'
 import {filter, find, propEq, uniqBy} from 'ramda'
 
-import {
-  SHOWS_URL,
-  SETS_URL,
-  SONG_PERFORMANCES_URL,
-  SONGS_URL,
-  TEASES_URL,
-} from '../data'
-import {parseIntoObjectWithCache} from '../fetch'
-import routes, {url} from '../routes'
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 import './song.css'
 
 function authorInfo(author = null) {
   switch (author) {
     case null:
+    case '':
       return false
     case 'traditional':
       return <p>(traditional)</p>
@@ -34,47 +27,31 @@ const SET_MAPPING = { // 'show table column name' to 'human readable set name'
   encore2: 'double encore',
 }
 
-export default function Song({match: {params}}) {
-  const [showsObject, setShows] = useState(null)
-  const [setsObject, setSets] = useState(null)
-  const [songsObject, setSongs] = useState(null)
-  const [performancesObject, setPerformances] = useState(null)
-  const [teasesObject, setTeases] = useState(null)
-  useEffect(() => {
-    parseIntoObjectWithCache(SHOWS_URL, setShows)
-    parseIntoObjectWithCache(SETS_URL, setSets)
-    parseIntoObjectWithCache(SONGS_URL, setSongs)
-    parseIntoObjectWithCache(SONG_PERFORMANCES_URL, setPerformances, null, (rowData) => !!rowData.song_id)
-    parseIntoObjectWithCache(TEASES_URL, setTeases)
-  }, [])
-
-  if (!(songsObject && performancesObject && showsObject && teasesObject && setsObject)) {
+export default function Song({pageContext: {song, shows, sets, songs, songPerformances, teases}}) {
+  if (!(song && songs && songPerformances && shows && teases && sets)) {
     return <p>Loading...</p>
   }
-
-  const songData = songsObject[params.id]
-  if (!songData) {
+  if (!song) {
     return <p>Uh oh, no song data found...</p>
   }
-  const songNameSlug = songData.title.toLowerCase().replace(/["'()]+/g, '').replace(/[^a-z0-9]+/g, '-')
-  if (!params.name || params.name !== songNameSlug) {
-    return <Redirect to={`/song/${songData.id}/${songNameSlug}`} />
-  }
-  const songId = Number(songData.id)
-
-  const performancesData = filter(propEq('song_id', songId))(Object.values(performancesObject))
+  //const songNameSlug = song.title.toLowerCase().replace(/["'()]+/g, '').replace(/[^a-z0-9]+/g, '-')
+  //if (!params.name || params.name !== songNameSlug) {
+  //  return <Redirect to={`/song/${song.id}/${songNameSlug}`} />
+  //}
+  const songId = song.id
+  const performancesData = filter(propEq('song_id', songId))(songPerformances)
   const attachMoreData = performanceData => {
     const performanceIdStr = performanceData.id.toString()
     const setData = find((set) => {
       return set.setlist && set.setlist.toString().split(':').includes(performanceIdStr)
-    })(Object.values(setsObject))
+    })(sets)
     if (!setData || !setData.id) {
-      console.warn(`missing setData...`, {performanceData, setsObject})
+      console.warn(`missing setData...`, {song, performanceData})
       return false
     }
-    const showData = find((show) => [show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(Object.values(showsObject))
+    const showData = find((show) => [show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(shows)
     if (!showData || !showData.id) {
-      console.warn(`missing showData...`, {performanceData, setData})
+      console.warn(`missing showData...`, {song, performanceData, setData})
       return false
     }
     const whichSet = Object.entries(SET_MAPPING).find(([col_name, readable_name]) => showData[col_name] === setData.id)[1]
@@ -86,7 +63,7 @@ export default function Song({match: {params}}) {
 
   const performancesSorted = performancesData
     .map(attachMoreData)
-    .filter((data) => !!data.showData)
+    .filter((data) => data && data.showData)
     .sort((perfA, perfB) => {
       const dateA = new Date(perfA.showData.date.split('/'))
       const dateB = new Date(perfB.showData.date.split('/'))
@@ -99,11 +76,10 @@ export default function Song({match: {params}}) {
       return 0
     })
   const uniqShows = uniqBy((perf) => perf.showData.id, performancesSorted)
-  console.log({performancesSorted, uniqShows})
   const performances = performancesSorted
     .map(({performanceData, showData, variation, whichSet}) => {
       return <li key={performanceData.id}>
-        <Link to={url(routes.show, {id: showData.id})}>
+        <Link to={`/show/${showData.id}`}>
           {showData.date} {variation} in {whichSet}
         </Link>
       </li>
@@ -117,30 +93,34 @@ export default function Song({match: {params}}) {
     </>
     : false
 
-  const teasesData = filter(propEq('song_id', songId))(Object.values(teasesObject))
+  const teasesData = filter(propEq('song_id', songId))(teases)
   const teasesComponent = teasesData.length > 0
     ? <>
       <h2>Teases</h2>
       <ul>
         {teasesData.map(teaseData => {
-          const performanceData = performancesObject[teaseData.performance_id] //find(propEq('id', Number(teaseData.performance_id)))(performances)
-          const setData = find((set) => set.setlist.toString().split(':').includes(performanceData.id.toString()))(Object.values(setsObject))
-          const showData = find((show) => [show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(Object.values(showsObject))
+          const performanceData = find(propEq('id', teaseData.performance_id))(songPerformances)
+          const setData = find((set) => set.setlist.toString().split(':').includes(performanceData.id.toString()))(sets)
+          const showData = find((show) => [show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(shows)
           return <li key={teaseData.id}>
-            within <Link to={url(routes.show, {id: showData.id})}>{teaseData.within} — {showData.date}</Link>
+            within <Link to={`/show/${showData.id}`}>{teaseData.within} — {showData.date}</Link>
           </li>
         })}
       </ul>
     </>
     : false
 
-  return <section className="songpage">
-    <h1 className="songpage__name">{songData.title}</h1>
+  return <Layout className="songpage">
+    <SEO
+      title={`"${song.title}" performances by JRAD`}
+      description={`List of performances of the song "${song.title}" by Joe Russo's Almost Dead`}
+    />
+    <h1 className="songpage__name">{song.title}</h1>
     <div className="songpage__info">
-      {authorInfo(songData.author)}
-      {songData.suite && <p>Part of the {songData.suite} suite</p>}
+      {authorInfo(song.author)}
+      {song.suite && <p>Part of the {song.suite} suite</p>}
     </div>
     <div className="songpage__performances">{performancesComponent}</div>
     <div className="songpage__teases">{teasesComponent}</div>
-  </section>
+  </Layout>
 }

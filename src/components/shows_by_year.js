@@ -1,18 +1,19 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
-import routes from '../routes'
+import { Link } from 'gatsby'
 
 import './shows_by_year.css'
 
 function ShowEntry({children, show}) {
   const {date, event, id, venue} = show
-  const title = `#${id}: ${date}${event ? ` ${event}` : ''} @ ${venue.name} (${venue.location})`
-  return <Link to={routes.show.replace(':id', id)} title={title}>{children || date}</Link>
+  let title = `#${id}: ${date}${event ? ` ${event}` : ''}`
+  if (venue) {
+    title = `${title} @ ${venue.name} (${venue.location})`
+  } else console.debug(`No venue found for show #${id}`, show)
+  return <Link to={`/show/${id}`} title={title}>{children || date}</Link>
 }
 
 export default function ShowsByYear({rawShows, rawVenues}) {
-  const showsByYear = Object.values(rawShows).reduce((acc, show) => {
+  const showsByYear = rawShows.reduce((acc, show) => {
     const [m, d, y] = show.date.split('/') // e.g. === ['1', '26', '2013']
     if (!acc[y]) acc[y] = {}
     const venue = rawVenues[show.venue_id]
