@@ -1,5 +1,5 @@
 .showsbyyear {
-  margin: 1em;
+  margin: 0.2em 0.5em 1em;
   padding: 0;
   list-style: none;
   display: flex;
@@ -10,21 +10,21 @@
   display: flex;
   border-radius: 15px;
   margin: 0.5em 0.1em;
-  box-shadow: 1px 2px 5px 1px #00000044,
-              inset 1px 3px 20px 0px #00000044;
+  box-shadow: 3px 7px 10px 0 #00000044,
+              inset -3px -5px 9px 0 #00000077;
 }
 
 .showsbyyear h3 {
   margin: 0;
   border-radius: 15px 0 0 15px;
-  padding: 0.7em 0.7em 0.2em;
+  padding: 0.7em 0.7em 0.5em;
   background: #dabbff4e;
-  box-shadow: 0px 0px 10px 2px #00000077 inset;
+  box-shadow: inset 1px -5px 8px 0px #00000044;
 }
 
 .showsbyyear__shows {
   margin: 0;
-  padding: 0;
+  padding: 0 0.5em 0.5em 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
