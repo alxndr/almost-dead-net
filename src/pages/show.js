@@ -25,6 +25,45 @@ function ShowHeadline({date, event, venue, showNumber}) {
   </h1>
 }
 
+function ShowRecordings({recordings}) {
+  if (recordings.length) {
+    return <section className="showpage__recordings">
+      <h2>Recordings</h2>
+      <ul>
+        {recordings.map(({type, url}) => <Recording type={type} url={url} />)}
+      </ul>
+    </section>
+  }
+  return false
+}
+
+function Guests({guests}) {
+  if (guests.length) {
+    return <p>With {guests.map((guest) => guest.name).join(', ')}</p>
+  }
+  return false
+}
+
+function Set({isEncore, show, which, sets, performances, segues, teases, songs}) {
+  const what = `${isEncore ? 'encore' : 'set'}${which}`
+  const setId = show[what]
+  if (!setId || !sets || !sets.length) {
+    return false
+  }
+  const setData = find(propEq('id', setId))(sets)
+  const setlist = normalizeSetlist(setData.setlist)
+  return <Setlist
+    isEncore={isEncore}
+    which={which}
+    key={setData.id}
+    setlist={setlist}
+    performances={performances}
+    segues={segues}
+    songs={songs}
+    teases={teases}
+  />
+}
+
 export default function Show({pageContext: {show, shows, sets, venue, guests, recordings, performances, segues, songs, teases, lastShowId}}) {
   if (!show) {
     console.error('Show page, missing show..............')
@@ -66,72 +105,22 @@ export default function Show({pageContext: {show, shows, sets, venue, guests, re
     console.error('cannot sort recordings......', {a, b})
   }, recordings)
 
-  const setlists = [1, 2, 3].reduce((setlists, which) => {
-    if (!show[`set${which}`]) {
-      return setlists
-    }
-    const setData = find(propEq('id', (show[`set${which}`])))(sets)
-    const setlist = normalizeSetlist(setData.setlist)
-    return setlists.concat([
-      <Setlist
-        isEncore={false}
-        which={which}
-        key={setData.id}
-        setlist={setlist}
-        performances={performances}
-        segues={segues}
-        songs={songs}
-        teases={teases}
-      />
-    ])
+  const setlist = [1, 2, 3].reduce((setlists, which) => {
+    return setlists.concat(<Set which={which} show={show} isEncore={false} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} />)
   }, [])
   const encores = [1, 2].reduce((encores, which) => {
-    if (!show[`encore${which}`]) {
-      return encores
-    }
-    const setData = find(propEq('id', (show[`encore${which}`])))(sets)
-    const setlist = normalizeSetlist(setData.setlist)
-    return encores.concat([
-      <Setlist
-        isEncore={true}
-        which={which}
-        key={setData.id}
-        setlist={setlist}
-        performances={performances}
-        segues={segues}
-        songs={songs}
-        teases={teases}
-      />
-    ])
+    return encores.concat(<Set isEncore={true} which={which} show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} />)
   }, [])
 
   return <Layout className="showpage">
     <ShowHeadline date={date} event={event} venue={venue} showNumber={show.id} />
     <section className="showpage__setlist">
-      {showGuests.length
-        ? <p>With {showGuests.map((guest) => guest.name).join(', ')}</p>
-        : false
-      }
-      {setlists.length
-        ? setlists
-        : <p>Uh oh, no sets found.</p>
-      }
-      {encores.length
-        ? encores
-        : false
-      }
+      <Guests guests={showGuests} />
+      {setlist.length ? setlist : <p>Uh oh, no sets found.</p>}
+      {encores.length ? encores : false}
       {notes && <div className="showpage__notes">{notes}</div>}
     </section>
-    {showRecordings.length
-      ?
-        <section className="showpage__recordings">
-          <h2>Recordings</h2>
-          <ul>
-            {showRecordings.map(({type, url}) => <Recording type={type} url={url} />)}
-          </ul>
-        </section>
-      : false
-    }
+    <ShowRecordings recordings={showRecordings} />
     <nav className="showpage__nav">
       {Number(show.id) > 1 && <a href={`/show/${Number(show.id) - 1}`} className="showpage__nav__prev" title="previous show">Prior show</a>}
       {Number(show.id) < Number(lastShowId) && <a href={`/show/${Number(show.id) + 1}`} className="showpage__nav__next" title="following show">Next show</a>}
