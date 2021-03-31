@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import {filter, find, includes, propEq, sort, where} from 'ramda'
 
+import SEO from "../components/seo"
 import Layout from '../components/layout'
 import Setlist from '../components/setlist'
 import Recording from '../components/recording'
@@ -82,12 +83,12 @@ export default function Show({pageContext: {show, shows, sets, venue, guests, re
     if (Number.isInteger(guestData.shows)) {
       return {
         ...guestData,
-        shows: [guestData.shows]
+        shows: [guestData.shows.toString()]
       }
     }
     return {
       ...guestData,
-      shows: guestData.shows.split(':').map(Number.bind(null))
+      shows: guestData.shows.split(':')
     }
   }).filter((data) => !!data)
   const showGuests = filter(where({shows: includes(show.id)}))(guestsWithSplitShows)
@@ -113,6 +114,10 @@ export default function Show({pageContext: {show, shows, sets, venue, guests, re
   }, [])
 
   return <Layout className="showpage">
+    <SEO
+      title={`JRAD ${date} @ ${event ? `${event}, ` : ``}${venue.name} (${venue.location})`}
+      description={`Joe Russo's Almost Dead at ${event ? `${event}, ` : ``}${venue.name} (${venue.location}) ${date}${showGuests.length ? ` with ${showGuests.map((guest) => guest.name).join(' and ')}` : ''} — setlist, teases, recordings`}
+    />
     <ShowHeadline date={date} event={event} venue={venue} showNumber={show.id} />
     <section className="showpage__setlist">
       <Guests guests={showGuests} />
