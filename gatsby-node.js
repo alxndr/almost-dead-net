@@ -70,6 +70,7 @@ exports.onCreatePage = async ({page, actions: {createPage, deletePage}}) => {
 
 exports.createPages = async ({ actions: { createPage } }) => {
   const shows = Object.values(await fetchCSVintoObject(ENDPOINTS.SHOWS_URL, (show) => !!show.date))
+  const lastShowId = shows.reduce((acc, elem) => Number(acc.id) > Number(elem.id) ? acc : elem, []).id
   const venues = Object.values(await fetchCSVintoObject(ENDPOINTS.VENUES_URL, (venue) => !!venue.name && !!venue.location))
     .map((venue) => ({...venue, name: venue.name.replace(/:/, '')}))
   const sets = Object.values(await fetchCSVintoObject(ENDPOINTS.SETS_URL, (set) => !!set.id))
@@ -96,7 +97,7 @@ exports.createPages = async ({ actions: { createPage } }) => {
         segues,
         songs,
         teases,
-        lastShowId: shows.reduce((acc, elem) => Number(acc.id) > Number(elem.id) ? acc : elem, []).id,
+        lastShowId,
       }
     })
   })
@@ -110,7 +111,7 @@ exports.createPages = async ({ actions: { createPage } }) => {
         shows,
         sets,
         songs,
-        songPerformances: performances,
+        songPerformances: filter(propEq('song_id', song.id))(performances),
         teases,
       }
     })

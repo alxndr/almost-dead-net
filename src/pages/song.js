@@ -34,17 +34,9 @@ export default function Song({pageContext: {song, shows, sets, songs, songPerfor
   if (!song) {
     return <p>Uh oh, no song data found...</p>
   }
-  //const songNameSlug = song.title.toLowerCase().replace(/["'()]+/g, '').replace(/[^a-z0-9]+/g, '-')
-  //if (!params.name || params.name !== songNameSlug) {
-  //  return <Redirect to={`/song/${song.id}/${songNameSlug}`} />
-  //}
-  const songId = song.id
-  const performancesData = filter(propEq('song_id', songId))(songPerformances)
   const attachMoreData = performanceData => {
     const performanceIdStr = performanceData.id.toString()
-    const setData = find((set) => {
-      return set.setlist && set.setlist.toString().split(':').includes(performanceIdStr)
-    })(sets)
+    const setData = find((set) => set.setlist && set.setlist.toString().split(':').includes(performanceIdStr))(sets)
     if (!setData || !setData.id) {
       console.warn(`missing setData...`, {song, performanceData})
       return false
@@ -61,7 +53,7 @@ export default function Song({pageContext: {song, shows, sets, songs, songPerfor
     return {performanceData, showData, variation, whichSet}
   }
 
-  const performancesSorted = performancesData
+  const performancesSorted = songPerformances
     .map(attachMoreData)
     .filter((data) => data && data.showData)
     .sort((perfA, perfB) => {
@@ -84,7 +76,7 @@ export default function Song({pageContext: {song, shows, sets, songs, songPerfor
         </Link>
       </li>
     })
-  const performancesComponent = performancesData.length > 0
+  const performancesComponent = songPerformances.length > 0
     ?  <>
       <h2>Performed at {`${uniqShows.length} Show${uniqShows.length === 1 ? '' : 's'}`}</h2>
       <ul>
@@ -93,7 +85,7 @@ export default function Song({pageContext: {song, shows, sets, songs, songPerfor
     </>
     : false
 
-  const teasesData = filter(propEq('song_id', songId))(teases)
+  const teasesData = filter(propEq('song_id', song.id))(teases)
   const teasesComponent = teasesData.length > 0
     ? <>
       <h2>Teases</h2>
