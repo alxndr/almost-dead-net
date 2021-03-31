@@ -45,8 +45,10 @@ function Guests({guests}) {
   return false
 }
 
-function Set({isEncore, show, which, sets, performances, segues, teases, songs}) {
-  const what = `${isEncore ? 'encore' : 'set'}${which}`
+function Set({show, which, isEncore = false, sets, performances, segues, teases, songs}) {
+  const what = which === 'soundcheck'
+    ? 'soundcheck'
+    : `${isEncore ? 'encore' : 'set'}${which}`
   const setId = show[what]
   if (!setId || !sets || !sets.length) {
     return false
@@ -107,7 +109,7 @@ export default function Show({pageContext: {show, shows, sets, venue, guests, re
   }, recordings)
 
   const setlist = [1, 2, 3].reduce((setlists, which) => {
-    return setlists.concat(<Set which={which} show={show} isEncore={false} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} />)
+    return setlists.concat(<Set which={which} show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} />)
   }, [])
   const encores = [1, 2].reduce((encores, which) => {
     return encores.concat(<Set isEncore={true} which={which} show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} />)
@@ -121,8 +123,9 @@ export default function Show({pageContext: {show, shows, sets, venue, guests, re
     <ShowHeadline date={date} event={event} venue={venue} showNumber={show.id} />
     <section className="showpage__setlist">
       <Guests guests={showGuests} />
+      {show.soundcheck && <Set which="soundcheck" show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} />}
       {setlist.length ? setlist : <p>Uh oh, no sets found.</p>}
-      {encores.length ? encores : false}
+      {encores.length && encores}
       {notes && <div className="showpage__notes">{notes}</div>}
     </section>
     <ShowRecordings recordings={showRecordings} />

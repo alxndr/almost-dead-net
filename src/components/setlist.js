@@ -63,9 +63,11 @@ export default function Setlist(props) {
   )
   return <div className="setlist__set">
     <p className="setlist__setlabel">
-      {props.isEncore
-        ? `Encore ${props.which > 1 ? props.which : ''}`
-        : `Set ${props.which}`
+      {props.which === 'soundcheck'
+        ? 'Soundcheck'
+        : props.isEncore
+          ? `Encore ${props.which > 1 ? props.which : ''}`
+          : `Set ${props.which}`
       }
     </p>
     <ol className="setlist__tracks">
