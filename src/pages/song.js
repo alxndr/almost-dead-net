@@ -20,6 +20,7 @@ function authorInfo(author = null) {
 }
 
 const SET_MAPPING = { // 'show table column name' to 'human readable set name'
+  soundcheck: 'soundcheck',
   set1: 'set 1',
   set2: 'set 2',
   set3: 'set 3',
