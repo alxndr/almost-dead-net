@@ -27,21 +27,28 @@ const SET_MAPPING = { // 'show table column name' to 'human readable set name'
   encore2: 'double encore',
 }
 
-export default function Song({pageContext: {song, shows, sets, songs, songPerformances, teases}}) {
+export default function Song({pageContext: {song, shows, sets, songs, songPerformances, teases, teasePerformances}}) {
   if (!(song && songs && songPerformances && shows && teases && sets)) {
     return <p>Loading...</p>
   }
   if (!song) {
     return <p>Uh oh, no song data found...</p>
   }
-  const attachMoreData = performanceData => {
+  const attachMoreData = (performanceData) => {
     const performanceIdStr = performanceData.id.toString()
     const setData = find((set) => set.setlist && set.setlist.toString().split(':').includes(performanceIdStr))(sets)
     if (!setData || !setData.id) {
       console.warn(`missing setData...`, {song, performanceData})
       return false
     }
-    const showData = find((show) => [show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(shows)
+    const showData = find((show) => [
+      show.soundcheck,
+      show.set1,
+      show.set2,
+      show.set3,
+      show.encore1,
+      show.encore2
+    ].includes(setData.id))(shows)
     if (!showData || !showData.id) {
       console.warn(`missing showData...`, {song, performanceData, setData})
       return false
@@ -85,15 +92,14 @@ export default function Song({pageContext: {song, shows, sets, songs, songPerfor
     </>
     : false
 
-  const teasesData = filter(propEq('song_id', song.id))(teases)
-  const teasesComponent = teasesData.length > 0
+  const teasesComponent = teases.length > 0
     ? <>
       <h2>Teases</h2>
       <ul>
-        {teasesData.map(teaseData => {
-          const performanceData = find(propEq('id', teaseData.performance_id))(songPerformances)
+        {teases.map(teaseData => {
+          const performanceData = find(propEq('id', teaseData.performance_id))(teasePerformances)
           const setData = find((set) => set.setlist.toString().split(':').includes(performanceData.id.toString()))(sets)
-          const showData = find((show) => [show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(shows)
+          const showData = find((show) => [show.soundcheck, show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(shows)
           return <li key={teaseData.id}>
             within <Link to={`/show/${showData.id}`}>{teaseData.within} — {showData.date}</Link>
           </li>

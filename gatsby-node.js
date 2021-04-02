@@ -5,7 +5,7 @@ const csv = require('papaparse')
 const omit = require('lodash/omit')
 const {filter, find, propEq} = require('ramda')
 
-const URL_BASE = 'https://gist.githubusercontent.com/alxndr/5f64cf477d5202c004856772ad2222db/raw/aedda6bb9d66853cc2d6a1f1b6dd1d5fa530922b'
+const URL_BASE = 'https://gist.githubusercontent.com/alxndr/5f64cf477d5202c004856772ad2222db/raw/8fe27f3fff1251087da2f0eaffa6d011a53db55f'
 const ENDPOINTS = {
   GUESTS_URL: `${URL_BASE}/guests.csv`,
   RECORDINGS_URL: `${URL_BASE}/recordings.csv`,
@@ -69,7 +69,8 @@ exports.onCreatePage = async ({page, actions: {createPage, deletePage}}) => {
 }
 
 exports.createPages = async ({ actions: { createPage } }) => {
-  const shows = Object.values(await fetchCSVintoObject(ENDPOINTS.SHOWS_URL, (show) => !!show.date))
+  const showsObj = await fetchCSVintoObject(ENDPOINTS.SHOWS_URL, (show) => !!show.date)
+  const shows = Object.values(showsObj)
   const lastShowId = shows.reduce((acc, elem) => Number(acc.id) > Number(elem.id) ? acc : elem, []).id
   const venues = Object.values(await fetchCSVintoObject(ENDPOINTS.VENUES_URL, (venue) => !!venue.name && !!venue.location))
     .map((venue) => ({...venue, name: venue.name.replace(/:/, '')}))
@@ -103,6 +104,8 @@ exports.createPages = async ({ actions: { createPage } }) => {
   })
 
   songs.forEach((song) => {
+    const teaseRows = filter(propEq('song_id', song.id))(teases)
+    const teasePerfIds = teaseRows.map((row) => row.performance_id)
     createPage({
       path: `/song/${song.id}`,
       component: SongPage,
@@ -112,7 +115,8 @@ exports.createPages = async ({ actions: { createPage } }) => {
         sets,
         songs,
         songPerformances: filter(propEq('song_id', song.id))(performances),
-        teases,
+        teases: teaseRows,
+        teasePerformances: filter((perf) => teasePerfIds.includes(perf.id))(performances),
       }
     })
   })
