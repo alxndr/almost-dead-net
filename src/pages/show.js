@@ -101,6 +101,8 @@ export default function Show({pageContext: {show, shows, sets, venue, guests, re
     if (a.type === b.type) return 0;
     if (a.type === 'pro-shot') return -1;
     if (b.type === 'pro-shot') return 1;
+    if (a.type === 'matrix') return -1;
+    if (b.type === 'matrix') return 1;
     if (a.type === 'video') return -1;
     if (b.type === 'video') return 1;
     if (a.type === 'soundboard') return -1;
