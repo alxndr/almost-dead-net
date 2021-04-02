@@ -2,9 +2,25 @@
   padding: 1em;
 }
 
+.songpage h2 {
+  margin-bottom: 0.7em;
+}
+
 .songpage__name:before {
   content: '"';
 }
 .songpage__name:after {
   content: '"';
+}
+
+@media all and (min-width: 35em) {
+  .songpage ul {
+    column-count: 2;
+  }
+}
+
+@media all and (min-width: 50em) {
+  .songpage__performances ul {
+    column-count: 3;
+  }
 }
