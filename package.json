@@ -19,7 +19,7 @@
     "lint": "echo linting... && eslint src/ && echo Successfully linted JS"
   },
   "dependencies": {
-    "@sentry/browser": "^5.18.1",
+    "@sentry/browser": "^6.2.5",
     "classnames": "^2.2.6",
     "dompurify": "^2.2.4",
     "gatsby": "^3.0.1",
