@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import {filter, find, includes, propEq, sort, where} from 'ramda'
+import {Link} from 'gatsby'
+import slugify from 'slugify'
 
 import SEO from "../components/seo"
 import Layout from '../components/layout'
@@ -18,10 +20,14 @@ function normalizeSetlist(rawSetlistValue) {
 
 function ShowHeadline({date, event, venue, showNumber}) {
   return <h1 className="showpage__pagetitle">
-    <span className="showpage__pagetitle--band">Joe Russo's Almost Dead</span>
-    <span className="showpage__pagetitle--date">{date}</span>
-    {event && <span className="showpage__pagetitle--event">{event}</span>}
-    {venue && <span className="showpage__pagetitle--venue">{venue.name}, {venue.location}</span>}
+    <span className="showpage__pagetitle--band">Joe Russo's Almost Dead</span> {' '}
+    <span className="showpage__pagetitle--date">{date}</span> {' '}
+    {event && <span className="showpage__pagetitle--event">{event}</span>} {' '}
+    {venue && <span className="showpage__pagetitle--venue"> {' '}
+      <Link to={`/venue/${venue.id}-${slugify(venue.name)}`}>
+        {venue.name}, {venue.location}
+      </Link>
+    </span>} {' '}
     <span className="showpage__pagetitle--number">show #{showNumber}</span>
   </h1>
 }

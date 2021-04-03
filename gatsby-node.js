@@ -4,6 +4,7 @@ const axios = require('axios')
 const csv = require('papaparse')
 const omit = require('lodash/omit')
 const {filter, find, propEq} = require('ramda')
+const slugify = require('slugify')
 
 const URL_BASE = 'https://gist.githubusercontent.com/alxndr/5f64cf477d5202c004856772ad2222db/raw/7a6c863dc8ad6b9f920f6f59c8bf3b80c9f05d0d'
 const ENDPOINTS = {
@@ -21,6 +22,7 @@ const ENDPOINTS = {
 const HomePage = require.resolve('./src/pages/home.js')
 const ShowPage = require.resolve('./src/pages/show.js')
 const SongPage = require.resolve('./src/pages/song.js')
+const VenuePage = require.resolve('./src/pages/venue.js')
 
 async function fetchCSVintoObject(url, isValidEntry) {
   const {data} = await axios.get(url)
@@ -117,6 +119,17 @@ exports.createPages = async ({ actions: { createPage } }) => {
         songPerformances: filter(propEq('song_id', song.id))(performances),
         teases: teaseRows,
         teasePerformances: filter((perf) => teasePerfIds.includes(perf.id))(performances),
+      }
+    })
+  })
+
+  venues.forEach((venue) => {
+    createPage({
+      path: `/venue/${venue.id}-${slugify(venue.name)}`,
+      component: VenuePage,
+      context: {
+        venue,
+        shows: filter(propEq('venue_id', venue.id))(shows),
       }
     })
   })

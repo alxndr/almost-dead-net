@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Almost-Dead.net',
     description: 'JRAD setlists & discussion forum',
+    siteUrl: 'https://almost-dead.net',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

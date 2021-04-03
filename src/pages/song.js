@@ -102,7 +102,7 @@ export default function Song({pageContext: {song, shows, sets, songs, songPerfor
           const setData = find((set) => set.setlist.toString().split(':').includes(performanceData.id.toString()))(sets)
           const showData = find((show) => [show.soundcheck, show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(shows)
           return <li key={teaseData.id}>
-            within <Link to={`/show/${showData.id}`}>{teaseData.within} — {showData.date}</Link>
+            within <Link to={`/show/${showData.id}`}>{teaseData.within} {performanceData.variation && `(${performanceData.variation})`} — {showData.date}</Link>
           </li>
         })}
       </ul>

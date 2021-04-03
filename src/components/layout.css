@@ -12,6 +12,13 @@ h1 {
   font-family: 'Shadows Into Light', fantasy;
   font-size: 1.9em;
   line-height: 1.1em;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+h2 {
+  margin-bottom: 0.3em;
+  font-size: 1.1em;
+  text-align: center;
 }
 a {
   color: #013;
