@@ -44,7 +44,6 @@ section.showpage__recordings ul {
 }
 
 .showpage__notes {
-  order: -1; /* place at beginning of flex order */
   margin: 0.5em 3em;
   padding: 1.5em;
   background: #eee;

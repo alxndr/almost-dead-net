@@ -75,13 +75,20 @@ function Set({show, which, isEncore = false, sets, performances, segues, teases,
   />
 }
 
+function LeadImage({urls}) {
+  const src = find((url) => url.startsWith('https://lot.almost-dead.net/uploads/') || url.match(/imgur/))(urls)
+  return <div className="showpage__leadimage">
+    <img src={src} />
+  </div>
+}
+
 export default function Show({pageContext: {show, shows, sets, venue, guests, recordings, performances, segues, songs, teases, lastShowId}}) {
   if (!show) {
     console.error('Show page, missing show..............')
     return false
   }
 
-  const {date, event, notes} = show
+  const {date, event, notes, links} = show
 
   const guestsWithSplitShows = guests.map((guestData) => {
     if (!guestData) {
@@ -132,11 +139,12 @@ export default function Show({pageContext: {show, shows, sets, venue, guests, re
     />
     <ShowHeadline date={date} event={event} venue={venue} showNumber={show.id} />
     <section className="showpage__setlist">
+      {links && <LeadImage urls={links.split(/\s+/)} />}
+      {notes && <div className="showpage__notes">{notes}</div>}
       <Guests guests={showGuests} />
       {show.soundcheck && <Set which="soundcheck" show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} />}
       {setlist.length ? setlist : <p>Uh oh, no sets found.</p>}
       {encores.length && encores}
-      {notes && <div className="showpage__notes">{notes}</div>}
     </section>
     <ShowRecordings recordings={showRecordings} date={date} />
     <nav className="showpage__nav">

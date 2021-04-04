@@ -27,7 +27,7 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  background: repeating-linear-gradient(transparent, transparent 3.3em, thistle 3.4em);
+  background: repeating-linear-gradient(#dabbff4e, #dabbff4e 2.8em, #dabbff99 3.48em);
 }
 
 .showsbyyear__shows li {
