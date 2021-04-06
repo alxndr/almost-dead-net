@@ -18,6 +18,7 @@ h3.setlist__setlabel {
 }
 
 .setlist__tracks {
+  list-style: square;
   margin-left: 1em;
   line-height: 1.5em;
 }
@@ -29,12 +30,13 @@ h3.setlist__setlabel {
   line-height: 1em;
 }
 
-.setlist__tracks ul {
+.setlist__tracks li ul {
+  /* Suite pieces */
   display: inline;
   margin: 0;
   list-style: none;
 }
-.setlist__tracks ul li {
+.setlist__tracks li ul li {
   padding-left: 0.5em;
   display: inline;
 }
