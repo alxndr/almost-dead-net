@@ -1,2 +1,0 @@
-(self.webpackChunkalmost_dead_net=self.webpackChunkalmost_dead_net||[]).push([[721],{6631:function(e,n,t){"use strict";t.r(n),t.d(n,{default:function(){return a}});t(7294);function a(e){e.children;var n=e.location;new URL(n.href).searchParams.get("show")}}}]);
-//# sourceMappingURL=component---src-pages-iframe-js-70e5c1288db7a0392c02.js.map
