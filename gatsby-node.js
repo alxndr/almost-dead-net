@@ -3,10 +3,10 @@ require('logrocket').init('wi5hyr/a-dn')
 const axios = require('axios')
 const csv = require('papaparse')
 const omit = require('lodash/omit')
-const {filter, find, propEq} = require('ramda')
+const {filter, propEq} = require('ramda')
 const slugify = require('slugify')
 
-const URL_BASE = 'https://gist.githubusercontent.com/alxndr/5f64cf477d5202c004856772ad2222db/raw/1d841d5b31530aeddb2f75e1566a27b94c7e8606'
+const URL_BASE = 'https://gist.githubusercontent.com/alxndr/5f64cf477d5202c004856772ad2222db/raw/7cb3dc076209e3dd679a31e302030f3881e5e53c'
 const ENDPOINTS = {
   GUESTS_URL: `${URL_BASE}/guests.csv`,
   RECORDINGS_URL: `${URL_BASE}/recordings.csv`,
@@ -74,8 +74,8 @@ exports.createPages = async ({ actions: { createPage } }) => {
   const showsObj = await fetchCSVintoObject(ENDPOINTS.SHOWS_URL, (show) => !!show.date)
   const shows = Object.values(showsObj)
   const lastShowId = shows.reduce((acc, elem) => Number(acc.id) > Number(elem.id) ? acc : elem, []).id
-  const venues = Object.values(await fetchCSVintoObject(ENDPOINTS.VENUES_URL, (venue) => !!venue.name && !!venue.location))
-    .map((venue) => ({...venue, name: venue.name.replace(/:/, '')}))
+  const venuesObj = await fetchCSVintoObject(ENDPOINTS.VENUES_URL, (venue) => !!venue.name && !!venue.location)
+  const venues = Object.values(venuesObj)
   const sets = Object.values(await fetchCSVintoObject(ENDPOINTS.SETS_URL, (set) => !!set.id))
     .map((obj) => omit(obj, ['song performances', '']))
   const songs = Object.values(await fetchCSVintoObject(ENDPOINTS.SONGS_URL, (song) => !!song.title))
@@ -93,7 +93,7 @@ exports.createPages = async ({ actions: { createPage } }) => {
         show,
         shows,
         sets,
-        venue: find(propEq('id', show.venue_id))(venues),
+        venue: venuesObj[show.venue_id.toString()],
         guests,
         recordings: filter(propEq('show', show.id))(recordings),
         performances,

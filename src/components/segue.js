@@ -7,8 +7,8 @@ import './segue.css'
  * Show a visual indication of the type of segue.
  * http://beta.phish.net/faq/segues
  */
-export default function Segue({type}) {
-  const cssClasses = classnames('segue', {
+export default function Segue({className = '', type}) {
+  const cssClasses = classnames(className, 'segue', {
     'segue--std': type === '>',
     'segue--smooth': type === '->',
   })

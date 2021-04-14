@@ -39,7 +39,9 @@ function ShowRecordings({date, recordings}) {
       <h2>Recordings</h2>
       <ul>
         {recordings.map(({type, url}) => <Recording type={type} url={url} />)}
-        <Recording type={'audio'} url={`https://relisten.net/jrad/${yyyy}/${m < 10 ? `0${m}` : m}/${d < 10 ? `0${d}` : d}`} />
+        {Boolean(recordings.filter(({type}) => ['matrix', 'soundboard'].includes(type)).length) &&
+          <Recording type={'audio'} url={`https://relisten.net/jrad/${yyyy}/${m < 10 ? `0${m}` : m}/${d < 10 ? `0${d}` : d}`} />
+        }
       </ul>
     </section>
   }

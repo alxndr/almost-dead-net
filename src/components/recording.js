@@ -38,6 +38,7 @@ function determineEmbed(url) {
       title="audio of the show"
       src={`${embedUrl}?playlist=1`}
       width="380"
+      height="250"
       frameBorder="0"
       webkitallowfullscreen="true"
       mozallowfullscreen="true"

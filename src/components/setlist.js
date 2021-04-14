@@ -73,8 +73,9 @@ export default function Setlist(props) {
     <ol className="setlist__tracks">
       {groupedBySuite.map((songOrSuite) => {
         if (songOrSuite.length > 1) {
+          const lastSong = songOrSuite[songOrSuite.length - 1]
           return <li key={songOrSuite[0].performanceData.id} className="suite">
-            {songOrSuite[0].suite} suite:
+            {songOrSuite[0].suite} suite
             <ul>
               {songOrSuite.map(({songData, performanceData}) => {
                 return <SetlistEntry
@@ -86,6 +87,8 @@ export default function Setlist(props) {
                 />
               })}
             </ul>
+            {lastSong && lastSong.performanceData &&
+              <Segue {...find(propEq('from_perf_id', lastSong.performanceData.id))(segues)} className="suite__segue" />}
           </li>
         }
         // regularly scheduled programming

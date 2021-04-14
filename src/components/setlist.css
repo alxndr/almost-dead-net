@@ -22,6 +22,10 @@ h3.setlist__setlabel {
   margin-left: 1em;
   line-height: 1.5em;
 }
+.setlist__tracks > li {
+  margin: 0;
+  padding: 0.5em;
+}
 
 .setlist__songnote,
 .setlist__songteases {
@@ -30,13 +34,21 @@ h3.setlist__setlabel {
   line-height: 1em;
 }
 
-.setlist__tracks li ul {
-  /* Suite pieces */
-  display: inline;
-  margin: 0;
-  list-style: none;
+.suite {
+  background: linear-gradient(90deg, #dabbff4e, transparent);
+  border-radius: 1em;
 }
-.setlist__tracks li ul li {
-  padding-left: 0.5em;
-  display: inline;
+.suite ul {
+  display: none;
+  list-style: circle;
 }
+.suite:hover {
+  box-shadow: 0 0 3px 5px lightgray;
+}
+.suite:hover ul {
+  display: block;
+}
+.suite:hover .suite__segue {
+  display: none
+}
+
