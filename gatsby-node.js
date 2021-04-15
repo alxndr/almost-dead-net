@@ -6,7 +6,7 @@ const omit = require('lodash/omit')
 const {filter, propEq} = require('ramda')
 const slugify = require('slugify')
 
-const URL_BASE = 'https://gist.githubusercontent.com/alxndr/5f64cf477d5202c004856772ad2222db/raw/6b12e38b1353410dee738d5691bab9dc7c565aaf'
+const URL_BASE = 'https://gist.githubusercontent.com/alxndr/5f64cf477d5202c004856772ad2222db/raw/9bd7276c18b477c41571cf22aa182679b9f4d710'
 const ENDPOINTS = {
   GUESTS_URL: `${URL_BASE}/guests.csv`,
   RECORDINGS_URL: `${URL_BASE}/recordings.csv`,
