@@ -99,6 +99,9 @@ export default function Song({pageContext: {song, shows, sets, songs, songPerfor
       <ul>
         {teases.map(teaseData => {
           const performanceData = find(propEq('id', teaseData.performance_id))(teasePerformances)
+          if (!performanceData || !performanceData.id) {
+            return false
+          }
           const setData = find((set) => set.setlist.toString().split(':').includes(performanceData.id.toString()))(sets)
           const showData = find((show) => [show.soundcheck, show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(shows)
           return <li key={teaseData.id}>
