@@ -51,22 +51,38 @@ async function fetchCSVintoObject(url, isValidEntry) {
 }
 
 exports.onCreatePage = async ({page, actions: {createPage, deletePage}}) => {
-  if (page.internalComponentName === 'ComponentHome') {
-    const songs = Object.values(await fetchCSVintoObject(ENDPOINTS.SONGS_URL, (song) => !!song.title))
-    const shows = Object.values(await fetchCSVintoObject(ENDPOINTS.SHOWS_URL, (show) => !!show.date))
-    const venues = Object.values(await fetchCSVintoObject(ENDPOINTS.VENUES_URL, (venue) => !!venue.name && !!venue.location))
-      .map((venue) => ({...venue, name: venue.name.replace(/:/, '')}))
-    deletePage(page)
-    createPage({
-      ...page,
-      path: '/', // note the path does not match the filename within src/pages/ ; this gives us control over the context provided to the component
-      context: {
-        ...page.context,
-        shows,
-        songs,
-        venues,
-      },
-    })
+  switch (page.internalComponentName) {
+    case 'ComponentHome': {
+      const songs = Object.values(await fetchCSVintoObject(ENDPOINTS.SONGS_URL, (song) => !!song.title))
+      const shows = Object.values(await fetchCSVintoObject(ENDPOINTS.SHOWS_URL, (show) => !!show.date))
+      const venues = Object.values(await fetchCSVintoObject(ENDPOINTS.VENUES_URL, (venue) => !!venue.name && !!venue.location))
+        .map((venue) => ({...venue, name: venue.name.replace(/:/, '')}))
+      deletePage(page)
+      createPage({
+        ...page,
+        path: '/', // note the path does not match the filename within src/pages/ ; this gives us control over the context provided to the component
+        context: {
+          ...page.context,
+          shows,
+          songs,
+          venues,
+        },
+      })
+      break
+    }
+    case 'ComponentSongs': {
+      const songs = Object.values(await fetchCSVintoObject(ENDPOINTS.SONGS_URL, (song) => !!song.title))
+      deletePage(page)
+      createPage({
+        ...page,
+        path: '/songs', // note the path does not match the filename within src/pages/ ; this gives us control over the context provided to the component
+        context: {
+          ...page.context,
+          songs,
+        },
+      })
+      break
+    }
   }
 }
 
