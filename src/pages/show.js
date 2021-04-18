@@ -127,17 +127,19 @@ export default function Show({pageContext: {show, shows, sets, venue, guests, re
     console.error('cannot sort recordings......', {a, b})
   }, recordings)
 
-  const setlist = [1, 2, 3].reduce((setlists, which) => {
-    return setlists.concat(<Set which={which} show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} />)
-  }, [])
-  const encores = [1, 2].reduce((encores, which) => {
-    return encores.concat(<Set isEncore={true} which={which} show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} />)
-  }, [])
+  const setlist = [1, 2, 3].reduce((setlists, which) => setlists.concat(
+    <Set which={which} show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} />
+  ), [])
+  const encores = [1, 2].reduce((encores, which) => encores.concat(
+    <Set isEncore={true} which={which} show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} />
+  ), [])
+
+  const showName = `${event ? `${event}, ` : ``}${venue.name} (${venue.location})`
 
   return <Layout className="showpage">
     <SEO
-      title={`JRAD ${date} @ ${event ? `${event}, ` : ``}${venue.name} (${venue.location})`}
-      description={`Joe Russo's Almost Dead at ${event ? `${event}, ` : ``}${venue.name} (${venue.location}) ${date}${showGuests.length ? ` with ${showGuests.map((guest) => guest.name).join(' and ')}` : ''} — setlist, teases, recordings`}
+      title={`JRAD ${date} @ ${showName}`}
+      description={`Joe Russo's Almost Dead${showGuests.length ? ` with ${showGuests.map((guest) => guest.name).join(' and ')}` : ''} at ${showName} ${date} — setlist, teases, recordings`}
     />
     <ShowHeadline date={date} event={event} venue={venue} showNumber={show.id} />
     <section className="showpage__setlist">
