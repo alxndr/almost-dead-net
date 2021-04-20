@@ -1,12 +1,6 @@
 .showpage-embed {
-  /*
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  */
   padding: 1em;
 }
-
 
 .showpage-embed .showpage__notes {
   margin: 2em 0.5em 0;
@@ -27,7 +21,7 @@
   padding: 0.1em;
 }
 
-.showpage__pagetitle > span {
+.showpage-embed .showpage__pagetitle > span {
   display: inline;
 }
 
