@@ -18,20 +18,6 @@ export function normalizeSetlist(rawSetlistValue) {
       : []
 }
 
-function ShowHeadline({date, event, venue, showNumber}) {
-  return <h1 className="showpage__pagetitle">
-    <span className="showpage__pagetitle--band">Joe Russo's Almost Dead</span> {' '}
-    <span className="showpage__pagetitle--date">{date}</span> {' '}
-    {event && <span className="showpage__pagetitle--event">{event}</span>} {' '}
-    {venue && <span className="showpage__pagetitle--venue"> {' '}
-      <Link to={`/venue/${venue.id}-${slugify(venue.name)}`}>
-        {venue.name}, {venue.location}
-      </Link>
-    </span>} {' '}
-    <span className="showpage__pagetitle--number">show #{showNumber}</span>
-  </h1>
-}
-
 function ShowRecordings({date, recordings}) {
   if (recordings.length) {
     const [m, d, yyyy] = date.split('/')
@@ -141,7 +127,17 @@ export default function Show({pageContext: {show, shows, sets, venue, guests, re
       title={`JRAD ${date} @ ${showName}`}
       description={`Joe Russo's Almost Dead${showGuests.length ? ` with ${showGuests.map((guest) => guest.name).join(' and ')}` : ''} at ${showName} ${date} — setlist, teases, recordings`}
     />
-    <ShowHeadline date={date} event={event} venue={venue} showNumber={show.id} />
+    <h1 className="showpage__pagetitle">
+      <span className="showpage__pagetitle--band">Joe Russo's Almost Dead</span> {' '}
+      <span className="showpage__pagetitle--date">{date}</span> {' '}
+      {event && <span className="showpage__pagetitle--event">{event}</span>} {' '}
+      {venue && <span className="showpage__pagetitle--venue"> {' '}
+        <Link to={`/venue/${venue.id}-${slugify(venue.name)}`}>
+          {venue.name}, {venue.location}
+        </Link>
+      </span>} {' '}
+      <span className="showpage__pagetitle--number">show #{show.id}</span>
+    </h1>
     <section className="showpage__setlist">
       {links && <LeadImage urls={links.split(/\s+/)} />}
       {notes && <div className="showpage__notes">{notes}</div>}
