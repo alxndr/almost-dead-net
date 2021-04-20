@@ -21,6 +21,7 @@ const ENDPOINTS = {
 
 const HomePage = require.resolve('./src/pages/home.js')
 const ShowPage = require.resolve('./src/pages/show.js')
+const ShowEmbedPage = require.resolve('./src/pages/show-embed.js')
 const SongPage = require.resolve('./src/pages/song.js')
 const VenuePage = require.resolve('./src/pages/venue.js')
 
@@ -102,6 +103,20 @@ exports.createPages = async ({ actions: { createPage } }) => {
   const recordings = Object.values(await fetchCSVintoObject(ENDPOINTS.RECORDINGS_URL, (recording) => !!recording.url))
 
   shows.forEach((show) => {
+    createPage({
+      path: `/show/embed/${show.id}`,
+      component: ShowEmbedPage,
+      context: {
+        show,
+        sets,
+        venue: venuesObj[show.venue_id.toString()],
+        guests,
+        performances,
+        segues,
+        songs,
+        teases,
+      }
+    })
     createPage({
       path: `/show/${show.id}`,
       component: ShowPage,
