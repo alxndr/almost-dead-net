@@ -31,8 +31,11 @@ section.showpage__recordings ul {
   margin: 0.5em 0;
 }
 
-.showpage__pagetitle > span {
+.showpage__pagetitle--band {
   display: block;
+}
+.showpage__pagetitle--number {
+  white-space: nowrap;
 }
 
 .showpage__pagetitle--venue:before {

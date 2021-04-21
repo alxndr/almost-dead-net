@@ -21,10 +21,6 @@
   padding: 0.1em;
 }
 
-.showpage-embed .showpage__pagetitle > span {
-  display: inline;
-}
-
 .showpage-embed .showpage__pagetitle--event:before,
 .showpage-embed .showpage__pagetitle--venue:before {
   content: ' — ';
