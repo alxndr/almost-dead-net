@@ -34,7 +34,7 @@ function SetlistEntry({performanceData, songData, segues, teases}) {
     </Link>
     {' '}
     {performanceData.variation || false}
-    <Badge prevPerf={Number(performanceData.pref_perfid)} nextPerf={Number(performanceData.next_perfid)} />
+    <Badge prevPerf={Number(performanceData.prev_perfid)} nextPerf={Number(performanceData.next_perfid)} />
     {segueData && <Segue {...segueData} />}
     {performanceData.notes && <PerfNote notes={performanceData.notes} />}
     {teasesArray.length ? <TeasesNote list={teasesArray} /> : false}
