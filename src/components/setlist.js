@@ -11,16 +11,30 @@ import 'react-tippy/dist/tippy.css'
 
 const findById = (id) => find(propEq('id', id))
 
+function Badge({prevPerf, nextPerf}) {
+  if (!prevPerf && !nextPerf) {
+    return <span className="setlist__track__badge setlist__track__badge--otp" title="only time played">only</span>
+  }
+  if (prevPerf && !nextPerf) {
+    return <span className="setlist__track__badge setlist__track__badge--ltp" title="last time played">last</span>
+  }
+  if (!prevPerf && nextPerf) {
+    return <span className="setlist__track__badge setlist__track__badge--ftp" title="first time played">first</span>
+  }
+  return false
+}
+
 function SetlistEntry({performanceData, songData, segues, teases}) {
   const displayName = songData.title
   const segueData = find(propEq('from_perf_id', performanceData.id))(segues)
   const teasesArray = filter(propEq('performance_id', performanceData.id))(teases)
-  return <li>
+  return <li className="setlist__track">
     <Link to={`/song/${performanceData.song_id}`}>
       {displayName}
     </Link>
     {' '}
     {performanceData.variation || false}
+    <Badge prevPerf={Number(performanceData.pref_perfid)} nextPerf={Number(performanceData.next_perfid)} />
     {segueData && <Segue {...segueData} />}
     {performanceData.notes && <PerfNote notes={performanceData.notes} />}
     {teasesArray.length ? <TeasesNote list={teasesArray} /> : false}

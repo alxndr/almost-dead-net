@@ -27,6 +27,21 @@ h3.setlist__setlabel {
   padding: 0.5em;
 }
 
+.setlist__track__badge {
+  font-size: 0.6em;
+  vertical-align: super;
+  padding: 0.1em 0.4em;
+  border-radius: 1em;
+  box-shadow: 1px 1px 3px 1px #00000077;
+}
+.setlist__track__badge--ftp {
+}
+.setlist__track__badge--ltp {
+  display: none;
+}
+.setlist__track__badge--otp {
+}
+
 .setlist__songnote,
 .setlist__songteases {
   padding-left: 1em;
