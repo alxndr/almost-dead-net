@@ -9,13 +9,15 @@
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean",
+    "cy:open": "cypress open",
     "deploy": "export TAG=deploy-$(date '+%F-%H%M%S-%Z') && gatsby build && gh-pages --dist public --dotfiles --branch gh-pages --tag $TAG --message \"Deploy $TAG\" && echo cleaning up... && gh-pages-clean",
     "postdeploy": "npm run clean",
     "develop": "gatsby develop --verbose",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "pretest": "npm run lint",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "test": "echo 'Firing up Cypress end-to-end tests...' && npm run test:e2e",
+    "test:e2e": "WAIT_ON_TIMEOUT=600000 start-server-and-test develop http://localhost:8000 cy:open",
     "lint": "echo linting... && eslint src/ && echo Successfully linted JS"
   },
   "dependencies": {
@@ -44,8 +46,10 @@
     "slugify": "^1.5.0"
   },
   "devDependencies": {
+    "cypress": "^7.1.0",
     "eslint": "7.22.0",
-    "gh-pages": "^3.1.0"
+    "gh-pages": "^3.1.0",
+    "start-server-and-test": "^1.12.1"
   },
   "eslintConfig": {
     "parserOptions": {
