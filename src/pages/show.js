@@ -10,6 +10,7 @@ import Recording from '../components/recording'
 
 import './show.css'
 
+// TODO extract this
 export function normalizeSetlist(rawSetlistValue) {
   return typeof rawSetlistValue === "number"
     ? [rawSetlistValue]
@@ -111,7 +112,7 @@ export default function Show({pageContext: {show, shows, sets, venue, guests, re
     if (a.type === 'audience') return -1;
     if (b.type === 'audience') return 1;
     console.error('cannot sort recordings......', {a, b})
-  }, recordings)
+  })(recordings)
 
   const setlist = [1, 2, 3].reduce((setlists, which) => setlists.concat(
     <Set which={which} show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} />

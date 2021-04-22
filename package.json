@@ -12,7 +12,7 @@
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "deploy": "export TAG=deploy-$(date '+%F-%H%M%S-%Z') && gatsby build && gh-pages --dist public --dotfiles --branch gh-pages --tag $TAG --message \"Deploy $TAG\" && echo cleaning up... && gh-pages-clean",
-    "develop": "gatsby develop --verbose",
+    "develop": "gatsby develop",
     "lint": "eslint src/ cypress/",
     "postdeploy": "npm run clean",
     "postlint": "echo ... linting success",
@@ -20,9 +20,10 @@
     "pretest": "npm run lint",
     "pretest:e2e": "echo Starting Cypress integration tests...",
     "serve": "gatsby serve",
-    "start": "npm run develop",
+    "start": "echo 'npm run develop' or 'npm run serve' && exit 1",
     "test": "npm run test:e2e",
-    "test:e2e": "WAIT_ON_TIMEOUT=600000 start-server-and-test develop :8000 cy:open"
+    "test:e2e": "WAIT_ON_TIMEOUT=600000 start-server-and-test develop :8000 cy:run",
+    "test:prod": "CYPRESS_BASE_URL=https://almost-dead.net cy:run"
   },
   "dependencies": {
     "@sentry/browser": "^5.18.1",

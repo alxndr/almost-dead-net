@@ -223,6 +223,7 @@ describe('data validation', () => {
   it('each Show has correct dates and venues', () => {
     const lastIndex = allShows.length - 1
     cy.wrap(allShows).each(({id, date, venue}, index) => {
+      cy.log(`visiting show #${id}`)
       cy.visit(`/show/${id}`)
       cy.get('main')
         .contains(`show #${id}`)
@@ -234,6 +235,6 @@ describe('data validation', () => {
         cy.clickNextShow()
     })
     cy.get('main')
-      .contains('show #4444')
+      .contains(`show #${allShows.length}`)
   })
 })
