@@ -8,16 +8,9 @@ import Layout from '../components/layout'
 import Setlist from '../components/setlist'
 import Recording from '../components/recording'
 
-import './show.css'
+import {normalizeSetlist} from './helpers/setlist-helper'
 
-// TODO extract this
-export function normalizeSetlist(rawSetlistValue) {
-  return typeof rawSetlistValue === "number"
-    ? [rawSetlistValue]
-    : typeof rawSetlistValue === "string"
-      ? rawSetlistValue.split(':')
-      : []
-}
+import './show.css'
 
 function ShowRecordings({date, recordings}) {
   if (recordings.length) {
