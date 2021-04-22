@@ -23,3 +23,11 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('clickNextShow', () => {
+  cy.get('main')
+    .find('a')
+    .contains('Next show')
+    .click()
+  cy.wait(99)
+})
