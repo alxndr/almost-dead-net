@@ -3,6 +3,8 @@ import {Link} from 'gatsby'
 import {filter, find, groupWith, propEq} from 'ramda'
 
 import Segue from './segue'
+import BustOutBadge from './bust_out_badge'
+import TimePlayedBadge from './time_played_badge'
 import PerfNote from './perf_note'
 import TeasesNote from './teases_note'
 
@@ -10,19 +12,6 @@ import './setlist.css'
 import 'react-tippy/dist/tippy.css'
 
 const findById = (id) => find(propEq('id', id))
-
-function Badge({prevPerf, nextPerf}) {
-  if (!prevPerf && !nextPerf) {
-    return <span className="setlist__track__badge setlist__track__badge--otp" title="only time played">only</span>
-  }
-  if (prevPerf && !nextPerf) {
-    return <span className="setlist__track__badge setlist__track__badge--ltp" title="last time played">last</span>
-  }
-  if (!prevPerf && nextPerf) {
-    return <span className="setlist__track__badge setlist__track__badge--ftp" title="first time played">first</span>
-  }
-  return false
-}
 
 function SetlistEntry({performanceData, songData, segues, teases}) {
   const displayName = songData.title
@@ -34,8 +23,9 @@ function SetlistEntry({performanceData, songData, segues, teases}) {
     </Link>
     {' '}
     {performanceData.variation || false}
-    <Badge prevPerf={Number(performanceData.prev_perfid)} nextPerf={Number(performanceData.next_perfid)} />
     {segueData && <Segue {...segueData} />}
+    <TimePlayedBadge prevPerf={Number(performanceData.prev_perfid)} nextPerf={Number(performanceData.next_perfid)} />
+    <BustOutBadge showgap={Number(performanceData.showgap)} />
     {performanceData.notes && <PerfNote notes={performanceData.notes} />}
     {teasesArray.length ? <TeasesNote list={teasesArray} /> : false}
   </li>

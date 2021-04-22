@@ -8,9 +8,9 @@ describe('Show page', () => {
       .find('a')
       .as('links')
       .contains('Mama Tried')
-    cy.get('links')
+    cy.get('@links')
       .contains('Help on the Way')
-    cy.get('links')
+    cy.get('@links')
       .contains('Slipknot!')
 
     cy.log('FTP marker')
