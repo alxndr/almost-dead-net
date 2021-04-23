@@ -154,7 +154,7 @@ const allShows = {
   153: {id: 153, date: '7/13/2018', venue: 'Targhee Fest'},
   154: {id: 154, date: '7/14/2018', venue: 'The Depot'},
   155: {id: 155, date: '7/15/2018', venue: 'RIDE Festival'},
-  156: {id: 156, date: '7/19/2018', venue: 'Propsect Park'},
+  156: {id: 156, date: '7/19/2018', venue: 'Prospect Park'},
   157: {id: 157, date: '7/20/2018', venue: 'Blue Hills Bank Pavilion'},
   158: {id: 158, date: '7/21/2018', venue: 'Peach Music Festival'},
   159: {id: 159, date: '8/2/2018', venue: 'Werk Out Music & Arts Festival'},
