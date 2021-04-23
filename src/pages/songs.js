@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'gatsby'
 
-import {groupBy, prop, sortBy} from 'ramda'
+import {filter, groupBy, prop, propEq, sortBy} from 'ramda'
 import {Tooltip} from 'react-tippy'
 
 import Layout from '../components/layout'
@@ -38,7 +38,7 @@ function SongLink({data: {author, core_gd, cover_gd, id, suite, title, performan
   </Link>
 }
 
-export default function SongsPage({pageContext: {songs}}) {
+export default function SongsPage({pageContext: {songs, teases}}) {
   const songsClean = songs.filter(songData => songData.title && songData.title !== '[unknown]')
   const groupedByPerformedVsTeased = groupBy(
     (songData) => Boolean(songData.performances),
@@ -79,13 +79,17 @@ export default function SongsPage({pageContext: {songs}}) {
     <h1 id="songs__headline--teased">Songs Teased</h1>
     <ul className="songs__list">
       {sortBy((prop('title')))(teasedSongs)
-        .map(songData =>
-          songData.sections
-          ? songData.title
-          : <li>
-            <SongLink data={songData} />
-            <PerformanceCount text="teased" perfIds={String(songData.performances).split(':')} />
-          </li>)}
+          .map(songData => {
+            const teaseRows = filter(propEq('song_id', songData.id))(teases)
+            const teasePerfIds = teaseRows.map((row) => row.performance_id)
+            return songData.sections
+                ? songData.title
+                : <li>
+                  <SongLink data={songData} />
+                  <PerformanceCount text="teased" perfIds={teasePerfIds} />
+                </li>
+          }
+      )}
     </ul>
   </Layout>
 }

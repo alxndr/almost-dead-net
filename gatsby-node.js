@@ -73,13 +73,15 @@ exports.onCreatePage = async ({page, actions: {createPage, deletePage}}) => {
     }
     case 'ComponentSongs': {
       const songs = Object.values(await fetchCSVintoObject(ENDPOINTS.SONGS_URL, (song) => !!song.title))
+      const teases = Object.values(await fetchCSVintoObject(ENDPOINTS.TEASES_URL, (tease) => !!tease.performance_id))
       deletePage(page)
       createPage({
         ...page,
-        path: '/songs', // note the path does not match the filename within src/pages/ ; this gives us control over the context provided to the component
+        path: '/songs',
         context: {
           ...page.context,
           songs,
+          teases,
         },
       })
       break
