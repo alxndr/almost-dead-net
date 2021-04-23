@@ -13,4 +13,5 @@ jobs:
           start: npm run build:serve
           wait-on: 'http://localhost:9000'
           wait-on-timeout: 300 # seconds = 5 mins
+          config: 'basUrl=http://localhost:9000,retries=1'
 
