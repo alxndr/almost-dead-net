@@ -8,7 +8,7 @@ import Layout from '../components/layout'
 import Setlist from '../components/setlist'
 import Recording from '../components/recording'
 
-import {normalizeSetlist} from './helpers/setlist-helper'
+import {normalizeSetlist} from '../components/helpers/setlist-helper'
 
 import './show-embed.css'
 
