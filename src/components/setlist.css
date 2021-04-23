@@ -33,6 +33,9 @@ h3.setlist__setlabel {
 .setlist__track__badge--ltp {
   display: none;
 }
+.setlist__track__badge--bustout {
+  font-family: none;
+}
 
 .setlist__songnote,
 .setlist__songteases {

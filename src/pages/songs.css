@@ -37,3 +37,9 @@
 .song__author::before {
   content: 'by ';
 }
+
+.song__perfcount {
+  margin-left: 1em;
+  font-size: 0.9em;
+  white-space: nowrap;
+}
