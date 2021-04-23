@@ -219,34 +219,21 @@ const allShows = {
   218: {id: 218, date: '10/3/2020', venue: 'Capitol Theatre'},
 }
 
-Cypress.Commands.add('validateShow', (showId, opts={}) => {
-  cy.get('main')
-    .contains(`show #${showId}`)
-  cy.get('main')
-    .contains(allShows[showId].date)
-  cy.get('main')
-    .contains(allShows[showId].venue)
-  if (opts && opts.verifyNext && allShows[showId + 1]) {
-    cy.clickNextShow()
-    cy.validateShow(showId + 1)
-  }
-})
-
 describe('data validation', () => {
-  it('select Show pages have correct dates and venues', () => {
-    cy.visit('/show/1')
-    cy.validateShow(1, {verifyNext: true})
-
-    cy.visit('/show/4')
-    cy.validateShow(4, {verifyNext: true})
-
-    cy.visit('/show/13')
-    cy.validateShow(13, {verifyNext: true})
-
-    cy.visit('/show/130')
-    cy.validateShow(130, {verifyNext: true})
-
-    cy.log('Spot-check a song in Show #131')
-    cy.get('main').contains('Gonesville')
+  describe('every Show', () => {
+    Object.values(allShows).forEach((show) => {
+      const {id, date, venue} = allShows[show.id]
+      it(`#${show.id} is ${date} @ ${venue}`, () => {
+        cy.visit(`/show/${id}`)
+        cy.get('main')
+          .find('h1')
+          .as('h1')
+          .contains(`show #${id}`)
+        cy.get('@h1')
+          .contains(date)
+        cy.get('@h1')
+          .contains(venue)
+      })
+    })
   })
 })
