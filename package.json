@@ -8,6 +8,7 @@
   "author": "@alxndr",
   "scripts": {
     "build": "gatsby build",
+    "build:serve": "npm run build && npm run serve",
     "clean": "gatsby clean",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
@@ -22,7 +23,7 @@
     "serve": "gatsby serve",
     "start": "echo 'npm run develop' or 'npm run serve' && exit 1",
     "test": "npm run test:e2e",
-    "test:e2e": "WAIT_ON_TIMEOUT=300000 start-server-and-test 'npm run build && npm run serve' :9000 cy:run",
+    "test:e2e": "WAIT_ON_TIMEOUT=300000 start-server-and-test build:serve :9000 cy:run",
     "test:prod": "CYPRESS_BASE_URL=https://almost-dead.net npm run cy:run"
   },
   "dependencies": {

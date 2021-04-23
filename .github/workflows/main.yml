@@ -10,7 +10,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-          start: npm run build && npm run serve
+          start: npm run build:serve
           wait-on: 'http://localhost:9000'
           wait-on-timeout: 180 # seconds
 
