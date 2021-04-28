@@ -29,5 +29,5 @@ Cypress.Commands.add('clickNextShow', () => {
     .find('a')
     .contains('Next show')
     .click()
-  cy.wait(99)
+  cy.wait(99) // eslint-disable-line cypress/no-unnecessary-waiting
 })

@@ -27,7 +27,7 @@ describe('Home page', () => {
       .find('a')
       .contains('About the Site')
       .click()
-    cy.wait(9999)
+    cy.wait(9999) // eslint-disable-line cypress/no-unnecessary-waiting
     cy.get('main')
       .find('h1')
       .contains('About Almost-Dead.net')
