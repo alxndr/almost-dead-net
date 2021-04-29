@@ -53,7 +53,7 @@ async function fetchCSVintoObject(url, isValidEntry) {
 
 exports.onCreatePage = async ({page, actions: {createPage, deletePage}}) => {
   switch (page.internalComponentName) {
-    case 'ComponentHome': {
+    case 'Component/home/': {
       const songs = Object.values(await fetchCSVintoObject(ENDPOINTS.SONGS_URL, (song) => !!song.title))
       const shows = Object.values(await fetchCSVintoObject(ENDPOINTS.SHOWS_URL, (show) => !!show.date))
       const venues = Object.values(await fetchCSVintoObject(ENDPOINTS.VENUES_URL, (venue) => !!venue.name && !!venue.location))
@@ -71,7 +71,7 @@ exports.onCreatePage = async ({page, actions: {createPage, deletePage}}) => {
       })
       break
     }
-    case 'ComponentSongs': {
+    case 'Component/songs/': {
       const songs = Object.values(await fetchCSVintoObject(ENDPOINTS.SONGS_URL, (song) => !!song.title))
       const teases = Object.values(await fetchCSVintoObject(ENDPOINTS.TEASES_URL, (tease) => !!tease.performance_id))
       deletePage(page)
