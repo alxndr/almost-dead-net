@@ -25,9 +25,10 @@
 .song__suite {
   margin: 0.2em;
   border-radius: 0.6em;
-  padding: 0.2em 0.3em;
+  padding: 0.1em 0.5em 0.2em;
   background: lightcyan;
   font-size: 0.8em;
+  box-shadow: -1px -1px 2px 1px #00000077 inset;
 }
 
 .song__author {
