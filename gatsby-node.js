@@ -17,6 +17,7 @@ const ENDPOINTS = {
   VENUES_URL: `${URL_BASE}/venues.csv`,
 }
 
+const HomePage = require.resolve('./src/templates/home.js')
 const ShowPage = require.resolve('./src/templates/show.js')
 const ShowEmbedPage = require.resolve('./src/templates/show-embed.js')
 const SongPage = require.resolve('./src/templates/song.js')
@@ -48,26 +49,30 @@ async function fetchCSVintoObject(url, isValidEntry) {
   return promise
 }
 
+async function csvToArray(csvFile, isValidEntry) {
+  let resolve = () => {}
+  const promise = new Promise((res) => {
+    resolve = res
+  })
+  csv.parse(csvFile, {
+    header: true,
+    worker: false,
+    complete: (results) => {
+      if (!results)
+        throw new Error('csvToArray: No results when parsing', csvFile)
+      return resolve(results.reduce((transformed, row) => {
+        if (isValidEntry(row)) {
+          transformed[row.id] = row
+        }
+        return transformed
+      }, {}))
+    },
+  })
+  return promise
+}
+
 exports.onCreatePage = async ({page, actions: {createPage, deletePage}}) => {
   switch (page.internalComponentName) {
-    case 'Component/home/': {
-      const songs = Object.values(await fetchCSVintoObject(ENDPOINTS.SONGS_URL, (song) => !!song.title))
-      const shows = Object.values(await fetchCSVintoObject(ENDPOINTS.SHOWS_URL, (show) => !!show.date))
-      const venues = Object.values(await fetchCSVintoObject(ENDPOINTS.VENUES_URL, (venue) => !!venue.name && !!venue.location))
-        .map((venue) => ({...venue, name: venue.name.replace(/:/, '')}))
-      deletePage(page)
-      createPage({
-        ...page,
-        path: '/', // note the path does not match the filename within src/pages/ ; this gives us control over the context provided to the component
-        context: {
-          ...page.context,
-          shows,
-          songs,
-          venues,
-        },
-      })
-      break
-    }
     case 'Component/songs/': {
       const songs = Object.values(await fetchCSVintoObject(ENDPOINTS.SONGS_URL, (song) => !!song.title))
       const teases = Object.values(await fetchCSVintoObject(ENDPOINTS.TEASES_URL, (tease) => !!tease.performance_id))
@@ -89,8 +94,9 @@ exports.onCreatePage = async ({page, actions: {createPage, deletePage}}) => {
 }
 
 exports.createPages = async ({ actions: { createPage } }) => {
-  const showsObj = await fetchCSVintoObject(ENDPOINTS.SHOWS_URL, (show) => !!show.date)
-  const shows = Object.values(showsObj)
+  //const showsObj = await fetchCSVintoObject(ENDPOINTS.SHOWS_URL, (show) => !!show.date)
+  //const shows = Object.values(showsObj)
+  const shows = await csvToArray(require('./data/shows.csv'))
   const lastShowId = shows.reduce((acc, elem) => Number(acc.id) > Number(elem.id) ? acc : elem, []).id
   const venuesObj = await fetchCSVintoObject(ENDPOINTS.VENUES_URL, (venue) => !!venue.name && !!venue.location)
   const venues = Object.values(venuesObj)
@@ -102,6 +108,16 @@ exports.createPages = async ({ actions: { createPage } }) => {
   const segues = Object.values(await fetchCSVintoObject(ENDPOINTS.SEGUES_URL, (segue) => !!segue.from_perf_id))
   const guests = Object.values(await fetchCSVintoObject(ENDPOINTS.GUESTS_URL, (guest) => !!guest.name))
   const recordings = Object.values(await fetchCSVintoObject(ENDPOINTS.RECORDINGS_URL, (recording) => !!recording.url))
+
+  createPage({
+    path: '/',
+    component: HomePage,
+    context: {
+      shows,
+      songs,
+      venues,
+    },
+  })
 
   shows.forEach((show) => {
     createPage({
