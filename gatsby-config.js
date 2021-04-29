@@ -37,5 +37,11 @@ module.exports = {
         display: 'swap',
       },
     },
+    {
+      resolve: '@sentry/gatsby',
+      options: {
+        dsn: 'https://174349d7133f4877ba279f589bf54642@o412799.ingest.sentry.io/5293476',
+      },
+    },
   ],
 }
