@@ -17,10 +17,10 @@ const ENDPOINTS = {
   VENUES_URL: `${URL_BASE}/venues.csv`,
 }
 
-const ShowPage = require.resolve('./src/pages/show.js')
-const ShowEmbedPage = require.resolve('./src/pages/show-embed.js')
-const SongPage = require.resolve('./src/pages/song.js')
-const VenuePage = require.resolve('./src/pages/venue.js')
+const ShowPage = require.resolve('./src/templates/show.js')
+const ShowEmbedPage = require.resolve('./src/templates/show-embed.js')
+const SongPage = require.resolve('./src/templates/song.js')
+const VenuePage = require.resolve('./src/templates/venue.js')
 
 async function fetchCSVintoObject(url, isValidEntry) {
   const {data} = await axios.get(url)
