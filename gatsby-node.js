@@ -19,7 +19,6 @@ const ENDPOINTS = {
   VENUES_URL: `${URL_BASE}/venues.csv`,
 }
 
-const HomePage = require.resolve('./src/pages/home.js')
 const ShowPage = require.resolve('./src/pages/show.js')
 const ShowEmbedPage = require.resolve('./src/pages/show-embed.js')
 const SongPage = require.resolve('./src/pages/song.js')
@@ -86,6 +85,8 @@ exports.onCreatePage = async ({page, actions: {createPage, deletePage}}) => {
       })
       break
     }
+    default:
+      break
   }
 }
 
