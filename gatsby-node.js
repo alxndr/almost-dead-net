@@ -1,5 +1,3 @@
-require('logrocket').init('wi5hyr/a-dn')
-
 const axios = require('axios')
 const csv = require('papaparse')
 const omit = require('lodash/omit')
