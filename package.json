@@ -27,7 +27,6 @@
     "test:prod": "CYPRESS_BASE_URL=https://almost-dead.net npm run cy:run"
   },
   "dependencies": {
-    "@sentry/browser": "^6.3.1",
     "@sentry/gatsby": "^6.3.4",
     "classnames": "^2.3.1",
     "dompurify": "^2.2.8",
