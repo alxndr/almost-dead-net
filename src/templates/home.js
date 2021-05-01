@@ -1,6 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import {graphql, Link, StaticQuery} from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -10,13 +9,13 @@ import ShowsByYear from '../components/shows_by_year'
 
 import './home.css'
 
-const IndexPage = ({pageContext: {shows, venues, songs}}) => (
+const Home = ({data}) => (
   <Layout className="homepage">
     <SEO title="Home" description="setlists for Joe Russo's Almost Dead, with teases and links to recordings" />
     <h1>JRAD Setlists</h1>
     <section className="homepage__songfinder">
       <h2>Find a song:</h2>
-      <SongFinder songs={songs} />
+      <SongFinder songs={data.allSongsCsv.nodes} />
     </section>
     <section className="homepage__links">
       <h2>Links:</h2>
@@ -29,9 +28,51 @@ const IndexPage = ({pageContext: {shows, venues, songs}}) => (
     </section>
     <section className="homepage__showsbyyear">
       <h2>Find a show's setlist, teases, segues, and more:</h2>
-      <ShowsByYear rawShows={shows} rawVenues={venues} />
+      <ShowsByYear rawShows={data.allShowsCsv.nodes} rawVenues={data.allVenuesCsv.nodes} />
     </section>
   </Layout>
 )
 
-export default IndexPage
+const HomePage = () => <StaticQuery
+  query={graphql`
+    query HomePageData {
+      allShowsCsv { nodes {
+        date
+        encore1
+        encore2
+        event
+        id
+        links
+        notes
+        num_recordings
+        set1
+        set2
+        set3
+        soundcheck
+        tagline
+        venue_id
+      } }
+      allSongsCsv { nodes {
+        author
+        core_gd
+        core_jrad
+        cover_gd
+        id
+        nicknames
+        performances
+        suite
+        title
+      } }
+      allVenuesCsv { nodes {
+        id
+        name
+        location
+        capacity
+        generic_name
+        tagname
+      } }
+    }
+  `}
+  render={(data) => <Home data={data} />}
+/>
+  export default HomePage

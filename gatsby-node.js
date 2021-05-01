@@ -127,11 +127,6 @@ exports.createPages = async ({graphql, actions: { createPage } }) => {
   createPage({
     path: '/',
     component: HomePage,
-    context: {
-      shows,
-      songs,
-      venues,
-    },
   })
 
   createPage({
