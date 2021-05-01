@@ -21,6 +21,7 @@ const HomePage = require.resolve('./src/templates/home.js')
 const ShowPage = require.resolve('./src/templates/show.js')
 const ShowEmbedPage = require.resolve('./src/templates/show-embed.js')
 const SongPage = require.resolve('./src/templates/song.js')
+const SongsPage = require.resolve('./src/templates/songs.js')
 const VenuePage = require.resolve('./src/templates/venue.js')
 
 async function fetchCSVintoObject(url, isValidEntry) {
@@ -39,28 +40,6 @@ async function fetchCSVintoObject(url, isValidEntry) {
       if (errors.length)
         throw new Error('parseIntoObjectWithCache: Error fetching', {url, response})
       return resolve(data.reduce((transformed, row) => {
-        if (isValidEntry(row)) {
-          transformed[row.id] = row
-        }
-        return transformed
-      }, {}))
-    },
-  })
-  return promise
-}
-
-async function csvToArray(csvFile, isValidEntry) {
-  let resolve = () => {}
-  const promise = new Promise((res) => {
-    resolve = res
-  })
-  csv.parse(csvFile, {
-    header: true,
-    worker: false,
-    complete: (results) => {
-      if (!results)
-        throw new Error('csvToArray: No results when parsing', csvFile)
-      return resolve(results.reduce((transformed, row) => {
         if (isValidEntry(row)) {
           transformed[row.id] = row
         }
@@ -93,11 +72,7 @@ exports.onCreatePage = async ({page, actions: {createPage, deletePage}}) => {
   }
 }
 
-exports.createPages = async ({ actions: { createPage } }) => {
-  //const showsObj = await fetchCSVintoObject(ENDPOINTS.SHOWS_URL, (show) => !!show.date)
-  //const shows = Object.values(showsObj)
-  const shows = await csvToArray(require('./data/shows.csv'))
-  const lastShowId = shows.reduce((acc, elem) => Number(acc.id) > Number(elem.id) ? acc : elem, []).id
+exports.createPages = async ({graphql, actions: { createPage } }) => {
   const venuesObj = await fetchCSVintoObject(ENDPOINTS.VENUES_URL, (venue) => !!venue.name && !!venue.location)
   const venues = Object.values(venuesObj)
   const sets = Object.values(await fetchCSVintoObject(ENDPOINTS.SETS_URL, (set) => !!set.id))
@@ -108,6 +83,34 @@ exports.createPages = async ({ actions: { createPage } }) => {
   const segues = Object.values(await fetchCSVintoObject(ENDPOINTS.SEGUES_URL, (segue) => !!segue.from_perf_id))
   const guests = Object.values(await fetchCSVintoObject(ENDPOINTS.GUESTS_URL, (guest) => !!guest.name))
   const recordings = Object.values(await fetchCSVintoObject(ENDPOINTS.RECORDINGS_URL, (recording) => !!recording.url))
+  return graphql(`
+    query AllShows {
+      allShowsCsv {
+        nodes {
+          date
+          encore1
+          encore2
+          event
+          id
+          links
+          notes
+          num_recordings
+          set1
+          set2
+          set3
+          soundcheck
+          tagline
+          venue_id
+        }
+      }
+    }
+  `).then((result) => {
+    if (result.errors) {
+      console.error('oh noooooooo', result.errors)
+      throw result.errors
+    }
+    const shows = result.data.allShowsCsv.nodes
+    const lastShowId = shows.reduce((acc, elem) => Number(acc.id) > Number(elem.id) ? acc : elem, []).id
 
   createPage({
     path: '/',
@@ -117,6 +120,15 @@ exports.createPages = async ({ actions: { createPage } }) => {
       songs,
       venues,
     },
+  })
+
+  createPage({
+    path: '/songs',
+    component: SongsPage,
+    context: {
+      songs,
+      teases,
+    }
   })
 
   shows.forEach((show) => {
@@ -180,5 +192,6 @@ exports.createPages = async ({ actions: { createPage } }) => {
         shows: filter(propEq('venue_id', venue.id))(shows),
       }
     })
+  })
   })
 }

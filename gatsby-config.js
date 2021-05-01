@@ -5,6 +5,14 @@ module.exports = {
     siteUrl: 'https://almost-dead.net',
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/data/`,
+      },
+    },
+    `gatsby-transformer-csv`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
