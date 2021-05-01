@@ -1,21 +1,5 @@
-const axios = require('axios')
-const csv = require('papaparse')
-const omit = require('lodash/omit')
 const {filter, propEq} = require('ramda')
 const slugify = require('slugify')
-
-const URL_BASE = 'https://gist.githubusercontent.com/alxndr/5f64cf477d5202c004856772ad2222db/raw/a6996836d4e04107752b9f8ac157abf4bfb2eaa6'
-const ENDPOINTS = {
-  GUESTS_URL: `${URL_BASE}/guests.csv`,
-  RECORDINGS_URL: `${URL_BASE}/recordings.csv`,
-  SEGUES_URL: `${URL_BASE}/segues.csv`,
-  SETS_URL: `${URL_BASE}/sets.csv`,
-  SHOWS_URL: `${URL_BASE}/shows.csv`,
-  SONG_PERFORMANCES_URL: `${URL_BASE}/songperformances.csv`,
-  SONGS_URL: `${URL_BASE}/songs.csv`,
-  TEASES_URL: `${URL_BASE}/teases.csv`,
-  VENUES_URL: `${URL_BASE}/venues.csv`,
-}
 
 const HomePage = require.resolve('./src/templates/home.js')
 const ShowPage = require.resolve('./src/templates/show.js')
@@ -24,67 +8,58 @@ const SongPage = require.resolve('./src/templates/song.js')
 const SongsPage = require.resolve('./src/templates/songs.js')
 const VenuePage = require.resolve('./src/templates/venue.js')
 
-async function fetchCSVintoObject(url, isValidEntry) {
-  const {data} = await axios.get(url)
-  let resolve = () => {}
-  const promise = new Promise((res) => {
-    resolve = res
-  })
-  csv.parse(data, {
-    header: true,
-    worker: false,
-    complete: (response) => {
-      if (!response)
-        throw new Error('parseIntoObjectWithCache: No response when fetching', {url})
-      const {data = {}, errors} = response
-      if (errors.length)
-        throw new Error('parseIntoObjectWithCache: Error fetching', {url, response})
-      return resolve(data.reduce((transformed, row) => {
-        if (isValidEntry(row)) {
-          transformed[row.id] = row
-        }
-        return transformed
-      }, {}))
-    },
-  })
-  return promise
-}
-
-exports.onCreatePage = async ({page, actions: {createPage, deletePage}}) => {
-  switch (page.internalComponentName) {
-    case 'Component/songs/': {
-      const songs = Object.values(await fetchCSVintoObject(ENDPOINTS.SONGS_URL, (song) => !!song.title))
-      const teases = Object.values(await fetchCSVintoObject(ENDPOINTS.TEASES_URL, (tease) => !!tease.performance_id))
-      deletePage(page)
-      createPage({
-        ...page,
-        path: '/songs',
-        context: {
-          ...page.context,
-          songs,
-          teases,
-        },
-      })
-      break
-    }
-    default:
-      break
-  }
-}
-
 exports.createPages = async ({graphql, actions: { createPage } }) => {
-  const venuesObj = await fetchCSVintoObject(ENDPOINTS.VENUES_URL, (venue) => !!venue.name && !!venue.location)
-  const venues = Object.values(venuesObj)
-  const sets = Object.values(await fetchCSVintoObject(ENDPOINTS.SETS_URL, (set) => !!set.id))
-    .map((obj) => omit(obj, ['song performances', '']))
-  const songs = Object.values(await fetchCSVintoObject(ENDPOINTS.SONGS_URL, (song) => !!song.title))
-  const performances = Object.values(await fetchCSVintoObject(ENDPOINTS.SONG_PERFORMANCES_URL, (perf) => !!perf.song_id))
-  const teases = Object.values(await fetchCSVintoObject(ENDPOINTS.TEASES_URL, (tease) => !!tease.performance_id))
-  const segues = Object.values(await fetchCSVintoObject(ENDPOINTS.SEGUES_URL, (segue) => !!segue.from_perf_id))
-  const guests = Object.values(await fetchCSVintoObject(ENDPOINTS.GUESTS_URL, (guest) => !!guest.name))
-  const recordings = Object.values(await fetchCSVintoObject(ENDPOINTS.RECORDINGS_URL, (recording) => !!recording.url))
-  return graphql(`
-    query AllShows {
+  const result = await graphql(`
+    query Everything {
+      allVenuesCsv {
+        nodes {
+          id
+          name
+          location
+          capacity
+          generic_name
+          tagname
+        }
+      }
+      allTeasesCsv {
+        nodes {
+          id
+          by
+          notes
+          performance_id
+          song_id
+          song_name
+          within
+        }
+      }
+      allSongsCsv {
+        nodes {
+          author
+          core_gd
+          core_jrad
+          cover_gd
+          id
+          nicknames
+          performances
+          suite
+          title
+        }
+      }
+      allSongperformancesCsv {
+        nodes {
+          id
+          next_perfid
+          prev_perfid
+          prev_show_id
+          notes
+          set_id
+          show_id
+          showgap
+          song_id
+          song_name
+          variation
+        }
+      }
       allShowsCsv {
         nodes {
           date
@@ -103,14 +78,51 @@ exports.createPages = async ({graphql, actions: { createPage } }) => {
           venue_id
         }
       }
+      allSetsCsv {
+        nodes {
+          id
+          setlist
+          song_performances
+        }
+      }
+      allSeguesCsv {
+        nodes {
+          id
+          from_perf_id
+          notes
+          to_perf_id
+          type
+        }
+      }
+      allRecordingsCsv {
+        nodes {
+          date
+          id
+          show
+          url
+          type
+        }
+      }
+      allGuestsCsv {
+        nodes {
+          id
+          instrument
+          name
+          shows
+        }
+      }
     }
-  `).then((result) => {
-    if (result.errors) {
-      console.error('oh noooooooo', result.errors)
-      throw result.errors
-    }
-    const shows = result.data.allShowsCsv.nodes
-    const lastShowId = shows.reduce((acc, elem) => Number(acc.id) > Number(elem.id) ? acc : elem, []).id
+  `)
+  const {allShowsCsv: {nodes: shows}, } = result.data
+  const lastShowId = shows.reduce((acc, elem) => Number(acc.id) > Number(elem.id) ? acc : elem, []).id
+  const venues = result.data.allVenuesCsv.nodes
+  const sets = result.data.allSetsCsv.nodes
+  const songs = result.data.allSongsCsv.nodes
+  const performances = result.data.allSongperformancesCsv.nodes
+  const teases = result.data.allTeasesCsv.nodes
+  const segues = result.data.allSeguesCsv.nodes
+  const guests = result.data.allGuestsCsv.nodes
+  const recordings = result.data.allRecordingsCsv.nodes
 
   createPage({
     path: '/',
@@ -132,13 +144,15 @@ exports.createPages = async ({graphql, actions: { createPage } }) => {
   })
 
   shows.forEach((show) => {
+    const showVenueId = show.venue_id.toString()
+    const venue = venues.find(venue => venue.id === showVenueId)
     createPage({
       path: `/show/embed/${show.id}`,
       component: ShowEmbedPage,
       context: {
         show,
         sets,
-        venue: venuesObj[show.venue_id.toString()],
+        venue,
         guests,
         performances,
         segues,
@@ -153,7 +167,7 @@ exports.createPages = async ({graphql, actions: { createPage } }) => {
         show,
         shows,
         sets,
-        venue: venuesObj[show.venue_id.toString()],
+        venue,
         guests,
         recordings: filter(propEq('show', show.id))(recordings),
         performances,
@@ -192,6 +206,5 @@ exports.createPages = async ({graphql, actions: { createPage } }) => {
         shows: filter(propEq('venue_id', venue.id))(shows),
       }
     })
-  })
   })
 }
