@@ -7,9 +7,9 @@ import SEO from "../components/seo"
 import SongFinder from '../components/song_finder'
 import ShowsByYear from '../components/shows_by_year'
 
-import './home.css'
+import './index.css'
 
-const Home = ({data}) => (
+const IndexComponent = ({data}) => (
   <Layout className="homepage">
     <SEO title="Home" description="setlists for Joe Russo's Almost Dead, with teases and links to recordings" />
     <h1>JRAD Setlists</h1>
@@ -33,7 +33,7 @@ const Home = ({data}) => (
   </Layout>
 )
 
-const HomePage = () => <StaticQuery
+const IndexPage = () => <StaticQuery
   query={graphql`
     query HomePageData {
       allShowsCsv { nodes {
@@ -73,6 +73,6 @@ const HomePage = () => <StaticQuery
       } }
     }
   `}
-  render={(data) => <Home data={data} />}
+  render={(data) => <IndexComponent data={data} />}
 />
-  export default HomePage
+export default IndexPage

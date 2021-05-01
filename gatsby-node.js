@@ -1,7 +1,6 @@
 const {filter, propEq} = require('ramda')
 const slugify = require('slugify')
 
-const HomePage = require.resolve('./src/templates/home.js')
 const ShowPage = require.resolve('./src/templates/show.js')
 const ShowEmbedPage = require.resolve('./src/templates/show-embed.js')
 const SongPage = require.resolve('./src/templates/song.js')
@@ -123,11 +122,6 @@ exports.createPages = async ({graphql, actions: { createPage } }) => {
   const segues = result.data.allSeguesCsv.nodes
   const guests = result.data.allGuestsCsv.nodes
   const recordings = result.data.allRecordingsCsv.nodes
-
-  createPage({
-    path: '/',
-    component: HomePage,
-  })
 
   createPage({
     path: '/songs',
