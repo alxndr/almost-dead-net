@@ -113,13 +113,13 @@ exports.createPages = async ({graphql, actions: { createPage } }) => {
   `)
   const {
     allShowsCsv: {nodes: shows},
+    allSetsCsv: {nodes: sets},
+    allSongsCsv: {nodes: songs},
+    allSongperformancesCsv: {nodes: performances},
+    allTeasesCsv: {nodes: teases},
     allVenuesCsv: {nodes: venues},
   } = result.data
   const lastShowId = shows.reduce((acc, elem) => Number(acc.id) > Number(elem.id) ? acc : elem, []).id
-  const sets = result.data.allSetsCsv.nodes
-  const songs = result.data.allSongsCsv.nodes
-  const performances = result.data.allSongperformancesCsv.nodes
-  const teases = result.data.allTeasesCsv.nodes
   const segues = result.data.allSeguesCsv.nodes
   const guests = result.data.allGuestsCsv.nodes
   const recordings = result.data.allRecordingsCsv.nodes
@@ -167,12 +167,7 @@ exports.createPages = async ({graphql, actions: { createPage } }) => {
       path: `/song/${song.id}`,
       component: SongPage,
       context: {
-        song,
-        shows,
-        sets,
-        songs,
-        songPerformances: filter(propEq('song_id', song.id))(performances),
-        teases: teaseRows,
+        songId: song.id,
         teasePerformances: filter((perf) => teasePerfIds.includes(perf.id))(performances),
       }
     })

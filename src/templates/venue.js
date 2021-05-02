@@ -11,8 +11,10 @@ function pluralize(number, word) {
   return `${number} ${word}${number !== 1 && 's'}`
 }
 
-export default function Venue({data}) {
-  const {venuesCsv: venue, allShowsCsv: {nodes: shows}} = data
+export default function Venue({data: {
+  venuesCsv: venue,
+  allShowsCsv: {nodes: shows},
+}}) {
   if (!venue) {
     return false
   }

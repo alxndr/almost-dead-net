@@ -13,5 +13,8 @@
   "extends": [
     "eslint:recommended",
     "react-app"
-  ]
+  ],
+  "rules": {
+    "import/no-anonymous-default-export": "warn"
+  }
 }

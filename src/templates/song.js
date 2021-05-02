@@ -1,6 +1,6 @@
 import React from 'react'
-import {Link} from 'gatsby'
-import {filter, find, propEq, uniqBy} from 'ramda'
+import {graphql, Link} from 'gatsby'
+import {find, propEq, uniqBy} from 'ramda'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -28,7 +28,15 @@ const SET_MAPPING = { // 'show table column name' to 'human readable set name'
   encore2: 'double encore',
 }
 
-export default function Song({pageContext: {song, shows, sets, songs, songPerformances, teases, teasePerformances}}) {
+export default function Song({data: {
+  songsCsv: song,
+  allShowsCsv: {nodes: shows},
+  allSetsCsv: {nodes: sets},
+  allSongsCsv: {nodes: songs},
+  allSongperformancesCsv: {nodes: songPerformances},
+  allTeasesCsv: {nodes: teases},
+  teasePerformances,
+}}) {
   if (!(song && songs && songPerformances && shows && teases && sets)) {
     return <p>Loading...</p>
   }
@@ -126,3 +134,46 @@ export default function Song({pageContext: {song, shows, sets, songs, songPerfor
     <div className="songpage__teases">{teasesComponent}</div>
   </Layout>
 }
+
+export const query = graphql`
+  query($songId: String!) {
+    songsCsv(id: {eq: $songId}) {
+      id
+      author
+      core_gd
+      core_jrad
+      cover_gd
+      nicknames
+      performances
+      suite
+      title
+    }
+    allShowsCsv {
+      nodes {
+        id
+        date
+        encore1
+        encore2
+        set1
+        set2
+        set3
+        soundcheck
+      }
+    }
+    allSongperformancesCsv(filter: {song_id: $songId}) {
+      nodes {
+        id
+        next_perfid
+        prev_perfid
+        prev_show_id
+        notes
+        set_id
+        show_id
+        showgap
+        song_id
+        song_name
+        variation
+      }
+    }
+  }
+`
