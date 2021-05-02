@@ -1,12 +1,18 @@
 import React from 'react'
-import {Link} from 'gatsby'
+import {graphql, Link} from 'gatsby'
 
 import SEO from '../components/seo'
 import Layout from '../components/layout'
 
 import './venue.css'
 
-export default function VenuePage({pageContext: {venue, shows}}) {
+/* Appends an "s" to the end of `word` if warranted by the value of `number` */
+function pluralize(number, word) {
+  return `${number} ${word}${number !== 1 && 's'}`
+}
+
+export default function Venue({data}) {
+  const {venuesCsv: venue, allShowsCsv: {nodes: shows}} = data
   if (!venue) {
     return false
   }
@@ -16,7 +22,7 @@ export default function VenuePage({pageContext: {venue, shows}}) {
     />
     <h1>{venue.name}</h1>
     <p>{venue.location}</p>
-    <h2>{shows.length} Show{shows.length !== 1 && 's'}</h2>
+    <h2>{pluralize(shows.length, 'Show')}</h2>
     <ul>
       {shows.map((show) =>
         <li>
@@ -26,3 +32,19 @@ export default function VenuePage({pageContext: {venue, shows}}) {
     </ul>
   </Layout>
 }
+
+export const query = graphql`
+  query($venueId: String!) {
+    venuesCsv(id: {eq: $venueId}) {
+      id
+      location
+      name
+    }
+    allShowsCsv(filter: {venue_id: {eq: $venueId}}) {
+      nodes {
+        id
+        date
+      }
+    }
+  }
+`

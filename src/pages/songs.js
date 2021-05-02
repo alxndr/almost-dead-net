@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'gatsby'
+import {graphql, Link, StaticQuery} from 'gatsby'
 
 import {filter, groupBy, prop, propEq, sortBy} from 'ramda'
 import {Tooltip} from 'react-tippy'
@@ -38,7 +38,7 @@ function SongLink({data: {author, core_gd, cover_gd, id, suite, title, performan
   </Link>
 }
 
-export default function SongsPage({pageContext: {songs, teases}}) {
+function SongsComponent({data: {allSongsCsv: {nodes: songs}, allTeasesCsv: {nodes: teases}}}) {
   const songsClean = songs.filter(songData => songData.title && songData.title !== '[unknown]')
   const groupedByPerformedVsTeased = groupBy(
     (songData) => Boolean(songData.performances),
@@ -93,3 +93,32 @@ export default function SongsPage({pageContext: {songs, teases}}) {
     </ul>
   </Layout>
 }
+
+const SongsPage = () => <StaticQuery
+  query={graphql`
+    query SongsPageData {
+      allSongsCsv { nodes {
+        author
+        core_gd
+        core_jrad
+        cover_gd
+        id
+        nicknames
+        performances
+        suite
+        title
+      } }
+      allTeasesCsv { nodes {
+        id
+        by
+        notes
+        performance_id
+        song_id
+        song_name
+        within
+      } }
+    }
+  `}
+  render={data => <SongsComponent data={data} />}
+/>
+export default SongsPage

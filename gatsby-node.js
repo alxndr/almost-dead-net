@@ -4,8 +4,7 @@ const slugify = require('slugify')
 const ShowPage = require.resolve('./src/templates/show.js')
 const ShowEmbedPage = require.resolve('./src/templates/show-embed.js')
 const SongPage = require.resolve('./src/templates/song.js')
-const SongsPage = require.resolve('./src/templates/songs.js')
-const VenuePage = require.resolve('./src/templates/venue.js')
+const VenueTemplate = require.resolve('./src/templates/venue.js')
 
 exports.createPages = async ({graphql, actions: { createPage } }) => {
   const result = await graphql(`
@@ -112,9 +111,11 @@ exports.createPages = async ({graphql, actions: { createPage } }) => {
       }
     }
   `)
-  const {allShowsCsv: {nodes: shows}, } = result.data
+  const {
+    allShowsCsv: {nodes: shows},
+    allVenuesCsv: {nodes: venues},
+  } = result.data
   const lastShowId = shows.reduce((acc, elem) => Number(acc.id) > Number(elem.id) ? acc : elem, []).id
-  const venues = result.data.allVenuesCsv.nodes
   const sets = result.data.allSetsCsv.nodes
   const songs = result.data.allSongsCsv.nodes
   const performances = result.data.allSongperformancesCsv.nodes
@@ -122,15 +123,6 @@ exports.createPages = async ({graphql, actions: { createPage } }) => {
   const segues = result.data.allSeguesCsv.nodes
   const guests = result.data.allGuestsCsv.nodes
   const recordings = result.data.allRecordingsCsv.nodes
-
-  createPage({
-    path: '/songs',
-    component: SongsPage,
-    context: {
-      songs,
-      teases,
-    }
-  })
 
   shows.forEach((show) => {
     const showVenueId = show.venue_id.toString()
@@ -186,14 +178,13 @@ exports.createPages = async ({graphql, actions: { createPage } }) => {
     })
   })
 
-  venues.forEach((venue) => {
+  venues.forEach(venue => {
     createPage({
       path: `/venue/${venue.id}-${slugify(venue.name)}`,
-      component: VenuePage,
+      component: VenueTemplate,
       context: {
-        venue,
-        shows: filter(propEq('venue_id', venue.id))(shows),
-      }
+        venueId: venue.id,
+      },
     })
   })
 }
