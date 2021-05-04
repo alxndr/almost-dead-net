@@ -1,12 +1,9 @@
-import React, {useEffect, useState} from 'react'
-import {filter, find, includes, propEq, sort, where} from 'ramda'
-import {Link} from 'gatsby'
-import slugify from 'slugify'
+import React from 'react'
+import {filter, find, includes, propEq, where} from 'ramda'
+import {graphql} from 'gatsby'
 
 import SEO from "../components/seo"
-import Layout from '../components/layout'
 import Setlist from '../components/setlist'
-import Recording from '../components/recording'
 
 import {normalizeSetlist} from '../components/helpers/setlist-helper'
 
@@ -41,13 +38,22 @@ function Set({show, which, isEncore = false, sets, performances, segues, teases,
   />
 }
 
-export default function Show({pageContext: {show, shows, sets, venue, guests, recordings, performances, segues, songs, teases, lastShowId}}) {
+export default function Show({data: {
+  showsCsv: show,
+  venuesCsv: venue,
+  allSetsCsv: {nodes: sets},
+  allGuestsCsv: {nodes: guests},
+  allSongperformancesCsv: {nodes: performances},
+  allSeguesCsv: {nodes: segues},
+  allSongsCsv: {nodes: songs},
+  allTeasesCsv: {nodes: teases},
+}}) {
   if (!show) {
     console.error('Show page, missing show..............')
     return false
   }
 
-  const {date, event, notes, links} = show
+  const {date, event, notes} = show
 
   const guestsWithSplitShows = guests.map((guestData) => {
     if (!guestData) {
@@ -98,3 +104,51 @@ export default function Show({pageContext: {show, shows, sets, venue, guests, re
     </section>
   </div>
 }
+
+export const query = graphql`
+  query($showId: String!, $venueId: String!) {
+    showsCsv(id: {eq: $showId}) {
+      id
+      date
+      encore1
+      encore2
+      event
+      notes
+      set1
+      set2
+      set3
+    }
+    venuesCsv(id: {eq: $venueId}) {
+      id
+      location
+      name
+    }
+    allSetsCsv { nodes {
+      id
+      setlist
+    }}
+    allGuestsCsv { nodes {
+      id
+      name
+      shows
+    } }
+    allSongperformancesCsv { nodes {
+      id
+      song_id
+    } }
+    allSongsCsv { nodes {
+      id
+      author
+      core_gd
+      core_jrad
+      suite
+      title
+    } }
+    allSeguesCsv { nodes {
+      id
+    } }
+    allTeasesCsv { nodes {
+      id
+    } }
+  }
+`

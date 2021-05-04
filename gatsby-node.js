@@ -131,16 +131,11 @@ exports.createPages = async ({graphql, actions: { createPage } }) => {
       path: `/show/embed/${show.id}`,
       component: ShowEmbedPage,
       context: {
-        show,
-        sets,
-        venue,
-        guests,
-        performances,
-        segues,
-        songs,
-        teases,
-      }
+        showId: show.id,
+        venueId: venue.id,
+      },
     })
+    /*
     createPage({
       path: `/show/${show.id}`,
       component: ShowPage,
@@ -158,6 +153,7 @@ exports.createPages = async ({graphql, actions: { createPage } }) => {
         lastShowId,
       }
     })
+    */
   })
 
   songs.forEach((song) => {
