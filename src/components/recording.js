@@ -49,6 +49,7 @@ function determineEmbed(url) {
 }
 
 export default function Recording({type, url}) {
+  if (!url) return false
   return (
     <li>
       <a href={url} target="_blank" rel="noopener noreferrer">{type}</a>

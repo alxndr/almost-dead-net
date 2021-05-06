@@ -134,7 +134,11 @@ export const query = graphql`
     } }
     allSongperformancesCsv { nodes {
       id
+      next_perfid
+      prev_perfid
+      showgap
       song_id
+      variation
     } }
     allSongsCsv { nodes {
       id
@@ -146,9 +150,11 @@ export const query = graphql`
     } }
     allSeguesCsv { nodes {
       id
+      type
     } }
     allTeasesCsv { nodes {
       id
+      song_id
     } }
   }
 `

@@ -83,50 +83,21 @@ exports.createPages = async ({graphql, actions: { createPage } }) => {
           song_performances
         }
       }
-      allSeguesCsv {
-        nodes {
-          id
-          from_perf_id
-          notes
-          to_perf_id
-          type
-        }
-      }
-      allRecordingsCsv {
-        nodes {
-          date
-          id
-          show
-          url
-          type
-        }
-      }
-      allGuestsCsv {
-        nodes {
-          id
-          instrument
-          name
-          shows
-        }
-      }
     }
   `)
   const {
     allShowsCsv: {nodes: shows},
     allVenuesCsv: {nodes: venues},
   } = result.data
-  const lastShowId = shows.reduce((acc, elem) => Number(acc.id) > Number(elem.id) ? acc : elem, []).id
+  const lastShowId = shows.reduce((acc, elem) => Number(acc.id) > Number(elem.id) ? acc : elem, []).id // TODO pull this with graphql
   const sets = result.data.allSetsCsv.nodes
   const songs = result.data.allSongsCsv.nodes
   const performances = result.data.allSongperformancesCsv.nodes
   const teases = result.data.allTeasesCsv.nodes
-  const segues = result.data.allSeguesCsv.nodes
-  const guests = result.data.allGuestsCsv.nodes
-  const recordings = result.data.allRecordingsCsv.nodes
 
   shows.forEach((show) => {
     const showVenueId = show.venue_id.toString()
-    const venue = venues.find(venue => venue.id === showVenueId)
+    const venue = venues.find(venue => venue.id === showVenueId) // TODO move into graphql
     createPage({
       path: `/show/embed/${show.id}`,
       component: ShowEmbedPage,
@@ -135,25 +106,15 @@ exports.createPages = async ({graphql, actions: { createPage } }) => {
         venueId: venue.id,
       },
     })
-    /*
     createPage({
       path: `/show/${show.id}`,
       component: ShowPage,
       context: {
-        show,
-        shows,
-        sets,
-        venue,
-        guests,
-        recordings: filter(propEq('show', show.id))(recordings),
-        performances,
-        segues,
-        songs,
-        teases,
+        showId: show.id,
+        venueId: venue.id,
         lastShowId,
       }
     })
-    */
   })
 
   songs.forEach((song) => {

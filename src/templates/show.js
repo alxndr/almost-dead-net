@@ -1,6 +1,6 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import {filter, find, includes, propEq, sort, where} from 'ramda'
-import {Link} from 'gatsby'
+import {graphql, Link} from 'gatsby'
 import slugify from 'slugify'
 
 import SEO from "../components/seo"
@@ -19,7 +19,7 @@ function ShowRecordings({date, recordings}) {
       <h2>Recordings</h2>
       <ul>
         {recordings.map(({type, url}) => <Recording type={type} url={url} />)}
-        {Boolean(recordings.filter(({type}) => ['matrix', 'soundboard'].includes(type)).length) &&
+        {Boolean(recordings.filter(({type}) => ['matrix', 'soundboard', 'audience'].includes(type)).length) &&
           <Recording type={'audio'} url={`https://relisten.net/jrad/${yyyy}/${m < 10 ? `0${m}` : m}/${d < 10 ? `0${d}` : d}`} />
         }
       </ul>
@@ -64,7 +64,49 @@ function LeadImage({urls}) {
   </div>
 }
 
-export default function Show({pageContext: {show, shows, sets, venue, guests, recordings, performances, segues, songs, teases, lastShowId}}) {
+const SORT_ORDER = [
+  'audience',
+  'pro-shot',
+  'matrix',
+  'soundboard',
+  'audio',
+  'video',
+  'unknown',
+]
+const OFFSET = 1
+const recordingsSorter = (a, b) => {
+  if (a.type === b.type)
+    return 0;
+  return SORT_ORDER.find(
+    (type) => [a.type, null, b.type].indexOf(type) + OFFSET
+  ) - OFFSET
+}
+
+//function sortObjectsByProperty({objectsArray, propertyName, sortOrder}) {
+//  return (a, b) => {
+//  if (a[propertyName] === b[propertyName])
+//    return 0;
+//  return sortOrder.find(
+//    (propertyValue) => [a[propertyName], null, b[propertyName]].indexOf(propertyValue) + OFFSET
+//  ) - OFFSET
+//}
+
+export default function Show({
+  pageContext: {
+    lastShowId,
+  },
+  data: {
+    showsCsv: show,
+    venuesCsv: venue,
+    allSetsCsv: {nodes: sets},
+    allGuestsCsv: {nodes: guests},
+    allRecordingsCsv: {nodes: recordings},
+    allSongperformancesCsv: {nodes: performances},
+    allSeguesCsv: {nodes: segues},
+    allSongsCsv: {nodes: songs},
+    allTeasesCsv: {nodes: teases},
+  },
+}) {
   if (!show) {
     console.error('Show page, missing show..............')
     return false
@@ -92,20 +134,7 @@ export default function Show({pageContext: {show, shows, sets, venue, guests, re
   }).filter((data) => !!data)
   const showGuests = filter(where({shows: includes(show.id)}))(guestsWithSplitShows)
 
-  const showRecordings = sort((a, b) => {
-    if (a.type === b.type) return 0;
-    if (a.type === 'pro-shot') return -1;
-    if (b.type === 'pro-shot') return 1;
-    if (a.type === 'matrix') return -1;
-    if (b.type === 'matrix') return 1;
-    if (a.type === 'video') return -1;
-    if (b.type === 'video') return 1;
-    if (a.type === 'soundboard') return -1;
-    if (b.type === 'soundboard') return 1;
-    if (a.type === 'audience') return -1;
-    if (b.type === 'audience') return 1;
-    console.error('cannot sort recordings......', {a, b})
-  })(recordings)
+  const showRecordings = sort(recordingsSorter)(recordings)
 
   const setlist = [1, 2, 3].reduce((setlists, which) => setlists.concat(
     <Set which={which} show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} />
@@ -147,3 +176,66 @@ export default function Show({pageContext: {show, shows, sets, venue, guests, re
     </nav>
   </Layout>
 }
+
+export const query = graphql`
+  query($showId: String!, $venueId: String!) {
+    showsCsv(id: {eq: $showId}) {
+      id
+      date
+      encore1
+      encore2
+      event
+      links
+      notes
+      set1
+      set2
+      set3
+      soundcheck
+    }
+    venuesCsv(id: {eq: $venueId}) {
+      id
+      location
+      name
+    }
+    allSetsCsv { nodes {
+      id
+      setlist
+    }}
+    allGuestsCsv { nodes {
+      id
+      name
+      shows
+    } }
+    allSongperformancesCsv { nodes {
+      id
+      next_perfid
+      notes
+      prev_perfid
+      showgap
+      song_id
+      variation
+    } }
+    allSongsCsv { nodes {
+      id
+      author
+      core_gd
+      core_jrad
+      suite
+      title
+    } }
+    allSeguesCsv { nodes {
+      id
+      from_perf_id
+      type
+    } }
+    allTeasesCsv { nodes {
+      id
+      performance_id
+      song_name
+    } }
+    allRecordingsCsv(filter: {show: {eq: $showId}}) { nodes {
+      id
+      type
+      url
+    } }
+  }`
