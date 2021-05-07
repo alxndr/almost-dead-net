@@ -1,12 +1,19 @@
-const {filter, propEq} = require('ramda')
 const slugify = require('slugify')
 
-const ShowPage = require.resolve('./src/templates/show.js')
-const ShowEmbedPage = require.resolve('./src/templates/show-embed.js')
-const SongPage = require.resolve('./src/templates/song.js')
+const ShowTemplate = require.resolve('./src/templates/show.js')
+const ShowEmbedTemplate = require.resolve('./src/templates/show-embed.js')
+const SongTemplate = require.resolve('./src/templates/song.js')
 const VenueTemplate = require.resolve('./src/templates/venue.js')
 
-exports.createPages = async ({graphql, actions: { createPage } }) => {
+exports.createSchemaCustomization = ({actions: {createTypes}}) => {
+  createTypes(`
+    type teasesCsv implements Node {
+      performance_id: String
+    }
+  `)
+}
+
+exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => {
   const result = await graphql(`
     query Everything {
       allVenuesCsv {
@@ -17,17 +24,6 @@ exports.createPages = async ({graphql, actions: { createPage } }) => {
           capacity
           generic_name
           tagname
-        }
-      }
-      allTeasesCsv {
-        nodes {
-          id
-          by
-          notes
-          performance_id
-          song_id
-          song_name
-          within
         }
       }
       allSongsCsv {
@@ -41,21 +37,6 @@ exports.createPages = async ({graphql, actions: { createPage } }) => {
           performances
           suite
           title
-        }
-      }
-      allSongperformancesCsv {
-        nodes {
-          id
-          next_perfid
-          prev_perfid
-          prev_show_id
-          notes
-          set_id
-          show_id
-          showgap
-          song_id
-          song_name
-          variation
         }
       }
       allShowsCsv {
@@ -76,13 +57,6 @@ exports.createPages = async ({graphql, actions: { createPage } }) => {
           venue_id
         }
       }
-      allSetsCsv {
-        nodes {
-          id
-          setlist
-          song_performances
-        }
-      }
     }
   `)
   const {
@@ -90,17 +64,14 @@ exports.createPages = async ({graphql, actions: { createPage } }) => {
     allVenuesCsv: {nodes: venues},
   } = result.data
   const lastShowId = shows.reduce((acc, elem) => Number(acc.id) > Number(elem.id) ? acc : elem, []).id // TODO pull this with graphql
-  const sets = result.data.allSetsCsv.nodes
   const songs = result.data.allSongsCsv.nodes
-  const performances = result.data.allSongperformancesCsv.nodes
-  const teases = result.data.allTeasesCsv.nodes
 
   shows.forEach((show) => {
     const showVenueId = show.venue_id.toString()
     const venue = venues.find(venue => venue.id === showVenueId) // TODO move into graphql
     createPage({
       path: `/show/embed/${show.id}`,
-      component: ShowEmbedPage,
+      component: ShowEmbedTemplate,
       context: {
         showId: show.id,
         venueId: venue.id,
@@ -108,7 +79,7 @@ exports.createPages = async ({graphql, actions: { createPage } }) => {
     })
     createPage({
       path: `/show/${show.id}`,
-      component: ShowPage,
+      component: ShowTemplate,
       context: {
         showId: show.id,
         venueId: venue.id,
@@ -118,19 +89,11 @@ exports.createPages = async ({graphql, actions: { createPage } }) => {
   })
 
   songs.forEach((song) => {
-    const teaseRows = filter(propEq('song_id', song.id))(teases)
-    const teasePerfIds = teaseRows.map((row) => row.performance_id)
     createPage({
       path: `/song/${song.id}`,
-      component: SongPage,
+      component: SongTemplate,
       context: {
-        song,
-        shows,
-        sets,
-        songs,
-        songPerformances: filter(propEq('song_id', song.id))(performances),
-        teases: teaseRows,
-        teasePerformances: filter((perf) => teasePerfIds.includes(perf.id))(performances),
+        songId: song.id,
       }
     })
   })
