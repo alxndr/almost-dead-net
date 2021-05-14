@@ -2,6 +2,7 @@
   display: flex;
   flex-flow: row wrap;
   flex: 1 1 10em;
+  justify-content: center;
 }
 
 .homepage h1 {
