@@ -10,6 +10,7 @@
   display: flex;
   border-radius: 15px;
   margin: 0.5em 0.1em;
+  background: #dabbff4e;
   box-shadow: 3px 7px 10px 0 #00000044,
               inset -3px -5px 9px 0 #00000077;
 }
@@ -27,7 +28,6 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  background: repeating-linear-gradient(#dabbff4e, #dabbff4e 2.8em, #dabbff99 3.48em);
 }
 
 .showsbyyear__shows li {
