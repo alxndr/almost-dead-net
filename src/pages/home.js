@@ -12,8 +12,8 @@ import './home.css'
 
 const IndexPage = ({pageContext: {shows, venues, songs}}) => (
   <Layout className="homepage">
-    <SEO title="Home" description="setlists for Joe Russo's Almost Dead, with teases and links to recordings" />
-    <h1>JRAD Setlists</h1>
+    <SEO title="Almost-Dead.net" description="Joe Russo's Almost Dead setlists, teases, performance recordings, discussion forum" />
+    <h1>Setlists, segues, teases by JRAD</h1>
     <section className="homepage__songfinder">
       <h2>Find a song:</h2>
       <SongFinder songs={songs} />
