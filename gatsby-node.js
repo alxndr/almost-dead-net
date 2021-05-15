@@ -7,8 +7,33 @@ const VenueTemplate = require.resolve('./src/templates/venue.js')
 
 exports.createSchemaCustomization = ({actions: {createTypes}}) => {
   createTypes(`
+    type recordingsCsv implements Node {
+      show: showsCsv @link
+    }
+    type setsCsv implements Node {
+      setlist: String
+    }
+    type showsCsv implements Node {
+      venue_id: venuesCsv @link
+    }
+    type songperformancesCsv implements Node {
+      next_perfid: songperformancesCsv @link
+      prev_perfid: songperformancesCsv @link
+      prev_show_id: showsCsv @link
+      set_id: setsCsv @link
+      show_id: showsCsv @link
+      song_id: songsCsv @link
+    }
+    type songsCsv implements Node {
+      title: String
+    }
     type teasesCsv implements Node {
-      performance_id: String
+      performance_id: songperformancesCsv @link
+      song_id: songsCsv @link
+    }
+    type venuesCsv implements Node {
+      name: String
+      tagname: String
     }
   `)
 }
