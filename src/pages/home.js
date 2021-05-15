@@ -28,7 +28,7 @@ const IndexPage = ({pageContext: {shows, venues, songs}}) => (
       </ul>
     </section>
     <section className="homepage__showsbyyear">
-      <h2>Find a show's setlist, teases, segues, and more:</h2>
+      <h2>Find a show:</h2>
       <ShowsByYear rawShows={shows} rawVenues={venues} />
     </section>
   </Layout>
