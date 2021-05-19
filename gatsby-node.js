@@ -6,6 +6,7 @@ const SongTemplate = require.resolve('./src/templates/song.js')
 const VenueTemplate = require.resolve('./src/templates/venue.js')
 
 exports.createSchemaCustomization = ({actions: {createTypes}}) => {
+  // n.b. this is GraphQL "SDL"
   createTypes(`
     type recordingsCsv implements Node {
       show: showsCsv @link
@@ -14,6 +15,18 @@ exports.createSchemaCustomization = ({actions: {createTypes}}) => {
       setlist: String
     }
     type showsCsv implements Node {
+      date: Date
+      encore1: Int
+      encore2: Int
+      event: String
+      links: String
+      notes: String
+      num_recordings: Int
+      set1: Int
+      set2: Int
+      set3: Int
+      soundcheck: Int
+      tagline: String
       venue_id: venuesCsv @link
     }
     type songperformancesCsv implements Node {
@@ -23,20 +36,35 @@ exports.createSchemaCustomization = ({actions: {createTypes}}) => {
       set_id: setsCsv @link
       show_id: showsCsv @link
       song_id: songsCsv @link
+      variation: String
     }
     type songsCsv implements Node {
-      title: String
+      author: String
+      core_jrad: Boolean
+      core_gd: Boolean
+      cover_gd: Boolean
+      performances: String
+      performed: [songperformancesCsv]
+      suite: String
+      teased: [teasesCsv]
+      title: String!
     }
     type teasesCsv implements Node {
       performance_id: songperformancesCsv @link
       song_id: songsCsv @link
+      within: String
     }
     type venuesCsv implements Node {
+      capacity: Int
+      generic_name: String
+      location: String
       name: String
       tagname: String
     }
   `)
 }
+/*
+*/
 
 exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => {
   const result = await graphql(`
