@@ -23,10 +23,13 @@
 .homepage__links {
   background: powderblue;
 }
-
 .homepage__links ul {
-  list-style: none;
+  list-style: circle;
   margin: 0;
+}
+
+.homepage__forum {
+  background: pink;
 }
 
 .homepage__showsbyyear {
