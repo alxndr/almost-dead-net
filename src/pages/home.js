@@ -17,23 +17,6 @@ function isDebugMode() {
 }
 
 const IndexPage = ({pageContext: {shows, venues, songs}}) => {
-  useEffect(() => {
-    if (!isDebugMode()) return null
-    const [containerElement] = document.getElementsByClassName('homepage__forum')
-    const existingElements = containerElement.getElementsByTagName('d-topics-list')
-    if (existingElements)
-      for (const elem of existingElements)
-        elem.remove()
-    console.debug('container', containerElement)
-    const newElement = document.createElement('d-topics-list')
-    // <d-topics-list discourse-url="https://lot.almost-dead.net" per-page="5" status="open"></d-topics-list>
-    newElement.setAttribute('discourse-url', 'https://lot.almost-dead.net')
-    newElement.setAttribute('per-page', '5')
-    newElement.setAttribute('status', 'open')
-    console.debug('new...', newElement)
-    containerElement.appendChild(newElement)
-  }, [])
-
   return <Layout className="homepage">
     <Helmet>
       <script src="https://lot.almost-dead.net/javascripts/embed-topics.js" type="text/javascript"></script>
@@ -43,12 +26,11 @@ const IndexPage = ({pageContext: {shows, venues, songs}}) => {
 
     <h1>JRAD forum &amp; setlists with teases &amp; segues</h1>
 
-    {isDebugMode()
-      ? <section className="homepage__forum">
-        <h2><a href="https://lot.almost-dead.net" title="JRAD Forum: The Lot"><img src="https://lot.almost-dead.net/uploads/default/original/1X/71ea69cde5d1aedbf81ce09bdd8acf299d582546.png" alt="The Lot (message board / forum)" style={{maxHeight:'1.7em',verticalAlign:'middle'}} /></a></h2>
-      </section>
-      : null
-    }
+    <section className="homepage__forum">
+      <h2>Forum</h2>
+      <a href="https://lot.almost-dead.net" title="JRAD Forum: The Lot"><img src="https://lot.almost-dead.net/uploads/default/original/1X/71ea69cde5d1aedbf81ce09bdd8acf299d582546.png" alt="The Lot (message board / forum)" style={{maxHeight:'1.7em',verticalAlign:'middle'}} /></a>
+      <d-topics-list discourse-url="https://lot.almost-dead.net" per-page="5" status="open"></d-topics-list>
+    </section>
 
     <section className="homepage__songfinder">
       <h2>Find a song:</h2>
