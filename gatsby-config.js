@@ -5,6 +5,7 @@ module.exports = {
     siteUrl: 'https://almost-dead.net',
   },
   plugins: [
+    'gatsby-plugin-loadable-components-ssr',
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {

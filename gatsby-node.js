@@ -3,6 +3,7 @@ const csv = require('papaparse')
 const omit = require('lodash/omit')
 const {filter, propEq} = require('ramda')
 const slugify = require('slugify')
+const LoadablePlugin = require('@loadable/webpack-plugin')
 
 const URL_BASE = 'https://gist.githubusercontent.com/alxndr/5f64cf477d5202c004856772ad2222db/raw/a6996836d4e04107752b9f8ac157abf4bfb2eaa6'
 const ENDPOINTS = {
@@ -166,3 +167,23 @@ exports.createPages = async ({ actions: { createPage } }) => {
     })
   })
 }
+
+exports.onCreateWebpackConfig = ({ actions, stage }) => {
+  if (
+    stage === "build-javascript" ||
+    stage === "develop" ||
+    stage === "develop-html"
+  ) {
+    actions.setWebpackConfig({
+      plugins: [
+        new LoadablePlugin({
+          filename:
+            stage === "develop"
+              ? `public/loadable-stats.json`
+              : "loadable-stats.json",
+          writeToDisk: true
+        })
+      ]
+    });
+  }
+};
