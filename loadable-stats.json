@@ -1,0 +1,474 @@
+{
+  "hash": "41f7fa091fc4a1d46168",
+  "publicPath": "/",
+  "outputPath": "/Users/alxndr/workspace/almost-dead-net/public",
+  "assetsByChunkName": {
+    "polyfill": [
+      "polyfill-a2d25affeded1b147d38.js"
+    ],
+    "app": [
+      "app-dd8eb20da64fef471446.js"
+    ],
+    "webpack-runtime": [
+      "webpack-runtime-07e0b9b45f548ca893e5.js"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-b96a1d2413f7a419c0bd.js"
+    ],
+    "component---src-pages-about-js": [
+      "component---src-pages-about-js-9cdab509f953c0640fd4.js"
+    ],
+    "component---src-pages-home-js": [
+      "component---src-pages-home-js-f18fa19e86cf9f0fcc77.js"
+    ],
+    "component---src-pages-show-embed-js": [
+      "component---src-pages-show-embed-js-bd000492a3aedecce4cd.js"
+    ],
+    "component---src-pages-show-js": [
+      "component---src-pages-show-js-be1bf6cfaffd1ee9ec08.js"
+    ],
+    "component---src-pages-song-js": [
+      "component---src-pages-song-js-e285d85b50b4ff95a0cb.js"
+    ],
+    "component---src-pages-songs-js": [
+      "component---src-pages-songs-js-f0c22257539bf8627495.js"
+    ],
+    "component---src-pages-venue-js": [
+      "component---src-pages-venue-js-cf77fddb1bff82cfeacb.js"
+    ],
+    "components-forum-topics": [
+      "components-forum-topics-b3beb114481a078bed39.js"
+    ],
+    "styles": [
+      "styles.507ccc3f53b615c1b7fe.css"
+    ],
+    "framework": [
+      "framework-0068a62ee68a6c63e163.js"
+    ],
+    "commons": [
+      "commons-3f073c22614ed54e3bd5.js"
+    ],
+    "52ea0305adb8e79e68fc3a32fff26d226d8236c6": [
+      "52ea0305adb8e79e68fc3a32fff26d226d8236c6-72cc044b025b79f66052.js"
+    ],
+    "8e184c1277a336ea4f5264cf950a2a36d71da73c": [
+      "8e184c1277a336ea4f5264cf950a2a36d71da73c-8b9205611e3554227529.js"
+    ]
+  },
+  "assets": [
+    {
+      "type": "assets by status",
+      "cached": true,
+      "filteredChildren": 21,
+      "size": 649982
+    }
+  ],
+  "namedChunkGroups": {
+    "polyfill": {
+      "name": "polyfill",
+      "chunks": [
+        658,
+        920
+      ],
+      "assets": [
+        {
+          "name": "webpack-runtime-07e0b9b45f548ca893e5.js"
+        },
+        {
+          "name": "polyfill-a2d25affeded1b147d38.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 2,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "app": {
+      "name": "app",
+      "chunks": [
+        658,
+        774,
+        143
+      ],
+      "assets": [
+        {
+          "name": "webpack-runtime-07e0b9b45f548ca893e5.js"
+        },
+        {
+          "name": "framework-0068a62ee68a6c63e163.js"
+        },
+        {
+          "name": "app-dd8eb20da64fef471446.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 3,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "component---src-pages-404-js": {
+      "name": "component---src-pages-404-js",
+      "chunks": [
+        532,
+        351,
+        883
+      ],
+      "assets": [
+        {
+          "name": "styles.507ccc3f53b615c1b7fe.css"
+        },
+        {
+          "name": "commons-3f073c22614ed54e3bd5.js"
+        },
+        {
+          "name": "component---src-pages-404-js-b96a1d2413f7a419c0bd.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 2,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "component---src-pages-about-js": {
+      "name": "component---src-pages-about-js",
+      "chunks": [
+        532,
+        351,
+        682
+      ],
+      "assets": [
+        {
+          "name": "styles.507ccc3f53b615c1b7fe.css"
+        },
+        {
+          "name": "commons-3f073c22614ed54e3bd5.js"
+        },
+        {
+          "name": "component---src-pages-about-js-9cdab509f953c0640fd4.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 2,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "component---src-pages-home-js": {
+      "name": "component---src-pages-home-js",
+      "chunks": [
+        532,
+        351,
+        79
+      ],
+      "assets": [
+        {
+          "name": "styles.507ccc3f53b615c1b7fe.css"
+        },
+        {
+          "name": "commons-3f073c22614ed54e3bd5.js"
+        },
+        {
+          "name": "component---src-pages-home-js-f18fa19e86cf9f0fcc77.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 2,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "component---src-pages-show-embed-js": {
+      "name": "component---src-pages-show-embed-js",
+      "chunks": [
+        532,
+        351,
+        139,
+        448,
+        60
+      ],
+      "assets": [
+        {
+          "name": "styles.507ccc3f53b615c1b7fe.css"
+        },
+        {
+          "name": "commons-3f073c22614ed54e3bd5.js"
+        },
+        {
+          "name": "52ea0305adb8e79e68fc3a32fff26d226d8236c6-72cc044b025b79f66052.js"
+        },
+        {
+          "name": "8e184c1277a336ea4f5264cf950a2a36d71da73c-8b9205611e3554227529.js"
+        },
+        {
+          "name": "component---src-pages-show-embed-js-bd000492a3aedecce4cd.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 4,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "component---src-pages-show-js": {
+      "name": "component---src-pages-show-js",
+      "chunks": [
+        532,
+        351,
+        139,
+        448,
+        177
+      ],
+      "assets": [
+        {
+          "name": "styles.507ccc3f53b615c1b7fe.css"
+        },
+        {
+          "name": "commons-3f073c22614ed54e3bd5.js"
+        },
+        {
+          "name": "52ea0305adb8e79e68fc3a32fff26d226d8236c6-72cc044b025b79f66052.js"
+        },
+        {
+          "name": "8e184c1277a336ea4f5264cf950a2a36d71da73c-8b9205611e3554227529.js"
+        },
+        {
+          "name": "component---src-pages-show-js-be1bf6cfaffd1ee9ec08.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 4,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "component---src-pages-song-js": {
+      "name": "component---src-pages-song-js",
+      "chunks": [
+        532,
+        351,
+        914
+      ],
+      "assets": [
+        {
+          "name": "styles.507ccc3f53b615c1b7fe.css"
+        },
+        {
+          "name": "commons-3f073c22614ed54e3bd5.js"
+        },
+        {
+          "name": "component---src-pages-song-js-e285d85b50b4ff95a0cb.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 2,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "component---src-pages-songs-js": {
+      "name": "component---src-pages-songs-js",
+      "chunks": [
+        532,
+        351,
+        139,
+        540
+      ],
+      "assets": [
+        {
+          "name": "styles.507ccc3f53b615c1b7fe.css"
+        },
+        {
+          "name": "commons-3f073c22614ed54e3bd5.js"
+        },
+        {
+          "name": "52ea0305adb8e79e68fc3a32fff26d226d8236c6-72cc044b025b79f66052.js"
+        },
+        {
+          "name": "component---src-pages-songs-js-f0c22257539bf8627495.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 3,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "component---src-pages-venue-js": {
+      "name": "component---src-pages-venue-js",
+      "chunks": [
+        532,
+        351,
+        408
+      ],
+      "assets": [
+        {
+          "name": "styles.507ccc3f53b615c1b7fe.css"
+        },
+        {
+          "name": "commons-3f073c22614ed54e3bd5.js"
+        },
+        {
+          "name": "component---src-pages-venue-js-cf77fddb1bff82cfeacb.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 2,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "components-forum-topics": {
+      "name": "components-forum-topics",
+      "chunks": [
+        868
+      ],
+      "assets": [
+        {
+          "name": "components-forum-topics-b3beb114481a078bed39.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 1,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "generator": "loadable-components",
+  "chunks": [
+    {
+      "id": 920,
+      "files": [
+        "polyfill-a2d25affeded1b147d38.js"
+      ]
+    },
+    {
+      "id": 143,
+      "files": [
+        "app-dd8eb20da64fef471446.js"
+      ]
+    },
+    {
+      "id": 658,
+      "files": [
+        "webpack-runtime-07e0b9b45f548ca893e5.js"
+      ]
+    },
+    {
+      "id": 231,
+      "files": [
+        "231-0a649ab5edcbda1ea140.js"
+      ]
+    },
+    {
+      "id": 175,
+      "files": [
+        "175-2b91e102e28547caf3ba.js"
+      ]
+    },
+    {
+      "id": 81,
+      "files": [
+        "81-036c51cadc1663fe7cc1.js"
+      ]
+    },
+    {
+      "id": 883,
+      "files": [
+        "component---src-pages-404-js-b96a1d2413f7a419c0bd.js"
+      ]
+    },
+    {
+      "id": 682,
+      "files": [
+        "component---src-pages-about-js-9cdab509f953c0640fd4.js"
+      ]
+    },
+    {
+      "id": 79,
+      "files": [
+        "component---src-pages-home-js-f18fa19e86cf9f0fcc77.js"
+      ]
+    },
+    {
+      "id": 60,
+      "files": [
+        "component---src-pages-show-embed-js-bd000492a3aedecce4cd.js"
+      ]
+    },
+    {
+      "id": 177,
+      "files": [
+        "component---src-pages-show-js-be1bf6cfaffd1ee9ec08.js"
+      ]
+    },
+    {
+      "id": 914,
+      "files": [
+        "component---src-pages-song-js-e285d85b50b4ff95a0cb.js"
+      ]
+    },
+    {
+      "id": 540,
+      "files": [
+        "component---src-pages-songs-js-f0c22257539bf8627495.js"
+      ]
+    },
+    {
+      "id": 408,
+      "files": [
+        "component---src-pages-venue-js-cf77fddb1bff82cfeacb.js"
+      ]
+    },
+    {
+      "id": 868,
+      "files": [
+        "components-forum-topics-b3beb114481a078bed39.js"
+      ]
+    },
+    {
+      "id": 532,
+      "files": [
+        "styles.507ccc3f53b615c1b7fe.css"
+      ]
+    },
+    {
+      "id": 774,
+      "files": [
+        "framework-0068a62ee68a6c63e163.js"
+      ]
+    },
+    {
+      "id": 351,
+      "files": [
+        "commons-3f073c22614ed54e3bd5.js"
+      ]
+    },
+    {
+      "id": 139,
+      "files": [
+        "52ea0305adb8e79e68fc3a32fff26d226d8236c6-72cc044b025b79f66052.js"
+      ]
+    },
+    {
+      "id": 448,
+      "files": [
+        "8e184c1277a336ea4f5264cf950a2a36d71da73c-8b9205611e3554227529.js"
+      ]
+    }
+  ]
+}
