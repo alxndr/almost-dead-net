@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import {Link, graphql, useStaticQuery} from 'gatsby'
 
 import './shows_by_year.css'
 
@@ -12,11 +12,40 @@ function ShowEntry({children, show}) {
   return <Link to={`/show/${id}`} title={title}>{children || date}</Link>
 }
 
-export default function ShowsByYear({rawShows, rawVenues}) {
-  const showsByYear = rawShows.reduce((acc, show) => {
+export default function ShowsByYear() {
+  const {
+    allShowsCsv: {nodes: rawShows},
+    allVenuesCsv: {nodes: rawVenues},
+  } = useStaticQuery(graphql`
+    query ShowsByYearData {
+      allShowsCsv { nodes {
+        date
+        encore1
+        encore2
+        event
+        id
+        links
+        notes
+        num_recordings
+        set1
+        set2
+        set3
+        soundcheck
+        tagline
+        venue_id
+      } }
+      allVenuesCsv { nodes {
+        id
+        location
+        name
+      } }
+    }
+  `)
+  const showsWithVenueByYear = rawShows.reduce((acc, show) => {
     const [m, d, y] = show.date.split('/') // e.g. === ['1', '26', '2013']
+    const venueId = show.venue_id.toString()
     if (!acc[y]) acc[y] = {}
-    const venue = rawVenues[show.venue_id]
+    const venue = rawVenues.find(venue => venue && venue.id && venue.id.toString() === venueId)
     acc[y][`${m}/${d}`] = {
       ...show,
       venue
@@ -24,7 +53,7 @@ export default function ShowsByYear({rawShows, rawVenues}) {
     return acc
   }, {})
   return <ul className="showsbyyear">
-    {Object.entries(showsByYear).reverse().map(([year, showsInYear]) => {
+    {Object.entries(showsWithVenueByYear).reverse().map(([year, showsInYear]) => {
       return <li className={`showsbyyear--${year}`} key={year}>
         <h3>{year}</h3>
         <ul className="showsbyyear__shows">

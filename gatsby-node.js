@@ -8,6 +8,9 @@ const VenueTemplate = require.resolve('./src/templates/venue.js')
 exports.createSchemaCustomization = ({actions: {createTypes}}) => {
   // n.b. this is GraphQL "SDL"
   createTypes(`
+    type guestsCsv implements Node {
+      name: String
+    }
     type recordingsCsv implements Node {
       show: showsCsv @link
     }
@@ -63,8 +66,6 @@ exports.createSchemaCustomization = ({actions: {createTypes}}) => {
     }
   `)
 }
-/*
-*/
 
 exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => {
   const result = await graphql(`
@@ -114,20 +115,18 @@ exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => 
   `)
   const {
     allShowsCsv: {nodes: shows},
+    allSongsCsv: {nodes: songs},
     allVenuesCsv: {nodes: venues},
   } = result.data
   const lastShowId = shows.reduce((acc, elem) => Number(acc.id) > Number(elem.id) ? acc : elem, []).id // TODO pull this with graphql
-  const songs = result.data.allSongsCsv.nodes
 
-  shows.forEach((show) => {
-    const showVenueId = show.venue_id.toString()
-    const venue = venues.find(venue => venue.id === showVenueId) // TODO move into graphql
+  shows.filter(show => show.date).forEach((show) => {
     createPage({
       path: `/show/embed/${show.id}`,
       component: ShowEmbedTemplate,
       context: {
         showId: show.id,
-        venueId: venue.id,
+        venueId: show.venue_id,
       },
     })
     createPage({
@@ -135,13 +134,13 @@ exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => 
       component: ShowTemplate,
       context: {
         showId: show.id,
-        venueId: venue.id,
+        venueId: show.venue_id,
         lastShowId,
       }
     })
   })
 
-  songs.forEach((song) => {
+  songs.filter(song => song.title && song.title !== '[unknown]').forEach((song) => {
     createPage({
       path: `/song/${song.id}`,
       component: SongTemplate,
@@ -151,7 +150,7 @@ exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => 
     })
   })
 
-  venues.forEach(venue => {
+  venues.filter(venue => venue.name).forEach(venue => {
     createPage({
       path: `/venue/${venue.id}-${slugify(venue.name)}`,
       component: VenueTemplate,
