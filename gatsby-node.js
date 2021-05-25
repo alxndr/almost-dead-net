@@ -11,6 +11,7 @@ exports.createSchemaCustomization = ({actions: {createTypes}}) => {
   createTypes(`
     type guestsCsv implements Node {
       name: String
+      shows: String
     }
     type recordingsCsv implements Node {
       show: showsCsv @link
