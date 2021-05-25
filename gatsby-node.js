@@ -15,6 +15,8 @@ exports.createSchemaCustomization = ({actions: {createTypes}}) => {
     }
     type recordingsCsv implements Node {
       show: showsCsv @link
+      type: String
+      url: String
     }
     type setsCsv implements Node {
       setlist: String
