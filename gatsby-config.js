@@ -13,6 +13,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-csv`,
+    'gatsby-plugin-loadable-components-ssr',
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {

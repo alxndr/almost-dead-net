@@ -1,4 +1,5 @@
 const slugify = require('slugify')
+const LoadablePlugin = require('@loadable/webpack-plugin')
 
 const ShowTemplate = require.resolve('./src/templates/show.js')
 const ShowEmbedTemplate = require.resolve('./src/templates/show-embed.js')
@@ -160,3 +161,23 @@ exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => 
     })
   })
 }
+
+exports.onCreateWebpackConfig = ({ actions, stage }) => {
+  if (
+    stage === "build-javascript" ||
+    stage === "develop" ||
+    stage === "develop-html"
+  ) {
+    actions.setWebpackConfig({
+      plugins: [
+        new LoadablePlugin({
+          filename:
+            stage === "develop"
+              ? `public/loadable-stats.json`
+              : "loadable-stats.json",
+          writeToDisk: true
+        })
+      ]
+    });
+  }
+};
