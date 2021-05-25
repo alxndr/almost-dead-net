@@ -30,7 +30,7 @@ exports.createSchemaCustomization = ({actions: {createTypes}}) => {
       set3: Int
       soundcheck: Int
       tagline: String
-      venue_id: venuesCsv @link
+      venue_id: String
     }
     type songperformancesCsv implements Node {
       next_perfid: songperformancesCsv @link
