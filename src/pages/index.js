@@ -4,7 +4,7 @@ import {Link} from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-//import SongFinder from '../components/song_finder'
+import SongFinder from '../components/song_finder'
 import ShowsByYear from '../components/shows_by_year'
 
 import './index.css'
@@ -17,7 +17,7 @@ export default function Index() {
 
     <section className="homepage__songfinder">
       <h2>Find a song:</h2>
-      {/*<SongFinder />*/}
+      <SongFinder />
     </section>
 
     <section className="homepage__links">

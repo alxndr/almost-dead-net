@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import {graphql, useStaticQuery} from 'gatsby'
 
 import Autosuggest from 'react-autosuggest'
 
@@ -14,13 +15,27 @@ function sanitizeString(string) {
     .trim()
 }
 
-export default function SongFinder({songs}) {
+export default function SongFinder() {
+  const {
+    allSongsCsv: {nodes: songs}
+  } = useStaticQuery(graphql`
+    query SongFinderData {
+      allSongsCsv { nodes {
+        id
+        author
+        core_gd
+        core_jrad
+        cover_gd
+        id
+        nicknames
+        performances
+        suite
+        title
+      } }
+    }
+  `)
   const [value, setValue] = useState('')
   const [suggestions, setSuggestions] = useState([])
-  //const [redirect, setRedirect] = useState(null)
-  //if (redirect) {
-  //  return <Redirect push to={redirect} />
-  //}
   const getSuggestions = (string) => {
     if (!string) {
       return []
