@@ -57,8 +57,11 @@ exports.createSchemaCustomization = ({actions: {createTypes}}) => {
       title: String!
     }
     type teasesCsv implements Node {
-      performance_id: songperformancesCsv @link
-      song_id: songsCsv @link
+      by: String
+      notes: String
+      performance_id: String
+      song_id: String
+      song_name: String
       within: String
     }
     type venuesCsv implements Node {
@@ -91,7 +94,6 @@ exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => 
           core_jrad
           cover_gd
           id
-          nicknames
           performances
           suite
           title

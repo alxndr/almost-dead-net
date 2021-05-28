@@ -1,5 +1,5 @@
 import React from 'react'
-import {graphql, Link} from 'gatsby'
+import {graphql, Link, useStaticQuery} from 'gatsby'
 import {find, propEq, uniqBy} from 'ramda'
 
 import Layout from '../components/layout'
@@ -28,11 +28,19 @@ const SET_MAPPING = { // 'show table column name' to 'human readable set name'
   encore2: 'double encore',
 }
 
-export default function Song({
-  data: {
+export default function Song() {
+  const {
     songsCsv: song,
-  },
-}) {
+  } = useStaticQuery(graphql`
+    query($songId: String!) {
+      songsCsv(id: {eq: $songId}) {
+        author
+        suite
+        title
+        performances
+      }
+    }
+  `)
   if (!song) {
     return <p>Uh oh, no song data found...</p>
   }
@@ -112,7 +120,7 @@ export default function Song({
   return <Layout className="songpage">
     <SEO
       title={`"${song.title}" performances/teases … Almost-Dead.net`}
-      description={`List of each time Joe Russo's Almost Dead has performanced or teased the song "${song.title}"`}
+      description={`List of each time Joe Russo's Almost Dead has performed or teased the song "${song.title}"`}
     />
     <h1 className="songpage__name">{song.title}</h1>
     <div className="songpage__info">
@@ -125,17 +133,6 @@ export default function Song({
     */}
   </Layout>
 }
-
-export const query = graphql`
-  query($songId: String!) {
-    songsCsv(id: {eq: $songId}) {
-      author
-      suite
-      title
-      performances
-    }
-  }
-`
 
 /*
     const teaseRows = filter(propEq('song_id', song.id))(teases)

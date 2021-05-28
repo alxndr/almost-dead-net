@@ -91,11 +91,9 @@ const recordingsSorter = (a, b) => {
 //  ) - OFFSET
 //}
 
-export default function Show({
-  pageContext: {
+export default function Show() {
+  const {
     lastShowId,
-  },
-  data: {
     showsCsv: show,
     venuesCsv: venue,
     allSetsCsv: {nodes: sets},
@@ -105,8 +103,70 @@ export default function Show({
     allSeguesCsv: {nodes: segues},
     allSongsCsv: {nodes: songs},
     allTeasesCsv: {nodes: teases},
-  },
-}) {
+  } = graphql`
+    query($showId: String!, $venueId: String!) {
+      showsCsv(id: {eq: $showId}) {
+        id
+        date
+        encore1
+        encore2
+        event
+        links
+        notes
+        set1
+        set2
+        set3
+        soundcheck
+      }
+      venuesCsv(id: {eq: $venueId}) {
+        id
+        location
+        name
+      }
+      allSetsCsv { nodes {
+        id
+        setlist
+      }}
+      allGuestsCsv { nodes {
+        id
+        name
+        shows
+      } }
+      allSongperformancesCsv { nodes {
+        id
+        next_perfid
+        notes
+        prev_perfid
+        showgap
+        song_id
+        variation
+      } }
+      allSongsCsv { nodes {
+        id
+        author
+        core_gd
+        core_jrad
+        suite
+        title
+      } }
+      allSeguesCsv { nodes {
+        id
+        from_perf_id
+        type
+      } }
+      allTeasesCsv { nodes {
+        id
+        performance_id
+        song_name
+      } }
+      allRecordingsCsv(filter: {show: {eq: $showId}}) { nodes {
+        id
+        type
+        url
+      } }
+    }
+  `
+
   if (!show) {
     console.error('Show page, missing show..............')
     return false
@@ -176,66 +236,3 @@ export default function Show({
     </nav>
   </Layout>
 }
-
-export const query = graphql`
-  query($showId: String!, $venueId: String!) {
-    showsCsv(id: {eq: $showId}) {
-      id
-      date
-      encore1
-      encore2
-      event
-      links
-      notes
-      set1
-      set2
-      set3
-      soundcheck
-    }
-    venuesCsv(id: {eq: $venueId}) {
-      id
-      location
-      name
-    }
-    allSetsCsv { nodes {
-      id
-      setlist
-    }}
-    allGuestsCsv { nodes {
-      id
-      name
-      shows
-    } }
-    allSongperformancesCsv { nodes {
-      id
-      next_perfid
-      notes
-      prev_perfid
-      showgap
-      song_id
-      variation
-    } }
-    allSongsCsv { nodes {
-      id
-      author
-      core_gd
-      core_jrad
-      suite
-      title
-    } }
-    allSeguesCsv { nodes {
-      id
-      from_perf_id
-      type
-    } }
-    allTeasesCsv { nodes {
-      id
-      performance_id
-      song_name
-    } }
-    allRecordingsCsv(filter: {show: {eq: $showId}}) { nodes {
-      id
-      type
-      url
-    } }
-  }`
