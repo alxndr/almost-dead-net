@@ -217,6 +217,7 @@ const allShows = {
   216: {id: 216, date: '10/1/2020', venue: 'Capitol Theatre'},
   217: {id: 217, date: '10/2/2020', venue: 'Capitol Theatre'},
   218: {id: 218, date: '10/3/2020', venue: 'Capitol Theatre'},
+  219: {id: 219, date: '5/28/2021', venue: 'Westville Music Bowl'},
 }
 
 describe('data validation', () => {
