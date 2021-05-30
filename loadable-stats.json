@@ -1,5 +1,5 @@
 {
-  "hash": "1c40db2aa80a0e5dfea3",
+  "hash": "a144e0597715e0a052ae",
   "publicPath": "/",
   "outputPath": "/Users/alxndr/workspace/almost-dead-net/public",
   "assetsByChunkName": {
@@ -10,13 +10,13 @@
       "app-a95c95e143810f256058.js"
     ],
     "webpack-runtime": [
-      "webpack-runtime-3fc68263e00012bbccfe.js"
+      "webpack-runtime-f57587a94d2aab643472.js"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-b96a1d2413f7a419c0bd.js"
     ],
     "component---src-pages-about-js": [
-      "component---src-pages-about-js-9cdab509f953c0640fd4.js"
+      "component---src-pages-about-js-b2889535e159ac84d6d0.js"
     ],
     "component---src-pages-home-js": [
       "component---src-pages-home-js-f18fa19e86cf9f0fcc77.js"
@@ -60,7 +60,7 @@
       "type": "assets by status",
       "cached": true,
       "filteredChildren": 21,
-      "size": 666690
+      "size": 666496
     }
   ],
   "namedChunkGroups": {
@@ -72,7 +72,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-3fc68263e00012bbccfe.js"
+          "name": "webpack-runtime-f57587a94d2aab643472.js"
         },
         {
           "name": "polyfill-a2d25affeded1b147d38.js"
@@ -94,7 +94,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-3fc68263e00012bbccfe.js"
+          "name": "webpack-runtime-f57587a94d2aab643472.js"
         },
         {
           "name": "framework-0068a62ee68a6c63e163.js"
@@ -150,7 +150,7 @@
           "name": "commons-3f073c22614ed54e3bd5.js"
         },
         {
-          "name": "component---src-pages-about-js-9cdab509f953c0640fd4.js"
+          "name": "component---src-pages-about-js-b2889535e159ac84d6d0.js"
         }
       ],
       "filteredAssets": 0,
@@ -365,7 +365,7 @@
     {
       "id": 658,
       "files": [
-        "webpack-runtime-3fc68263e00012bbccfe.js"
+        "webpack-runtime-f57587a94d2aab643472.js"
       ]
     },
     {
@@ -395,7 +395,7 @@
     {
       "id": 682,
       "files": [
-        "component---src-pages-about-js-9cdab509f953c0640fd4.js"
+        "component---src-pages-about-js-b2889535e159ac84d6d0.js"
       ]
     },
     {
