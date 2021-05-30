@@ -13,9 +13,10 @@ export default function About() {
     <p>Almost-Dead.net came about after <a href="https://lot.almost-dead.net/u/TheEngineer/activity" title="@TheEngineer activity on The Lot forum/messageboard">@TheEngineer</a> was there for <Link to="/show/38">7/5/15 at High Sierra</Link>, and was immediately a Big Fan!</p>
     <hr />
     <p>This site is not officially affiliated with <a href="http://www.joerussosalmostdead.com/" target="_blank" rel="noopener">JRAD</a>.</p>
-    <p>The content on this site is based on public information, with additional contributions from a variety of individuals.</p>
     <hr />
-    <p>In Memory of <Link to="/show/184">David Kay</Link>, creator of the <a href="https://docs.google.com/spreadsheets/d/1qxTKvLkiQgHycuC530OU3j-O5ggijHelXRXVjTiZLis/htmlview" target="_blank" rel="noopener noreferrer">JRAD-base spreadsheet</a>…</p>
+    <p>In Memory of <Link to="/show/184">David Kay</Link>, creator of the <a href="https://docs.google.com/spreadsheets/d/1qxTKvLkiQgHycuC530OU3j-O5ggijHelXRXVjTiZLis/htmlview" target="_blank" rel="noopener noreferrer">JRAD-base spreadsheet</a>.</p>
+    <p>Thanks to everyone on <a href="https://www.reddit.com/r/JRADs/" target="_blank" rel="noopener noreferrer">the JRADs subreddit</a> for participating in the "setlist threads" and calling teases!</p>
+    <hr />
     <p>Special Thanks to <a href="https://archive.org/" target="_blank" rel="noopener">the Internet Archive</a> for preserving human knowledge and art, and the Taper Community for sharing their experiences!</p>
     <p>Thanks to Aaron Donovan for the walk-through of the parts of <a href="https://www.whitegum.com/aaroness.htm" target="_blank" rel="noopener">Terrapin Suite</a>.</p>
     <p>Thanks to <a href="http://www.deaddisc.com" target="_blank" rel="noopener">the GD Family Discography</a> for detailed information about the songs played by the Grateful Dead.</p>
