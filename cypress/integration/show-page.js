@@ -33,10 +33,10 @@ describe('Show page', () => {
     cy.get('@links')
       .contains('Slipknot!')
 
-    cy.log('"first time played" marker (on Mama Tried)')
-    cy.get('main')
-      .find('.setlist__set-1 > ol > li:first-child')
-      .contains('first')
+    //cy.log('"first time played" marker (on Mama Tried)')
+    //cy.get('main')
+    //  .find('.setlist__set-1 > ol > li:first-child')
+    //  .contains('first')
 
     cy.log('Tease mark (on UJB)')
     cy.get('main')
