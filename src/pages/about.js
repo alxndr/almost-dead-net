@@ -10,8 +10,6 @@ export default function About() {
   return <Layout className="aboutPage">
     <SEO title="About the site" />
     <h1>About Almost-Dead.net</h1>
-    <p>Almost-Dead.net came about after <a href="https://lot.almost-dead.net/u/TheEngineer/activity" title="@TheEngineer activity on The Lot forum/messageboard">@TheEngineer</a> was there for <Link to="/show/38">7/5/15 at High Sierra</Link>, and was immediately a Big Fan!</p>
-    <hr />
     <p>This site is not officially affiliated with <a href="http://www.joerussosalmostdead.com/" target="_blank" rel="noopener">JRAD</a>.</p>
     <hr />
     <p>In Memory of <Link to="/show/184">David Kay</Link>, creator of the <a href="https://docs.google.com/spreadsheets/d/1qxTKvLkiQgHycuC530OU3j-O5ggijHelXRXVjTiZLis/htmlview" target="_blank" rel="noopener noreferrer">JRAD-base spreadsheet</a>.</p>
