@@ -13,15 +13,16 @@ import {normalizeSetlist} from '../components/helpers/setlist-helper'
 import './show.css'
 
 function ShowRecordings({date, recordings}) {
+  function isAudioAvailable() {
+    return Boolean(recordings.filter(({type}) => ['matrix', 'soundboard', 'audience'].includes(type)).length)
+  }
   if (recordings.length) {
     const [m, d, yyyy] = date.split('/')
     return <section className="showpage__recordings">
       <h2>Recordings</h2>
       <ul>
         {recordings.map(({type, url}) => <Recording type={type} url={url} />)}
-        {Boolean(recordings.filter(({type}) => ['matrix', 'soundboard', 'audience'].includes(type)).length) &&
-          <Recording type={'audio'} url={`https://relisten.net/jrad/${yyyy}/${m < 10 ? `0${m}` : m}/${d < 10 ? `0${d}` : d}`} />
-        }
+        {isAudioAvailable() && <Recording type={'audio'} url={`https://relisten.net/jrad/${yyyy}/${m < 10 ? `0${m}` : m}/${d < 10 ? `0${d}` : d}`} />}
       </ul>
     </section>
   }
