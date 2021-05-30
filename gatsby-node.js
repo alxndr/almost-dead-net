@@ -5,7 +5,7 @@ const {filter, propEq} = require('ramda')
 const slugify = require('slugify')
 const LoadablePlugin = require('@loadable/webpack-plugin')
 
-const URL_BASE = 'https://gist.githubusercontent.com/alxndr/5f64cf477d5202c004856772ad2222db/raw/5001207b323cfb74f35fb3f3881bf70bd380248a'
+const URL_BASE = 'https://gist.githubusercontent.com/alxndr/5f64cf477d5202c004856772ad2222db/raw/265a30017644abd5a81f4af746e425d29b8cb33e'
 const ENDPOINTS = {
   GUESTS_URL: `${URL_BASE}/guests.csv`,
   RECORDINGS_URL: `${URL_BASE}/recordings.csv`,
