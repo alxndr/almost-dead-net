@@ -1,1 +1,0 @@
-{"errors":[{"message":"Variable \"$showId\" of required type \"String!\" was not provided.","locations":[{"line":1,"column":20}]},{"message":"Variable \"$venueId\" of required type \"String!\" was not provided.","locations":[{"line":1,"column":38}]}]}
