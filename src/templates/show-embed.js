@@ -94,8 +94,10 @@ export default function ShowEmbed({data: {
       <link rel="canonical" href={`/show/${show.id}`} />
     </Helmet>
     <h1 className="showpage__pagetitle">
-      <span className="showpage__pagetitle--date">{date}</span> {' '}
-      {event && <span className="showpage__pagetitle--event">{event}</span>} {' '}
+      <span className="showpage__pagetitle--date">{date}</span>
+      {' '}
+      {event && <span className="showpage__pagetitle--event">{event}</span>}
+      {' '}
       {venue && <span className="showpage__pagetitle--venue">{venue.name}, {venue.location}</span>}
     </h1>
     <section className="showpage__setlist">
@@ -160,6 +162,7 @@ export const query = graphql`
     allTeasesCsv { nodes {
       id
       performance_id
+      song_name
     } }
   }
 `
