@@ -124,7 +124,7 @@ exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => 
     allSongsCsv: {nodes: songs},
     allVenuesCsv: {nodes: venues},
   } = result.data
-  const lastShowId = shows.reduce((acc, elem) => Number(acc.id) > Number(elem.id) ? acc : elem, []).id // TODO pull this with graphql
+  const lastShowId = Math.max(...shows.map(show => show.id)) // TODO pull this with graphql
 
   shows.filter(show => show.date).forEach((show) => {
     createPage({

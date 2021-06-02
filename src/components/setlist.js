@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import {Link} from 'gatsby'
 import {filter, find, groupWith, propEq} from 'ramda'
 

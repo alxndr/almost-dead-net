@@ -69,7 +69,7 @@ function SongsComponent({data: {allSongsCsv: {nodes: songs}, allTeasesCsv: {node
         .map(songData =>
           songData.sections
           ? songData.title
-          : <li>
+          : <li key={songData.id}>
             <SongLink data={songData} />
             <PerformanceCount perfIds={String(songData.performances).split(':')} />
           </li>
