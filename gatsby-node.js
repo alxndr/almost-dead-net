@@ -127,14 +127,14 @@ exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => 
   const lastShowId = Math.max(...shows.map(show => show.id)) // TODO pull this with graphql
 
   shows.filter(show => show.date).forEach((show) => {
-    createPage({
-      path: `/show/embed/${show.id}`,
-      component: ShowEmbedTemplate,
-      context: {
-        showId: show.id,
-        venueId: show.venue_id,
-      },
-    })
+    //createPage({
+    //  path: `/show/embed/${show.id}`,
+    //  component: ShowEmbedTemplate,
+    //  context: {
+    //    showId: show.id,
+    //    venueId: show.venue_id,
+    //  },
+    //})
     createPage({
       path: `/show/${show.id}`,
       component: ShowTemplate,
