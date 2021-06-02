@@ -1,6 +1,7 @@
 import React from 'react'
 import {filter, find, includes, propEq, where} from 'ramda'
 import {graphql} from 'gatsby'
+import {Helmet} from 'react-helmet'
 
 import SEO from "../components/seo"
 import Setlist from '../components/setlist'
@@ -38,7 +39,7 @@ function Set({show, which, isEncore = false, sets, performances, segues, teases,
   />
 }
 
-export default function Show({data: {
+export default function ShowEmbed({data: {
   showsCsv: show,
   venuesCsv: venue,
   allSetsCsv: {nodes: sets},
@@ -84,12 +85,14 @@ export default function Show({data: {
 
   const showName = `${event ? `${event}, ` : ``}${venue.name} (${venue.location})`
 
-  // TODO set rel-canonical={`/show/${show.id}`}
   return <div className="showpage-embed">
     <SEO
       title={`JRAD ${date} @ ${showName}`}
       description={`Joe Russo's Almost Dead${showGuests.length ? ` with ${showGuests.map((guest) => guest.name).join(' and ')}` : ''} at ${showName} ${date} — setlist, teases, recordings`}
     />
+    <Helmet>
+      <link rel="canonical" href={`/show/${show.id}`} />
+    </Helmet>
     <h1 className="showpage__pagetitle">
       <span className="showpage__pagetitle--date">{date}</span> {' '}
       {event && <span className="showpage__pagetitle--event">{event}</span>} {' '}
@@ -135,6 +138,7 @@ export const query = graphql`
     allSongperformancesCsv { nodes {
       id
       next_perfid
+      notes
       prev_perfid
       showgap
       song_id
@@ -150,11 +154,12 @@ export const query = graphql`
     } }
     allSeguesCsv { nodes {
       id
+      from_perf_id
       type
     } }
     allTeasesCsv { nodes {
       id
-      song_id
+      performance_id
     } }
   }
 `

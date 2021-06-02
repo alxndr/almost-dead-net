@@ -3,8 +3,8 @@ import {Link} from 'gatsby'
 import {filter, find, groupWith, propEq} from 'ramda'
 
 import Segue from './segue'
-import BustOutBadge from './bust_out_badge'
-import TimePlayedBadge from './time_played_badge'
+//import BustOutBadge from './bust_out_badge'
+//import TimePlayedBadge from './time_played_badge'
 import PerfNote from './perf_note'
 import TeasesNote from './teases_note'
 
@@ -24,8 +24,8 @@ function SetlistEntry({performanceData, songData, segues, teases}) {
     {' '}
     {performanceData.variation || false}
     {segueData && <Segue {...segueData} />}
-    <TimePlayedBadge prevPerf={Number(performanceData.prev_perfid)} nextPerf={Number(performanceData.next_perfid)} />
-    <BustOutBadge showgap={Number(performanceData.showgap)} />
+    {/*<TimePlayedBadge prevPerf={Number(performanceData.prev_perfid)} nextPerf={Number(performanceData.next_perfid)} />*/}
+    {/*<BustOutBadge showgap={Number(performanceData.showgap)} />*/}
     {performanceData.notes && <PerfNote notes={performanceData.notes} />}
     {teasesArray.length ? <TeasesNote list={teasesArray} /> : false}
   </li>
