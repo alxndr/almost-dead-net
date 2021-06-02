@@ -27,7 +27,6 @@ export default function SongFinder() {
         core_jrad
         cover_gd
         id
-        nicknames
         performances
         suite
         title

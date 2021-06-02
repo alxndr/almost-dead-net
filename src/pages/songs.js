@@ -103,7 +103,6 @@ const SongsPage = () => <StaticQuery
         core_jrad
         cover_gd
         id
-        nicknames
         performances
         suite
         title
