@@ -21,7 +21,9 @@
   padding: 0.1em;
 }
 
-.showpage-embed .showpage__pagetitle--event:before,
-.showpage-embed .showpage__pagetitle--venue:before {
+.showpage-embed .showpage__pagetitle--event:before {
   content: ' — ';
+}
+.showpage-embed .showpage__pagetitle--venue:before {
+  content: ' @ ';
 }

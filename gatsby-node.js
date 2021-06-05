@@ -1,169 +1,168 @@
-const axios = require('axios')
-const csv = require('papaparse')
-const omit = require('lodash/omit')
-const {filter, propEq} = require('ramda')
 const slugify = require('slugify')
 const LoadablePlugin = require('@loadable/webpack-plugin')
 
-const URL_BASE = 'https://gist.githubusercontent.com/alxndr/5f64cf477d5202c004856772ad2222db/raw/265a30017644abd5a81f4af746e425d29b8cb33e'
-const ENDPOINTS = {
-  GUESTS_URL: `${URL_BASE}/guests.csv`,
-  RECORDINGS_URL: `${URL_BASE}/recordings.csv`,
-  SEGUES_URL: `${URL_BASE}/segues.csv`,
-  SETS_URL: `${URL_BASE}/sets.csv`,
-  SHOWS_URL: `${URL_BASE}/shows.csv`,
-  SONG_PERFORMANCES_URL: `${URL_BASE}/songperformances.csv`,
-  SONGS_URL: `${URL_BASE}/songs.csv`,
-  TEASES_URL: `${URL_BASE}/teases.csv`,
-  VENUES_URL: `${URL_BASE}/venues.csv`,
+const ShowTemplate = require.resolve('./src/templates/show.js')
+const ShowEmbedTemplate = require.resolve('./src/templates/show-embed.js')
+const SongTemplate = require.resolve('./src/templates/song.js')
+const VenueTemplate = require.resolve('./src/templates/venue.js')
+
+exports.createSchemaCustomization = ({actions: {createTypes}}) => {
+  // n.b. this is GraphQL "SDL"
+  createTypes(`
+    type guestsCsv implements Node {
+      name: String
+      shows: String
+    }
+    type recordingsCsv implements Node {
+      show: showsCsv @link
+      type: String
+      url: String
+    }
+    type setsCsv implements Node {
+      setlist: String
+    }
+    type showsCsv implements Node {
+      date: Date
+      encore1: Int
+      encore2: Int
+      event: String
+      links: String
+      notes: String
+      num_recordings: Int
+      set1: Int
+      set2: Int
+      set3: Int
+      soundcheck: Int
+      tagline: String
+      venue_id: String
+    }
+    type songperformancesCsv implements Node {
+      next_perfid: songperformancesCsv @link
+      prev_perfid: songperformancesCsv @link
+      prev_show_id: showsCsv @link
+      set_id: setsCsv @link
+      show_id: showsCsv @link
+      song_id: songsCsv @link
+      variation: String
+    }
+    type songsCsv implements Node {
+      author: String
+      core_jrad: Boolean
+      core_gd: Boolean
+      cover_gd: Boolean
+      performances: String
+      performed: [songperformancesCsv]
+      suite: String
+      teased: [teasesCsv]
+      title: String!
+    }
+    type teasesCsv implements Node {
+      by: String
+      notes: String
+      performance_id: String
+      song_id: String
+      song_name: String
+      within: String
+    }
+    type venuesCsv implements Node {
+      capacity: Int
+      generic_name: String
+      location: String
+      name: String
+      tagname: String
+    }
+  `)
 }
 
-const ShowPage = require.resolve('./src/pages/show.js')
-const ShowEmbedPage = require.resolve('./src/pages/show-embed.js')
-const SongPage = require.resolve('./src/pages/song.js')
-const VenuePage = require.resolve('./src/pages/venue.js')
-
-async function fetchCSVintoObject(url, isValidEntry) {
-  const {data} = await axios.get(url)
-  let resolve = () => {}
-  const promise = new Promise((res) => {
-    resolve = res
-  })
-  csv.parse(data, {
-    header: true,
-    worker: false,
-    complete: (response) => {
-      if (!response)
-        throw new Error('parseIntoObjectWithCache: No response when fetching', {url})
-      const {data = {}, errors} = response
-      if (errors.length)
-        throw new Error('parseIntoObjectWithCache: Error fetching', {url, response})
-      return resolve(data.reduce((transformed, row) => {
-        if (isValidEntry(row)) {
-          transformed[row.id] = row
+exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => {
+  const result = await graphql(`
+    query Everything {
+      allVenuesCsv {
+        nodes {
+          id
+          name
+          location
+          capacity
+          generic_name
+          tagname
         }
-        return transformed
-      }, {}))
-    },
-  })
-  return promise
-}
-
-exports.onCreatePage = async ({page, actions: {createPage, deletePage}}) => {
-  switch (page.internalComponentName) {
-    case 'Component/home/': {
-      const songs = Object.values(await fetchCSVintoObject(ENDPOINTS.SONGS_URL, (song) => !!song.title))
-      const shows = Object.values(await fetchCSVintoObject(ENDPOINTS.SHOWS_URL, (show) => !!show.date))
-      const venues = Object.values(await fetchCSVintoObject(ENDPOINTS.VENUES_URL, (venue) => !!venue.name && !!venue.location))
-        .map((venue) => ({...venue, name: venue.name.replace(/:/, '')}))
-      deletePage(page)
-      createPage({
-        ...page,
-        path: '/', // note the path does not match the filename within src/pages/ ; this gives us control over the context provided to the component
-        context: {
-          ...page.context,
-          shows,
-          songs,
-          venues,
-        },
-      })
-      break
+      }
+      allSongsCsv {
+        nodes {
+          author
+          core_gd
+          core_jrad
+          cover_gd
+          id
+          performances
+          suite
+          title
+        }
+      }
+      allShowsCsv {
+        nodes {
+          date
+          encore1
+          encore2
+          event
+          id
+          links
+          notes
+          num_recordings
+          set1
+          set2
+          set3
+          soundcheck
+          tagline
+          venue_id
+        }
+      }
     }
-    case 'Component/songs/': {
-      const songs = Object.values(await fetchCSVintoObject(ENDPOINTS.SONGS_URL, (song) => !!song.title))
-      const teases = Object.values(await fetchCSVintoObject(ENDPOINTS.TEASES_URL, (tease) => !!tease.performance_id))
-      deletePage(page)
-      createPage({
-        ...page,
-        path: '/songs',
-        context: {
-          ...page.context,
-          songs,
-          teases,
-        },
-      })
-      break
-    }
-    default:
-      break
-  }
-}
+  `)
+  const {
+    allShowsCsv: {nodes: shows},
+    allSongsCsv: {nodes: songs},
+    allVenuesCsv: {nodes: venues},
+  } = result.data
+  const lastShowId = Math.max(...shows.map(show => show.id)) // TODO pull this with graphql
 
-exports.createPages = async ({ actions: { createPage } }) => {
-  const showsObj = await fetchCSVintoObject(ENDPOINTS.SHOWS_URL, (show) => !!show.date)
-  const shows = Object.values(showsObj)
-  const lastShowId = shows.reduce((acc, elem) => Number(acc.id) > Number(elem.id) ? acc : elem, []).id
-  const venuesObj = await fetchCSVintoObject(ENDPOINTS.VENUES_URL, (venue) => !!venue.name && !!venue.location)
-  const venues = Object.values(venuesObj)
-  const sets = Object.values(await fetchCSVintoObject(ENDPOINTS.SETS_URL, (set) => !!set.id))
-    .map((obj) => omit(obj, ['song performances', '']))
-  const songs = Object.values(await fetchCSVintoObject(ENDPOINTS.SONGS_URL, (song) => !!song.title))
-  const performances = Object.values(await fetchCSVintoObject(ENDPOINTS.SONG_PERFORMANCES_URL, (perf) => !!perf.song_id))
-  const teases = Object.values(await fetchCSVintoObject(ENDPOINTS.TEASES_URL, (tease) => !!tease.performance_id))
-  const segues = Object.values(await fetchCSVintoObject(ENDPOINTS.SEGUES_URL, (segue) => !!segue.from_perf_id))
-  const guests = Object.values(await fetchCSVintoObject(ENDPOINTS.GUESTS_URL, (guest) => !!guest.name))
-  const recordings = Object.values(await fetchCSVintoObject(ENDPOINTS.RECORDINGS_URL, (recording) => !!recording.url))
-
-  shows.forEach((show) => {
+  shows.filter(show => show.date).forEach((show) => {
     createPage({
       path: `/show/embed/${show.id}`,
-      component: ShowEmbedPage,
+      component: ShowEmbedTemplate,
       context: {
-        show,
-        sets,
-        venue: venuesObj[show.venue_id.toString()],
-        guests,
-        performances,
-        segues,
-        songs,
-        teases,
-      }
-    })
+        showId: show.id,
+        venueId: show.venue_id,
+      },
+    }); // semicolon needed to separate the two calls to `createPage`
     createPage({
       path: `/show/${show.id}`,
-      component: ShowPage,
+      component: ShowTemplate,
       context: {
-        show,
-        shows,
-        sets,
-        venue: venuesObj[show.venue_id.toString()],
-        guests,
-        recordings: filter(propEq('show', show.id))(recordings),
-        performances,
-        segues,
-        songs,
-        teases,
+        showId: show.id,
+        venueId: show.venue_id,
         lastShowId,
       }
     })
   })
 
-  songs.forEach((song) => {
-    const teaseRows = filter(propEq('song_id', song.id))(teases)
-    const teasePerfIds = teaseRows.map((row) => row.performance_id)
+  songs.filter(song => song.title && song.title !== '[unknown]').forEach((song) => {
     createPage({
       path: `/song/${song.id}`,
-      component: SongPage,
+      component: SongTemplate,
       context: {
-        song,
-        shows,
-        sets,
-        songs,
-        songPerformances: filter(propEq('song_id', song.id))(performances),
-        teases: teaseRows,
-        teasePerformances: filter((perf) => teasePerfIds.includes(perf.id))(performances),
+        songId: song.id,
       }
     })
   })
 
-  venues.forEach((venue) => {
+  venues.filter(venue => venue.name).forEach(venue => {
     createPage({
       path: `/venue/${venue.id}-${slugify(venue.name)}`,
-      component: VenuePage,
+      component: VenueTemplate,
       context: {
-        venue,
-        shows: filter(propEq('venue_id', venue.id))(shows),
-      }
+        venueId: venue.id,
+      },
     })
   })
 }

@@ -1,12 +1,10 @@
-import React, {useEffect, useState} from 'react'
-import {filter, find, includes, propEq, sort, where} from 'ramda'
-import {Link} from 'gatsby'
-import slugify from 'slugify'
+import React from 'react'
+import {filter, find, includes, propEq, where} from 'ramda'
+import {graphql} from 'gatsby'
+import {Helmet} from 'react-helmet'
 
 import SEO from "../components/seo"
-import Layout from '../components/layout'
 import Setlist from '../components/setlist'
-import Recording from '../components/recording'
 
 import {normalizeSetlist} from '../components/helpers/setlist-helper'
 
@@ -41,13 +39,22 @@ function Set({show, which, isEncore = false, sets, performances, segues, teases,
   />
 }
 
-export default function Show({pageContext: {show, shows, sets, venue, guests, recordings, performances, segues, songs, teases, lastShowId}}) {
+export default function ShowEmbed({data: {
+  showsCsv: show,
+  venuesCsv: venue,
+  allSetsCsv: {nodes: sets},
+  allGuestsCsv: {nodes: guests},
+  allSongperformancesCsv: {nodes: performances},
+  allSeguesCsv: {nodes: segues},
+  allSongsCsv: {nodes: songs},
+  allTeasesCsv: {nodes: teases},
+}}) {
   if (!show) {
     console.error('Show page, missing show..............')
     return false
   }
 
-  const {date, event, notes, links} = show
+  const {date, event, notes} = show
 
   const guestsWithSplitShows = guests.map((guestData) => {
     if (!guestData) {
@@ -78,15 +85,19 @@ export default function Show({pageContext: {show, shows, sets, venue, guests, re
 
   const showName = `${event ? `${event}, ` : ``}${venue.name} (${venue.location})`
 
-  // TODO set rel-canonical={`/show/${show.id}`}
   return <div className="showpage-embed">
     <SEO
       title={`JRAD ${date} @ ${showName}`}
       description={`Joe Russo's Almost Dead${showGuests.length ? ` with ${showGuests.map((guest) => guest.name).join(' and ')}` : ''} at ${showName} ${date} — setlist, teases, recordings`}
     />
+    <Helmet>
+      <link rel="canonical" href={`/show/${show.id}`} />
+    </Helmet>
     <h1 className="showpage__pagetitle">
-      <span className="showpage__pagetitle--date">{date}</span> {' '}
-      {event && <span className="showpage__pagetitle--event">{event}</span>} {' '}
+      <span className="showpage__pagetitle--date">{date}</span>
+      {' '}
+      {event && <span className="showpage__pagetitle--event">{event}</span>}
+      {' '}
       {venue && <span className="showpage__pagetitle--venue">{venue.name}, {venue.location}</span>}
     </h1>
     <section className="showpage__setlist">
@@ -98,3 +109,60 @@ export default function Show({pageContext: {show, shows, sets, venue, guests, re
     </section>
   </div>
 }
+
+export const query = graphql`
+  query($showId: String!, $venueId: String!) {
+    showsCsv(id: {eq: $showId}) {
+      id
+      date
+      encore1
+      encore2
+      event
+      notes
+      set1
+      set2
+      set3
+    }
+    venuesCsv(id: {eq: $venueId}) {
+      id
+      location
+      name
+    }
+    allSetsCsv { nodes {
+      id
+      setlist
+    }}
+    allGuestsCsv { nodes {
+      id
+      name
+      shows
+    } }
+    allSongperformancesCsv { nodes {
+      id
+      next_perfid
+      notes
+      prev_perfid
+      showgap
+      song_id
+      variation
+    } }
+    allSongsCsv { nodes {
+      id
+      author
+      core_gd
+      core_jrad
+      suite
+      title
+    } }
+    allSeguesCsv { nodes {
+      id
+      from_perf_id
+      type
+    } }
+    allTeasesCsv { nodes {
+      id
+      performance_id
+      song_name
+    } }
+  }
+`
