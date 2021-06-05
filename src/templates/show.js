@@ -213,7 +213,7 @@ export default function Show({
 
   return <Layout className="showpage">
     <SEO
-      title={`JRAD ${date} @ ${showName}`}
+      title={`JRAD ${date} @ ${showName} setlist`}
       description={`Joe Russo's Almost Dead${showGuests.length ? ` with ${showGuests.map((guest) => guest.name).join(' and ')}` : ''} at ${showName} ${date} — setlist, teases, recordings`}
     />
     <h1 className="showpage__pagetitle">
