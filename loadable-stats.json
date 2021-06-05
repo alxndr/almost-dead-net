@@ -1,5 +1,5 @@
 {
-  "hash": "a1bc70bed77400ef8fb3",
+  "hash": "a0e199954fa510e87c5b",
   "publicPath": "/",
   "outputPath": "/Users/alxndr/workspace/almost-dead-net/public",
   "assetsByChunkName": {
@@ -7,57 +7,45 @@
       "polyfill-a2d25affeded1b147d38.js"
     ],
     "app": [
-      "app-0b87696abc51a3b72b43.js"
+      "app-02f8b6f7f786a705feeb.js"
     ],
     "webpack-runtime": [
-      "webpack-runtime-b33b54d7354530b63d79.js"
+      "webpack-runtime-8eda761bd65ec7cb2b91.js"
     ],
     "component---src-pages-404-js": [
-      "component---src-pages-404-js-fdd9cacbab8b276a81aa.js"
+      "component---src-pages-404-js-934bb47b78c07462a01d.js"
     ],
     "component---src-pages-about-js": [
-      "component---src-pages-about-js-3fdef50a75fdda331522.js"
+      "component---src-pages-about-js-cf0259144d21aba38a8c.js"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-585241f6fa8cbd4a3912.js"
+      "component---src-pages-index-js-2a5db1e49c863f95e9db.js"
     ],
     "component---src-pages-songs-js": [
-      "component---src-pages-songs-js-9ee352cbbfda83b45aff.js"
+      "component---src-pages-songs-js-599e18822d700ddc9efa.js"
     ],
-    "component---src-templates-show-embed-js": [
-      "component---src-templates-show-embed-js-0216e99c84b4517c9632.js"
-    ],
-    "component---src-templates-show-js": [
-      "component---src-templates-show-js-80f11429330b43747013.js"
-    ],
-    "component---src-templates-song-js": [
-      "component---src-templates-song-js-636e9d90cfabe90ff561.js"
-    ],
-    "component---src-templates-venue-js": [
-      "component---src-templates-venue-js-26c1f87a088333680069.js"
+    "component---src-pages-venues-js": [
+      "component---src-pages-venues-js-1a8c9877d562c1813c51.js"
     ],
     "components-forum-topics": [
       "components-forum-topics-b3beb114481a078bed39.js"
     ],
     "styles": [
-      "styles.1520c6e3b2288dcaba43.css"
+      "styles.8177f73713061f169c61.css"
     ],
     "framework": [
       "framework-0068a62ee68a6c63e163.js"
     ],
     "commons": [
-      "commons-064225b2b9408a7f9ad1.js"
-    ],
-    "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f": [
-      "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-f96f96b5a5ce207a0c40.js"
+      "commons-62feebe1f148998eed06.js"
     ]
   },
   "assets": [
     {
       "type": "assets by status",
       "cached": true,
-      "filteredChildren": 20,
-      "size": 679062
+      "filteredChildren": 16,
+      "size": 631658
     }
   ],
   "namedChunkGroups": {
@@ -69,7 +57,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-b33b54d7354530b63d79.js"
+          "name": "webpack-runtime-8eda761bd65ec7cb2b91.js"
         },
         {
           "name": "polyfill-a2d25affeded1b147d38.js"
@@ -91,13 +79,13 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-b33b54d7354530b63d79.js"
+          "name": "webpack-runtime-8eda761bd65ec7cb2b91.js"
         },
         {
           "name": "framework-0068a62ee68a6c63e163.js"
         },
         {
-          "name": "app-0b87696abc51a3b72b43.js"
+          "name": "app-02f8b6f7f786a705feeb.js"
         }
       ],
       "filteredAssets": 0,
@@ -116,13 +104,13 @@
       ],
       "assets": [
         {
-          "name": "styles.1520c6e3b2288dcaba43.css"
+          "name": "styles.8177f73713061f169c61.css"
         },
         {
-          "name": "commons-064225b2b9408a7f9ad1.js"
+          "name": "commons-62feebe1f148998eed06.js"
         },
         {
-          "name": "component---src-pages-404-js-fdd9cacbab8b276a81aa.js"
+          "name": "component---src-pages-404-js-934bb47b78c07462a01d.js"
         }
       ],
       "filteredAssets": 0,
@@ -141,13 +129,13 @@
       ],
       "assets": [
         {
-          "name": "styles.1520c6e3b2288dcaba43.css"
+          "name": "styles.8177f73713061f169c61.css"
         },
         {
-          "name": "commons-064225b2b9408a7f9ad1.js"
+          "name": "commons-62feebe1f148998eed06.js"
         },
         {
-          "name": "component---src-pages-about-js-3fdef50a75fdda331522.js"
+          "name": "component---src-pages-about-js-cf0259144d21aba38a8c.js"
         }
       ],
       "filteredAssets": 0,
@@ -166,13 +154,13 @@
       ],
       "assets": [
         {
-          "name": "styles.1520c6e3b2288dcaba43.css"
+          "name": "styles.8177f73713061f169c61.css"
         },
         {
-          "name": "commons-064225b2b9408a7f9ad1.js"
+          "name": "commons-62feebe1f148998eed06.js"
         },
         {
-          "name": "component---src-pages-index-js-585241f6fa8cbd4a3912.js"
+          "name": "component---src-pages-index-js-2a5db1e49c863f95e9db.js"
         }
       ],
       "filteredAssets": 0,
@@ -187,104 +175,17 @@
       "chunks": [
         532,
         351,
-        1,
         540
       ],
       "assets": [
         {
-          "name": "styles.1520c6e3b2288dcaba43.css"
+          "name": "styles.8177f73713061f169c61.css"
         },
         {
-          "name": "commons-064225b2b9408a7f9ad1.js"
+          "name": "commons-62feebe1f148998eed06.js"
         },
         {
-          "name": "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-f96f96b5a5ce207a0c40.js"
-        },
-        {
-          "name": "component---src-pages-songs-js-9ee352cbbfda83b45aff.js"
-        }
-      ],
-      "filteredAssets": 0,
-      "assetsSize": null,
-      "filteredAuxiliaryAssets": 3,
-      "auxiliaryAssetsSize": null,
-      "children": {},
-      "childAssets": {}
-    },
-    "component---src-templates-show-embed-js": {
-      "name": "component---src-templates-show-embed-js",
-      "chunks": [
-        532,
-        351,
-        1,
-        292
-      ],
-      "assets": [
-        {
-          "name": "styles.1520c6e3b2288dcaba43.css"
-        },
-        {
-          "name": "commons-064225b2b9408a7f9ad1.js"
-        },
-        {
-          "name": "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-f96f96b5a5ce207a0c40.js"
-        },
-        {
-          "name": "component---src-templates-show-embed-js-0216e99c84b4517c9632.js"
-        }
-      ],
-      "filteredAssets": 0,
-      "assetsSize": null,
-      "filteredAuxiliaryAssets": 3,
-      "auxiliaryAssetsSize": null,
-      "children": {},
-      "childAssets": {}
-    },
-    "component---src-templates-show-js": {
-      "name": "component---src-templates-show-js",
-      "chunks": [
-        532,
-        351,
-        1,
-        652
-      ],
-      "assets": [
-        {
-          "name": "styles.1520c6e3b2288dcaba43.css"
-        },
-        {
-          "name": "commons-064225b2b9408a7f9ad1.js"
-        },
-        {
-          "name": "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-f96f96b5a5ce207a0c40.js"
-        },
-        {
-          "name": "component---src-templates-show-js-80f11429330b43747013.js"
-        }
-      ],
-      "filteredAssets": 0,
-      "assetsSize": null,
-      "filteredAuxiliaryAssets": 3,
-      "auxiliaryAssetsSize": null,
-      "children": {},
-      "childAssets": {}
-    },
-    "component---src-templates-song-js": {
-      "name": "component---src-templates-song-js",
-      "chunks": [
-        532,
-        351,
-        208
-      ],
-      "assets": [
-        {
-          "name": "styles.1520c6e3b2288dcaba43.css"
-        },
-        {
-          "name": "commons-064225b2b9408a7f9ad1.js"
-        },
-        {
-          "name": "component---src-templates-song-js-636e9d90cfabe90ff561.js"
+          "name": "component---src-pages-songs-js-599e18822d700ddc9efa.js"
         }
       ],
       "filteredAssets": 0,
@@ -294,22 +195,22 @@
       "children": {},
       "childAssets": {}
     },
-    "component---src-templates-venue-js": {
-      "name": "component---src-templates-venue-js",
+    "component---src-pages-venues-js": {
+      "name": "component---src-pages-venues-js",
       "chunks": [
         532,
         351,
-        706
+        124
       ],
       "assets": [
         {
-          "name": "styles.1520c6e3b2288dcaba43.css"
+          "name": "styles.8177f73713061f169c61.css"
         },
         {
-          "name": "commons-064225b2b9408a7f9ad1.js"
+          "name": "commons-62feebe1f148998eed06.js"
         },
         {
-          "name": "component---src-templates-venue-js-26c1f87a088333680069.js"
+          "name": "component---src-pages-venues-js-1a8c9877d562c1813c51.js"
         }
       ],
       "filteredAssets": 0,
@@ -348,13 +249,13 @@
     {
       "id": 143,
       "files": [
-        "app-0b87696abc51a3b72b43.js"
+        "app-02f8b6f7f786a705feeb.js"
       ]
     },
     {
       "id": 658,
       "files": [
-        "webpack-runtime-b33b54d7354530b63d79.js"
+        "webpack-runtime-8eda761bd65ec7cb2b91.js"
       ]
     },
     {
@@ -378,49 +279,31 @@
     {
       "id": 883,
       "files": [
-        "component---src-pages-404-js-fdd9cacbab8b276a81aa.js"
+        "component---src-pages-404-js-934bb47b78c07462a01d.js"
       ]
     },
     {
       "id": 682,
       "files": [
-        "component---src-pages-about-js-3fdef50a75fdda331522.js"
+        "component---src-pages-about-js-cf0259144d21aba38a8c.js"
       ]
     },
     {
       "id": 678,
       "files": [
-        "component---src-pages-index-js-585241f6fa8cbd4a3912.js"
+        "component---src-pages-index-js-2a5db1e49c863f95e9db.js"
       ]
     },
     {
       "id": 540,
       "files": [
-        "component---src-pages-songs-js-9ee352cbbfda83b45aff.js"
+        "component---src-pages-songs-js-599e18822d700ddc9efa.js"
       ]
     },
     {
-      "id": 292,
+      "id": 124,
       "files": [
-        "component---src-templates-show-embed-js-0216e99c84b4517c9632.js"
-      ]
-    },
-    {
-      "id": 652,
-      "files": [
-        "component---src-templates-show-js-80f11429330b43747013.js"
-      ]
-    },
-    {
-      "id": 208,
-      "files": [
-        "component---src-templates-song-js-636e9d90cfabe90ff561.js"
-      ]
-    },
-    {
-      "id": 706,
-      "files": [
-        "component---src-templates-venue-js-26c1f87a088333680069.js"
+        "component---src-pages-venues-js-1a8c9877d562c1813c51.js"
       ]
     },
     {
@@ -432,7 +315,7 @@
     {
       "id": 532,
       "files": [
-        "styles.1520c6e3b2288dcaba43.css"
+        "styles.8177f73713061f169c61.css"
       ]
     },
     {
@@ -444,13 +327,7 @@
     {
       "id": 351,
       "files": [
-        "commons-064225b2b9408a7f9ad1.js"
-      ]
-    },
-    {
-      "id": 1,
-      "files": [
-        "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-f96f96b5a5ce207a0c40.js"
+        "commons-62feebe1f148998eed06.js"
       ]
     }
   ]
