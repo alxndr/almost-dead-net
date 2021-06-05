@@ -1,0 +1,46 @@
+{
+  "hash": "53f25620183c14bac5df",
+  "publicPath": "/",
+  "outputPath": "/Users/alxndr/workspace/almost-dead-net/public",
+  "assetsByChunkName": {
+    "main": [
+      "render-page.js"
+    ]
+  },
+  "assets": [
+    {
+      "type": "assets by status",
+      "cached": true,
+      "filteredChildren": 1,
+      "size": 480615
+    }
+  ],
+  "namedChunkGroups": {
+    "main": {
+      "name": "main",
+      "chunks": [
+        "main"
+      ],
+      "assets": [
+        {
+          "name": "render-page.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 1,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "generator": "loadable-components",
+  "chunks": [
+    {
+      "id": "main",
+      "files": [
+        "render-page.js"
+      ]
+    }
+  ]
+}
