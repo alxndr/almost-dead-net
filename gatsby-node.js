@@ -134,7 +134,7 @@ exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => 
         showId: show.id,
         venueId: show.venue_id,
       },
-    })
+    }); // semicolon needed to separate the two calls to `createPage`
     createPage({
       path: `/show/${show.id}`,
       component: ShowTemplate,
