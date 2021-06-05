@@ -167,6 +167,10 @@ exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => 
   })
 }
 
+exports.onCreateNode = ({ node }) => {
+ console.log(`Node created of type "${node.internal.type}"`, node)
+}
+
 exports.onCreateWebpackConfig = ({ actions, stage }) => {
   if (
     stage === "build-javascript" ||

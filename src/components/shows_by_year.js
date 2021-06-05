@@ -8,7 +8,8 @@ function ShowEntry({children, show}) {
   let title = `#${id}: ${date}${event ? ` ${event}` : ''}`
   if (venue) {
     title = `${title} @ ${venue.name} (${venue.location})`
-  } else console.debug(`No venue found for show #${id}`, show)
+  } else
+    console.debug(`No venue found for show #${id}`, show)
   return <Link to={`/show/${id}`} title={title}>{children || date}</Link>
 }
 
@@ -44,8 +45,11 @@ export default function ShowsByYear() {
   const showsWithVenueByYear = rawShows.reduce((acc, show) => {
     const [m, d, y] = show.date.split('/') // e.g. === ['1', '26', '2013']
     const venueId = show.venue_id.toString()
-    if (!acc[y]) acc[y] = {}
+    if (!acc[y])
+      acc[y] = {}
     const venue = rawVenues.find(venue => venue && venue.id && venue.id.toString() === venueId)
+    if (!venue)
+      console.debug(`No venue found for show #${show.id}`, show)
     acc[y][`${m}/${d}`] = {
       ...show,
       venue

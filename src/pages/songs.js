@@ -84,7 +84,7 @@ function SongsComponent({data: {allSongsCsv: {nodes: songs}, allTeasesCsv: {node
             const teasePerfIds = teaseRows.map((row) => row.performance_id)
             return songData.sections
                 ? songData.title
-                : <li>
+                : <li key={songData.id}>
                   <SongLink data={songData} />
                   <PerformanceCount text="teased" perfIds={teasePerfIds} />
                 </li>

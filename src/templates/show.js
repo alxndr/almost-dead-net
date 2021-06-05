@@ -12,16 +12,19 @@ import {normalizeSetlist} from '../components/helpers/setlist-helper'
 
 import './show.css'
 
+const AUDIO_TYPES = ['matrix', 'soundboard', 'audience']
+const isAudioRecording = ({type}) => AUDIO_TYPES.includes(type)
+
 function ShowRecordings({date, recordings}) {
   function isAudioAvailable() {
-    return Boolean(recordings.filter(({type}) => ['matrix', 'soundboard', 'audience'].includes(type)).length)
+    return Boolean(recordings.filter(isAudioRecording).length)
   }
   if (recordings.length) {
     const [m, d, yyyy] = date.split('/')
     return <section className="showpage__recordings">
       <h2>Recordings</h2>
       <ul>
-        {recordings.map(({type, url}) => <Recording type={type} url={url} />)}
+        {recordings.map(({type, url}) => <Recording type={type} url={url} key={url} />)}
         {isAudioAvailable() && <Recording type={'audio'} url={`https://relisten.net/jrad/${yyyy}/${m < 10 ? `0${m}` : m}/${d < 10 ? `0${d}` : d}`} />}
       </ul>
     </section>
@@ -200,10 +203,10 @@ export default function Show({
   const showRecordings = sort(recordingsSorter)(recordings)
 
   const setlist = [1, 2, 3].reduce((setlists, which) => setlists.concat(
-    <Set which={which} show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} />
+    <Set which={which} show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} key={`set${which}`} />
   ), [])
   const encores = [1, 2].reduce((encores, which) => encores.concat(
-    <Set isEncore={true} which={which} show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} />
+    <Set isEncore={true} which={which} show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} key={`encore${which}`} />
   ), [])
 
   const showName = `${event ? `${event}, ` : ``}${venue.name} (${venue.location})`

@@ -14,7 +14,10 @@ const LoadableTopicsList = loadable(() => import('../components/forum-topics.js'
 
 export default function Index() {
   return <Layout className="homepage">
-    <SEO title="JRAD setlists, teases, segues, recordings, forum" description="Joe Russo's Almost Dead setlists, teases, performance recordings, discussion forum" />
+    <SEO
+      title="JRAD setlists, teases, segues, recordings, forum"
+      description="Joe Russo's Almost Dead setlists, teases, performance recordings, discussion forum"
+    />
 
     <section className="homepage__forum">
       <h2>
