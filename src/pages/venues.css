@@ -20,9 +20,11 @@
 
 .venues__list > li {
   margin-top: 1em;
+  break-inside: avoid-column;
 }
 
-.venues ul + h3 {
+.venues h3 {
+  margin: 1em 0 0.3em;
 }
 
 .venues h4 {
