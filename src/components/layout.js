@@ -22,7 +22,7 @@ const Layout = ({children, className = ''}) => {
           <img src="https://i.imgur.com/q5cBEHG.png" alt="Almost-Dead.net" />
         </Link>
         <Link className="footer__link-about" to="/about" title="About the Site">
-          About the Site
+          About
         </Link>
         <a href="https://lot.almost-dead.net" className="footer__logo-lot" title="JRAD Forum — The Lot">
           <img src="https://i.imgur.com/Qi2NhJO.png" alt="The Lot — a forum for fans of Joe Russo's Almost Dead" />
