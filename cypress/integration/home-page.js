@@ -25,7 +25,7 @@ describe('Home page', () => {
   it('links to About page', () => {
     cy.get('footer')
       .find('a')
-      .contains('About the Site')
+      .contains('About')
       .click()
     cy.wait(9999) // eslint-disable-line cypress/no-unnecessary-waiting
     cy.get('main')
