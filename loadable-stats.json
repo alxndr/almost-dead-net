@@ -1,5 +1,5 @@
 {
-  "hash": "59788a52f2cd3e82e747",
+  "hash": "e6aa9409c0e61a11381c",
   "publicPath": "/",
   "outputPath": "/Users/alxndr/workspace/almost-dead-net/public",
   "assetsByChunkName": {
@@ -7,45 +7,60 @@
       "polyfill-a2d25affeded1b147d38.js"
     ],
     "app": [
-      "app-02f8b6f7f786a705feeb.js"
+      "app-7b05fe515db584db8c72.js"
     ],
     "webpack-runtime": [
-      "webpack-runtime-0d1cf4a28a02e9b62487.js"
+      "webpack-runtime-d8530b4ef592d071f381.js"
     ],
     "component---src-pages-404-js": [
-      "component---src-pages-404-js-934bb47b78c07462a01d.js"
+      "component---src-pages-404-js-fe1794efd0d8fdc32a4b.js"
     ],
     "component---src-pages-about-js": [
-      "component---src-pages-about-js-4cd3e952d984150de986.js"
+      "component---src-pages-about-js-c5beb147740b47485e08.js"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-2a5db1e49c863f95e9db.js"
+      "component---src-pages-index-js-fae91d4b5e199619365c.js"
     ],
     "component---src-pages-songs-js": [
-      "component---src-pages-songs-js-599e18822d700ddc9efa.js"
+      "component---src-pages-songs-js-07bebc3ef8418cb40b98.js"
     ],
     "component---src-pages-venues-js": [
-      "component---src-pages-venues-js-f15e9e1c3f68b71bc750.js"
+      "component---src-pages-venues-js-9a34a084bcd81c0179b2.js"
+    ],
+    "component---src-templates-show-embed-js": [
+      "component---src-templates-show-embed-js-0216e99c84b4517c9632.js"
+    ],
+    "component---src-templates-show-js": [
+      "component---src-templates-show-js-033895f7ab0d59620fcf.js"
+    ],
+    "component---src-templates-song-js": [
+      "component---src-templates-song-js-f393e9b82dfd879429e5.js"
+    ],
+    "component---src-templates-venue-js": [
+      "component---src-templates-venue-js-08553cfbd2a546f83fb0.js"
     ],
     "components-forum-topics": [
       "components-forum-topics-b3beb114481a078bed39.js"
     ],
     "styles": [
-      "styles.27ebc71d16b2a46e9665.css"
+      "styles.ee8299c3544f33f06716.css"
     ],
     "framework": [
       "framework-0068a62ee68a6c63e163.js"
     ],
     "commons": [
-      "commons-c2c64bcfcb5ff3a6cc7d.js"
+      "commons-064225b2b9408a7f9ad1.js"
+    ],
+    "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f": [
+      "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-f96f96b5a5ce207a0c40.js"
     ]
   },
   "assets": [
     {
       "type": "assets by status",
       "cached": true,
-      "filteredChildren": 16,
-      "size": 633704
+      "filteredChildren": 21,
+      "size": 702341
     }
   ],
   "namedChunkGroups": {
@@ -57,7 +72,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-0d1cf4a28a02e9b62487.js"
+          "name": "webpack-runtime-d8530b4ef592d071f381.js"
         },
         {
           "name": "polyfill-a2d25affeded1b147d38.js"
@@ -79,13 +94,13 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-0d1cf4a28a02e9b62487.js"
+          "name": "webpack-runtime-d8530b4ef592d071f381.js"
         },
         {
           "name": "framework-0068a62ee68a6c63e163.js"
         },
         {
-          "name": "app-02f8b6f7f786a705feeb.js"
+          "name": "app-7b05fe515db584db8c72.js"
         }
       ],
       "filteredAssets": 0,
@@ -104,13 +119,13 @@
       ],
       "assets": [
         {
-          "name": "styles.27ebc71d16b2a46e9665.css"
+          "name": "styles.ee8299c3544f33f06716.css"
         },
         {
-          "name": "commons-c2c64bcfcb5ff3a6cc7d.js"
+          "name": "commons-064225b2b9408a7f9ad1.js"
         },
         {
-          "name": "component---src-pages-404-js-934bb47b78c07462a01d.js"
+          "name": "component---src-pages-404-js-fe1794efd0d8fdc32a4b.js"
         }
       ],
       "filteredAssets": 0,
@@ -129,13 +144,13 @@
       ],
       "assets": [
         {
-          "name": "styles.27ebc71d16b2a46e9665.css"
+          "name": "styles.ee8299c3544f33f06716.css"
         },
         {
-          "name": "commons-c2c64bcfcb5ff3a6cc7d.js"
+          "name": "commons-064225b2b9408a7f9ad1.js"
         },
         {
-          "name": "component---src-pages-about-js-4cd3e952d984150de986.js"
+          "name": "component---src-pages-about-js-c5beb147740b47485e08.js"
         }
       ],
       "filteredAssets": 0,
@@ -154,13 +169,13 @@
       ],
       "assets": [
         {
-          "name": "styles.27ebc71d16b2a46e9665.css"
+          "name": "styles.ee8299c3544f33f06716.css"
         },
         {
-          "name": "commons-c2c64bcfcb5ff3a6cc7d.js"
+          "name": "commons-064225b2b9408a7f9ad1.js"
         },
         {
-          "name": "component---src-pages-index-js-2a5db1e49c863f95e9db.js"
+          "name": "component---src-pages-index-js-fae91d4b5e199619365c.js"
         }
       ],
       "filteredAssets": 0,
@@ -175,22 +190,26 @@
       "chunks": [
         532,
         351,
+        1,
         540
       ],
       "assets": [
         {
-          "name": "styles.27ebc71d16b2a46e9665.css"
+          "name": "styles.ee8299c3544f33f06716.css"
         },
         {
-          "name": "commons-c2c64bcfcb5ff3a6cc7d.js"
+          "name": "commons-064225b2b9408a7f9ad1.js"
         },
         {
-          "name": "component---src-pages-songs-js-599e18822d700ddc9efa.js"
+          "name": "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-f96f96b5a5ce207a0c40.js"
+        },
+        {
+          "name": "component---src-pages-songs-js-07bebc3ef8418cb40b98.js"
         }
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 2,
+      "filteredAuxiliaryAssets": 3,
       "auxiliaryAssetsSize": null,
       "children": {},
       "childAssets": {}
@@ -204,13 +223,121 @@
       ],
       "assets": [
         {
-          "name": "styles.27ebc71d16b2a46e9665.css"
+          "name": "styles.ee8299c3544f33f06716.css"
         },
         {
-          "name": "commons-c2c64bcfcb5ff3a6cc7d.js"
+          "name": "commons-064225b2b9408a7f9ad1.js"
         },
         {
-          "name": "component---src-pages-venues-js-f15e9e1c3f68b71bc750.js"
+          "name": "component---src-pages-venues-js-9a34a084bcd81c0179b2.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 2,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "component---src-templates-show-embed-js": {
+      "name": "component---src-templates-show-embed-js",
+      "chunks": [
+        532,
+        351,
+        1,
+        292
+      ],
+      "assets": [
+        {
+          "name": "styles.ee8299c3544f33f06716.css"
+        },
+        {
+          "name": "commons-064225b2b9408a7f9ad1.js"
+        },
+        {
+          "name": "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-f96f96b5a5ce207a0c40.js"
+        },
+        {
+          "name": "component---src-templates-show-embed-js-0216e99c84b4517c9632.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 3,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "component---src-templates-show-js": {
+      "name": "component---src-templates-show-js",
+      "chunks": [
+        532,
+        351,
+        1,
+        652
+      ],
+      "assets": [
+        {
+          "name": "styles.ee8299c3544f33f06716.css"
+        },
+        {
+          "name": "commons-064225b2b9408a7f9ad1.js"
+        },
+        {
+          "name": "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-f96f96b5a5ce207a0c40.js"
+        },
+        {
+          "name": "component---src-templates-show-js-033895f7ab0d59620fcf.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 3,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "component---src-templates-song-js": {
+      "name": "component---src-templates-song-js",
+      "chunks": [
+        532,
+        351,
+        208
+      ],
+      "assets": [
+        {
+          "name": "styles.ee8299c3544f33f06716.css"
+        },
+        {
+          "name": "commons-064225b2b9408a7f9ad1.js"
+        },
+        {
+          "name": "component---src-templates-song-js-f393e9b82dfd879429e5.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 2,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "component---src-templates-venue-js": {
+      "name": "component---src-templates-venue-js",
+      "chunks": [
+        532,
+        351,
+        706
+      ],
+      "assets": [
+        {
+          "name": "styles.ee8299c3544f33f06716.css"
+        },
+        {
+          "name": "commons-064225b2b9408a7f9ad1.js"
+        },
+        {
+          "name": "component---src-templates-venue-js-08553cfbd2a546f83fb0.js"
         }
       ],
       "filteredAssets": 0,
@@ -249,13 +376,13 @@
     {
       "id": 143,
       "files": [
-        "app-02f8b6f7f786a705feeb.js"
+        "app-7b05fe515db584db8c72.js"
       ]
     },
     {
       "id": 658,
       "files": [
-        "webpack-runtime-0d1cf4a28a02e9b62487.js"
+        "webpack-runtime-d8530b4ef592d071f381.js"
       ]
     },
     {
@@ -279,31 +406,55 @@
     {
       "id": 883,
       "files": [
-        "component---src-pages-404-js-934bb47b78c07462a01d.js"
+        "component---src-pages-404-js-fe1794efd0d8fdc32a4b.js"
       ]
     },
     {
       "id": 682,
       "files": [
-        "component---src-pages-about-js-4cd3e952d984150de986.js"
+        "component---src-pages-about-js-c5beb147740b47485e08.js"
       ]
     },
     {
       "id": 678,
       "files": [
-        "component---src-pages-index-js-2a5db1e49c863f95e9db.js"
+        "component---src-pages-index-js-fae91d4b5e199619365c.js"
       ]
     },
     {
       "id": 540,
       "files": [
-        "component---src-pages-songs-js-599e18822d700ddc9efa.js"
+        "component---src-pages-songs-js-07bebc3ef8418cb40b98.js"
       ]
     },
     {
       "id": 124,
       "files": [
-        "component---src-pages-venues-js-f15e9e1c3f68b71bc750.js"
+        "component---src-pages-venues-js-9a34a084bcd81c0179b2.js"
+      ]
+    },
+    {
+      "id": 292,
+      "files": [
+        "component---src-templates-show-embed-js-0216e99c84b4517c9632.js"
+      ]
+    },
+    {
+      "id": 652,
+      "files": [
+        "component---src-templates-show-js-033895f7ab0d59620fcf.js"
+      ]
+    },
+    {
+      "id": 208,
+      "files": [
+        "component---src-templates-song-js-f393e9b82dfd879429e5.js"
+      ]
+    },
+    {
+      "id": 706,
+      "files": [
+        "component---src-templates-venue-js-08553cfbd2a546f83fb0.js"
       ]
     },
     {
@@ -315,7 +466,7 @@
     {
       "id": 532,
       "files": [
-        "styles.27ebc71d16b2a46e9665.css"
+        "styles.ee8299c3544f33f06716.css"
       ]
     },
     {
@@ -327,7 +478,13 @@
     {
       "id": 351,
       "files": [
-        "commons-c2c64bcfcb5ff3a6cc7d.js"
+        "commons-064225b2b9408a7f9ad1.js"
+      ]
+    },
+    {
+      "id": 1,
+      "files": [
+        "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-f96f96b5a5ce207a0c40.js"
       ]
     }
   ]
