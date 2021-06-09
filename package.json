@@ -23,7 +23,7 @@
     "serve": "gatsby serve",
     "start": "echo 'npm run develop' or 'npm run serve' && exit 1",
     "test": "npm run test:e2e",
-    "test:e2e": "WAIT_ON_TIMEOUT=${WAIT_ON_TIMEOUT:-180000} start-server-and-test develop :8000 cy:run",
+    "test:e2e": "WAIT_ON_TIMEOUT=${WAIT_ON_TIMEOUT:-180000} start-server-and-test dev :8000 cy:run",
     "test:prod": "CYPRESS_BASE_URL=https://almost-dead.net npm run cy:run"
   },
   "dependencies": {
