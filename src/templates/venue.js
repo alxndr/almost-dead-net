@@ -4,12 +4,9 @@ import {graphql, Link} from 'gatsby'
 import SEO from '../components/seo'
 import Layout from '../components/layout'
 
-import './venue.css'
+import {pluralize} from '../helpers/string_helpers'
 
-/* Appends an "s" to the end of `word` if warranted by the value of `number` */
-function pluralize(number, word) {
-  return `${number} ${word}${number !== 1 ? 's' : ''}`
-}
+import './venue.css'
 
 export default function Venue({data}) {
   const {venuesCsv: venue, allShowsCsv: {nodes: shows}} = data
