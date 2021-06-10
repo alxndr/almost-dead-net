@@ -17,6 +17,8 @@
     "lint": "eslint src/ cypress/",
     "postdeploy:prod": "npm run clean",
     "postlint": "echo ... linting success",
+    "predeploy:prod": "npm run clean",
+    "predev": "npm run clean",
     "prelint": "echo linting...",
     "pretest": "npm run lint",
     "pretest:e2e": "echo Starting Cypress integration tests...",
