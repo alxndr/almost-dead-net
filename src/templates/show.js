@@ -69,31 +69,24 @@ function LeadImage({urls}) {
 }
 
 const SORT_ORDER = [
-  'audience',
   'pro-shot',
   'matrix',
   'soundboard',
-  'audio',
+  'audience',
   'video',
+  'audio',
   'unknown',
 ]
 const OFFSET = 1
-const recordingsSorter = (a, b) => {
-  if (a.type === b.type)
+const recordingsSorter = ({type: typeA}, {type: typeB}) => {
+  if (typeA === typeB)
     return 0;
-  return SORT_ORDER.find(
-    (type) => [a.type, null, b.type].indexOf(type) + OFFSET
-  ) - OFFSET
+  const types = [typeA, null, typeB]
+  const theType = SORT_ORDER.find((sortedType) => types.indexOf(sortedType) + OFFSET)
+  if (theType)
+    return types.indexOf(theType) - OFFSET
+  return 0
 }
-
-//function sortObjectsByProperty({objectsArray, propertyName, sortOrder}) {
-//  return (a, b) => {
-//  if (a[propertyName] === b[propertyName])
-//    return 0;
-//  return sortOrder.find(
-//    (propertyValue) => [a[propertyName], null, b[propertyName]].indexOf(propertyValue) + OFFSET
-//  ) - OFFSET
-//}
 
 export const query = graphql`
   query($showId: String!, $venueId: String!) {
