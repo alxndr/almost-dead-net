@@ -1,5 +1,5 @@
 {
-  "hash": "e6aa9409c0e61a11381c",
+  "hash": "063e583c5ce498622ea1",
   "publicPath": "/",
   "outputPath": "/Users/alxndr/workspace/almost-dead-net/public",
   "assetsByChunkName": {
@@ -7,40 +7,40 @@
       "polyfill-a2d25affeded1b147d38.js"
     ],
     "app": [
-      "app-7b05fe515db584db8c72.js"
+      "app-9b0715c432e7f27905bc.js"
     ],
     "webpack-runtime": [
-      "webpack-runtime-d8530b4ef592d071f381.js"
+      "webpack-runtime-563134bba47ca9687055.js"
     ],
     "component---src-pages-404-js": [
-      "component---src-pages-404-js-fe1794efd0d8fdc32a4b.js"
+      "component---src-pages-404-js-c1a712730d8d7ebc73c6.js"
     ],
     "component---src-pages-about-js": [
-      "component---src-pages-about-js-c5beb147740b47485e08.js"
+      "component---src-pages-about-js-4deb1d6180788006b368.js"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-fae91d4b5e199619365c.js"
+      "component---src-pages-index-js-ac1f0b827945a9635414.js"
     ],
     "component---src-pages-songs-js": [
-      "component---src-pages-songs-js-07bebc3ef8418cb40b98.js"
+      "component---src-pages-songs-js-7efe1ec3f0517cea3fb6.js"
     ],
     "component---src-pages-venues-js": [
-      "component---src-pages-venues-js-9a34a084bcd81c0179b2.js"
+      "component---src-pages-venues-js-8effb00c0f6b82248335.js"
     ],
     "component---src-templates-show-embed-js": [
       "component---src-templates-show-embed-js-0216e99c84b4517c9632.js"
     ],
     "component---src-templates-show-js": [
-      "component---src-templates-show-js-033895f7ab0d59620fcf.js"
+      "component---src-templates-show-js-89753c37ef2707d68bb3.js"
     ],
     "component---src-templates-song-js": [
-      "component---src-templates-song-js-f393e9b82dfd879429e5.js"
+      "component---src-templates-song-js-60faef92bb9b0f78ddc3.js"
     ],
     "component---src-templates-venue-js": [
-      "component---src-templates-venue-js-08553cfbd2a546f83fb0.js"
+      "component---src-templates-venue-js-3449c8f0b79257af4243.js"
     ],
     "components-forum-topics": [
-      "components-forum-topics-b3beb114481a078bed39.js"
+      "components-forum-topics-72f3aae795309cc7e281.js"
     ],
     "styles": [
       "styles.ee8299c3544f33f06716.css"
@@ -60,7 +60,7 @@
       "type": "assets by status",
       "cached": true,
       "filteredChildren": 20,
-      "size": 690938
+      "size": 674856
     }
   ],
   "namedChunkGroups": {
@@ -72,7 +72,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-d8530b4ef592d071f381.js"
+          "name": "webpack-runtime-563134bba47ca9687055.js"
         },
         {
           "name": "polyfill-a2d25affeded1b147d38.js"
@@ -94,13 +94,13 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-d8530b4ef592d071f381.js"
+          "name": "webpack-runtime-563134bba47ca9687055.js"
         },
         {
           "name": "framework-0068a62ee68a6c63e163.js"
         },
         {
-          "name": "app-7b05fe515db584db8c72.js"
+          "name": "app-9b0715c432e7f27905bc.js"
         }
       ],
       "filteredAssets": 0,
@@ -125,7 +125,7 @@
           "name": "commons-064225b2b9408a7f9ad1.js"
         },
         {
-          "name": "component---src-pages-404-js-fe1794efd0d8fdc32a4b.js"
+          "name": "component---src-pages-404-js-c1a712730d8d7ebc73c6.js"
         }
       ],
       "filteredAssets": 0,
@@ -150,7 +150,7 @@
           "name": "commons-064225b2b9408a7f9ad1.js"
         },
         {
-          "name": "component---src-pages-about-js-c5beb147740b47485e08.js"
+          "name": "component---src-pages-about-js-4deb1d6180788006b368.js"
         }
       ],
       "filteredAssets": 0,
@@ -175,7 +175,7 @@
           "name": "commons-064225b2b9408a7f9ad1.js"
         },
         {
-          "name": "component---src-pages-index-js-fae91d4b5e199619365c.js"
+          "name": "component---src-pages-index-js-ac1f0b827945a9635414.js"
         }
       ],
       "filteredAssets": 0,
@@ -204,7 +204,7 @@
           "name": "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-f96f96b5a5ce207a0c40.js"
         },
         {
-          "name": "component---src-pages-songs-js-07bebc3ef8418cb40b98.js"
+          "name": "component---src-pages-songs-js-7efe1ec3f0517cea3fb6.js"
         }
       ],
       "filteredAssets": 0,
@@ -229,7 +229,7 @@
           "name": "commons-064225b2b9408a7f9ad1.js"
         },
         {
-          "name": "component---src-pages-venues-js-9a34a084bcd81c0179b2.js"
+          "name": "component---src-pages-venues-js-8effb00c0f6b82248335.js"
         }
       ],
       "filteredAssets": 0,
@@ -287,7 +287,7 @@
           "name": "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-f96f96b5a5ce207a0c40.js"
         },
         {
-          "name": "component---src-templates-show-js-033895f7ab0d59620fcf.js"
+          "name": "component---src-templates-show-js-89753c37ef2707d68bb3.js"
         }
       ],
       "filteredAssets": 0,
@@ -312,7 +312,7 @@
           "name": "commons-064225b2b9408a7f9ad1.js"
         },
         {
-          "name": "component---src-templates-song-js-f393e9b82dfd879429e5.js"
+          "name": "component---src-templates-song-js-60faef92bb9b0f78ddc3.js"
         }
       ],
       "filteredAssets": 0,
@@ -337,7 +337,7 @@
           "name": "commons-064225b2b9408a7f9ad1.js"
         },
         {
-          "name": "component---src-templates-venue-js-08553cfbd2a546f83fb0.js"
+          "name": "component---src-templates-venue-js-3449c8f0b79257af4243.js"
         }
       ],
       "filteredAssets": 0,
@@ -354,7 +354,7 @@
       ],
       "assets": [
         {
-          "name": "components-forum-topics-b3beb114481a078bed39.js"
+          "name": "components-forum-topics-72f3aae795309cc7e281.js"
         }
       ],
       "filteredAssets": 0,
@@ -376,13 +376,13 @@
     {
       "id": 143,
       "files": [
-        "app-7b05fe515db584db8c72.js"
+        "app-9b0715c432e7f27905bc.js"
       ]
     },
     {
       "id": 658,
       "files": [
-        "webpack-runtime-d8530b4ef592d071f381.js"
+        "webpack-runtime-563134bba47ca9687055.js"
       ]
     },
     {
@@ -392,9 +392,9 @@
       ]
     },
     {
-      "id": 368,
+      "id": 470,
       "files": [
-        "368-62311977adbed730ff0a.js"
+        "470-796e00a04a8b49f0404a.js"
       ]
     },
     {
@@ -406,31 +406,31 @@
     {
       "id": 883,
       "files": [
-        "component---src-pages-404-js-fe1794efd0d8fdc32a4b.js"
+        "component---src-pages-404-js-c1a712730d8d7ebc73c6.js"
       ]
     },
     {
       "id": 682,
       "files": [
-        "component---src-pages-about-js-c5beb147740b47485e08.js"
+        "component---src-pages-about-js-4deb1d6180788006b368.js"
       ]
     },
     {
       "id": 678,
       "files": [
-        "component---src-pages-index-js-fae91d4b5e199619365c.js"
+        "component---src-pages-index-js-ac1f0b827945a9635414.js"
       ]
     },
     {
       "id": 540,
       "files": [
-        "component---src-pages-songs-js-07bebc3ef8418cb40b98.js"
+        "component---src-pages-songs-js-7efe1ec3f0517cea3fb6.js"
       ]
     },
     {
       "id": 124,
       "files": [
-        "component---src-pages-venues-js-9a34a084bcd81c0179b2.js"
+        "component---src-pages-venues-js-8effb00c0f6b82248335.js"
       ]
     },
     {
@@ -442,25 +442,25 @@
     {
       "id": 652,
       "files": [
-        "component---src-templates-show-js-033895f7ab0d59620fcf.js"
+        "component---src-templates-show-js-89753c37ef2707d68bb3.js"
       ]
     },
     {
       "id": 208,
       "files": [
-        "component---src-templates-song-js-f393e9b82dfd879429e5.js"
+        "component---src-templates-song-js-60faef92bb9b0f78ddc3.js"
       ]
     },
     {
       "id": 706,
       "files": [
-        "component---src-templates-venue-js-08553cfbd2a546f83fb0.js"
+        "component---src-templates-venue-js-3449c8f0b79257af4243.js"
       ]
     },
     {
       "id": 868,
       "files": [
-        "components-forum-topics-b3beb114481a078bed39.js"
+        "components-forum-topics-72f3aae795309cc7e281.js"
       ]
     },
     {
