@@ -77,14 +77,16 @@ const SORT_ORDER = [
   'audio',
   'unknown',
 ]
-const OFFSET = 1
-const recordingsSorter = ({type: typeA}, {type: typeB}) => {
-  if (typeA === typeB)
+const INDEX_OFFSET = 1
+const recordingsSorter = (objA, objB) => {
+  const typeA = objA.type
+  const typeB = objB.type
+  if (typeA === typeB) // short-circuit: no need for further inspection if values are the same
     return 0;
-  const types = [typeA, null, typeB]
-  const theType = SORT_ORDER.find((sortedType) => types.indexOf(sortedType) + OFFSET)
-  if (theType)
-    return types.indexOf(theType) - OFFSET
+  const valuesArray = [typeA, null, typeB] // this array will be used with indexOf to determine which input object comes "first"
+  const firstValue = SORT_ORDER.find((sortedType) => valuesArray.includes(sortedType))
+  if (firstValue)
+    return valuesArray.indexOf(firstValue) - INDEX_OFFSET // subtract offset so that the returned value is either -1 or 1
   return 0
 }
 
