@@ -6,6 +6,8 @@ import slugify from 'slugify'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
+import {pluralize} from '../helpers/string_helpers'
+
 import './venues.css'
 
 const LOCALE_MAPPING = {
@@ -104,7 +106,8 @@ function sortVenues({location: locationA}, {location: locationB}) {
 }
 
 function VenuesComponent({data: {
-  allVenuesCsv: {nodes: allVenues}
+  allShowsCsv: {nodes: allShows},
+  allVenuesCsv: {nodes: allVenues},
 }}) {
   const groupedByLocale = groupBy(
     (venueData) => venueData.location.replace(' (Canada)', '') && venueData.location.includes(', ') ? venueData.location.split(', ')[1] : venueData.location,
@@ -128,7 +131,11 @@ function VenuesComponent({data: {
             {venueDataList.sort(sortVenues).map((venueData) => <li key={venueData.id}>
               <h4>
                 <Link to={`/venue/${venueData.id}-${slugify(venueData.name)}`}>
-                  {venueData.location}: {venueData.name}
+                  {venueData.location}:
+                  {' '}
+                  {venueData.name}
+                  {' '}
+                  ({pluralize(allShows.filter((showData) => showData.venue_id === venueData.id).length, 'show')})
                 </Link>
               </h4>
             </li>)}
@@ -140,10 +147,13 @@ function VenuesComponent({data: {
   </Layout>
 }
 
-// TODO: list number of shows at each venue
 const VenuesPage = () => <StaticQuery
   query={graphql`
     query VenuesPageData {
+      allShowsCsv { nodes {
+        id
+        venue_id
+      } }
       allVenuesCsv { nodes {
         id
         name
