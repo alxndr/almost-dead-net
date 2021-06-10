@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react'
-import { Helmet } from "react-helmet"
 
 export default function ForumTopics() {
   useEffect(() => {

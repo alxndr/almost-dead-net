@@ -1,6 +1,6 @@
 import React from 'react'
 import {graphql, Link} from 'gatsby'
-import {filter, find, propEq, uniqBy} from 'ramda'
+import {find, propEq, uniqBy} from 'ramda'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
