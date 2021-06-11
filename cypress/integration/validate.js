@@ -229,7 +229,6 @@ describe('data validation', () => {
         cy.get('main')
           .find('h1')
           .as('h1')
-          .contains(`show #${id}`)
         cy.get('@h1')
           .contains(date)
         cy.get('@h1')
