@@ -2,6 +2,8 @@ import React from 'react'
 import {graphql, Link} from 'gatsby'
 import {find, propEq} from 'ramda'
 
+import {pluralize} from '../helpers/string_helpers'
+
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
@@ -152,7 +154,7 @@ export default function Song({data: {
     .map(([date, performancesOnDate]) => <ListItem date={date} performancesOnDate={performancesOnDate} />)
   const performancesComponent = performancesSorted.length > 0
     ?  <>
-      <h2>Performed at {`${performancesSorted.length} Show${performancesSorted.length === 1 ? '' : 's'}`}</h2>
+      <h2>Performed at {pluralize(performancesSorted.length, 'Show')}</h2>
       <ul>
         {performances}
       </ul>
