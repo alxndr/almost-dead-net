@@ -1,6 +1,6 @@
 import React from 'react'
 import {graphql, Link} from 'gatsby'
-import {find, propEq, uniqBy} from 'ramda'
+import {find, propEq} from 'ramda'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -26,6 +26,23 @@ const SET_MAPPING = { // 'show table column name' to 'human readable set name'
   set3: 'set 3',
   encore1: 'encore',
   encore2: 'double encore',
+}
+
+function ListItem({date, performancesOnDate}) {
+  const [{performanceData, showData, variation, whichSet}, ...otherPerformances] = performancesOnDate
+  return <li key={performanceData.id}>
+    <Link to={`/show/${showData.id}`}>
+      {date}
+      {' '}
+      {variation} in {whichSet}
+      {otherPerformances.length
+        ? otherPerformances[0].whichSet !== whichSet
+          ? ` & ${otherPerformances[0].whichSet}`
+          : '…'
+        : ''
+      }
+    </Link>
+  </li>
 }
 
 export const query = graphql`
@@ -62,14 +79,13 @@ export const query = graphql`
   }
 `
 
-export default function Song({data}) {
-  const {
-    songsCsv: song,
-    allSetsCsv: {nodes: allSets},
-    allShowsCsv: {nodes: allShows},
-    allSongperformancesCsv: {nodes: allSongPerformances},
-    allTeasesCsv: {nodes: teases},
-  } = data
+export default function Song({data: {
+  songsCsv: song,
+  allSetsCsv: {nodes: allSets},
+  allShowsCsv: {nodes: allShows},
+  allSongperformancesCsv: {nodes: allSongPerformances},
+  allTeasesCsv: {nodes: teases},
+}}) {
   if (!song) {
     return <p>Uh oh, no song data found...</p>
   }
@@ -83,7 +99,7 @@ export default function Song({data}) {
   if (!allSets.length) {
     throw new Error('No data for allSets')
   }
-  const performancesSorted = allSongPerformances
+  const performancesGroupedByDate = allSongPerformances
     .filter((songPerformance) => onlyThisSongsPerformanceIds.includes(songPerformance.id))
     .map((performanceData) => {
       const performanceIdStr = performanceData.id.toString()
@@ -109,9 +125,21 @@ export default function Song({data}) {
       return {performanceData, showData, variation, whichSet}
     })
     .filter((data) => data && data.showData)
-    .sort((perfA, perfB) => {
-      const dateA = new Date(perfA.showData.date.split('/'))
-      const dateB = new Date(perfB.showData.date.split('/'))
+    .reduce((acc, elem) => {
+      if (!acc[elem.showData.date])
+        acc[elem.showData.date] = []
+      return {
+        ...acc,
+        [elem.showData.date]: [
+          ...acc[elem.showData.date],
+          elem,
+        ],
+      }
+    }, {})
+  const performancesSorted = Object.entries(performancesGroupedByDate)
+    .sort(([dateStringA], [dateStringB]) => {
+      const dateA = new Date(dateStringA.split('/'))
+      const dateB = new Date(dateStringB.split('/'))
       if (dateA > dateB) {
         return -1
       }
@@ -120,18 +148,11 @@ export default function Song({data}) {
       }
       return 0
     })
-  const uniqShows = uniqBy((perf) => perf.showData.id, performancesSorted)
   const performances = performancesSorted
-    .map(({performanceData, showData, variation, whichSet}) => {
-      return <li key={performanceData.id}>
-        <Link to={`/show/${showData.id}`}>
-          {showData.date} {variation} in {whichSet}
-        </Link>
-      </li>
-    })
+    .map(([date, performancesOnDate]) => <ListItem date={date} performancesOnDate={performancesOnDate} />)
   const performancesComponent = performancesSorted.length > 0
     ?  <>
-      <h2>Performed at {`${uniqShows.length} Show${uniqShows.length === 1 ? '' : 's'}`}</h2>
+      <h2>Performed at {`${performancesSorted.length} Show${performancesSorted.length === 1 ? '' : 's'}`}</h2>
       <ul>
         {performances}
       </ul>
