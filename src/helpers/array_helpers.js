@@ -1,6 +1,10 @@
-/* Factory to create an array sorting function, which will sort an array of
- * objects by a property common to each of the objects (named in the first
- * param) in the order specified (in the second param).
+/* Factory to create an array sorting function (to be used by e.g.
+ * `Array.prototype.sort`), which will sort an array of objects by a property
+ * (named in the `objPropertyName` param) common to each of the objects, into
+ * the order specified in the `orderArray` param. Objects which do not have the
+ * named property, or which have a value for the property which is not
+ * specified in the `orderArray`, will end up at the end of the sorted array in
+ * an undefined order (i.e. the sorting function may not be stable).
  */
 export function objectSorterFactory(objPropertyName, orderArray) {
   const INDEX_OFFSET = 1
