@@ -43,7 +43,7 @@ export default function Index() {
     </section>
 
     <section className="homepage__showsbyyear">
-      <h1>Setlists, segues, teases, recordings, notes for each JRAD show:</h1>
+      <h1>JRAD Setlists by date:</h1>
       <ShowsByYear />
     </section>
 
