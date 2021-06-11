@@ -63,11 +63,8 @@ function Set({show, which, isEncore = false, sets, performances, segues, teases,
   />
 }
 
-function LeadImage({urls}) {
-  const src = find((url) => url.startsWith('https://lot.almost-dead.net/uploads/') || url.match(/imgur/))(urls)
-  return <div className="showpage__leadimage">
-    <img src={src} />
-  </div>
+function isImage(url) {
+  return url.startsWith('https://lot.almost-dead.net/uploads/') || url.match(/\bimgur\b/)
 }
 
 const recordingsSorter = objectSorterFactory('type', [
@@ -94,6 +91,7 @@ export const query = graphql`
       set2
       set3
       soundcheck
+      tagline
     }
     venuesCsv(id: {eq: $venueId}) {
       id
@@ -163,7 +161,7 @@ export default function Show({
     return false
   }
 
-  const {date, event, notes, links} = show
+  const {date, event, notes, links, tagline} = show
 
   const guestsWithSplitShows = guests.map((guestData) => {
     if (!guestData) {
@@ -194,26 +192,37 @@ export default function Show({
     <Set isEncore={true} which={which} show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} key={`encore${which}`} />
   ), [])
 
-  const showName = `${event ? `${event}, ` : ``}${venue.name} (${venue.location})`
+  const guestsDescription = showGuests.length
+    ? `with ${showGuests.map((guest) => guest.name).join(' and ')}`
+    : ''
+  const seoDescription = `Setlist and recordings of Joe Russo's Almost Dead ${guestsDescription} ${date} at ${event ? `${event}, ` : ``}${venue.name} (${venue.location}) including song segues, teases, and show notes`
+  const imageSrc = find(isImage)(links.split(/\s+/))
 
   return <Layout className="showpage">
     <SEO
-      title={`JRAD ${date} @ ${showName} setlist`}
-      description={`Joe Russo's Almost Dead${showGuests.length ? ` with ${showGuests.map((guest) => guest.name).join(' and ')}` : ''} at ${showName} ${date} — setlist, teases, recordings`}
+      title={`JRAD ${tagline}`}
+      description={seoDescription}
+      image={imageSrc}
     />
+
     <h1 className="showpage__pagetitle">
-      <span className="showpage__pagetitle--band">Joe Russo's Almost Dead</span> {' '}
-      <span className="showpage__pagetitle--date">{date}</span> {' '}
-      {event && <span className="showpage__pagetitle--event">{event}</span>} {' '}
-      {venue && <span className="showpage__pagetitle--venue"> {' '}
+      <span className="showpage__pagetitle--band">Joe Russo's Almost Dead</span>
+      {' '}
+      <span className="showpage__pagetitle--date">{date}</span>
+      {' '}
+      {event && <span className="showpage__pagetitle--event">{event}</span>}
+      {' '}
+      {venue && <span className="showpage__pagetitle--venue">
+        {' '}
         <Link to={`/venue/${venue.id}-${slugify(venue.name)}`}>
           {venue.name}, {venue.location}
         </Link>
-      </span>} {' '}
-      <span className="showpage__pagetitle--number">show #{show.id}</span>
+      </span>}
     </h1>
     <section className="showpage__setlist">
-      {links && <LeadImage urls={links.split(/\s+/)} />}
+      {imageSrc && <div className="showpage__leadimage">
+        <img src={imageSrc} alt="a poster or photograph from the show" />
+      </div>}
       {notes && <div className="showpage__notes">{notes}</div>}
       <Guests guests={showGuests} />
       {show.soundcheck && <Set which="soundcheck" show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} />}

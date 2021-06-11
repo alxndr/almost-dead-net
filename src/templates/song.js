@@ -186,9 +186,10 @@ export default function Song({data: {
 
   return <Layout className="songpage">
     <SEO
-      title={`"${song.title}" performances/teases … Almost-Dead.net`}
-      description={`List of each time Joe Russo's Almost Dead has performed or teased the song "${song.title}"`}
+      title={`"${song.title}" performed or teased by JRAD`}
+      description={`List of each time Joe Russo's Almost Dead has performed or teased the song "${song.title}" ${song.author && song.author !== 'traditional' ? `by ${song.author}` : ''}`}
     />
+
     <h1 className="songpage__name">{song.title}</h1>
     <div className="songpage__info">
       {authorInfo(song.author)}
@@ -198,28 +199,3 @@ export default function Song({data: {
     <div className="songpage__teases">{teasesComponent}</div>
   </Layout>
 }
-
-/*
-    allTeasePerformancesCsv { nodes {
-    } }
-
-    allSetsCsv { nodes {
-      setlist
-    } }
-    allShowsCsv { nodes {
-      encore1
-      encore2
-      set1
-      set2
-      set3
-      soundcheck
-    } }
-    allSongperformancesCsv { nodes {
-      id
-      variation
-    } }
-    allTeasesCsv { nodes {
-      performance_id
-      within
-    } }
-*/

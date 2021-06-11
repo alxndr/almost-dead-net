@@ -12,7 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import icon from '../images/icon-almost-dead.png'
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, image, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -69,7 +69,10 @@ function SEO({ description, lang, meta, title }) {
       link={[
         { rel: 'shortcut icon', type: 'image/png', href: icon},
       ]}
-    />
+    >
+      {image && <meta property="og:image" content={image} />}
+      {image && <meta name="twitter:image" content={image} />}
+    </Helmet>
   )
 }
 
