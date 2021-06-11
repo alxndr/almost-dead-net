@@ -1,5 +1,5 @@
 {
-  "hash": "18c90dd500144b777852",
+  "hash": "abe2274486426e82b13f",
   "publicPath": "/",
   "outputPath": "/Users/alxndr/workspace/almost-dead-net/public",
   "assetsByChunkName": {
@@ -10,7 +10,7 @@
       "app-5900a12def0edbf8d4fd.js"
     ],
     "webpack-runtime": [
-      "webpack-runtime-cc2cba2162463d2742ea.js"
+      "webpack-runtime-d2190aa5804fce1e56b3.js"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-c1a712730d8d7ebc73c6.js"
@@ -19,7 +19,7 @@
       "component---src-pages-about-js-4deb1d6180788006b368.js"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-ac1f0b827945a9635414.js"
+      "component---src-pages-index-js-25afa6018141c0c660e0.js"
     ],
     "component---src-pages-songs-js": [
       "component---src-pages-songs-js-7efe1ec3f0517cea3fb6.js"
@@ -60,7 +60,7 @@
       "type": "assets by status",
       "cached": true,
       "filteredChildren": 20,
-      "size": 673762
+      "size": 673721
     }
   ],
   "namedChunkGroups": {
@@ -72,7 +72,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-cc2cba2162463d2742ea.js"
+          "name": "webpack-runtime-d2190aa5804fce1e56b3.js"
         },
         {
           "name": "polyfill-a2d25affeded1b147d38.js"
@@ -94,7 +94,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-cc2cba2162463d2742ea.js"
+          "name": "webpack-runtime-d2190aa5804fce1e56b3.js"
         },
         {
           "name": "framework-0068a62ee68a6c63e163.js"
@@ -175,7 +175,7 @@
           "name": "commons-064225b2b9408a7f9ad1.js"
         },
         {
-          "name": "component---src-pages-index-js-ac1f0b827945a9635414.js"
+          "name": "component---src-pages-index-js-25afa6018141c0c660e0.js"
         }
       ],
       "filteredAssets": 0,
@@ -382,7 +382,7 @@
     {
       "id": 658,
       "files": [
-        "webpack-runtime-cc2cba2162463d2742ea.js"
+        "webpack-runtime-d2190aa5804fce1e56b3.js"
       ]
     },
     {
@@ -418,7 +418,7 @@
     {
       "id": 678,
       "files": [
-        "component---src-pages-index-js-ac1f0b827945a9635414.js"
+        "component---src-pages-index-js-25afa6018141c0c660e0.js"
       ]
     },
     {
