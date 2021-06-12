@@ -1,18 +1,18 @@
 id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num recordings,tagline
-1,1/26/2013,22,1,2,,3,,,first show,Freaks Ball,,2,1/26/13 @ Brooklyn Bowl
-2,12/27/2013,76,4,5,,6,,,,,,2,12/27/13 @ Capitol Theatre (Port Chester)
-3,8/1/2014,19,7,,,,,,first festival; first single-set performance; first no-encore performance,Gathering of the Vibes,,3,8/1/14 @ Gathering of the Vibes
-4,9/19/2014,31,8,9,,10,,,first multi-night run,,,1,9/19/14 @ Concord Music Hall
-5,9/20/2014,31,11,12,,13,,,first multi-night run,,,1,9/20/14 @ Concord Music Hall
+1,1/26/2013,22,1,2,,3,,,first show,Freaks Ball,,6,1/26/13 @ Brooklyn Bowl
+2,12/27/2013,76,4,5,,6,,,,,https://i.imgur.com/CSFAO6J.jpg,2,12/27/13 @ Capitol Theatre (Port Chester)
+3,8/1/2014,19,7,,,,,,first festival; first single-set performance; first no-encore performance,Gathering of the Vibes,https://i.imgur.com/BFhv2Rx.jpg,3,8/1/14 @ Gathering of the Vibes
+4,9/19/2014,31,8,9,,10,,,first multi-night run,,https://i.imgur.com/m3Llo9G.jpg,1,9/19/14 @ Concord Music Hall
+5,9/20/2014,31,11,12,,13,,,first multi-night run,,https://i.imgur.com/m3Llo9G.jpg,1,9/20/14 @ Concord Music Hall
 6,10/5/2014,87,14,,,,,,final set on Arrow Stage,Hardly Strictly Bluegrass Festival,,1,10/5/14 @ Hardly Strictly Bluegrass Festival
-7,10/10/2014,18,15,16,,17,,,first multi-venue multi-night run; sold out,,,2,10/10/14 @ Boulder Theater
-8,10/11/2014,37,18,19,,20,,,first multi-venue multi-night run; sold out,,,4,10/11/14 @ Ogden Theatre
+7,10/10/2014,18,15,16,,17,,,first multi-venue multi-night run; sold out,,https://i.imgur.com/1G3XmLd.jpg,2,10/10/14 @ Boulder Theater
+8,10/11/2014,37,18,19,,20,,,first multi-venue multi-night run; sold out,,https://i.imgur.com/1G3XmLd.jpg,4,10/11/14 @ Ogden Theatre
 9,11/2/2014,51,21,,,,,,,Suwannee Hulaween,,1,11/2/14 @ Suwannee Hulaween
-10,12/29/2014,76,22,23,,24,,,Phil Lesh (bass guitar) replaced Dave for the three-night run; first night of their first three-night-run,,,2,12/29/14 @ Capitol Theatre (Port Chester)
-11,12/30/2014,76,25,26,,27,,,Phil Lesh (bass guitar) replaced Dave for the three-night run; middle night of first three-night-run,,,2,12/30/14 @ Capitol Theatre (Port Chester)
-12,12/31/2014,76,28,29,,30,,,Phil Lesh (bass guitar) replaced Dave for the three-night run; last night of first three-night-run; first NYE show,,,3,12/31/14 @ Capitol Theatre (Port Chester)
-13,1/23/2015,22,31,32,,33,,,all songs were debuts,Freaks Ball,,2,1/23/15 @ Brooklyn Bowl
-14,1/24/2015,22,34,35,,36,,,,Freaks Ball,,2,1/24/15 @ Brooklyn Bowl
+10,12/29/2014,76,22,23,,24,,,Phil Lesh (bass guitar) replaced Dave for the three-night run; first night of their first three-night-run,,https://i.imgur.com/VirzmvT.jpg,3,12/29/14 @ Capitol Theatre (Port Chester)
+11,12/30/2014,76,25,26,,27,,,Phil Lesh (bass guitar) replaced Dave for the three-night run; middle night of first three-night-run,,https://i.imgur.com/VirzmvT.jpg,3,12/30/14 @ Capitol Theatre (Port Chester)
+12,12/31/2014,76,28,29,,30,,,Phil Lesh (bass guitar) replaced Dave for the three-night run; last night of first three-night-run; first NYE show,,https://i.imgur.com/VirzmvT.jpg,4,12/31/14 @ Capitol Theatre (Port Chester)
+13,1/23/2015,22,31,32,,33,,,all songs were debuts,Freaks Ball,https://i.imgur.com/CuNWMLP.jpg,2,1/23/15 @ Brooklyn Bowl
+14,1/24/2015,22,34,35,,36,,,,Freaks Ball,https://i.imgur.com/CuNWMLP.jpg,3,1/24/15 @ Brooklyn Bowl
 15,2/5/2015,24,39,40,,41,,,sold out,,,2,2/5/15 @ Higher Ground
 16,2/6/2015,15,42,43,,44,,,first show with two Suite songs; sold out,,,1,2/6/15 @ Paradise Rock Club
 17,2/7/2015,77,45,46,,47,,,,,,1,2/7/15 @ State Theater (Portland)
@@ -20,21 +20,21 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 19,2/14/2015,37,51,52,,53,,,sold out,,,1,2/14/15 @ Ogden Theatre
 20,2/15/2015,37,54,55,,56,,,,,,1,2/15/15 @ Ogden Theatre
 21,2/16/2015,18,57,58,,59,,,sold out,,,1,2/16/15 @ Boulder Theater
-22,4/22/2015,61,60,61,,62,,,,,,2,4/22/15 @ First Avenue (Minneapolis)
-23,4/23/2015,60,63,64,,65,,,,,,1,4/23/15 @ Turner Hall Ballroom
-24,4/24/2015,31,66,67,,68,,,,,,1,4/24/15 @ Concord Music Hall
-25,4/25/2015,92,69,70,,71,,,,,,2,4/25/15 @ The Pageant
-26,5/1/2015,68,72,73,,74,,,,,,2,5/1/15 @ Joy Theater
-27,5/2/2015,68,75,76,,77,,,sold out,,,1,5/2/15 @ Joy Theater
+22,4/22/2015,61,60,61,,62,,,,,https://i.imgur.com/ik3y9a6.jpg,2,4/22/15 @ First Avenue (Minneapolis)
+23,4/23/2015,60,63,64,,65,,,,,https://i.imgur.com/ik3y9a6.jpg,1,4/23/15 @ Turner Hall Ballroom
+24,4/24/2015,31,66,67,,68,,,,,https://i.imgur.com/ik3y9a6.jpg,1,4/24/15 @ Concord Music Hall
+25,4/25/2015,92,69,70,,71,,,,,https://i.imgur.com/ik3y9a6.jpg,2,4/25/15 @ The Pageant
+26,5/1/2015,68,72,73,,74,,,,,https://i.imgur.com/CN6AuT6.jpg,2,5/1/15 @ Joy Theater
+27,5/2/2015,68,75,76,,77,,,sold out,,https://i.imgur.com/CN6AuT6.jpg,1,5/2/15 @ Joy Theater
 28,5/9/2015,76,78,79,,80,,,sold out,,,2,5/9/15 @ Capitol Theatre (Port Chester)
 29,5/16/2015,75,81,82,,83,,,,,,1,5/16/15 @ Theater of the Living Arts
 30,5/22/2015,49,84,,,,,,no available recording,CounterPoint Music Festival,,0,5/22/15 @ CounterPoint Music Festival
 31,5/23/2015,32,85,,,86,,,,Summer Camp,,1,5/23/15 @ Summer Camp
 32,5/24/2015,26,87,88,,89,,,,Ville Festival,,2,5/24/15 @ Ville Festival
-33,5/30/2015,13,90,91,,92,,,,Beanstalk Festival,,1,5/30/15 @ Beanstalk Festival
+33,5/30/2015,13,90,91,,92,,,,Beanstalk Festival,https://i.imgur.com/kcbbdPB.jpg,1,5/30/15 @ Beanstalk Festival
 34,6/3/2015,69,93,94,,95,,,sold out: private benefit in the Marlin Room (silent auction at set break),Songs of Love,,2,6/3/15 @ Songs of Love
 35,6/5/2015,45,96,,,,,,,Mountain Jam,,1,6/5/15 @ Mountain Jam
-36,6/6/2015,72,97,,,,,,started after midnight on the 7th,Wakarusa,,1,6/6/15 @ Wakarusa
+36,6/6/2015,72,97,,,,,,started after midnight on the 7th,Wakarusa,https://i.imgur.com/VsEgRvN.jpg,1,6/6/15 @ Wakarusa
 37,6/26/2015,84,98,,,,,,no available recordings; show started at 1:12am on the 27th,,,0,6/26/15 @ Electric Forest
 38,7/5/2015,81,99,100,,101,,,,High Sierra Music Festival,,1,7/5/15 @ High Sierra Music Festival
 39,7/10/2015,93,102,,,,,,,All Good Festival,,1,7/10/15 @ All Good Festival
@@ -44,179 +44,179 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 43,9/4/2015,28,110,,,,,,no available recording,North Coast Music Festival,,0,9/4/15 @ North Coast Music Festival
 44,9/6/2015,70,111,112,,113,,,no available recording,,,0,9/6/15 @ Last Breath Farm
 45,9/19/2015,41,114,,,115,,,first show outside USA; show started 12:04am on the 20th,Harvest Jazz & Blues Festival,,2,9/19/15 @ Harvest Jazz & Blues Festival
-46,10/2/2015,22,116,117,,118,,,,,,2,10/2/15 @ Brooklyn Bowl
-47,10/3/2015,22,119,120,,,,,,,,2,10/3/15 @ Brooklyn Bowl
-48,10/4/2015,22,121,122,,123,,,,,,2,10/4/15 @ Brooklyn Bowl
+46,10/2/2015,22,116,117,,118,,,,,https://i.imgur.com/gcfkdtL.jpg,2,10/2/15 @ Brooklyn Bowl
+47,10/3/2015,22,119,120,,,,,,,https://i.imgur.com/gcfkdtL.jpg,2,10/3/15 @ Brooklyn Bowl
+48,10/4/2015,22,121,122,,123,,,,,https://i.imgur.com/gcfkdtL.jpg,2,10/4/15 @ Brooklyn Bowl
 49,10/28/2015,4,124,125,,126,,,Dave plays trumpet,,,1,10/28/15 @ The Orange Peel
-50,10/29/2015,51,127,,,581,,,Amphitheater Stage; broadcast live on SiriusXM's Jam On station,Suwannee Hulaween,,1,10/29/15 @ Suwannee Hulaween
-51,10/30/2015,27,128,129,,130,,,,,,1,10/30/15 @ Music Farm
+50,10/29/2015,51,127,,,581,,,Amphitheater Stage; broadcast live on SiriusXM's Jam On station,Suwannee Hulaween,https://i.imgur.com/0PrOYJF.jpg,1,10/29/15 @ Suwannee Hulaween
+51,10/30/2015,27,128,129,,130,,,,,,2,10/30/15 @ Music Farm
 52,10/31/2015,82,131,132,,133,,,,,https://i.imgur.com/BBBKpg8.png,1,10/31/15 @ The Ritz
 53,11/27/2015,15,134,135,,136,,,sold out,,,1,11/27/15 @ Paradise Rock Club
 54,11/28/2015,15,137,138,,139,,,sold out,,,1,11/28/15 @ Paradise Rock Club
-55,12/11/2015,50,140,141,,142,,143,first known recorded soundcheck; webcast on nugs.tv,,,1,12/11/15 @ Brooklyn Bowl (Las Vegas)
-56,12/12/2015,71,144,145,,146,,582,,,,2,12/12/15 @ Fox Theater (Oakland)
-57,12/19/2015,38,147,148,,,,,sold out,,,2,12/19/15 @ The Fillmore (Denver)
-58,12/31/2015,74,149,150,151,152,,,acoustic set 2; first acoustic set; first three-set show; first NYE with full band,,,2,12/31/15 @ The Fillmore (Philadelphia)
-59,1/1/2016,76,153,154,,155,,,,,,2,1/1/16 @ Capitol Theatre (Port Chester)
-60,1/2/2016,76,156,157,,158,,,supported by the Speakeasy Jazz Babies,,,2,1/2/16 @ Capitol Theatre (Port Chester)
+55,12/11/2015,50,140,141,,142,,143,first known recorded soundcheck; webcast on nugs.tv,,https://i.imgur.com/mSkWh5I.jpg,1,12/11/15 @ Brooklyn Bowl (Las Vegas)
+56,12/12/2015,71,144,145,,146,,582,,,https://i.imgur.com/mSkWh5I.jpg,2,12/12/15 @ Fox Theater (Oakland)
+57,12/19/2015,38,147,148,,,,,sold out,,https://i.imgur.com/o7CRfo6.jpg,2,12/19/15 @ The Fillmore (Denver)
+58,12/31/2015,74,149,150,151,152,,,acoustic set 2; first acoustic set; first three-set show; first NYE with full band,,https://i.imgur.com/7Pt8HyE.jpg,2,12/31/15 @ The Fillmore (Philadelphia)
+59,1/1/2016,76,153,154,,155,,,,,https://i.imgur.com/qWccEen.jpg,2,1/1/16 @ Capitol Theatre (Port Chester)
+60,1/2/2016,76,156,157,,158,,,supported by the Speakeasy Jazz Babies,,https://i.imgur.com/qWccEen.jpg,2,1/2/16 @ Capitol Theatre (Port Chester)
 61,1/6/2016,46,159,,,160,,,no available recording,Jam Cruise,,0,1/6/16 @ Jam Cruise
 62,1/7/2016,47,161,,,,,,,Jam Cruise,,2,1/7/16 @ Jam Cruise
-63,2/10/2016,99,162,163,,164,,,sold out,,,1,2/10/16 @ The 9:30 Club
-64,2/11/2016,66,165,166,,167,,,,,,3,2/11/16 @ College Street Music Hall
-65,2/12/2016,78,168,169,,170,,,,,,1,2/12/16 @ Lupo's Heartbreak Hotel
-66,2/13/2016,77,171,172,,173,,,sold out,,,1,2/13/16 @ State Theater (Portland)
-67,2/14/2016,24,174,175,,176,,,sold out,,,1,2/14/16 @ Higher Ground
-68,3/24/2016,22,177,178,,179,,,sold out,Freaks Ball,,2,3/24/16 @ Brooklyn Bowl
-69,3/25/2016,22,180,181,,182,,,sold out,Freaks Ball,,2,3/25/16 @ Brooklyn Bowl
-70,3/26/2016,22,183,184,,185,,,sold out,Freaks Ball,,2,3/26/16 @ Brooklyn Bowl
+63,2/10/2016,99,162,163,,164,,,sold out,,https://i.imgur.com/XQLj0Yc.jpg,1,2/10/16 @ The 9:30 Club
+64,2/11/2016,66,165,166,,167,,,,,https://i.imgur.com/XQLj0Yc.jpg,3,2/11/16 @ College Street Music Hall
+65,2/12/2016,78,168,169,,170,,,,,https://i.imgur.com/XQLj0Yc.jpg,1,2/12/16 @ Lupo's Heartbreak Hotel
+66,2/13/2016,77,171,172,,173,,,sold out,,https://i.imgur.com/XQLj0Yc.jpg,1,2/13/16 @ State Theater (Portland)
+67,2/14/2016,24,174,175,,176,,,sold out,,https://i.imgur.com/XQLj0Yc.jpg,1,2/14/16 @ Higher Ground
+68,3/24/2016,22,177,178,,179,,,sold out,Freaks Ball,https://i.imgur.com/dEwq9xu.jpg,2,3/24/16 @ Brooklyn Bowl
+69,3/25/2016,22,180,181,,182,,,sold out,Freaks Ball,https://i.imgur.com/dEwq9xu.jpg,2,3/25/16 @ Brooklyn Bowl
+70,3/26/2016,22,183,184,,185,,,sold out,Freaks Ball,https://i.imgur.com/dEwq9xu.jpg,2,3/26/16 @ Brooklyn Bowl
 71,4/29/2016,68,186,187,,,,,sold out,,,1,4/29/16 @ Joy Theater
-72,4/30/2016,68,188,189,,190,,,sold out,,,1,4/30/16 @ Joy Theater
-73,6/30/2016,81,191,192,,,,,no available recording,High Sierra Music Festival,,0,6/30/16 @ High Sierra Music Festival
-74,7/1/2016,85,193,194,,195,,,no available recording,,,0,7/1/16 @ The Depot
-75,7/2/2016,5,196,197,,198,,,sold out,,https://lot.almost-dead.net/uploads/default/optimized/1X/2a10dfe2b902eedf94abcaba6c215368d99346f5_2_666x500.jpeg,1,7/2/16 @ Belly Up
-76,7/3/2016,63,199,,,,,,,,,1,7/3/16 @ Red Rocks
+72,4/30/2016,68,188,189,,190,,,sold out,, ,1,4/30/16 @ Joy Theater
+73,6/30/2016,81,191,192,,,,,no available recording,High Sierra Music Festival,https://i.imgur.com/v1atQHR.png,0,6/30/16 @ High Sierra Music Festival
+74,7/1/2016,85,193,194,,195,,,no available recording,,https://i.imgur.com/v1atQHR.png,0,7/1/16 @ The Depot
+75,7/2/2016,5,196,197,,198,,,sold out,,https://i.imgur.com/v1atQHR.png https://lot.almost-dead.net/uploads/default/optimized/1X/2a10dfe2b902eedf94abcaba6c215368d99346f5_2_666x500.jpeg,1,7/2/16 @ Belly Up
+76,7/3/2016,63,199,,,,,,,,https://i.imgur.com/v1atQHR.png,1,7/3/16 @ Red Rocks
 77,8/13/2016,88,200,,,,,,,Peach Music Festival,,1,8/13/16 @ Peach Music Festival
 78,8/20/2016,35,201,,,,,,,Hot August Music Festival,,1,8/20/16 @ Hot August Music Festival
 79,8/25/2016,3,202,,,,,,started early a.m. 8/26,LOCKN',,2,8/25/16 @ LOCKN'
 80,8/26/2016,3,203,,,204,,,started early a.m. 8/27,LOCKN',,1,8/26/16 @ LOCKN'
-81,10/6/2016,22,205,206,207,208,,,first three-set show outside of NYE; second set was acoustic and on temporary stage above bowling lanes; sold out,Fall Ball,,1,10/6/16 @ Brooklyn Bowl
-82,10/7/2016,22,209,210,211,212,,,second set acoustic and on temporary stage above bowling lanes; John Mayer sat in for 3rd set and encore; sold out,Fall Ball,,1,10/7/16 @ Brooklyn Bowl
-83,10/8/2016,22,213,214,,215,216,,first double encore; sold out,Fall Ball,,1,10/8/16 @ Brooklyn Bowl
-84,11/11/2016,86,217,218,,219,,,,,,1,11/11/16 @ House of Blues (San Diego)
-85,11/12/2016,71,220,221,222,223,,,acoustic 2nd set with Bob Weir; longest show to date (3h39m),,,3,11/12/16 @ Fox Theater (Oakland)
-86,11/26/2016,74,224,225,,226,,,sold out,,,1,11/26/16 @ The Fillmore (Philadelphia)
-87,12/2/2016,17,227,228,,229,,,sold out,,,1,12/2/16 @ House of Blues (Boston)
+81,10/6/2016,22,205,206,207,208,,,first three-set show outside of NYE; second set was acoustic and on temporary stage above bowling lanes; sold out,Fall Ball,https://i.imgur.com/mCQdGia.jpg,1,10/6/16 @ Brooklyn Bowl
+82,10/7/2016,22,209,210,211,212,,,second set acoustic and on temporary stage above bowling lanes; John Mayer sat in for 3rd set and encore; sold out,Fall Ball,https://i.imgur.com/mCQdGia.jpg,1,10/7/16 @ Brooklyn Bowl
+83,10/8/2016,22,213,214,,215,216,,first double encore; sold out,Fall Ball,https://i.imgur.com/mCQdGia.jpg,1,10/8/16 @ Brooklyn Bowl
+84,11/11/2016,86,217,218,,219,,,,,https://i.imgur.com/mUv2GsA.jpg,1,11/11/16 @ House of Blues (San Diego)
+85,11/12/2016,71,220,221,222,223,,,acoustic 2nd set with Bob Weir; longest show to date (3h39m),,https://i.imgur.com/mUv2GsA.jpg,3,11/12/16 @ Fox Theater (Oakland)
+86,11/26/2016,74,224,225,,226,,,sold out,,https://i.imgur.com/0NNLahk.jpg,1,11/26/16 @ The Fillmore (Philadelphia)
+87,12/2/2016,17,227,228,,229,,,sold out,,https://i.imgur.com/IpA2Ogt.jpg,1,12/2/16 @ House of Blues (Boston)
 88,12/4/2016,80,230,231,,232,,233,show started early morning 12/5,,,1,12/4/16 @ Breathless & Now Onyx Resorts
-89,12/15/2016,37,234,235,,236,,,sold out,,,1,12/15/16 @ Ogden Theatre
-90,12/16/2016,18,237,238,,239,,,sold out,,,1,12/16/16 @ Boulder Theater
-91,12/17/2016,5,240,241,,242,,,,,,3,12/17/16 @ Belly Up
+89,12/15/2016,37,234,235,,236,,,sold out,,https://i.imgur.com/NcpslwZ.jpg,1,12/15/16 @ Ogden Theatre
+90,12/16/2016,18,237,238,,239,,,sold out,,https://i.imgur.com/NcpslwZ.jpg,1,12/16/16 @ Boulder Theater
+91,12/17/2016,5,240,241,,242,,,sold out,,https://i.imgur.com/RSYFdQL.jpg,3,12/17/16 @ Belly Up
 92,12/28/2016,21,243,,,244,,,"acoustic show; first all-acoustic show; free show performed as pseudonym ""Data Models"" (which is an anagram of ""Almost Dead"")",,,1,12/28/16 @ Threes Brewing
-93,12/29/2016,22,245,246,,247,,,sold out,,,1,12/29/16 @ Brooklyn Bowl
-94,12/30/2016,76,248,249,,250,,,sold out,,,1,12/30/16 @ Capitol Theatre (Port Chester)
-95,12/31/2016,76,251,252,253,254,,,sold out,,,1,12/31/16 @ Capitol Theatre (Port Chester)
-96,1/12/2017,65,255,256,,257,,,,,,1,1/12/17 @ Ryman Auditorium
-97,1/13/2017,27,258,259,,260,,,,,,2,1/13/17 @ Music Farm
-98,1/14/2017,100,261,,,262,,,,Sunshine Music Festival,,1,1/14/17 @ Sunshine Music Festival
+93,12/29/2016,22,245,246,,247,,,sold out,,https://i.imgur.com/cu32MSc.jpg,1,12/29/16 @ Brooklyn Bowl
+94,12/30/2016,76,248,249,,250,,,sold out,,https://i.imgur.com/cu32MSc.jpg,1,12/30/16 @ Capitol Theatre (Port Chester)
+95,12/31/2016,76,251,252,253,254,,,sold out,,https://i.imgur.com/cu32MSc.jpg,1,12/31/16 @ Capitol Theatre (Port Chester)
+96,1/12/2017,65,255,256,,257,,,,,https://i.imgur.com/BSpovev.jpg,1,1/12/17 @ Ryman Auditorium
+97,1/13/2017,27,258,259,,260,,,,,https://i.imgur.com/BSpovev.jpg,2,1/13/17 @ Music Farm
+98,1/14/2017,100,261,,,262,,,,Sunshine Music Festival,https://i.imgur.com/LVZwIcz.jpg,2,1/14/17 @ Sunshine Music Festival
 99,1/15/2017,12,263,,,264,,,,Sunshine Music Festival,,1,1/15/17 @ Sunshine Music Festival
-100,3/9/2017,22,265,266,,,,,sold out,,,1,3/9/17 @ Brooklyn Bowl
-101,3/10/2017,22,267,268,,269,,,sold out,,,1,3/10/17 @ Brooklyn Bowl
-102,3/11/2017,22,270,271,,272,,,sold out,,,1,3/11/17 @ Brooklyn Bowl
-103,3/16/2017,22,273,274,,275,,,sold out,,,1,3/16/17 @ Brooklyn Bowl
-104,3/17/2017,22,276,277,,278,,,sold out,,,1,3/17/17 @ Brooklyn Bowl
-105,3/18/2017,22,279,280,,281,,282,"before the encore, Shapiro made an announcement honoring Sean Aiken on his last night managing Brooklyn Bowl; sold out",,,1,3/18/17 @ Brooklyn Bowl
-106,3/31/2017,91,283,,,,,,no available recordings? Dave plays drums at some points,Fool's Paradise,,1,3/31/17 @ Fool's Paradise
-107,4/28/2017,37,284,285,,286,,,,,,1,4/28/17 @ Ogden Theatre
-108,4/29/2017,23,287,288,,289,290,,"second set started with percussion jam using instruments created and built by Adam Morford, set up on a riser behind Joe’s kit, played by Adam, Billy Martin, John Medeski, and Joe; longest show to date (3h46m); rescheduled show after blizzard forced cancellation of a scheduled show at Red Rocks; sold out",,,1,4/29/17 @ 1stBank Center
-109,5/5/2017,68,291,292,,293,,,sold out,,,1,5/5/17 @ Joy Theater
-110,5/6/2017,68,294,295,,296,,,sold out,,,1,5/6/17 @ Joy Theater
-111,5/7/2017,68,297,298,,299,,,sold out,,,1,5/7/17 @ Joy Theater
-112,6/3/2017,7,300,,,,,,,Candler Park Music & Food Festival,,1,6/3/17 @ Candler Park Music & Food Festival
-113,7/16/2017,43,301,,,302,,,,Green River Festival,,3,7/16/17 @ Green River Festival
-114,7/21/2017,76,303,304,,305,,,sold out,,,1,7/21/17 @ Capitol Theatre (Port Chester)
-115,7/22/2017,76,306,307,,308,,,sold out,,,1,7/22/17 @ Capitol Theatre (Port Chester)
-116,8/10/2017,88,309,310,,311,,,,Peach Music Festival,,2,8/10/17 @ Peach Music Festival
-117,8/25/2017,3,312,,,313,,,no available recordings,LOCKN',,0,8/25/17 @ LOCKN'
-118,8/26/2017,3,314,,,315,,,,LOCKN',,1,8/26/17 @ LOCKN'
-119,8/31/2017,63,316,317,,318,,,sold out,,,2,8/31/17 @ Red Rocks
+100,3/9/2017,22,265,266,,,,,sold out,,https://i.imgur.com/F5icBat.jpg,1,3/9/17 @ Brooklyn Bowl
+101,3/10/2017,22,267,268,,269,,,sold out,,https://i.imgur.com/NJVhRg1.png,1,3/10/17 @ Brooklyn Bowl
+102,3/11/2017,22,270,271,,272,,,sold out,,https://i.imgur.com/NJVhRg1.png,1,3/11/17 @ Brooklyn Bowl
+103,3/16/2017,22,273,274,,275,,,sold out,,https://i.imgur.com/NJVhRg1.png,1,3/16/17 @ Brooklyn Bowl
+104,3/17/2017,22,276,277,,278,,,sold out,,https://i.imgur.com/NJVhRg1.png,1,3/17/17 @ Brooklyn Bowl
+105,3/18/2017,22,279,280,,281,,282,"before the encore, Shapiro made an announcement honoring Sean Aiken on his last night managing Brooklyn Bowl; sold out",,https://i.imgur.com/NJVhRg1.png,2,3/18/17 @ Brooklyn Bowl
+106,3/31/2017,91,283,,,,,,no available audio recordings; no Marco; Oteil joins towards the end of the set and Dave joins Joe on drums at some points,Fool's Paradise,https://i.imgur.com/jdCZNNj.jpg,1,3/31/17 @ Fool's Paradise
+107,4/28/2017,37,284,285,,286,,,,,https://i.imgur.com/iDCPAbR.png,1,4/28/17 @ Ogden Theatre
+108,4/29/2017,23,287,288,,289,290,,"second set started with percussion jam using instruments created and built by Adam Morford, set up on a riser behind Joe’s kit, played by Adam, Billy Martin, John Medeski, and Joe; longest show to date (3h46m); new venue when blizzard forced cancellation of the scheduled show at Red Rocks (rescheduled for 8/31/17); sold out",,https://i.imgur.com/iDCPAbR.png,1,4/29/17 @ 1stBank Center
+109,5/5/2017,68,291,292,,293,,,sold out,,https://i.imgur.com/Pka7CIK.jpg,1,5/5/17 @ Joy Theater
+110,5/6/2017,68,294,295,,296,,,sold out,,https://i.imgur.com/Pka7CIK.jpg,1,5/6/17 @ Joy Theater
+111,5/7/2017,68,297,298,,299,,,sold out,,https://i.imgur.com/Pka7CIK.jpg,1,5/7/17 @ Joy Theater
+112,6/3/2017,7,300,,,,,,,Candler Park Music & Food Festival,https://i.imgur.com/CV9z58T.jpg,1,6/3/17 @ Candler Park Music & Food Festival
+113,7/16/2017,43,301,,,302,,,,Green River Festival,https://i.imgur.com/ERUOeBL.jpg,3,7/16/17 @ Green River Festival
+114,7/21/2017,76,303,304,,305,,,sold out,,https://i.imgur.com/6ACQRQl.jpg,1,7/21/17 @ Capitol Theatre (Port Chester)
+115,7/22/2017,76,306,307,,308,,,sold out,,https://i.imgur.com/6ACQRQl.jpg,1,7/22/17 @ Capitol Theatre (Port Chester)
+116,8/10/2017,88,309,310,,311,,,,Peach Music Festival,,4,8/10/17 @ Peach Music Festival
+117,8/25/2017,3,312,,,313,,,no available recordings,LOCKN',https://i.imgur.com/eTDulFj.png,0,8/25/17 @ LOCKN'
+118,8/26/2017,3,314,,,315,,,,LOCKN',https://i.imgur.com/eTDulFj.png,1,8/26/17 @ LOCKN'
+119,8/31/2017,63,316,317,,318,,,sold out,,https://i.imgur.com/ocSWvSB.jpg,2,8/31/17 @ Red Rocks
 120,9/2/2017,28,319,,,,,,,North Coast Music Festival,,1,9/2/17 @ North Coast Music Festival
-121,10/5/2017,22,320,321,,322,,,sold out,Fall Ball,,3,10/5/17 @ Brooklyn Bowl
-122,10/6/2017,22,323,324,,325,,,sold out,Fall Ball,,1,10/6/17 @ Brooklyn Bowl
-123,10/7/2017,22,326,327,,328,,,sold out,Fall Ball,,2,10/7/17 @ Brooklyn Bowl
-124,10/12/2017,22,329,330,,331,,,sold out,Fall Ball,,3,10/12/17 @ Brooklyn Bowl
-125,10/13/2017,22,332,333,,334,,,sold out,Fall Ball,,1,10/13/17 @ Brooklyn Bowl
-126,10/14/2017,22,335,336,,337,,,sold out,Fall Ball,,1,10/14/17 @ Brooklyn Bowl
+121,10/5/2017,22,320,321,,322,,,sold out,Fall Ball,https://i.imgur.com/19OjuYU.png,3,10/5/17 @ Brooklyn Bowl
+122,10/6/2017,22,323,324,,325,,,sold out,Fall Ball,https://i.imgur.com/19OjuYU.png,1,10/6/17 @ Brooklyn Bowl
+123,10/7/2017,22,326,327,,328,,,sold out,Fall Ball,https://i.imgur.com/19OjuYU.png,2,10/7/17 @ Brooklyn Bowl
+124,10/12/2017,22,329,330,,331,,,sold out,Fall Ball,https://i.imgur.com/19OjuYU.png,3,10/12/17 @ Brooklyn Bowl
+125,10/13/2017,22,332,333,,334,,,sold out,Fall Ball,https://i.imgur.com/19OjuYU.png,1,10/13/17 @ Brooklyn Bowl
+126,10/14/2017,22,335,336,,337,,,sold out,Fall Ball,https://i.imgur.com/19OjuYU.png,1,10/14/17 @ Brooklyn Bowl
 127,10/26/2017,51,338,339,,,,,"""VIP Pre-Party"" ? no available audio recordings",Hulaween,,1,10/26/17 @ Hulaween
-128,11/9/2017,53,340,341,,342,,,sold out,,,3,11/9/17 @ Teragram Ballroom
-129,11/10/2017,53,343,344,,345,,,,,,3,11/10/17 @ Teragram Ballroom
-130,11/11/2017,71,346,347,,348,349,,,,,3,11/11/17 @ Fox Theater (Oakland)
-131,11/24/2017,74,350,351,,352,,,sold out,,,3,11/24/17 @ The Fillmore (Philadelphia)
-132,11/25/2017,74,353,354,,355,,,sold out,,,2,11/25/17 @ The Fillmore (Philadelphia)
+128,11/9/2017,53,340,341,,342,,,sold out,,https://i.imgur.com/JfFUfZ5.jpg,3,11/9/17 @ Teragram Ballroom
+129,11/10/2017,53,343,344,,345,,,,,https://i.imgur.com/JfFUfZ5.jpg,3,11/10/17 @ Teragram Ballroom
+130,11/11/2017,71,346,347,,348,349,,,,https://i.imgur.com/JfFUfZ5.jpg,3,11/11/17 @ Fox Theater (Oakland)
+131,11/24/2017,74,350,351,,352,,,sold out,,https://i.imgur.com/KkNEJ5h.jpg,3,11/24/17 @ The Fillmore (Philadelphia)
+132,11/25/2017,74,353,354,,355,,,sold out,,https://i.imgur.com/KkNEJ5h.jpg,2,11/25/17 @ The Fillmore (Philadelphia)
 133,12/4/2017,80,356,,,357,,,no available recordings,Dominican Holidaze,,0,12/4/17 @ Dominican Holidaze
-134,12/8/2017,17,358,359,,360,,,,,,2,12/8/17 @ House of Blues (Boston)
-135,12/9/2017,17,361,362,,363,,,,,,2,12/9/17 @ House of Blues (Boston)
-136,1/12/2018,76,364,365,,366,,,Joe's sister's birthday,,,2,1/12/18 @ Capitol Theatre (Port Chester)
-137,1/13/2018,76,367,368,,369,,,,,,2,1/13/18 @ Capitol Theatre (Port Chester)
-138,1/14/2018,76,370,371,,372,,,,,,2,1/14/18 @ Capitol Theatre (Port Chester)
-139,2/15/2018,64,373,374,,375,,,,,,3,2/15/18 @ War Memorial Auditorium
-140,2/16/2018,92,376,377,,378,,,,,,2,2/16/18 @ The Pageant
-141,2/17/2018,29,379,380,,381,,,,,,1,2/17/18 @ Riviera Theatre
-142,2/18/2018,57,382,383,,384,,,,,,4,2/18/18 @ Orpheum Theatre
-143,3/8/2018,22,385,386,,387,,,"""Man Smart (Woman Smarter)"" for International Women's Day; During the encore Joe announced that the previous night he had played with Living Colour (at a Led Zeppelin tribute at Carnegie Hall in New York City)",,,2,3/8/18 @ Brooklyn Bowl
-144,3/9/2018,22,388,389,,390,,,,,,2,3/9/18 @ Brooklyn Bowl
-145,3/10/2018,22,391,392,,393,,,,,,3,3/10/18 @ Brooklyn Bowl
-146,3/15/2018,94,394,,,395,,,,,,3,3/15/18 @ Landmark Theatre (Syracuse)
-147,3/16/2018,1,396,397,,398,,,,,,2,3/16/18 @ Palace Theatre
-148,3/17/2018,77,399,400,,401,,,,,,2,3/17/18 @ State Theater (Portland)
-149,4/21/2018,101,402,403,,,,,,Sweetwater 420 Festival,,1,4/21/18 @ Sweetwater 420 Festival
-150,5/4/2018,67,404,405,,406,,,,,,3,5/4/18 @ Mardi Gras World Ballroom
-151,5/5/2018,67,407,408,,409,,,,,,3,5/5/18 @ Mardi Gras World Ballroom
-152,6/16/2018,42,410,,,,,,,Founders Fest,,1,6/16/18 @ Founders Fest
-153,7/13/2018,2,37,,,38,,,no Marco,Targhee Fest,,1,7/13/18 @ Targhee Fest
-154,7/14/2018,85,411,412,,413,,,no Marco,,,2,7/14/18 @ The Depot
-155,7/15/2018,95,414,,,,,,no Marco,RIDE Festival,,2,7/15/18 @ RIDE Festival
-156,7/19/2018,20,415,416,,417,,,second set featured Liquid Light Projection by Mad Alchemy,BRIC Celebrate Brooklyn! Festival,,2,7/19/18 @ BRIC Celebrate Brooklyn! Festival
-157,7/20/2018,16,418,419,,420,,,,,,1,7/20/18 @ Blue Hills Bank Pavilion
-158,7/21/2018,88,427,428,,,,,,Peach Music Festival,,3,7/21/18 @ Peach Music Festival
+134,12/8/2017,17,358,359,,360,,,,,https://i.imgur.com/LfdJDns.jpg,2,12/8/17 @ House of Blues (Boston)
+135,12/9/2017,17,361,362,,363,,,,,https://i.imgur.com/LfdJDns.jpg,2,12/9/17 @ House of Blues (Boston)
+136,1/12/2018,76,364,365,,366,,,Joe's sister's birthday,,https://i.imgur.com/uJrV63N.png,2,1/12/18 @ Capitol Theatre (Port Chester)
+137,1/13/2018,76,367,368,,369,,,,,https://i.imgur.com/uJrV63N.png,2,1/13/18 @ Capitol Theatre (Port Chester)
+138,1/14/2018,76,370,371,,372,,,,,https://i.imgur.com/uJrV63N.png,2,1/14/18 @ Capitol Theatre (Port Chester)
+139,2/15/2018,64,373,374,,375,,,,,https://i.imgur.com/6PfKYRU.jpg,3,2/15/18 @ War Memorial Auditorium
+140,2/16/2018,92,376,377,,378,,,,,https://i.imgur.com/6PfKYRU.jpg,2,2/16/18 @ The Pageant
+141,2/17/2018,29,379,380,,381,,,,,https://i.imgur.com/6PfKYRU.jpg,3,2/17/18 @ Riviera Theatre
+142,2/18/2018,57,382,383,,384,,,,,https://i.imgur.com/6PfKYRU.jpg,4,2/18/18 @ Orpheum Theatre
+143,3/8/2018,22,385,386,,387,,,during the encore Joe announced that the previous night he had played with Living Colour (at a Led Zeppelin tribute at Carnegie Hall in New York City),,https://i.imgur.com/w5CzxuZ.jpg,2,3/8/18 @ Brooklyn Bowl
+144,3/9/2018,22,388,389,,390,,,,,https://i.imgur.com/w5CzxuZ.jpg,2,3/9/18 @ Brooklyn Bowl
+145,3/10/2018,22,391,392,,393,,,,,https://i.imgur.com/w5CzxuZ.jpg,3,3/10/18 @ Brooklyn Bowl
+146,3/15/2018,94,394,,,395,,,,,https://i.imgur.com/klcrbTr.jpg,3,3/15/18 @ Landmark Theatre (Syracuse)
+147,3/16/2018,1,396,397,,398,,,,,https://i.imgur.com/klcrbTr.jpg,2,3/16/18 @ Palace Theatre
+148,3/17/2018,77,399,400,,401,,,,,https://i.imgur.com/klcrbTr.jpg,2,3/17/18 @ State Theater (Portland)
+149,4/21/2018,101,402,403,,,,,,Sweetwater 420 Festival,https://i.imgur.com/pzsSD2T.jpg,1,4/21/18 @ Sweetwater 420 Festival
+150,5/4/2018,67,404,405,,406,,,,,https://i.imgur.com/kvzOyoc.jpg,3,5/4/18 @ Mardi Gras World Ballroom
+151,5/5/2018,67,407,408,,409,,,,,https://i.imgur.com/kvzOyoc.jpg,3,5/5/18 @ Mardi Gras World Ballroom
+152,6/16/2018,42,410,,,,,,,Founders Fest,https://i.imgur.com/nZBXMkE.jpg,1,6/16/18 @ Founders Fest
+153,7/13/2018,2,37,,,38,,,no Marco,Targhee Fest,https://i.imgur.com/nbmayID.jpg,1,7/13/18 @ Targhee Fest
+154,7/14/2018,85,411,412,,413,,,no Marco,,https://i.imgur.com/M8geUUw.jpg,2,7/14/18 @ The Depot
+155,7/15/2018,95,414,,,,,,no Marco,RIDE Festival,https://i.imgur.com/ZcwILjq.jpg,2,7/15/18 @ RIDE Festival
+156,7/19/2018,20,415,416,,417,,,second set featured Liquid Light Projection by Mad Alchemy,BRIC Celebrate Brooklyn! Festival,https://i.imgur.com/1dS5RcH.jpg,2,7/19/18 @ BRIC Celebrate Brooklyn! Festival
+157,7/20/2018,16,418,419,,420,,,,,https://i.imgur.com/1dS5RcH.jpg,1,7/20/18 @ Blue Hills Bank Pavilion
+158,7/21/2018,88,427,428,,,,,,Peach Music Festival,,4,7/21/18 @ Peach Music Festival
 159,8/2/2018,96,429,430,,,,,,Werk Out Music & Arts Festival,,1,8/2/18 @ Werk Out Music & Arts Festival
-160,8/10/2018,89,434,435,,436,,,,,,3,8/10/18 @ The Showbox
-161,8/11/2018,40,437,438,,439,,,,,,2,8/11/18 @ McDonald Theatre
-162,8/12/2018,10,457,458,,459,,,,,,3,8/12/18 @ Athletic Club of Bend
-163,8/16/2018,63,460,461,,462,,,,,,3,8/16/18 @ Red Rocks
-164,8/23/2018,3,463,,,,,,,LOCKN',,2,8/23/18 @ LOCKN'
-165,8/24/2018,3,464,,,,,,,LOCKN',,1,8/24/18 @ LOCKN'
-166,9/8/2018,9,465,,,,,,,Waterloo Music Festival,,2,9/8/18 @ Waterloo Music Festival
-167,10/18/2018,97,466,467,,468,,,,,,1,10/18/18 @ Tower Theater
-168,10/19/2018,97,469,470,,471,,,,,,2,10/19/18 @ Tower Theater
-169,10/20/2018,98,472,473,,474,,,,,,3,10/20/18 @ The Anthem
-170,10/25/2018,51,475,476,,477,,,pre-party for Hulaween,Hulaween,,1,10/25/18 @ Hulaween
-171,11/8/2018,52,478,479,,480,,,,,,1,11/8/18 @ The Wiltern
-172,11/9/2018,52,481,482,,483,,,John Mayer sat in for second set and encore,,,6,11/9/18 @ The Wiltern
-173,11/10/2018,71,484,485,,486,,,,,,1,11/10/18 @ Fox Theater (Oakland)
-174,11/11/2018,71,487,488,,489,,,,,,2,11/11/18 @ Fox Theater (Oakland)
-175,1/18/2019,76,490,491,,492,,,sold out; Tyrone Cotton joined for encore,,,3,1/18/19 @ Capitol Theatre (Port Chester)
-176,1/19/2019,76,493,494,,495,,,sold out,,,2,1/19/19 @ Capitol Theatre (Port Chester)
-177,1/20/2019,76,496,497,,498,,,"sold out; After WBYG, Joe (?) said Thank You to Aaron Gittleman (JRAD's monitors engineer), may have been his last show",,,2,1/20/19 @ Capitol Theatre (Port Chester)
-178,2/14/2019,6,499,500,,501,,,sold out,,,4,2/14/19 @ Tabernacle
-179,2/15/2019,92,502,503,,504,,,,,,2,2/15/19 @ The Pageant
-180,2/16/2019,92,505,506,,507,,,,,,1,2/16/19 @ The Pageant
-181,2/17/2019,56,508,509,,510,,,,,,4,2/17/19 @ The Sylvee
-182,3/1/2019,1,511,512,,513,,,,,,3,3/1/19 @ Palace Theatre
-183,3/2/2019,77,514,515,,516,,,,,,3,3/2/19 @ State Theater (Portland)
-184,3/3/2019,77,517,518,,519,,,"First letters of the song titles in the first set spells ""DAVIDK"" — Joe said Happy Birthday to the late David Kay at the end of the show.",,,3,3/3/19 @ State Theater (Portland)
-185,3/13/2019,48,520,521,,522,,,sold out,,,4,3/13/19 @ Penn's Peak
-186,3/14/2019,66,523,524,,525,,,sold out,,,2,3/14/19 @ College Street Music Hall
-187,3/15/2019,62,526,527,,528,,,"sold out; Before the encore, Joe dedicated Box of Rain to Phil Lesh on his 79th birthday",,,4,3/15/19 @ The Wellmont Theater
-188,3/16/2019,33,529,530,,531,,,sold out,,,3,3/16/19 @ Masonic Cleveland Auditorium
-189,4/19/2019,101,532,,,,,,,Sweetwater 420 Festival,,2,4/19/19 @ Sweetwater 420 Festival
-190,4/26/2019,67,533,534,,535,,,Jeff Chimenti sat in for a couple songs at the end of each set & encore,,,2,4/26/19 @ Mardi Gras World Ballroom
-191,4/27/2019,67,536,537,,538,,,,,,2,4/27/19 @ Mardi Gras World Ballroom
-192,5/31/2019,39,539,540,,541,,,,,,4,5/31/19 @ Cuthbert Amphitheater
-193,6/1/2019,83,542,543,,544,,,,,,3,6/1/19 @ Marymoor Amphitheater
-194,6/2/2019,14,545,546,,547,,,,,,2,6/2/19 @ KettleHouse Amphitheater
-195,6/14/2019,11,548,549,,,,,,Mountain Jam Festival,,1,6/14/19 @ Mountain Jam Festival
-196,6/15/2019,58,550,,,,,,longest single set? started at 1am June 16th; at That Tent,Bonnaroo Music & Arts Festival,,2,6/15/19 @ Bonnaroo Music & Arts Festival
-197,7/11/2019,30,551,552,,553,,,,,,5,7/11/19 @ Huntington Bank Pavilion at Northerly Island
-198,7/13/2019,59,554,,,,,,Style Stage,Levitate Music Festival,,2,7/13/19 @ Levitate Music Festival
-199,7/27/2019,88,555,,,556,,,"""Almost"" Joe Russo's Almost Dead — Marco announced that Joe and his wife had their second child (Mila) three weeks early, and in his stead both Evan Roque (Joe's drum tech) and Ben Perowsky (part of Joe's BOYFRIEND project) would be sitting in on drums",Peach Music Festival,,4,7/27/19 @ Peach Music Festival
+160,8/10/2018,89,434,435,,436,,,,,https://i.imgur.com/TKsq6dJ.png,3,8/10/18 @ The Showbox
+161,8/11/2018,40,437,438,,439,,,,,https://i.imgur.com/TKsq6dJ.png,2,8/11/18 @ McDonald Theatre
+162,8/12/2018,10,457,458,,459,,,,,https://i.imgur.com/TKsq6dJ.png,3,8/12/18 @ Athletic Club of Bend
+163,8/16/2018,63,460,461,,462,,,,,https://i.imgur.com/FMo5PNm.jpg,3,8/16/18 @ Red Rocks
+164,8/23/2018,3,463,,,,,,,LOCKN',https://i.imgur.com/DrNB5So.jpg,2,8/23/18 @ LOCKN'
+165,8/24/2018,3,464,,,,,,,LOCKN',https://i.imgur.com/DrNB5So.jpg,1,8/24/18 @ LOCKN'
+166,9/8/2018,9,465,,,,,,,Waterloo Music Festival,https://i.imgur.com/uAuj7Gx.png,2,9/8/18 @ Waterloo Music Festival
+167,10/18/2018,97,466,467,,468,,,,,https://i.imgur.com/3ET3TlG.png,1,10/18/18 @ Tower Theater
+168,10/19/2018,97,469,470,,471,,,,,https://i.imgur.com/3ET3TlG.png,2,10/19/18 @ Tower Theater
+169,10/20/2018,98,472,473,,474,,,,,https://i.imgur.com/3ET3TlG.png,3,10/20/18 @ The Anthem
+170,10/25/2018,51,475,476,,477,,,pre-party for Hulaween; sold out,Hulaween,https://i.imgur.com/eWwOJeP.jpg,1,10/25/18 @ Hulaween
+171,11/8/2018,52,478,479,,480,,,,,https://i.imgur.com/nCUh9JE.jpg,2,11/8/18 @ The Wiltern
+172,11/9/2018,52,481,482,,483,,,John Mayer sat in for second set and encore,,https://i.imgur.com/nCUh9JE.jpg,6,11/9/18 @ The Wiltern
+173,11/10/2018,71,484,485,,486,,,,,https://i.imgur.com/nCUh9JE.jpg,1,11/10/18 @ Fox Theater (Oakland)
+174,11/11/2018,71,487,488,,489,,,,,https://i.imgur.com/nCUh9JE.jpg,2,11/11/18 @ Fox Theater (Oakland)
+175,1/18/2019,76,490,491,,492,,,sold out; Tyrone Cotton joined for encore,,https://i.imgur.com/8mbAC0s.jpg,3,1/18/19 @ Capitol Theatre (Port Chester)
+176,1/19/2019,76,493,494,,495,,,sold out,,https://i.imgur.com/8mbAC0s.jpg,2,1/19/19 @ Capitol Theatre (Port Chester)
+177,1/20/2019,76,496,497,,498,,,"sold out; After WBYG, Joe (?) said Thank You to Aaron Gittleman (JRAD's monitors engineer), may have been his last show",,https://i.imgur.com/8mbAC0s.jpg,2,1/20/19 @ Capitol Theatre (Port Chester)
+178,2/14/2019,6,499,500,,501,,,sold out,,https://i.imgur.com/1JBu5cD.jpg,4,2/14/19 @ Tabernacle
+179,2/15/2019,92,502,503,,504,,,,,https://i.imgur.com/1JBu5cD.jpg,2,2/15/19 @ The Pageant
+180,2/16/2019,92,505,506,,507,,,,,https://i.imgur.com/1JBu5cD.jpg,1,2/16/19 @ The Pageant
+181,2/17/2019,56,508,509,,510,,,,,https://i.imgur.com/1JBu5cD.jpg https://www.reddit.com/r/JRADs/comments/arps0m/live_thread_the_sylvee_madison_wi_21719/,4,2/17/19 @ The Sylvee
+182,3/1/2019,1,511,512,,513,,,,,https://i.imgur.com/EEakDNY.jpg,3,3/1/19 @ Palace Theatre
+183,3/2/2019,77,514,515,,516,,,,,https://i.imgur.com/EEakDNY.jpg,3,3/2/19 @ State Theater (Portland)
+184,3/3/2019,77,517,518,,519,,,"First letters of the song titles in the first set spells ""DAVIDK"" — Joe said Happy Birthday to the late David Kay at the end of the show.",,https://i.imgur.com/EEakDNY.jpg,3,3/3/19 @ State Theater (Portland)
+185,3/13/2019,48,520,521,,522,,,sold out,,https://i.imgur.com/BEDuVoF.png,4,3/13/19 @ Penn's Peak
+186,3/14/2019,66,523,524,,525,,,sold out,,https://i.imgur.com/BEDuVoF.png,2,3/14/19 @ College Street Music Hall
+187,3/15/2019,62,526,527,,528,,,"sold out; Before the encore, Joe dedicated Box of Rain to Phil Lesh on his 79th birthday",,https://i.imgur.com/BEDuVoF.png,4,3/15/19 @ The Wellmont Theater
+188,3/16/2019,33,529,530,,531,,,sold out,,https://i.imgur.com/BEDuVoF.png,3,3/16/19 @ Masonic Cleveland Auditorium
+189,4/19/2019,101,532,,,,,,,Sweetwater 420 Festival,https://i.imgur.com/tRZ2YA9.jpg,2,4/19/19 @ Sweetwater 420 Festival
+190,4/26/2019,67,533,534,,535,,,Jeff Chimenti sat in for a couple songs at the end of each set & encore,,https://i.imgur.com/EFCXJul.jpg,2,4/26/19 @ Mardi Gras World Ballroom
+191,4/27/2019,67,536,537,,538,,,,,https://i.imgur.com/EFCXJul.jpg,2,4/27/19 @ Mardi Gras World Ballroom
+192,5/31/2019,39,539,540,,541,,,,,https://i.imgur.com/BYaE0tS.png,4,5/31/19 @ Cuthbert Amphitheater
+193,6/1/2019,83,542,543,,544,,,,,https://i.imgur.com/BYaE0tS.png,3,6/1/19 @ Marymoor Amphitheater
+194,6/2/2019,14,545,546,,547,,,,,https://i.imgur.com/BYaE0tS.png,2,6/2/19 @ KettleHouse Amphitheater
+195,6/14/2019,11,548,549,,,,,,Mountain Jam Festival,,2,6/14/19 @ Mountain Jam Festival
+196,6/15/2019,58,550,,,,,,longest single set? started at 1am June 16th; at That Tent,Bonnaroo Music & Arts Festival,https://i.imgur.com/3vOE1mR.jpg,2,6/15/19 @ Bonnaroo Music & Arts Festival
+197,7/11/2019,30,551,552,,553,,,,,https://i.imgur.com/Ul3qStl.jpg,5,7/11/19 @ Huntington Bank Pavilion at Northerly Island
+198,7/13/2019,59,554,,,,,,Style Stage,Levitate Music Festival,https://i.imgur.com/3rZihtB.jpg,2,7/13/19 @ Levitate Music Festival
+199,7/27/2019,88,555,,,556,,,"""Almost"" Joe Russo's Almost Dead — Marco announced that Joe and his wife had their second child (Mila) three weeks early, and in his stead both Evan Roque (Joe's drum tech) and Ben Perowsky (part of Joe's BOYFRIEND project) would be sitting in on drums",Peach Music Festival,,5,7/27/19 @ Peach Music Festival
 200,7/28/2019,25,557,558,,559,,,"""Almost"" Joe Russo's Almost Dead — Marco announced that Joe and his wife had their second child (Mila) three weeks early, and in his stead both Evan Roque (Joe's drum tech) and John Kimock (Mike Gordon Band, etc) would be sitting in on drums",Lake Champlain Maritime Festival,,1,7/28/19 @ Lake Champlain Maritime Festival
-201,8/16/2019,54,560,561,,562,,,,,,3,8/16/19 @ Greek Theatre (Los Angeles)
-202,8/17/2019,90,563,564,,565,,,,,https://i.imgur.com/Vqz6cfw.png,3,8/17/19 @ Frost Ampitheater
-203,8/22/2019,3,566,567,,568,,,"""There were some technical difficulties as a result of the rain, including the band's recording getting started late"" —Costello/Roberts?",LOCKN',,1,8/22/19 @ LOCKN'
-204,8/29/2019,63,569,570,,571,,,sold out,,,7,8/29/19 @ Red Rocks
-205,9/12/2019,36,572,573,,574,,,,,,2,9/12/19 @ House of Blues (Dallas)
-206,9/13/2019,44,454,455,,456,,,,,,3,9/13/19 @ House of Blues (Houston)
-207,9/14/2019,8,451,452,,453,,,,Austin City Limits Live,,1,9/14/19 @ Austin City Limits Live
-208,9/26/2019,73,448,449,,450,,,"before the encore, a trophy was presented to Stevie Weavie",,,3,9/26/19 @ Metropolitan Opera House
-209,9/27/2019,73,445,446,,447,,,,,,2,9/27/19 @ Metropolitan Opera House
-210,9/28/2019,98,442,443,,444,,,,,,3,9/28/19 @ The Anthem
-211,10/27/2019,51,440,441,,,,,Patch Stage,Hulaween,,1,10/27/19 @ Hulaween
-212,11/25/2019,22,431,432,,433,,583,"""Make Democracy RAD Again! A HeadCount Benefit with Joe Russo's Almost Dead: Fans will be able to pick five songs from a list of 160 that will be tallied and then built into a full, two set show by Joe""",,https://www.reddit.com/r/JRADs/comments/e1jnun/live_thread_brooklyn_bowl_brooklyn_ny_112519/,5,11/25/19 @ Brooklyn Bowl
-213,2/21/2020,76,424,425,,426,,,,,,5,2/21/20 @ Capitol Theatre (Port Chester)
-214,2/22/2020,76,421,422,,423,,580,surprise soundcheck with Rock & Roll Playhouse,,,3,2/22/20 @ Capitol Theatre (Port Chester)
-215,2/23/2020,76,103,104,,105,,,Chris Harford & Jimmy Fallon joined for the encore,,,7,2/23/20 @ Capitol Theatre (Port Chester)
+201,8/16/2019,54,560,561,,562,,,,,https://www.reddit.com/r/JRADs/comments/crbiis/live_thread_greek_theatre_los_angeles_ca_81619/,3,8/16/19 @ Greek Theatre (Los Angeles)
+202,8/17/2019,90,563,564,,565,,,,,https://i.imgur.com/Vqz6cfw.png,4,8/17/19 @ Frost Ampitheater
+203,8/22/2019,3,566,567,,568,,,"""There were some technical difficulties as a result of the rain, including the band's recording getting started late"" —Costello/Roberts?",LOCKN',https://i.imgur.com/xZxR9aN.jpg,1,8/22/19 @ LOCKN'
+204,8/29/2019,63,569,570,,571,,,sold out,,https://i.imgur.com/KmpvE2n.jpg,7,8/29/19 @ Red Rocks
+205,9/12/2019,36,572,573,,574,,,,,https://i.imgur.com/XrCKJL3.jpg,2,9/12/19 @ House of Blues (Dallas)
+206,9/13/2019,44,454,455,,456,,,,,https://i.imgur.com/XrCKJL3.jpg,3,9/13/19 @ House of Blues (Houston)
+207,9/14/2019,8,451,452,,453,,,,Austin City Limits Live,https://i.imgur.com/XrCKJL3.jpg,2,9/14/19 @ Austin City Limits Live
+208,9/26/2019,73,448,449,,450,,,"before the encore, a trophy was presented to Stevie Weavie",,https://i.imgur.com/lIiL8Kh.jpg,3,9/26/19 @ Metropolitan Opera House
+209,9/27/2019,73,445,446,,447,,,,,https://i.imgur.com/lIiL8Kh.jpg,2,9/27/19 @ Metropolitan Opera House
+210,9/28/2019,98,442,443,,444,,,,,https://i.imgur.com/lIiL8Kh.jpg,3,9/28/19 @ The Anthem
+211,10/27/2019,51,440,441,,,,,Patch Stage,Hulaween,https://i.imgur.com/EiXdV2s.jpg,1,10/27/19 @ Hulaween
+212,11/25/2019,22,431,432,,433,,583,"""Make Democracy RAD Again! A HeadCount Benefit with Joe Russo's Almost Dead: Fans will be able to pick five songs from a list of 160 that will be tallied and then built into a full, two set show by Joe""",,https://i.imgur.com/Rs3Zr8j.jpg https://www.reddit.com/r/JRADs/comments/e1jnun/live_thread_brooklyn_bowl_brooklyn_ny_112519/,5,11/25/19 @ Brooklyn Bowl
+213,2/21/2020,76,424,425,,426,,,,,https://i.imgur.com/VQXzNwA.png,5,2/21/20 @ Capitol Theatre (Port Chester)
+214,2/22/2020,76,421,422,,423,,580,surprise soundcheck with Rock & Roll Playhouse,,https://i.imgur.com/VQXzNwA.png,3,2/22/20 @ Capitol Theatre (Port Chester)
+215,2/23/2020,76,103,104,,105,,,Chris Harford & Jimmy Fallon joined for the encore,,https://i.imgur.com/VQXzNwA.png,7,2/23/20 @ Capitol Theatre (Port Chester)
 216,10/1/2020,76,575,576,,,,,"livestreamed; no audience ... ""The October 1 and 2 shows will stream for FREE at 8:00PM ET on Twitch.tv/therelixchannel, with in-stream donation options to support HeadCount"" ... After set 1, Joe mentioned that he hadn't seen any of the other members since their last show, more than 8 months prior",,,1,10/1/20 @ Capitol Theatre (Port Chester)
 217,10/2/2020,76,577,578,,,,,"livestreamed; no audience ... ""The October 1 and 2 shows will stream for FREE at 8:00PM ET on Twitch.tv/therelixchannel, with in-stream donation options to support HeadCount""",,,1,10/2/20 @ Capitol Theatre (Port Chester)
 218,10/3/2020,76,579,,,,,,"livestreamed; no audience ... ""the Saturday, October 3 livestream featuring Joe Russo's Almost Dead will offer the public a 'donate-what-you-can' option to Benefit HeadCount. The minimum will be $1"" ""FREE for LOCKN’ 2021 ticket purchasers""",,,0,10/3/20 @ Capitol Theatre (Port Chester)
-219,5/28/2021,102,584,585,,586,,,"first show with a crowd in 15 months; rain during the show; before the encore Joe said they were doing a ""mulligan"" of the encore from their last in-person show and welcomed Chris Harford; sold out",,,6,5/28/21 @ Westville Music Bowl
-220,5/29/2021,102,587,588,,589,,,light (?) rain during the show; sold out,,,3,5/29/21 @ Westville Music Bowl
-221,5/30/2021,102,590,591,,592,,,rain during the show; sold out,,,3,5/30/21 @ Westville Music Bowl
+219,5/28/2021,102,584,585,,586,,,"first show with a crowd in 15 months; rain during the show; before the encore Joe said they were doing a ""mulligan"" of the encore from their last in-person show and welcomed Chris Harford; sold out",,https://i.imgur.com/iKYhASd.jpg,6,5/28/21 @ Westville Music Bowl
+220,5/29/2021,102,587,588,,589,,,light (?) rain during the show; sold out,,https://i.imgur.com/iKYhASd.jpg,3,5/29/21 @ Westville Music Bowl
+221,5/30/2021,102,590,591,,592,,,rain during the show; sold out,,https://i.imgur.com/iKYhASd.jpg,3,5/30/21 @ Westville Music Bowl
