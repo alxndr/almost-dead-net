@@ -192,17 +192,19 @@ export default function Show({
     <Set isEncore={true} which={which} show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} key={`encore${which}`} />
   ), [])
 
+  const linksArray = links.split(/\s+/)
+
   const guestsDescription = showGuests.length
     ? `with ${showGuests.map((guest) => guest.name).join(' and ')}`
     : ''
   const seoDescription = `Setlist and recordings of Joe Russo's Almost Dead ${guestsDescription} ${date} at ${event ? `${event}, ` : ``}${venue.name} (${venue.location}) including song segues, teases, and show notes`
-  const imageSrc = find(isImage)(links.split(/\s+/))
+  const imageSrcs = filter(isImage)(linksArray)
 
   return <Layout className="showpage">
     <SEO
       title={`JRAD ${tagline}`}
       description={seoDescription}
-      image={imageSrc}
+      image={imageSrcs.length && imageSrcs[0]}
     />
 
     <h1 className="showpage__pagetitle">
@@ -220,14 +222,15 @@ export default function Show({
       </span>}
     </h1>
     <section className="showpage__setlist">
-      {imageSrc && <div className="showpage__leadimage">
-        <img src={imageSrc} alt="a poster or photograph from the show" />
-      </div>}
       {notes && <div className="showpage__notes">{notes}</div>}
       <Guests guests={showGuests} />
       {show.soundcheck && <Set which="soundcheck" show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} />}
       {setlist.length ? setlist : <p>Uh oh, no sets found.</p>}
       {encores.length && encores}
+      {imageSrcs.length
+        ? <div className="showpage__leadimage">{imageSrcs.map((imageSrc) => <img src={imageSrc} alt="a poster or photograph from the show" />)}</div>
+        : null
+      }
     </section>
     <ShowRecordings recordings={showRecordings} date={date} />
     <nav className="showpage__nav">
