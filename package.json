@@ -41,7 +41,7 @@
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^1.7.1",
     "gatsby-plugin-loadable-components-ssr": "^3.0.0",
-    "gatsby-plugin-manifest": "^3.7.0",
+    "gatsby-plugin-manifest": "^3.7.1",
     "gatsby-plugin-react-helmet": "^4.7.0",
     "gatsby-source-filesystem": "^3.7.0",
     "gatsby-transformer-csv": "^3.7.0",
