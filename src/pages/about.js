@@ -26,8 +26,9 @@ export default function About() {
     <hr />
     <p>In Memory of <Link to="/show/184">David Kay</Link>, creator of the <a href="https://docs.google.com/spreadsheets/d/1qxTKvLkiQgHycuC530OU3j-O5ggijHelXRXVjTiZLis/htmlview" target="_blank" rel="noopener noreferrer">JRAD-base spreadsheet</a>.</p>
     <p>Thanks to everyone on <a href="https://www.reddit.com/r/JRADs/" target="_blank" rel="noopener noreferrer">the JRADs subreddit</a> for participating in the "setlist threads" and calling teases!</p>
-    <hr />
+    <p>Thanks to Peter Costello, Eric McRoberts, and Aaron Gittleman for all your work on the audio at the shows themselves, and for the matrix recordings — they sound amazing!</p>
     <p>Special Thanks to <a href="https://archive.org/" target="_blank" rel="noopener noreferrer">the Internet Archive</a> for preserving human knowledge and art, and the Taper Community for sharing their experiences!</p>
+    <hr />
     <p>Thanks to <a href="http://www.deaddisc.com" target="_blank" rel="noopener noreferrer">the GD Family Discography</a> for detailed information about the songs played by the Grateful Dead.</p>
     <p>Thanks to Aaron Donovan for the walk-through of the parts of <a href="https://www.whitegum.com/aaroness.htm" target="_blank" rel="noopener noreferrer">Terrapin Suite</a>.</p>
     <hr />
