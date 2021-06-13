@@ -244,7 +244,7 @@ id,within,performance_id,song_name,notes,by,song_id
 364,Terrapin Station,1698,Reuben and Cherise,,,185
 365,Terrapin Station,1698,Eleanor Rigby,,,341
 53,Chuckles,1798,Tequila,,,222
-54,Black Throated Wind,1827,Royals,,,191
+54,Black Throated Wind,1827,Royals,,MB/Bogie,191
 366,Easy Wind,1836,Black Throated Wind,"""wind"" tease",,25
 367,Easy Wind,1836,Vampire Blues,,,257
 368,Eyes of the World,1837,What's Going On,,,342
@@ -663,3 +663,30 @@ id,within,performance_id,song_name,notes,by,song_id
 666,Loser,1887,Reuben and Cherise,,,185
 667,I Know You Rider,1891,National Anthem,jam,,161
 668,I Know You Rider,1891,Morning Dew,,TH,151
+669,Dancing in the Streets,1116,Cupid,,,384
+670,Shakedown Street,1121,Dancing in the Streets,,,57
+671,Althea,1123,All of My Love,,MB,362
+672,Not Fade Away,1124,On the Road Again,,TH,171
+673,Not Fade Away,1124,Fat Mama,,MB/TH,385
+674,Help on the Way,1424,Shakedown Street,head-fake?,,196
+675,The Wheel,1428,Head Over Heels,,MB,316
+676,Eyes of the World,1439,Throwing Stones,,,245
+677,Cumberland Blues,1443,Hoedown,,MB,367
+678,Here Comes Sunshine,1444,Material Girl,,MB,386
+679,Here Comes Sunshine,1444,China Cat Sunflower,,TH,44
+680,The Wheel,1448,Dear Prudence,,MB,280
+681,The Wheel,1448,Everything in Its Right Place,,MB,387
+682,Morning Dew,1449,Playing in the Band,,,176
+683,Eyes of the World,1456,Playing in the Band,,TH,176
+684,We Bid You Goodnight,1459,Cold Rain and Snow,,TH,49
+685,Tennessee Jed,1553,Becky,jam,,16
+686,The Other One,1820,Born Cross Eyed,,TH,27
+687,Dark Star,1821,Born Cross Eyed,,TH,27
+688,St. Stephen,1822,Born Cross Eyed,,TH,27
+689,Truckin',1832,Born Cross Eyed,,TH,27
+690,Shakedown Street,1825,Don't Stop 'Til You Get Enough,,MB,339
+691,Shakedown Street,1825,Dark Star,,TH,59
+692,Shakedown Street,1825,Feel Like a Stranger,,,74
+693,Wharf Rat,1831,Tennessee Jed,,TH,221
+694,Alligator,2066,Mr. Charlie,,,154
+695,Alligator,1845,Fame,chorus/jam,,72
