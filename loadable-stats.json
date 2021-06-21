@@ -1,16 +1,16 @@
 {
-  "hash": "63457936f6ec31348bf9",
+  "hash": "13f2f92f233fefc4bde2",
   "publicPath": "/",
-  "outputPath": "/Users/alxndr/workspace/almost-dead-net/public",
+  "outputPath": "/Users/xander/workspace/almost-dead-net/public",
   "assetsByChunkName": {
     "polyfill": [
       "polyfill-a2d25affeded1b147d38.js"
     ],
     "app": [
-      "app-5900a12def0edbf8d4fd.js"
+      "app-2eaabc84c87459922922.js"
     ],
     "webpack-runtime": [
-      "webpack-runtime-f31f7fa86c65c8fe6de5.js"
+      "webpack-runtime-e269a6bec1c424009047.js"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-c1a712730d8d7ebc73c6.js"
@@ -60,7 +60,7 @@
       "type": "assets by status",
       "cached": true,
       "filteredChildren": 21,
-      "size": 685474
+      "size": 683999
     }
   ],
   "namedChunkGroups": {
@@ -72,7 +72,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-f31f7fa86c65c8fe6de5.js"
+          "name": "webpack-runtime-e269a6bec1c424009047.js"
         },
         {
           "name": "polyfill-a2d25affeded1b147d38.js"
@@ -94,13 +94,13 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-f31f7fa86c65c8fe6de5.js"
+          "name": "webpack-runtime-e269a6bec1c424009047.js"
         },
         {
           "name": "framework-0068a62ee68a6c63e163.js"
         },
         {
-          "name": "app-5900a12def0edbf8d4fd.js"
+          "name": "app-2eaabc84c87459922922.js"
         }
       ],
       "filteredAssets": 0,
@@ -376,13 +376,13 @@
     {
       "id": 143,
       "files": [
-        "app-5900a12def0edbf8d4fd.js"
+        "app-2eaabc84c87459922922.js"
       ]
     },
     {
       "id": 658,
       "files": [
-        "webpack-runtime-f31f7fa86c65c8fe6de5.js"
+        "webpack-runtime-e269a6bec1c424009047.js"
       ]
     },
     {
@@ -392,9 +392,9 @@
       ]
     },
     {
-      "id": 470,
+      "id": 776,
       "files": [
-        "470-796e00a04a8b49f0404a.js"
+        "776-6233de6dd8933b5183f9.js"
       ]
     },
     {
