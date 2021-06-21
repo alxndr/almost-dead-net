@@ -257,7 +257,6 @@ id,within,performance_id,song_name,notes,by,song_id
 472,Ramble On Rose,2261,Dark Star,,TH,59
 470,Bird Song,2264,Dark Star,,band,59
 471,Truckin',2265,Bird Song,,MB,22
-475,Bird Song,2266,Truckin',,,251
 473,Truckin',2267,Bird Song,,band,22
 474,Playing in the Band,2269,Feel Like a Stranger,,band,74
 412,Jam,2407,A Love Supreme,,TH or SM,323
@@ -690,3 +689,16 @@ id,within,performance_id,song_name,notes,by,song_id
 693,Wharf Rat,1831,Tennessee Jed,,TH,221
 694,Alligator,2066,Mr. Charlie,,,154
 695,Alligator,1845,Fame,chorus/jam,,72
+696,Mississippi Halfstep Uptown Toodleloo,2268,Playing in the Band,,TH?/band,176
+697,Greatest Story Ever Told,3700,Dear Prudence,jam,,280
+698,Viola Lee Blues,3715,They Love Each Other,,,242
+699,The Other One,3707,Part II: Let It Grow,,,277
+700,Cumberland Blues,3712,Whipping Post,,,388
+701,Viola Lee Blues,3715,Cumberland Blues,,,55
+702,Viola Lee Blues,3715,They Love Each Other,,,242
+703,Here Comes Sunshine,3717,Shine On You Crazy Diamond,,,389
+704,Here Comes Sunshine,3717,My Brother Esau,,,156
+705,Man Smart (Woman Smarter),3720,Black Throated Wind,,,25
+706,In Memory of Elizabeth Reed,3721,Slipknot!,,,201
+707,Cats Under the Stars,3738,Shortnin' Bread,,,315
+708,Feel Like a Stranger,3732,Dancing in the Streets,jam,,57
