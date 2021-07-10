@@ -56,7 +56,6 @@ section.showpage__recordings ul {
 
 .showpage__nav {
   display: flex;
-  order: -1; /* flex order to the beginning */
   width: 100%;
   justify-content: space-between;
   margin-bottom: 0.5em;

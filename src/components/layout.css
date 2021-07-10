@@ -54,7 +54,6 @@ code {
 
 .App__banner {
   display: block;
-  text-align: right;
   opacity: 0.5;
   border-radius: 0 0 0 100%;
 }
