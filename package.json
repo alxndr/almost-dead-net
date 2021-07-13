@@ -37,7 +37,7 @@
     "classnames": "^2.3.1",
     "dompurify": "^2.2.9",
     "gatsby": "^3.7.0",
-    "gatsby-plugin-gatsby-cloud": "^2.7.1",
+    "gatsby-plugin-gatsby-cloud": "^2.9.1",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^1.7.1",
     "gatsby-plugin-loadable-components-ssr": "^3.0.0",
