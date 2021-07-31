@@ -9,13 +9,13 @@ id,name,shows,instrument
 29,Chris Robinson,155,guitar? / vocals
 18,Cochema Gastelum,94,bari sax
 13,Eric Biondo,69,trumpet
-26,Eric D Johnson,128:201,keys / vocals; guitar / vocals
+26,Eric D Johnson,128:201:226,keys / vocals; guitar / vocals
 27,Eric Deutsch,153:154:155,keys
 34,Evan Roque,199:200:201:225,drums
 33,Glenn Kotche,197,drums
 15,Jeff Chimenti,71:72:106:113:190,keys
 23,Jim James,117,vocals
-4,Jimmy Fallon,215,vocals
+4,Jimmy Fallon,215,"""vocals"""
 5,John Altieri,59:224,tuba
 36,John Kimock,200,drums
 16,John Mayer,82:125:172,guitar / vocals
