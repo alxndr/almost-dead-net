@@ -3654,7 +3654,7 @@ id,song_id,song_name,id_rhs,variation,notes,set_id,show_id,prev_perfid,prev_show
 3776,31,Broken Arrow,,,,,,,,,,
 3777,245,Throwing Stones,,,with Duo jam,,,,,,,
 3778,403,Ship of Fools,,,,,,,,,,
-3779,128,Lady With a Fan,,,with Marco solo,,,,,,,
+3779,128,Lady With a Fan,,,,,,,,,,
 3780,224,Terrapin Station,,,,,,,,,,
 3781,275,Terrapin,,,,,,,,,,
 3782,225,Terrapin Transit,,,,,,,,,,
@@ -3662,3 +3662,4 @@ id,song_id,song_name,id_rhs,variation,notes,set_id,show_id,prev_perfid,prev_show
 3784,223,Terrapin Flyer,,,,,,,,,,
 3785,274,Terrapin Refrain,,,,,,,,,,
 3786,215,Sugar Magnolia,,,,,,,,,,
+3787,59,Dark Star,,,with Marco solo,,,,,,,
