@@ -36,7 +36,7 @@
     "@sentry/gatsby": "^6.11.0",
     "classnames": "^2.3.1",
     "dompurify": "^2.3.0",
-    "gatsby": "^3.11.0",
+    "gatsby": "^3.11.1",
     "gatsby-plugin-gatsby-cloud": "^2.11.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^1.11.0",
