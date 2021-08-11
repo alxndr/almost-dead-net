@@ -1,7 +1,7 @@
 id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,core_jrad
 392,(I'm A) Road Runner,Holland – Dozier – Holland (Marvin Gaye),,,3736,392,,TRUE,
 288,[unknown],[unknown],?,,,288,,,
-406,2001 (Also Sprach Zarathustra),Richard Strauss / Phish,,,,,,,
+406,2001 (Also Sprach Zarathustra),Richard Strauss / Phish,,,,406,,,
 1,50 Ways to Leave Your Lover,Paul Simon,,,614,1,,,
 2,9 to 5,Dolly Parton,,,,2,,,
 3,9x9,Benevento/Russo Duo,,,1480,3,,,TRUE
@@ -90,7 +90,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,core_jrad
 65,Drums,,,,353:716:998:1201:1232:1535:1667:1838:1959:2548:2780:3056:3513,65,TRUE,,
 66,Dupree's Diamond Blues,Robert Hunter & Jerry Garcia,Dupree's,,24:2552:3262,66,TRUE,,
 67,Easy Wind,Robert Hunter,,,28:135:265:398:436:560:1087:1214:1235:1575:1836:2039:2179:2391:2522:2724:2877:2995:3229:3310,67,TRUE,,
-405,Echoes,Pink Floyd,,,,,,,
+405,Echoes,Pink Floyd,,,,405,,,
 68,El Paso,Marty Robbins,,,636,68,TRUE,TRUE,
 341,Eleanor Rigby,John Lennon & Paul McCartney (The Beatles),,,,341,,,
 327,Epic,Faith No More,,,,327,,,
@@ -153,7 +153,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,core_jrad
 367,Hoedown,Aaron Copeland,,,,367,,,
 107,Hoodoo Voodoo,Bragg – Wilco – Harris (Woody Guthrie),,,1649:1946:3487,107,,,
 108,How Many More Times,Led Zeppelin,,,3280,108,,,
-401,Humdinger,WOLF!,,,,,,,TRUE
+401,Humdinger,WOLF!,,,,401,,,TRUE
 109,I Am The Walrus,John Lennon & Paul McCartney (The Beatles),,,182,109,,,
 35,I Can't Turn You Loose,"Otis Redding, Steve Cropper, William Robinson",,,1366,35,,,
 110,I Know You Rider,traditional,Rider,,10:65:95:134:166:245:264:385:458:479:533:565:589:602:681:715:727:750:819:926:957:1056:1166:1208:1276:1333:1347:1466:1552:1587:1607:1743:1877:1891:1902:1986:2131:2239:2323:2343:2466:2494:2561:2607:2658:2666:2764:2819:2850:2902:2939:3012:3063:3115:3179:3203:3228:3283:3364:3402:3433:3516:3557:3592:3633:3679,110,TRUE,,
@@ -253,7 +253,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,core_jrad
 174,Passenger,Peter Monk & Phil Lesh,,,1642,174,TRUE,,
 307,Peaches,Presidents of the United States of America,,,,307,,,
 175,Peggy-O,traditional,,,2575:3105:3158:3301:3436:3569:3621:3722,175,TRUE,,
-404,Pigs (Three Different Ones),Pink Floyd,,,,,,,
+404,Pigs (Three Different Ones),Pink Floyd,,,,404,,,
 177,"Play, Pause, Stop",Benevento/Russo Duo,,,2055,177,,,TRUE
 176,Playing in the Band,Robert Hunter & Bob Weir,Playing,,32:79:89:190:272:359:380:531:552:722:752:842:949:1071:1264:1266:1360:1457:1830:2031:2033:2109:2184:2269:2316:2371:2452:2576:2634:2672:2717:2794:2802:2975:3048:3110:3183:3251:3263:3360:3425:3471:3488:3570:3595:3619:3693:3744,176,TRUE,,
 381,Please Please Me,The Beatles,,,,381,,,
@@ -270,6 +270,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,core_jrad
 184,Ramble On Rose,Robert Hunter & Jerry Garcia,,,191:225:339:381:498:721:909:1127:1247:1394:1500:1597:1760:2020:2203:2261:2459:2656:2757:2860:3043:3218:3426,184,TRUE,,
 383,Redemption Song,Bob Marley,,,,383,,,
 185,Reuben and Cherise,Robert Hunter & Jerry Garcia,Ruben,,50:126:183:286:395:437:527:626:843:904:1025:1119:1132:1221:1341:1409:1465:1592:1655:1732:1865:1885:1985:2114:2147:2259:2305:2347:2375:2469:2487:2625:2720:2818:2825:2932:3017:3057:3118:3200:3338:3406:3466:3567:3655,185,TRUE,,
+407,Reveille,traditional,,,,407,,,
 186,Revolution 9,John Lennon & Paul McCartney (The Beatles),,,178,186,TRUE,TRUE,
 314,Rhiannon,Fleetwood Mac,,,,314,,,
 187,Ripple,Robert Hunter & Jerry Garcia,,,116:482:965:1790:1942:2309:3159:3666,187,TRUE,,
@@ -295,10 +296,10 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,core_jrad
 398,Sex Machine,James Brown,,,,398,,,
 196,Shakedown Street,Robert Hunter & Jerry Garcia,Shakedown,,8:29:62:117:167:232:315:343:344:425:455:495:530:569:593:613:692:734:860:899:927:959:1029:1121:1135:1250:1331:1503:1523:1651:1708:1737:1825:1922:1958:2080:2250:2271:2308:2406:2432:2496:2579:2654:2700:2753:2781:2813:2838:2874:2943:2965:3014:3029:3141:3249:3260:3365:3391:3443:3444:3453:3499:3507:3543:3583:3634:3671:3748,196,TRUE,,
 197,She Does It Right,Dr. Feelgood,,,2481,197,,,
-402,She Has Funny Cars,Jefferson Airplane,,,,,,,
+402,She Has Funny Cars,Jefferson Airplane,,,,402,,,
 198,Shelter From the Storm,Bob Dylan,,,1912:2164:3460,198,TRUE,TRUE,
 389,Shine On You Crazy Diamond,Gilmour – Waters – Wright (Pink Floyd),,,,389,,,
-403,Ship of Fools,Robert Hunter & Jerry Garcia,,,3778,,TRUE,,
+403,Ship of Fools,Robert Hunter & Jerry Garcia,,,3778,403,TRUE,,
 315,Shortnin' Bread,James Whitcomb Riley,,,,315,,,
 199,Silvio,Robert Hunter & Bob Dylan,,,1354:2056:2304:2388:2613:3282:3432:3668,199,TRUE,TRUE,
 300,Simple Gift of Man,Brothers Past,,,,300,,,TRUE

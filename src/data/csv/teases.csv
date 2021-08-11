@@ -733,7 +733,7 @@ id,within,performance_id,song_name,notes,by,song_id
 737,Box of Rain,2121,Uncle John's Band,,,255
 738,He's Gone,2122,Truckin',,TH,251
 739,He's Gone,2122,Tennessee Jed,,TH,221
-740,He's Gone,2122,Humdinger,"""I think"" —Costello",SM,
+740,He's Gone,2122,Humdinger,"""I think"" —Costello",SM,401
 741,The Wheel,2129,The 'In' Crowd,jam,,231
 742,The Wheel,2129,Bathtub Gin,Phish's yearly 3-night run at nearby Dick's started the next night,MB,284
 743,Greatest Story Ever Told,2132,A Night in Tunisia,,,325
@@ -750,16 +750,22 @@ id,within,performance_id,song_name,notes,by,song_id
 754,Saint of Circumstance,2875,Reuben and Cherise,,SM/band,185
 755,Wharf Rat,3760,Dark Star,,,59
 756,Wharf Rat,3760,King Solomon's Marbles,,,127
-757,Wharf Rat,3760,She Has Funny Cars,,,
+757,Wharf Rat,3760,She Has Funny Cars,,,402
 758,Yazoo Street Scandal,3762,Wang Dang Doodle,...maybe https://www.reddit.com/r/JRADs/comments/ouvjdo/setlist_73021_westville_music_bowl_new_haven_ct/h75dpwi,,395
 759,Althea,3764,Black Throated Wind,,,25
 760,Saint of Circumstance,3766,Terrapin Station,,,224
 761,West LA Fadeaway,3773,Unbroken Chain,jam,,254
-762,Bird Song,3775,Echoes,,,
-763,Bird Song,3775,Pigs (Three Different Ones),jam,,
-764,Throwing Stones,3777,Pigs (Three Different Ones),,TH,
-765,Throwing Stones,3777,2001 (Also Sprach Zarathustra),,TH,
+762,Bird Song,3775,Echoes,,,405
+763,Bird Song,3775,Pigs (Three Different Ones),jam,,404
+764,Throwing Stones,3777,Pigs (Three Different Ones),,TH,404
+765,Throwing Stones,3777,2001 (Also Sprach Zarathustra),,TH,406
 766,Throwing Stones,3777,Fire on the Mountain,,,75
 768,Lady With a Fan,3779,My Pet Goat,,,157
 769,Stuck Inside of Mobile With the Memphis Blues Again,3772,Slipknot!,,,201
 770,Sugar Magnolia,3786,I Need A Miracle,,,115
+771,West LA Fadeaway,3773,[unknown],estimated?? terrapin?? in the intro...,,288
+772,Bird Song,3775,Stuck Inside of Mobile With the Memphis Blues Again,,,212
+773,Bird Song,3775,Friend of the Devil,,,79
+774,Throwing Stones,3777,Unbroken Chain,,,254
+775,Man Smart (Woman Smarter),3720,Reveille,,SM,407
+776,In Memory of Elizabeth Reed,3721,Dark Star,,TH,59
