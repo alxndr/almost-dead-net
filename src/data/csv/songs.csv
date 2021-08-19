@@ -1,6 +1,5 @@
 id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,core_jrad
 392,(I'm A) Road Runner,Holland – Dozier – Holland (Marvin Gaye),,,3736,392,,TRUE,
-413,(new song),The Slip,,,3821,413,,,
 288,[unknown],[unknown],?,,,288,,,
 406,2001 (Also Sprach Zarathustra),Richard Strauss / Phish,,,,406,,,
 1,50 Ways to Leave Your Lover,Paul Simon,,,614,1,,,
@@ -159,6 +158,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,core_jrad
 401,Humdinger,WOLF!,,,,401,,,TRUE
 109,I Am The Walrus,John Lennon & Paul McCartney (The Beatles),,,182,109,,,
 35,I Can't Turn You Loose,"Otis Redding, Steve Cropper, William Robinson",,,1366,35,,,
+413,I Hate Love,The Slip,,,3821,413,,,
 110,I Know You Rider,traditional,Rider,,10:65:95:134:166:245:264:385:458:479:533:565:589:602:681:715:727:750:819:926:957:1056:1166:1208:1276:1333:1347:1466:1552:1587:1607:1743:1877:1891:1902:1986:2131:2239:2323:2343:2466:2494:2561:2607:2658:2666:2764:2819:2850:2902:2939:3012:3063:3115:3179:3203:3228:3283:3364:3402:3433:3516:3557:3592:3633:3679,110,TRUE,,
 115,I Need A Miracle,John Perry Barlow & Bob Weir,Miracle,,240:637:986:1156:2052:2182:2349:2370:2457:2591:2655:2667:2705:2756:2870:2944:2983:3061:3155:3217:3289:3366:3434:3479:3554:3640:3774,115,TRUE,,
 305,I Want Candy,The Strangeloves,,,,305,,,
