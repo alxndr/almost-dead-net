@@ -6,6 +6,7 @@ id,name,location,capacity,generic name,tagname
 5,Belly Up,"Aspen, CO",450,,Belly Up
 6,Tabernacle,"Atlanta, GA",2600,,Tabernacle
 7,Candler Park,"Atlanta, GA",,,Candler Park
+101,Centennial Olympic Park,"Atlanta, GA",,,Centennial Olympic Park
 8,Moody Theater,"Austin, TX",2750,,Moody Theater
 9,Carson Creek Ranch,"Austin, TX",,,Carson Creek Ranch
 10,Athletic Club of Bend,"Bend, OR",,,Athletic Club of Bend
@@ -22,9 +23,7 @@ id,name,location,capacity,generic name,tagname
 21,Threes Brewing,"Brooklyn, NY",,,Threes Brewing
 22,Brooklyn Bowl,"Brooklyn, NY",600,,Brooklyn Bowl
 23,1stBank Center,"Broomfield, CO",6500,,1stBank Center
-24,Higher Ground,"South Burlington, VT",,,Higher Ground
 25,Waterfront Park,"Burlington, VT",,,Waterfront Park
-26,Clay's Park Resort,"North Lawrence, OH",,,Clay's Park Resort
 27,Music Farm,"Charleston, SC",800,,Music Farm
 28,Union Park,"Chicago, IL",,,Union Park
 29,Riviera Theatre,"Chicago, IL",2500,,Riviera Theatre
@@ -33,6 +32,7 @@ id,name,location,capacity,generic name,tagname
 32,Three Sisters Park,"Chillicoothe, IL",,,Three Sisters Park
 33,Masonic Cleveland Auditorium,"Cleveland, OH",,,Masonic Cleveland Auditorium
 34,The Music Box,"Cleveland, OH",340,,The Music Box
+103,Jacobs Pavilion at Nautica,"Cleveland, OH",5000,,Jacobs Pavilion at Nautica
 35,Oregon Ridge Park,"Cockeysville, MD",,,Oregon Ridge Park
 36,House of Blues,"Dallas, TX",2500,TRUE,House of Blues (Dallas)
 37,Ogden Theatre,"Denver, CO",1600,,Ogden Theatre
@@ -65,16 +65,18 @@ id,name,location,capacity,generic name,tagname
 64,War Memorial Auditorium,"Nashville, TN",2000,,War Memorial Auditorium
 65,Ryman Auditorium,"Nashville, TN",2362,,Ryman Auditorium
 66,College Street Music Hall,"New Haven, CT",2000,,College Street Music Hall
+102,Westville Music Bowl,"New Haven, CT",,,Westville Music Bowl
 67,Mardi Gras World Ballroom,"New Orleans, LA",,,Mardi Gras World Ballroom
 68,Joy Theater,"New Orleans, LA",1200,,Joy Theater
 69,Webster Hall,"New York, NY",1500,,Webster Hall
 70,Last Breath Farm,"Norridgewock, ME",,,Last Breath Farm
+26,Clay's Park Resort,"North Lawrence, OH",,,Clay's Park Resort
 71,Fox Theater,"Oakland, CA",2800,TRUE,Fox Theater (Oakland)
 72,Mulberry Mountain,"Ozark, AR",,,Mulberry Mountain
 73,Metropolitan Opera House,"Philadelphia, PA",3500,,Metropolitan Opera House
 74,The Fillmore,"Philadelphia, PA",2500,TRUE,The Fillmore (Philadelphia)
 75,Theater of the Living Arts,"Philadelphia, PA",,,Theater of the Living Arts
-76,Capitol Theatre,"Port Chester, NY",1800,,Capitol Theatre
+76,Capitol Theatre,"Port Chester, NY",1800,TRUE,Capitol Theatre (Port Chester)
 77,State Theater,"Portland, ME",1680,TRUE,State Theater (Portland)
 78,Lupo's Heartbreak Hotel,"Providence, RI",1980,,Lupo's Heartbreak Hotel
 79,Fete Ballroom,"Providence, RI",930,,Fete Ballroom
@@ -88,9 +90,11 @@ id,name,location,capacity,generic name,tagname
 87,Golden Gate Park,"San Francisco, CA",,,Golden Gate Park
 88,Montage Mountain,"Scranton, PA",,,Montage Mountain
 89,The Showbox,"Seattle, WA",1100,,The Showbox
-90,Frost Ampitheater,"Stanford, CA",8000,,Frost Ampitheater
+24,Higher Ground,"South Burlington, VT",,,Higher Ground
 91,St Augustine Amphitheatre,"St Augustine, FL",,,St Augustine Amphitheatre
 92,The Pageant,"St Louis, MO",2300,,The Pageant
+100,Vinoy Park,"St. Petersburg, FL",,,Vinoy Park
+90,Frost Ampitheater,"Stanford, CA",8000,,Frost Ampitheater
 93,Berry Hill Farm,"Summit Point, WV",,,Berry Hill Farm
 94,Landmark Theatre,"Syracuse, NY",3000,TRUE,Landmark Theatre (Syracuse)
 95,Telluride Town Park,"Telluride, CO",,,Telluride Town Park
@@ -98,6 +102,3 @@ id,name,location,capacity,generic name,tagname
 97,Tower Theater,"Upper Darby, PA",3119,,Tower Theater
 98,The Anthem,"Washington, DC",,,The Anthem
 99,The 9:30 Club,"Washington, DC",1200,,The 9:30 Club
-100,Vinoy Park,"St. Petersburg, FL",,,Vinoy Park
-101,Centennial Olympic Park,"Atlanta, GA",,,Centennial Olympic Park
-102,Westville Music Bowl,"New Haven, CT",,,Westville Music Bowl
