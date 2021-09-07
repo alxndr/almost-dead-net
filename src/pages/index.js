@@ -34,11 +34,15 @@ export default function Index() {
     <section className="homepage__links">
       <h2>Links:</h2>
       <ul>
-        <li><Link to="/venues" title="All venues JRAD has performed at">All Venues</Link></li>
-        <li><Link to="/songs" title="All songs performed or teased by JRAD">All Songs Played or Teased</Link></li>
-        <li><a href="https://lot.almost-dead.net/t/setlist-corrections/17" title="thread about Setlist corrections">corrections</a></li>
-        <li><a href="https://lot.almost-dead.net/t/suggestions-for-the-main-site/18" title="thread about Suggestions">suggestions</a></li>
-        <li><Link to="/about" title="About Almost-Dead.net">about the site</Link></li>
+        <li><Link to="/venues" title="All venues where JRAD has performed">All Venues</Link></li>
+        <li><Link to="/songs" title="All songs performed or teased by JRAD">All Songs</Link></li>
+        <li><Link to="/about" title="About Almost-Dead.net">About the site</Link></li>
+        <li>
+          <a href="https://lot.almost-dead.net/t/setlist-corrections/17" title="thread about Setlist corrections">errors?</a>
+          {' '}
+          <a href="https://lot.almost-dead.net/t/suggestions-for-the-main-site/18" title="thread about Suggestions">suggestions?</a>
+        </li>
+        <li><a href="https://twitter.com/AlmostDeadNet" title="@AlmostDeadNet on Twitter" target="_blank">Twitter: <kbd>@AlmostDead.Net</kbd></a></li>
       </ul>
     </section>
 
