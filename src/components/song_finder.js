@@ -76,7 +76,7 @@ export default function SongFinder() {
       renderSuggestion={renderSuggestion}
       inputProps={{
         onChange: (_, {newValue}) => setValue(newValue),
-        placeholder: 'type a song name',
+        placeholder: 'type a song name or original artist',
         value,
       }}
       onSuggestionSelected={(_, {suggestion}) => {

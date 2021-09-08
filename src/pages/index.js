@@ -26,11 +26,6 @@ export default function Index() {
       <LoadableTopicsList />
     </section>
 
-    <section className="homepage__songfinder">
-      <h2>Find a song:</h2>
-      <SongFinder />
-    </section>
-
     <section className="homepage__links">
       <h2>Links:</h2>
       <ul>
@@ -44,6 +39,11 @@ export default function Index() {
         </li>
         <li><a href="https://twitter.com/AlmostDeadNet" title="@AlmostDeadNet on Twitter" target="_blank">Twitter: <kbd>@AlmostDead.Net</kbd></a></li>
       </ul>
+    </section>
+
+    <section className="homepage__songfinder">
+      <h2>Find a song:</h2>
+      <SongFinder />
     </section>
 
     <section className="homepage__showsbyyear">

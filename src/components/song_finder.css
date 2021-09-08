@@ -2,11 +2,21 @@
   overflow: auto;
 }
 
+.songfinder .react-autosuggest__container {
+  text-align: center;
+}
+
+.songfinder .react-autosuggest__input {
+  width: 100%;
+  max-width: 25em;
+}
+
 .songfinder .react-autosuggest__suggestions-container {
-  position: absolute;
+  width: 100%;
   padding: 0;
   background: #dabbff;
   box-shadow: 0.1em 0.1em 0.3em rgba(0,0,0,0.4) inset;
+  text-align: left;
 }
 
 .songfinder .react-autosuggest__suggestions-container ul {

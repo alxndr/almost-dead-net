@@ -9,7 +9,8 @@
   text-align: center;
 }
 
-.homepage > main section:not(.homepage__showsbyyear) {
+.homepage__forum,
+.homepage__links {
   margin: 0.5em;
   border-radius: 1em;
   padding: 1em 2em 0.5em;
@@ -17,7 +18,9 @@
 }
 
 .homepage__songfinder {
-  background: honeydew;
+  width: 66%;
+  min-width: 20em;
+  margin: 1.5em auto;
 }
 
 .homepage__links {
