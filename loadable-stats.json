@@ -1,5 +1,5 @@
 {
-  "hash": "f3b2ed6db0f6d4a59434",
+  "hash": "17499daa4ddf7c447850",
   "publicPath": "/",
   "outputPath": "/Users/alxndr/workspace/almost-dead-net/public",
   "assetsByChunkName": {
@@ -7,16 +7,19 @@
       "polyfill-7864fbd181389e7199fa.js"
     ],
     "app": [
-      "app-c6442dc728e7cf184e2b.js"
+      "app-b2a79c78be3ae101eab2.js"
     ],
     "webpack-runtime": [
-      "webpack-runtime-97988ddee9dd21094a2b.js"
+      "webpack-runtime-8fa8f08eb1415fa17a04.js"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-c1a712730d8d7ebc73c6.js"
     ],
     "component---src-pages-about-js": [
       "component---src-pages-about-js-d02254d5236c995fa284.js"
+    ],
+    "component---src-pages-fan-stats-js": [
+      "component---src-pages-fan-stats-js-096fdc1e16055b005a4e.js"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-5e94173794d6a2fcf169.js"
@@ -43,7 +46,7 @@
       "components-forum-topics-72f3aae795309cc7e281.js"
     ],
     "styles": [
-      "styles.7406d60929a17b5cf4c0.css"
+      "styles.49374eebb1b3a33a3c2d.css"
     ],
     "framework": [
       "framework-0068a62ee68a6c63e163.js"
@@ -59,8 +62,8 @@
     {
       "type": "assets by status",
       "cached": true,
-      "filteredChildren": 21,
-      "size": 690777
+      "filteredChildren": 22,
+      "size": 694695
     }
   ],
   "namedChunkGroups": {
@@ -72,7 +75,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-97988ddee9dd21094a2b.js"
+          "name": "webpack-runtime-8fa8f08eb1415fa17a04.js"
         },
         {
           "name": "polyfill-7864fbd181389e7199fa.js"
@@ -94,13 +97,13 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-97988ddee9dd21094a2b.js"
+          "name": "webpack-runtime-8fa8f08eb1415fa17a04.js"
         },
         {
           "name": "framework-0068a62ee68a6c63e163.js"
         },
         {
-          "name": "app-c6442dc728e7cf184e2b.js"
+          "name": "app-b2a79c78be3ae101eab2.js"
         }
       ],
       "filteredAssets": 0,
@@ -119,7 +122,7 @@
       ],
       "assets": [
         {
-          "name": "styles.7406d60929a17b5cf4c0.css"
+          "name": "styles.49374eebb1b3a33a3c2d.css"
         },
         {
           "name": "commons-98c49e0b81fddc6cbe8e.js"
@@ -144,13 +147,38 @@
       ],
       "assets": [
         {
-          "name": "styles.7406d60929a17b5cf4c0.css"
+          "name": "styles.49374eebb1b3a33a3c2d.css"
         },
         {
           "name": "commons-98c49e0b81fddc6cbe8e.js"
         },
         {
           "name": "component---src-pages-about-js-d02254d5236c995fa284.js"
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": null,
+      "filteredAuxiliaryAssets": 2,
+      "auxiliaryAssetsSize": null,
+      "children": {},
+      "childAssets": {}
+    },
+    "component---src-pages-fan-stats-js": {
+      "name": "component---src-pages-fan-stats-js",
+      "chunks": [
+        532,
+        351,
+        523
+      ],
+      "assets": [
+        {
+          "name": "styles.49374eebb1b3a33a3c2d.css"
+        },
+        {
+          "name": "commons-98c49e0b81fddc6cbe8e.js"
+        },
+        {
+          "name": "component---src-pages-fan-stats-js-096fdc1e16055b005a4e.js"
         }
       ],
       "filteredAssets": 0,
@@ -169,7 +197,7 @@
       ],
       "assets": [
         {
-          "name": "styles.7406d60929a17b5cf4c0.css"
+          "name": "styles.49374eebb1b3a33a3c2d.css"
         },
         {
           "name": "commons-98c49e0b81fddc6cbe8e.js"
@@ -195,7 +223,7 @@
       ],
       "assets": [
         {
-          "name": "styles.7406d60929a17b5cf4c0.css"
+          "name": "styles.49374eebb1b3a33a3c2d.css"
         },
         {
           "name": "commons-98c49e0b81fddc6cbe8e.js"
@@ -223,7 +251,7 @@
       ],
       "assets": [
         {
-          "name": "styles.7406d60929a17b5cf4c0.css"
+          "name": "styles.49374eebb1b3a33a3c2d.css"
         },
         {
           "name": "commons-98c49e0b81fddc6cbe8e.js"
@@ -249,7 +277,7 @@
       ],
       "assets": [
         {
-          "name": "styles.7406d60929a17b5cf4c0.css"
+          "name": "styles.49374eebb1b3a33a3c2d.css"
         },
         {
           "name": "commons-98c49e0b81fddc6cbe8e.js"
@@ -278,7 +306,7 @@
       ],
       "assets": [
         {
-          "name": "styles.7406d60929a17b5cf4c0.css"
+          "name": "styles.49374eebb1b3a33a3c2d.css"
         },
         {
           "name": "commons-98c49e0b81fddc6cbe8e.js"
@@ -306,7 +334,7 @@
       ],
       "assets": [
         {
-          "name": "styles.7406d60929a17b5cf4c0.css"
+          "name": "styles.49374eebb1b3a33a3c2d.css"
         },
         {
           "name": "commons-98c49e0b81fddc6cbe8e.js"
@@ -331,7 +359,7 @@
       ],
       "assets": [
         {
-          "name": "styles.7406d60929a17b5cf4c0.css"
+          "name": "styles.49374eebb1b3a33a3c2d.css"
         },
         {
           "name": "commons-98c49e0b81fddc6cbe8e.js"
@@ -376,13 +404,13 @@
     {
       "id": 143,
       "files": [
-        "app-c6442dc728e7cf184e2b.js"
+        "app-b2a79c78be3ae101eab2.js"
       ]
     },
     {
       "id": 658,
       "files": [
-        "webpack-runtime-97988ddee9dd21094a2b.js"
+        "webpack-runtime-8fa8f08eb1415fa17a04.js"
       ]
     },
     {
@@ -413,6 +441,12 @@
       "id": 682,
       "files": [
         "component---src-pages-about-js-d02254d5236c995fa284.js"
+      ]
+    },
+    {
+      "id": 523,
+      "files": [
+        "component---src-pages-fan-stats-js-096fdc1e16055b005a4e.js"
       ]
     },
     {
@@ -466,7 +500,7 @@
     {
       "id": 532,
       "files": [
-        "styles.7406d60929a17b5cf4c0.css"
+        "styles.49374eebb1b3a33a3c2d.css"
       ]
     },
     {
