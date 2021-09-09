@@ -19,13 +19,6 @@ export default function Index() {
       description="Joe Russo's Almost Dead setlists, teases, performance recordings, discussion forum"
     />
 
-    <section className="homepage__forum">
-      <h2>
-        <a href="https://lot.almost-dead.net" title="JRAD Forum: The Lot"><img src="https://lot.almost-dead.net/uploads/default/original/1X/71ea69cde5d1aedbf81ce09bdd8acf299d582546.png" alt="The Lot (message board / forum)" style={{maxHeight:'1.7em',verticalAlign:'middle'}} /></a>
-      </h2>
-      <LoadableTopicsList />
-    </section>
-
     <section className="homepage__links">
       <h2>Links:</h2>
       <ul>
@@ -37,8 +30,15 @@ export default function Index() {
           {' '}
           <a href="https://lot.almost-dead.net/t/suggestions-for-the-main-site/18" title="thread about Suggestions">suggestions?</a>
         </li>
-        <li><a href="https://twitter.com/AlmostDeadNet" title="@AlmostDeadNet on Twitter" target="_blank">Twitter: <kbd>@AlmostDead.Net</kbd></a></li>
+        <li><a href="https://twitter.com/AlmostDeadNet" title="@AlmostDeadNet on Twitter" target="_blank">Twitter: <kbd className="twitter">@AlmostDeadNet</kbd></a></li>
       </ul>
+    </section>
+
+    <section className="homepage__forum">
+      <h2>
+        <a href="https://lot.almost-dead.net" title="JRAD Forum: The Lot"><img src="https://lot.almost-dead.net/uploads/default/original/1X/71ea69cde5d1aedbf81ce09bdd8acf299d582546.png" alt="The Lot (message board / forum)" style={{maxHeight:'1.7em',verticalAlign:'middle'}} /></a>
+      </h2>
+      <LoadableTopicsList />
     </section>
 
     <section className="homepage__songfinder">

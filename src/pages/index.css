@@ -30,6 +30,9 @@
   list-style: circle;
   margin: 0;
 }
+.homepage__links kbd.twitter {
+  font-size: 1.25em;
+}
 
 .homepage__forum {
   background: pink;
