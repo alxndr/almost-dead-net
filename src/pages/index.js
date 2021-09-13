@@ -36,9 +36,9 @@ export default function Index() {
 
     <section className="homepage__forum">
       <h2>
-        <a href="https://lot.almost-dead.net" title="JRAD Forum: The Lot"><img src="https://lot.almost-dead.net/uploads/default/original/1X/71ea69cde5d1aedbf81ce09bdd8acf299d582546.png" alt="The Lot (message board / forum)" style={{maxHeight:'1.7em',verticalAlign:'middle'}} /></a>
+        <a href="https://lot.almost-dead.net" title="JRAD Forum: The Lot"><img src="https://i.imgur.com/Qi2NhJO.png" alt="The Lot (message board / forum)" style={{maxHeight:'1.7em',verticalAlign:'middle'}} /></a>
       </h2>
-      <LoadableTopicsList />
+      <p>...under temporary construction!</p>
     </section>
 
     <section className="homepage__songfinder">

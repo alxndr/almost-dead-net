@@ -10,7 +10,7 @@ export default function About() {
   return <Layout className="aboutPage">
     <SEO title="About the site" />
     <h1>About Almost-Dead.net</h1>
-    <p>This site is not officially affiliated with <a href="http://www.joerussosalmostdead.com/" target="_blank" rel="noopener noreferrer">JRAD</a>.</p>
+    <p>This site is not officially affiliated with <a href="http://www.joerussosalmostdead.com/" target="_blank" rel="noopener noreferrer">Joe Russo's Almost Dead</a>.</p>
     <p>
       <a href="https://lot.almost-dead.net/t/setlist-corrections/17" title="discussion about setlist corrections">Corrections</a>,
       {' '}
