@@ -38,7 +38,7 @@ export default function Index() {
       <h2>
         <a href="https://lot.almost-dead.net" title="JRAD Forum: The Lot"><img src="https://i.imgur.com/Qi2NhJO.png" alt="The Lot (message board / forum)" style={{maxHeight:'1.7em',verticalAlign:'middle'}} /></a>
       </h2>
-      <p>...under temporary construction!</p>
+      <LoadableTopicsList />
     </section>
 
     <section className="homepage__songfinder">
