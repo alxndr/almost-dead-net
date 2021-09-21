@@ -1,5 +1,5 @@
 {
-  "hash": "b589101b912fcf7ff69d",
+  "hash": "54f0f8dc204ce408ac8a",
   "publicPath": "/",
   "outputPath": "/Users/alxndr/workspace/almost-dead-net/public",
   "assetsByChunkName": {
@@ -7,10 +7,10 @@
       "polyfill-7864fbd181389e7199fa.js"
     ],
     "app": [
-      "app-d50b1f1b5bb5bf474f51.js"
+      "app-be9e5e26f2b6b0e3da01.js"
     ],
     "webpack-runtime": [
-      "webpack-runtime-8d3078603417640ea46d.js"
+      "webpack-runtime-8b2364356a1511ab08c6.js"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-c1a712730d8d7ebc73c6.js"
@@ -19,7 +19,7 @@
       "component---src-pages-about-js-b35d20b6d5c461cbf1b9.js"
     ],
     "component---src-pages-fan-stats-js": [
-      "component---src-pages-fan-stats-js-7f88331ccde40d5dbbce.js"
+      "component---src-pages-fan-stats-js-9745d747e8d36cfed889.js"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-6c6eaeefee7fa11cc895.js"
@@ -54,16 +54,19 @@
     "commons": [
       "commons-98c49e0b81fddc6cbe8e.js"
     ],
+    "7376ac395bbdbdea96ca893d1b9ebabd23a707ab": [
+      "7376ac395bbdbdea96ca893d1b9ebabd23a707ab-193dba1d78661077c390.js"
+    ],
     "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f": [
-      "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-f96f96b5a5ce207a0c40.js"
+      "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-05e67dea3e2e14538ba4.js"
     ]
   },
   "assets": [
     {
       "type": "assets by status",
       "cached": true,
-      "filteredChildren": 21,
-      "size": 703767
+      "filteredChildren": 22,
+      "size": 698295
     }
   ],
   "namedChunkGroups": {
@@ -75,7 +78,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-8d3078603417640ea46d.js"
+          "name": "webpack-runtime-8b2364356a1511ab08c6.js"
         },
         {
           "name": "polyfill-7864fbd181389e7199fa.js"
@@ -97,13 +100,13 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-8d3078603417640ea46d.js"
+          "name": "webpack-runtime-8b2364356a1511ab08c6.js"
         },
         {
           "name": "framework-0068a62ee68a6c63e163.js"
         },
         {
-          "name": "app-d50b1f1b5bb5bf474f51.js"
+          "name": "app-be9e5e26f2b6b0e3da01.js"
         }
       ],
       "filteredAssets": 0,
@@ -168,6 +171,7 @@
       "chunks": [
         532,
         351,
+        735,
         523
       ],
       "assets": [
@@ -178,12 +182,15 @@
           "name": "commons-98c49e0b81fddc6cbe8e.js"
         },
         {
-          "name": "component---src-pages-fan-stats-js-7f88331ccde40d5dbbce.js"
+          "name": "7376ac395bbdbdea96ca893d1b9ebabd23a707ab-193dba1d78661077c390.js"
+        },
+        {
+          "name": "component---src-pages-fan-stats-js-9745d747e8d36cfed889.js"
         }
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 2,
+      "filteredAuxiliaryAssets": 3,
       "auxiliaryAssetsSize": null,
       "children": {},
       "childAssets": {}
@@ -218,6 +225,7 @@
       "chunks": [
         532,
         351,
+        735,
         1,
         540
       ],
@@ -229,7 +237,10 @@
           "name": "commons-98c49e0b81fddc6cbe8e.js"
         },
         {
-          "name": "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-f96f96b5a5ce207a0c40.js"
+          "name": "7376ac395bbdbdea96ca893d1b9ebabd23a707ab-193dba1d78661077c390.js"
+        },
+        {
+          "name": "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-05e67dea3e2e14538ba4.js"
         },
         {
           "name": "component---src-pages-songs-js-7efe1ec3f0517cea3fb6.js"
@@ -237,7 +248,7 @@
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 3,
+      "filteredAuxiliaryAssets": 4,
       "auxiliaryAssetsSize": null,
       "children": {},
       "childAssets": {}
@@ -272,6 +283,7 @@
       "chunks": [
         532,
         351,
+        735,
         1,
         292
       ],
@@ -283,7 +295,10 @@
           "name": "commons-98c49e0b81fddc6cbe8e.js"
         },
         {
-          "name": "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-f96f96b5a5ce207a0c40.js"
+          "name": "7376ac395bbdbdea96ca893d1b9ebabd23a707ab-193dba1d78661077c390.js"
+        },
+        {
+          "name": "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-05e67dea3e2e14538ba4.js"
         },
         {
           "name": "component---src-templates-show-embed-js-0216e99c84b4517c9632.js"
@@ -291,7 +306,7 @@
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 3,
+      "filteredAuxiliaryAssets": 4,
       "auxiliaryAssetsSize": null,
       "children": {},
       "childAssets": {}
@@ -301,6 +316,7 @@
       "chunks": [
         532,
         351,
+        735,
         1,
         652
       ],
@@ -312,7 +328,10 @@
           "name": "commons-98c49e0b81fddc6cbe8e.js"
         },
         {
-          "name": "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-f96f96b5a5ce207a0c40.js"
+          "name": "7376ac395bbdbdea96ca893d1b9ebabd23a707ab-193dba1d78661077c390.js"
+        },
+        {
+          "name": "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-05e67dea3e2e14538ba4.js"
         },
         {
           "name": "component---src-templates-show-js-b83b5a35ec9035f03b1b.js"
@@ -320,7 +339,7 @@
       ],
       "filteredAssets": 0,
       "assetsSize": null,
-      "filteredAuxiliaryAssets": 3,
+      "filteredAuxiliaryAssets": 4,
       "auxiliaryAssetsSize": null,
       "children": {},
       "childAssets": {}
@@ -404,13 +423,13 @@
     {
       "id": 143,
       "files": [
-        "app-d50b1f1b5bb5bf474f51.js"
+        "app-be9e5e26f2b6b0e3da01.js"
       ]
     },
     {
       "id": 658,
       "files": [
-        "webpack-runtime-8d3078603417640ea46d.js"
+        "webpack-runtime-8b2364356a1511ab08c6.js"
       ]
     },
     {
@@ -446,7 +465,7 @@
     {
       "id": 523,
       "files": [
-        "component---src-pages-fan-stats-js-7f88331ccde40d5dbbce.js"
+        "component---src-pages-fan-stats-js-9745d747e8d36cfed889.js"
       ]
     },
     {
@@ -516,9 +535,15 @@
       ]
     },
     {
+      "id": 735,
+      "files": [
+        "7376ac395bbdbdea96ca893d1b9ebabd23a707ab-193dba1d78661077c390.js"
+      ]
+    },
+    {
       "id": 1,
       "files": [
-        "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-f96f96b5a5ce207a0c40.js"
+        "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-05e67dea3e2e14538ba4.js"
       ]
     }
   ]
