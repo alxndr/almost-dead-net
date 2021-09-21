@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import {graphql, Link} from 'gatsby'
-import {find, propEq, uniq, uniqBy, __} from 'ramda'
+import {find, propEq, sort, uniq, uniqBy, __} from 'ramda'
 import slugify from 'slugify'
 
 import Layout from '../components/layout'
@@ -34,13 +34,13 @@ const FanStats = ({user, shows, songs}) => {
   global.console.log({uniqSongs, songs})
 
   return <>
-    <p><LinkedUser username={user.username} /> was at {showIDs.length} shows across {pluralize(venues.length, 'venue')}. They've heard {pluralize(uniqSongs.length, 'different song')}!</p>
+    <p><LinkedUser username={user.username} /> was at {pluralize(showIDs.length, 'show')} across {pluralize(venues.length, 'venue')}. They've heard {pluralize(uniqSongs.length, 'different song')}!</p>
 
     <h2>Shows</h2>
     <ol>
-      {showIDs.map((showID) => {
+      {sort((a, b) => a - b, showIDs).map((showID) => {
         const showData = shows[showID]
-        return <li>
+        return <li key={showID}>
           <Link to={`/show/${showID}`}>{showData.date}</Link>
           {' at '}
           <Link to={venueURL(showData.venue)}>{showData.venue.name}, {showData.venue.location}</Link>
@@ -50,33 +50,32 @@ const FanStats = ({user, shows, songs}) => {
 
     <h2>Venues</h2>
     <ol>
-      {venues.map((venue) => <li><Link to={venueURL(venue)}>{venue.name}, {venue.location}</Link></li>)}
+      {venues.map((venue) => <li key={venue.id}><Link to={venueURL(venue)}>{venue.name}, {venue.location}</Link></li>)}
     </ol>
 
     <h2>Songs</h2>
     <ol>
-      {uniqSongs.map(({song_id, song_name}) => <li><Link to={`/song/${song_id}`}>{song_name}</Link></li>)}
+      {uniqSongs.map(({song_id, song_name}) => <li key={song_id}><Link to={`/song/${song_id}`}>{song_name}</Link></li>)}
     </ol>
   </>
 }
 
 export default function FanStatsPage({location, data}) {
   const usernameRaw = new URLSearchParams(location.search).get('username')
-
   const [userJson, setUserJson] = useState()
   const [showsData, setShowsData] = useState()
   const [songsData, setSongsData] = useState()
-
   useEffect(() => {
     if (usernameRaw) {
       fetch(`https://lot.almost-dead.net/u/${usernameRaw}.json`)
         .then((response) => response.json())
         .then((json) => {
           if (json?.user) {
+            global.console.log(json.user, json.user.user_fields[1])
             setUserJson({
               user: json.user,
-              shows: json.user.user_fields[1]?.length
-                ? JSON.parse(json.user.user_fields[1])
+              shows: json.user.user_fields[1]
+                ? JSON.parse(json.user.user_fields[1]) // TODO This will throw if the field is invalid JSON (which happens...)
                 : [],
             })
           }
@@ -96,7 +95,7 @@ export default function FanStatsPage({location, data}) {
   const findVenue = find(__, allVenues)
 
   useEffect(() => {
-    if (userJson?.shows?.length) {
+    if (userJson?.shows) {
       const shows = userJson.shows.reduce((showsData, showDateString) => {
         const showDMYYYY = showDateString.split(' ')[0].replace(/\/(\d{2})$/, '/20$1')
         const showData = findShow(propEq('date', showDMYYYY))
@@ -132,15 +131,17 @@ export default function FanStatsPage({location, data}) {
   return <Layout className="fanstatspage">
     <SEO title="JRAD Fan Stats" />
     <h1><PageTitle username={userJson?.user?.username} /></h1>
-    {userJson?.user
-      ? showsData
-        ? Object.keys(showsData).length
-          ? <FanStats shows={showsData} songs={songsData} user={userJson.user} />
-          : <><p>No shows found!</p><UsernameForm/></>
-        : usernameRaw
-          ? <p>Loading...</p>
-          : <UsernameForm/>
-      : <><p>Uh oh, error fetching data.</p><UsernameForm/></>
+    {usernameRaw
+      ? userJson?.user
+        ? showsData
+          ? Object.keys(showsData).length
+            ? <FanStats shows={showsData} songs={songsData} user={userJson.user} />
+            : <><p>No shows found! (Have you entered them in <a href="https://lot.almost-dead.net/my/preferences/profile">your account preferences on The Lot</a>?)</p><UsernameForm/></>
+          : <p>Reticulating splines...</p>
+        : userJson?.error
+          ? <><p>Uh oh, error fetching data.</p><UsernameForm/></>
+          : <p>Loading...</p>
+      : <UsernameForm/>
     }
   </Layout>
 }
