@@ -3,3 +3,12 @@
   flex-flow: column nowrap;
   padding: 1em;
 }
+
+h2 {
+  text-align: left;
+  font-family: 'Shadows Into Light', fantasy;
+}
+
+ol ::marker {
+  font-size: 0.8em;
+}
