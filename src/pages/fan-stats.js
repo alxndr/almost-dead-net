@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import {graphql, Link} from 'gatsby'
-import {find, propEq, sort, uniq, uniqBy, __} from 'ramda'
+import {filter, find, propEq, sort, uniq, uniqBy, __} from 'ramda'
 import slugify from 'slugify'
 
 import Layout from '../components/layout'
@@ -9,6 +9,8 @@ import SEO from '../components/seo'
 import {pluralize} from '../helpers/string_helpers'
 
 import './fan-stats.css'
+
+const numericalSort = (a, b) => a - b
 
 const UsernameForm = () => <form action="/fan-stats">
   <input type="text" name="username" placeholder="your username on The Lot" size="30" />
@@ -26,24 +28,27 @@ const PageTitle = ({username}) => {
 
 const venueURL = ({id, name}) => `/venue/${id}-${slugify(name)}`
 
-const FanStats = ({user, shows, songs}) => {
+const extractSongId = ({song_id}) => song_id
+const uniqBySongId = uniqBy(extractSongId)
+
+const FanStats = ({user, shows, songs, teases}) => {
   const showIDs = Object.keys(shows)
   const songIDs = Object.keys(songs)
   const venues = uniq(Object.values(shows).map(({venue}) => venue))
-  const uniqSongs = uniqBy(({song_id}) => song_id, songs)
-  global.console.log({uniqSongs, songs})
+  const uniqSongs = uniqBySongId(songs)
+  const uniqTeases = uniqBySongId(teases)
 
   return <>
-    <p><LinkedUser username={user.username} /> was at {pluralize(showIDs.length, 'show')} across {pluralize(venues.length, 'venue')}. They've heard {pluralize(uniqSongs.length, 'different song')}!</p>
+    <p><LinkedUser username={user.username} /> was at {pluralize(showIDs.length, 'show')} across {pluralize(venues.length, 'venue')}, with {pluralize(uniqSongs.length, 'different song')} performed, and {pluralize(uniqTeases.length, 'unique song')} teased!</p>
 
     <h2>Shows</h2>
     <ol>
-      {sort((a, b) => a - b, showIDs).map((showID) => {
-        const showData = shows[showID]
+      {sort(numericalSort, showIDs).map((showID) => {
+        const {date, venue} = shows[showID]
         return <li key={showID}>
-          <Link to={`/show/${showID}`}>{showData.date}</Link>
+          <Link to={`/show/${showID}`}>{date}</Link>
           {' at '}
-          <Link to={venueURL(showData.venue)}>{showData.venue.name}, {showData.venue.location}</Link>
+          <Link to={venueURL(venue)}>{venue.name}, {venue.location}</Link>
         </li>
       })}
     </ol>
@@ -57,21 +62,27 @@ const FanStats = ({user, shows, songs}) => {
     <ol>
       {uniqSongs.map(({song_id, song_name}) => <li key={song_id}><Link to={`/song/${song_id}`}>{song_name}</Link></li>)}
     </ol>
+
+    <h2>Teases</h2>
+    <ol>
+      {uniqTeases.map((tease) => <li key={tease.song_id}><Link to={`/song/${tease.song_id}`}>{tease.song_name}</Link></li>)}
+    </ol>
   </>
 }
 
 export default function FanStatsPage({location, data}) {
   const usernameRaw = new URLSearchParams(location.search).get('username')
   const [userJson, setUserJson] = useState()
-  const [showsData, setShowsData] = useState()
-  const [songsData, setSongsData] = useState()
+  const [showsData, setShowsData] = useState({})
+  const [perfsData, setPerfsData] = useState()
+  const [teasesData, setTeasesData] = useState()
+
   useEffect(() => {
     if (usernameRaw) {
       fetch(`https://lot.almost-dead.net/u/${usernameRaw}.json`)
         .then((response) => response.json())
         .then((json) => {
           if (json?.user) {
-            global.console.log(json.user, json.user.user_fields[1])
             setUserJson({
               user: json.user,
               shows: json.user.user_fields[1]
@@ -86,6 +97,7 @@ export default function FanStatsPage({location, data}) {
   const {
     allSetsCsv: {nodes: allSets},
     allSongperformancesCsv: {nodes: allSongPerfs},
+    allTeasesCsv: {nodes: allTeases},
     allShowsCsv: {nodes: allShows},
     allVenuesCsv: {nodes: allVenues},
   } = data
@@ -93,6 +105,7 @@ export default function FanStatsPage({location, data}) {
   const findSet = find(__, allSets)
   const findShow = find(__, allShows)
   const findVenue = find(__, allVenues)
+  const filterTeases = filter(__, allTeases)
 
   useEffect(() => {
     if (userJson?.shows) {
@@ -113,8 +126,7 @@ export default function FanStatsPage({location, data}) {
       }, {})
       setShowsData(shows)
 
-      global.console.log({allSongPerfs})
-      const songsData = Object.values(shows)
+      const perfsData = Object.values(shows)
         .reduce((setIDs, show) => setIDs.concat([show.set1, show.set2, show.set3, show.encore1, show.encore2].filter((id) => Boolean(id))), [])
         // now it is an array of set ID strings...
         .map((setID) => findSet(propEq('id', setID)))
@@ -122,9 +134,11 @@ export default function FanStatsPage({location, data}) {
         // now it is an array of songperf ID strings
         .map((songPerfID) => findSongPerf(propEq('id', songPerfID)))
         // now it is an array of songperf objs
-      global.console.log({songsData})
-      setSongsData(songsData)
+      setPerfsData(perfsData)
 
+      const teasesData = perfsData
+        .flatMap((perf) => filterTeases(propEq('performance_id', perf.id)))
+      setTeasesData(teasesData)
     }
   }, [userJson])
 
@@ -133,11 +147,9 @@ export default function FanStatsPage({location, data}) {
     <h1><PageTitle username={userJson?.user?.username} /></h1>
     {usernameRaw
       ? userJson?.user
-        ? showsData
-          ? Object.keys(showsData).length
-            ? <FanStats shows={showsData} songs={songsData} user={userJson.user} />
-            : <><p>No shows found! (Have you entered them in <a href="https://lot.almost-dead.net/my/preferences/profile">your account preferences on The Lot</a>?)</p><UsernameForm/></>
-          : <p>Reticulating splines...</p>
+        ? Object.keys(showsData).length
+          ? <FanStats shows={showsData} songs={perfsData} teases={teasesData} user={userJson.user} />
+          : <><p>No shows found! (Have you entered them in <a href="https://lot.almost-dead.net/my/preferences/profile">your account preferences on The Lot</a>?)</p><UsernameForm/></>
         : userJson?.error
           ? <><p>Uh oh, error fetching data.</p><UsernameForm/></>
           : <p>Loading...</p>
@@ -186,6 +198,14 @@ export const query = graphql`
       nodes {
         id
         set_id
+        song_id
+        song_name
+      }
+    }
+    allTeasesCsv {
+      nodes {
+        id
+        performance_id
         song_id
         song_name
       }
