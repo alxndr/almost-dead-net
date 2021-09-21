@@ -4,11 +4,11 @@
   padding: 1em;
 }
 
-h2 {
+.fanstatspage h2 {
   text-align: left;
   font-family: 'Shadows Into Light', fantasy;
 }
 
-ol ::marker {
+.fanstatspage ol ::marker {
   font-size: 0.8em;
 }
