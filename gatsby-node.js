@@ -40,9 +40,9 @@ exports.createSchemaCustomization = ({actions: {createTypes}}) => {
       next_perfid: songperformancesCsv @link
       prev_perfid: songperformancesCsv @link
       prev_show_id: showsCsv @link
-      set_id: setsCsv @link
       show_id: showsCsv @link
       song_id: songsCsv @link
+      song_name: String
       variation: String
     }
     type songsCsv implements Node {
