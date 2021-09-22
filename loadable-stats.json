@@ -1,5 +1,5 @@
 {
-  "hash": "de74af5d8f4921c3b462",
+  "hash": "438129190787693dfd82",
   "publicPath": "/",
   "outputPath": "/Users/alxndr/workspace/almost-dead-net/public",
   "assetsByChunkName": {
@@ -10,7 +10,7 @@
       "app-be9e5e26f2b6b0e3da01.js"
     ],
     "webpack-runtime": [
-      "webpack-runtime-463f04dcb1aeadd2c1cb.js"
+      "webpack-runtime-3ac2e5074caa2ab3f2bf.js"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-c1a712730d8d7ebc73c6.js"
@@ -19,7 +19,7 @@
       "component---src-pages-about-js-b35d20b6d5c461cbf1b9.js"
     ],
     "component---src-pages-fan-stats-js": [
-      "component---src-pages-fan-stats-js-752cff1875c9c2bfc1f1.js"
+      "component---src-pages-fan-stats-js-9745d747e8d36cfed889.js"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-6c6eaeefee7fa11cc895.js"
@@ -28,7 +28,7 @@
       "component---src-pages-songs-js-7efe1ec3f0517cea3fb6.js"
     ],
     "component---src-pages-venues-js": [
-      "component---src-pages-venues-js-540147e25b61ac1d15ae.js"
+      "component---src-pages-venues-js-5588bfdea4dca53024ea.js"
     ],
     "component---src-templates-show-embed-js": [
       "component---src-templates-show-embed-js-0216e99c84b4517c9632.js"
@@ -37,10 +37,10 @@
       "component---src-templates-show-js-b83b5a35ec9035f03b1b.js"
     ],
     "component---src-templates-song-js": [
-      "component---src-templates-song-js-46a2ed7bee4d09266a3a.js"
+      "component---src-templates-song-js-9102432bdb3ba22d95db.js"
     ],
     "component---src-templates-venue-js": [
-      "component---src-templates-venue-js-3f6ef742707928767a73.js"
+      "component---src-templates-venue-js-5257e62f528b7f0d12eb.js"
     ],
     "components-forum-topics": [
       "components-forum-topics-72f3aae795309cc7e281.js"
@@ -66,7 +66,7 @@
       "type": "assets by status",
       "cached": true,
       "filteredChildren": 23,
-      "size": 711390
+      "size": 711314
     }
   ],
   "namedChunkGroups": {
@@ -78,7 +78,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-463f04dcb1aeadd2c1cb.js"
+          "name": "webpack-runtime-3ac2e5074caa2ab3f2bf.js"
         },
         {
           "name": "polyfill-7864fbd181389e7199fa.js"
@@ -100,7 +100,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-463f04dcb1aeadd2c1cb.js"
+          "name": "webpack-runtime-3ac2e5074caa2ab3f2bf.js"
         },
         {
           "name": "framework-0068a62ee68a6c63e163.js"
@@ -185,7 +185,7 @@
           "name": "7376ac395bbdbdea96ca893d1b9ebabd23a707ab-193dba1d78661077c390.js"
         },
         {
-          "name": "component---src-pages-fan-stats-js-752cff1875c9c2bfc1f1.js"
+          "name": "component---src-pages-fan-stats-js-9745d747e8d36cfed889.js"
         }
       ],
       "filteredAssets": 0,
@@ -268,7 +268,7 @@
           "name": "commons-98c49e0b81fddc6cbe8e.js"
         },
         {
-          "name": "component---src-pages-venues-js-540147e25b61ac1d15ae.js"
+          "name": "component---src-pages-venues-js-5588bfdea4dca53024ea.js"
         }
       ],
       "filteredAssets": 0,
@@ -359,7 +359,7 @@
           "name": "commons-98c49e0b81fddc6cbe8e.js"
         },
         {
-          "name": "component---src-templates-song-js-46a2ed7bee4d09266a3a.js"
+          "name": "component---src-templates-song-js-9102432bdb3ba22d95db.js"
         }
       ],
       "filteredAssets": 0,
@@ -384,7 +384,7 @@
           "name": "commons-98c49e0b81fddc6cbe8e.js"
         },
         {
-          "name": "component---src-templates-venue-js-3f6ef742707928767a73.js"
+          "name": "component---src-templates-venue-js-5257e62f528b7f0d12eb.js"
         }
       ],
       "filteredAssets": 0,
@@ -429,7 +429,7 @@
     {
       "id": 658,
       "files": [
-        "webpack-runtime-463f04dcb1aeadd2c1cb.js"
+        "webpack-runtime-3ac2e5074caa2ab3f2bf.js"
       ]
     },
     {
@@ -465,7 +465,7 @@
     {
       "id": 523,
       "files": [
-        "component---src-pages-fan-stats-js-752cff1875c9c2bfc1f1.js"
+        "component---src-pages-fan-stats-js-9745d747e8d36cfed889.js"
       ]
     },
     {
@@ -483,7 +483,7 @@
     {
       "id": 124,
       "files": [
-        "component---src-pages-venues-js-540147e25b61ac1d15ae.js"
+        "component---src-pages-venues-js-5588bfdea4dca53024ea.js"
       ]
     },
     {
@@ -501,13 +501,13 @@
     {
       "id": 208,
       "files": [
-        "component---src-templates-song-js-46a2ed7bee4d09266a3a.js"
+        "component---src-templates-song-js-9102432bdb3ba22d95db.js"
       ]
     },
     {
       "id": 706,
       "files": [
-        "component---src-templates-venue-js-3f6ef742707928767a73.js"
+        "component---src-templates-venue-js-5257e62f528b7f0d12eb.js"
       ]
     },
     {
