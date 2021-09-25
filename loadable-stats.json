@@ -1,5 +1,5 @@
 {
-  "hash": "d532b68e5003b2458bbc",
+  "hash": "502629c6bcb3a992df4b",
   "publicPath": "/",
   "outputPath": "/Users/alxndr/workspace/almost-dead-net/public",
   "assetsByChunkName": {
@@ -10,7 +10,7 @@
       "app-10fab7106accce6a2999.js"
     ],
     "webpack-runtime": [
-      "webpack-runtime-c0614b4242c3bd14a0b0.js"
+      "webpack-runtime-a2bd6ccefc3ce2caa1c9.js"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-c1a712730d8d7ebc73c6.js"
@@ -22,7 +22,7 @@
       "component---src-pages-fan-stats-js-9745d747e8d36cfed889.js"
     ],
     "component---src-pages-graph-js": [
-      "component---src-pages-graph-js-8f7cb9fd3a8bf31b98f2.js"
+      "component---src-pages-graph-js-ca8b73fe1242bd8a3986.js"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-6c6eaeefee7fa11cc895.js"
@@ -69,7 +69,7 @@
       "type": "assets by status",
       "cached": true,
       "filteredChildren": 24,
-      "size": 794686
+      "size": 814549
     }
   ],
   "namedChunkGroups": {
@@ -81,7 +81,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-c0614b4242c3bd14a0b0.js"
+          "name": "webpack-runtime-a2bd6ccefc3ce2caa1c9.js"
         },
         {
           "name": "polyfill-7864fbd181389e7199fa.js"
@@ -103,7 +103,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-c0614b4242c3bd14a0b0.js"
+          "name": "webpack-runtime-a2bd6ccefc3ce2caa1c9.js"
         },
         {
           "name": "framework-0068a62ee68a6c63e163.js"
@@ -209,7 +209,7 @@
           "name": "styles.1b8fbfa3bf781f0812dc.css"
         },
         {
-          "name": "component---src-pages-graph-js-8f7cb9fd3a8bf31b98f2.js"
+          "name": "component---src-pages-graph-js-ca8b73fe1242bd8a3986.js"
         }
       ],
       "filteredAssets": 0,
@@ -453,7 +453,7 @@
     {
       "id": 658,
       "files": [
-        "webpack-runtime-c0614b4242c3bd14a0b0.js"
+        "webpack-runtime-a2bd6ccefc3ce2caa1c9.js"
       ]
     },
     {
@@ -495,7 +495,7 @@
     {
       "id": 896,
       "files": [
-        "component---src-pages-graph-js-8f7cb9fd3a8bf31b98f2.js"
+        "component---src-pages-graph-js-ca8b73fe1242bd8a3986.js"
       ]
     },
     {
