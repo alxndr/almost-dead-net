@@ -30,58 +30,55 @@ export default function GraphPage({data}) {
   const [songs, setSongs] = useState()
 
   useEffect(async () => {
-    if (!db)
-      return
-    db.get(`show-38`).get('sets').map().get('performances').map().once((sets) => console.log('perfs in show 38', sets))
+    const db = G({localStorage: false})
+    allSongPerfs.forEach(async ({id, song_name}) => {
+      const songSlug = slug(song_name)
+      const songNode = db.get(`song-${songSlug}`)
+      const songPerfNode = db.get(`songperf-${id}`).put({
+        id,
+        song_name,
+        song: songNode // songPerfNode.get('song').put(songNode)
+      })
+      await songNode.get('performances').set(songPerfNode).then()
+    })
+    global.console.log(allSongPerfs.length, 'songs added...')
+    allSets.forEach(({id, setlist}) => {
+      const setNode = db.get(`set-${id}`).put({id})
+      String(setlist).split(':').forEach(async (songPerfId, index, setlistArr) => {
+        const songPerfNode = db.get(`songperf-${songPerfId}`).put({within: setNode})
+        if (index > 0) {
+          const prevSongPerfId = setlistArr[index-1]
+          const prevSongPerfNode = db.get(`songperf-${prevSongPerfId}`)
+          prevSongPerfNode.get('precedes').set(songPerfNode)
+          songPerfNode.get('follows').set(prevSongPerfNode)
+        }
+        await setNode.get('performances').set(songPerfNode).then()
+      })
+    })
+    global.console.log(allSets.length, 'sets added...')
+    allShows.forEach(({id, date, encore1, encore2, set1, set2, set3, soundcheck}) => {
+      const showNode = db.get(`show-${id}`).put({
+        id,
+        date,
+      }); // semicolon needed when next line starts with an array literal...
+      [set1, set2, set3, encore1, encore2].forEach(async (which) => {
+        if (which) {
+          const setNode = db.get(`set-${id}`).put({which})
+          await showNode.get('sets').set(setNode).then()
+        }
+      })
+    })
+    global.console.log(allShows.length, 'shows added')
+    global.console.log('done building database')
+    setDb(db)
+
+    db.get(`show-38`).get('sets').get('performances').map().once((sets) => console.log('perfs in show 38', sets))
     const berthas = await db.get(`song-bertha`).get('performances').get('songs').map().then()
     global.console.log({berthas})
     setSongs(berthas)
     const perfs = await db.get(`set-100`).get('performances').then()
     console.log('performances in set 100', perfs)
     setPerfs(perfs)
-  }, [db])
-
-  useEffect(async () => {
-    const g = G()
-    allSongPerfs.forEach(({id, song_name}) => {
-      const songSlug = slug(song_name)
-      const songNode = g.get(`song-${songSlug}`)
-      const songPerfNode = g.get(`songperf-${id}`).put({
-        id,
-        song_name,
-        song: songNode // songPerfNode.get('song').put(songNode)
-      })
-      songNode.get('performances').set(songPerfNode)
-    })
-    global.console.log('songs added...')
-    allSets.forEach(({id, setlist}) => {
-      const setNode = g.get(`set-${id}`).put({id})
-      String(setlist).split(':').forEach((songPerfId, index, setlistArr) => {
-        const songPerfNode = g.get(`songperf-${songPerfId}`).put({within: setNode})
-        if (index > 0) {
-          const prevSongPerfId = setlistArr[index-1]
-          const prevSongPerfNode = g.get(`songperf-${prevSongPerfId}`)
-          prevSongPerfNode.get('precedes').set(songPerfNode)
-          songPerfNode.get('follows').set(prevSongPerfNode)
-        }
-        setNode.get('performances').set(songPerfNode)
-      })
-    })
-    global.console.log('sets added...')
-    allShows.forEach(({id, date, encore1, encore2, set1, set2, set3, soundcheck}) => {
-      const showNode = g.get(`show-${id}`).put({
-        id,
-        date,
-      }); // semicolon needed when next line starts with an array literal...
-      [set1, set2, set3, encore1, encore2].forEach((which) => {
-        if (which) {
-          const setNode = g.get(`set-${id}`).put({which})
-          showNode.get('sets').set(setNode)
-        }
-      })
-    })
-    global.console.log('done building database')
-    setDb(g)
   }, [])
 
   return <Layout className="graphPage">
