@@ -10,8 +10,6 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-import icon from '../images/icon-almost-dead.png'
-
 function SEO({ description, image, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
@@ -67,7 +65,7 @@ function SEO({ description, image, lang, meta, title }) {
         },
       ].concat(meta)}
       link={[
-        { rel: 'shortcut icon', type: 'image/png', href: icon},
+        { rel: 'shortcut icon', type: 'image/png', href: 'https://i.imgur.com/7dpZxu1.png'},
       ]}
     >
       {image && <meta property="og:image" content={image} />}
