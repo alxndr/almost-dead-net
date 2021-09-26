@@ -1,5 +1,5 @@
 {
-  "hash": "2054d3e2cbcc5f6167d1",
+  "hash": "438129190787693dfd82",
   "publicPath": "/",
   "outputPath": "/Users/alxndr/workspace/almost-dead-net/public",
   "assetsByChunkName": {
@@ -7,43 +7,40 @@
       "polyfill-7864fbd181389e7199fa.js"
     ],
     "app": [
-      "app-10fab7106accce6a2999.js"
+      "app-be9e5e26f2b6b0e3da01.js"
     ],
     "webpack-runtime": [
-      "webpack-runtime-b15c66d5d53a4f08edbf.js"
+      "webpack-runtime-3ac2e5074caa2ab3f2bf.js"
     ],
     "component---src-pages-404-js": [
-      "component---src-pages-404-js-7de017201bc7d31611c7.js"
+      "component---src-pages-404-js-c1a712730d8d7ebc73c6.js"
     ],
     "component---src-pages-about-js": [
-      "component---src-pages-about-js-55936d30c676d50377c5.js"
+      "component---src-pages-about-js-b35d20b6d5c461cbf1b9.js"
     ],
     "component---src-pages-fan-stats-js": [
-      "component---src-pages-fan-stats-js-122a594080ddb2cc31fe.js"
-    ],
-    "component---src-pages-graph-js": [
-      "component---src-pages-graph-js-6b59b8a7c8ec8594be33.js"
+      "component---src-pages-fan-stats-js-9745d747e8d36cfed889.js"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-bb3038083bad496be458.js"
+      "component---src-pages-index-js-6c6eaeefee7fa11cc895.js"
     ],
     "component---src-pages-songs-js": [
-      "component---src-pages-songs-js-0e77b5c597db6805ad67.js"
+      "component---src-pages-songs-js-7efe1ec3f0517cea3fb6.js"
     ],
     "component---src-pages-venues-js": [
-      "component---src-pages-venues-js-5375a934670a8d4038c6.js"
+      "component---src-pages-venues-js-5588bfdea4dca53024ea.js"
     ],
     "component---src-templates-show-embed-js": [
-      "component---src-templates-show-embed-js-63621e704690372f4dc7.js"
+      "component---src-templates-show-embed-js-0216e99c84b4517c9632.js"
     ],
     "component---src-templates-show-js": [
-      "component---src-templates-show-js-16edacf27fa8260a56d5.js"
+      "component---src-templates-show-js-b83b5a35ec9035f03b1b.js"
     ],
     "component---src-templates-song-js": [
-      "component---src-templates-song-js-4288cc35612dccef0351.js"
+      "component---src-templates-song-js-9102432bdb3ba22d95db.js"
     ],
     "component---src-templates-venue-js": [
-      "component---src-templates-venue-js-5ebf6a8b2f9520a0f7e3.js"
+      "component---src-templates-venue-js-5257e62f528b7f0d12eb.js"
     ],
     "components-forum-topics": [
       "components-forum-topics-72f3aae795309cc7e281.js"
@@ -54,8 +51,8 @@
     "framework": [
       "framework-0068a62ee68a6c63e163.js"
     ],
-    "438bebe8243f1bc4de7ce8995814d386dd40bfac": [
-      "438bebe8243f1bc4de7ce8995814d386dd40bfac-9c57a78f5f9f6b783cef.js"
+    "commons": [
+      "commons-98c49e0b81fddc6cbe8e.js"
     ],
     "7376ac395bbdbdea96ca893d1b9ebabd23a707ab": [
       "7376ac395bbdbdea96ca893d1b9ebabd23a707ab-193dba1d78661077c390.js"
@@ -68,8 +65,8 @@
     {
       "type": "assets by status",
       "cached": true,
-      "filteredChildren": 23,
-      "size": 788659
+      "filteredChildren": 22,
+      "size": 698323
     }
   ],
   "namedChunkGroups": {
@@ -81,7 +78,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-b15c66d5d53a4f08edbf.js"
+          "name": "webpack-runtime-3ac2e5074caa2ab3f2bf.js"
         },
         {
           "name": "polyfill-7864fbd181389e7199fa.js"
@@ -103,13 +100,13 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-b15c66d5d53a4f08edbf.js"
+          "name": "webpack-runtime-3ac2e5074caa2ab3f2bf.js"
         },
         {
           "name": "framework-0068a62ee68a6c63e163.js"
         },
         {
-          "name": "app-10fab7106accce6a2999.js"
+          "name": "app-be9e5e26f2b6b0e3da01.js"
         }
       ],
       "filteredAssets": 0,
@@ -123,7 +120,7 @@
       "name": "component---src-pages-404-js",
       "chunks": [
         532,
-        5,
+        351,
         883
       ],
       "assets": [
@@ -131,10 +128,10 @@
           "name": "styles.1b8fbfa3bf781f0812dc.css"
         },
         {
-          "name": "438bebe8243f1bc4de7ce8995814d386dd40bfac-9c57a78f5f9f6b783cef.js"
+          "name": "commons-98c49e0b81fddc6cbe8e.js"
         },
         {
-          "name": "component---src-pages-404-js-7de017201bc7d31611c7.js"
+          "name": "component---src-pages-404-js-c1a712730d8d7ebc73c6.js"
         }
       ],
       "filteredAssets": 0,
@@ -148,7 +145,7 @@
       "name": "component---src-pages-about-js",
       "chunks": [
         532,
-        5,
+        351,
         682
       ],
       "assets": [
@@ -156,10 +153,10 @@
           "name": "styles.1b8fbfa3bf781f0812dc.css"
         },
         {
-          "name": "438bebe8243f1bc4de7ce8995814d386dd40bfac-9c57a78f5f9f6b783cef.js"
+          "name": "commons-98c49e0b81fddc6cbe8e.js"
         },
         {
-          "name": "component---src-pages-about-js-55936d30c676d50377c5.js"
+          "name": "component---src-pages-about-js-b35d20b6d5c461cbf1b9.js"
         }
       ],
       "filteredAssets": 0,
@@ -173,7 +170,7 @@
       "name": "component---src-pages-fan-stats-js",
       "chunks": [
         532,
-        5,
+        351,
         735,
         523
       ],
@@ -182,13 +179,13 @@
           "name": "styles.1b8fbfa3bf781f0812dc.css"
         },
         {
-          "name": "438bebe8243f1bc4de7ce8995814d386dd40bfac-9c57a78f5f9f6b783cef.js"
+          "name": "commons-98c49e0b81fddc6cbe8e.js"
         },
         {
           "name": "7376ac395bbdbdea96ca893d1b9ebabd23a707ab-193dba1d78661077c390.js"
         },
         {
-          "name": "component---src-pages-fan-stats-js-122a594080ddb2cc31fe.js"
+          "name": "component---src-pages-fan-stats-js-9745d747e8d36cfed889.js"
         }
       ],
       "filteredAssets": 0,
@@ -198,32 +195,11 @@
       "children": {},
       "childAssets": {}
     },
-    "component---src-pages-graph-js": {
-      "name": "component---src-pages-graph-js",
-      "chunks": [
-        532,
-        896
-      ],
-      "assets": [
-        {
-          "name": "styles.1b8fbfa3bf781f0812dc.css"
-        },
-        {
-          "name": "component---src-pages-graph-js-6b59b8a7c8ec8594be33.js"
-        }
-      ],
-      "filteredAssets": 0,
-      "assetsSize": null,
-      "filteredAuxiliaryAssets": 1,
-      "auxiliaryAssetsSize": null,
-      "children": {},
-      "childAssets": {}
-    },
     "component---src-pages-index-js": {
       "name": "component---src-pages-index-js",
       "chunks": [
         532,
-        5,
+        351,
         678
       ],
       "assets": [
@@ -231,10 +207,10 @@
           "name": "styles.1b8fbfa3bf781f0812dc.css"
         },
         {
-          "name": "438bebe8243f1bc4de7ce8995814d386dd40bfac-9c57a78f5f9f6b783cef.js"
+          "name": "commons-98c49e0b81fddc6cbe8e.js"
         },
         {
-          "name": "component---src-pages-index-js-bb3038083bad496be458.js"
+          "name": "component---src-pages-index-js-6c6eaeefee7fa11cc895.js"
         }
       ],
       "filteredAssets": 0,
@@ -248,7 +224,7 @@
       "name": "component---src-pages-songs-js",
       "chunks": [
         532,
-        5,
+        351,
         735,
         1,
         540
@@ -258,7 +234,7 @@
           "name": "styles.1b8fbfa3bf781f0812dc.css"
         },
         {
-          "name": "438bebe8243f1bc4de7ce8995814d386dd40bfac-9c57a78f5f9f6b783cef.js"
+          "name": "commons-98c49e0b81fddc6cbe8e.js"
         },
         {
           "name": "7376ac395bbdbdea96ca893d1b9ebabd23a707ab-193dba1d78661077c390.js"
@@ -267,7 +243,7 @@
           "name": "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-05e67dea3e2e14538ba4.js"
         },
         {
-          "name": "component---src-pages-songs-js-0e77b5c597db6805ad67.js"
+          "name": "component---src-pages-songs-js-7efe1ec3f0517cea3fb6.js"
         }
       ],
       "filteredAssets": 0,
@@ -281,7 +257,7 @@
       "name": "component---src-pages-venues-js",
       "chunks": [
         532,
-        5,
+        351,
         124
       ],
       "assets": [
@@ -289,10 +265,10 @@
           "name": "styles.1b8fbfa3bf781f0812dc.css"
         },
         {
-          "name": "438bebe8243f1bc4de7ce8995814d386dd40bfac-9c57a78f5f9f6b783cef.js"
+          "name": "commons-98c49e0b81fddc6cbe8e.js"
         },
         {
-          "name": "component---src-pages-venues-js-5375a934670a8d4038c6.js"
+          "name": "component---src-pages-venues-js-5588bfdea4dca53024ea.js"
         }
       ],
       "filteredAssets": 0,
@@ -306,7 +282,7 @@
       "name": "component---src-templates-show-embed-js",
       "chunks": [
         532,
-        5,
+        351,
         735,
         1,
         292
@@ -316,7 +292,7 @@
           "name": "styles.1b8fbfa3bf781f0812dc.css"
         },
         {
-          "name": "438bebe8243f1bc4de7ce8995814d386dd40bfac-9c57a78f5f9f6b783cef.js"
+          "name": "commons-98c49e0b81fddc6cbe8e.js"
         },
         {
           "name": "7376ac395bbdbdea96ca893d1b9ebabd23a707ab-193dba1d78661077c390.js"
@@ -325,7 +301,7 @@
           "name": "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-05e67dea3e2e14538ba4.js"
         },
         {
-          "name": "component---src-templates-show-embed-js-63621e704690372f4dc7.js"
+          "name": "component---src-templates-show-embed-js-0216e99c84b4517c9632.js"
         }
       ],
       "filteredAssets": 0,
@@ -339,7 +315,7 @@
       "name": "component---src-templates-show-js",
       "chunks": [
         532,
-        5,
+        351,
         735,
         1,
         652
@@ -349,7 +325,7 @@
           "name": "styles.1b8fbfa3bf781f0812dc.css"
         },
         {
-          "name": "438bebe8243f1bc4de7ce8995814d386dd40bfac-9c57a78f5f9f6b783cef.js"
+          "name": "commons-98c49e0b81fddc6cbe8e.js"
         },
         {
           "name": "7376ac395bbdbdea96ca893d1b9ebabd23a707ab-193dba1d78661077c390.js"
@@ -358,7 +334,7 @@
           "name": "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-05e67dea3e2e14538ba4.js"
         },
         {
-          "name": "component---src-templates-show-js-16edacf27fa8260a56d5.js"
+          "name": "component---src-templates-show-js-b83b5a35ec9035f03b1b.js"
         }
       ],
       "filteredAssets": 0,
@@ -372,7 +348,7 @@
       "name": "component---src-templates-song-js",
       "chunks": [
         532,
-        5,
+        351,
         208
       ],
       "assets": [
@@ -380,10 +356,10 @@
           "name": "styles.1b8fbfa3bf781f0812dc.css"
         },
         {
-          "name": "438bebe8243f1bc4de7ce8995814d386dd40bfac-9c57a78f5f9f6b783cef.js"
+          "name": "commons-98c49e0b81fddc6cbe8e.js"
         },
         {
-          "name": "component---src-templates-song-js-4288cc35612dccef0351.js"
+          "name": "component---src-templates-song-js-9102432bdb3ba22d95db.js"
         }
       ],
       "filteredAssets": 0,
@@ -397,7 +373,7 @@
       "name": "component---src-templates-venue-js",
       "chunks": [
         532,
-        5,
+        351,
         706
       ],
       "assets": [
@@ -405,10 +381,10 @@
           "name": "styles.1b8fbfa3bf781f0812dc.css"
         },
         {
-          "name": "438bebe8243f1bc4de7ce8995814d386dd40bfac-9c57a78f5f9f6b783cef.js"
+          "name": "commons-98c49e0b81fddc6cbe8e.js"
         },
         {
-          "name": "component---src-templates-venue-js-5ebf6a8b2f9520a0f7e3.js"
+          "name": "component---src-templates-venue-js-5257e62f528b7f0d12eb.js"
         }
       ],
       "filteredAssets": 0,
@@ -447,13 +423,13 @@
     {
       "id": 143,
       "files": [
-        "app-10fab7106accce6a2999.js"
+        "app-be9e5e26f2b6b0e3da01.js"
       ]
     },
     {
       "id": 658,
       "files": [
-        "webpack-runtime-b15c66d5d53a4f08edbf.js"
+        "webpack-runtime-3ac2e5074caa2ab3f2bf.js"
       ]
     },
     {
@@ -477,67 +453,61 @@
     {
       "id": 883,
       "files": [
-        "component---src-pages-404-js-7de017201bc7d31611c7.js"
+        "component---src-pages-404-js-c1a712730d8d7ebc73c6.js"
       ]
     },
     {
       "id": 682,
       "files": [
-        "component---src-pages-about-js-55936d30c676d50377c5.js"
+        "component---src-pages-about-js-b35d20b6d5c461cbf1b9.js"
       ]
     },
     {
       "id": 523,
       "files": [
-        "component---src-pages-fan-stats-js-122a594080ddb2cc31fe.js"
-      ]
-    },
-    {
-      "id": 896,
-      "files": [
-        "component---src-pages-graph-js-6b59b8a7c8ec8594be33.js"
+        "component---src-pages-fan-stats-js-9745d747e8d36cfed889.js"
       ]
     },
     {
       "id": 678,
       "files": [
-        "component---src-pages-index-js-bb3038083bad496be458.js"
+        "component---src-pages-index-js-6c6eaeefee7fa11cc895.js"
       ]
     },
     {
       "id": 540,
       "files": [
-        "component---src-pages-songs-js-0e77b5c597db6805ad67.js"
+        "component---src-pages-songs-js-7efe1ec3f0517cea3fb6.js"
       ]
     },
     {
       "id": 124,
       "files": [
-        "component---src-pages-venues-js-5375a934670a8d4038c6.js"
+        "component---src-pages-venues-js-5588bfdea4dca53024ea.js"
       ]
     },
     {
       "id": 292,
       "files": [
-        "component---src-templates-show-embed-js-63621e704690372f4dc7.js"
+        "component---src-templates-show-embed-js-0216e99c84b4517c9632.js"
       ]
     },
     {
       "id": 652,
       "files": [
-        "component---src-templates-show-js-16edacf27fa8260a56d5.js"
+        "component---src-templates-show-js-b83b5a35ec9035f03b1b.js"
       ]
     },
     {
       "id": 208,
       "files": [
-        "component---src-templates-song-js-4288cc35612dccef0351.js"
+        "component---src-templates-song-js-9102432bdb3ba22d95db.js"
       ]
     },
     {
       "id": 706,
       "files": [
-        "component---src-templates-venue-js-5ebf6a8b2f9520a0f7e3.js"
+        "component---src-templates-venue-js-5257e62f528b7f0d12eb.js"
       ]
     },
     {
@@ -559,9 +529,9 @@
       ]
     },
     {
-      "id": 5,
+      "id": 351,
       "files": [
-        "438bebe8243f1bc4de7ce8995814d386dd40bfac-9c57a78f5f9f6b783cef.js"
+        "commons-98c49e0b81fddc6cbe8e.js"
       ]
     },
     {
