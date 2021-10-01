@@ -1,3 +1,8 @@
+/*!
+ * domready (c) Dustin Diaz 2014 - License MIT
+ * ie10 fix - Mikael Kristiansson 2019
+ */
+
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation.
 
