@@ -30,7 +30,8 @@ export default function About() {
     <p>Special Thanks to <a href="https://archive.org/" target="_blank" rel="noopener noreferrer">the Internet Archive</a> for preserving human knowledge and art, and the Taper Community for sharing their experiences!</p>
     <hr />
     <p>Thanks to <a href="http://www.deaddisc.com" target="_blank" rel="noopener noreferrer">the GD Family Discography</a> for detailed information about the songs played by the Grateful Dead.</p>
-    <p>Thanks to Aaron Donovan for the walk-through of the parts of <a href="https://www.whitegum.com/aaroness.htm" target="_blank" rel="noopener noreferrer">Terrapin Suite</a>.</p>
+    <p>Thanks to Aaron Donovan for <a href="https://www.whitegum.com/aaroness.htm" target="_blank" rel="noopener noreferrer">the walk-through of the Terrapin suite</a>.</p>
+    <p>Thanks to Rannygazoo for <a href="https://rannygazoodead.blogspot.com/2015/05/some-problems-with-nomenclature-1973.html" target="_blank" rel="noopener noreferrer">the dive into "Stronger Than Dirt" &amp; "Milking the Turkey"</a>.</p>
     <hr />
     <p>The site on <tt>almost-dead.net</tt> is powered by <a href="https://github.com/alxndr/almost-dead-net" target="_blank" rel="noopener noreferrer">some JavaScript</a> using <a href="https://www.gatsbyjs.com/" target="_blank" rel="noopener noreferrer">Gatsby</a>, hosted on GitHub Pages.</p>
     <p>The site on <tt>lot.almost-dead.net</tt> is <a href="https://lot.almost-dead.net/" title="JRAD Forum — The Lot">The Lot</a>, a forum powered by <a href="https://discourse.org" target="_blank" rel="noopener noreferrer">Discourse</a>, running on Google Cloud.</p>
