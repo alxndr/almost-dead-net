@@ -1,25 +1,25 @@
 {
-  "hash": "d180c8a252e72ea877ac",
+  "hash": "3f4543a21ff06864c0ae",
   "publicPath": "/",
-  "outputPath": "/Users/xander/workspace/almost-dead-net/public",
+  "outputPath": "/Users/alxndr/workspace/almost-dead-net/public",
   "assetsByChunkName": {
     "polyfill": [
-      "polyfill-a2d25affeded1b147d38.js"
+      "polyfill-7864fbd181389e7199fa.js"
     ],
     "app": [
-      "app-eea019a63a537e00a315.js"
+      "app-be9e5e26f2b6b0e3da01.js"
     ],
     "webpack-runtime": [
-      "webpack-runtime-cc424a8798895e2f9f4d.js"
+      "webpack-runtime-5a0e2a47557c63635d27.js"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-c1a712730d8d7ebc73c6.js"
     ],
     "component---src-pages-about-js": [
-      "component---src-pages-about-js-b35d20b6d5c461cbf1b9.js"
+      "component---src-pages-about-js-dad8412bc5c817967af0.js"
     ],
     "component---src-pages-fan-stats-js": [
-      "component---src-pages-fan-stats-js-382fe86276ae9df9d65c.js"
+      "component---src-pages-fan-stats-js-9745d747e8d36cfed889.js"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-6c6eaeefee7fa11cc895.js"
@@ -28,13 +28,13 @@
       "component---src-pages-songs-js-7efe1ec3f0517cea3fb6.js"
     ],
     "component---src-pages-venues-js": [
-      "component---src-pages-venues-js-ad82de12b7cf893612e8.js"
+      "component---src-pages-venues-js-5588bfdea4dca53024ea.js"
     ],
     "component---src-templates-show-embed-js": [
       "component---src-templates-show-embed-js-0216e99c84b4517c9632.js"
     ],
     "component---src-templates-show-js": [
-      "component---src-templates-show-js-1359cd619a7bce6b1731.js"
+      "component---src-templates-show-js-b83b5a35ec9035f03b1b.js"
     ],
     "component---src-templates-song-js": [
       "component---src-templates-song-js-9102432bdb3ba22d95db.js"
@@ -66,7 +66,7 @@
       "type": "assets by status",
       "cached": true,
       "filteredChildren": 23,
-      "size": 704349
+      "size": 711581
     }
   ],
   "namedChunkGroups": {
@@ -78,10 +78,10 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-cc424a8798895e2f9f4d.js"
+          "name": "webpack-runtime-5a0e2a47557c63635d27.js"
         },
         {
-          "name": "polyfill-a2d25affeded1b147d38.js"
+          "name": "polyfill-7864fbd181389e7199fa.js"
         }
       ],
       "filteredAssets": 0,
@@ -100,13 +100,13 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-cc424a8798895e2f9f4d.js"
+          "name": "webpack-runtime-5a0e2a47557c63635d27.js"
         },
         {
           "name": "framework-0068a62ee68a6c63e163.js"
         },
         {
-          "name": "app-eea019a63a537e00a315.js"
+          "name": "app-be9e5e26f2b6b0e3da01.js"
         }
       ],
       "filteredAssets": 0,
@@ -156,7 +156,7 @@
           "name": "commons-98c49e0b81fddc6cbe8e.js"
         },
         {
-          "name": "component---src-pages-about-js-b35d20b6d5c461cbf1b9.js"
+          "name": "component---src-pages-about-js-dad8412bc5c817967af0.js"
         }
       ],
       "filteredAssets": 0,
@@ -185,7 +185,7 @@
           "name": "7376ac395bbdbdea96ca893d1b9ebabd23a707ab-193dba1d78661077c390.js"
         },
         {
-          "name": "component---src-pages-fan-stats-js-382fe86276ae9df9d65c.js"
+          "name": "component---src-pages-fan-stats-js-9745d747e8d36cfed889.js"
         }
       ],
       "filteredAssets": 0,
@@ -268,7 +268,7 @@
           "name": "commons-98c49e0b81fddc6cbe8e.js"
         },
         {
-          "name": "component---src-pages-venues-js-ad82de12b7cf893612e8.js"
+          "name": "component---src-pages-venues-js-5588bfdea4dca53024ea.js"
         }
       ],
       "filteredAssets": 0,
@@ -334,7 +334,7 @@
           "name": "3f6e0255999b7f72e5c8ffaf8bc2cf1811cd628f-05e67dea3e2e14538ba4.js"
         },
         {
-          "name": "component---src-templates-show-js-1359cd619a7bce6b1731.js"
+          "name": "component---src-templates-show-js-b83b5a35ec9035f03b1b.js"
         }
       ],
       "filteredAssets": 0,
@@ -417,19 +417,19 @@
     {
       "id": 920,
       "files": [
-        "polyfill-a2d25affeded1b147d38.js"
+        "polyfill-7864fbd181389e7199fa.js"
       ]
     },
     {
       "id": 143,
       "files": [
-        "app-eea019a63a537e00a315.js"
+        "app-be9e5e26f2b6b0e3da01.js"
       ]
     },
     {
       "id": 658,
       "files": [
-        "webpack-runtime-cc424a8798895e2f9f4d.js"
+        "webpack-runtime-5a0e2a47557c63635d27.js"
       ]
     },
     {
@@ -439,9 +439,9 @@
       ]
     },
     {
-      "id": 776,
+      "id": 876,
       "files": [
-        "776-6233de6dd8933b5183f9.js"
+        "876-7963611c9742febaaaea.js"
       ]
     },
     {
@@ -459,13 +459,13 @@
     {
       "id": 682,
       "files": [
-        "component---src-pages-about-js-b35d20b6d5c461cbf1b9.js"
+        "component---src-pages-about-js-dad8412bc5c817967af0.js"
       ]
     },
     {
       "id": 523,
       "files": [
-        "component---src-pages-fan-stats-js-382fe86276ae9df9d65c.js"
+        "component---src-pages-fan-stats-js-9745d747e8d36cfed889.js"
       ]
     },
     {
@@ -483,7 +483,7 @@
     {
       "id": 124,
       "files": [
-        "component---src-pages-venues-js-ad82de12b7cf893612e8.js"
+        "component---src-pages-venues-js-5588bfdea4dca53024ea.js"
       ]
     },
     {
@@ -495,7 +495,7 @@
     {
       "id": 652,
       "files": [
-        "component---src-templates-show-js-1359cd619a7bce6b1731.js"
+        "component---src-templates-show-js-b83b5a35ec9035f03b1b.js"
       ]
     },
     {
