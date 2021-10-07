@@ -90,6 +90,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,core_jrad
 339,Don't Stop 'Til You Get Enough,Michael Jackson,,,,339,,,
 321,Don't Stop Me Now,Queen,,,,321,,,
 411,Dreams,Allman Brothers Band,,,3805,411,,,
+417,Drive My Car,John Lennon & Paul McCartney (The Beatles),,,,417,,,
 65,Drums,,,,353:716:998:1201:1232:1535:1667:1838:1959:2548:2780:3056:3513,65,TRUE,,
 66,Dupree's Diamond Blues,Robert Hunter & Jerry Garcia,Dupree's,,24:2552:3262,66,TRUE,,
 67,Easy Wind,Robert Hunter,,,28:135:265:398:436:560:1087:1214:1235:1575:1836:2039:2179:2391:2522:2724:2877:2995:3229:3310,67,TRUE,,
@@ -180,6 +181,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,core_jrad
 335,Jean Pierre,Miles Davis,,,,335,,,
 298,Jessica,Allman Brothers Band,,,,298,,,
 122,Joeline,Tom Hamilton,,,1176:3574,122,,,TRUE
+419,Jolene,American Babies,,,,419,,,TRUE
 123,Just Like Tom Thumb's Blues,Bob Dylan,Tom Thumb's Blues,,2174,123,TRUE,TRUE,
 124,Kashmir,Led Zeppelin,,,1682,124,,,
 125,Keeping It Simple,Joe Russo & Tom Hamilton (Joe Russo's Almost Dead),,,1761:1907:2071,125,,,TRUE
@@ -400,6 +402,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,core_jrad
 263,Werewolves of London,Marinell – Wachtel – Zevon (Warren Zevon),,,865:1362:2064:2991:3268:3709,263,TRUE,TRUE,
 264,West LA Fadeaway,Robert Hunter & Jerry Garcia,,,358:1074:2208:2291:3052:3773,264,TRUE,,
 265,Wharf Rat,Robert Hunter & Jerry Garcia,,,298:638:1355:1678:1831:2301:3586:3760:3865,265,TRUE,,
+418,What Was It You Wanted,Bob Dylan,,,,418,,,
 342,What's Going On,Cleveland – Benson – Gaye (Marvin Gaye),,,,342,,,
 266,When I Paint My Masterpiece,Bob Dylan,,,1433:3660:3833,266,TRUE,TRUE,
 267,When U Love Somebody,Fruit Bats,,,3548:3770,267,,,
