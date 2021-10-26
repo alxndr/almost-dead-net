@@ -57,6 +57,7 @@ id,name,location,capacity,generic name,tagname
 54,Greek Theatre,"Los Angeles, CA",5870,TRUE,Greek Theatre (Los Angeles)
 53,Teragram Ballroom,"Los Angeles, CA",600,,Teragram Ballroom
 52,The Wiltern,"Los Angeles, CA",1850,,The Wiltern
+108,Hollywood Palladium,"Los Angeles, CA",,,Hollywood Palladium
 55,Sunrise Ranch,"Loveland, CO",,,Sunrise Ranch
 57,Orpheum Theatre,"Madison, WI",1700,,Orpheum Theatre
 56,The Sylvee,"Madison, WI",,,The Sylvee
@@ -106,4 +107,3 @@ id,name,location,capacity,generic name,tagname
 97,Tower Theater,"Upper Darby, PA",3119,,Tower Theater
 99,The 9:30 Club,"Washington, DC",1200,,The 9:30 Club
 98,The Anthem,"Washington, DC",,,The Anthem
-108,Hollywood Palladium,"Los Angeles, CA",,,Hollywood Palladium
