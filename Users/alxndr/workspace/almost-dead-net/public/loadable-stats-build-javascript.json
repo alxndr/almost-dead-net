@@ -1,7 +1,7 @@
 {
   "hash": "3f4543a21ff06864c0ae",
   "publicPath": "/",
-  "outputPath": "/Users/xander/workspace/almost-dead-net/public",
+  "outputPath": "/Users/alxndr/workspace/almost-dead-net/public",
   "assetsByChunkName": {
     "polyfill": [
       "polyfill-7864fbd181389e7199fa.js"
