@@ -31,7 +31,7 @@ describe('Fan Stats page', () => {
         .contains('21 shows')
         .contains('10 venues')
         .contains('130 different songs')
-        .contains('77 unique songs')
+        .contains('84 unique songs')
     })
   })
 
