@@ -1,4 +1,4 @@
-const SEC =1000
+const SEC = 1000
 
 describe('Home page', () => {
   beforeEach(() => {
@@ -27,6 +27,7 @@ describe('Home page', () => {
     cy.get('@main').contains('Find a song')
     cy.get('@main').find('input[placeholder*="song name"]').type('Phish')
     cy.log('results are shown in a box below the input')
+    cy.wait(SEC) // eslint-disable-line cypress/no-unnecessary-waiting
     cy.get('main').as('main') // refresh alias
     cy.get('@main').contains('Also Sprach Zarathustra')
     cy.get('@main').contains('Foam')
