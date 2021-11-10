@@ -12,21 +12,26 @@
     "clean": "gatsby clean",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
+
+ "predeploy:prod": "npm run clean",
     "deploy:prod": "export TAG=deploy-$(date '+%F-%H%M%S-%Z') && gatsby build && gh-pages --dist public --dotfiles --branch gh-pages --tag $TAG --message \"Deploy $TAG\" && echo cleaning up... && gh-pages-clean",
+"postdeploy:prod": "npm run clean",
+
+ "predev": "npm run clean",
     "dev": "gatsby develop",
+
+ "prelint": "echo linting...",
     "lint": "eslint src/ cypress/",
-    "postdeploy:prod": "npm run clean",
-    "postlint": "echo ... linting success",
-    "predeploy:prod": "npm run clean",
-    "predev": "npm run clean",
-    "prelint": "echo linting...",
-    "pretest": "npm run lint",
-    "pretest:e2e": "echo Starting Cypress integration tests...",
+"postlint": "echo ... linting success",
+
     "serve": "gatsby serve",
     "start": "echo 'npm run develop' or 'npm run serve' && exit 1",
+
+ "pretest": "npm run lint",
     "test": "npm run test:e2e",
-    "test:e2e": "WAIT_ON_TIMEOUT=${WAIT_ON_TIMEOUT:-240000} start-server-and-test dev :8000 cy:run",
-    "test:prod": "CYPRESS_BASE_URL=https://almost-dead.net npm run cy:run"
+
+ "pretest:e2e": "echo Starting Cypress integration tests...",
+    "test:e2e": "WAIT_ON_TIMEOUT=${WAIT_ON_TIMEOUT:-240000} start-server-and-test dev :8000 cy:run"
   },
   "dependencies": {
     "@loadable/babel-plugin": "^5.13.2",
