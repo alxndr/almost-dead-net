@@ -23,18 +23,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    //{
-    //  resolve: `gatsby-plugin-manifest`,
-    //  options: {
-    //    name: 'almost-dead-net',
-    //    short_name: 'almost-dead-net',
-    //    start_url: `/`,
-    //    //background_color: `#663399`,
-    //    //theme_color: `#663399`,
-    //    display: `minimal-ui`,
-    //    icon: './src/images/ned.png', // This path is relative to the root of the site.
-    //  },
-    //},
     `gatsby-plugin-gatsby-cloud`,
     {
       resolve: `gatsby-plugin-google-fonts`,
