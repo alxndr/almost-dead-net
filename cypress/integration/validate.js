@@ -243,19 +243,22 @@ const allShows = {
 }
 
 describe('data validation', () => {
-  describe('every Show', () => {
-    Object.values(allShows).forEach((show) => {
-      const {id, date, venue} = allShows[show.id]
-      it(`#${show.id} is ${date} @ ${venue}`, () => {
-        cy.visit(`/show/${id}`)
-        cy.get('main')
-          .find('h1')
-          .as('h1')
-        cy.get('@h1')
-          .contains(date)
-        cy.get('@h1')
-          .contains(venue)
+  describe('random shows', () => {
+    const timestamp = String(Date.now());
+    Object.values(allShows)
+      .filter(({id}) => timestamp.includes(id))
+      .forEach((show) => {
+        const {id, date, venue} = allShows[show.id]
+        it(`#${show.id} is ${date} @ ${venue}`, () => {
+          cy.visit(`/show/${id}`)
+          cy.get('main')
+            .find('h1')
+            .as('h1')
+          cy.get('@h1')
+            .contains(date)
+          cy.get('@h1')
+            .contains(venue)
+        })
       })
-    })
   })
 })
