@@ -1,6 +1,7 @@
 import React from 'react'
 import {graphql, Link} from 'gatsby'
 import {find, propEq} from 'ramda'
+import classnames from 'classnames'
 
 import {pluralize} from '../helpers/string_helpers'
 
@@ -32,8 +33,9 @@ const SET_MAPPING = { // 'show table column name' to 'human readable set name'
 
 function ListItem({date, performancesOnDate}) {
   const [{performanceData, showData, variation, whichSet}, ...otherPerformances] = performancesOnDate
-  return <li key={performanceData.id}>
-    <Link to={`/show/${showData.id}`}>
+  const url = `/show/${showData.id}`
+  return <li key={performanceData.id} className={classnames({highlight: global.previousPath?.endsWith(url)})}>
+    <Link to={url}>
       {date}
       {' '}
       {variation} in {whichSet}
@@ -167,17 +169,14 @@ export default function Song({data: {
       <ul>
         {teases.map(teaseData => {
           const performanceData = find(propEq('id', teaseData.performance_id))(allSongPerformances)
-          if (!performanceData || !performanceData.id) {
+          if (!(performanceData?.id)) {
             return false
           }
-          const setData = find((set) =>
-            set.setlist.toString().split(':').includes(performanceData.id.toString())
-          )(allSets)
-          const showData = find((show) =>
-            [show.soundcheck, show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id)
-          )(allShows)
-          return <li key={teaseData.id}>
-            <Link to={`/show/${showData.id}`}>{showData.date} within {teaseData.within} {performanceData.variation && `(${performanceData.variation})`} </Link>
+          const setData = find((set) => set.setlist.toString().split(':').includes(performanceData.id.toString()))(allSets)
+          const showData = find((show) => [show.soundcheck, show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(allShows)
+          const url = `/show/${showData.id}`
+          return <li key={teaseData.id} className={classnames({highlight: global.previousPath?.endsWith(url)})}>
+            <Link to={url}>{showData.date} within {teaseData.within} {performanceData.variation && `(${performanceData.variation})`}</Link>
           </li>
         })}
       </ul>

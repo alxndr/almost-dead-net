@@ -14,3 +14,12 @@ exports.replaceHydrateFunction = () => (element, container, callback) => {
     hydrate(element, container, callback)
   })
 }
+
+exports.onRouteUpdate = () => {
+  // h/t @samblackk https://github.com/gatsbyjs/gatsby/issues/10410#issuecomment-739031719
+  window.locations = window.locations || [document.referrer];
+  if (window.locations[locations.length - 1] !== window.location.href) {
+    window.locations.push(window.location.href);
+  }
+  window.previousPath = window.locations[locations.length - 2];
+}

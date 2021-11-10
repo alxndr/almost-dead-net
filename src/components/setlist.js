@@ -1,6 +1,7 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import {filter, find, groupWith, propEq} from 'ramda'
+import classnames from 'classnames'
 
 import Segue from './segue'
 //import BustOutBadge from './bust_out_badge'
@@ -17,8 +18,9 @@ function SetlistEntry({performanceData, songData, segues, teases}) {
   const displayName = songData.title
   const segueData = find(propEq('from_perf_id', performanceData.id))(segues)
   const teasesArray = filter(propEq('performance_id', performanceData.id))(teases)
-  return <li className="setlist__track">
-    <Link to={`/song/${performanceData.song_id}`}>
+  const url = `/song/${performanceData.song_id}`
+  return <li className="setlist__track" className={classnames({highlight: global.previousPath?.endsWith(url)})}>
+    <Link to={url}>
       {displayName}
     </Link>
     {' '}
