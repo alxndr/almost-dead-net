@@ -1,9 +1,16 @@
-# [Almost-Dead.net] — setlists and more for [Joe Russo's Almost Dead]
+# [Almost-Dead.net] 
+
+This is the source code for the fan site [Almost-Dead.net]. It is not officially associated with the band [Joe Russo's Almost Dead].
+
+The forum sub-site [`lot.almost-dead.net`](https://lot.almost-dead.net) is powered by [Discourse].
+
+
+## Technical stuff
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
@@ -20,12 +27,13 @@ You will also see any lint errors in the console.
 Builds the app for production and deploys to GitHub Pages.
 
 
-## Learn More
+#### Tests
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Tests are written using the integration framework [Cypress]. Specify the base URL to begin testing as `$CYPRESS_BASE_URL` and then `npm run test:e2e` to run the entire suite. A single file can be run using `test:e2e:single`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
 
 [Almost-Dead.net]: https://almost-dead.net
+[Cypress]: https://cypress.io
+[Discourse]: https://discourse.org/
 [Joe Russo's Almost Dead]: http://www.joerussosalmostdead.com
