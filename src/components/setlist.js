@@ -1,6 +1,7 @@
 import React from 'react'
-import {filter, find, groupWith, propEq} from 'ramda'
+import {filter, find, groupWith, partition, propEq} from 'ramda'
 import classnames from 'classnames'
+import {Tooltip} from 'react-tippy'
 
 import Segue from './segue'
 //import BustOutBadge from './bust_out_badge'
@@ -13,6 +14,7 @@ import './setlist.css'
 import 'react-tippy/dist/tippy.css'
 
 const findById = (id) => find(propEq('id', id))
+const filterBySongId = (id) => filter(propEq('song_id', id))
 
 function SetlistEntry({performanceData, songData, segues, teases, previousUrl}) {
   const displayName = songData.title
@@ -26,7 +28,11 @@ function SetlistEntry({performanceData, songData, segues, teases, previousUrl}) 
     {' '}
     {performanceData.variation || false}
     {segueData && <Segue {...segueData} />}
-    {/*<TimePlayedBadge prevPerf={Number(performanceData.prev_perfid)} nextPerf={Number(performanceData.next_perfid)} />*/}
+    {performanceData.isDebut && <Tooltip title="first time played" trigger="mouseenter focus click">
+      <span className="setlist__track__badge setlist__track__badge--ftp" aria-label="notes" role="img">🆕
+        <span className="hidden">first time played</span>
+      </span>
+    </Tooltip>}
     {/*<BustOutBadge showgap={Number(performanceData.showgap)} />*/}
     {performanceData.notes && <PerfNote notes={performanceData.notes} />}
     {teasesArray.length ? <TeasesNote list={teasesArray} /> : false}
@@ -42,6 +48,9 @@ export default function Setlist(props) {
     teases,
     isEncore,
     which,
+    showId,
+    allSets,
+    allShows,
     previousUrl
   } = props
   if (!(performances && songs && segues && teases)) {
@@ -59,15 +68,23 @@ export default function Setlist(props) {
   if (!teases.length) {
     return <p>Uh oh, no teases found...</p>
   }
+  const showIdInt = Number(showId)
   const groupedBySuite = groupWith(
     (a, b) => a.suite && a.suite === b.suite,
     setlist.map((perfId) => {
       const performanceData = findById(perfId)(performances)
       const songData = findById(performanceData.song_id)(songs)
+      const allPerfsOfThisSong = filterBySongId(songData.id)(performances)
+      const setsForAllPerfsOfThisSong = allPerfsOfThisSong.map(perfData => allSets.find(set => set.setlist.split(':').includes(perfData.id)))
+      const showsForThoseSets = setsForAllPerfsOfThisSong.map(setData => allShows.find(show => [show.soundcheck, show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id)))
+      const [earlierShows] = partition(showData => Number(showData.id) < showIdInt, showsForThoseSets)
       return {
         suite: songData.suite,
         songData,
-        performanceData,
+        performanceData: {
+          ...performanceData,
+          isDebut: !earlierShows.length,
+        },
       }
     })
   )

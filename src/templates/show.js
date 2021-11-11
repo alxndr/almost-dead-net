@@ -41,17 +41,18 @@ function Guests({guests}) {
   return false
 }
 
-function Set({show, which, isEncore = false, sets, performances, segues, teases, songs, previousUrl}) {
+function Set({show, shows, which, isEncore = false, sets, performances, segues, teases, songs, previousUrl}) {
   const what = which === 'soundcheck'
     ? 'soundcheck'
     : `${isEncore ? 'encore' : 'set'}${which}`
   const setId = show[what]
-  if (!setId || !sets || !sets.length) {
+  if (!setId || !(sets?.length)) {
     return false
   }
   const setData = find(propEq('id', setId))(sets)
   const setlist = normalizeSetlist(setData.setlist)
   return <Setlist
+    showId={show.id}
     isEncore={isEncore}
     which={which}
     key={setData.id}
@@ -60,6 +61,8 @@ function Set({show, which, isEncore = false, sets, performances, segues, teases,
     segues={segues}
     songs={songs}
     teases={teases}
+    allSets={sets}
+    allShows={shows}
     previousUrl={previousUrl}
   />
 }
@@ -99,6 +102,15 @@ export const query = graphql`
       location
       name
     }
+    allShowsCsv { nodes {
+      id
+      encore1
+      encore2
+      set1
+      set2
+      set3
+      soundcheck
+    }}
     allSetsCsv { nodes {
       id
       setlist
@@ -155,6 +167,7 @@ export default function Show({
     allSeguesCsv: {nodes: segues},
     allSongsCsv: {nodes: songs},
     allTeasesCsv: {nodes: teases},
+    allShowsCsv: {nodes: shows},
   },
   location
 }) {
@@ -198,6 +211,7 @@ export default function Show({
       songs={songs}
       key={`set${which}`}
       previousUrl={location?.state?.previousUrl}
+      shows={shows}
     />
   ), [])
   const encores = [1, 2].reduce((encores, which) => encores.concat(
@@ -212,17 +226,19 @@ export default function Show({
       songs={songs}
       key={`encore${which}`}
       previousUrl={location?.state?.previousUrl}
+      shows={shows}
     />
   ), [])
 
   const linksArray = links.split(/\s+/)
 
   const guestsDescription = showGuests.length
-    ? `with ${showGuests.map((guest) => guest.name).join(' and ')}`
+    ? `with ${showGuests.map(({name}) => name).join(' and ')}`
     : ''
   const seoDescription = `Setlist and recordings of Joe Russo's Almost Dead ${guestsDescription} ${date} at ${event ? `${event}, ` : ``}${venue.name} (${venue.location}) including song segues, teases, and show notes`
   const imageSrcs = filter(isImage)(linksArray)
 
+  const showId = Number(show.id)
   return <Layout className="showpage">
     <SEO
       title={`JRAD ${tagline}`}
@@ -257,6 +273,7 @@ export default function Show({
           teases={teases}
           songs={songs}
           previousUrl={location?.state?.previousUrl}
+          shows={shows}
         />}
       {setlist.length ? setlist : <p>Uh oh, no sets found.</p>}
       {encores.length && encores}
@@ -267,8 +284,8 @@ export default function Show({
     </section>
     <ShowRecordings recordings={showRecordings} date={date} />
     <nav className="showpage__nav">
-      {Number(show.id) > 1 && <a href={`/show/${Number(show.id) - 1}`} className="showpage__nav__prev" title="previous show">Prior show</a>}
-      {Number(show.id) < Number(lastShowId) && <a href={`/show/${Number(show.id) + 1}`} className="showpage__nav__next" title="following show">Next show</a>}
+      {showId > 1 && <a href={`/show/${showId - 1}`} className="showpage__nav__prev" title="previous show">Prior show</a>}
+      {showId < Number(lastShowId) && <a href={`/show/${showId + 1}`} className="showpage__nav__next" title="following show">Next show</a>}
     </nav>
   </Layout>
 }
