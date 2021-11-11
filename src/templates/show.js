@@ -41,7 +41,7 @@ function Guests({guests}) {
   return false
 }
 
-function Set({show, which, isEncore = false, sets, performances, segues, teases, songs}) {
+function Set({show, which, isEncore = false, sets, performances, segues, teases, songs, previousUrl}) {
   const what = which === 'soundcheck'
     ? 'soundcheck'
     : `${isEncore ? 'encore' : 'set'}${which}`
@@ -60,6 +60,7 @@ function Set({show, which, isEncore = false, sets, performances, segues, teases,
     segues={segues}
     songs={songs}
     teases={teases}
+    previousUrl={previousUrl}
   />
 }
 
@@ -154,10 +155,11 @@ export default function Show({
     allSeguesCsv: {nodes: segues},
     allSongsCsv: {nodes: songs},
     allTeasesCsv: {nodes: teases},
-  }
+  },
+  location
 }) {
   if (!show) {
-    console.error('Show page, missing show..............')
+    global.console.error('Show page, missing show..............')
     return false
   }
 
@@ -186,10 +188,31 @@ export default function Show({
   const showRecordings = sort(recordingsSorter)(recordings)
 
   const setlist = [1, 2, 3].reduce((setlists, which) => setlists.concat(
-    <Set which={which} show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} key={`set${which}`} />
+    <Set
+      which={which}
+      show={show}
+      performances={performances}
+      sets={sets}
+      segues={segues}
+      teases={teases}
+      songs={songs}
+      key={`set${which}`}
+      previousUrl={location?.state?.previousUrl}
+    />
   ), [])
   const encores = [1, 2].reduce((encores, which) => encores.concat(
-    <Set isEncore={true} which={which} show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} key={`encore${which}`} />
+    <Set
+      isEncore={true}
+      which={which}
+      show={show}
+      performances={performances}
+      sets={sets}
+      segues={segues}
+      teases={teases}
+      songs={songs}
+      key={`encore${which}`}
+      previousUrl={location?.state?.previousUrl}
+    />
   ), [])
 
   const linksArray = links.split(/\s+/)
@@ -224,7 +247,17 @@ export default function Show({
     <section className="showpage__setlist">
       {notes && <div className="showpage__notes">{notes}</div>}
       <Guests guests={showGuests} />
-      {show.soundcheck && <Set which="soundcheck" show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} />}
+      {show.soundcheck &&
+        <Set
+          which="soundcheck"
+          show={show}
+          performances={performances}
+          sets={sets}
+          segues={segues}
+          teases={teases}
+          songs={songs}
+          previousUrl={location?.state?.previousUrl}
+        />}
       {setlist.length ? setlist : <p>Uh oh, no sets found.</p>}
       {encores.length && encores}
       {imageSrcs.length

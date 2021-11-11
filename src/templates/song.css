@@ -13,10 +13,6 @@
   content: '"';
 }
 
-.songpage .highlight a {
-  text-shadow: 0 0 0.3em slateblue;
-}
-
 @media all and (min-width: 35em) {
   .songpage ul {
     column-count: 2;

@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'gatsby'
 import {filter, find, groupWith, propEq} from 'ramda'
 import classnames from 'classnames'
 
@@ -8,18 +7,19 @@ import Segue from './segue'
 //import TimePlayedBadge from './time_played_badge'
 import PerfNote from './perf_note'
 import TeasesNote from './teases_note'
+import Link from './link-with-previous-url'
 
 import './setlist.css'
 import 'react-tippy/dist/tippy.css'
 
 const findById = (id) => find(propEq('id', id))
 
-function SetlistEntry({performanceData, songData, segues, teases}) {
+function SetlistEntry({performanceData, songData, segues, teases, previousUrl}) {
   const displayName = songData.title
   const segueData = find(propEq('from_perf_id', performanceData.id))(segues)
   const teasesArray = filter(propEq('performance_id', performanceData.id))(teases)
   const url = `/song/${performanceData.song_id}`
-  return <li className="setlist__track" className={classnames({highlight: global.previousPath?.endsWith(url)})}>
+  return <li className={classnames('setlist__track', {highlight: previousUrl?.endsWith(url)})}>
     <Link to={url}>
       {displayName}
     </Link>
@@ -35,10 +35,14 @@ function SetlistEntry({performanceData, songData, segues, teases}) {
 
 export default function Setlist(props) {
   const {
+    setlist,
     performances,
     segues,
     songs,
-    teases
+    teases,
+    isEncore,
+    which,
+    previousUrl
   } = props
   if (!(performances && songs && segues && teases)) {
     return <p>Loading...</p>
@@ -57,7 +61,7 @@ export default function Setlist(props) {
   }
   const groupedBySuite = groupWith(
     (a, b) => a.suite && a.suite === b.suite,
-    props.setlist.map((perfId) => {
+    setlist.map((perfId) => {
       const performanceData = findById(perfId)(performances)
       const songData = findById(performanceData.song_id)(songs)
       return {
@@ -67,13 +71,13 @@ export default function Setlist(props) {
       }
     })
   )
-  return <div className={`setlist__set setlist__set-${props.isEncore ? 'encore' : props.which}`}>
+  return <div className={`setlist__set setlist__set-${isEncore ? 'encore' : which}`}>
     <h3 className="setlist__setlabel">
-      {props.which === 'soundcheck'
+      {which === 'soundcheck'
         ? 'Soundcheck'
-        : props.isEncore
-          ? `Encore ${props.which > 1 ? props.which : ''}`
-          : `Set ${props.which}`
+        : isEncore
+          ? `Encore ${which > 1 ? which : ''}`
+          : `Set ${which}`
       }
     </h3>
     <ol className="setlist__tracks">
@@ -90,6 +94,7 @@ export default function Setlist(props) {
                   songData={songData}
                   segues={segues}
                   teases={teases}
+                  previousUrl={previousUrl}
                 />
               })}
             </ul>
@@ -99,7 +104,14 @@ export default function Setlist(props) {
         }
         // regularly scheduled programming
         const [{performanceData, songData}] = songOrSuite
-        return <SetlistEntry key={performanceData.id} performanceData={performanceData} songData={songData} segues={segues} teases={teases} />
+        return <SetlistEntry
+          key={performanceData.id}
+          performanceData={performanceData}
+          songData={songData}
+          segues={segues}
+          teases={teases}
+          previousUrl={previousUrl}
+        />
       })}
     </ol>
   </div>

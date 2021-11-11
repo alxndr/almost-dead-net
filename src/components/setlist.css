@@ -61,7 +61,3 @@ h3.setlist__setlabel {
 .suite:hover .suite__segue {
   display: none
 }
-
-.setlist__set .highlight a {
-  text-shadow: 0 0 0.3em slateblue;
-}

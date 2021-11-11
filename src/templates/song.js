@@ -1,5 +1,5 @@
 import React from 'react'
-import {graphql, Link} from 'gatsby'
+import {graphql} from 'gatsby'
 import {find, propEq} from 'ramda'
 import classnames from 'classnames'
 
@@ -7,6 +7,7 @@ import {pluralize} from '../helpers/string_helpers'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Link from '../components/link-with-previous-url'
 
 import './song.css'
 
@@ -31,10 +32,11 @@ const SET_MAPPING = { // 'show table column name' to 'human readable set name'
   encore2: 'double encore',
 }
 
-function ListItem({date, performancesOnDate}) {
+function ListItem({date, performancesOnDate, previousUrl}) {
   const [{performanceData, showData, variation, whichSet}, ...otherPerformances] = performancesOnDate
   const url = `/show/${showData.id}`
-  return <li key={performanceData.id} className={classnames({highlight: global.previousPath?.endsWith(url)})}>
+  // global.console.log('list item.........', {previousUrl, url})
+  return <li key={performanceData.id} className={classnames({highlight: previousUrl?.endsWith(url)})}>
     <Link to={url}>
       {date}
       {' '}
@@ -89,7 +91,8 @@ export default function Song({data: {
   allShowsCsv: {nodes: allShows},
   allSongperformancesCsv: {nodes: allSongPerformances},
   allTeasesCsv: {nodes: teases},
-}}) {
+}, location}) {
+  // global.console.log('song... previousUrl?', location?.state?.previousUrl) // this works...
   if (!song) {
     return <p>Uh oh, no song data found...</p>
   }
@@ -153,7 +156,12 @@ export default function Song({data: {
       return 0
     })
   const performances = performancesSorted
-    .map(([date, performancesOnDate]) => <ListItem date={date} performancesOnDate={performancesOnDate} />)
+    .map(([date, performancesOnDate]) =>
+      <ListItem
+        date={date}
+        performancesOnDate={performancesOnDate}
+        previousUrl={location?.state?.previousUrl}
+      />)
   const performancesComponent = performancesSorted.length > 0
     ?  <>
       <h2>Performed at {pluralize(performancesSorted.length, 'Show')}</h2>
@@ -175,7 +183,7 @@ export default function Song({data: {
           const setData = find((set) => set.setlist.toString().split(':').includes(performanceData.id.toString()))(allSets)
           const showData = find((show) => [show.soundcheck, show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(allShows)
           const url = `/show/${showData.id}`
-          return <li key={teaseData.id} className={classnames({highlight: global.previousPath?.endsWith(url)})}>
+          return <li key={teaseData.id} className={classnames({highlight: location?.state?.previousUrl?.endsWith(url)})}>
             <Link to={url}>{showData.date} within {teaseData.within} {performanceData.variation && `(${performanceData.variation})`}</Link>
           </li>
         })}
