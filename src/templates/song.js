@@ -35,7 +35,6 @@ const SET_MAPPING = { // 'show table column name' to 'human readable set name'
 function ListItem({date, performancesOnDate, previousUrl}) {
   const [{performanceData, showData, variation, whichSet}, ...otherPerformances] = performancesOnDate
   const url = `/show/${showData.id}`
-  // global.console.log('list item.........', {previousUrl, url})
   return <li key={performanceData.id} className={classnames({highlight: previousUrl?.endsWith(url)})}>
     <Link to={url}>
       {date}
@@ -92,7 +91,6 @@ export default function Song({data: {
   allSongperformancesCsv: {nodes: allSongPerformances},
   allTeasesCsv: {nodes: teases},
 }, location}) {
-  // global.console.log('song... previousUrl?', location?.state?.previousUrl) // this works...
   if (!song) {
     return <p>Uh oh, no song data found...</p>
   }
