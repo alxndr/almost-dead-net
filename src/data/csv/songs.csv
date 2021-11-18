@@ -343,7 +343,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,core_jrad
 216,Summer Nights,Jacobs – Casey (John Travolta & Olivia Newton-John),,,1805,216,,,
 217,Sunshine Daydream,Robert Hunter & Bob Weir,SSDD,,216:300:364:402:454:500:513:574:632:803:874:981:1129:1162:1263:1541:1680:1749:1789:1962:2163:2766:3188,217,TRUE,,
 218,Superstition,Stevie Wonder,,,,218,,,
-219,Supplication,John Perry Barlow & Bob Weir,,,309:3974,219,TRUE,,
+219,Supplication,John Perry Barlow & Bob Weir,,,309,219,TRUE,,
 290,Swingtown,Steve Miller Band,,,,290,,,
 319,Take the 'A' Train,Duke Ellington,,,,319,,,
 348,Tell Me a Bedtime Story,Herbie Hancock,,,,348,,,

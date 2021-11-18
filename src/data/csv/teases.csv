@@ -821,8 +821,8 @@ id,within,performance_id,song_name,notes,by,song_id
 827,Shakedown Street,3929,China Cat Sunflower,,,44
 828,Estimated Prophet,3961,Lost Sailor,jam,,140
 829,Estimated Prophet,3961,Jessica,jam,,298
-830,Supplication,3974,Playing in the Band,,,176
-831,Supplication,3974,Please Please Me,,,381
+830,Lazy Lightning,3975,Eyes of the World,headfake,,71
+831,Lazy Lightning,3975,Please Please Me,,,381
 832,Peggy-O,3976,Jessica,,,298
 833,Dancing in the Streets,3978,Shakedown Street,jam,,196
 834,Saint of Circumstance,3980,Head Over Heels,,,316
@@ -853,3 +853,5 @@ id,within,performance_id,song_name,notes,by,song_id
 859,Shakedown Street,3883,Throwing Stones,,band,245
 860,Throwing Stones,3884,Slipknot!,jam,,201
 861,Throwing Stones,3884,Down Under,,TH/band,425
+862,Peggy-O,3976,Flight of the Bumblebee,in Marco solo,MB,369
+863,Dancing in the Streets,3978,[unknown],,,288
