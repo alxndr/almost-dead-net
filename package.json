@@ -65,7 +65,7 @@
     "eslint": "7.32.0",
     "eslint-config-react-app": "^6.0.0",
     "eslint-plugin-cypress": "^2.12.1",
-    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react": "^7.27.1",
     "gh-pages": "^3.2.3",
     "start-server-and-test": "^1.13.1"
   },
