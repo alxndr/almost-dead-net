@@ -39,7 +39,7 @@
     "@loadable/component": "^5.15.0",
     "@loadable/server": "^5.15.1",
     "@loadable/webpack-plugin": "^5.15.1",
-    "@sentry/gatsby": "^6.11.0",
+    "@sentry/gatsby": "^6.16.0",
     "classnames": "^2.3.1",
     "dompurify": "^2.3.3",
     "gatsby": "^3.11.1",
