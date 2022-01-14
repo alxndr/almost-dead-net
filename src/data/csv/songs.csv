@@ -23,6 +23,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,core_jrad
 13,Auld Lang Syne,traditional,ALS,,968,13,,,
 293,Baba O'Riley,The Who,,,,293,,,
 14,Baby Don't You Do It,Holland – Dozier – Holland (Marvin Gaye),,,1046,14,,,
+429,Bad Love,Eric Clapton,,,,429,,,
 345,Ballroom Blitz,Nicky Chin – Mike Chapman (The Sweet),,,,345,,,
 284,Bathtub Gin,Phish,,,,284,,,
 15,Beat It on Down the Line,Jesse Fuller,BIODTL,,54:168:417:937:1633:1753:3146:3269:3691:3893,15,TRUE,TRUE,
@@ -65,6 +66,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,core_jrad
 47,Chuckles,WOLF!,,,1798,47,,,TRUE
 48,Cinnamon and Lesbians,Stephen Malkmus and the Jicks,,,1823,48,,,
 49,Cold Rain and Snow,traditional,CRS,,75,49,TRUE,,
+430,Come Sail Away,Styx,,,,430,,,
 291,Come Together,John Lennon & Paul McCartney (The Beatles),,,,291,,,
 415,Comfortably Numb,David Gilmour & Roger Waters (Pink Floyd),,,3885,415,,,
 363,Communication Breakdown,Led Zeppelin,,,,363,,,
@@ -346,6 +348,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,core_jrad
 217,Sunshine Daydream,Robert Hunter & Bob Weir,SSDD,,216:300:364:402:454:500:513:574:632:803:874:981:1129:1162:1263:1541:1680:1749:1789:1962:2163:2766:3188,217,TRUE,,
 218,Superstition,Stevie Wonder,,,,218,,,
 219,Supplication,John Perry Barlow & Bob Weir,,,309,219,TRUE,,
+431,Sweet Home Alabama,Lynyrd Skynyrd,,,,431,,,
 290,Swingtown,Steve Miller Band,,,,290,,,
 319,Take the 'A' Train,Duke Ellington,,,,319,,,
 348,Tell Me a Bedtime Story,Herbie Hancock,,,,348,,,
