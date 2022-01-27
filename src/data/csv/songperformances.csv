@@ -3801,7 +3801,7 @@ id,song_id,song_name,id_rhs,variation,notes,set_id,show_id,prev_perfid,prev_show
 3935,120,Jack Straw,,,,,,,,,,
 3936,25,Black Throated Wind,,,,,,,,,,
 3937,6,Alice D. Millionaire,,,,,,,,,,
-3938,195,Scarlet Begonias,,,,,,,,,,
+3938,195,Scarlet Begonias,,,with Marco solo,,,,,,,
 3939,75,Fire on the Mountain,,,,,,,,,,
 3940,190,Row Jimmy,,,,,,,,,,
 3941,277,Part II: Let It Grow,,,,,,,,,,
@@ -3868,3 +3868,4 @@ id,song_id,song_name,id_rhs,variation,notes,set_id,show_id,prev_perfid,prev_show
 4003,251,Truckin',,,,,,,,,,
 4004,235,The Other One,,,,,,,,,,
 4005,427,I've Got a Feeling,,,nod to recently-released Get Back docu,,,,,,,
+4006,128,Lady With a Fan,,,,,,,,,,
