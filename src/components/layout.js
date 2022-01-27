@@ -25,7 +25,7 @@ const Layout = ({children, className = ''}) => {
           About
         </Link>
         <a href="https://lot.almost-dead.net" className="footer__logo-lot" title="JRAD Forum — The Lot">
-          <img src="https://i.imgur.com/Qi2NhJO.png" alt="The Lot — a forum for fans of Joe Russo's Almost Dead" />
+          The Lot (forum)
         </a>
       </footer>
 
