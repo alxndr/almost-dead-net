@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-templates-venue-js","path":"/venue/71-Fox-Theater","result":{"data":{"venuesCsv":{"id":"71","location":"Oakland, CA","name":"Fox Theater"},"allShowsCsv":{"nodes":[{"id":"56","date":"12/12/2015"},{"id":"85","date":"11/12/2016"},{"id":"130","date":"11/11/2017"},{"id":"173","date":"11/10/2018"},{"id":"174","date":"11/11/2018"}]}},"pageContext":{"venueId":"71"}},"staticQueryHashes":["3000541721"]}
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/71-Fox-Theater",
+    "result": {"data":{"venuesCsv":{"id":"71","location":"Oakland, CA","name":"Fox Theater"},"allShowsCsv":{"nodes":[{"id":"56","date":"12/12/2015"},{"id":"85","date":"11/12/2016"},{"id":"130","date":"11/11/2017"},{"id":"173","date":"11/10/2018"},{"id":"174","date":"11/11/2018"}]}},"pageContext":{"venueId":"71"}},
+    "staticQueryHashes": ["3000541721"]}

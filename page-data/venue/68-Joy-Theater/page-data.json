@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-templates-venue-js","path":"/venue/68-Joy-Theater","result":{"data":{"venuesCsv":{"id":"68","location":"New Orleans, LA","name":"Joy Theater"},"allShowsCsv":{"nodes":[{"id":"26","date":"5/1/2015"},{"id":"27","date":"5/2/2015"},{"id":"71","date":"4/29/2016"},{"id":"72","date":"4/30/2016"},{"id":"109","date":"5/5/2017"},{"id":"110","date":"5/6/2017"},{"id":"111","date":"5/7/2017"}]}},"pageContext":{"venueId":"68"}},"staticQueryHashes":["3000541721"]}
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/68-Joy-Theater",
+    "result": {"data":{"venuesCsv":{"id":"68","location":"New Orleans, LA","name":"Joy Theater"},"allShowsCsv":{"nodes":[{"id":"26","date":"5/1/2015"},{"id":"27","date":"5/2/2015"},{"id":"71","date":"4/29/2016"},{"id":"72","date":"4/30/2016"},{"id":"109","date":"5/5/2017"},{"id":"110","date":"5/6/2017"},{"id":"111","date":"5/7/2017"}]}},"pageContext":{"venueId":"68"}},
+    "staticQueryHashes": ["3000541721"]}

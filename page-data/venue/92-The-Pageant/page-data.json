@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-templates-venue-js","path":"/venue/92-The-Pageant","result":{"data":{"venuesCsv":{"id":"92","location":"St Louis, MO","name":"The Pageant"},"allShowsCsv":{"nodes":[{"id":"25","date":"4/25/2015"},{"id":"140","date":"2/16/2018"},{"id":"179","date":"2/15/2019"},{"id":"180","date":"2/16/2019"}]}},"pageContext":{"venueId":"92"}},"staticQueryHashes":["3000541721"]}
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/92-The-Pageant",
+    "result": {"data":{"venuesCsv":{"id":"92","location":"St Louis, MO","name":"The Pageant"},"allShowsCsv":{"nodes":[{"id":"25","date":"4/25/2015"},{"id":"140","date":"2/16/2018"},{"id":"179","date":"2/15/2019"},{"id":"180","date":"2/16/2019"}]}},"pageContext":{"venueId":"92"}},
+    "staticQueryHashes": ["3000541721"]}

@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-templates-venue-js","path":"/venue/31-Concord-Music-Hall","result":{"data":{"venuesCsv":{"id":"31","location":"Chicago, IL","name":"Concord Music Hall"},"allShowsCsv":{"nodes":[{"id":"4","date":"9/19/2014"},{"id":"5","date":"9/20/2014"},{"id":"24","date":"4/24/2015"}]}},"pageContext":{"venueId":"31"}},"staticQueryHashes":["3000541721"]}
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/31-Concord-Music-Hall",
+    "result": {"data":{"venuesCsv":{"id":"31","location":"Chicago, IL","name":"Concord Music Hall"},"allShowsCsv":{"nodes":[{"id":"4","date":"9/19/2014"},{"id":"5","date":"9/20/2014"},{"id":"24","date":"4/24/2015"}]}},"pageContext":{"venueId":"31"}},
+    "staticQueryHashes": ["3000541721"]}

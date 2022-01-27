@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-templates-venue-js","path":"/venue/1-Palace-Theatre","result":{"data":{"venuesCsv":{"id":"1","location":"Albany, NY","name":"Palace Theatre"},"allShowsCsv":{"nodes":[{"id":"147","date":"3/16/2018"},{"id":"182","date":"3/1/2019"}]}},"pageContext":{"venueId":"1"}},"staticQueryHashes":["3000541721"]}
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/1-Palace-Theatre",
+    "result": {"data":{"venuesCsv":{"id":"1","location":"Albany, NY","name":"Palace Theatre"},"allShowsCsv":{"nodes":[{"id":"147","date":"3/16/2018"},{"id":"182","date":"3/1/2019"}]}},"pageContext":{"venueId":"1"}},
+    "staticQueryHashes": ["3000541721"]}

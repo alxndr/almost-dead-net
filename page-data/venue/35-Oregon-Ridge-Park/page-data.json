@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-templates-venue-js","path":"/venue/35-Oregon-Ridge-Park","result":{"data":{"venuesCsv":{"id":"35","location":"Cockeysville, MD","name":"Oregon Ridge Park"},"allShowsCsv":{"nodes":[{"id":"78","date":"8/20/2016"}]}},"pageContext":{"venueId":"35"}},"staticQueryHashes":["3000541721"]}
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/35-Oregon-Ridge-Park",
+    "result": {"data":{"venuesCsv":{"id":"35","location":"Cockeysville, MD","name":"Oregon Ridge Park"},"allShowsCsv":{"nodes":[{"id":"78","date":"8/20/2016"}]}},"pageContext":{"venueId":"35"}},
+    "staticQueryHashes": ["3000541721"]}

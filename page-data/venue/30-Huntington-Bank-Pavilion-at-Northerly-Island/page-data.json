@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-templates-venue-js","path":"/venue/30-Huntington-Bank-Pavilion-at-Northerly-Island","result":{"data":{"venuesCsv":{"id":"30","location":"Chicago, IL","name":"Huntington Bank Pavilion at Northerly Island"},"allShowsCsv":{"nodes":[{"id":"197","date":"7/11/2019"}]}},"pageContext":{"venueId":"30"}},"staticQueryHashes":["3000541721"]}
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/30-Huntington-Bank-Pavilion-at-Northerly-Island",
+    "result": {"data":{"venuesCsv":{"id":"30","location":"Chicago, IL","name":"Huntington Bank Pavilion at Northerly Island"},"allShowsCsv":{"nodes":[{"id":"197","date":"7/11/2019"}]}},"pageContext":{"venueId":"30"}},
+    "staticQueryHashes": ["3000541721"]}

@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-templates-venue-js","path":"/venue/15-Paradise-Rock-Club","result":{"data":{"venuesCsv":{"id":"15","location":"Boston, MA","name":"Paradise Rock Club"},"allShowsCsv":{"nodes":[{"id":"16","date":"2/6/2015"},{"id":"53","date":"11/27/2015"},{"id":"54","date":"11/28/2015"}]}},"pageContext":{"venueId":"15"}},"staticQueryHashes":["3000541721"]}
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/15-Paradise-Rock-Club",
+    "result": {"data":{"venuesCsv":{"id":"15","location":"Boston, MA","name":"Paradise Rock Club"},"allShowsCsv":{"nodes":[{"id":"16","date":"2/6/2015"},{"id":"53","date":"11/27/2015"},{"id":"54","date":"11/28/2015"}]}},"pageContext":{"venueId":"15"}},
+    "staticQueryHashes": ["3000541721"]}

@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-templates-venue-js","path":"/venue/26-Clay's-Park-Resort","result":{"data":{"venuesCsv":{"id":"26","location":"North Lawrence, OH","name":"Clay's Park Resort"},"allShowsCsv":{"nodes":[{"id":"32","date":"5/24/2015"}]}},"pageContext":{"venueId":"26"}},"staticQueryHashes":["3000541721"]}
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/26-Clay's-Park-Resort",
+    "result": {"data":{"venuesCsv":{"id":"26","location":"North Lawrence, OH","name":"Clay's Park Resort"},"allShowsCsv":{"nodes":[{"id":"32","date":"5/24/2015"}]}},"pageContext":{"venueId":"26"}},
+    "staticQueryHashes": ["3000541721"]}

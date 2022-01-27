@@ -1,1 +1,5 @@
-{"componentChunkName":"component---src-templates-venue-js","path":"/venue/66-College-Street-Music-Hall","result":{"data":{"venuesCsv":{"id":"66","location":"New Haven, CT","name":"College Street Music Hall"},"allShowsCsv":{"nodes":[{"id":"64","date":"2/11/2016"},{"id":"186","date":"3/14/2019"}]}},"pageContext":{"venueId":"66"}},"staticQueryHashes":["3000541721"]}
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/66-College-Street-Music-Hall",
+    "result": {"data":{"venuesCsv":{"id":"66","location":"New Haven, CT","name":"College Street Music Hall"},"allShowsCsv":{"nodes":[{"id":"64","date":"2/11/2016"},{"id":"186","date":"3/14/2019"}]}},"pageContext":{"venueId":"66"}},
+    "staticQueryHashes": ["3000541721"]}
