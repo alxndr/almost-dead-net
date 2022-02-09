@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/109-Brooklyn-Bowl",
+    "result": {"data":{"venuesCsv":{"id":"109","location":"Philadelphia, PA","name":"Brooklyn Bowl"},"allShowsCsv":{"nodes":[{"id":"243","date":"2/10/2021"}]}},"pageContext":{"venueId":"109"}},
+    "staticQueryHashes": ["3000541721"]}
