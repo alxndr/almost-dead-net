@@ -1,0 +1,909 @@
+id,within,performance_id,song_name,notes,by,song_id
+397,Althea,2,[unknown],Zeppelin,MB,288
+398,Shakedown Street,8,Cumberland Blues,,,55
+467,The Eleven,64,Not Fade Away,,,168
+468,The Eleven,64,In Memory of Elizabeth Reed,,,116
+469,The Wheel,66,Turn On Your Lovelight,,,252
+476,Althea,78,All of My Love,,MB,362
+477,St. Stephen,88,Caution (Do Not Stop on Tracks),jam,,41
+478,Not Fade Away,90,The Other One,,,235
+480,He's Gone,106,Slipknot!,,,201
+481,Dark Star,113,The Eleven,,,229
+484,Terrapin Station,120,Reuben and Cherise,,,185
+485,Reuben and Cherise,126,Terrapin Station,,,224
+482,Brown-Eyed Women,132,Throwing Stones,,,245
+483,Bird Song,133,Truckin',,,251
+571,Mississippi Halfstep Uptown Toodleloo,214,Crazy Fingers,,,51
+584,Sugar Magnolia,215,St. Stephen,,TH?,211
+595,Franklin's Tower,258,Ramble On,,MB,376
+486,He's Gone,259,The Other One,,,235
+487,Truckin',260,The Other One,,,235
+488,The Other One,261,Caution (Do Not Stop on Tracks),,,41
+489,The Other One,261,Slipknot!,jam,,201
+490,China Cat Sunflower,263,Truckin',,SM,251
+491,Viola Lee Blues,266,Cumberland Blues,,TH,55
+492,Viola Lee Blues,266,China Cat Sunflower,,TH,44
+596,Viola Lee Blues,266,Not Fade Away,,,168
+493,Althea,267,All of My Love,,MB,362
+494,Bird Song,271,China Cat Sunflower,,TH,44
+495,Bird Song,271,Dark Star,,TH,59
+610,Greatest Story Ever Told,295,Tennessee Jed,,,221
+611,Greatest Story Ever Told,295,The Wheel,,,241
+496,Cumberland Blues,305,Scarlet Begonias,,,195
+497,Feel Like a Stranger,319,Slipknot!,,TH,201
+498,Althea,320,All of My Love,,MB,362
+499,We Bid You Goodnight,325,Going Down The Road Feeling Bad,,TH,84
+500,They Love Each Other,326,Caution (Do Not Stop on Tracks),,DD,41
+501,They Love Each Other,326,Powerhouse,,TH,358
+502,Cumberland Blues,342,Samson and Delilah,jam,,194
+503,Cumberland Blues,342,Shakedown Street,,TH,196
+504,The Eleven,347,Feel Like a Stranger,,TH,74
+505,Truckin',349,The Eleven,,TH,229
+370,Iko Iko,361,Rum & Coca Cola,,MB,343
+5,Throwing Stones,363,Unbroken Chain,,,254
+371,Throwing Stones,363,Becky,,MB,16
+372,Not Fade Away,366,I Want Candy,,SM,305
+373,Not Fade Away,366,Unbroken Chain,,,254
+374,Not Fade Away,366,Loose Lucy,,,138
+441,Terrapin Station,374,Part II: Let It Grow,,TH,277
+442,Playing in the Band,380,Part II: Let It Grow,,TH,277
+444,Ramble On Rose,381,Mephisto,,MB,354
+445,Truckin',382,The Eleven,,TH,229
+446,Truckin',382,New Speedway Boogie,,MB,165
+443,The Eleven,384,Part II: Let It Grow,,TH,277
+447,Viola Lee Blues,386,Part II: Let It Grow,,TH,277
+448,Viola Lee Blues,386,The Eleven,,TH,229
+449,Viola Lee Blues,386,Feel Like a Stranger,jam,,74
+612,Uncle John's Band,389,Estimated Prophet,,,69
+614,The Wheel,399,Casey Jones,,,37
+4,Here Comes Sunshine,404,The Wheel,,,241
+506,Feel Like a Stranger,422,Slipknot!,,TH&SM,201
+507,Althea,423,All of My Love,,MB,362
+508,Shakedown Street,425,The Other One,,TH,235
+509,Shakedown Street,425,Part II: Let It Grow,,TH&SM,277
+510,Shakedown Street,425,Communication Breakdown,,JR,363
+511,Shakedown Street,425,How Many More Times,,all,108
+512,St. Stephen,427,Whole Lotta Love,,,268
+513,St. Stephen,427,Part II: Let It Grow,,,277
+514,Truckin',432,The Other One,,,235
+515,The Wheel,433,Song Remains the Same,,,278
+516,Slipknot!,440,Black Peter,,,24
+517,Throwing Stones,441,Dark Star,,,59
+518,St. Stephen,471,The Other One,,,235
+519,Eyes of the World,473,The Eleven,,TH&SM,229
+520,Not Fade Away,474,Loose Lucy,,TH,138
+521,China Cat Sunflower,477,Reuben and Cherise,,,185
+522,China Cat Sunflower,477,Exodus,,TH,364
+523,China Cat Sunflower,477,Footloose,,TH,365
+524,I Know You Rider,479,Rock and Roll,,JR,366
+525,Franklin's Tower,485,Loser,,,139
+526,Cryptical Envelopment,487,Dark Star,,,59
+529,Slipknot!,492,West LA Fadeaway,,,264
+527,Cumberland Blues,493,Hoedown,,,367
+528,Cumberland Blues,493,Walk the Dinosaur,,MB,282
+530,Jam,496,Rainy Day Women #12 & 35,,MB,355
+531,Greatest Story Ever Told,497,Shortnin' Bread,,DD,315
+532,Greatest Story Ever Told,497,Walk the Dinosaur,,DD,282
+615,Dancing in the Streets,515,The Eleven,,TH?SM?,229
+533,Slipknot!,519,Terrapin Station,,,224
+534,Reuben and Cherise,527,Eyes of the World,jam,,71
+535,Shakedown Street,530,Dancing in the Streets,,TH&SM,57
+536,Shakedown Street,530,Mississippi Halfstep Uptown Toodleloo,,,148
+537,China Cat Sunflower,532,Playing in the Band,jam,,176
+538,Cumberland Blues,543,Hoedown,,MB,367
+539,Althea,545,Throwing Stones,,TH,245
+540,Truckin',546,New Speedway Boogie,,TH,165
+541,Truckin',546,Caution (Do Not Stop on Tracks),jam,,41
+542,Saint of Circumstance,549,Reuben and Cherise,,TH&SM,185
+543,Saint of Circumstance,549,St. Stephen,,TH,211
+544,Black Peter,551,Fool in the Rain,,MB,368
+545,Bird Song,561,Dark Star,,TH,59
+546,Bird Song,561,Cryptical Envelopment,,TH&SM,53
+547,Deal,566,Dark Star,,TH,59
+548,Cumberland Blues,570,Flight of the Bumblebee,,TH&MB,369
+549,Truckin',587,Estimated Prophet,,TH,69
+550,Truckin',587,King Solomon's Marbles,jam,,127
+551,Slipknot!,591,Part I,jam,,276
+552,Slipknot!,591,The Other One,,,235
+553,Slipknot!,591,Part II: Let It Grow,jam,,277
+554,Uncle John's Band,607,Estimated Prophet,jam,,69
+555,Part II: Let It Grow,610,Boys of Summer,,,370
+556,Part II: Let It Grow,610,Who Are You,,,371
+557,Part II: Let It Grow,610,On the Darkside,,,372
+558,Part II: Let It Grow,610,Mama Tried,,,142
+559,Throwing Stones,612,In Memory of Elizabeth Reed,jam,,116
+560,Cumberland Blues,615,Ballroom Blitz,,DD,345
+450,The Wheel,618,Inca Roads,,TH/SM?,279
+561,The Wheel,618,Estimated Prophet,,,69
+562,The Wheel,618,Terrapin Station,jam,,224
+6,Catfish John,633,Black Throated Wind,,,25
+7,Catfish John,633,They Love Each Other,,,242
+8,Catfish John,633,My Brother Esau,,,156
+9,Catfish John,633,Cassidy,,,38
+10,Bertha,634,Tennessee Jed,,,221
+11,The Music Never Stopped,635,Dancing in the Streets,,,57
+12,The Music Never Stopped,635,Dear Prudence,,,280
+13,I Need A Miracle,637,Spoonful,,,281
+14,Romeo and Juliet,639,Reuben and Cherise,,,185
+15,Part II: Let It Grow,644,Loser,,,139
+16,Not Fade Away,645,Black Throated Wind,,,25
+17,Not Fade Away,645,Easy Wind,,,67
+2,Part I,666,Song Remains the Same,,,278
+563,Feel Like a Stranger,677,Slipknot!,,TH,201
+564,Brown-Eyed Women,679,Feel Like a Stranger,,TH,74
+565,I Know You Rider,681,Morning Dew,,TH,151
+566,Not Fade Away,682,Black Throated Wind,,TH,25
+567,Not Fade Away,682,Feel Like a Stranger,,TH,74
+568,Shakedown Street,734,Scarlet Begonias,,TH,195
+569,Feel Like a Stranger,735,Crosseyed and Painless,,MB,373
+570,The Wheel,737,Terrapin Station,,TH,224
+572,Part II: Let It Grow,748,Terrapin Station,,TH,224
+573,Atlantic City,749,Terrapin Station,,TH,224
+574,Jam,751,Norwegian Wood,jam,,311
+575,Playing in the Band,752,The Other One,,,235
+576,Saint of Circumstance,755,Terrapin Station,,,224
+577,Saint of Circumstance,755,Reuben and Cherise,,,185
+578,Saint of Circumstance,755,Playing in the Band,,,176
+579,Dancing in the Streets,758,L.A. Woman,,MB,129
+580,Dancing in the Streets,758,Rainy Day Women #12 & 35,,,355
+581,Truckin',763,Cryptical Envelopment,jam,,53
+582,Scarlet Begonias,764,National Anthem,,,161
+583,Scarlet Begonias,764,Bubblehouse,,MB,374
+375,St. Stephen,769,Tennessee Jed,,,221
+585,Uncle John's Band,777,Abduction Pose,,,375
+586,Uncle John's Band,777,King Solomon's Marbles,jam,,127
+18,Dark Star,783,Wharf Rat,jam,,265
+587,The Eleven,784,Terrapin Station,,,224
+588,Slipknot!,787,Terrapin Station,,,224
+19,Throwing Stones,788,Superstition,jam,,218
+589,Throwing Stones,788,National Anthem,,,161
+590,Going Down The Road Feeling Bad,804,Bird Song,,,22
+431,Brown-Eyed Women,808,He's Gone,,TH?,100
+432,Brown-Eyed Women,808,Brokedown Palace,,TH?,30
+433,Brown-Eyed Women,808,Going Down The Road Feeling Bad,,TH?,84
+434,Brown-Eyed Women,808,Eyes of the World,,TH,71
+435,The Music Never Stopped,811,Rumble,,MB/SM,353
+591,The Music Never Stopped,811,Fame,jam,,72
+592,Help on the Way,813,Myxomatosis,jam,,160
+436,China Cat Sunflower,816,Cumberland Blues,,MB,55
+437,China Cat Sunflower,816,[unknown],,MB,288
+438,China Cat Sunflower,816,Terrapin Station,,TH,224
+593,China Cat Sunflower,816,King Solomon's Marbles,jam,,127
+439,I Know You Rider,819,Terrapin Station,,TH,224
+594,Franklin's Tower,820,Slipknot!,,,201
+1,Truckin',825,Dark Star,,,59
+20,Dancing in the Streets,880,Estimated Prophet,,,69
+21,Estimated Prophet,888,Shakedown Street,,,196
+22,Here Comes Sunshine,892,Truckin',,,251
+23,Here Comes Sunshine,892,The Wheel,,,241
+24,Here Comes Sunshine,892,Help on the Way,,,98
+25,Mississippi Halfstep Uptown Toodleloo,912,Greatest Story Ever Told,,,90
+26,Mississippi Halfstep Uptown Toodleloo,912,St. Stephen,,,211
+27,Mississippi Halfstep Uptown Toodleloo,912,Dark Star,,,59
+451,Dancing in the Streets,922,Rainy Day Women #12 & 35,,SM,355
+452,Dancing in the Streets,922,The 'Pink Panther' Theme,,MB,356
+28,Franklin's Tower,923,The Eleven,,,229
+453,Franklin's Tower,923,Jessica,,MB,298
+454,Franklin's Tower,923,The Eleven,,TH,229
+459,Franklin's Tower,923,Crazy Fingers,,,51
+455,Truckin',928,Same Old Song & Dance,,MB,357
+456,Truckin',928,Powerhouse,,MB,358
+457,Lady With a Fan,929,Everybody Wants to Rule the World,jam,band,359
+458,Terrapin Station,930,Scratchitti,,MB & JR,360
+460,Terrapin Station,930,Bemsha Swing,,MB,361
+353,Jam,985,New Speedway Boogie,,,165
+30,New Speedway Boogie,987,Eyes of the World,,,71
+31,New Speedway Boogie,987,Me And My Uncle,,,145
+32,Eyes of the World,997,Dancing in the Streets,,,57
+33,Eyes of the World,997,Reuben and Cherise,,,185
+34,Not Fade Away,999,Walk the Dinosaur,,,282
+35,Not Fade Away,1024,Manteca,,,283
+36,Viola Lee Blues,1033,China Cat Sunflower,,,44
+376,The Wheel,1037,[unknown],,MB,288
+37,Cumberland Blues,1043,9 to 5,,,2
+461,Here Comes Sunshine,1103,So What,jam,,205
+462,Man Smart (Woman Smarter),1104,Going Down The Road Feeling Bad,,TH,84
+463,Throwing Stones,1107,[unknown],Zeppelin?,SM,288
+464,Terrapin Station,1109,Everybody Wants to Rule the World,,,359
+408,Reuben and Cherise,1132,Not Fade Away,intro head-fake,,168
+465,Hell In A Bucket,1134,Loose Lucy,,TH?,138
+466,Truckin',1140,China Cat Sunflower,,,44
+377,Slipknot!,1152,[unknown],jazz...,SM?TH?,288
+378,Slipknot!,1187,[unknown],Jimi?,,288
+38,Jack A Roe,1261,Hey Bulldog,,,103
+379,Mr. Charlie,1290,[unknown],Zeppelin?,,288
+380,Jam,1301,[unknown],Radiohead?,,288
+381,Truckin',1305,Born Cross Eyed,,,27
+39,Truckin',1313,China Cat Sunflower,,,44
+382,Viola Lee Blues,1320,[unknown],Zeppelin?,,288
+40,Shakedown Street,1331,Bathtub Gin,,,284
+41,Fortune Teller,1346,Morning Dew,,,151
+42,Truckin',1399,The Other One,,,235
+613,Cumberland Blues,1423,Shakedown Street,,,196
+43,Cassidy,1434,Part II: Let It Grow,,,277
+44,Throwing Stones,1440,Deal,,,60
+45,Throwing Stones,1440,Hey Bulldog,,,103
+46,Slipknot!,1453,Myxomatosis,,,160
+47,Scarlet Begonias,1488,Cassidy,,,38
+48,Cassidy,1489,Reuben and Cherise,,,185
+49,Fire on the Mountain,1490,Reuben and Cherise,,,185
+50,Fire on the Mountain,1490,Cassidy,,,38
+59,Dancing in the Streets,1495,[unknown],,,288
+51,Shakedown Street,1503,Serpentine Fire,,,286
+52,Bird Song,1639,Day Tripper,,,287
+354,Truckin',1684,The Other One,,,235
+355,Tennessee Jed,1685,Ramble On Rose,,,184
+356,The Music Never Stopped,1686,[unknown],,,288
+357,Brown-Eyed Women,1688,Don't Stop 'Til You Get Enough,,,339
+358,Brown-Eyed Women,1688,Truckin',,,251
+359,Throwing Stones,1691,Dancing in the Streets,,,57
+360,Dark Star,1692,Going Down The Road Feeling Bad,,,84
+361,Part II: Let It Grow,1695,Norwegian Wood,,,311
+362,Part II: Let It Grow,1695,Kashmir,,,124
+363,Part II: Let It Grow,1695,Roundabout,,,340
+364,Terrapin Station,1698,Reuben and Cherise,,,185
+365,Terrapin Station,1698,Eleanor Rigby,,,341
+53,Chuckles,1798,Tequila,,,222
+54,Black Throated Wind,1827,Royals,,MB/Bogie,191
+366,Easy Wind,1836,Black Throated Wind,"""wind"" tease",,25
+367,Easy Wind,1836,Vampire Blues,,,257
+368,Eyes of the World,1837,What's Going On,,,342
+369,Eyes of the World,1837,Jessica,,,298
+84,Not Fade Away,1939,Tequila,,,222
+55,Truckin',1996,Friends,,,80
+56,Part II: Let It Grow,2074,Girlfriend Is Better,,,82
+57,Dancing in the Streets,2076,[unknown],MMW?,,288
+58,The Music Never Stopped,2118,New Speedway Boogie,,,165
+472,Ramble On Rose,2261,Dark Star,,TH,59
+470,Bird Song,2264,Dark Star,,band,59
+471,Truckin',2265,Bird Song,,MB,22
+473,Truckin',2267,Bird Song,,band,22
+474,Playing in the Band,2269,Feel Like a Stranger,,band,74
+412,Jam,2407,A Love Supreme,,TH or SM,323
+413,The Other One,2408,Playing in the Band,,,176
+414,Viola Lee Blues,2409,Throwing Stones,,,245
+415,Viola Lee Blues,2409,China Cat Sunflower,,TH,44
+416,Viola Lee Blues,2409,Shortnin' Bread,,MB,315
+417,Cats Under the Stars,2410,Walk Like an Egyptian,,MB,302
+418,Cats Under the Stars,2410,China Cat Sunflower,,SM,44
+419,Cats Under the Stars,2410,Don't Stop 'Til You Get Enough,,SM,339
+420,Cats Under the Stars,2410,St. Thomas,,SM,346
+421,Feel Like a Stranger,2412,Immigrant Song,,,113
+422,Feel Like a Stranger,2412,Tom's Diner,,SM,347
+423,Feel Like a Stranger,2412,Slipknot!,,,201
+424,Dancing in the Streets,2414,Tell Me a Bedtime Story,jam,MB,348
+425,Dancing in the Streets,2414,Eyes of the World,,,71
+426,Jam,2416,Fly Like an Eagle,,MB,349
+427,Part II: Let It Grow,2417,Amazing Grace,,TH,350
+428,Part II: Let It Grow,2417,If You Think I'm Sexy,,,351
+429,Part II: Let It Grow,2417,My Perogative,,,352
+430,Part II: Let It Grow,2417,Slipknot!,,,201
+599,The Wheel,2429,Girl From Ipanema,,MB,377
+600,The Wheel,2429,Dear Prudence,,MB,280
+601,The Other One,2431,Purple Haze,,SM,378
+602,The Other One,2431,A Love Supreme,,band,323
+603,Shakedown Street,2432,Brown-Eyed Women,,SM,32
+604,Shakedown Street,2432,The Wheel,,TH,241
+605,Shakedown Street,2432,China Cat Sunflower,,TH,44
+606,Shakedown Street,2432,Here Comes Sunshine,,TH,99
+607,Throwing Stones,2435,Cats Under the Stars,,TH,40
+608,Throwing Stones,2435,Brown-Eyed Women,,TH,32
+609,Feel Like a Stranger,2441,Your Kiss Is On My List,,MB/band,379
+61,Man Smart (Woman Smarter),2566,Not Fade Away,starting feint / opening jam,,168
+60,Not Fade Away,2567,Cult of Personality,,,54
+383,Throwing Stones,2593,Good Times Bad Times,,,89
+384,Throwing Stones,2593,Chest Fever,,,43
+62,Viola Lee Blues,2626,9 to 5,,,2
+63,Shakedown Street,2654,Eyes of the World,"""73 Changes"" ending jam??",,71
+65,Shakedown Street,2654,Stronger Than Dirt,,,210
+64,Not Fade Away,2659,Turn On Your Lovelight,,,252
+66,Man Smart (Woman Smarter),2661,Iko Iko,,,111
+67,Slipknot!,2663,Terrapin Station,,,224
+68,Slipknot!,2663,Foam,,,289
+69,Scarlet Begonias,2664,Terrapin Station,,,224
+70,Jam,2665,Terrapin Station,,,224
+71,Jam,2670,Good Lovin',,,87
+72,Tennessee Jed,2671,[unknown],"""Revelry""?",,288
+73,Jam,2673,Swingtown,,,290
+74,Jam,2673,Come Together,,,291
+75,Feel Like a Stranger,2675,Here Comes The Hotstepper,,,292
+76,Morning Dew,2676,Baba O'Riley,,,293
+77,Part II: Let It Grow,2679,Ten Years Gone,,,295
+78,Jam,2680,My Favorite Things,,,294
+79,Jam,2680,Part II: Let It Grow,,,277
+80,Jam,2680,Bird Song,,,22
+81,New Minglewood Blues,2685,Throwing Stones,,,245
+385,Candyman,2690,[unknown],"""Revelry""?",,288
+82,Big River,2696,Cumberland Blues,,,55
+83,Truckin',2713,Born Cross Eyed,,,27
+85,Iko Iko,2751,Man Smart (Woman Smarter),,,143
+86,China Cat Sunflower,2763,The Wheel,,,241
+411,Sittin' on Top of the World,2767,Ballroom Blitz,,MB,345
+88,The Wheel,2770,Mountain Jam,,,296
+89,Stuck Inside of Mobile With the Memphis Blues Again,2771,Eyes of the World,,,71
+90,Stuck Inside of Mobile With the Memphis Blues Again,2771,Hell In A Bucket,,,97
+91,Stuck Inside of Mobile With the Memphis Blues Again,2771,Estimated Prophet,,,69
+92,Uncle John's Band,2772,Help on the Way,,,98
+389,Eyes of the World,2773,Eyes of the World,,,71
+93,Estimated Prophet,2774,Part II: Let It Grow,,,277
+94,Estimated Prophet,2774,Terrapin Station,,,224
+95,Estimated Prophet,2774,Another Brick in the Wall,,,297
+96,Jack Straw,2775,Part II: Let It Grow,,,277
+97,Cumberland Blues,2778,Estimated Prophet,,,69
+98,Cumberland Blues,2778,Hey Bulldog,,,103
+99,Shakedown Street,2781,Feel Like a Stranger,,,74
+100,Shakedown Street,2781,[unknown],Dizzy Gillespie?,,288
+101,Born Cross Eyed,2783,Dark Star,,,59
+102,Born Cross Eyed,2783,The Other One,,,235
+103,New Speedway Boogie,2789,Reuben and Cherise,,,185
+104,He's Gone,2791,Jack Straw,,,120
+105,He's Gone,2791,Cosmic Charlie,,,50
+106,He's Gone,2791,The Other One,,,235
+107,The Other One,2792,New Speedway Boogie,,,165
+108,The Other One,2792,Cryptical Envelopment,,,53
+109,Althea,2820,Estimated Prophet,,,69
+110,Althea,2820,Samba in the Rain,,,299
+111,Viola Lee Blues,2822,Loose Lucy,,,138
+112,Franklin's Tower,2823,Jessica,?,,298
+113,Reuben and Cherise,2825,Eyes of the World,,,71
+114,Eyes of the World,2826,Reuben and Cherise,,,185
+115,In Memory of Elizabeth Reed,2827,Feel Like a Stranger,,,74
+116,St. Stephen,2828,I Know You Rider,,,110
+117,St. Stephen,2828,Not Fade Away,,,168
+118,St. Stephen,2828,Dark Star,,,59
+119,Dark Star,2830,Wharf Rat,,,265
+120,Dark Star,2830,In Memory of Elizabeth Reed,,,116
+121,Throwing Stones,2839,Dark Star,,,59
+122,Throwing Stones,2839,Cosmic Charlie,,,50
+123,Throwing Stones,2839,How Many More Times,,,108
+124,Throwing Stones,2839,Another Brick in the Wall,,,297
+125,Magnificent Sanctuary Band,2893,Good Lovin',,,87
+126,Magnificent Sanctuary Band,2893,C.C. Rider,,,42
+127,Hell In A Bucket,2895,Loose Lucy,,,138
+409,New Speedway Boogie,2896,I Need A Miracle,,SM?,115
+128,Dark Star,2897,Part II: Let It Grow,,,277
+129,Dark Star,2897,Simple Gift of Man,,,300
+130,Dark Star,2897,Winter War Games,,,301
+131,Cats Under the Stars,2901,Walk Like an Egyptian,,,302
+132,Cats Under the Stars,2901,Good Lovin',,,87
+133,I Know You Rider,2902,[unknown],Radiohead?,,288
+134,Cats Under the Stars,2903,China Cat Sunflower,,,44
+135,Cats Under the Stars,2905,Good Lovin',,,87
+136,Cats Under the Stars,2905,There Is a Mountain,,,237
+137,Bertha,2906,Jack Straw,,,120
+138,Throwing Stones,2907,Wilson,,,303
+139,Throwing Stones,2907,Terrapin Station,,,224
+140,Throwing Stones,2907,Wharf Rat,,,265
+141,Throwing Stones,2907,New Minglewood Blues,,,163
+142,Throwing Stones,2907,New Speedway Boogie,,,165
+143,Lady With a Fan,2908,The Other One,,,235
+144,Lady With a Fan,2908,New Speedway Boogie,,,165
+145,Lady With a Fan,2908,Tennessee Jed,,,221
+146,Lady With a Fan,2908,Throwing Stones,,,245
+148,Part II: Let It Grow,2916,Estimated Prophet,,,69
+149,Part II: Let It Grow,2916,First Tube,,,304
+147,Crazy Fingers,2917,Part II: Let It Grow,,,277
+150,My Brother Esau,2919,Not Fade Away,,,168
+151,Saint of Circumstance,2923,Crazy Fingers,,,51
+152,Saint of Circumstance,2923,Terrapin Station,,,224
+153,Saint of Circumstance,2923,Tennessee Jed,,,221
+154,Tennessee Jed,2924,Dancing in the Streets,,,57
+155,Tennessee Jed,2924,Good Lovin',,,87
+156,Tennessee Jed,2924,Yazoo Street Scandal,,,271
+157,Slipknot!,2927,Feel Like a Stranger,,,74
+158,Franklin's Tower,2928,Jessica,,,298
+159,St. Stephen,2933,Rocky Mountain Way,,,306
+160,St. Stephen,2933,Peaches,,,307
+161,St. Stephen,2933,Optimistic,,,308
+162,Dancing in the Streets,2934,How Many More Times,,,108
+166,Cassidy,2937,Jack Straw,feint?,,120
+167,Cassidy,2937,Part II: Let It Grow,,,277
+168,Not Fade Away,2940,I Want Candy,,,305
+163,Shakedown Street,2943,King Solomon's Marbles,,,127
+164,Shakedown Street,2943,I Need A Miracle,,,115
+165,I Need A Miracle,2944,One More Saturday Night,,,169
+170,Throwing Stones,2962,Man in the Box,,,309
+169,Jack Straw,2966,[unknown],Billy Joel?,,288
+171,Slipknot!,2987,Wilson,,,303
+172,Slipknot!,2987,Feel Like a Stranger,,,74
+173,China Cat Sunflower,3011,[unknown],Radiohead,,288
+174,I Know You Rider,3012,[unknown],Zeppelin (towards end),,288
+183,Not Fade Away,3016,Dark Star,,,59
+182,Reuben and Cherise,3017,Feel Like a Stranger,,,74
+179,Slipknot!,3020,Reuben and Cherise,,,185
+178,Throwing Stones,3021,Reuben and Cherise,,,185
+180,Throwing Stones,3021,Slipknot!,,,201
+181,Throwing Stones,3021,Feel Like a Stranger,,,74
+176,He's Gone,3022,Black Throated Wind,,,25
+177,He's Gone,3022,Reuben and Cherise,,,185
+175,Not Fade Away,3027,Touch of Grey,,,249
+184,Ramble On Rose,3043,Reuben and Cherise,,,185
+185,St. Stephen,3049,Moby Dick,,,149
+186,Slipknot!,3051,Scarlet Begonias,,,195
+187,China Cat Sunflower,3062,[unknown],Radiohead?,,288
+479,He's Gone,3098,Black Throated Wind,h/t preston99@archive,,25
+188,Uncle John's Band,3117,Becky,,,16
+386,Saint of Circumstance,3123,Reuben and Cherise,,,185
+189,Jam,3124,Born Cross Eyed,...or is this a separate jam?,,27
+190,Dancing in the Streets,3128,Living for the City,,,310
+192,Dancing in the Streets,3128,Slipknot!,,,201
+193,Dancing in the Streets,3128,King Solomon's Marbles,,,127
+194,Dancing in the Streets,3128,Hang Up Your Hangups,,,312
+191,The Music Never Stopped,3129,Norwegian Wood,,,311
+387,Bertha,3131,One More Saturday Night,,,169
+195,#N/A,3134,The Other One,...or is this separate?,,235
+196,Part II: Let It Grow,3143,Terrapin Station,,,224
+211,Friend of the Devil,3152,Head Over Heels,,,316
+212,The Wheel,3153,Dear Prudence,,,280
+213,I Need A Miracle,3155,Estimated Prophet,,,69
+214,Slipknot!,3164,Jack A Roe,,,119
+215,Slipknot!,3164,Turn On Your Lovelight,,,252
+216,Slipknot!,3164,Mama Tried,,,142
+217,St. Stephen,3169,Blues for Allah,,,26
+218,Truckin',3170,Blues for Allah,,,26
+219,Truckin',3170,Mama Tried,,,142
+220,Truckin',3170,[unknown],"Gillespie ""Night in Tunisia""?",,288
+221,One More Saturday Night,3173,Casey Jones,,,37
+222,One More Saturday Night,3173,Saturday Night's Alright for Fighting,,,317
+197,Part II: Let It Grow,3181,Rhiannon,,,314
+199,Here Comes Sunshine,3182,Third Stone from the Sun,,,243
+198,Playing in the Band,3183,I'll Wait,,,313
+200,Eyes of the World,3184,Playing in the Band,,,176
+201,Eyes of the World,3184,Shortnin' Bread,,,315
+202,Eyes of the World,3184,Shakedown Street,,,196
+203,Eyes of the World,3184,Dancing in the Streets,,,57
+204,Dancing in the Streets,3185,Chuckles,,,47
+205,Dancing in the Streets,3185,Hey Bulldog,,,103
+206,Dancing in the Streets,3185,Heartbreaker,,,96
+207,He's Gone,3186,Hang Up Your Hangups,,,312
+208,He's Gone,3186,Stella Blue,,,209
+209,He's Gone,3186,St. Stephen,,,211
+210,He's Gone,3186,Cassidy,,,38
+223,I Know You Rider,3203,Me and Bobby McGee,,,318
+224,Tennessee Jed,3221,Take the 'A' Train,,,319
+225,Morning Dew,3239,Terrapin Station,,,224
+29,Help on the Way,3243,Slipknot!,,MB,201
+390,Dancing in the Streets,3245,[unknown],Ghost Light?,TH?,288
+391,Dancing in the Streets,3245,[unknown],,SM/band,288
+392,Truckin',3247,[unknown],Jimi or Allmans?,SM?TH?,288
+393,Truckin',3247,Slipknot!,,TH?,201
+394,Truckin',3247,Born Cross Eyed,,band,27
+395,Shakedown Street,3249,Hey Bulldog,,TH?,103
+396,He's Gone,3250,Playing in the Band,?,TH?,176
+226,So Many Roads,3264,Knockin' on Heaven's Door,,,320
+227,Yazoo Street Scandal,3299,Don't Stop Me Now,,,321
+229,The Music Never Stopped,3302,War Pigs,,,322
+230,The Music Never Stopped,3302,A Love Supreme,,,323
+388,Loose Lucy,3303,Fame,?,,72
+231,Man Smart (Woman Smarter),3308,War Pigs,,,322
+228,The Eleven,3309,Part II: Let It Grow,,,277
+232,We Bid You Goodnight,3313,Fire on the Mountain,,,75
+233,Fire on the Mountain,3314,Terrapin Station,,,224
+234,Lady With a Fan,3315,No Quarter,,,167
+235,Terrapin Station,3316,War Pigs,,,322
+236,Feel Like a Stranger,3325,Reuben and Cherise,,,185
+237,Saint of Circumstance,3328,Reuben and Cherise,,,185
+238,Slipknot!,3332,Hey Bulldog,,,103
+239,New Minglewood Blues,3334,Hey Bulldog,,,103
+240,Samson and Delilah,3336,[unknown],Emerson/Lake/Palmer ?,,288
+241,Franklin's Tower,3337,Hey Bulldog,,,103
+242,Reuben and Cherise,3338,Lady With a Fan,,,128
+243,Brown-Eyed Women,3346,Tennessee Jed,,,221
+244,Brown-Eyed Women,3346,He's Gone,,,100
+245,Good Lovin',3347,A Love Supreme,,,323
+246,He's Gone,3349,Tennessee Jed,,,221
+247,Truckin',3351,New Speedway Boogie,,,165
+248,Truckin',3351,Born Cross Eyed,,,27
+249,Viola Lee Blues,3352,Good Lovin',,,87
+250,Row Jimmy,3354,Terrapin Station,,,224
+251,Estimated Prophet,3355,Lost Sailor,feint,,140
+252,Estimated Prophet,3355,Terrapin Station,,,224
+253,Mississippi Halfstep Uptown Toodleloo,3356,Tennessee Jed,,,221
+254,Mississippi Halfstep Uptown Toodleloo,3356,Crazy Fingers,,,51
+255,I Need A Miracle,3366,The Other One,,,235
+256,I Need A Miracle,3366,Day Tripper,,,287
+257,Eyes of the World,3368,Tighten Up,,,324
+258,The Other One,3369,I Need A Miracle,,,115
+259,Dancing in the Streets,3371,Loose Lucy,,,138
+260,Dancing in the Streets,3371,First Tube,,,304
+261,Dancing in the Streets,3375,Here Comes Sunshine,,,99
+262,Uncle John's Band,3376,Becky,,,16
+263,The Eleven,3379,New Speedway Boogie,,,165
+264,Truckin',3380,The Other One,,,235
+265,Eyes of the World,3382,[unknown],,,288
+266,Eyes of the World,3382,Here Comes Sunshine,,,99
+267,St. Stephen,3400,China Cat Sunflower,,,44
+268,St. Stephen,3400,Good Lovin',,,87
+269,China Cat Sunflower,3401,Good Lovin',,,87
+270,China Cat Sunflower,3401,I Know You Rider,,,110
+271,China Cat Sunflower,3401,Iko Iko,,,111
+272,Here Comes Sunshine,3403,Little Red Rooster,,,134
+273,Here Comes Sunshine,3403,Tennessee Jed,,,221
+274,Viola Lee Blues,3404,Truckin',,,251
+275,Throwing Stones,3405,I Know You Rider,,,110
+276,Throwing Stones,3405,Foolish Heart,,,76
+277,Throwing Stones,3405,China Cat Sunflower,,,44
+278,Feel Like a Stranger,3407,A Night in Tunisia,,,325
+279,Feel Like a Stranger,3407,Streets of Cairo,,,326
+280,Stella Blue,3408,Epic,,,327
+281,In the Meantime,3409,A Love Supreme,,,323
+282,Cassidy,3413,Paint It Black,,,328
+283,Here Comes Sunshine,3416,Cumberland Blues,,,55
+284,Here Comes Sunshine,3416,They Love Each Other,,,242
+285,Saint of Circumstance,3428,Playing in the Band,,,176
+286,Shakedown Street,3443,Stash,,,329
+287,Shakedown Street,3444,Bathtub Gin,,,284
+289,Big River,3452,Cumberland Blues,,,55
+288,Cumberland Blues,3456,Lay Down Sally,,,330
+290,Cumberland Blues,3456,China Cat Sunflower,,,44
+291,Brown-Eyed Women,3484,Hard To Handle,intro feint,,93
+292,Part II: Let It Grow,3485,Estimated Prophet,,,69
+293,Part II: Let It Grow,3485,St. Stephen,,,211
+294,St. Stephen,3486,Hard To Handle,,,93
+295,St. Stephen,3486,Blues for Allah,,,26
+296,Playing in the Band,3488,Lost Sailor,,,140
+297,Here Comes Sunshine,3491,Dear Prudence,,,280
+298,Here Comes Sunshine,3491,China Cat Sunflower,,,44
+299,Here Comes Sunshine,3491,Hoodoo Voodoo,,,107
+300,New Speedway Boogie,3493,Part II: Let It Grow,,,277
+301,Stella Blue,3496,Something in the Way She Moves,,,331
+302,Man Smart (Woman Smarter),3498,Iko Iko,,,111
+303,Shakedown Street,3499,Black Throated Wind,,,25
+304,Shakedown Street,3499,Cosmic Charlie,,,50
+305,The Wheel,3500,Uncle John's Band,,,255
+306,The Wheel,3500,Have You Ever Seen the Rain?,,,332
+307,A Hard Rain's a-Gonna Fall,3501,Truckin',,,251
+308,Loser,3503,Stairway to Heaven,,,334
+309,Bertha,3505,Fearless,,,333
+310,Truckin',3506,The Other One,,,235
+311,Truckin',3506,New Speedway Boogie,,,165
+312,Truckin',3506,I Need A Miracle,,,115
+313,Truckin',3506,Going Down The Road Feeling Bad,,,84
+314,Truckin',3506,Born Cross Eyed,,,27
+315,Shakedown Street,3507,Help on the Way,,,98
+316,Me and My Uncle,3508,Jack A Roe,feint,,119
+317,Eyes of the World,3509,[unknown],"""My Guy""?",,288
+318,Eyes of the World,3509,Blues for Allah,,,26
+319,Franklin's Tower,3511,Cassidy,,,38
+320,Scarlet Begonias,3519,The Wheel,,,241
+321,Scarlet Begonias,3519,Good Lovin',,,87
+322,China Cat Sunflower,3523,Here Comes Sunshine,,,99
+323,China Cat Sunflower,3523,The Other One,,,235
+324,China Cat Sunflower,3523,I Need A Miracle,,,115
+325,China Cat Sunflower,3523,New Speedway Boogie,,,165
+326,Shakedown Street,3543,Jean Pierre,,,335
+328,Playing in the Band,3570,Cheek to Cheek,,,336
+327,The Other One,3571,Immigrant Song,,,113
+329,The Other One,3571,Reuben and Cherise,,,185
+333,Greatest Story Ever Told,3575,Casey Jones,,,37
+334,Greatest Story Ever Told,3575,The Wheel,,,241
+330,The Wheel,3576,Something in the Way She Moves,,,331
+331,The Wheel,3576,Part II: Let It Grow,,,277
+332,The Wheel,3576,Joeline,,,122
+335,The Wheel,3576,Joeline,,,122
+336,The Wheel,3576,Eyes of the World,,,71
+337,The Wheel,3576,Tighten Up,,,324
+338,Eyes of the World,3577,[unknown],from Marco,,288
+339,Eyes of the World,3577,Viola Lee Blues,,,258
+340,Eyes of the World,3577,The Eleven,,,229
+341,Eyes of the World,3577,Joeline,,,122
+342,Why Don't We Do It in the Road?,3581,Cats Under the Stars,,,40
+343,Why Don't We Do It in the Road?,3581,"Get Out of My Life, Woman",,,337
+344,Shakedown Street,3583,First Tube,...more Phish songs?,,304
+345,Shakedown Street,3583,Terrapin Station,,,224
+346,Hell In A Bucket,3587,First Tube,,,304
+347,Bird Song,3588,The Wheel,,,241
+348,Feel Like a Stranger,3589,A Night in Tunisia,,,325
+349,Cats Under the Stars,3590,Dancing in the Streets,,,57
+350,"Tell Me, Momma",3591,Mountain Song,instrumental chorus?,,338
+351,I Know You Rider,3592,Tennessee Jed,,,221
+352,Greatest Story Ever Told,3597,Here Comes Sunshine,,,99
+399,Tennessee Jed,3609,Loose Lucy,,SM,138
+401,The Other One,3614,Breakdown,within segue jam,,344
+402,Not Fade Away,3620,[unknown],Allman Brothers,TH,288
+403,Not Fade Away,3620,Tennessee Jed,,SM,221
+404,Not Fade Away,3620,I Need A Miracle,,SM?,115
+405,Dancing in the Streets,3624,Cumberland Blues,,,55
+406,Dancing in the Streets,3624,[unknown],PFunk ,SM,288
+407,Shakedown Street,3634,[unknown],in the intro,MB,288
+410,Touch of Grey,3643,Bertha,,,18
+597,New Minglewood Blues,3652,Serpentine Fire,,MB,286
+598,New Minglewood Blues,3652,Throwing Stones,,TH?,245
+616,Throwing Stones,523,Slipknot!,,,201
+617,Throwing Stones,523,I Know You Rider,,,110
+618,Throwing Stones,523,[unknown],Allman Brothers?,,288
+619,Throwing Stones,523,The Eleven,at very end,TH?,229
+620,One More Saturday Night,1936,Cold Rain and Snow,nod to recent blizzard,,49
+621,Not Fade Away,3654,China Cat Sunflower,,,44
+622,The Wheel,3658,Dancing in the Streets,,,57
+623,Touch of Grey,3659,Reuben and Cherise,,,185
+624,Fuckin' Up,646,Born to Run,Jimmy Fallon audible,,28
+625,Fuckin' Up,646,You Can Call Me Al,Jimmy Fallon audible,,272
+626,Fuckin' Up,646,Hey Jude,Jimmy Fallon audible,,104
+627,Foolish Heart,3661,Slipknot!,,TH,201
+628,Foolish Heart,3661,Reuben and Cherise,,TH,185
+629,Foolish Heart,3661,Inca Roads,,TH,279
+630,Slipknot!,3663,Tom's Diner,,SM & JR,347
+631,Slipknot!,3663,Part II: Let It Grow,,,277
+632,Slipknot!,3663,Hey Bulldog,reprise,,103
+633,Hell In A Bucket,3664,Loose Lucy,,TH,138
+634,Dancing in the Streets,3665,Loose Lucy,,SM,138
+635,Not Fade Away,3654,Serpentine Fire,,SM,286
+636,The Wheel,3658,Cold Rain and Snow,nod to the weather,,49
+637,Dancing in the Streets,3665,Dark Star,,,59
+638,Sugaree,3657,Mississippi Halfstep Uptown Toodleloo,,,148
+639,Shakedown Street,3671,Part II: Let It Grow,,,277
+640,Truckin',3676,I Need A Miracle,,,115
+641,Truckin',3676,Spoonful,,,281
+642,Truckin',3676,New Speedway Boogie,verse and jam,,165
+643,Truckin',3676,St. Stephen,,,211
+644,St. Stephen,3677,China Cat Sunflower,,,44
+645,Eyes of the World,3681,Breakdown,,SM,344
+646,Estimated Prophet,3682,Friend of the Devil,,,79
+647,He's Gone,3692,Fire on the Mountain,,,75
+648,Going Down The Road Feeling Bad,3684,Please Please Me,,TH,381
+649,Franklin's Tower,3688,Jessica,,MB,298
+650,Scarlet Begonias,3689,Hell In A Bucket,,,97
+651,Fire on the Mountain,3690,Terrapin Station,,,224
+652,Fire on the Mountain,3690,Going Down The Road Feeling Bad,,,84
+653,He's Gone,3692,Scarlet Begonias,,,195
+654,Playing in the Band,3693,Cold Rain and Snow,,,49
+655,Truckin',3676,Cryptical Envelopment,,TH,53
+656,St. Stephen,3677,Not Fade Away,,,168
+657,St. Stephen,3677,Good Times Bad Times,,JR,89
+658,Cassidy,3683,Going Down The Road Feeling Bad,,TH,84
+659,Franklin's Tower,3688,Serpentine Fire,,MB,286
+660,He's Gone,3692,Going Up the Country,,Bogie,382
+661,He's Gone,3692,Scarlet Begonias,,TH,195
+662,Born to Run,3695,Redemption Song,,Bogie,383
+663,Cassidy,3413,Born Cross Eyed,,,27
+664,Good Lovin',1884,I Know You Rider,,TH,110
+665,Not Fade Away,1886,New Speedway Boogie,,TH,165
+666,Loser,1887,Reuben and Cherise,,,185
+667,I Know You Rider,1891,National Anthem,jam,,161
+668,I Know You Rider,1891,Morning Dew,,TH,151
+669,Dancing in the Streets,1116,Cupid,,,384
+670,Shakedown Street,1121,Dancing in the Streets,,,57
+671,Althea,1123,All of My Love,,MB,362
+672,Not Fade Away,1124,On the Road Again,,TH,171
+673,Not Fade Away,1124,Fat Mama,,MB/TH,385
+674,Help on the Way,1424,Shakedown Street,head-fake?,,196
+675,The Wheel,1428,Head Over Heels,,MB,316
+676,Eyes of the World,1439,Throwing Stones,,,245
+677,Cumberland Blues,1443,Hoedown,,MB,367
+678,Here Comes Sunshine,1444,Material Girl,,MB,386
+679,Here Comes Sunshine,1444,China Cat Sunflower,,TH,44
+680,The Wheel,1448,Dear Prudence,,MB,280
+681,The Wheel,1448,Everything in Its Right Place,,MB,387
+682,Morning Dew,1449,Playing in the Band,,,176
+683,Eyes of the World,1456,Playing in the Band,,TH,176
+684,We Bid You Goodnight,1459,Cold Rain and Snow,,TH,49
+685,Tennessee Jed,1553,Becky,jam,,16
+686,The Other One,1820,Born Cross Eyed,,TH,27
+687,Dark Star,1821,Born Cross Eyed,,TH,27
+688,St. Stephen,1822,Born Cross Eyed,,TH,27
+689,Truckin',1832,Born Cross Eyed,,TH,27
+690,Shakedown Street,1825,Don't Stop 'Til You Get Enough,,MB,339
+691,Shakedown Street,1825,Dark Star,,TH,59
+692,Shakedown Street,1825,Feel Like a Stranger,,,74
+693,Wharf Rat,1831,Tennessee Jed,,TH,221
+694,Alligator,2066,Mr. Charlie,,,154
+695,Alligator,1845,Fame,chorus/jam,,72
+696,Mississippi Halfstep Uptown Toodleloo,2268,Playing in the Band,,TH?/band,176
+697,Greatest Story Ever Told,3700,Dear Prudence,jam,,280
+698,Viola Lee Blues,3715,They Love Each Other,,,242
+699,The Other One,3707,Part II: Let It Grow,,,277
+700,Cumberland Blues,3712,Whipping Post,,,388
+701,Viola Lee Blues,3715,Cumberland Blues,,,55
+702,Viola Lee Blues,3715,They Love Each Other,,,242
+703,Here Comes Sunshine,3717,Shine On You Crazy Diamond,,,389
+704,Here Comes Sunshine,3717,My Brother Esau,,,156
+705,Man Smart (Woman Smarter),3720,Black Throated Wind,,,25
+706,In Memory of Elizabeth Reed,3721,Slipknot!,,,201
+707,Cats Under the Stars,3738,Shortnin' Bread,,,315
+708,Feel Like a Stranger,3732,Dancing in the Streets,jam,,57
+709,The Music Never Stopped,3741,Terrapin Station,,,224
+710,Slipknot!,3743,In Memory of Elizabeth Reed,jam,,116
+711,Playing in the Band,3744,On the Run,,,394
+712,Loser,3745,New Speedway Boogie,,,165
+713,Loser,3745,Wang Dang Doodle,,,395
+714,Dancing in the Streets,3746,Slipknot!,,,201
+715,Dancing in the Streets,3747,Shakedown Street,,,196
+716,Dancing in the Streets,3747,School Days,,,396
+717,Shakedown Street,3748,Bathtub Gin,,,284
+718,Bertha,3751,Cumberland Blues,,,55
+719,Bertha,3751,Theme from 'The Office',,,397
+720,Truckin',3752,C.C. Rider,,,42
+721,Truckin',3752,Stella Blue,,,209
+722,Truckin',3752,I Need A Miracle,,,115
+723,Truckin',3752,The Music Never Stopped,,,233
+724,Truckin',3752,Mountain Jam,,,296
+725,Dancing in the Streets,3746,Terrapin Station,,,224
+726,Dancing in the Streets,3746,New Minglewood Blues,jam,,163
+727,Shakedown Street,3748,Slipknot!,,,201
+728,The Other One,3750,In Memory of Elizabeth Reed,,,116
+729,Truckin',3752,The Other One,jam,,235
+730,Feel Like a Stranger,2125,Harry Hood,jam; Phish's yearly 3-night run at nearby Dick's started the next night,,94
+731,Here Comes Sunshine,2113,Sex Machine,,MB,398
+732,Here Comes Sunshine,2113,La Di Da Di,,MB,399
+733,Dancing in the Streets,2119,The Music Never Stopped,,TH,233
+734,Dancing in the Streets,2119,New Speedway Boogie,with some lyrics?,,165
+735,Dancing in the Streets,2119,Memphis Soul Stew,,OB,400
+736,Dancing in the Streets,2119,Don't Stop 'Til You Get Enough,,SM&MB,339
+737,Box of Rain,2121,Uncle John's Band,,,255
+738,He's Gone,2122,Truckin',,TH,251
+739,He's Gone,2122,Tennessee Jed,,TH,221
+740,He's Gone,2122,Humdinger,"""I think"" —Costello",SM,401
+741,The Wheel,2129,The 'In' Crowd,jam,,231
+742,The Wheel,2129,Bathtub Gin,Phish's yearly 3-night run at nearby Dick's started the next night,MB,284
+743,Greatest Story Ever Told,2132,A Night in Tunisia,,,325
+744,Greatest Story Ever Told,2132,Estimated Prophet,,TH,69
+745,Greatest Story Ever Told,2132,Stash,Phish's yearly 3-night run at nearby Dick's started the next night,SM,329
+746,Truckin',3752,Born Cross Eyed,,,27
+747,Hard To Handle,3729,[unknown],not Walk Like an Egyptian but close,,288
+748,Feel Like a Stranger,3732,[unknown],Allmans...,,288
+749,Shakedown Street,3583,Why Don't We Do It in the Road?,,TH,269
+750,"Tell Me, Momma",3591,Immigrant Song,,SM&MB,113
+751,I Know You Rider,3592,Morning Dew,,,151
+752,Dancing in the Streets,2872,On the Road Again,,SM,171
+753,Dancing in the Streets,2872,Walk the Dinosaur,,SM,282
+754,Saint of Circumstance,2875,Reuben and Cherise,,SM/band,185
+755,Wharf Rat,3760,Dark Star,,,59
+756,Wharf Rat,3760,King Solomon's Marbles,,,127
+757,Wharf Rat,3760,She Has Funny Cars,,,402
+758,Yazoo Street Scandal,3762,Wang Dang Doodle,...maybe https://www.reddit.com/r/JRADs/comments/ouvjdo/setlist_73021_westville_music_bowl_new_haven_ct/h75dpwi,,395
+759,Althea,3764,Black Throated Wind,,,25
+760,Saint of Circumstance,3766,Terrapin Station,,,224
+761,West LA Fadeaway,3773,Unbroken Chain,jam,,254
+762,Bird Song,3775,Echoes,,,405
+763,Bird Song,3775,Pigs (Three Different Ones),jam,,404
+764,Throwing Stones,3777,Pigs (Three Different Ones),,TH,404
+765,Throwing Stones,3777,2001 (Also Sprach Zarathustra),,TH,406
+766,Throwing Stones,3777,Fire on the Mountain,,,75
+768,Lady With a Fan,3779,My Pet Goat,,,157
+769,Stuck Inside of Mobile With the Memphis Blues Again,3772,Slipknot!,,,201
+770,Sugar Magnolia,3786,I Need A Miracle,,,115
+771,West LA Fadeaway,3773,[unknown],estimated?? terrapin?? in the intro...,,288
+772,Bird Song,3775,Stuck Inside of Mobile With the Memphis Blues Again,,,212
+773,Bird Song,3775,Friend of the Devil,,,79
+774,Throwing Stones,3777,Unbroken Chain,,,254
+775,Man Smart (Woman Smarter),3720,Reveille,,SM,407
+776,In Memory of Elizabeth Reed,3721,Dark Star,,TH,59
+777,Here Comes Sunshine,3793,St. Stephen,verse,,211
+778,Slipknot!,3819,In Memory of Elizabeth Reed,,,116
+779,He's Gone,3814,Mountain Jam,,,296
+780,Althea,3839,Echoes,jam; Tom loses his sunglasses,,405
+781,Truckin',3840,Bird Song,,TH,22
+782,Bird Song,3841,New Speedway Boogie,intro fakeout,,165
+783,Throwing Stones,3845,The Eleven,,TH?,229
+784,Throwing Stones,3845,Dark Star,,MB,59
+785,Feel Like a Stranger,3808,Another Brick in the Wall,,,297
+786,Part II: Let It Grow,3811,Tennessee Jed,,,221
+787,Part II: Let It Grow,3811,Dear Prudence,jam,,280
+788,Truckin',3815,Another Brick in the Wall,,,297
+789,Eyes of the World,3817,Terrapin Station,,MB,224
+790,Eyes of the World,3817,Over the Rainbow,,,414
+791,Slipknot!,3855,In Memory of Elizabeth Reed,,,116
+792,Wharf Rat,3865,Dark Star,,TH,59
+793,Estimated Prophet,3862,Becky,tentative,,16
+794,I Need A Miracle,3867,New Speedway Boogie,,TH,165
+795,Dancing in the Streets,3870,West LA Fadeaway,,,264
+796,Dancing in the Streets,3870,Runnin' Down a Dream,,,192
+797,Alligator,3848,China Cat Sunflower,,,44
+798,St. Stephen,3849,The Wheel,,,241
+799,Good Lovin',3852,[unknown],50s tune??,,288
+800,Throwing Stones,3845,Big Railroad Blues,,,19
+801,New Speedway Boogie,3863,[unknown],,MB,288
+802,Playing in the Band,3864,The Wheel,jam,,241
+803,Only Daddy That'll Walk the Line,3903,I Know You Rider,"intro/transition from China Cat, in segue into Cassidy",,110
+804,Dancing in the Streets,3907,Loose Lucy,,,138
+805,Throwing Stones,3912,Reuben and Cherise,,,185
+806,Throwing Stones,3912,That's All,,,416
+807,Bird Song,3913,Part II: Let It Grow,,,277
+808,Here Comes Sunshine,3915,Unbroken Chain,,,254
+809,The Mighty Quinn,3917,Here Comes Sunshine,,,99
+810,Cumberland Blues,3894,Hell In A Bucket,,,97
+811,Cumberland Blues,3894,[unknown],,MB,288
+813,Eyes of the World,3905,King Solomon's Marbles,quote,band,127
+814,The Other One,3908,New Speedway Boogie,,TH?,165
+815,Dancing in the Streets,3439,Drive My Car,,DD,417
+816,The Wheel,3440,What Was It You Wanted,,MB,418
+817,The Wheel,3440,Jolene,,band,419
+818,The Wheel,3440,Cassidy,,TH,38
+819,Shakedown Street,3443,King Solomon's Marbles,,band,127
+820,Shakedown Street,3443,Dancing in the Streets,,band,57
+821,Shakedown Street,3444,Dancing in the Streets,,band,57
+822,Eyes of the World,3447,Dancing in the Streets,,SM,57
+823,Queen Jane Approximately,3920,Playing in the Band,,SM,176
+824,Queen Jane Approximately,3920,The Entertainer,,SM,421
+825,The Wheel,3923,Hell In A Bucket,,,97
+826,Shakedown Street,3929,On the Road Again,,,171
+827,Shakedown Street,3929,China Cat Sunflower,,,44
+828,Estimated Prophet,3961,Lost Sailor,jam,,140
+829,Estimated Prophet,3961,Jessica,jam,,298
+830,Lazy Lightning,3975,Eyes of the World,headfake,,71
+831,Lazy Lightning,3975,Please Please Me,,,381
+832,Peggy-O,3976,Jessica,,,298
+833,Dancing in the Streets,3978,Shakedown Street,jam,,196
+834,Saint of Circumstance,3980,Head Over Heels,,,316
+835,Help on the Way,3981,Stayin' Alive,,,423
+836,Help on the Way,3981,In Memory of Elizabeth Reed,,,116
+837,The Other One,3983,The 'Pink Panther' Theme,,,356
+838,The Other One,3983,How Many More Times,,,108
+839,One More Saturday Night,3986,Tennessee Jed,,,221
+840,New Speedway Boogie,3696,Spoonful,,,281
+841,New Speedway Boogie,3696,Truckin',,TH,251
+842,New Speedway Boogie,3696,Playing in the Band,jam,,176
+843,New Speedway Boogie,3696,Part II: Let It Grow,,band,277
+844,Greatest Story Ever Told,3700,Dracula,,,424
+845,Atlantic City,3701,I Know You Rider,intro/transition from China Cat,,110
+846,"Tell Me, Momma",3702,Chuckles,,SM,47
+847,Tennessee Jed,3704,Hell In A Bucket,,band,97
+848,Tennessee Jed,3704,Becky,,MB/JR,16
+849,Cryptical Envelopment,3705,Dark Star,jam,,59
+850,Cats Under the Stars,3874,Norwegian Wood,,band,311
+851,Cats Under the Stars,3874,Throwing Stones,,band,245
+852,Cats Under the Stars,3874,Radar Love,,band,183
+853,"Tell Me, Momma",3875,Jessica,,band,298
+854,"Tell Me, Momma",3875,In Memory of Elizabeth Reed,,band,116
+855,Truckin',3878,The Other One,,band,235
+856,Truckin',3878,New Speedway Boogie,,band,165
+857,Truckin',3878,Born Cross Eyed,jam,,27
+858,Throwing Stones,3882,Shakedown Street,,TH,196
+859,Shakedown Street,3883,Throwing Stones,,band,245
+860,Throwing Stones,3884,Slipknot!,jam,,201
+861,Throwing Stones,3884,Down Under,,TH/band,425
+862,Peggy-O,3976,Flight of the Bumblebee,in Marco solo,MB,369
+863,Dancing in the Streets,3978,[unknown],,,288
+864,Not Fade Away,3901,I Want Candy,,SM,305
+865,Cassidy,3904,I Know You Rider,intro/transition from China Cat,band,110
+866,Loose Lucy,3906,The Other One,,TH,235
+867,Loose Lucy,3906,Eyes of the World,73 Changes,SM,71
+868,Dancing in the Streets,3907,Life During Wartime,,DD & JR,428
+869,Dancing in the Streets,3907,Immigrant Song,,band,113
+870,The Other One,3908,Shakedown Street,headfake?,band,196
+871,Bird Song,3913,The Other One,,band,235
+872,Bird Song,3913,Reuben and Cherise,,band,185
+873,Bird Song,3913,Terrapin Station,,band,224
+874,Reuben and Cherise,3989,[unknown],Allman brothers,,288
+875,Truckin',4003,Norwegian Wood,nod to recent Beatles doc,,311
+876,The Wheel,3921,King Solomon's Marbles,...and/or PITB 73 Changes?,,127
+877,They Love Each Other,3926,China Cat Sunflower,,band,44
+878,Shakedown Street,3929,Girl From Ipanema,,MB,377
+879,Shakedown Street,3929,On the Road Again,,MB,171
+880,Shakedown Street,3929,Loose Lucy,,TH,138
+881,Shakedown Street,3929,Hey Bulldog,,band,103
+882,Shakedown Street,3929,Cosmic Charlie,,band,50
+883,Playing in the Band,3949,Bad Love,,TH,429
+884,Playing in the Band,3949,9x9,,TH,3
+885,Wharf Rat,3950,Mississippi Halfstep Uptown Toodleloo,,TH,148
+886,Wharf Rat,3950,Terrapin Station,,band,224
+887,Wharf Rat,3950,Come Sail Away,,MB,430
+888,Ramble On Rose,3951,Tennessee Jed,,SM,221
+889,Althea,3953,King Solomon's Marbles,headfake,band,127
+890,Foolish Heart,3956,I Know You Rider,China>Rider transition,TH,110
+891,Werewolves of London,3957,Sweet Home Alabama,,MB,431
+892,Werewolves of London,3957,Saturday Night's Alright for Fighting,,MB,317
+893,Bertha,3958,Jessica,,SM,298
+894,Black Throated Wind,3936,St. Stephen,,SM,211
+895,Black Throated Wind,3936,Scarlet Begonias,,TH,195
+896,Black Throated Wind,3936,Jessica,,SM,298
+897,Fire on the Mountain,3939,Black Throated Wind,,SM,25
+898,Row Jimmy,3940,Terrapin Station,,SM,224
+899,Part II: Let It Grow,3941,Black Throated Wind,,SM,25
+900,Echoes,3942,Terrapin Station,,MB&TH,224
+901,Terrapin Station,3943,Echoes,,TH,405
+902,Terrapin Station,3943,At a Siding,,TH,11
+903,Terrapin Station,3943,King Solomon's Marbles,,TH,127
+904,Looks Like Rain,3944,Stella Blue,,TH,209
+905,Looks Like Rain,3944,Echoes,,TH,405
+906,Deal,3945,Might as Well,,TH,146
+907,Bertha,4007,The Wheel,jam,,241
+908,Bertha,4007,Dark Star,,,59
+909,Bertha,4007,Morning Dew,,,151
+910,Bertha,4007,Here Comes Sunshine,,,99
+911,Bertha,4007,St. Stephen,,,211
+912,Truckin',4011,Part II: Let It Grow,,,277
+913,Truckin',4011,War Pigs,,,322
+914,Foolish Heart,4013,But Anyway,,,432
+915,Bird Song,4015,Dark Star,,,59

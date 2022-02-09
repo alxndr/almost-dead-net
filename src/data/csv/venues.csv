@@ -1,0 +1,110 @@
+id,name,location,capacity,generic name,tagname
+23,1stBank Center,"Broomfield, CO",6500,,1stBank Center
+104,Artpark,"Lewiston, NY",10000,,Artpark
+10,Athletic Club of Bend,"Bend, OR",,,Athletic Club of Bend
+5,Belly Up,"Aspen, CO",450,,Belly Up
+93,Berry Hill Farm,"Summit Point, WV",,,Berry Hill Farm
+11,Bethel Woods Center for the Arts,"Bethel, NY",,,Bethel Woods Center for the Arts
+16,Blue Hills Bank Pavilion,"Boston, MA",5200,,Blue Hills Bank Pavilion
+18,Boulder Theater,"Boulder, CO",850,,Boulder Theater
+80,Breathless & Now Onyx Resorts,"Punta Cana, Dominican Republic",,,Breathless & Now Onyx Resorts
+22,Brooklyn Bowl,"Brooklyn, NY",600,TRUE,Brooklyn Bowl (Brooklyn)
+50,Brooklyn Bowl,"Las Vegas, NV",600,TRUE,Brooklyn Bowl (Las Vegas)
+109,Brooklyn Bowl,"Philadelphia, PA",1000,TRUE,Brooklyn Bowl (Philadelphia)
+7,Candler Park,"Atlanta, GA",,,Candler Park
+76,Capitol Theatre,"Port Chester, NY",1800,TRUE,Capitol Theatre (Port Chester)
+9,Carson Creek Ranch,"Austin, TX",,,Carson Creek Ranch
+101,Centennial Olympic Park,"Atlanta, GA",,,Centennial Olympic Park
+26,Clay's Park Resort,"North Lawrence, OH",,,Clay's Park Resort
+66,College Street Music Hall,"New Haven, CT",2000,,College Street Music Hall
+31,Concord Music Hall,"Chicago, IL",,,Concord Music Hall
+49,CounterPoint Music Festival,"Kingston Downs, GA",,,CounterPoint Music Festival
+39,Cuthbert Amphitheater,"Eugene, OR",4000,,Cuthbert Amphitheater
+84,Electric Forest,"Rothbury, MI",,,Electric Forest
+79,Fete Ballroom,"Providence, RI",930,,Fete Ballroom
+61,First Avenue,"Minneapolis, MN",1500,TRUE,First Avenue (Minneapolis)
+42,Founders Brewing Company,"Grand Rapids, MI",,,Founders Brewing Company
+71,Fox Theater,"Oakland, CA",2800,TRUE,Fox Theater (Oakland)
+90,Frost Ampitheater,"Stanford, CA",8000,,Frost Ampitheater
+87,Golden Gate Park,"San Francisco, CA",,,Golden Gate Park
+2,Grand Targhee Resort,"Alta, WY",,,Grand Targhee Resort
+58,Great Stage Park,"Manchester, TN",,,Great Stage Park
+54,Greek Theatre,"Los Angeles, CA",5870,TRUE,Greek Theatre (Los Angeles)
+43,Greenfield Community College,"Greenfield, MA",,,Greenfield Community College
+24,Higher Ground,"South Burlington, VT",,,Higher Ground
+108,Hollywood Palladium,"Los Angeles, CA",,,Hollywood Palladium
+17,House of Blues,"Boston, MA",2500,TRUE,House of Blues (Boston)
+36,House of Blues,"Dallas, TX",2500,TRUE,House of Blues (Dallas)
+44,House of Blues,"Houston, TX",2500,TRUE,House of Blues (Houston)
+86,House of Blues,"San Diego, CA",1500,TRUE,House of Blues (San Diego)
+45,Hunter Mountain,"Hunter, NY",,,Hunter Mountain
+30,Huntington Bank Pavilion at Northerly Island,"Chicago, IL",,,Huntington Bank Pavilion at Northerly Island
+3,Infinity Downs Farm,"Arrington, VA",,,Infinity Downs Farm
+103,Jacobs Pavilion at Nautica,"Cleveland, OH",5000,,Jacobs Pavilion at Nautica
+68,Joy Theater,"New Orleans, LA",1200,,Joy Theater
+14,KettleHouse Amphitheater,"Bonner, MT",4000,,KettleHouse Amphitheater
+94,Landmark Theatre,"Syracuse, NY",3000,TRUE,Landmark Theatre (Syracuse)
+70,Last Breath Farm,"Norridgewock, ME",,,Last Breath Farm
+106,Leader Bank Pavilion,"Boston, MA",5200,,Leader Bank Pavilion
+96,Legend Valley,"Thornville, OH",,,Legend Valley
+78,Lupo's Heartbreak Hotel,"Providence, RI",1980,,Lupo's Heartbreak Hotel
+67,Mardi Gras World Ballroom,"New Orleans, LA",,,Mardi Gras World Ballroom
+59,Marshfield Fairgrounds,"Marshfield, MA",,,Marshfield Fairgrounds
+83,Marymoor Amphitheater,"Redmond, WA",5000,,Marymoor Amphitheater
+33,Masonic Cleveland Auditorium,"Cleveland, OH",,,Masonic Cleveland Auditorium
+40,McDonald Theatre,"Eugene, OR",759,,McDonald Theatre
+105,MECU Pavilion,"Baltimore, MD",4600,,MECU Pavilion
+73,Metropolitan Opera House,"Philadelphia, PA",3500,,Metropolitan Opera House
+12,Mizner Park Amphitheater,"Boca Raton, FL",,,Mizner Park Amphitheater
+88,Montage Mountain,"Scranton, PA",,,Montage Mountain
+8,Moody Theater,"Austin, TX",2750,,Moody Theater
+41,Moose Light Blues Tent,"Fredericton, NB (Canada)",,,Moose Light Blues Tent
+72,Mulberry Mountain,"Ozark, AR",,,Mulberry Mountain
+27,Music Farm,"Charleston, SC",800,,Music Farm
+37,Ogden Theatre,"Denver, CO",1600,,Ogden Theatre
+35,Oregon Ridge Park,"Cockeysville, MD",,,Oregon Ridge Park
+57,Orpheum Theatre,"Madison, WI",1700,,Orpheum Theatre
+1,Palace Theatre,"Albany, NY",2844,,Palace Theatre
+47,Pantheon Theater,Jam Cruise,1600,TRUE,Pantheon Theater (Jam Cruise)
+15,Paradise Rock Club,"Boston, MA",933,,Paradise Rock Club
+48,Penn's Peak,"Jim Thorpe, PA",,,Penn's Peak
+81,Plumas County Fairgrounds,"Quincy, CA",,,Plumas County Fairgrounds
+46,Pool Deck,Jam Cruise,,TRUE,Pool Deck (Jam Cruise)
+20,Prospect Park,"Brooklyn, NY",,,Prospect Park
+63,Red Rocks,"Morrison, CO",9525,,Red Rocks
+29,Riviera Theatre,"Chicago, IL",2500,,Riviera Theatre
+65,Ryman Auditorium,"Nashville, TN",2362,,Ryman Auditorium
+107,Salvage Station,"Asheville, NC",2500,,Salvage Station
+19,Seaside Park,"Bridgeport, CT",,,Seaside Park
+51,Spirit of the Suwannee Music Park,"Live Oak, FL",,,Spirit of the Suwannee Music Park
+91,St Augustine Amphitheatre,"St Augustine, FL",,,St Augustine Amphitheatre
+13,State Bridge Amphitheater,"Bond, CO",,,State Bridge Amphitheater
+77,State Theater,"Portland, ME",1680,TRUE,State Theater (Portland)
+55,Sunrise Ranch,"Loveland, CO",,,Sunrise Ranch
+6,Tabernacle,"Atlanta, GA",2600,,Tabernacle
+95,Telluride Town Park,"Telluride, CO",,,Telluride Town Park
+53,Teragram Ballroom,"Los Angeles, CA",600,,Teragram Ballroom
+99,The 9:30 Club,"Washington, DC",1200,,The 9:30 Club
+98,The Anthem,"Washington, DC",,,The Anthem
+85,The Depot,"Salt Lake City, UT",1200,,The Depot
+38,The Fillmore,"Denver, CO",3700,TRUE,The Fillmore (Denver)
+74,The Fillmore,"Philadelphia, PA",2500,TRUE,The Fillmore (Philadelphia)
+34,The Music Box,"Cleveland, OH",340,,The Music Box
+4,The Orange Peel,"Asheville, NC",1050,,The Orange Peel
+92,The Pageant,"St Louis, MO",2300,,The Pageant
+82,The Ritz,"Raleigh, NC",1400,,The Ritz
+89,The Showbox,"Seattle, WA",1100,,The Showbox
+56,The Sylvee,"Madison, WI",,,The Sylvee
+62,The Wellmont Theater,"Montclair, NJ",2137,,The Wellmont Theater
+52,The Wiltern,"Los Angeles, CA",1850,,The Wiltern
+75,Theater of the Living Arts,"Philadelphia, PA",,,Theater of the Living Arts
+32,Three Sisters Park,"Chillicoothe, IL",,,Three Sisters Park
+21,Threes Brewing,"Brooklyn, NY",,,Threes Brewing
+97,Tower Theater,"Upper Darby, PA",3119,,Tower Theater
+60,Turner Hall Ballroom,"Milwaukee, WI",300,,Turner Hall Ballroom
+28,Union Park,"Chicago, IL",,,Union Park
+100,Vinoy Park,"St. Petersburg, FL",,,Vinoy Park
+64,War Memorial Auditorium,"Nashville, TN",2000,,War Memorial Auditorium
+25,Waterfront Park,"Burlington, VT",,,Waterfront Park
+69,Webster Hall,"New York, NY",1500,,Webster Hall
+102,Westville Music Bowl,"New Haven, CT",,,Westville Music Bowl
