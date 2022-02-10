@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/74-The-Fillmore",
-    "result": {"data":{"venuesCsv":{"id":"74","location":"Philadelphia, PA","name":"The Fillmore"},"allShowsCsv":{"nodes":[{"id":"58","date":"12/31/2015"},{"id":"86","date":"11/26/2016"},{"id":"131","date":"11/24/2017"},{"id":"132","date":"11/25/2017"},{"id":"244","date":"2/11/2021"},{"id":"245","date":"2/12/2021"}]}},"pageContext":{"venueId":"74"}},
+    "result": {"data":{"venuesCsv":{"id":"74","location":"Philadelphia, PA","name":"The Fillmore"},"allShowsCsv":{"nodes":[{"id":"58","date":"12/31/2015"},{"id":"86","date":"11/26/2016"},{"id":"131","date":"11/24/2017"},{"id":"132","date":"11/25/2017"},{"id":"244","date":"2/11/2022"},{"id":"245","date":"2/12/2022"}]}},"pageContext":{"venueId":"74"}},
     "staticQueryHashes": ["3000541721"]}
