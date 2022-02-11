@@ -206,7 +206,7 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 205,9/12/2019,36,572,573,,574,,,,,https://i.imgur.com/XrCKJL3.jpg,2,9/12/19 @ House of Blues (Dallas)
 206,9/13/2019,44,454,455,,456,,,,,https://i.imgur.com/XrCKJL3.jpg,3,9/13/19 @ House of Blues (Houston)
 207,9/14/2019,8,451,452,,453,,,,Austin City Limits Live,https://i.imgur.com/XrCKJL3.jpg,2,9/14/19 @ Austin City Limits Live
-208,9/26/2019,73,448,449,,450,,,"before the encore, a trophy was presented to Stevie Weavie",,https://i.imgur.com/lIiL8Kh.jpg,3,9/26/19 @ Metropolitan Opera House
+208,9/26/2019,73,448,449,,450,,,"before the encore, a trophy was presented to Stevie Pancoast commemorating the 1364 day gap between the last Help>Slip>Franks (1/1/16) show gap of 148 https://almost-dead.net/show/59",,https://i.imgur.com/lIiL8Kh.jpg,3,9/26/19 @ Metropolitan Opera House
 209,9/27/2019,73,445,446,,447,,,,,https://i.imgur.com/lIiL8Kh.jpg,2,9/27/19 @ Metropolitan Opera House
 210,9/28/2019,98,442,443,,444,,,,,https://i.imgur.com/lIiL8Kh.jpg,3,9/28/19 @ The Anthem
 211,10/27/2019,51,440,441,,,,,Patch Stage,Hulaween,https://i.imgur.com/EiXdV2s.jpg,1,10/27/19 @ Hulaween
@@ -241,6 +241,6 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 240,10/22/2021,108,645,646,,647,,,,,,0,10/22/21 @ Hollywood Palladium
 241,10/23/2021,90,648,649,,650,,,,,,2,10/23/21 @ Frost Ampitheater
 242,12/3/2021,23,651,652,,653,,,,,,5,12/3/21 @ 1stBank Center
-243,2/10/2022,109,654,655,,656,,,,,https://www.reddit.com/r/JRADs/comments/spkvnx/setlist_thread_21022_brooklyn_bowl_philadelphia/?sort=new,0,2/10/22 @ Brooklyn Bowl (Philadelphia)
-244,2/11/2022,74,,,,,,,,,,0,2/11/22 @ The Fillmore (Philadelphia)
-245,2/12/2022,74,,,,,,,,,,0,2/12/22 @ The Fillmore (Philadelphia)
+243,2/10/2022,109,654,655,,656,,,,,"https://i.imgur.com/ZrGlMoS.jpg,https://www.reddit.com/r/JRADs/comments/spkvnx/setlist_thread_21022_brooklyn_bowl_philadelphia/?sort=new",2,2/10/22 @ Brooklyn Bowl (Philadelphia)
+244,2/11/2022,74,,,,,,,,,https://i.imgur.com/ZrGlMoS.jpg,0,2/11/22 @ The Fillmore (Philadelphia)
+245,2/12/2022,74,,,,,,,,,https://i.imgur.com/ZrGlMoS.jpg,0,2/12/22 @ The Fillmore (Philadelphia)
