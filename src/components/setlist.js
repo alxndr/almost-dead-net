@@ -39,19 +39,31 @@ function SetlistEntry({performanceData, songData, segues, teases, previousUrl}) 
   </li>
 }
 
+// just had an idea for a continually running CI service which has open-ended
+// test definitions... with a property based test suite wyhich accepts
+// unwieldy amounts of data. the system continually calculates values to run
+// through a given function-under-test, and records results...jjjj
+//
+// as test input ande records the results.... but it does so in a smart
+// pattern, new commits get more attention in a logarithmic pattern, once
+// activity dies off then the system generates values for older commits
+// ...
+  // imagining this as an elixir project which can be hooked up to a git repo
+// / Git Hub acct and then ... runs docker tasks or something in order to ru nthe tests? urgh...................
+
 export default function Setlist(props) {
   const {
-    setlist,
-    performances,
-    segues,
-    songs,
-    teases,
-    isEncore,
-    which,
-    showId,
     allSets = [],
     allShows = [],
-    previousUrl
+    isEncore,
+    performances,
+    previousUrl,
+    segues,
+    setlist,
+    showId,
+    songs,
+    teases,
+    which,
   } = props
   if (!(performances && songs && segues && teases)) {
     return <p>Loading...</p>

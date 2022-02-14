@@ -43,6 +43,7 @@ exports.createSchemaCustomization = ({actions: {createTypes}}) => {
       show_id: showsCsv @link
       song_id: songsCsv @link
       song_name: String
+      stars: Int
       variation: String
     }
     type songsCsv implements Node {
