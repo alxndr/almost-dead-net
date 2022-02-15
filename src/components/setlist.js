@@ -4,8 +4,6 @@ import classnames from 'classnames'
 import {Tooltip} from 'react-tippy'
 
 import Segue from './segue'
-//import BustOutBadge from './bust_out_badge'
-//import TimePlayedBadge from './time_played_badge'
 import PerfNote from './perf_note'
 import TeasesNote from './teases_note'
 import Link from './link-with-previous-url'
@@ -37,23 +35,10 @@ function SetlistEntry({performanceData, songData, segues, teases, previousUrl}) 
         <span className="hidden">first time played</span>
       </span>
     </Tooltip>}
-    {/*<BustOutBadge showgap={Number(performanceData.showgap)} />*/}
     {performanceData.notes && <PerfNote notes={performanceData.notes} />}
     {teasesArray.length ? <TeasesNote list={teasesArray} /> : false}
   </li>
 }
-
-// just had an idea for a continually running CI service which has open-ended
-// test definitions... with a property based test suite wyhich accepts
-// unwieldy amounts of data. the system continually calculates values to run
-// through a given function-under-test, and records results...jjjj
-//
-// as test input ande records the results.... but it does so in a smart
-// pattern, new commits get more attention in a logarithmic pattern, once
-// activity dies off then the system generates values for older commits
-// ...
-  // imagining this as an elixir project which can be hooked up to a git repo
-// / Git Hub acct and then ... runs docker tasks or something in order to ru nthe tests? urgh...................
 
 export default function Setlist(props) {
   const {
