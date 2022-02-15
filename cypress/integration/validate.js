@@ -240,6 +240,10 @@ const allShows = {
   239: {id: 239, date: '10/9/2021', venue: 'Wellmont Theater'},
   240: {id: 240, date: '10/22/2021', venue: 'Hollywood Palladium'},
   241: {id: 241, date: '10/23/2021', venue: 'Frost Ampitheater'},
+  242: {id: 242, date: '12/3/2021', venue: '1stBank Center'},
+  243: {id: 243, date: '2/10/2022', venue: 'Brooklyn Bowl'},
+  244: {id: 244, date: '2/11/2022', venue: 'Fillmore'},
+  245: {id: 245, date: '2/12/2022', venue: 'Fillmore'},
 }
 
 describe('data validation', () => {
