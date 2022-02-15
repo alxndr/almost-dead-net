@@ -48,7 +48,7 @@ function GuestsComponent({data: {
             {guest.shows.split(':').sort(sortNumerical).map((showId) => {
               const show = findShowById(String(showId)) //|| throw new Error(`Unrecognized showId`, showId)
               if (show)
-                return <li key={guest.id}>
+                return <li key={showId}>
                   <Link to={`/show/${showId}`}>{show.tagline}</Link>
                 </li>
               return false
