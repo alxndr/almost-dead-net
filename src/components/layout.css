@@ -21,9 +21,9 @@ h2 {
   text-align: center;
 }
 a {
-  color: #013;
+  color: #026;
   text-decoration: none;
-  text-shadow: 0.1em 0.1em 0.2em rgba(0,0,0, 0.5);
+  text-shadow: 0.1em 0.1em 0.2em rgba(0,0,0, 0.2);
 }
 a:hover {
   text-decoration: underline;
