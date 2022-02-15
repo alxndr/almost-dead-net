@@ -13,18 +13,28 @@
 }
 
 h3.setlist__setlabel {
-  margin: 1em 0.5em 1em;
+  margin: 0 5em 0.5em 0;
   text-align: center;
 }
 
 .setlist__tracks {
-  list-style: square;
+  list-style: none;
   margin-left: 1em;
   line-height: 1.5em;
 }
 .setlist__tracks > li {
   margin: 0;
-  padding: 0.5em;
+  padding: 0.3em;
+  font-size: 0.9em;
+}
+.setlist__tracks > li.stars-1 {
+  list-style-type: "★";
+}
+.setlist__tracks > li.stars-2 {
+  list-style-type: "★★";
+}
+.setlist__tracks > li > a {
+  font-size: 1.1em;
 }
 
 .setlist__track__badge {

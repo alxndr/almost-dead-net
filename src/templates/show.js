@@ -128,6 +128,7 @@ export const query = graphql`
       showgap
       song_id
       variation
+      stars
     } }
     allSongsCsv { nodes {
       id

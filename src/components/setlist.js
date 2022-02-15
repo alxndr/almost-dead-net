@@ -4,8 +4,6 @@ import classnames from 'classnames'
 import {Tooltip} from 'react-tippy'
 
 import Segue from './segue'
-//import BustOutBadge from './bust_out_badge'
-//import TimePlayedBadge from './time_played_badge'
 import PerfNote from './perf_note'
 import TeasesNote from './teases_note'
 import Link from './link-with-previous-url'
@@ -21,7 +19,11 @@ function SetlistEntry({performanceData, songData, segues, teases, previousUrl}) 
   const segueData = find(propEq('from_perf_id', performanceData.id))(segues)
   const teasesArray = filter(propEq('performance_id', performanceData.id))(teases)
   const url = `/song/${performanceData.song_id}`
-  return <li className={classnames('setlist__track', {highlight: previousUrl?.endsWith(url)})}>
+  const classes = classnames('setlist__track', {
+    highlight: previousUrl?.endsWith(url),
+    [`stars-${performanceData.stars}`]: !!performanceData.stars,
+  })
+  return <li className={classes}>
     <Link to={url}>
       {displayName}
     </Link>
@@ -33,7 +35,6 @@ function SetlistEntry({performanceData, songData, segues, teases, previousUrl}) 
         <span className="hidden">first time played</span>
       </span>
     </Tooltip>}
-    {/*<BustOutBadge showgap={Number(performanceData.showgap)} />*/}
     {performanceData.notes && <PerfNote notes={performanceData.notes} />}
     {teasesArray.length ? <TeasesNote list={teasesArray} /> : false}
   </li>
@@ -41,17 +42,17 @@ function SetlistEntry({performanceData, songData, segues, teases, previousUrl}) 
 
 export default function Setlist(props) {
   const {
-    setlist,
-    performances,
-    segues,
-    songs,
-    teases,
-    isEncore,
-    which,
-    showId,
     allSets = [],
     allShows = [],
-    previousUrl
+    isEncore,
+    performances,
+    previousUrl,
+    segues,
+    setlist,
+    showId,
+    songs,
+    teases,
+    which,
   } = props
   if (!(performances && songs && segues && teases)) {
     return <p>Loading...</p>
