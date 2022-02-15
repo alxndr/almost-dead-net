@@ -10,8 +10,10 @@ exports.createSchemaCustomization = ({actions: {createTypes}}) => {
   // n.b. this is GraphQL "SDL"
   createTypes(`
     type guestsCsv implements Node {
+      instrument: String
       name: String
       shows: String
+      sort: String
     }
     type recordingsCsv implements Node {
       show: showsCsv @link
