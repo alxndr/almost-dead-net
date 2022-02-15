@@ -1,7 +1,7 @@
 {
-  "hash": "a13f29c814e4e686dd3d",
+  "hash": "6433e165265a55d76965",
   "publicPath": "/",
-  "outputPath": "/Users/xander/workspace/almost-dead-net/public",
+  "outputPath": "/Users/alxndr/workspace/almost-dead-net/public",
   "assetsByChunkName": {
     "polyfill": [
       "polyfill-da05400327a3c5cfde48.js"
@@ -10,7 +10,7 @@
       "app-9cf63f0197fdeaa4c938.js"
     ],
     "webpack-runtime": [
-      "webpack-runtime-17fadeb4fdbfb717e97d.js"
+      "webpack-runtime-ad578d59809274ff8b27.js"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-d0fec80c0617e7d3f5bc.js"
@@ -46,7 +46,7 @@
       "components-forum-topics-72f3aae795309cc7e281.js"
     ],
     "styles": [
-      "styles.9c2d897a256e458b2657.css"
+      "styles.5084abda5968029774be.css"
     ],
     "framework": [
       "framework-943f47733ecbc6e2cf7a.js"
@@ -211,7 +211,7 @@
     },
     {
       "type": "asset",
-      "name": "/Users/xander/workspace/almost-dead-net/public/loadable-stats-build-javascript.json",
+      "name": "/Users/alxndr/workspace/almost-dead-net/public/loadable-stats-build-javascript.json",
       "size": 29361,
       "emitted": false,
       "comparedForEmit": false,
@@ -226,14 +226,14 @@
     },
     {
       "type": "asset",
-      "name": "styles.9c2d897a256e458b2657.css",
-      "size": 28953,
+      "name": "styles.5084abda5968029774be.css",
+      "size": 28948,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "9c2d897a256e458b2657",
+        "contenthash": "5084abda5968029774be",
         "minimized": true
       },
       "chunkNames": [
@@ -454,18 +454,18 @@
     },
     {
       "type": "asset",
-      "name": "webpack-runtime-17fadeb4fdbfb717e97d.js",
+      "name": "webpack-runtime-ad578d59809274ff8b27.js",
       "size": 5937,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "17fadeb4fdbfb717e97d",
+        "contenthash": "ad578d59809274ff8b27",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "webpack-runtime-17fadeb4fdbfb717e97d.js.map"
+          "sourceMap": "webpack-runtime-ad578d59809274ff8b27.js.map"
         }
       },
       "chunkNames": [
@@ -708,7 +708,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-17fadeb4fdbfb717e97d.js"
+          "name": "webpack-runtime-ad578d59809274ff8b27.js"
         },
         {
           "name": "polyfill-da05400327a3c5cfde48.js"
@@ -730,7 +730,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-17fadeb4fdbfb717e97d.js"
+          "name": "webpack-runtime-ad578d59809274ff8b27.js"
         },
         {
           "name": "framework-943f47733ecbc6e2cf7a.js"
@@ -755,7 +755,7 @@
       ],
       "assets": [
         {
-          "name": "styles.9c2d897a256e458b2657.css"
+          "name": "styles.5084abda5968029774be.css"
         },
         {
           "name": "commons-98c49e0b81fddc6cbe8e.js"
@@ -780,7 +780,7 @@
       ],
       "assets": [
         {
-          "name": "styles.9c2d897a256e458b2657.css"
+          "name": "styles.5084abda5968029774be.css"
         },
         {
           "name": "commons-98c49e0b81fddc6cbe8e.js"
@@ -806,7 +806,7 @@
       ],
       "assets": [
         {
-          "name": "styles.9c2d897a256e458b2657.css"
+          "name": "styles.5084abda5968029774be.css"
         },
         {
           "name": "commons-98c49e0b81fddc6cbe8e.js"
@@ -834,7 +834,7 @@
       ],
       "assets": [
         {
-          "name": "styles.9c2d897a256e458b2657.css"
+          "name": "styles.5084abda5968029774be.css"
         },
         {
           "name": "commons-98c49e0b81fddc6cbe8e.js"
@@ -861,7 +861,7 @@
       ],
       "assets": [
         {
-          "name": "styles.9c2d897a256e458b2657.css"
+          "name": "styles.5084abda5968029774be.css"
         },
         {
           "name": "commons-98c49e0b81fddc6cbe8e.js"
@@ -893,7 +893,7 @@
       ],
       "assets": [
         {
-          "name": "styles.9c2d897a256e458b2657.css"
+          "name": "styles.5084abda5968029774be.css"
         },
         {
           "name": "commons-98c49e0b81fddc6cbe8e.js"
@@ -923,7 +923,7 @@
       ],
       "assets": [
         {
-          "name": "styles.9c2d897a256e458b2657.css"
+          "name": "styles.5084abda5968029774be.css"
         },
         {
           "name": "commons-98c49e0b81fddc6cbe8e.js"
@@ -956,7 +956,7 @@
       ],
       "assets": [
         {
-          "name": "styles.9c2d897a256e458b2657.css"
+          "name": "styles.5084abda5968029774be.css"
         },
         {
           "name": "commons-98c49e0b81fddc6cbe8e.js"
@@ -988,7 +988,7 @@
       ],
       "assets": [
         {
-          "name": "styles.9c2d897a256e458b2657.css"
+          "name": "styles.5084abda5968029774be.css"
         },
         {
           "name": "commons-98c49e0b81fddc6cbe8e.js"
@@ -1016,7 +1016,7 @@
       ],
       "assets": [
         {
-          "name": "styles.9c2d897a256e458b2657.css"
+          "name": "styles.5084abda5968029774be.css"
         },
         {
           "name": "commons-98c49e0b81fddc6cbe8e.js"
@@ -1067,7 +1067,7 @@
     {
       "id": 658,
       "files": [
-        "webpack-runtime-17fadeb4fdbfb717e97d.js"
+        "webpack-runtime-ad578d59809274ff8b27.js"
       ]
     },
     {
@@ -1157,7 +1157,7 @@
     {
       "id": 532,
       "files": [
-        "styles.9c2d897a256e458b2657.css"
+        "styles.5084abda5968029774be.css"
       ]
     },
     {
