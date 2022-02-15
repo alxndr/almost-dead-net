@@ -18,13 +18,19 @@ h3.setlist__setlabel {
 }
 
 .setlist__tracks {
-  list-style: square;
+  list-style: none;
   margin-left: 1em;
   line-height: 1.5em;
 }
 .setlist__tracks > li {
   margin: 0;
   padding: 0.5em;
+}
+.setlist__tracks > li.stars-1 {
+  list-style-type: "★";
+}
+.setlist__tracks > li.stars-2 {
+  list-style-type: "★★";
 }
 
 .setlist__track__badge {

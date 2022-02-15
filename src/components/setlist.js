@@ -21,7 +21,11 @@ function SetlistEntry({performanceData, songData, segues, teases, previousUrl}) 
   const segueData = find(propEq('from_perf_id', performanceData.id))(segues)
   const teasesArray = filter(propEq('performance_id', performanceData.id))(teases)
   const url = `/song/${performanceData.song_id}`
-  return <li className={classnames('setlist__track', {highlight: previousUrl?.endsWith(url)})}>
+  const classes = classnames('setlist__track', {
+    highlight: previousUrl?.endsWith(url),
+    [`stars-${performanceData.stars}`]: !!performanceData.stars,
+  })
+  return <li className={classes}>
     <Link to={url}>
       {displayName}
     </Link>
