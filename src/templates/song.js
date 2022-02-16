@@ -161,7 +161,7 @@ export default function Song({data: {
         previousUrl={location?.state?.previousUrl}
       />)
   const performancesComponent = performancesSorted.length > 0
-    ?  <>
+    ? <>
       <h2>Performed at {pluralize(performancesSorted.length, 'Show')}</h2>
       <ul>
         {performances}
