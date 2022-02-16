@@ -13,7 +13,7 @@ exports.createSchemaCustomization = ({actions: {createTypes}}) => {
       instrument: String
       name: String
       shows: String
-      sort: String
+      sortVal: String
     }
     type recordingsCsv implements Node {
       show: showsCsv @link
