@@ -1,12 +1,17 @@
-const SEC = 1000 // msec
-
 describe('All Guests page', () => {
-  it('is linked from the homepage', () => {
-    cy.visit('/')
-    cy.contains('All Guests').click()
-    cy.log('navigating to All Guests page')
-    cy.wait(SEC)
+  beforeEach(() => {
+    cy.visit('/guests')
+    cy.title().contains('JRAD — Guests')
+    cy.url().should('eq', '/guests')
+  })
+
+  it('lists names', () => {
     cy.get('main').contains('John Altieri')
     cy.get('main').contains('Bob Weir')
+  })
+
+  it('lists instruments', () => {
+    cy.get('main').contains('trombone')
+    cy.get('main').contains('vocal antics')
   })
 })
