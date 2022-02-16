@@ -1,0 +1,28 @@
+.guests > main {
+  padding: 1em;
+}
+
+.guests__list {
+  margin-left: 0;
+  list-style: none;
+  column-count: auto;
+  column-width: 20em;
+}
+
+.guests__list > li {
+  margin: 0 0 3em;
+  break-inside: avoid;
+}
+
+.guests__list h2 {
+  padding-right: 5em;
+}
+
+.guests__list .guest-instrument {
+  display: block;
+  font-size: 0.7em;
+}
+
+.guests__list ul {
+  list-style: square;
+}
