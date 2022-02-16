@@ -10,7 +10,7 @@ import {pluralize} from '../helpers/string_helpers'
 
 import './guests.css'
 
-function sortGuests({name: nameA, sortStr: sortA}, {name: nameB, sortStr: sortB}) {
+function sortGuests({name: nameA, sortVal: sortA}, {name: nameB, sortVal: sortB}) {
   const sortNameA = sortA || nameA.split(/\s+/).slice(-1)[0]
   const sortNameB = sortB || nameB.split(/\s+/).slice(-1)[0]
   if (sortNameA < sortNameB)
@@ -73,7 +73,7 @@ const GuestsPage = () => <StaticQuery
         instrument
         name
         shows
-        sortStr
+        sortVal
       } }
     }
   `}
