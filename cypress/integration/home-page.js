@@ -29,8 +29,8 @@ describe('Home page', () => {
   it('footer links to About page', () => {
     cy.get('footer').find('a').contains('About').click()
     cy.log('navigating to About page')
-    cy.url().should('eq', '/about')
-    cy.title().contains('About')
+    cy.url().should('match', /\/about$/)
+    cy.title().should('include', 'About')
   })
 
 
