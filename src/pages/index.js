@@ -22,6 +22,7 @@ export default function Index() {
     <section className="homepage__links">
       <h2>Links:</h2>
       <ul>
+        <li><em>New!</em> <Link to="/guests" title="All guests who have performed with JRAD">All Guests</Link></li>
         <li><Link to="/venues" title="All venues where JRAD has performed">All Venues</Link></li>
         <li><Link to="/songs" title="All songs performed or teased by JRAD">All Songs</Link></li>
         <li><Link to="/about" title="About Almost-Dead.net">About the site</Link></li>
