@@ -279,7 +279,7 @@ export default function Show({
       {setlist.length ? setlist : <p>Uh oh, no sets found.</p>}
       {encores.length && encores}
       {imageSrcs.length
-        ? <div className="showpage__leadimage">{imageSrcs.map((imageSrc) => <img src={imageSrc} alt="a poster or photograph from the show" />)}</div>
+        ? <div className="showpage__leadimage">{imageSrcs.map((imageSrc) => <img key={imageSrc} src={imageSrc} alt="a poster or photograph from the show" />)}</div>
         : null
       }
     </section>
