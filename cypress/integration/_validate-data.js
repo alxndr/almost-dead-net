@@ -1,4 +1,4 @@
-const allShows = {
+const allShows = { // TODO replace with proper Cypress fixtures... hopefully hooked up to the csv file?
   1: {id: 1, date: '1/26/2013', venue: 'Brooklyn Bowl'},
   2: {id: 2, date: '12/27/2013', venue: 'Capitol Theatre'},
   3: {id: 3, date: '8/1/2014', venue: 'Gathering of the Vibes'},
