@@ -31,3 +31,8 @@ Cypress.Commands.add('clickNextShow', () => {
     .click()
   cy.wait(99) // eslint-disable-line cypress/no-unnecessary-waiting
 })
+
+Cypress.Commands.add('urlMatchesRoute', (routeStr) => {
+  cy.url()
+    .should('match', new RegExp(`${routeStr.startsWith('/') ? '' : '/'}${routeStr}/?$`))
+})

@@ -12,7 +12,6 @@ import './index.css'
 
 const LoadableTopicsList = loadable(() => import('../components/forum-topics.js'))
 
-        //{/*<li><em>New!</em> <Link to="/guests" title="All guests who have performed with JRAD">All Guests</Link></li>*/}
 export default function Index() {
   return <Layout className="homepage">
     <SEO
@@ -23,15 +22,28 @@ export default function Index() {
     <section className="homepage__links">
       <h2>Links:</h2>
       <ul>
-        <li><Link to="/venues" title="All venues where JRAD has performed">All Venues</Link></li>
-        <li><Link to="/songs" title="All songs performed or teased by JRAD">All Songs</Link></li>
-        <li><Link to="/about" title="About Almost-Dead.net">About the site</Link></li>
-        <li>
-          <a href="https://lot.almost-dead.net/t/setlist-corrections/17" title="thread about Setlist corrections">errors?</a>
-          {' '}
-          <a href="https://lot.almost-dead.net/t/suggestions-for-the-main-site/18" title="thread about Suggestions">suggestions?</a>
+        <li className="homepage__links-all">
+          all…
+          <ul>
+            <li><Link to="/songs" title="All songs performed or teased by JRAD">Songs & Teases</Link></li>
+            <li><Link to="/venues" title="All venues where JRAD has performed">Venues</Link></li>
+            <li><Link to="/guests" title="All guests who have performed with JRAD" className="new">Guests</Link></li>
+          </ul>
         </li>
-        <li><a href="https://twitter.com/AlmostDeadNet" title="@AlmostDeadNet on Twitter" target="_blank">Twitter: <kbd className="twitter">@AlmostDeadNet</kbd></a></li>
+        <li className="homepage__links__meta">
+          <Link to="/about" title="About Almost-Dead.net">About the site</Link>
+          <ul>
+            <li><a href="https://lot.almost-dead.net/t/setlist-corrections/17" title="thread about Setlist corrections">errors?</a></li>
+            <li><a href="https://lot.almost-dead.net/t/suggestions-for-the-main-site/18" title="thread about Suggestions">suggestions?</a></li>
+          </ul>
+        </li>
+        <li className="homepage__links-offsite">
+          elsewhere
+          <ul>
+            <li><a className="icon twitter" href="https://twitter.com/AlmostDeadNet" title="@AlmostDeadNet on Twitter" target="_blank"><kbd>@AlmostDeadNet</kbd></a></li>
+            <li><a className="icon github" href="https://github.com/alxndr/almost-dead-net" title="code repo on GitHub" target="_blank"><kbd>alxndr/almost-dead-net</kbd></a></li>
+          </ul>
+        </li>
       </ul>
     </section>
 

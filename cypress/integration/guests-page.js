@@ -2,7 +2,7 @@ describe('All Guests page', () => {
   beforeEach(() => {
     cy.visit('/guests')
     cy.title().should('include', 'JRAD — Guests')
-    cy.url().should('match', /\/guests$/)
+    cy.urlMatchesRoute('/guests')
   })
 
   it('lists names', () => {

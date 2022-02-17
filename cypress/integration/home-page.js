@@ -3,34 +3,75 @@ const SEC = 1000
 describe('Home page', () => {
   beforeEach(() => {
     cy.visit('/')
-  })
+    cy.title()
+      .should('include', 'Almost-Dead.net')
+ })
 
-  it('renders', () => {
-    cy.get('main').contains('JRAD')
-    cy.get('main').contains('2013')
-    cy.get('main').contains('2022')
-  })
+  describe('Setlists section', () => {
+    beforeEach(() => {
+      cy.contains('Setlists').closest('section').as('setlistsSection')
+    })
 
-  it('lists the first show', () => {
-    cy.get('main').find('li.showsbyyear--2013').as('year2013').contains('2013')
-    cy.get('@year2013').find('a').contains('1/26')
-  })
+    it('organized by year', () => {
+      cy.get('@setlistsSection')
+        .contains('2013')
+      cy.get('@setlistsSection')
+        .contains('2022')
+    })
 
-  describe('Links section', () => {
-    it.skip('is linked from the homepage', () => {
-      cy.contains('All Guests').click()
-      cy.log('navigating to All Guests page')
-      cy.wait(SEC)
-      cy.url().should('eq', '/guests')
-      cy.title().should('include', 'Guests')
+    it('lists the first show date', () => {
+      cy.get('@setlistsSection').find('li.showsbyyear--2013').as('year2013')
+        .contains('2013')
+      cy.get('@year2013').find('a')
+        .contains('1/26')
     })
   })
 
-  it('footer links to About page', () => {
-    cy.get('footer').find('a').contains('About').click()
-    cy.log('navigating to About page')
-    cy.url().should('match', /\/about$/)
-    cy.title().should('include', 'About')
+  describe('Links section', () => {
+    beforeEach(() => {
+      cy.contains('Links:')
+        .closest('section').as('linksSection')
+    })
+
+    it('links to Venues page', () => {
+      cy.get('@linksSection').find('a')
+        .contains('Venues')
+        .click()
+      cy.urlMatchesRoute('/venues')
+      cy.title()
+        .should('include', 'Venues')
+    })
+
+    it('links to Songs page', () => {
+      cy.get('@linksSection').find('a')
+        .contains('Songs & Teases')
+        .click()
+      cy.urlMatchesRoute('songs')
+      cy.title()
+        .should('include', 'songs')
+      cy.title()
+        .should('include', 'Teases')
+    })
+
+    it('links to Guests page', () => {
+      cy.get('@linksSection')
+        .contains('Guests')
+        .click()
+      cy.urlMatchesRoute('guests')
+      cy.title()
+        .should('include', 'Guests')
+    })
+  })
+
+  describe('footer', () => {
+    it('links to About page', () => {
+      cy.get('footer').find('a')
+        .contains('About')
+        .click()
+      cy.urlMatchesRoute('about')
+      cy.title()
+        .should('include', 'About')
+    })
   })
 
 
