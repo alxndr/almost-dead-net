@@ -59,7 +59,7 @@ function SongsComponent({data: {allSongsCsv: {nodes: songs}, allTeasesCsv: {node
 
   return <Layout className="songs">
     <SEO
-      title="JRAD — all songs played"
+      title="JRAD — all songs played or teased"
       description="Almost-complete repertoire of Joe Russo's Almost Dead (JRAD) songs and teases"
     />
     <p><a href="#songs__headline--teased">Jump down to "Teases Only"</a></p>

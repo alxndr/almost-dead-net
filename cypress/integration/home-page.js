@@ -39,7 +39,7 @@ describe('Home page', () => {
         .click()
       cy.urlMatchesRoute('/venues')
       cy.title()
-        .should('include', 'Venues')
+        .should('include', 'venues')
     })
 
     it('links to Songs page', () => {
@@ -50,7 +50,7 @@ describe('Home page', () => {
       cy.title()
         .should('include', 'songs')
       cy.title()
-        .should('include', 'Teases')
+        .should('include', 'teased')
     })
 
     it('links to Guests page', () => {
