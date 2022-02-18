@@ -32,18 +32,24 @@
   border-radius: 1.5em;
   background: #dabbff4e;
   box-shadow: inset 1px 1px 5px #00000077;
+  position: relative; /* establishes context for the ::before pseudoelement */
 }
 
-.showsbyyear .react-tabs__tab-panel:before {
-  content: attr('data-year', '');
+/*
+.showsbyyear .react-tabs__tab-panel--selected::before {
+  content: attr(data-year) " ";
   position: absolute;
-  top: -0.4em;
-  right: -0.8em;
+  top: -0.5em;
+  right: -1em;
+  padding: 0.5em;
+  box-shadow: 1px 2px 3px 1px #00000077;
   font-size: 2.2em;
   font-weight: bold;
   font-family: cursive;
-  opacity: 0.5;
+  color: aliceblue;
+  background: magenta;
 }
+*/
 
 .showsbyyear__shows {
   display: flex;
