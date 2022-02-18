@@ -29,12 +29,17 @@ h3.setlist__setlabel {
 }
 .setlist__tracks > li.stars-1 {
   list-style-type: "★";
+  color: red;
 }
 .setlist__tracks > li.stars-2 {
   list-style-type: "★★";
+  color: red;
 }
 .setlist__tracks > li > a {
   font-size: 1.1em;
+}
+.setlist__track > span {
+  color: black;
 }
 
 .setlist__track__badge {
