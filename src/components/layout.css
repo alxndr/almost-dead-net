@@ -31,6 +31,9 @@ a:hover {
 a:active, a:visited {
   color: #313;
 }
+img {
+  margin-bottom: 0;
+}
 
 .hidden {
   display: none;
@@ -60,12 +63,6 @@ code {
 .App__banner:hover {
   opacity: 0.9;
 }
-.App.unknown .App__banner {
-  background: linear-gradient(to right, #FFFFFF00 20%, lime 90%);
-}
-.App.dev .App__banner {
-  background: linear-gradient(to right, #FFFFFF00 20%, magenta 90%);
-}
 .App__banner img {
   min-width: 13em;
   max-width: 33%;
@@ -86,7 +83,6 @@ footer.footer {
 }
 .footer img {
   max-height: 3em;
-  margin: 0;
 }
 .footer .footer__link-about {
   white-space: nowrap;

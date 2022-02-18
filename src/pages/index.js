@@ -20,21 +20,21 @@ export default function Index() {
     />
 
     <section className="homepage__links">
-      <h2>Links:</h2>
+      <h1>Links</h1>
       <ul>
         <li className="homepage__links-all">
           all…
           <ul>
             <li><Link to="/songs" title="All songs performed or teased by JRAD">Songs & Teases</Link></li>
             <li><Link to="/venues" title="All venues where JRAD has performed">Venues</Link></li>
-            <li><Link to="/guests" title="All guests who have performed with JRAD" className="new">Guests</Link></li>
+            <li className="hidden"><Link to="/guests" title="All guests who have performed with JRAD" className="new">Guests</Link></li>
           </ul>
         </li>
         <li className="homepage__links__meta">
           <Link to="/about" title="About Almost-Dead.net">About the site</Link>
           <ul>
-            <li><a href="https://lot.almost-dead.net/t/setlist-corrections/17" title="thread about Setlist corrections">errors?</a></li>
-            <li><a href="https://lot.almost-dead.net/t/suggestions-for-the-main-site/18" title="thread about Suggestions">suggestions?</a></li>
+            <li><a href="https://lot.almost-dead.net/t/setlist-corrections/17" title="forum discussion about Setlist corrections">errors?</a></li>
+            <li><a href="https://lot.almost-dead.net/t/suggestions-for-the-main-site/18" title="forum discussion about Suggestions">suggestions?</a></li>
           </ul>
         </li>
         <li className="homepage__links-offsite">
@@ -47,21 +47,21 @@ export default function Index() {
       </ul>
     </section>
 
-    <section className="homepage__forum">
-      <h2>
-        <a href="https://lot.almost-dead.net" title="JRAD Forum: The Lot"><img src="https://i.imgur.com/Qi2NhJO.png" alt="The Lot (message board / forum)" style={{maxHeight:'1.7em',verticalAlign:'middle'}} /></a>
-      </h2>
-      <LoadableTopicsList />
+    <section className="homepage__showsbyyear">
+      <h1>JRAD Setlists by date</h1>
+      <ShowsByYear />
     </section>
 
     <section className="homepage__songfinder">
-      <h2>Find a song:</h2>
+      <h1>Find a song</h1>
       <SongFinder />
     </section>
 
-    <section className="homepage__showsbyyear">
-      <h1>JRAD Setlists by date:</h1>
-      <ShowsByYear />
+    <section className="homepage__forum">
+      <h1>
+        <a href="https://lot.almost-dead.net" title="JRAD Forum, aka The Lot"><img src="https://i.imgur.com/Qi2NhJO.png" alt="The Lot (message board / forum)" style={{maxHeight:'1.7em',verticalAlign:'middle'}} /></a>
+      </h1>
+      <LoadableTopicsList />
     </section>
 
   </Layout>

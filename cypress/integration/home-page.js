@@ -29,7 +29,7 @@ describe('Home page', () => {
 
   describe('Links section', () => {
     beforeEach(() => {
-      cy.contains('Links:')
+      cy.contains('Links')
         .closest('section').as('linksSection')
     })
 
@@ -53,7 +53,7 @@ describe('Home page', () => {
         .should('include', 'teased')
     })
 
-    it('links to Guests page', () => {
+    it.skip('(SKIPPED: temporarily hiding link) links to Guests page', () => {
       cy.get('@linksSection')
         .contains('Guests')
         .click()
