@@ -19,11 +19,24 @@ describe('Home page', () => {
         .contains('2022')
     })
 
-    it('lists the first show date', () => {
-      cy.get('@setlistsSection').find('li.showsbyyear--2013').as('year2013')
+    it('lists the dates organized by year', () => {
+      cy.get('@setlistsSection')
         .contains('2013')
-      cy.get('@year2013').find('a')
+        .click()
+      cy.get('@setlistsSection')
         .contains('1/26')
+
+      cy.get('@setlistsSection')
+        .contains('2015')
+        .click()
+      cy.get('@setlistsSection')
+        .contains('7/5')
+
+      cy.get('@setlistsSection')
+        .contains('2017')
+        .click()
+      cy.get('@setlistsSection')
+        .contains('11/11')
     })
   })
 

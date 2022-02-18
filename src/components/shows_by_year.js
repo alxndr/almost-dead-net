@@ -1,4 +1,5 @@
 import React from 'react'
+import {Tab, Tabs, TabList, TabPanel} from 'react-tabs'
 import {Link, graphql, useStaticQuery} from 'gatsby'
 
 import './shows_by_year.css'
@@ -47,7 +48,7 @@ export default function ShowsByYear() {
     const venueId = show.venue_id.toString()
     if (!acc[y])
       acc[y] = {}
-    const venue = rawVenues.find(venue => venue && venue.id && venue.id.toString() === venueId)
+    const venue = rawVenues.find(venue => venue?.id?.toString?.() === venueId)
     if (!venue)
       console.debug(`No venue found for show #${show.id}`, show)
     acc[y][`${m}/${d}`] = {
@@ -56,18 +57,22 @@ export default function ShowsByYear() {
     }
     return acc
   }, {})
-  return <ul className="showsbyyear">
-    {Object.entries(showsWithVenueByYear).reverse().map(([year, showsInYear]) => {
-      return <li className={`showsbyyear--${year}`} key={year}>
-        <h3>{year}</h3>
+  return <Tabs className="showsbyyear react-tabs">
+    <TabList>
+      {Object.keys(showsWithVenueByYear).reverse().map(year =>
+        <Tab><h3>{year}</h3></Tab>
+      )}
+    </TabList>
+    {Object.entries(showsWithVenueByYear).reverse().map(([year, showsInYear]) =>
+      <TabPanel data-year={year}>
         <ul className="showsbyyear__shows">
-          {Object.entries(showsInYear).map(([monthAndDay, show]) => {
-            return <li className={`showsbyyear__shows__${monthAndDay}`} key={monthAndDay}>
+          {Object.entries(showsInYear).map(([monthAndDay, show]) =>
+            <li className={`showsbyyear__shows__${monthAndDay}`} key={monthAndDay}>
               <ShowEntry key={show.id} show={show}>{monthAndDay}</ShowEntry>
             </li>
-          })}
+          )}
         </ul>
-      </li>
-    })}
-  </ul>
+      </TabPanel>
+    )}
+  </Tabs>
 }

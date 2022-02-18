@@ -21,9 +21,10 @@
 
 .homepage__songfinder {
   min-width: 20em;
+  width: 55%;
   margin: 1.5em auto;
   order: 1;
-  flex-grow: 2;
+  flex-grow: 1;
 }
 
 .homepage__links {
@@ -66,7 +67,8 @@
 .homepage__showsbyyear {
   padding-top: 1em;
   order: 3;
-  width: 100%;
+  width: 50%;
+  min-width: 20em;
 }
 
 .new:before {
@@ -98,6 +100,7 @@
 @media only screen and (min-width: 950px) {
   .homepage__songfinder {
     order: 1;
+    width: auto;
   }
   .homepage__links {
     order: 2;
