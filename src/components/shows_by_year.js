@@ -48,7 +48,7 @@ export default function ShowsByYear() {
     const venueId = show.venue_id.toString()
     if (!acc[y])
       acc[y] = {}
-    const venue = rawVenues.find(venue => venue && venue.id && venue.id.toString() === venueId)
+    const venue = rawVenues.find(venue => venue?.id?.toString?.() === venueId)
     if (!venue)
       console.debug(`No venue found for show #${show.id}`, show)
     acc[y][`${m}/${d}`] = {
