@@ -11,21 +11,17 @@
   flex-direction: column; /* customize flex behavior of child elements */
 }
 
-section.showpage__setlist {
+.showpage__setlist {
   min-width: 15em;
   max-width: 35em;
 }
 
-section.showpage__recordings {
+.showpage__recordings {
   text-align:right;
   flex-grow: 1;
   max-width: 400px;
 }
-
-section.showpage__recordings h2 {
-}
-
-section.showpage__recordings ul {
+.showpage__recordings ul {
   list-style: none;
   padding: 0;
   margin: 0.5em 0;
