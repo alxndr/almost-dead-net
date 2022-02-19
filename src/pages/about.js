@@ -11,17 +11,18 @@ export default function About() {
     <SEO title="About the site" />
     <h1>About Almost-Dead.net</h1>
     <p>This site is not officially affiliated with <a href="http://www.joerussosalmostdead.com/" target="_blank" rel="noopener noreferrer">Joe Russo's Almost Dead</a>.</p>
+    <p>It is inspired by fan-run sites such as Deadbase (RIP), <a href="http://phish.net" target="_blank" rel="noopener noreferrer">phish.net</a>, and <a href="http://phish.net" target="_blank" rel="noopener noreferrer">brownbase.org</a>.</p>
     <p>
       <a href="https://lot.almost-dead.net/t/setlist-corrections/17" title="discussion about setlist corrections">Corrections</a>,
       {' '}
       <a href="https://lot.almost-dead.net/t/suggestions-for-the-main-site/18" title="suggestions for the site">suggestions</a>,
       {' '}
-      or complaints can be directed to 
+      or complaints can be directed to the Twitter account
       {' '}
-      <a href="https://lot.almost-dead.net/u/TheEngineer" title="I'm somewhat responsible for this mess">TheEngineer on The Lot</a>,
-      or to the Twitter account
+      <a href="https://twitter.com/AlmostDeadNet" title="twitter: @AlmostDeadNet">@AlmostDeadNet</a>,
+      or to
       {' '}
-      <a href="https://twitter.com/AlmostDeadNet" title="twitter: @AlmostDeadNet">@AlmostDeadNet</a>.
+      <a href="https://lot.almost-dead.net/u/TheEngineer" title="I'm somewhat responsible for this mess">TheEngineer on The Lot</a>.
     </p>
     <hr />
     <p>In Memory of <Link to="/show/184">David Kay</Link>, creator of the <a href="https://docs.google.com/spreadsheets/d/1qxTKvLkiQgHycuC530OU3j-O5ggijHelXRXVjTiZLis/htmlview" target="_blank" rel="noopener noreferrer">JRAD-base spreadsheet</a>.</p>
