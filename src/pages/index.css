@@ -61,7 +61,9 @@
   background-image: url(https://i.imgur.com/8Sp9Ndd.png);
 }
 
-.homepage__forum {
+.homepage__forum iframe {
+  border-radius: 0.5em;
+  box-shadow: 1px 2px 2px #000000aa;
 }
 
 .homepage__showsbyyear {
@@ -112,3 +114,5 @@
     order: 4;
   }
 }
+
+
