@@ -1,0 +1,2857 @@
+⟫ nr dev
+info Deleting .cache, public, /Users/alxndr/workspace/almost-dead-net/node_modules/.cache/babel-loader,
+/Users/alxndr/workspace/almost-dead-net/node_modules/.cache/terser-webpack-plugin
+info Successfully deleted directories
+
+success open and validate gatsby-configs, load plugins - 1.342s
+success onPreInit - 0.008s
+success initialize cache - 0.136s
+success copy gatsby files - 0.067s
+success Compiling Gatsby Functions - 0.329s
+success onPreBootstrap - 0.383s
+success createSchemaCustomization - 0.020s
+success Checking for changed pages - 0.004s
+success source and transform nodes - 8.889s
+success building schema - 0.493s
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "name" on type "VenuesCsv".
+
+If you don't expect "name" to exist on the type "VenuesCsv" it is most likely a typo.
+However, if you expect "name" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "name" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "VenuesCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: gatsby-node.js:81:24
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "location" on type "VenuesCsv".
+
+If you don't expect "location" to exist on the type "VenuesCsv" it is most likely a typo.
+However, if you expect "location" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "location" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+ the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "VenuesCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: gatsby-node.js:81:24
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "capacity" on type "VenuesCsv".
+
+If you don't expect "capacity" to exist on the type "VenuesCsv" it is most likely a typo.
+However, if you expect "capacity" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "capacity" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+ the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "VenuesCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: gatsby-node.js:81:24
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "generic_name" on type "VenuesCsv".
+
+If you don't expect "generic_name" to exist on the type "VenuesCsv" it is most likely a typo.
+However, if you expect "generic_name" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "generic_name" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add
+it to the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "VenuesCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: gatsby-node.js:81:24
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "tagname" on type "VenuesCsv".
+
+If you don't expect "tagname" to exist on the type "VenuesCsv" it is most likely a typo.
+However, if you expect "tagname" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "tagname" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "VenuesCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: gatsby-node.js:81:24
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "author" on type "SongsCsv".
+
+If you don't expect "author" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "author" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "author" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: gatsby-node.js:81:24
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "core_gd" on type "SongsCsv".
+
+If you don't expect "core_gd" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "core_gd" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "core_gd" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: gatsby-node.js:81:24
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "core_jrad" on type "SongsCsv".
+
+If you don't expect "core_jrad" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "core_jrad" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "core_jrad" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it
+to the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: gatsby-node.js:81:24
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "cover_gd" on type "SongsCsv".
+
+If you don't expect "cover_gd" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "cover_gd" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "cover_gd" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+ the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: gatsby-node.js:81:24
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "performances" on type "SongsCsv".
+
+If you don't expect "performances" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "performances" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "performances" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add
+it to the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: gatsby-node.js:81:24
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "suite" on type "SongsCsv".
+
+If you don't expect "suite" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "suite" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "suite" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: gatsby-node.js:81:24
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "title" on type "SongsCsv".
+
+If you don't expect "title" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "title" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "title" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: gatsby-node.js:81:24
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "date" on type "ShowsCsv".
+
+If you don't expect "date" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "date" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "date" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: gatsby-node.js:81:24
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "encore1" on type "ShowsCsv".
+
+If you don't expect "encore1" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "encore1" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "encore1" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: gatsby-node.js:81:24
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "encore2" on type "ShowsCsv".
+
+If you don't expect "encore2" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "encore2" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "encore2" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: gatsby-node.js:81:24
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "event" on type "ShowsCsv".
+
+If you don't expect "event" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "event" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "event" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: gatsby-node.js:81:24
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "links" on type "ShowsCsv".
+
+If you don't expect "links" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "links" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "links" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: gatsby-node.js:81:24
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "num_recordings" on type "ShowsCsv".
+
+If you don't expect "num_recordings" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "num_recordings" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "num_recordings" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add
+ it to the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: gatsby-node.js:81:24
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "set1" on type "ShowsCsv".
+
+If you don't expect "set1" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "set1" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "set1" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: gatsby-node.js:81:24
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "set2" on type "ShowsCsv".
+
+If you don't expect "set2" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "set2" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "set2" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: gatsby-node.js:81:24
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "set3" on type "ShowsCsv".
+
+If you don't expect "set3" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "set3" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "set3" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: gatsby-node.js:81:24
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "soundcheck" on type "ShowsCsv".
+
+If you don't expect "soundcheck" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "soundcheck" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "soundcheck" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it
+to the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: gatsby-node.js:81:24
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "tagline" on type "ShowsCsv".
+
+If you don't expect "tagline" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "tagline" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "tagline" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: gatsby-node.js:81:24
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "venue_id" on type "ShowsCsv".
+
+If you don't expect "venue_id" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "venue_id" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "venue_id" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+ the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: gatsby-node.js:81:24
+
+
+ ERROR #11321  PLUGIN
+
+"gatsby-node.js" threw an error while running the createPages lifecycle:
+
+Cannot read properties of undefined (reading 'allShowsCsv')
+
+  127 |     allSongsCsv: {nodes: songs},
+  128 |     allVenuesCsv: {nodes: venues},
+> 129 |   } = result.data
+      |       ^
+  130 |   const lastShowId = Math.max(...shows.map(show => show.id)) // TODO pull this with graphql
+  131 |
+  132 |   shows.filter(show => show.date).forEach((show) => {
+
+File: gatsby-node.js:129:7
+
+
+
+  TypeError: Cannot read properties of undefined (reading 'allShowsCsv')
+
+  - gatsby-node.js:129 Object.exports.createPages
+    /Users/alxndr/workspace/almost-dead-net/gatsby-node.js:129:7
+
+  - api-runner-node.js:462 runAPI
+    [almost-dead-net]/[gatsby]/src/utils/api-runner-node.js:462:16
+
+
+failed createPages - 0.281s
+success createPagesStatefully - 0.147s
+info Total nodes: 4079, SitePage nodes: 9 (use --verbose for breakdown)
+success Checking for changed pages - 0.001s
+success write out redirect data - 0.006s
+success onPostBootstrap - 0.002s
+info bootstrap finished - 14.253s
+success onPreExtractQueries - 0.001s
+
+ ERROR #85901  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Field "show" is not defined by type "RecordingsCsvFilterInput".
+
+File: src/templates/show.js:151:31
+
+
+
+  GraphQLError: Field "show" is not defined by type "RecordingsCsvFilterInput".
+
+  - query-compiler.js:209 extractOperations
+    [almost-dead-net]/[gatsby]/src/query/query-compiler.js:209:20
+
+  - query-compiler.js:167 processQueries
+    [almost-dead-net]/[gatsby]/src/query/query-compiler.js:167:45
+
+  - query-compiler.js:78 compile
+    [almost-dead-net]/[gatsby]/src/query/query-compiler.js:78:19
+
+  - query-watcher.ts:223 updateStateAndRunQueries
+    [almost-dead-net]/[gatsby]/src/query/query-watcher.ts:223:40
+
+  - extract-queries.ts:18 extractQueries
+    [almost-dead-net]/[gatsby]/src/services/extract-queries.ts:18:3
+
+
+
+ ERROR #85901  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Field "venue_id" is not defined by type "ShowsCsvFilterInput". Did you mean "set_id" or "song_id"?
+
+File: src/templates/venue.js:40:26
+
+
+
+  GraphQLError: Field "venue_id" is not defined by type "ShowsCsvFilterInput". Did you mean "set_id" or "song_id"?
+
+  - query-compiler.js:209 extractOperations
+    [almost-dead-net]/[gatsby]/src/query/query-compiler.js:209:20
+
+  - query-compiler.js:167 processQueries
+    [almost-dead-net]/[gatsby]/src/query/query-compiler.js:167:45
+
+  - query-compiler.js:78 compile
+    [almost-dead-net]/[gatsby]/src/query/query-compiler.js:78:19
+
+  - query-watcher.ts:223 updateStateAndRunQueries
+    [almost-dead-net]/[gatsby]/src/query/query-watcher.ts:223:40
+
+  - extract-queries.ts:18 extractQueries
+    [almost-dead-net]/[gatsby]/src/services/extract-queries.ts:18:3
+
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "date" on type "ShowsCsv".
+
+If you don't expect "date" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "date" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "date" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/components/shows_by_year.js:24:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "encore1" on type "ShowsCsv".
+
+If you don't expect "encore1" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "encore1" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "encore1" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/components/shows_by_year.js:25:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "encore2" on type "ShowsCsv".
+
+If you don't expect "encore2" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "encore2" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "encore2" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/components/shows_by_year.js:26:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "event" on type "ShowsCsv".
+
+If you don't expect "event" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "event" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "event" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/components/shows_by_year.js:27:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "links" on type "ShowsCsv".
+
+If you don't expect "links" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "links" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "links" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/components/shows_by_year.js:29:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "num_recordings" on type "ShowsCsv".
+
+If you don't expect "num_recordings" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "num_recordings" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "num_recordings" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add
+ it to the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/components/shows_by_year.js:31:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "set1" on type "ShowsCsv".
+
+If you don't expect "set1" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "set1" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "set1" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/components/shows_by_year.js:32:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "set2" on type "ShowsCsv".
+
+If you don't expect "set2" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "set2" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "set2" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/components/shows_by_year.js:33:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "set3" on type "ShowsCsv".
+
+If you don't expect "set3" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "set3" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "set3" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/components/shows_by_year.js:34:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "soundcheck" on type "ShowsCsv".
+
+If you don't expect "soundcheck" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "soundcheck" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "soundcheck" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it
+to the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/components/shows_by_year.js:35:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "tagline" on type "ShowsCsv".
+
+If you don't expect "tagline" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "tagline" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "tagline" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/components/shows_by_year.js:36:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "venue_id" on type "ShowsCsv".
+
+If you don't expect "venue_id" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "venue_id" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "venue_id" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+ the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/components/shows_by_year.js:37:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "location" on type "VenuesCsv".
+
+If you don't expect "location" to exist on the type "VenuesCsv" it is most likely a typo.
+However, if you expect "location" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "location" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+ the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "VenuesCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/components/shows_by_year.js:41:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "name" on type "VenuesCsv".
+
+If you don't expect "name" to exist on the type "VenuesCsv" it is most likely a typo.
+However, if you expect "name" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "name" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "VenuesCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/components/shows_by_year.js:42:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "author" on type "SongsCsv".
+
+If you don't expect "author" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "author" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "author" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/components/song_finder.js:25:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "core_gd" on type "SongsCsv".
+
+If you don't expect "core_gd" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "core_gd" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "core_gd" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/components/song_finder.js:26:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "core_jrad" on type "SongsCsv".
+
+If you don't expect "core_jrad" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "core_jrad" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "core_jrad" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it
+to the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/components/song_finder.js:27:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "cover_gd" on type "SongsCsv".
+
+If you don't expect "cover_gd" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "cover_gd" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "cover_gd" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+ the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/components/song_finder.js:28:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "performances" on type "SongsCsv".
+
+If you don't expect "performances" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "performances" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "performances" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add
+it to the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/components/song_finder.js:30:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "suite" on type "SongsCsv".
+
+If you don't expect "suite" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "suite" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "suite" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/components/song_finder.js:31:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "title" on type "SongsCsv".
+
+If you don't expect "title" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "title" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "title" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/components/song_finder.js:32:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "name" on type "VenuesCsv".
+
+If you don't expect "name" to exist on the type "VenuesCsv" it is most likely a typo.
+However, if you expect "name" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "name" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "VenuesCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/fan-stats.js:166:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "location" on type "VenuesCsv".
+
+If you don't expect "location" to exist on the type "VenuesCsv" it is most likely a typo.
+However, if you expect "location" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "location" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+ the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "VenuesCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/fan-stats.js:167:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "capacity" on type "VenuesCsv".
+
+If you don't expect "capacity" to exist on the type "VenuesCsv" it is most likely a typo.
+However, if you expect "capacity" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "capacity" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+ the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "VenuesCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/fan-stats.js:168:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "generic_name" on type "VenuesCsv".
+
+If you don't expect "generic_name" to exist on the type "VenuesCsv" it is most likely a typo.
+However, if you expect "generic_name" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "generic_name" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add
+it to the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "VenuesCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/fan-stats.js:169:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "tagname" on type "VenuesCsv".
+
+If you don't expect "tagname" to exist on the type "VenuesCsv" it is most likely a typo.
+However, if you expect "tagname" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "tagname" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "VenuesCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/fan-stats.js:170:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "date" on type "ShowsCsv".
+
+If you don't expect "date" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "date" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "date" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/fan-stats.js:175:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "encore1" on type "ShowsCsv".
+
+If you don't expect "encore1" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "encore1" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "encore1" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/fan-stats.js:176:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "encore2" on type "ShowsCsv".
+
+If you don't expect "encore2" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "encore2" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "encore2" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/fan-stats.js:177:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "event" on type "ShowsCsv".
+
+If you don't expect "event" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "event" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "event" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/fan-stats.js:178:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "links" on type "ShowsCsv".
+
+If you don't expect "links" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "links" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "links" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/fan-stats.js:180:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "num_recordings" on type "ShowsCsv".
+
+If you don't expect "num_recordings" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "num_recordings" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "num_recordings" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add
+ it to the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/fan-stats.js:182:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "set1" on type "ShowsCsv".
+
+If you don't expect "set1" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "set1" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "set1" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/fan-stats.js:183:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "set2" on type "ShowsCsv".
+
+If you don't expect "set2" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "set2" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "set2" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/fan-stats.js:184:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "set3" on type "ShowsCsv".
+
+If you don't expect "set3" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "set3" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "set3" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/fan-stats.js:185:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "soundcheck" on type "ShowsCsv".
+
+If you don't expect "soundcheck" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "soundcheck" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "soundcheck" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it
+to the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/fan-stats.js:186:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "tagline" on type "ShowsCsv".
+
+If you don't expect "tagline" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "tagline" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "tagline" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/fan-stats.js:187:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "venue_id" on type "ShowsCsv".
+
+If you don't expect "venue_id" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "venue_id" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "venue_id" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+ the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/fan-stats.js:188:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "setlist" on type "SetsCsv".
+
+If you don't expect "setlist" to exist on the type "SetsCsv" it is most likely a typo.
+However, if you expect "setlist" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "setlist" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SetsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/fan-stats.js:194:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "tagline" on type "ShowsCsv".
+
+If you don't expect "tagline" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "tagline" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "tagline" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/guests.js:69:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "instrument" on type "GuestsCsv".
+
+If you don't expect "instrument" to exist on the type "GuestsCsv" it is most likely a typo.
+However, if you expect "instrument" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "instrument" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it
+to the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "GuestsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/guests.js:73:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "name" on type "GuestsCsv".
+
+If you don't expect "name" to exist on the type "GuestsCsv" it is most likely a typo.
+However, if you expect "name" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "name" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "GuestsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/guests.js:74:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "shows" on type "GuestsCsv".
+
+If you don't expect "shows" to exist on the type "GuestsCsv" it is most likely a typo.
+However, if you expect "shows" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "shows" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "GuestsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/guests.js:75:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "sortVal" on type "GuestsCsv".
+
+If you don't expect "sortVal" to exist on the type "GuestsCsv" it is most likely a typo.
+However, if you expect "sortVal" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "sortVal" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "GuestsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/guests.js:76:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "author" on type "SongsCsv".
+
+If you don't expect "author" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "author" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "author" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/songs.js:101:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "core_gd" on type "SongsCsv".
+
+If you don't expect "core_gd" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "core_gd" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "core_gd" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/songs.js:102:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "core_jrad" on type "SongsCsv".
+
+If you don't expect "core_jrad" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "core_jrad" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "core_jrad" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it
+to the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/songs.js:103:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "cover_gd" on type "SongsCsv".
+
+If you don't expect "cover_gd" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "cover_gd" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "cover_gd" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+ the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/songs.js:104:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "performances" on type "SongsCsv".
+
+If you don't expect "performances" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "performances" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "performances" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add
+it to the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/songs.js:106:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "suite" on type "SongsCsv".
+
+If you don't expect "suite" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "suite" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "suite" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/songs.js:107:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "title" on type "SongsCsv".
+
+If you don't expect "title" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "title" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "title" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/songs.js:108:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "venue_id" on type "ShowsCsv".
+
+If you don't expect "venue_id" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "venue_id" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "venue_id" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+ the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/venues.js:155:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "name" on type "VenuesCsv".
+
+If you don't expect "name" to exist on the type "VenuesCsv" it is most likely a typo.
+However, if you expect "name" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "name" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "VenuesCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/venues.js:159:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "location" on type "VenuesCsv".
+
+If you don't expect "location" to exist on the type "VenuesCsv" it is most likely a typo.
+However, if you expect "location" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "location" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+ the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "VenuesCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/pages/venues.js:160:9
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "date" on type "ShowsCsv".
+
+If you don't expect "date" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "date" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "date" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/show-embed.js:117:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "encore1" on type "ShowsCsv".
+
+If you don't expect "encore1" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "encore1" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "encore1" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/show-embed.js:118:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "encore2" on type "ShowsCsv".
+
+If you don't expect "encore2" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "encore2" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "encore2" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/show-embed.js:119:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "event" on type "ShowsCsv".
+
+If you don't expect "event" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "event" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "event" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/show-embed.js:120:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "set1" on type "ShowsCsv".
+
+If you don't expect "set1" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "set1" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "set1" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/show-embed.js:122:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "set2" on type "ShowsCsv".
+
+If you don't expect "set2" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "set2" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "set2" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/show-embed.js:123:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "set3" on type "ShowsCsv".
+
+If you don't expect "set3" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "set3" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "set3" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/show-embed.js:124:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "location" on type "VenuesCsv".
+
+If you don't expect "location" to exist on the type "VenuesCsv" it is most likely a typo.
+However, if you expect "location" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "location" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+ the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "VenuesCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/show-embed.js:128:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "name" on type "VenuesCsv".
+
+If you don't expect "name" to exist on the type "VenuesCsv" it is most likely a typo.
+However, if you expect "name" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "name" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "VenuesCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/show-embed.js:129:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "setlist" on type "SetsCsv".
+
+If you don't expect "setlist" to exist on the type "SetsCsv" it is most likely a typo.
+However, if you expect "setlist" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "setlist" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SetsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/show-embed.js:133:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "name" on type "GuestsCsv".
+
+If you don't expect "name" to exist on the type "GuestsCsv" it is most likely a typo.
+However, if you expect "name" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "name" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "GuestsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/show-embed.js:137:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "shows" on type "GuestsCsv".
+
+If you don't expect "shows" to exist on the type "GuestsCsv" it is most likely a typo.
+However, if you expect "shows" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "shows" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "GuestsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/show-embed.js:138:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "author" on type "SongsCsv".
+
+If you don't expect "author" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "author" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "author" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/show-embed.js:151:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "core_gd" on type "SongsCsv".
+
+If you don't expect "core_gd" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "core_gd" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "core_gd" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/show-embed.js:152:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "core_jrad" on type "SongsCsv".
+
+If you don't expect "core_jrad" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "core_jrad" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "core_jrad" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it
+to the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/show-embed.js:153:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "suite" on type "SongsCsv".
+
+If you don't expect "suite" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "suite" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "suite" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/show-embed.js:154:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "title" on type "SongsCsv".
+
+If you don't expect "title" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "title" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "title" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/show-embed.js:155:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "author" on type "SongsCsv".
+
+If you don't expect "author" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "author" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "author" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/song.js:57:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "suite" on type "SongsCsv".
+
+If you don't expect "suite" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "suite" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "suite" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/song.js:58:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "title" on type "SongsCsv".
+
+If you don't expect "title" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "title" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "title" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/song.js:59:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "performances" on type "SongsCsv".
+
+If you don't expect "performances" to exist on the type "SongsCsv" it is most likely a typo.
+However, if you expect "performances" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "performances" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add
+it to the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SongsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/song.js:60:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "setlist" on type "SetsCsv".
+
+If you don't expect "setlist" to exist on the type "SetsCsv" it is most likely a typo.
+However, if you expect "setlist" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "setlist" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "SetsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/song.js:64:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "date" on type "ShowsCsv".
+
+If you don't expect "date" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "date" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "date" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/song.js:68:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "encore1" on type "ShowsCsv".
+
+If you don't expect "encore1" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "encore1" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "encore1" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/song.js:69:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "encore2" on type "ShowsCsv".
+
+If you don't expect "encore2" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "encore2" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "encore2" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to
+the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/song.js:70:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "set1" on type "ShowsCsv".
+
+If you don't expect "set1" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "set1" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "set1" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/song.js:71:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "set2" on type "ShowsCsv".
+
+If you don't expect "set2" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "set2" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "set2" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/song.js:72:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "set3" on type "ShowsCsv".
+
+If you don't expect "set3" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "set3" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "set3" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it to the
+ GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/song.js:73:7
+
+
+ ERROR #85923  GRAPHQL
+
+There was an error in your GraphQL query:
+
+Cannot query field "soundcheck" on type "ShowsCsv".
+
+If you don't expect "soundcheck" to exist on the type "ShowsCsv" it is most likely a typo.
+However, if you expect "soundcheck" to exist there are a couple of solutions to common problems:
+
+- If you added a new data source and/or changed something inside gatsby-node.js/gatsby-config.js, please try a restart of your development
+server
+- The field might be accessible in another subfield, please try your query in GraphiQL and use the GraphiQL explorer to see which fields you
+can query and what shape they have
+- You want to optionally use your field "soundcheck" and right now it is not used anywhere. Therefore Gatsby can't infer the type and add it
+to the GraphQL schema. A quick fix is to add at least one entry with that field ("dummy content")
+
+It is recommended to explicitly type your GraphQL schema if you want to use optional fields. This way you don't have to add the mentioned
+"dummy content". Visit our docs to learn how you can define the schema for "ShowsCsv":
+https://www.gatsbyjs.com/docs/reference/graphql-data-layer/schema-customization#creating-type-definitions
+
+File: src/templates/song.js:74:7
+
+failed extract queries from components - 2.469s
+success write out requires - 0.006s
+success run static queries - 0.010s - 1/1 102.21/s
+success run page queries - 0.015s - 3/3 204.91/s
+
+ ERROR
+
+Module not found: Error: Can't resolve '../../public/page-data/sq/d/2357864992.json' in
+'/Users/alxndr/workspace/almost-dead-net/src/components'
+
+
+
+  ModuleNotFoundError: Module not found: Error: Can't resolve '../../public/page-data/sq/d/2357864992.json' in '/Users/alxndr/workspace/almos
+  t-dead-net/src/components'
+
+  - Compilation.js:2014
+    [almost-dead-net]/[webpack]/lib/Compilation.js:2014:28
+
+  - NormalModuleFactory.js:791
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:791:13
+
+
+  - NormalModuleFactory.js:265
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:265:22
+
+
+  - NormalModuleFactory.js:427
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:427:22
+
+  - NormalModuleFactory.js:111
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:111:11
+
+  - NormalModuleFactory.js:663
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:663:25
+
+  - NormalModuleFactory.js:848
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:848:8
+
+  - NormalModuleFactory.js:968
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:968:5
+
+  - async.js:6883
+    [almost-dead-net]/[neo-async]/async.js:6883:13
+
+  - NormalModuleFactory.js:943 Array.<anonymous>
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:943:14
+
+  - async.js:2517 arrayEachFunc
+    [almost-dead-net]/[neo-async]/async.js:2517:19
+
+  - async.js:6858 Object.parallel
+    [almost-dead-net]/[neo-async]/async.js:6858:9
+
+  - NormalModuleFactory.js:866 NormalModuleFactory._resolveResourceErrorHints
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:866:12
+
+  - NormalModuleFactory.js:827
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:827:18
+
+
+
+ ERROR
+
+Module not found: Error: Can't resolve '../../public/page-data/sq/d/3131186842.json' in
+'/Users/alxndr/workspace/almost-dead-net/src/components'
+
+
+
+  ModuleNotFoundError: Module not found: Error: Can't resolve '../../public/page-data/sq/d/3131186842.json' in '/Users/alxndr/workspace/almos
+  t-dead-net/src/components'
+
+  - Compilation.js:2014
+    [almost-dead-net]/[webpack]/lib/Compilation.js:2014:28
+
+  - NormalModuleFactory.js:791
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:791:13
+
+
+  - NormalModuleFactory.js:265
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:265:22
+
+
+  - NormalModuleFactory.js:427
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:427:22
+
+  - NormalModuleFactory.js:111
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:111:11
+
+  - NormalModuleFactory.js:663
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:663:25
+
+  - NormalModuleFactory.js:848
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:848:8
+
+  - NormalModuleFactory.js:968
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:968:5
+
+  - async.js:6883
+    [almost-dead-net]/[neo-async]/async.js:6883:13
+
+  - NormalModuleFactory.js:943 Array.<anonymous>
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:943:14
+
+  - async.js:2517 arrayEachFunc
+    [almost-dead-net]/[neo-async]/async.js:2517:19
+
+  - async.js:6858 Object.parallel
+    [almost-dead-net]/[neo-async]/async.js:6858:9
+
+  - NormalModuleFactory.js:866 NormalModuleFactory._resolveResourceErrorHints
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:866:12
+
+  - NormalModuleFactory.js:827
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:827:18
+
+
+
+ ERROR
+
+Module not found: Error: Can't resolve '../../public/page-data/sq/d/741818604.json' in '/Users/alxndr/workspace/almost-dead-net/src/pages'
+
+
+
+  ModuleNotFoundError: Module not found: Error: Can't resolve '../../public/page-data/sq/d/741818604.json' in '/Users/alxndr/workspace/almost
+  -dead-net/src/pages'
+
+  - Compilation.js:2014
+    [almost-dead-net]/[webpack]/lib/Compilation.js:2014:28
+
+  - NormalModuleFactory.js:791
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:791:13
+
+
+  - NormalModuleFactory.js:265
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:265:22
+
+
+  - NormalModuleFactory.js:427
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:427:22
+
+  - NormalModuleFactory.js:111
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:111:11
+
+  - NormalModuleFactory.js:663
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:663:25
+
+  - NormalModuleFactory.js:848
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:848:8
+
+  - NormalModuleFactory.js:968
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:968:5
+
+  - async.js:6883
+    [almost-dead-net]/[neo-async]/async.js:6883:13
+
+  - NormalModuleFactory.js:943 Array.<anonymous>
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:943:14
+
+  - async.js:2517 arrayEachFunc
+    [almost-dead-net]/[neo-async]/async.js:2517:19
+
+  - async.js:6858 Object.parallel
+    [almost-dead-net]/[neo-async]/async.js:6858:9
+
+  - NormalModuleFactory.js:866 NormalModuleFactory._resolveResourceErrorHints
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:866:12
+
+  - NormalModuleFactory.js:827
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:827:18
+
+
+
+ ERROR
+
+Module not found: Error: Can't resolve '../../public/page-data/sq/d/1353399418.json' in '/Users/alxndr/workspace/almost-dead-net/src/pages'
+
+
+
+  ModuleNotFoundError: Module not found: Error: Can't resolve '../../public/page-data/sq/d/1353399418.json' in '/Users/alxndr/workspace/almos
+  t-dead-net/src/pages'
+
+  - Compilation.js:2014
+    [almost-dead-net]/[webpack]/lib/Compilation.js:2014:28
+
+  - NormalModuleFactory.js:791
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:791:13
+
+
+  - NormalModuleFactory.js:265
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:265:22
+
+
+  - NormalModuleFactory.js:427
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:427:22
+
+  - NormalModuleFactory.js:111
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:111:11
+
+  - NormalModuleFactory.js:663
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:663:25
+
+  - NormalModuleFactory.js:848
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:848:8
+
+  - NormalModuleFactory.js:968
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:968:5
+
+  - async.js:6883
+    [almost-dead-net]/[neo-async]/async.js:6883:13
+
+  - NormalModuleFactory.js:943 Array.<anonymous>
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:943:14
+
+  - async.js:2517 arrayEachFunc
+    [almost-dead-net]/[neo-async]/async.js:2517:19
+
+  - async.js:6858 Object.parallel
+    [almost-dead-net]/[neo-async]/async.js:6858:9
+
+  - NormalModuleFactory.js:866 NormalModuleFactory._resolveResourceErrorHints
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:866:12
+
+  - NormalModuleFactory.js:827
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:827:18
+
+
+
+ ERROR
+
+Module not found: Error: Can't resolve '../../public/page-data/sq/d/1170280878.json' in '/Users/alxndr/workspace/almost-dead-net/src/pages'
+
+
+
+  ModuleNotFoundError: Module not found: Error: Can't resolve '../../public/page-data/sq/d/1170280878.json' in '/Users/alxndr/workspace/almos
+  t-dead-net/src/pages'
+
+  - Compilation.js:2014
+    [almost-dead-net]/[webpack]/lib/Compilation.js:2014:28
+
+  - NormalModuleFactory.js:791
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:791:13
+
+
+  - NormalModuleFactory.js:265
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:265:22
+
+
+  - NormalModuleFactory.js:427
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:427:22
+
+  - NormalModuleFactory.js:111
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:111:11
+
+  - NormalModuleFactory.js:663
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:663:25
+
+  - NormalModuleFactory.js:848
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:848:8
+
+  - NormalModuleFactory.js:968
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:968:5
+
+  - async.js:6883
+    [almost-dead-net]/[neo-async]/async.js:6883:13
+
+  - NormalModuleFactory.js:943 Array.<anonymous>
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:943:14
+
+  - async.js:2517 arrayEachFunc
+    [almost-dead-net]/[neo-async]/async.js:2517:19
+
+  - async.js:6858 Object.parallel
+    [almost-dead-net]/[neo-async]/async.js:6858:9
+
+  - NormalModuleFactory.js:866 NormalModuleFactory._resolveResourceErrorHints
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:866:12
+
+  - NormalModuleFactory.js:827
+    [almost-dead-net]/[webpack]/lib/NormalModuleFactory.js:827:18
+
+
+not finished Building development bundle - 29.479s
+
+
+
+…/workspace/almost-dead-net spike/gatsby-v4-take3 𝚫
+1 ✘ ⟫
