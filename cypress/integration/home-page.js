@@ -66,7 +66,7 @@ describe('Home page', () => {
         .should('include', 'teased')
     })
 
-    it.skip('(SKIPPED: temporarily hiding link) links to Guests page', () => {
+    it('links to Guests page', () => {
       cy.get('@linksSection')
         .contains('Guests')
         .click()
