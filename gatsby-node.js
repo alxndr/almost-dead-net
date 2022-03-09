@@ -82,7 +82,7 @@ exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => 
     query Everything {
       allVenuesCsv {
         nodes {
-          id
+          jsonId
           name
           location
           capacity
@@ -96,7 +96,7 @@ exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => 
           core_gd
           core_jrad
           cover_gd
-          id
+          jsonId
           performances
           suite
           title
@@ -108,7 +108,7 @@ exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => 
           encore1
           encore2
           event
-          id
+          jsonId
           links
           notes
           num_recordings
@@ -127,22 +127,22 @@ exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => 
     allSongsCsv: {nodes: songs},
     allVenuesCsv: {nodes: venues},
   } = result.data
-  const lastShowId = Math.max(...shows.map(show => show.id)) // TODO pull this with graphql
+  const lastShowId = Math.max(...shows.map(show => show.jsonId)) // TODO pull this with graphql
 
   shows.filter(show => show.date).forEach((show) => {
     createPage({
-      path: `/show/embed/${show.id}`,
+      path: `/show/embed/${show.jsonId}`,
       component: ShowEmbedTemplate,
       context: {
-        showId: show.id,
+        showId: show.jsonId,
         venueId: show.venue_id,
       },
     }); // semicolon needed to separate the two calls to `createPage`
     createPage({
-      path: `/show/${show.id}`,
+      path: `/show/${show.jsonId}`,
       component: ShowTemplate,
       context: {
-        showId: show.id,
+        showId: show.jsonId,
         venueId: show.venue_id,
         lastShowId,
       }
@@ -151,20 +151,20 @@ exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => 
 
   songs.filter(song => song.title && song.title !== '[unknown]').forEach((song) => {
     createPage({
-      path: `/song/${song.id}`,
+      path: `/song/${song.jsonId}`,
       component: SongTemplate,
       context: {
-        songId: song.id,
+        songId: song.jsonId,
       }
     })
   })
 
   venues.filter(venue => venue.name).forEach(venue => {
     createPage({
-      path: `/venue/${venue.id}-${slugify(venue.name)}`,
+      path: `/venue/${venue.jsonId}-${slugify(venue.name)}`,
       component: VenueTemplate,
       context: {
-        venueId: venue.id,
+        venueId: venue.jsonId,
       },
     })
   })

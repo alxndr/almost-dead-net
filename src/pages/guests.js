@@ -29,7 +29,7 @@ function GuestsComponent({data: {
   allGuestsCsv: {nodes: allGuests},
 }}) {
   const guests = allGuests.sort(sortGuests)
-  const findShowById = (inputIdStr) => allShows.find(({id: idStr}) => inputIdStr === idStr)
+  const findShowById = (inputIdStr) => allShows.find(({jsonId: idStr}) => inputIdStr === idStr)
   return <Layout className="guests">
     <SEO
       title="JRAD — Guests"
@@ -40,7 +40,7 @@ function GuestsComponent({data: {
 
     <ul className="guests__list">
       {guests.map((guest) =>
-        <li key={guest.id}>
+        <li key={guest.jsonId}>
           <h2>{guest.name}
             <span class="guest-instrument">{guest.instrument}</span>
           </h2>
@@ -65,11 +65,11 @@ const GuestsPage = () => <StaticQuery
   query={graphql`
     query GuestsPageData {
       allShowsCsv { nodes {
-        id
+        jsonId
         tagline
       } }
       allGuestsCsv { nodes {
-        id
+        jsonId
         instrument
         name
         shows

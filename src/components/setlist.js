@@ -11,13 +11,13 @@ import Link from './link-with-previous-url'
 import './setlist.css'
 import 'react-tippy/dist/tippy.css'
 
-const findById = (id) => find(propEq('id', id))
+const findById = (id) => find(propEq('jsonId', id))
 const filterBySongId = (id) => filter(propEq('song_id', id))
 
 function SetlistEntry({performanceData, songData, segues, teases, previousUrl}) {
   const displayName = songData.title
-  const segueData = find(propEq('from_perf_id', performanceData.id))(segues)
-  const teasesArray = filter(propEq('performance_id', performanceData.id))(teases)
+  const segueData = find(propEq('from_perf_id', performanceData.jsonId))(segues)
+  const teasesArray = filter(propEq('performance_id', performanceData.jsonId))(teases)
   const url = `/song/${performanceData.song_id}`
   const classes = classnames('setlist__track', {
     highlight: previousUrl?.endsWith(url),
@@ -75,10 +75,10 @@ export default function Setlist(props) {
     setlist.map((perfId) => {
       const performanceData = findById(perfId)(performances)
       const songData = findById(performanceData.song_id)(songs)
-      const allPerfsOfThisSong = filterBySongId(songData.id)(performances)
-      const setsForAllPerfsOfThisSong = allPerfsOfThisSong.map(perfData => allSets.find(set => set.setlist.split(':').includes(perfData.id)))
-      const showsForThoseSets = setsForAllPerfsOfThisSong.map(setData => allShows.find(show => [show.soundcheck, show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id)))
-      const [earlierShows] = partition(showData => Number(showData?.id) < showIdInt, showsForThoseSets)
+      const allPerfsOfThisSong = filterBySongId(songData.jsonId)(performances)
+      const setsForAllPerfsOfThisSong = allPerfsOfThisSong.map(perfData => allSets.find(set => set.setlist.split(':').includes(perfData.jsonId)))
+      const showsForThoseSets = setsForAllPerfsOfThisSong.map(setData => allShows.find(show => [show.soundcheck, show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.jsonId)))
+      const [earlierShows] = partition(showData => Number(showData?.jsonId) < showIdInt, showsForThoseSets)
       if (allShows.length && !earlierShows.length)
         performanceData.isDebut = true
       return {
@@ -101,12 +101,12 @@ export default function Setlist(props) {
       {groupedBySuite.map((songOrSuite) => {
         if (songOrSuite.length > 1) {
           const lastSong = songOrSuite[songOrSuite.length - 1]
-          return <li key={songOrSuite[0].performanceData.id} className="suite">
+          return <li key={songOrSuite[0].performanceData.jsonId} className="suite">
             {songOrSuite[0].suite} suite
             <ul>
               {songOrSuite.map(({songData, performanceData}) => {
                 return <SetlistEntry
-                  key={performanceData.id}
+                  key={performanceData.jsonId}
                   performanceData={performanceData}
                   songData={songData}
                   segues={segues}
@@ -116,13 +116,13 @@ export default function Setlist(props) {
               })}
             </ul>
             {lastSong && lastSong.performanceData &&
-              <Segue {...find(propEq('from_perf_id', lastSong.performanceData.id))(segues)} className="suite__segue" />}
+              <Segue {...find(propEq('from_perf_id', lastSong.performanceData.jsonId))(segues)} className="suite__segue" />}
           </li>
         }
         // regularly scheduled programming
         const [{performanceData, songData}] = songOrSuite
         return <SetlistEntry
-          key={performanceData.id}
+          key={performanceData.jsonId}
           performanceData={performanceData}
           songData={songData}
           segues={segues}

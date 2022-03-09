@@ -21,12 +21,11 @@ export default function SongFinder() {
   } = useStaticQuery(graphql`
     query SongFinderData {
       allSongsCsv { nodes {
-        id
+        jsonId
         author
         core_gd
         core_jrad
         cover_gd
-        id
         performances
         suite
         title
@@ -80,8 +79,7 @@ export default function SongFinder() {
         value,
       }}
       onSuggestionSelected={(_, {suggestion}) => {
-        window.location = `/song/${suggestion.id}`
-        //setRedirect(url(routes.song, {id: suggestion.id}))
+        window.location = `/song/${suggestion.jsonId}`
       }}
     />
   </div>
