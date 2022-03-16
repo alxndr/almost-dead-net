@@ -111,6 +111,7 @@ export default function Song({data: {
       const setData = find((set) =>
         set.setlist && set.setlist.toString().split(':').includes(performanceIdStr)
       )(allSets)
+      if (!setData) return;
       const showData = find((show) => [
         show.soundcheck,
         show.set1,
