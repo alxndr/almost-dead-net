@@ -4,15 +4,13 @@
   flex: 1 1 10em;
   justify-content: center;
 }
+.homepage > main > section {
+  margin: 1em;
+}
 
 .homepage h1 {
   text-align: center;
   letter-spacing: 0.05em;
-}
-
-.homepage__forum,
-.homepage__links {
-  margin: 0.5em;
 }
 
 .homepage__forum {
@@ -20,15 +18,15 @@
 }
 
 .homepage__songfinder {
-  min-width: 20em;
-  width: 55%;
-  margin: 1.5em auto;
   order: 1;
   flex-grow: 1;
+  min-width: 20em;
+  max-width: 30em;
+  margin: 1.5em auto;
 }
 
 .homepage__links {
-  order: 0;
+  order: 3;
 }
 .homepage__links > ul {
   list-style: none;
@@ -67,10 +65,11 @@
 }
 
 .homepage__showsbyyear {
-  padding-top: 1em;
   order: 3;
-  width: 50%;
-  min-width: 20em;
+  flex-grow: 2;
+  min-width: 15em;
+  max-width: 30em;
+  padding-top: 1em;
 }
 
 .new:before {
@@ -89,30 +88,3 @@
   opacity: 0.9;
   border-radius: 0.5em;
 }
-
-@media only screen and (min-width: 600px) {
-  .homepage__forum {
-    order: 1;
-  }
-  .homepage__songfinder {
-    order: 2;
-  }
-}
-
-@media only screen and (min-width: 950px) {
-  .homepage__songfinder {
-    order: 1;
-    width: auto;
-  }
-  .homepage__links {
-    order: 2;
-  }
-  .homepage__forum {
-    order: 3;
-  }
-  .homepage__showsbyyear {
-    order: 4;
-  }
-}
-
-
