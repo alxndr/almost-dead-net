@@ -77,7 +77,7 @@ export default function Setlist(props) {
       const songData = findById(performanceData.song_id)(songs)
       const allPerfsOfThisSong = filterBySongId(songData.id)(performances)
       const setsForAllPerfsOfThisSong = allPerfsOfThisSong.map(perfData => allSets.find(set => set.setlist.split(':').includes(perfData.id)))
-      const showsForThoseSets = setsForAllPerfsOfThisSong.map(setData => allShows.find(show => [show.soundcheck, show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id)))
+      const showsForThoseSets = setsForAllPerfsOfThisSong.map(setData => allShows.find(show => [show.soundcheck, show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData?.id)))
       const [earlierShows] = partition(showData => Number(showData?.id) < showIdInt, showsForThoseSets)
       if (allShows.length && !earlierShows.length)
         performanceData.isDebut = true
