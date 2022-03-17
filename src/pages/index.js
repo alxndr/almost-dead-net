@@ -25,9 +25,9 @@ export default function Index() {
         <li className="homepage__links-all">
           all…
           <ul>
+            <li><Link to="/guests" title="All guests who have performed with JRAD" className="new">Guests</Link></li>
             <li><Link to="/songs" title="All songs performed or teased by JRAD">Songs & Teases</Link></li>
             <li><Link to="/venues" title="All venues where JRAD has performed">Venues</Link></li>
-            <li><Link to="/guests" title="All guests who have performed with JRAD" className="new">Guests</Link></li>
           </ul>
         </li>
         <li className="homepage__links__meta">
