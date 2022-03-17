@@ -14,7 +14,7 @@ import 'react-tippy/dist/tippy.css'
 const findById = (id) => find(propEq('id', id))
 const filterBySongId = (id) => filter(propEq('song_id', id))
 
-function SetlistEntry({performanceData, songData, segues, teases, previousUrl}) {
+function SetlistEntry({inSuite, performanceData, songData, segues, teases, previousUrl}) {
   const displayName = songData.title
   const segueData = find(propEq('from_perf_id', performanceData.id))(segues)
   const teasesArray = filter(propEq('performance_id', performanceData.id))(teases)
@@ -25,6 +25,7 @@ function SetlistEntry({performanceData, songData, segues, teases, previousUrl}) 
   })
   return <li className={classes}>
     <Link to={url}>
+      {!inSuite && songData.suite && `(${songData.suite} suite) ` || ''}
       {displayName}
     </Link>
     {' '}
@@ -104,12 +105,13 @@ export default function Setlist(props) {
           const suiteName = firstSong.suite
           const lastSong = songOrSuite[songOrSuite.length - 1]
           const mostStarsInConstituentSongs = Math.max(...songOrSuite.map(song => Number(song.performanceData.stars)))
-          return <li key={firstSong.performanceData.id} className={`setlist__suite ${mostStarsInConstituentSongs && `stars-${mostStarsInConstituentSongs}`}`}>
+          return <li key={firstSong.performanceData.id} className={`setlist__suite ${mostStarsInConstituentSongs ? `stars-${mostStarsInConstituentSongs}` : ''}`}>
             {suiteName} suite
             <ul>
               {songOrSuite.map(({songData, performanceData}) => {
                 return <SetlistEntry
                   key={performanceData.id}
+                  inSuite={true}
                   performanceData={performanceData}
                   songData={songData}
                   segues={segues}
@@ -127,6 +129,7 @@ export default function Setlist(props) {
         const [{performanceData, songData}] = songOrSuite
         return <SetlistEntry
           key={performanceData.id}
+          inSuite={false}
           performanceData={performanceData}
           songData={songData}
           segues={segues}
