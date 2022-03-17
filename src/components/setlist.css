@@ -27,19 +27,21 @@ h3.setlist__setlabel {
   padding: 0.3em;
   font-size: 0.9em;
 }
-.setlist__tracks > li.stars-1 {
-  list-style-type: "★";
-  color: red;
-}
-.setlist__tracks > li.stars-2 {
-  list-style-type: "★★";
-  color: red;
-}
 .setlist__tracks > li > a {
   font-size: 1.1em;
 }
 .setlist__track > span {
   color: black;
+}
+li.stars-1 {
+  list-style-type: "★";
+}
+li.stars-2 {
+  list-style-type: "★★";
+}
+li.stars-1::marker,
+li.stars-2::marker {
+  color: red;
 }
 
 .setlist__track__badge {
@@ -59,20 +61,20 @@ h3.setlist__setlabel {
   line-height: 1em;
 }
 
-.suite {
+.setlist__suite {
   background: linear-gradient(90deg, #dabbff4e, transparent);
   border-radius: 1em;
 }
-.suite ul {
-  display: none;
-  list-style: circle;
+.setlist__suite ul {
+  display: none; /* shown on hover */
+  list-style: none;
 }
-.suite:hover {
+.setlist__suite:hover {
   box-shadow: 0 0 3px 5px lightgray;
 }
-.suite:hover ul {
+.setlist__suite:hover ul {
   display: block;
 }
-.suite:hover .suite__segue {
+.setlist__suite:hover .setlist__suite__segue {
   display: none
 }
