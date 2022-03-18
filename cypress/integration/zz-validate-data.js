@@ -244,6 +244,7 @@ const allShows = { // TODO replace with proper Cypress fixtures... hopefully hoo
   243: {id: 243, date: '2/10/2022', venue: 'Brooklyn Bowl'},
   244: {id: 244, date: '2/11/2022', venue: 'Fillmore'},
   245: {id: 245, date: '2/12/2022', venue: 'Fillmore'},
+  246: {id: 246, date: '3/17/2022', venue: 'Sylvee'},
 }
 
 describe('data validation', () => {
