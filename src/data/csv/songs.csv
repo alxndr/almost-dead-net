@@ -21,7 +21,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,core_jrad
 340,Roundabout,Anderson Bruford & Wakeman Howe (Yes),,,,340,,,
 324,Tighten Up,Archie Bell & the Drells,,,,324,,,
 439,Celebrated Chop Waltz aka Chopsticks,Arthur de Lulli aka Euphemia Allen,,,,439,,,
-87,Good Lovin',Arthur Resnick & Rudy Clark,,,958:1120:1254:1330:1364:1422:1469:1536:1538:1670:1804:1884:1960:2021:2102:2166:2303:2346:2449:2498:2605:2699:2750:2894:2964:3064:3139:3195:3274:3347:3399:3422:3492:3521:3642:3734:3852,87,TRUE,TRUE,
+87,Good Lovin',Arthur Resnick & Rudy Clark,,,958:1120:1254:1330:1364:1422:1469:1536:1538:1670:1804:1884:1960:2021:2102:2166:2303:2346:2449:2498:2605:2699:2750:2894:2964:3064:3139:3195:3274:3347:3399:3422:3492:3521:3642:3734:3852:4049,87,TRUE,TRUE,
 3,9x9,Benevento/Russo Duo,,,1480,3,,,TRUE
 375,Abduction Pose,Benevento/Russo Duo,,,,375,,,TRUE
 16,Becky,Benevento/Russo Duo,,,771:1646,16,,,TRUE
@@ -168,7 +168,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,core_jrad
 25,Black Throated Wind,John Perry Barlow & Bob Weir (Grateful Dead),BTW,,424:486:680:835:837:911:1075:1432:1463:1583:1827:1999:2101:2206:2517:2572:2930:2978:3084:3149:3261:3311:3454:3504:3610:3758:3830:3936:4029,25,TRUE,,
 38,Cassidy,John Perry Barlow & Bob Weir (Grateful Dead),,,284:470:554:877:1174:1369:1434:1489:1793:2058:2093:2169:2484:2937:3256:3413:3683:3792:3904,38,TRUE,,
 69,Estimated Prophet,John Perry Barlow & Bob Weir (Grateful Dead),,,11:118:149:242:251:390:456:538:616:779:809:888:906:1027:1052:1179:1210:1246:1318:1403:1437:1455:1560:1591:1637:1720:1767:1926:1952:2045:2216:2276:2402:2430:2539:2603:2652:2774:2803:2859:2953:2984:2999:3044:3079:3104:3220:3265:3355:3393:3448:3502:3558:3615:3682:3794:3862:3961:3988:4034,69,TRUE,,
-74,Feel Like a Stranger,John Perry Barlow & Bob Weir (Grateful Dead),Stranger,,211:237:319:422:567:627:677:735:829:893:940:1050:1150:1242:1303:1414:1450:1543:1634:1741:1773:2013:2068:2125:2224:2262:2311:2368:2412:2441:2492:2574:2616:2650:2675:2733:2817:2846:2878:3013:3015:3018:3042:3107:3219:3242:3325:3407:3419:3465:3518:3552:3589:3732:3808:3856:3879:3967:4008,74,TRUE,,
+74,Feel Like a Stranger,John Perry Barlow & Bob Weir (Grateful Dead),Stranger,,211:237:319:422:567:627:677:735:829:893:940:1050:1150:1242:1303:1414:1450:1543:1634:1741:1773:2013:2068:2125:2224:2262:2311:2368:2412:2441:2492:2574:2616:2650:2675:2733:2817:2846:2878:3013:3015:3018:3042:3107:3219:3242:3325:3407:3419:3465:3518:3552:3589:3732:3808:3856:3879:3967:4008:4051,74,TRUE,,
 115,I Need A Miracle,John Perry Barlow & Bob Weir (Grateful Dead),Miracle,,240:637:986:1156:2052:2182:2349:2370:2457:2591:2655:2667:2705:2756:2870:2944:2983:3061:3155:3217:3289:3366:3434:3479:3554:3640:3774:3867:3987,115,TRUE,,
 130,Lazy Lightning,John Perry Barlow & Bob Weir (Grateful Dead),,,44:52:308:662:1118:2235:3151:3975,130,TRUE,,
 137,Looks Like Rain,John Perry Barlow & Bob Weir (Grateful Dead),,,766:2898:3944,137,TRUE,,
@@ -267,8 +267,8 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,core_jrad
 321,Don't Stop Me Now,Queen,,,,321,,,
 387,Everything in Its Right Place,Radiohead,,,,387,,,
 126,Killer Cars,Radiohead,,,859:2787,126,,,
-160,"Myxomatosis. (Judge, Jury & Executioner.)",Radiohead,,,,160,,,
-161,The National Anthem,Radiohead,,,,161,,,
+160,"Myxomatosis. (Judge, Jury & Executioner.)",Radiohead,,,861,160,,,
+161,The National Anthem,Radiohead,,,1715,161,,,
 308,Optimistic,Radiohead,,,,308,,,
 173,Paranoid Android,Radiohead,,,1573,173,,,
 227,The Bends,Radiohead,,,854:2215:2988,227,,,
@@ -345,7 +345,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,core_jrad
 255,Uncle John's Band,Robert Hunter & Jerry Garcia (Grateful Dead),UJB,,43:53:58:138:197:223:275:389:434:525:550:607:668:701:777:856:858:945:1021:1038:1089:1240:1342:1353:1438:1479:1481:1510:1582:1599:1601:1645:1647:1713:1782:1947:2082:2189:2338:2514:2620:2760:2772:2855:2869:2949:3117:3226:3275:3376:3578:3626:3649:3718:3831:4022,255,TRUE,,
 264,West LA Fadeaway,Robert Hunter & Jerry Garcia (Grateful Dead),,,358:1074:2208:2291:3052:3773,264,TRUE,,
 265,Wharf Rat,Robert Hunter & Jerry Garcia (Grateful Dead),,,298:638:1355:1678:1831:2301:3586:3760:3865:3950,265,TRUE,,
-40,Cats Under the Stars,Robert Hunter & Jerry Garcia (Jerry Garcia Band),Cats,,2318:2332:2410:2461:2524:2606:2649:2777:2796:2843:2901:2903:2905:3003:3065:3106:3210:3296:3385:3464:3590:3738:3789:3874:3970,40,TRUE,,
+40,Cats Under the Stars,Robert Hunter & Jerry Garcia (Jerry Garcia Band),Cats,,2318:2332:2410:2461:2524:2606:2649:2777:2796:2843:2901:2903:2905:3003:3065:3106:3210:3296:3385:3464:3590:3738:3789:3874:3970:4050,40,TRUE,,
 147,Mission in the Rain,Robert Hunter & Jerry Garcia (Jerry Garcia Band),,,217:703:1138:1840:2581:3335:3559:3749:3829,147,TRUE,,
 153,Mountains of the Moon,Robert Hunter & Jerry Garcia (Jerry Garcia Band),,,177,153,TRUE,,
 185,Reuben and Cherise,Robert Hunter & Jerry Garcia (Jerry Garcia Band),Ruben,,50:126:183:286:395:437:527:626:843:904:1025:1119:1132:1221:1341:1409:1465:1592:1655:1732:1865:1885:1985:2114:2147:2259:2305:2347:2375:2469:2487:2625:2720:2818:2825:2932:3017:3057:3118:3200:3338:3406:3466:3567:3655:3809:3844:3909:3989,185,TRUE,,
