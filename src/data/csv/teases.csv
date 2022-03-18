@@ -147,7 +147,7 @@ id,within,performance_id,song_name,notes,by,song_id
 579,Dancing in the Streets,758,L.A. Woman,,MB,129
 580,Dancing in the Streets,758,Rainy Day Women #12 & 35,,,355
 581,Truckin',763,Cryptical Envelopment,jam,,53
-582,Scarlet Begonias,764,National Anthem,,,161
+582,Scarlet Begonias,764,The National Anthem,,,161
 583,Scarlet Begonias,764,Bubblehouse,,MB,374
 375,St. Stephen,769,Tennessee Jed,,,221
 585,Uncle John's Band,777,Abduction Pose,,,375
@@ -156,7 +156,7 @@ id,within,performance_id,song_name,notes,by,song_id
 587,The Eleven,784,Terrapin Station,,,224
 588,Slipknot!,787,Terrapin Station,,,224
 19,Throwing Stones,788,Superstition,jam,,218
-589,Throwing Stones,788,National Anthem,,,161
+589,Throwing Stones,788,The National Anthem,,,161
 590,Going Down The Road Feeling Bad,804,Bird Song,,,22
 431,Brown-Eyed Women,808,He's Gone,,TH?,100
 432,Brown-Eyed Women,808,Brokedown Palace,,TH?,30
@@ -164,7 +164,7 @@ id,within,performance_id,song_name,notes,by,song_id
 434,Brown-Eyed Women,808,Eyes of the World,,TH,71
 435,The Music Never Stopped,811,Rumble,,MB/SM,353
 591,The Music Never Stopped,811,Fame,jam,,72
-592,Help on the Way,813,Myxomatosis,jam,,160
+592,Help on the Way,813,"Myxomatosis. (Judge, Jury & Executioner.)",jam,,160
 436,China Cat Sunflower,816,Cumberland Blues,,MB,55
 437,China Cat Sunflower,816,[unknown],,MB,288
 438,China Cat Sunflower,816,Terrapin Station,,TH,224
@@ -223,7 +223,7 @@ id,within,performance_id,song_name,notes,by,song_id
 43,Cassidy,1434,Part II: Let It Grow,,,277
 44,Throwing Stones,1440,Deal,,,60
 45,Throwing Stones,1440,Hey Bulldog,,,103
-46,Slipknot!,1453,Myxomatosis,,,160
+46,Slipknot!,1453,"Myxomatosis. (Judge, Jury & Executioner.)",,,160
 47,Scarlet Begonias,1488,Cassidy,,,38
 48,Cassidy,1489,Reuben and Cherise,,,185
 49,Fire on the Mountain,1490,Reuben and Cherise,,,185
@@ -658,7 +658,7 @@ id,within,performance_id,song_name,notes,by,song_id
 664,Good Lovin',1884,I Know You Rider,,TH,110
 665,Not Fade Away,1886,New Speedway Boogie,,TH,165
 666,Loser,1887,Reuben and Cherise,,,185
-667,I Know You Rider,1891,National Anthem,jam,,161
+667,I Know You Rider,1891,The National Anthem,jam,,161
 668,I Know You Rider,1891,Morning Dew,,TH,151
 669,Dancing in the Streets,1116,Cupid,,,384
 670,Shakedown Street,1121,Dancing in the Streets,,,57
@@ -1000,4 +1000,27 @@ id,within,performance_id,song_name,notes,by,song_id
 1008,New Minglewood Blues,2640,Throwing Stones,,TH,245
 1009,Part II: Let It Grow,2643,Boy,,TH,446
 1010,Part II: Let It Grow,2643,Black Dog,,,447
-1011,Part II: Let It Grow,2643,Slipknot!,band,,201
+1011,Part II: Let It Grow,2643,Slipknot!,,band,201
+1012,The Wheel,2619,Bathtub Gin,jam,,284
+1013,Uncle John's Band,2620,Poison,,JR,448
+1014,Uncle John's Band,2620,"Mama, I'm Coming Home",,TH,449
+1015,Truckin',2621,Chalk Dust Torture,,TH,450
+1016,Reuben and Cherise,2625,Divided Sky,,TH,451
+1017,Reuben and Cherise,2625,Let My Love Open the Door,,TH,452
+1018,Reuben and Cherise,2625,Paradise City,,band,453
+1019,Viola Lee Blues,2626,[unknown],,SM,288
+1020,Viola Lee Blues,2626,Cavern,,JR,454
+1021,Viola Lee Blues,2626,Foam,jam,,289
+1022,Jack Straw,2628,Llama,,JR,455
+1023,Jack Straw,2628,Reuben and Cherise,,,185
+1024,Jack Straw,2628,Going Down The Road Feeling Bad,,TH,84
+1025,Mississippi Halfstep Uptown Toodleloo,2602,Breakdown,,,344
+1026,Mississippi Halfstep Uptown Toodleloo,2602,Part II: Let It Grow,,TH,277
+1027,Good Lovin',2605,Iko Iko,,SM,111
+1028,Cats Under the Stars,2606,St. Stephen,,SM,211
+1029,Cats Under the Stars,2606,I Know You Rider,,TH,110
+1030,Cats Under the Stars,2606,Airbag,jam,,456
+1031,Cats Under the Stars,2606,Shortnin' Bread,,MB,315
+1032,I Know You Rider,2607,The Farmer in the Dell,,MB,457
+1033,I Know You Rider,2607,Going Down The Road Feeling Bad,,TH,84
+1034,I Know You Rider,2607,Airbag,jam,,456
