@@ -31,6 +31,7 @@ export default function About() {
     <p>Special Thanks to <a href="https://archive.org/" target="_blank" rel="noopener noreferrer">the Internet Archive</a> for preserving human knowledge and art, and the Taper Community for sharing their experiences!</p>
     <hr />
     <p>Thanks to <a href="http://www.deaddisc.com" target="_blank" rel="noopener noreferrer">the GD Family Discography</a> for detailed information about the songs played by the Grateful Dead.</p>
+    <p>Thanks to Alex Allan for the <a href="https://www.whitegum.com/intro.htm" target="_blank" rel="noopener noreferrer">Grateful Dead Lyric &amp; Song Finder</a>.</p>
     <p>Thanks to Aaron Donovan for <a href="https://www.whitegum.com/aaroness.htm" target="_blank" rel="noopener noreferrer">the walk-through of the Terrapin suite</a>.</p>
     <p>Thanks to Rannygazoo for <a href="https://rannygazoodead.blogspot.com/2015/05/some-problems-with-nomenclature-1973.html" target="_blank" rel="noopener noreferrer">the dive into "Stronger Than Dirt" &amp; "Milking the Turkey"</a>.</p>
     <hr />
