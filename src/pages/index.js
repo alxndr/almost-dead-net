@@ -23,9 +23,8 @@ export default function Index() {
       <h1>Links</h1>
       <ul>
         <li className="homepage__links-all">
-          all…
           <ul>
-            <li><Link to="/guests" title="All guests who have performed with JRAD" className="new">Guests</Link></li>
+            <li><Link to="/guests" title="All guests who have performed with JRAD">Guests</Link></li>
             <li><Link to="/songs" title="All songs performed or teased by JRAD">Songs & Teases</Link></li>
             <li><Link to="/venues" title="All venues where JRAD has performed">Venues</Link></li>
           </ul>
@@ -38,7 +37,7 @@ export default function Index() {
           </ul>
         </li>
         <li className="homepage__links-offsite">
-          elsewhere
+          offsite
           <ul>
             <li><a className="icon twitter" href="https://twitter.com/AlmostDeadNet" title="@AlmostDeadNet on Twitter" target="_blank"><kbd>@AlmostDeadNet</kbd></a></li>
             <li><a className="icon github" href="https://github.com/alxndr/almost-dead-net" title="code repo on GitHub" target="_blank"><kbd>alxndr/almost-dead-net</kbd></a></li>
