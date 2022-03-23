@@ -1035,10 +1035,10 @@ id,within,performance_id,song_name,notes,by,song_id
 1043,Sugaree,4078,The Eleven,,,229
 1044,Dancing in the Streets,4080,Boogie On Reggae Woman,,,459
 1045,Franklin's Tower,4081,Jessica,,,298
-1046,New Minglewood Blues,4087,Voodoo Chile,,,460
+1046,New Minglewood Blues,4087,Voodoo Chile,,SM,460
 1047,Morning Dew,4088,[unknown],,TH,288
-1048,Queen Jane Approximately,4090,Loose Lucy,,,138
-1049,Mississippi Halfstep Uptown Toodleloo,4091,In Memory of Elizabeth Reed,,,116
+1048,Queen Jane Approximately,4090,Loose Lucy,headfake,,138
+1049,Mississippi Halfstep Uptown Toodleloo,4091,In Memory of Elizabeth Reed,jam,,116
 1050,Mississippi Halfstep Uptown Toodleloo,4091,He's Gone,,,100
 1051,Mississippi Halfstep Uptown Toodleloo,4091,Cosmic Charlie,,,50
 1052,The Other One,4103,The Wheel,,,241
@@ -1048,3 +1048,8 @@ id,within,performance_id,song_name,notes,by,song_id
 1056,One More Saturday Night,4101,The Wheel,,,241
 1057,Estimated Prophet,4062,[unknown],Radiohead?? right before -> into Touch,JR??,288
 1058,Here Comes Sunshine,4067,[unknown],80s song??,guitar,288
+1059,Man Smart (Woman Smarter),4095,Lady With a Fan,fakeout,,128
+1060,Part II: Let It Grow,4099,Echoes,,,405
+1061,Part II: Let It Grow,4099,[unknown],before segue to Wheel,guitar,288
+1062,Truckin',4104,In the Meantime,,,117
+1063,Truckin',4104,[unknown],,,288
