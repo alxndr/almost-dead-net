@@ -90,16 +90,16 @@ describe('Home page', () => {
 
   describe('Song Finder', () => {
     it('is on the page', () => {
-      cy.get('.songfinder').contains('Find a song')
-      cy.get('.songfinder').find('input[placeholder*="song name"]')
+      cy.get('.homepage__songfinder').contains('Find a song')
+      cy.get('.homepage__songfinder').find('input[placeholder*="song name"]')
     })
 
     it.skip('shows results with link to Song page', () => {
-      cy.get('.songfinder').find('input[placeholder*="song name"]').type('Phish')
+      cy.get('.homepage__songfinder').find('input[placeholder*="song name"]').type('Phish')
       cy.wait(SEC) // eslint-disable-line cypress/no-unnecessary-waiting
-      cy.get('.songfinder').contains('Also Sprach Zarathustra') // TODO fails here
-      cy.get('.songfinder').contains('Foam')
-      cy.get('.songfinder').contains('Bathtub Gin').click()
+      cy.get('.homepage__songfinder').contains('Also Sprach Zarathustra') // TODO fails here
+      cy.get('.homepage__songfinder').contains('Foam')
+      cy.get('.homepage__songfinder').contains('Bathtub Gin').click()
       cy.log('navigating to Song page')
       cy.wait(SEC) // eslint-disable-line cypress/no-unnecessary-waiting
       cy.get('main').contains('within Shakedown Street')
