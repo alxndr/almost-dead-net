@@ -16,6 +16,6 @@ describe('All Songs page', () => {
   it('lists teases', () => {
     cy.get('main').contains('Songs Teased')
     cy.get('main').contains('"Rumble" Link Wray')
-    cy.get('main').contains('"Flight of the Bumblebee" Rimsky-Korsakov')
+    cy.get('main').contains('"Flight of the Bumblebee" Nikolai Rimsky-Korsakov')
   })
 })
