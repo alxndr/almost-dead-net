@@ -9,7 +9,7 @@ import {pluralize} from '../helpers/string_helpers'
 import './venue.css'
 
 export default function Venue({data}) {
-  const {venuesCsv: venue, allShowsCsv: {nodes: shows}} = data
+  const {VenuesCsv: venue, allShowsCsv: {nodes: shows}} = data
   if (!venue) {
     return false
   }
@@ -23,7 +23,7 @@ export default function Venue({data}) {
     <ul>
       {shows.map((show) =>
         <li>
-          <Link to={`/show/${show.id}`}>{show.date}</Link>
+          <Link to={`/show/${show.jsonId}`}>{show.date}</Link>
         </li>
       )}
     </ul>
@@ -32,14 +32,14 @@ export default function Venue({data}) {
 
 export const query = graphql`
   query($venueId: String!) {
-    venuesCsv(id: {eq: $venueId}) {
-      id
+    VenuesCsv(jsonId: {eq: $venueId}) {
+      jsonId
       location
       name
     }
-    allShowsCsv(filter: {venue_id: {eq: $venueId}}) {
+    allShowsCsv(filter: {venue: {jsonId: {eq: $venueId}}}) {
       nodes {
-        id
+        jsonId
         date
       }
     }

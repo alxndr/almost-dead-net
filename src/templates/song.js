@@ -34,8 +34,8 @@ const SET_MAPPING = { // 'show table column name' to 'human readable set name'
 
 function ListItem({date, performancesOnDate, previousUrl}) {
   const [{performanceData, showData, variation, whichSet}, ...otherPerformances] = performancesOnDate
-  const url = `/show/${showData.id}`
-  return <li key={performanceData.id} className={classnames({highlight: previousUrl?.endsWith(url)})}>
+  const url = `/show/${showData.jsonId}`
+  return <li key={performanceData.jsonId} className={classnames({highlight: previousUrl?.endsWith(url)})}>
     <Link to={url}>
       {date}
       {' '}
@@ -52,19 +52,19 @@ function ListItem({date, performancesOnDate, previousUrl}) {
 
 export const query = graphql`
   query SongTemplate($songId: String!) {
-    songsCsv(id: {eq: $songId}) {
-      id
+    SongsCsv(jsonId: {eq: $songId}) {
+      jsonId
       author
       suite
       title
       performances
     }
     allSetsCsv { nodes {
-      id
+      jsonId
       setlist
     } }
     allShowsCsv { nodes {
-      id
+      jsonId
       date
       encore1
       encore2
@@ -74,18 +74,18 @@ export const query = graphql`
       soundcheck
     } }
     allSongperformancesCsv { nodes {
-      id
+      jsonId
     } }
-    allTeasesCsv(filter: {song_id: {eq: $songId}}) { nodes {
-      id
-      performance_id
+    allTeasesCsv(filter: {song: {jsonId: {eq: $songId}}}) { nodes {
+      jsonId
+      performance { jsonId }
       within
     } }
   }
 `
 
 export default function Song({data: {
-  songsCsv: song,
+  SongsCsv: song,
   allSetsCsv: {nodes: allSets},
   allShowsCsv: {nodes: allShows},
   allSongperformancesCsv: {nodes: allSongPerformances},
@@ -105,9 +105,9 @@ export default function Song({data: {
     throw new Error('No data for allSets')
   }
   const performancesGroupedByDate = allSongPerformances
-    .filter((songPerformance) => onlyThisSongsPerformanceIds.includes(songPerformance.id))
+    .filter((songPerformance) => onlyThisSongsPerformanceIds.includes(songPerformance.jsonId))
     .map((performanceData) => {
-      const performanceIdStr = performanceData.id.toString()
+      const performanceIdStr = performanceData.jsonId.toString()
       const setData = find((set) =>
         set.setlist && set.setlist.toString().split(':').includes(performanceIdStr)
       )(allSets)
@@ -119,12 +119,12 @@ export default function Song({data: {
         show.set3,
         show.encore1,
         show.encore2
-      ].includes(setData.id))(allShows)
+      ].includes(setData.jsonId))(allShows)
       if (!showData) {
         console.warn('Missing showData...', {song, performanceData, setData})
       }
       const whichSet = Object.entries(SET_MAPPING)
-        .find(([col_name, readable_name]) => showData[col_name] === setData.id)[1]
+        .find(([col_name, readable_name]) => showData[col_name] === setData.jsonId)[1]
       const variation = performanceData.variation
         ? `(${performanceData.variation})`
         : false
@@ -175,14 +175,14 @@ export default function Song({data: {
       <h2>Teases</h2>
       <ul>
         {teases.map(teaseData => {
-          const performanceData = find(propEq('id', teaseData.performance_id))(allSongPerformances)
-          if (!(performanceData?.id)) {
+          const performanceData = find(propEq('jsonId', teaseData.performance.jsonId))(allSongPerformances)
+          if (!(performanceData?.jsonId)) {
             return false
           }
-          const setData = find((set) => set.setlist.toString().split(':').includes(performanceData.id.toString()))(allSets)
-          const showData = find((show) => [show.soundcheck, show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(allShows)
-          const url = `/show/${showData.id}`
-          return <li key={teaseData.id} className={classnames({highlight: location?.state?.previousUrl?.endsWith(url)})}>
+          const setData = find((set) => set.setlist.toString().split(':').includes(performanceData.jsonId.toString()))(allSets)
+          const showData = find((show) => [show.soundcheck, show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.jsonId))(allShows)
+          const url = `/show/${showData.jsonId}`
+          return <li key={teaseData.jsonId} className={classnames({highlight: location?.state?.previousUrl?.endsWith(url)})}>
             <Link to={url}>{showData.date} within {teaseData.within} {performanceData.variation && `(${performanceData.variation})`}</Link>
           </li>
         })}

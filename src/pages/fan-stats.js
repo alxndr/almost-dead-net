@@ -26,17 +26,14 @@ const PageTitle = ({username}) => {
   return 'Fan Stats'
 }
 
-const venueURL = ({id, name}) => `/venue/${id}-${slugify(name)}`
-
-const extractSongId = ({song_id}) => song_id
-const uniqBySongId = uniqBy(extractSongId)
+const venueURL = ({jsonId, name}) => `/venue/${jsonId}-${slugify(name)}`
 
 const FanStats = ({user, shows, songs, teases}) => {
   const showIDs = Object.keys(shows)
   const songIDs = Object.keys(songs)
   const venues = uniq(Object.values(shows).map(({venue}) => venue))
-  const uniqSongs = uniqBySongId(songs)
-  const uniqTeases = uniqBySongId(teases)
+  const uniqSongs = uniqBy(({jsonId}) => jsonId)(songs)
+  const uniqTeases = uniqBy(({song:{jsonId}}) => songId)(teases)
 
   return <>
     <p><LinkedUser username={user.username} /> was at {pluralize(showIDs.length, 'show')} across {pluralize(venues.length, 'venue')}, with {pluralize(uniqSongs.length, 'different song')} performed, and {pluralize(uniqTeases.length, 'unique song')} teased!</p>
@@ -55,17 +52,17 @@ const FanStats = ({user, shows, songs, teases}) => {
 
     <h2>Venues</h2>
     <ol>
-      {venues.map((venue) => <li key={venue.id}><Link to={venueURL(venue)}>{venue.name}, {venue.location}</Link></li>)}
+      {venues.map((venue) => <li key={venue.jsonId}><Link to={venueURL(venue)}>{venue.name}, {venue.location}</Link></li>)}
     </ol>
 
     <h2>Songs</h2>
     <ol>
-      {uniqSongs.map(({song_id, song_name}) => <li key={song_id}><Link to={`/song/${song_id}`}>{song_name}</Link></li>)}
+      {uniqSongs.map(({song, song_name}) => <li key={song.jsonId}><Link to={`/song/${song.jsonId}`}>{song_name}</Link></li>)}
     </ol>
 
     <h2>Teases</h2>
     <ol>
-      {uniqTeases.map((tease) => <li key={tease.song_id}><Link to={`/song/${tease.song_id}`}>{tease.song_name}</Link></li>)}
+      {uniqTeases.map((tease) => <li key={tease.song.jsonId}><Link to={`/song/${tease.song.jsonId}`}>{tease.song_name}</Link></li>)}
     </ol>
   </>
 }
@@ -112,11 +109,11 @@ export default function FanStatsPage({location, data}) {
       const shows = userJson.shows.reduce((showsData, showDateString) => {
         const showDMYYYY = showDateString.split(' ')[0].replace(/\/(\d{2})$/, '/20$1')
         const showData = findShow(propEq('date', showDMYYYY))
-        if (showData?.id) {
-          const venue = findVenue(propEq('id', showData.venue_id))
+        if (showData?.jsonId) {
+          const venue = findVenue(propEq('jsonId', showData.venue?.jsonId))
           return {
             ...showsData,
-            [showData.id]: {
+            [showData.jsonId]: {
               ...showData,
               venue,
             },
@@ -129,17 +126,18 @@ export default function FanStatsPage({location, data}) {
       const perfsData = Object.values(shows)
         .reduce((setIDs, show) => setIDs.concat([show.set1, show.set2, show.set3, show.encore1, show.encore2].filter((id) => Boolean(id))), [])
         // now it is an array of set ID strings...
-        .map((setID) => findSet(propEq('id', setID)))
+        .map((setID) => findSet(propEq('jsonId', setID)))
         .flatMap(({setlist}) => String(setlist).split(':'))
         // now it is an array of songperf ID strings
-        .map((songPerfID) => findSongPerf(propEq('id', songPerfID)))
+        .map((songPerfID) => findSongPerf(propEq('jsonId', songPerfID)))
         // now it is an array of songperf objs
       setPerfsData(perfsData)
 
       const teasesData = perfsData
-        .flatMap((perf) => filterTeases(propEq('performance_id', perf.id)))
+        .flatMap((perf) => filterTeases(propEq('performance.jsonId', perf.jsonId))) // TODO might not be working
       setTeasesData(teasesData)
-    }
+    } else
+      global.console.debug('no userJson', usernameRaw)
   }, [userJson])
 
   return <Layout className="fanstatspage">
@@ -162,12 +160,9 @@ export const query = graphql`
   query FanStatsData {
     allVenuesCsv {
       nodes {
-        id
-        name
+        jsonId
         location
-        capacity
-        generic_name
-        tagname
+        name
       }
     }
     allShowsCsv {
@@ -176,37 +171,40 @@ export const query = graphql`
         encore1
         encore2
         event
-        id
+        jsonId
         links
         notes
-        num_recordings
         set1
         set2
         set3
         soundcheck
         tagline
-        venue_id
+        venue {
+          jsonId
+          location
+          name
+        }
       }
     }
     allSetsCsv {
       nodes {
-        id
+        jsonId
         setlist
       }
     }
     allSongperformancesCsv {
       nodes {
-        id
-        set_id
-        song_id
+        jsonId
+        set { jsonId }
+        song { jsonId }
         song_name
       }
     }
     allTeasesCsv {
       nodes {
-        id
-        performance_id
-        song_id
+        jsonId
+        performance { jsonId }
+        song { jsonId }
         song_name
       }
     }

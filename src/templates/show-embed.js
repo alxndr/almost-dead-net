@@ -25,12 +25,12 @@ function Set({show, which, isEncore = false, sets, performances, segues, teases,
   if (!setId || !sets || !sets.length) {
     return false
   }
-  const setData = find(propEq('id', setId))(sets)
+  const setData = find(propEq('jsonId', setId))(sets)
   const setlist = normalizeSetlist(setData.setlist)
   return <Setlist
     isEncore={isEncore}
     which={which}
-    key={setData.id}
+    key={setData.jsonId}
     setlist={setlist}
     performances={performances}
     segues={segues}
@@ -40,8 +40,7 @@ function Set({show, which, isEncore = false, sets, performances, segues, teases,
 }
 
 export default function ShowEmbed({data: {
-  showsCsv: show,
-  venuesCsv: venue,
+  ShowsCsv: show,
   allSetsCsv: {nodes: sets},
   allGuestsCsv: {nodes: guests},
   allSongperformancesCsv: {nodes: performances},
@@ -74,7 +73,7 @@ export default function ShowEmbed({data: {
       shows: guestData.shows.split(':')
     }
   }).filter((data) => !!data)
-  const showGuests = filter(where({shows: includes(show.id)}))(guestsWithSplitShows)
+  const showGuests = filter(where({shows: includes(show.jsonId)}))(guestsWithSplitShows)
 
   const setlist = [1, 2, 3].reduce((setlists, which) => setlists.concat(
     <Set which={which} show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} />
@@ -83,7 +82,7 @@ export default function ShowEmbed({data: {
     <Set isEncore={true} which={which} show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} />
   ), [])
 
-  const showName = `${event ? `${event}, ` : ``}${venue.name} (${venue.location})`
+  const showName = `${event ? `${event}, ` : ``}${show.venue.name} (${show.venue.location})`
 
   return <div className="showpage-embed">
     <SEO
@@ -91,14 +90,14 @@ export default function ShowEmbed({data: {
       description={`Joe Russo's Almost Dead${showGuests.length ? ` with ${showGuests.map((guest) => guest.name).join(' and ')}` : ''} at ${showName} ${date} — setlist, teases, recordings`}
     />
     <Helmet>
-      <link rel="canonical" href={`/show/${show.id}`} />
+      <link rel="canonical" href={`/show/${show.jsonId}`} />
     </Helmet>
     <h1 className="showpage__pagetitle">
       <span className="showpage__pagetitle--date">{date}</span>
       {' '}
       {event && <span className="showpage__pagetitle--event">{event}</span>}
       {' '}
-      {venue && <span className="showpage__pagetitle--venue">{venue.name}, {venue.location}</span>}
+      {show.venue && <span className="showpage__pagetitle--venue">{show.venue.name}, {show.venue.location}</span>}
     </h1>
     <section className="showpage__setlist">
       <Guests guests={showGuests} />
@@ -111,43 +110,36 @@ export default function ShowEmbed({data: {
 }
 
 export const query = graphql`
-  query($showId: String!, $venueId: String!) {
-    showsCsv(id: {eq: $showId}) {
-      id
+  query($showId: String!) {
+    ShowsCsv(jsonId: {eq: $showId}) {
+      jsonId
       date
-      encore1
-      encore2
       event
       notes
-      set1
-      set2
-      set3
-    }
-    venuesCsv(id: {eq: $venueId}) {
-      id
-      location
-      name
+      venue {
+        jsonId
+        location
+        name
+      }
     }
     allSetsCsv { nodes {
-      id
+      jsonId
       setlist
     }}
     allGuestsCsv { nodes {
-      id
+      jsonId
       name
       shows
     } }
     allSongperformancesCsv { nodes {
-      id
-      next_perfid
+      jsonId
       notes
-      prev_perfid
       showgap
-      song_id
+      song { jsonId }
       variation
     } }
     allSongsCsv { nodes {
-      id
+      jsonId
       author
       core_gd
       core_jrad
@@ -155,13 +147,13 @@ export const query = graphql`
       title
     } }
     allSeguesCsv { nodes {
-      id
+      jsonId
       from_perf_id
       type
     } }
     allTeasesCsv { nodes {
-      id
-      performance_id
+      jsonId
+      performance { jsonId }
       song_name
     } }
   }

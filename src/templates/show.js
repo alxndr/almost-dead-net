@@ -49,13 +49,13 @@ function Set({show, shows, which, isEncore = false, sets, performances, segues, 
   if (!setId || !(sets?.length)) {
     return false
   }
-  const setData = find(propEq('id', setId))(sets)
+  const setData = find(propEq('jsonId', setId))(sets)
   const setlist = normalizeSetlist(setData.setlist)
   return <Setlist
-    showId={show.id}
+    showId={show.jsonId}
     isEncore={isEncore}
     which={which}
-    key={setData.id}
+    key={setData.jsonId}
     setlist={setlist}
     performances={performances}
     segues={segues}
@@ -82,9 +82,9 @@ const recordingsSorter = objectSorterFactory('type', [
 ])
 
 export const query = graphql`
-  query($showId: String!, $venueId: String!) {
-    showsCsv(id: {eq: $showId}) {
-      id
+  query($showId: String!) {
+    ShowsCsv(jsonId: {eq: $showId}) {
+      jsonId
       date
       encore1
       encore2
@@ -96,14 +96,14 @@ export const query = graphql`
       set3
       soundcheck
       tagline
-    }
-    venuesCsv(id: {eq: $venueId}) {
-      id
-      location
-      name
+      venue {
+        jsonId
+        location
+        name
+      }
     }
     allShowsCsv { nodes {
-      id
+      jsonId
       encore1
       encore2
       set1
@@ -112,26 +112,26 @@ export const query = graphql`
       soundcheck
     }}
     allSetsCsv { nodes {
-      id
+      jsonId
       setlist
     }}
     allGuestsCsv { nodes {
-      id
+      jsonId
       name
       shows
     } }
     allSongperformancesCsv { nodes {
-      id
+      jsonId
       next_perfid
       notes
       prev_perfid
       showgap
-      song_id
+      song { jsonId }
       variation
       stars
     } }
     allSongsCsv { nodes {
-      id
+      jsonId
       author
       core_gd
       core_jrad
@@ -139,17 +139,16 @@ export const query = graphql`
       title
     } }
     allSeguesCsv { nodes {
-      id
-      from_perf_id
+      jsonId
       type
     } }
     allTeasesCsv { nodes {
-      id
-      performance_id
+      jsonId
+      performance { jsonId }
       song_name
     } }
-    allRecordingsCsv(filter: {show: {eq: $showId}}) { nodes {
-      id
+    allRecordingsCsv(filter: {show: {jsonId: {eq: $showId}}}) { nodes {
+      jsonId
       type
       url
     } }
@@ -159,8 +158,7 @@ export const query = graphql`
 export default function Show({
   pageContext: {lastShowId},
   data: {
-    showsCsv: show,
-    venuesCsv: venue,
+    ShowsCsv: show,
     allSetsCsv: {nodes: sets},
     allGuestsCsv: {nodes: guests},
     allRecordingsCsv: {nodes: recordings},
@@ -197,7 +195,7 @@ export default function Show({
       shows: guestData.shows.split(':')
     }
   }).filter((data) => !!data)
-  const showGuests = filter(where({shows: includes(show.id)}))(guestsWithSplitShows)
+  const showGuests = filter(where({shows: includes(show.jsonId)}))(guestsWithSplitShows)
 
   const showRecordings = sort(recordingsSorter)(recordings)
 
@@ -236,10 +234,10 @@ export default function Show({
   const guestsDescription = showGuests.length
     ? `with ${showGuests.map(({name}) => name).join(' and ')}`
     : ''
-  const seoDescription = `Setlist and recordings of Joe Russo's Almost Dead ${guestsDescription} ${date} at ${event ? `${event}, ` : ``}${venue.name} (${venue.location}) including song segues, teases, and show notes`
+  const seoDescription = `Setlist and recordings of Joe Russo's Almost Dead ${guestsDescription} ${date} at ${event ? `${event}, ` : ``}${show.venue.name} (${show.venue.location}) including song segues, teases, and show notes`
   const imageSrcs = filter(isImage)(linksArray)
 
-  const showId = Number(show.id)
+  const showId = Number(show.jsonId)
   return <Layout className="showpage">
     <SEO
       title={`JRAD ${tagline}`}
@@ -254,10 +252,10 @@ export default function Show({
       {' '}
       {event && <span className="showpage__pagetitle--event">{event}</span>}
       {' '}
-      {venue && <span className="showpage__pagetitle--venue">
+      {show.venue && <span className="showpage__pagetitle--venue">
         {' '}
-        <Link to={`/venue/${venue.id}-${slugify(venue.name)}`}>
-          {venue.name}, {venue.location}
+        <Link to={`/venue/${show.venue.jsonId}-${slugify(show.venue.name)}`}>
+          {show.venue.name}, {show.venue.location}
         </Link>
       </span>}
     </h1>
