@@ -128,14 +128,14 @@ function VenuesComponent({data: {
         return <li key={cleanLocale}>
           <h3>{LOCALE_MAPPING[cleanLocale] ? LOCALE_MAPPING[cleanLocale] : cleanLocale}</h3>
           <ul>
-            {venueDataList.sort(sortVenues).map((venueData) => <li key={venueData.jsonId}>
+            {venueDataList.sort(sortVenues).map((venueData) => <li key={venueData.id}>
               <h4>
-                <Link to={`/venue/${venueData.jsonId}-${slugify(venueData.name)}`}>
+                <Link to={`/venue/${venueData.id}-${slugify(venueData.name)}`}>
                   {venueData.location}:
                   {' '}
                   {venueData.name}
                   {' '}
-                  ({pluralize(allShows.filter((showData) => showData.venue?.jsonId === venueData.jsonId).length, 'show')})
+                  ({pluralize(allShows.filter((showData) => showData.venue?.id == venuedata.id).length, 'show')})
                 </Link>
               </h4>
             </li>)}
@@ -151,11 +151,11 @@ const VenuesPage = () => <StaticQuery
   query={graphql`
     query VenuesPageData {
       allShowsCsv { nodes {
-        jsonId
-        venue { jsonId }
+        id
+        venue { id }
       } }
       allVenuesCsv { nodes {
-        jsonId
+        id
         name
         location
       } }

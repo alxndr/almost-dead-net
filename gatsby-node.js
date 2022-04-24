@@ -9,32 +9,32 @@ const VenueTemplate = require.resolve('./src/templates/venue.js')
 exports.createSchemaCustomization = ({actions: {createTypes}}) => {
   // n.b. this is GraphQL "SDL"
   createTypes(`
-    type GuestsCsv implements Node {
+    type guestsCsv implements Node {
       instrument: String
-      jsonId: String
+      id: String
       name: String
       shows: String
       sortVal: String
     }
-    type RecordingsCsv implements Node {
-      jsonId: String
-      show: ShowsCsv @link
+    type recordingsCsv implements Node {
+      id: String
+      show: showsCsv @link(from: "show" by: "id")
       type: String
       url: String
     }
-    type SeguesCsv implements Node {
-      jsonId: String
+    type seguesCsv implements Node {
+      id: String
     }
-    type SetsCsv implements Node {
-      jsonId: String
+    type setsCsv implements Node {
+      id: String
       setlist: String
     }
-    type ShowsCsv implements Node {
+    type showsCsv implements Node {
       date: Date
       encore1: Int
       encore2: Int
       event: String
-      jsonId: String
+      id: String
       links: String
       notes: String
       num_recordings: Int
@@ -43,40 +43,40 @@ exports.createSchemaCustomization = ({actions: {createTypes}}) => {
       set3: Int
       soundcheck: Int
       tagline: String
-      venue: VenuesCsv @link(from: "venue_id" by: "jsonId")
+      venue: venuesCsv @link(from: "venue_id" by: "id")
     }
-    type SongperformancesCsv implements Node {
-      jsonId: String
-      set: SetsCsv @link(from: "set_id" by: "jsonId")
-      show: ShowsCsv @link(from: "show_id" by: "jsonId")
-      song: SongsCsv @link(from: "song_id" by: "jsonId")
+    type songperformancesCsv implements Node {
+      id: String
+      set: setsCsv @link(from: "set_id" by: "id")
+      show: showsCsv @link(from: "show_id" by: "id")
+      song: songsCsv @link(from: "song_id" by: "id")
       song_name: String
       stars: Int
       variation: String
     }
-    type SongsCsv implements Node {
+    type songsCsv implements Node {
       author: String
       core_jrad: Boolean
       core_gd: Boolean
       cover_gd: Boolean
-      jsonId: String
+      id: String
       performances: String
-      performed: [SongperformancesCsv]
+      performed: [songperformancesCsv]
       suite: String
-      teased: [TeasesCsv]
+      teased: [teasesCsv]
       title: String
     }
-    type TeasesCsv implements Node {
+    type teasesCsv implements Node {
       by: String
-      jsonId: String
+      id: String
       notes: String
-      performance: SongperformancesCsv @link(from: "performance_id" by: "jsonId")
-      song: SongsCsv @link(from: "song_id" by: "jsonId")
+      performance: songperformancesCsv @link(from: "performance_id" by: "id")
+      song: songsCsv @link(from: "song_id" by: "id")
       song_name: String
       within: String
     }
-    type VenuesCsv implements Node {
-      jsonId: String
+    type venuesCsv implements Node {
+      id: String
       location: String
       name: String
     }
@@ -88,22 +88,22 @@ exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => 
     query Everything {
       allVenuesCsv {
         nodes {
-          jsonId
+          id
           name
         }
       }
       allSongsCsv {
         nodes {
-          jsonId
+          id
           title
         }
       }
       allShowsCsv {
         nodes {
           date
-          jsonId
+          id
           venue {
-            jsonId
+            id
           }
         }
       }
@@ -121,21 +121,21 @@ exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => 
     global.console.log('venues missing name...........')
     global.console.log(result)
   }
-  const lastShowId = Math.max(...shows.map(show => show.jsonId)) // TODO pull this with graphql
+  const lastShowId = Math.max(...shows.map(show => show.id)) // TODO pull this with graphql
 
   shows.filter(show => show.date).forEach((show) => {
     createPage({
-      path: `/show/embed/${show.jsonId}`,
+      path: `/show/embed/${show.id}`,
       component: ShowEmbedTemplate,
       context: {
-        showId: show.jsonId,
+        showId: show.id,
       },
     }); // semicolon needed to separate the two calls to `createPage`
     createPage({
-      path: `/show/${show.jsonId}`,
+      path: `/show/${show.id}`,
       component: ShowTemplate,
       context: {
-        showId: show.jsonId,
+        showId: show.id,
         lastShowId,
       }
     })
@@ -143,20 +143,20 @@ exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => 
 
   songs.filter(song => song.title && song.title !== '[unknown]').forEach((song) => {
     createPage({
-      path: `/song/${song.jsonId}`,
+      path: `/song/${song.id}`,
       component: SongTemplate,
       context: {
-        songId: song.jsonId,
+        songId: song.id,
       }
     })
   })
 
   venues.filter(venue => venue.name).forEach(venue => {
     createPage({
-      path: `/venue/${venue.jsonId}-${slugify(venue.name)}`,
+      path: `/venue/${venue.id}-${slugify(venue.name)}`,
       component: VenueTemplate,
       context: {
-        venueId: venue.jsonId,
+        venueId: venue.id,
       },
     })
   })

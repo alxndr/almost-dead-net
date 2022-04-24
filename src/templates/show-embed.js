@@ -25,12 +25,12 @@ function Set({show, which, isEncore = false, sets, performances, segues, teases,
   if (!setId || !sets || !sets.length) {
     return false
   }
-  const setData = find(propEq('jsonId', setId))(sets)
+  const setData = find(propEq('id', setId))(sets)
   const setlist = normalizeSetlist(setData.setlist)
   return <Setlist
     isEncore={isEncore}
     which={which}
-    key={setData.jsonId}
+    key={setData.id}
     setlist={setlist}
     performances={performances}
     segues={segues}
@@ -40,7 +40,7 @@ function Set({show, which, isEncore = false, sets, performances, segues, teases,
 }
 
 export default function ShowEmbed({data: {
-  ShowsCsv: show,
+  showsCsv: show,
   allSetsCsv: {nodes: sets},
   allGuestsCsv: {nodes: guests},
   allSongperformancesCsv: {nodes: performances},
@@ -73,7 +73,7 @@ export default function ShowEmbed({data: {
       shows: guestData.shows.split(':')
     }
   }).filter((data) => !!data)
-  const showGuests = filter(where({shows: includes(show.jsonId)}))(guestsWithSplitShows)
+  const showGuests = filter(where({shows: includes(show.id)}))(guestsWithSplitShows)
 
   const setlist = [1, 2, 3].reduce((setlists, which) => setlists.concat(
     <Set which={which} show={show} performances={performances} sets={sets} segues={segues} teases={teases} songs={songs} />
@@ -90,7 +90,7 @@ export default function ShowEmbed({data: {
       description={`Joe Russo's Almost Dead${showGuests.length ? ` with ${showGuests.map((guest) => guest.name).join(' and ')}` : ''} at ${showName} ${date} — setlist, teases, recordings`}
     />
     <Helmet>
-      <link rel="canonical" href={`/show/${show.jsonId}`} />
+      <link rel="canonical" href={`/show/${show.id}`} />
     </Helmet>
     <h1 className="showpage__pagetitle">
       <span className="showpage__pagetitle--date">{date}</span>
@@ -111,35 +111,35 @@ export default function ShowEmbed({data: {
 
 export const query = graphql`
   query($showId: String!) {
-    ShowsCsv(jsonId: {eq: $showId}) {
-      jsonId
+    showsCsv(id: {eq: $showId}) {
+      id
       date
       event
       notes
       venue {
-        jsonId
+        id
         location
         name
       }
     }
     allSetsCsv { nodes {
-      jsonId
+      id
       setlist
     }}
     allGuestsCsv { nodes {
-      jsonId
+      id
       name
       shows
     } }
     allSongperformancesCsv { nodes {
-      jsonId
+      id
       notes
       showgap
-      song { jsonId }
+      song { id }
       variation
     } }
     allSongsCsv { nodes {
-      jsonId
+      id
       author
       core_gd
       core_jrad
@@ -147,13 +147,13 @@ export const query = graphql`
       title
     } }
     allSeguesCsv { nodes {
-      jsonId
+      id
       from_perf_id
       type
     } }
     allTeasesCsv { nodes {
-      jsonId
-      performance { jsonId }
+      id
+      performance { id }
       song_name
     } }
   }

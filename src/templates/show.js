@@ -49,13 +49,13 @@ function Set({show, shows, which, isEncore = false, sets, performances, segues, 
   if (!setId || !(sets?.length)) {
     return false
   }
-  const setData = find(propEq('jsonId', setId))(sets)
+  const setData = find(propEq('id', setId))(sets)
   const setlist = normalizeSetlist(setData.setlist)
   return <Setlist
-    showId={show.jsonId}
+    showId={show.id}
     isEncore={isEncore}
     which={which}
-    key={setData.jsonId}
+    key={setData.id}
     setlist={setlist}
     performances={performances}
     segues={segues}
@@ -83,8 +83,8 @@ const recordingsSorter = objectSorterFactory('type', [
 
 export const query = graphql`
   query($showId: String!) {
-    ShowsCsv(jsonId: {eq: $showId}) {
-      jsonId
+    showsCsv(id: {eq: $showId}) {
+      id
       date
       encore1
       encore2
@@ -97,13 +97,13 @@ export const query = graphql`
       soundcheck
       tagline
       venue {
-        jsonId
+        id
         location
         name
       }
     }
     allShowsCsv { nodes {
-      jsonId
+      id
       encore1
       encore2
       set1
@@ -112,26 +112,26 @@ export const query = graphql`
       soundcheck
     }}
     allSetsCsv { nodes {
-      jsonId
+      id
       setlist
     }}
     allGuestsCsv { nodes {
-      jsonId
+      id
       name
       shows
     } }
     allSongperformancesCsv { nodes {
-      jsonId
+      id
       next_perfid
       notes
       prev_perfid
       showgap
-      song { jsonId }
+      song { id }
       variation
       stars
     } }
     allSongsCsv { nodes {
-      jsonId
+      id
       author
       core_gd
       core_jrad
@@ -139,16 +139,16 @@ export const query = graphql`
       title
     } }
     allSeguesCsv { nodes {
-      jsonId
+      id
       type
     } }
     allTeasesCsv { nodes {
-      jsonId
-      performance { jsonId }
+      id
+      performance { id }
       song_name
     } }
-    allRecordingsCsv(filter: {show: {jsonId: {eq: $showId}}}) { nodes {
-      jsonId
+    allRecordingsCsv(filter: {show: {id: {eq: $showId}}}) { nodes {
+      id
       type
       url
     } }
@@ -158,7 +158,7 @@ export const query = graphql`
 export default function Show({
   pageContext: {lastShowId},
   data: {
-    ShowsCsv: show,
+    showsCsv: show,
     allSetsCsv: {nodes: sets},
     allGuestsCsv: {nodes: guests},
     allRecordingsCsv: {nodes: recordings},
@@ -195,7 +195,7 @@ export default function Show({
       shows: guestData.shows.split(':')
     }
   }).filter((data) => !!data)
-  const showGuests = filter(where({shows: includes(show.jsonId)}))(guestsWithSplitShows)
+  const showGuests = filter(where({shows: includes(show.id)}))(guestsWithSplitShows)
 
   const showRecordings = sort(recordingsSorter)(recordings)
 
@@ -237,7 +237,7 @@ export default function Show({
   const seoDescription = `Setlist and recordings of Joe Russo's Almost Dead ${guestsDescription} ${date} at ${event ? `${event}, ` : ``}${show.venue.name} (${show.venue.location}) including song segues, teases, and show notes`
   const imageSrcs = filter(isImage)(linksArray)
 
-  const showId = Number(show.jsonId)
+  const showId = Number(show.id)
   return <Layout className="showpage">
     <SEO
       title={`JRAD ${tagline}`}
@@ -254,7 +254,7 @@ export default function Show({
       {' '}
       {show.venue && <span className="showpage__pagetitle--venue">
         {' '}
-        <Link to={`/venue/${show.venue.jsonId}-${slugify(show.venue.name)}`}>
+        <Link to={`/venue/${show.venue.id}-${slugify(show.venue.name)}`}>
           {show.venue.name}, {show.venue.location}
         </Link>
       </span>}

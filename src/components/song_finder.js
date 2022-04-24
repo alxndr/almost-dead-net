@@ -21,7 +21,7 @@ export default function SongFinder() {
   } = useStaticQuery(graphql`
     query SongFinderData {
       allSongsCsv { nodes {
-        jsonId
+        id
         author
         title
       } }
@@ -74,7 +74,7 @@ export default function SongFinder() {
         value,
       }}
       onSuggestionSelected={(_, {suggestion}) => {
-        window.location = `/song/${suggestion.jsonId}`
+        window.location = `/song/${suggestion.id}`
       }}
     />
   </div>

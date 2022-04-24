@@ -28,8 +28,8 @@ function PerformanceCount({perfIds, text = 'performed'}) {
     </span>
   </Tooltip>
 }
-function SongLink({data: {author, core_gd, cover_gd, jsonId, suite, title, performances, ...rest}}) {
-  return <Link to={`/song/${jsonId}`}>
+function SongLink({data: {author, core_gd, cover_gd, id, suite, title, performances, ...rest}}) {
+  return <Link to={`/song/${id}`}>
     "{title}"
     {' '}
     {suite && <span className="song__suite">{suite} suite</span>}
@@ -69,7 +69,7 @@ function SongsComponent({data: {allSongsCsv: {nodes: songs}, allTeasesCsv: {node
         .map(songData =>
           songData.sections
           ? songData.title
-          : <li key={songData.jsonId}>
+          : <li key={songData.id}>
             <SongLink data={songData} />
             <PerformanceCount perfIds={String(songData.performances).split(':')} />
           </li>
@@ -80,11 +80,11 @@ function SongsComponent({data: {allSongsCsv: {nodes: songs}, allTeasesCsv: {node
     <ul className="songs__list">
       {sortBy((prop('title')))(teasedSongs)
           .map(songData => {
-            const teaseRows = filter(propEq('song.jsonId', songData.jsonId))(teases)
-            const teasePerfIds = teaseRows.map((row) => row.performance.jsonId)
+            const teaseRows = filter(propEq('song.id', songData.id))(teases)
+            const teasePerfIds = teaseRows.map((row) => row.performance.id)
             return songData.sections
                 ? songData.title
-                : <li key={songData.jsonId}>
+                : <li key={songData.id}>
                   <SongLink data={songData} />
                   <PerformanceCount text="teased" perfIds={teasePerfIds} />
                 </li>
@@ -102,17 +102,17 @@ const SongsPage = () => <StaticQuery
         core_gd
         core_jrad
         cover_gd
-        jsonId
+        id
         performances
         suite
         title
       } }
       allTeasesCsv { nodes {
-        jsonId
+        id
         by
         notes
-        performance { jsonId }
-        song { jsonId }
+        performance { id }
+        song { id }
         song_name
         within
       } }
