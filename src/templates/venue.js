@@ -31,14 +31,13 @@ export default function Venue({data}) {
 }
 
 export const query = graphql`
-  query($venueId: String!) {
+  query VenuePage($venueId: String!) {
     venuesCsv(id: {eq: $venueId}) {
       id
     }
-    allShowsCsv(where: {venue: {id: {eq: $venueId}}}) {
+    allShowsCsv(filter: {venue: {id: {eq: $venueId}}}) {
       nodes {
         id
-        venue { id }
       }
     }
   }

@@ -83,7 +83,7 @@ const recordingsSorter = objectSorterFactory('type', [
 
 export const query = graphql`
   query($showId: String!) {
-    showsCsv(fields: {id: {eq: $showId}}) {
+    showsCsv(id: {eq: $showId}) {
       id
       notes
     }
@@ -99,7 +99,6 @@ export const query = graphql`
     allSongperformancesCsv { nodes {
       id
       notes
-      song { id }
       stars
       variation
     } }
@@ -116,9 +115,6 @@ export const query = graphql`
     } }
     allRecordingsCsv(filter: {show: {id: {eq: $showId}}}) { nodes {
       id
-      show { id }
-      type
-      url
     } }
   }
 `

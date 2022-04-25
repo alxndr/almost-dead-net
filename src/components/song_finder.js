@@ -22,8 +22,6 @@ export default function SongFinder() {
     query SongFinderData {
       allSongsCsv { nodes {
         id
-        author
-        title
       } }
     }
   `)

@@ -56,9 +56,8 @@ export const query = graphql`
     allSetsCsv { nodes { id } }
     allShowsCsv { nodes { id } }
     allSongperformancesCsv { nodes { id } }
-    teasesCsv(filter: {song: {id: {eq: $songId}}}) { nodes {
+    allTeasesCsv(filter: {song: {id: {eq: $songId}}}) { nodes {
       id
-      song { id }
       within
     } }
   }
