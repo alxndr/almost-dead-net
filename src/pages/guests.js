@@ -64,17 +64,8 @@ function GuestsComponent({data: {
 const GuestsPage = () => <StaticQuery
   query={graphql`
     query GuestsPageData {
-      allShowsCsv { nodes {
-        id
-        tagline
-      } }
-      allGuestsCsv { nodes {
-        id
-        instrument
-        name
-        shows
-        sortVal
-      } }
+      allShowsCsv { nodes { id } }
+      allGuestsCsv { nodes { id } }
     }
   `}
   render={(data) => <GuestsComponent data={data} />}

@@ -85,28 +85,10 @@ exports.createSchemaCustomization = ({actions: {createTypes}}) => {
 
 exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => {
   const result = await graphql(`
-    query Everything {
-      allVenuesCsv {
-        nodes {
-          id
-          name
-        }
-      }
-      allSongsCsv {
-        nodes {
-          id
-          title
-        }
-      }
-      allShowsCsv {
-        nodes {
-          date
-          id
-          venue {
-            id
-          }
-        }
-      }
+    query AllPagesQuery {
+      allVenuesCsv { nodes { id } }
+      allSongsCsv { nodes { id } }
+      allShowsCsv { nodes { id } }
     }
   `)
   const {
@@ -117,29 +99,29 @@ exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => 
   global.console.log(shows[0])
   global.console.log(songs[0])
   global.console.log(venues[0])
-  if (!venues.find(v => v.name)) {
+  if (!venues.find(v => v.id)) {
     global.console.log('venues missing name...........')
     global.console.log(result)
   }
   const lastShowId = Math.max(...shows.map(show => show.id)) // TODO pull this with graphql
 
-  shows.filter(show => show.date).forEach((show) => {
-    createPage({
-      path: `/show/embed/${show.id}`,
-      component: ShowEmbedTemplate,
-      context: {
-        showId: show.id,
-      },
-    }); // semicolon needed to separate the two calls to `createPage`
-    createPage({
-      path: `/show/${show.id}`,
-      component: ShowTemplate,
-      context: {
-        showId: show.id,
-        lastShowId,
-      }
-    })
-  })
+  // shows.filter(show => show.date).forEach((show) => {
+  //   createPage({
+  //     path: `/show/embed/${show.id}`,
+  //     component: ShowEmbedTemplate,
+  //     context: {
+  //       showId: show.id,
+  //     },
+  //   }); // semicolon needed to separate the two calls to `createPage`
+  //   createPage({
+  //     path: `/show/${show.id}`,
+  //     component: ShowTemplate,
+  //     context: {
+  //       showId: show.id,
+  //       lastShowId,
+  //     }
+  //   })
+  // })
 
   songs.filter(song => song.title && song.title !== '[unknown]').forEach((song) => {
     createPage({
@@ -151,14 +133,13 @@ exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => 
     })
   })
 
-  venues.filter(venue => venue.name).forEach(venue => {
-    createPage({
-      path: `/venue/${venue.id}-${slugify(venue.name)}`,
-      component: VenueTemplate,
-      context: {
-        venueId: venue.id,
-      },
-    })
-  })
+  // venues.filter(venue => venue.name).forEach(venue => {
+  //   createPage({
+  //     path: `/venue/${venue.id}-${slugify(venue.name)}`,
+  //     component: VenueTemplate,
+  //     context: {
+  //       venueId: venue.jsonId,
+  //     },
+  //   })
+  // })
 }
-

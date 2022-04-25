@@ -113,38 +113,22 @@ export const query = graphql`
   query($showId: String!) {
     showsCsv(id: {eq: $showId}) {
       id
-      date
-      event
       notes
-      venue {
-        id
-        location
-        name
-      }
     }
     allSetsCsv { nodes {
       id
-      setlist
     }}
     allGuestsCsv { nodes {
       id
-      name
-      shows
     } }
     allSongperformancesCsv { nodes {
       id
       notes
       showgap
-      song { id }
       variation
     } }
     allSongsCsv { nodes {
       id
-      author
-      core_gd
-      core_jrad
-      suite
-      title
     } }
     allSeguesCsv { nodes {
       id
@@ -153,7 +137,6 @@ export const query = graphql`
     } }
     allTeasesCsv { nodes {
       id
-      performance { id }
       song_name
     } }
   }

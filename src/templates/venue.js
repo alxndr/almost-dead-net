@@ -34,13 +34,11 @@ export const query = graphql`
   query($venueId: String!) {
     venuesCsv(id: {eq: $venueId}) {
       id
-      location
-      name
     }
-    allShowsCsv(filter: {venue: {id: {eq: $venueId}}}) {
+    allShowsCsv(where: {venue: {id: {eq: $venueId}}}) {
       nodes {
         id
-        date
+        venue { id }
       }
     }
   }

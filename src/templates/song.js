@@ -52,33 +52,13 @@ function ListItem({date, performancesOnDate, previousUrl}) {
 
 export const query = graphql`
   query SongTemplate($songId: String!) {
-    songsCsv(id: {eq: $songId}) {
+    songsCsv(id: {eq: $songId}) { id }
+    allSetsCsv { nodes { id } }
+    allShowsCsv { nodes { id } }
+    allSongperformancesCsv { nodes { id } }
+    teasesCsv(filter: {song: {id: {eq: $songId}}}) { nodes {
       id
-      author
-      suite
-      title
-      performances
-    }
-    allSetsCsv { nodes {
-      id
-      setlist
-    } }
-    allShowsCsv { nodes {
-      id
-      date
-      encore1
-      encore2
-      set1
-      set2
-      set3
-      soundcheck
-    } }
-    allSongperformancesCsv { nodes {
-      id
-    } }
-    allTeasesCsv(filter: {song: {id: {eq: $songId}}}) { nodes {
-      id
-      performance { id }
+      song { id }
       within
     } }
   }

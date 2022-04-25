@@ -161,50 +161,27 @@ export const query = graphql`
     allVenuesCsv {
       nodes {
         id
-        location
-        name
       }
     }
     allShowsCsv {
       nodes {
-        date
-        encore1
-        encore2
-        event
         id
-        links
-        notes
-        set1
-        set2
-        set3
-        soundcheck
-        tagline
-        venue {
-          id
-          location
-          name
-        }
       }
     }
     allSetsCsv {
       nodes {
         id
-        setlist
       }
     }
     allSongperformancesCsv {
       nodes {
         id
-        set { id }
-        song { id }
         song_name
       }
     }
     allTeasesCsv {
       nodes {
         id
-        performance { id }
-        song { id }
         song_name
       }
     }

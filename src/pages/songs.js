@@ -98,23 +98,12 @@ const SongsPage = () => <StaticQuery
   query={graphql`
     query SongsPageData {
       allSongsCsv { nodes {
-        author
-        core_gd
-        core_jrad
-        cover_gd
         id
-        performances
-        suite
-        title
       } }
       allTeasesCsv { nodes {
         id
-        by
         notes
-        performance { id }
-        song { id }
         song_name
-        within
       } }
     }
   `}

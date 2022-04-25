@@ -83,60 +83,28 @@ const recordingsSorter = objectSorterFactory('type', [
 
 export const query = graphql`
   query($showId: String!) {
-    showsCsv(id: {eq: $showId}) {
+    showsCsv(fields: {id: {eq: $showId}}) {
       id
-      date
-      encore1
-      encore2
-      event
-      links
       notes
-      set1
-      set2
-      set3
-      soundcheck
-      tagline
-      venue {
-        id
-        location
-        name
-      }
     }
     allShowsCsv { nodes {
       id
-      encore1
-      encore2
-      set1
-      set2
-      set3
-      soundcheck
     }}
     allSetsCsv { nodes {
       id
-      setlist
     }}
     allGuestsCsv { nodes {
       id
-      name
-      shows
     } }
     allSongperformancesCsv { nodes {
       id
-      next_perfid
       notes
-      prev_perfid
-      showgap
       song { id }
-      variation
       stars
+      variation
     } }
     allSongsCsv { nodes {
       id
-      author
-      core_gd
-      core_jrad
-      suite
-      title
     } }
     allSeguesCsv { nodes {
       id
@@ -144,11 +112,11 @@ export const query = graphql`
     } }
     allTeasesCsv { nodes {
       id
-      performance { id }
       song_name
     } }
     allRecordingsCsv(filter: {show: {id: {eq: $showId}}}) { nodes {
       id
+      show { id }
       type
       url
     } }

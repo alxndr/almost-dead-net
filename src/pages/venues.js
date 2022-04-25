@@ -152,12 +152,9 @@ const VenuesPage = () => <StaticQuery
     query VenuesPageData {
       allShowsCsv { nodes {
         id
-        venue { id }
       } }
       allVenuesCsv { nodes {
         id
-        name
-        location
       } }
     }
   `}

@@ -20,17 +20,8 @@ export default function ShowsByYear() {
     allVenuesCsv: {nodes: rawVenues},
   } = useStaticQuery(graphql`
     query ShowsByYearData {
-      allShowsCsv { nodes {
-        date
-        event
-        id
-        venue { id }
-      } }
-      allVenuesCsv { nodes {
-        id
-        location
-        name
-      } }
+      allShowsCsv { nodes { id } }
+      allVenuesCsv { nodes { id } }
     }
   `)
   const showsWithVenueByYear = rawShows.reduce((acc, show) => {
