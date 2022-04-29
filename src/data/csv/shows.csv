@@ -61,7 +61,7 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 60,1/2/2016,76,156,157,,158,,,supported by the Speakeasy Jazz Babies,,https://i.imgur.com/qWccEen.jpg,2,1/2/16 @ Capitol Theatre (Port Chester),
 61,1/6/2016,46,159,,,160,,,,Jam Cruise,,2,1/6/16 @ Jam Cruise,
 62,1/7/2016,47,161,,,,,,,Jam Cruise,,3,1/7/16 @ Jam Cruise,
-63,2/10/2016,99,162,163,,164,,,no Dave (who was on tour with Ween),,https://i.imgur.com/XQLj0Yc.jpg,2,2/10/16 @ ,TRUE
+63,2/10/2016,99,162,163,,164,,,no Dave (who was on tour with Ween),,https://i.imgur.com/XQLj0Yc.jpg,2,2/10/16 @ The 9:30 Club,TRUE
 64,2/11/2016,66,165,166,,167,,,no Dave (who was on tour with Ween),,https://i.imgur.com/XQLj0Yc.jpg,3,2/11/16 @ College Street Music Hall,
 65,2/12/2016,78,168,169,,170,,,no Dave (who was on tour with Ween),,https://i.imgur.com/XQLj0Yc.jpg,1,2/12/16 @ Lupo's Heartbreak Hotel,
 66,2/13/2016,77,171,172,,173,,,no Dave (who was on tour with Ween); one of Joe's drum mics died during first set resulting in clicks/pops coming through the venue sound,,https://i.imgur.com/XQLj0Yc.jpg,1,2/13/16 @ State Theater (Portland),TRUE
@@ -167,7 +167,7 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 166,9/8/2018,9,465,,,,,,,Waterloo Music Festival,https://i.imgur.com/uAuj7Gx.png,2,9/8/18 @ Waterloo Music Festival,
 167,10/18/2018,97,466,467,,468,,,,,https://i.imgur.com/3ET3TlG.png,2,10/18/18 @ Tower Theater,
 168,10/19/2018,97,469,470,,471,,,,,https://i.imgur.com/3ET3TlG.png,2,10/19/18 @ Tower Theater,
-169,10/20/2018,98,472,473,,474,,,,,https://i.imgur.com/3ET3TlG.png,4,10/20/18 @ ,
+169,10/20/2018,98,472,473,,474,,,,,https://i.imgur.com/3ET3TlG.png,4,10/20/18 @ The Anthem,
 170,10/25/2018,51,475,476,,477,,,pre-party for Hulaween,Hulaween,https://i.imgur.com/eWwOJeP.jpg,1,10/25/18 @ Hulaween,TRUE
 171,11/8/2018,52,478,479,,480,,,,,https://i.imgur.com/nCUh9JE.jpg,3,11/8/18 @ The Wiltern,
 172,11/9/2018,52,481,482,,483,,,John Mayer sat in for second set and encore,,https://i.imgur.com/nCUh9JE.jpg,7,11/9/18 @ The Wiltern,
