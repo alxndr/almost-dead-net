@@ -157,6 +157,7 @@ export default function Song({data: {
   const performances = performancesSorted
     .map(([date, performancesOnDate]) =>
       <ListItem
+        key={date}
         date={date}
         performancesOnDate={performancesOnDate}
         previousUrl={location?.state?.previousUrl}

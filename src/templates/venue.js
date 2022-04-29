@@ -22,7 +22,7 @@ export default function Venue({data}) {
     <h2>{pluralize(shows.length, 'Show')}</h2>
     <ul>
       {shows.map((show) =>
-        <li>
+        <li key={show.id}>
           <Link to={`/show/${show.id}`}>{show.date}</Link>
         </li>
       )}
