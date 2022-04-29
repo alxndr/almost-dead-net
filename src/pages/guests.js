@@ -42,7 +42,7 @@ function GuestsComponent({data: {
       {guests.map((guest) =>
         <li key={guest.id}>
           <h2>{guest.name}
-            <span class="guest-instrument">{guest.instrument}</span>
+            <span className="guest-instrument">{guest.instrument}</span>
           </h2>
           <ul>
             {guest.shows.split(':').sort(sortNumerical).map((showId) => {
