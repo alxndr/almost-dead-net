@@ -17,15 +17,15 @@ const Layout = ({children, className = ''}) => {
         {children}
       </main>
 
-      <footer id="site-footer" className="footer">
-        <Link className="footer__logo" id="logo-bottom" to="/" title="return to home page">
-          <img src="https://i.imgur.com/q5cBEHG.png" alt="Almost-Dead.net" />
+      <footer>
+        <Link className="footer__home" to="/" title="return to home page">
+          Home
         </Link>
         <Link className="footer__link-about" to="/about" title="About the Site">
           About
         </Link>
-        <a href="https://lot.almost-dead.net" className="footer__logo-lot" title="JRAD Forum — The Lot">
-          The Lot (forum)
+        <a href="https://lot.almost-dead.net" className="footer__forum" title="JRAD Forum — The Lot">
+          Forum
         </a>
       </footer>
 

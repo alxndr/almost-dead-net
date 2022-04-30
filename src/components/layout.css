@@ -74,16 +74,13 @@ code {
   text-shadow: 0 0 0.3em slateblue;
 }
 
-footer.footer {
+footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1em;
   box-shadow: 0 5px 20px 10px #000000dd;
 }
-.footer img {
-  max-height: 3em;
-}
-.footer .footer__link-about {
+footer .footer__link-about {
   white-space: nowrap;
 }
