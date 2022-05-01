@@ -323,7 +323,7 @@ id,within,performance_id,song_name,notes,by,song_id
 90,Stuck Inside of Mobile With the Memphis Blues Again,2771,Hell In A Bucket,,,97
 91,Stuck Inside of Mobile With the Memphis Blues Again,2771,Estimated Prophet,,,69
 92,Uncle John's Band,2772,Help on the Way,,,98
-389,Eyes of the World,2773,Eyes of the World,,,71
+389,Eyes of the World,2773,Eyes of the World,TODO investigate,,71
 93,Estimated Prophet,2774,Part II: Let It Grow,,,277
 94,Estimated Prophet,2774,Terrapin Station,,,224
 95,Estimated Prophet,2774,Another Brick in the Wall,,,297
@@ -1053,3 +1053,9 @@ id,within,performance_id,song_name,notes,by,song_id
 1061,Part II: Let It Grow,4099,[unknown],before segue to Wheel,guitar,288
 1062,Truckin',4104,In the Meantime,,,117
 1063,Truckin',4104,[unknown],,,288
+1064,Cats Under the Stars,4151,One More Saturday Night,,,169
+1065,Cumberland Blues,4152,[unknown],silly ditty towards end of opening jam right before lyrics start,,288
+1066,Cumberland Blues,4152,Walk Like an Egyptian,??,MB,302
+1067,Cumberland Blues,4152,Foam,,MB,289
+1068,Cumberland Blues,4152,Shortnin' Bread,??,MB,315
+1069,Cumberland Blues,4152,[unknown],several in 'guitar duel',SM/TH,288

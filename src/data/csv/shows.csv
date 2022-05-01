@@ -147,7 +147,7 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 146,3/15/2018,94,394,,,395,,,,,https://i.imgur.com/klcrbTr.jpg,7,3/15/18 @ Landmark Theatre (Syracuse),
 147,3/16/2018,1,396,397,,398,,,,,https://i.imgur.com/klcrbTr.jpg,2,3/16/18 @ Palace Theatre,
 148,3/17/2018,77,399,400,,401,,,,,https://i.imgur.com/klcrbTr.jpg,3,3/17/18 @ State Theater (Portland),
-149,4/21/2018,101,402,403,,,,,,Sweetwater 420 Festival,https://i.imgur.com/pzsSD2T.jpg,2,4/21/18 @ Sweetwater 420 Festival,
+149,4/21/2018,101,402,403,,,,,,SweetWater 420 Fest,https://i.imgur.com/pzsSD2T.jpg,2,4/21/18 @ SweetWater 420 Fest,
 150,5/4/2018,67,404,405,,406,,,,,https://i.imgur.com/kvzOyoc.jpg,3,5/4/18 @ Mardi Gras World Ballroom,
 151,5/5/2018,67,407,408,,409,,,,,https://i.imgur.com/kvzOyoc.jpg,3,5/5/18 @ Mardi Gras World Ballroom,
 152,6/16/2018,42,410,,,,,,,Founders Fest,https://i.imgur.com/nZBXMkE.jpg,1,6/16/18 @ Founders Fest,
@@ -187,7 +187,7 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 186,3/14/2019,66,523,524,,525,,,,,https://i.imgur.com/BEDuVoF.png,2,3/14/19 @ College Street Music Hall,TRUE
 187,3/15/2019,62,526,527,,528,,,"before the encore, Joe dedicated Box of Rain to Phil Lesh on his 79th birthday",,https://i.imgur.com/BEDuVoF.png,4,3/15/19 @ The Wellmont Theater,TRUE
 188,3/16/2019,33,529,530,,531,,,,,https://i.imgur.com/BEDuVoF.png,3,3/16/19 @ Masonic Cleveland Auditorium,TRUE
-189,4/19/2019,101,532,,,,,,,Sweetwater 420 Festival,https://i.imgur.com/tRZ2YA9.jpg,2,4/19/19 @ Sweetwater 420 Festival,
+189,4/19/2019,101,532,,,,,,,SweetWater 420 Fest,https://i.imgur.com/tRZ2YA9.jpg,2,4/19/19 @ SweetWater 420 Fest,
 190,4/26/2019,67,533,534,,535,,,Jeff Chimenti sat in for a couple songs at the end of each set & encore,,https://i.imgur.com/EFCXJul.jpg,2,4/26/19 @ Mardi Gras World Ballroom,
 191,4/27/2019,67,536,537,,538,,,,,https://i.imgur.com/EFCXJul.jpg,2,4/27/19 @ Mardi Gras World Ballroom,
 192,5/31/2019,39,539,540,,541,,,,,https://i.imgur.com/BYaE0tS.png,4,5/31/19 @ Cuthbert Amphitheater,
@@ -250,5 +250,5 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 249,3/20/2022,92,673,674,,675,,,no Dave,,https://www.reddit.com/r/JRADs/comments/tizzdf/setlist_32022_the_pageant_st_louis_mo/,0,3/20/22 @ The Pageant,
 250,4/28/2022,110,676,677,,678,,,first show in Kentucky; no Dave,,https://i.imgur.com/spkQWiz.jpg https://www.reddit.com/r/JRADs/comments/ueb7z7/42822_newport_ky_setlist_thread/,1,4/28/22 @ Promowest Pavilion at Ovation,
 251,4/29/2022,111,679,680,,681,,,no Dave,,https://i.imgur.com/spkQWiz.jpg,0,4/29/22 @ Rabbit Rabbit,
-252,4/30/2022,111,682,683,,684,,,,,https://i.imgur.com/spkQWiz.jpg,0,4/30/22 @ Rabbit Rabbit,
-253,5/1/2022,101,,,,,,,,,,0,5/1/22 @ SweetWater 420 Fest,
+252,4/30/2022,111,682,683,,684,,,no Dave,,https://i.imgur.com/spkQWiz.jpg,0,4/30/22 @ Rabbit Rabbit,
+253,5/1/2022,101,685,,,,,,no Dave,SweetWater 420 Fest,,0,5/1/22 @ SweetWater 420 Fest,
