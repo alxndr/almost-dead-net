@@ -6,6 +6,8 @@ describe('Fan Stats page', () => {
   })
 
   it('renders', () => {
+    cy.title()
+      .should('include', 'Fan Stats')
     cy.get('@main')
       .contains('Fan Stats')
     cy.get('@main')
@@ -31,7 +33,7 @@ describe('Fan Stats page', () => {
         .contains('21 shows')
         .contains('10 venues')
         .contains('130 different songs')
-        .contains('94 unique songs')
+        .contains('95 unique songs')
     })
   })
 
