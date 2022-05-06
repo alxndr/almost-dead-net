@@ -760,9 +760,9 @@ id,within,performance_id,song_name,notes,by,song_id
 766,Throwing Stones,3777,Fire on the Mountain,,,75
 768,Lady With a Fan,3779,My Pet Goat,,,157
 769,Stuck Inside of Mobile With the Memphis Blues Again,3772,Slipknot!,,,201
-770,Sugar Magnolia,3786,I Need A Miracle,,,115
+770,Sunshine Daydream,4163,I Need A Miracle,,,115
 771,West LA Fadeaway,3773,[unknown],estimated?? terrapin?? in the intro...,,288
-772,Bird Song,3775,Stuck Inside of Mobile With the Memphis Blues Again,,,212
+772,Bird Song,3775,Stuck Inside of Mobile With the Memphis Blues Again,,TH/JR/band,212
 773,Bird Song,3775,Friend of the Devil,,,79
 774,Throwing Stones,3777,Unbroken Chain,,,254
 775,Man Smart (Woman Smarter),3720,Reveille,,SM,407
@@ -1084,3 +1084,24 @@ id,within,performance_id,song_name,notes,by,song_id
 1092,Truckin',4003,Norwegian Wood,,SM,311
 1093,Truckin',4003,Part II: Let It Grow,,TH,277
 1094,Truckin',4003,Stella Blue,,TH,209
+1095,Terrapin,848,Halloween Theme – Main Title,,MB,91
+1096,Terrapin Transit,849,Halloween Theme – Main Title,,MB,91
+1097,Tough Mama,1363,I Know You Rider,transition,MB,110
+1098,Tough Mama,1363,Fat Mama,,MB,385
+1099,Good Lovin',1364,Dark Star,jam,TH/MB/band,59
+1100,Dark Star,1365,I Can't Turn You Loose,jam,,35
+1101,Lady With a Fan,1472,My Pet Goat,jam,,157
+1102,Lady With a Fan,1809,[unknown],between Other One jam and return to Lady,,288
+1103,The Other One,2737,Truckin',reprise??,,251
+1104,China Cat Sunflower,3062,Going Down The Road Feeling Bad,,TH,84
+1105,Eyes of the World,3058,Reuben and Cherise,,,band
+1106,I Know You Rider,3063,Morning Dew,,TH,151
+1107,Cats Under the Stars,3065,Entrance of the Gladiators,,OB,464
+1108,Cats Under the Stars,3065,Sneaking Sally Through the Alley,,TH,465
+1109,Terrapin Station,3069,Scarlet Begonias,,MB,195
+1110,At a Siding,3783,[unknown],jazz standard?? before vocals,MB,288
+1111,Stuck Inside of Mobile With the Memphis Blues Again,3772,West LA Fadeaway,,SM,264
+1112,Stuck Inside of Mobile With the Memphis Blues Again,3772,Unbroken Chain,,band,254
+1113,Throwing Stones,3777,[unknown],Spanish Jam' noted in matrix notes,SM,288
+1114,Throwing Stones,3777,Respect Yourself,,MB,466
+1115,Dark Star,3787,Dreams,,TH,411
