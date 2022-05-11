@@ -2422,25 +2422,19 @@ id,song_id,song_name,id_rhs,variation,notes,set_id,show_id,prev_perfid,prev_show
 2575,175,Peggy-O,2575,,,,,,,,,,,
 2576,176,Playing in the Band,2576,,,,,,,,,,,
 2577,118,"It's All Over Now, Baby Blue",2577,,,,,,,,,,,
-2578,232,The Last Time,2578,,,,,,,,,,,
-2579,196,Shakedown Street,2579,,,,,,,,,,,
-2580,235,The Other One,2580,,,,,,,,,,,
-2581,147,Mission in the Rain,2581,,,,,,,,,,,
-2582,51,Crazy Fingers,2582,,,,,,,,,,,
-2583,232,The Last Time,2583,reprise,,,,,,,,,,
-2584,251,Truckin',2584,,,,,,,,,,,
-2585,235,The Other One,2585,jam,,,,,,,,,,
-2586,121,Jam,2586,,,,,,,,,,,
-2587,201,Slipknot!,2587,intro/outro?,,,,,,,,,,
-2588,76,Foolish Heart,2588,,,,,,,,,,,
-2589,98,Help on the Way,2589,,,,,,,,,,,
-2590,201,Slipknot!,2590,,,,,,,,,,,
-2591,115,I Need A Miracle,2591,,,,,,,,,,,
-2592,78,Franklin's Tower,2592,,,,,,,,,,,
+2578,232,The Last Time,2578,,,,,,,,,,,8'26
+2579,196,Shakedown Street,2579,unfinished,,,,,,,,,1,22'53
+2580,235,The Other One,2580,,,,,,,,,,1,21'55
+2581,147,Mission in the Rain,2581,,,,,,,,,,,12'54
+2582,51,Crazy Fingers,2582,,with Marco & Tom duo,,,,,,,,,14'29
+2584,251,Truckin',2584,,,,,,,,,,,16'
+2588,76,Foolish Heart,2588,,extended intro jam,,,,,,,,,18'42?
+2589,98,Help on the Way,2589,,,,,,,,,,,4'58
+2590,201,Slipknot!,2590,,with Marco solo and Dave solo,,,,,,,,1,10'39
+2591,115,I Need A Miracle,2591,,,,,,,,,,,9'10
+2592,78,Franklin's Tower,2592,,,,,,,,,,,11'11
 2593,245,Throwing Stones,2593,,,,,,,,,,,
 2598,169,One More Saturday Night,2598,,,,,,,,,,,
-2599,26,Blues for Allah,2599,jam,,,,,,,,,,
-2600,235,The Other One,2600,reprise,,,,,,,,,,
 2602,148,Mississippi Halfstep Uptown Toodleloo,2602,,,,,,,,,,,
 2603,69,Estimated Prophet,2603,,,,,,,,,,,
 2604,44,China Cat Sunflower,2604,,,,,,,,,,,
@@ -3965,3 +3959,4 @@ id,song_id,song_name,id_rhs,variation,notes,set_id,show_id,prev_perfid,prev_show
 4161,128,Lady With a Fan,,,,,,,,,,,,
 4162,224,Terrapin Station,,,,,,,,,,,,
 4163,217,Sunshine Daydream,,,,,,,,,,,,
+4164,43,Chest Fever,,,,,,,,,,,,
