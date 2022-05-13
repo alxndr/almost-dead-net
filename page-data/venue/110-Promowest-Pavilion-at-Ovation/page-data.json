@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/110-Promowest-Pavilion-at-Ovation",
-    "result": {"data":{"venuesCsv":{"id":"110","location":"Newport, KY","name":"Promowest Pavilion at Ovation"},"allShowsCsv":{"nodes":[{"id":"250","date":"4/28/2022"}]}},"pageContext":{"venueId":"110"}},
+    "result": {"data":{"venuesCsv":{"id":"110","location":"Newport, KY","name":"Promowest Pavilion at Ovation"},"allShowsCsv":{"nodes":[{"id":"251","date":"4/28/2022"}]}},"pageContext":{"venueId":"110"}},
     "staticQueryHashes": ["3000541721"]}

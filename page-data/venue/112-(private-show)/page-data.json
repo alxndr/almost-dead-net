@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/112-(private-show)",
+    "result": {"data":{"venuesCsv":{"id":"112","location":"Washington, CT","name":"(private show)"},"allShowsCsv":{"nodes":[{"id":"237","date":"10/1/2021"}]}},"pageContext":{"venueId":"112"}},
+    "staticQueryHashes": ["3000541721"]}

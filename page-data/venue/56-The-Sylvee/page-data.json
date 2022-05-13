@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/56-The-Sylvee",
-    "result": {"data":{"venuesCsv":{"id":"56","location":"Madison, WI","name":"The Sylvee"},"allShowsCsv":{"nodes":[{"id":"181","date":"2/17/2019"},{"id":"246","date":"3/17/2022"},{"id":"247","date":"3/18/2022"}]}},"pageContext":{"venueId":"56"}},
+    "result": {"data":{"venuesCsv":{"id":"56","location":"Madison, WI","name":"The Sylvee"},"allShowsCsv":{"nodes":[{"id":"181","date":"2/17/2019"},{"id":"247","date":"3/17/2022"},{"id":"248","date":"3/18/2022"}]}},"pageContext":{"venueId":"56"}},
     "staticQueryHashes": ["3000541721"]}
