@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/102-Westville-Music-Bowl",
-    "result": {"data":{"venuesCsv":{"id":"102","location":"New Haven, CT","name":"Westville Music Bowl"},"allShowsCsv":{"nodes":[{"id":"219","date":"5/28/2021"},{"id":"220","date":"5/29/2021"},{"id":"221","date":"5/30/2021"},{"id":"222","date":"6/18/2021"},{"id":"223","date":"6/19/2021"},{"id":"224","date":"6/20/2021"},{"id":"226","date":"7/30/2021"},{"id":"227","date":"7/31/2021"},{"id":"234","date":"9/4/2021"}]}},"pageContext":{"venueId":"102"}},
+    "result": {"data":{"venuesCsv":{"id":"102","location":"New Haven, CT","name":"Westville Music Bowl"},"allShowsCsv":{"nodes":[{"id":"219","date":"5/28/2021"},{"id":"220","date":"5/29/2021"},{"id":"221","date":"5/30/2021"},{"id":"222","date":"6/18/2021"},{"id":"223","date":"6/19/2021"},{"id":"224","date":"6/20/2021"},{"id":"226","date":"7/30/2021"},{"id":"227","date":"7/31/2021"},{"id":"234","date":"9/4/2021"},{"id":"255","date":"5/14/2022"}]}},"pageContext":{"venueId":"102"}},
     "staticQueryHashes": ["3000541721"]}
