@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/113-Seaside-Lagoon",
+    "result": {"data":{"venuesCsv":{"id":"113","location":"Redondo Beach, CA","name":"Seaside Lagoon"},"allShowsCsv":{"nodes":[{"id":"256","date":"5/15/2022"}]}},"pageContext":{"venueId":"113"}},
+    "staticQueryHashes": ["3000541721"]}
