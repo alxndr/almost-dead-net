@@ -92,6 +92,7 @@ id,name,location,capacity,generic name,tagname
 81,Plumas County Fairgrounds,"Quincy, CA",,,Plumas County Fairgrounds
 82,The Ritz,"Raleigh, NC",1400,,The Ritz
 83,Marymoor Amphitheater,"Redmond, WA",5000,,Marymoor Amphitheater
+113,Seaside Lagoon,"Redondo Beach, CA",,,Seaside Lagoon
 84,Electric Forest,"Rothbury, MI",,,Electric Forest
 85,The Depot,"Salt Lake City, UT",1200,,The Depot
 86,House of Blues,"San Diego, CA",1500,TRUE,House of Blues (San Diego)
@@ -108,6 +109,6 @@ id,name,location,capacity,generic name,tagname
 95,Telluride Town Park,"Telluride, CO",,,Telluride Town Park
 96,Legend Valley,"Thornville, OH",,,Legend Valley
 97,Tower Theater,"Upper Darby, PA",3119,,Tower Theater
+112,(private show),"Washington, CT",,,(private show)
 99,The 9:30 Club,"Washington, DC",1200,,The 9:30 Club
 98,The Anthem,"Washington, DC",,,The Anthem
-112,(private show),"Washington, CT",,,(private show)
