@@ -7,6 +7,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.tableofcontents {
+  display: inline-block;
+  margin: 0 1em 1em;
+  padding: 1em;
+  font-size: 0.8em;
+  background: #dabbff;
+  border-radius: 1em;
+}
+.tableofcontents * {
+  margin-bottom: 0.1em;
+}
+.tableofcontents p {
+  font-weight: bold;
+  text-align: center;
+}
+
 h1 {
   margin-top: 0;
   font-family: 'Shadows Into Light', fantasy;

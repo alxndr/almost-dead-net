@@ -9,6 +9,9 @@ import SEO from '../components/seo'
 
 import './songs.css'
 
+const removeCertainSongs = ({title}) => title && !['[unknown]', 'Drums', 'Jam'].includes(title)
+const sortByTitle = sortBy(prop('title')) // TODO ignore "A", "The", etc
+
 function Author({name}) {
   if (!name || name === 'traditional') {
     return false
@@ -28,7 +31,7 @@ function PerformanceCount({perfIds, text = 'performed'}) {
     </span>
   </Tooltip>
 }
-function SongLink({data: {author, core_gd, cover_gd, id, suite, title, performances, ...rest}}) {
+function SongLink({data: {author, core_gd, cover_gd, id, suite, title, performances}}) {
   return <Link to={`/song/${id}`}>
     "{title}"
     {' '}
@@ -39,57 +42,71 @@ function SongLink({data: {author, core_gd, cover_gd, id, suite, title, performan
 }
 
 function SongsComponent({data: {allSongsCsv: {nodes: songs}, allTeasesCsv: {nodes: teases}}}) {
-  const songsClean = songs.filter(songData => songData.title && songData.title !== '[unknown]')
-  const groupedByPerformedVsTeased = groupBy(
+  const groupedByPerformed = groupBy(
     (songData) => Boolean(songData.performances),
-    songsClean
+    songs.filter(removeCertainSongs)
   )
-  const performedSongs = groupedByPerformedVsTeased[true]
-  const teasedSongs = groupedByPerformedVsTeased[false]
-
-  //const groupedBySuite = groupBy(
-  //  (songData) => songData.suite,
-  //  performedSongs
-  //)
-  //const songsAndSuites = [
-  //  ...groupedBySuite[''],
-  //  {title: 'Terrapin Suite',       sections: groupedBySuite['Terrapin']},
-  //  {title: 'Weather Report Suite', sections: groupedBySuite['Weather Report']},
-  //]
+  const allSongIdsFromTeases = teases.reduce((a,e) => a.concat(e.song_id), [])
+  const groupedByTeased = groupBy(
+    songData => allSongIdsFromTeases.includes(songData.id),
+    groupedByPerformed[false]
+  )
 
   return <Layout className="songs">
     <SEO
-      title="JRAD — all songs played or teased"
-      description="Almost-complete repertoire of Joe Russo's Almost Dead (JRAD) songs and teases"
+      title="JRAD songs played / teased"
+      description="Repertoire of songs and teases performed by Joe Russo's Almost Dead, plus setlists of each concert"
     />
-    <p><a href="#songs__headline--teased">Jump down to "Teases Only"</a></p>
-    <h1>Songs Performed / Jammed</h1>
+
+    <div className="tableofcontents">
+      <p>Table of Contents</p>
+      <ol>
+        <li><a href="#songs__headline--performed">Songs Performed / Jammed</a></li>
+        <li><a href="#songs__headline--teased">Songs Teased</a></li>
+        <li><a href="#songs__headline--notyet">Not Yet Played from the GD Repertoire</a></li>
+      </ol>
+    </div>
+
+    <h1 href="#songs__headline--performed">Songs Performed / Jammed</h1>
+    <p>These songs have been performed in their entirety, or played as an extended theme by the entire band.</p>
     <ul className="songs__list">
-      {sortBy((prop('title')))(performedSongs)
+      {sortByTitle(groupedByPerformed[true])
         .map(songData =>
-          songData.sections
-          ? songData.title
-          : <li key={songData.id}>
+          <li key={songData.id}>
             <SongLink data={songData} />
             <PerformanceCount perfIds={String(songData.performances).split(':')} />
           </li>
         )
       }
     </ul>
+
     <h1 id="songs__headline--teased">Songs Teased</h1>
+    <p>These are songs which have been hinted at by one or more members of the band while playing another song.</p>
     <ul className="songs__list">
-      {sortBy((prop('title')))(teasedSongs)
-          .map(songData => {
-            const teaseRows = filter(propEq('song_id', songData.id))(teases)
-            const teasePerfIds = teaseRows.map((row) => row.performance_id)
-            return songData.sections
-                ? songData.title
-                : <li key={songData.id}>
-                  <SongLink data={songData} />
-                  <PerformanceCount text="teased" perfIds={teasePerfIds} />
-                </li>
-          }
-      )}
+      {sortByTitle(groupedByTeased[true])
+        .map(songData =>
+          <li key={songData.id}>
+            <SongLink data={songData} />
+            <PerformanceCount text="teased" perfIds={filter(propEq('song_id', songData.id))(teases).map((row) => row.performance_id)} />
+          </li>
+        )
+      }
+    </ul>
+
+    <h1 id="songs__headline--notyet">Not Yet Played from the GD Repertoire</h1>
+    <p>This is an incomplete list of songs which the Grateful Dead or their members recorded or played live (either together or in other projects), but have been neither played nor teased by JRAD...</p>
+    <ul className="songs__list">
+    {sortByTitle(groupedByTeased[false])
+    .map(({id, title, author, notes}) =>
+      <li key={id}>
+        "{title}"
+        {' '}
+        <Author name={author} />
+        {notes?.split?.(/\s*;\s*/).map(note => note.startsWith('http')
+        ? <Link to={note}>(link)</Link>
+        : note
+        )}
+      </li>)}
     </ul>
   </Layout>
 }
