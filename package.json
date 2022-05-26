@@ -71,7 +71,7 @@
     "babel-eslint": "^10.1.0",
     "cypress": "9.7.0",
     "eslint": "8.13.0",
-    "eslint-config-react-app": "^7.0.0",
+    "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-react": "^7.29.4",
     "gh-pages": "^4.0.0",
