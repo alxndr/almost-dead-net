@@ -10,7 +10,7 @@ body {
 .tableofcontents {
   display: inline-block;
   margin: 0 1em 1em;
-  padding: 1em;
+  padding: 0.5em 1em 1em;
   font-size: 0.8em;
   background: #dabbff;
   border-radius: 1em;
@@ -21,6 +21,10 @@ body {
 .tableofcontents p {
   font-weight: bold;
   text-align: center;
+}
+.tableofcontents ol {
+  list-style: disclosure-closed inside;
+  margin-left: 0;
 }
 
 h1 {
