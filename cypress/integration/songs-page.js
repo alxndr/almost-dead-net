@@ -1,21 +1,28 @@
-const SEC = 1000 // msec
-
-describe('All Songs page', () => {
+describe('Songs page', () => {
   beforeEach(() => {
     cy.visit('/songs')
   })
 
   it('lists songs with number-of-times-performed', () => {
-    cy.get('main').contains('"Mason\'s Children" ×3')
+    cy.get('main').find('a').contains('"Mason\'s Children"')
+      .closest('tr')
+      .find('td').contains(/\d/)
   })
 
   it('lists suite names', () => {
-    cy.get('main').contains('"At a Siding" Terrapin suite')
+    cy.get('main').contains('Weather Report')
+      .closest('tr').contains(/Prelude|Part I/)
   })
 
   it('lists teases', () => {
-    cy.get('main').contains('Songs Teased')
-    cy.get('main').contains('"Rumble" Link Wray')
-    cy.get('main').contains('"Flight of the Bumblebee" Nikolai Rimsky-Korsakov')
+    cy.get('main').find('h1').contains('Songs Teased')
+    cy.log('shows song author name')
+    cy.get('main').contains('Link Wray')
+    cy.get('main').find('a').contains('"Flight of the Bumblebee"')
+  })
+
+  it('has table of contents', () => {
+    cy.get('main').find('.tableofcontents').contains('Table of Contents')
+      .closest('div').find('a')
   })
 })
