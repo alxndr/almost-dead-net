@@ -33,24 +33,6 @@ const SET_MAPPING = { // 'show table column name' to 'human readable set name'
   encore2: 'double encore',
 }
 
-function ListItem({date, performancesOnDate, previousUrl}) {
-  const [{performanceData, showData, variation, whichSet}, ...otherPerformances] = performancesOnDate
-  const url = `/show/${showData.id}`
-  return <li key={performanceData.id} className={classnames({highlight: previousUrl?.endsWith(url)})}>
-    <Link to={url}>
-      {date}
-      {' '}
-      {variation} in {whichSet}
-      {otherPerformances.length
-        ? otherPerformances[0].whichSet !== whichSet
-          ? ` & ${otherPerformances[0].whichSet}`
-          : '…'
-        : ''
-      }
-    </Link>
-  </li>
-}
-
 export const query = graphql`
   query SongTemplate($songId: String!) {
     songsCsv(id: {eq: $songId}) {
