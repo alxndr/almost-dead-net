@@ -43,14 +43,13 @@ function SongLink({data: {author, core_gd, cover_gd, id, suite, title, performan
   </Link>
 }
 
-function SortableTable({columns, data}) {
+function SortableTable({columns, data, link=true}) {
   const {
     getTableProps,
     getTableBodyProps,
     headerGroups,
     rows,
-    prepareRow,
-    ...rest
+    prepareRow
   } = useTable({columns, data}, useRowState, useSortBy)
   return <table {...getTableProps()}>
     <thead>
@@ -73,7 +72,7 @@ function SortableTable({columns, data}) {
         return <tr {...row.getRowProps()}>
           {row.cells.map(cell =>
             <td {...cell.getCellProps()}>
-              {cell.column?.id === 'title'
+              {cell.column?.id === 'title' && link
                 ? <SongLink data={cell.row.original} />
                 : cell.render('Cell')}
             </td>
@@ -86,15 +85,10 @@ function SortableTable({columns, data}) {
 
 function SongsComponent({data: {allSongsCsv: {nodes: songs}, allTeasesCsv: {nodes: teases}}}) {
   const groupedByPerformed = groupBy((songData) => Boolean(songData.performances), songs.filter(removeCertainSongs))
-  const allSongIdsFromTeases = teases.reduce((a,e) => a.concat(e.song_id), [])
-  const groupedByTeased = groupBy(songData => allSongIdsFromTeases.includes(songData.id), groupedByPerformed[false])
-
   const performedData = useMemo(
     () => groupedByPerformed[true].map(songData => ({
       ...songData,
       performances: String(songData.performances).split(':').length,
-      suite: songData.suite,
-      author: songData.author,
     })),
     []
   )
@@ -104,6 +98,35 @@ function SongsComponent({data: {allSongsCsv: {nodes: songs}, allTeasesCsv: {node
       { Header: "author", accessor: "author" },
       { Header: "suite", accessor: "suite" },
       { Header: "plays", accessor: "performances" },
+    ],
+    []
+  )
+
+  const allSongIdsFromTeases = teases.reduce((a,e) => a.concat(e.song_id), [])
+  const groupedByTeased = groupBy(songData => allSongIdsFromTeases.includes(songData.id), groupedByPerformed[false])
+  const teasedData = useMemo(
+    () => groupedByTeased[true].map(songData => ({
+      ...songData,
+      teases: filter(propEq('song_id', songData.id))(teases).map((row) => row.performance_id).length,
+    })),
+    []
+  )
+  const teasedColumns = useMemo(
+    () => [
+      { Header: "title", accessor: "title" },
+      { Header: "author", accessor: "author" },
+      { Header: "teases", accessor: "teases" },
+    ],
+    []
+  )
+  const notyetData = useMemo(
+    () => groupedByTeased[false],
+    []
+  )
+  const notyetColumns = useMemo(
+    () => [
+      { Header: "title", accessor: "title" },
+      { Header: "author", accessor: "author" },
     ],
     []
   )
@@ -129,32 +152,11 @@ function SongsComponent({data: {allSongsCsv: {nodes: songs}, allTeasesCsv: {node
 
     <h1 id="songs__teased-headline">Songs Teased</h1>
     <p>These are songs which have been hinted at by one or more members of the band while playing another song.</p>
-    <ul className="songs__list">
-      {sortByTitle(groupedByTeased[true])
-        .map(songData =>
-          <li key={songData.id}>
-            <SongLink data={songData} full={true} />
-            <PerformanceCount text="teased" perfIds={filter(propEq('song_id', songData.id))(teases).map((row) => row.performance_id)} />
-          </li>
-        )
-      }
-    </ul>
+    <SortableTable columns={teasedColumns} data={teasedData} />
 
     <h1 id="songs__notyet-headline">Not Yet Played from the GD Repertoire</h1>
     <p>This is an incomplete list of songs which the Grateful Dead or their members recorded or played live (either together or in other projects), but have been neither played nor teased by JRAD...</p>
-    <ul className="songs__list">
-    {sortByTitle(groupedByTeased[false])
-    .map(({id, title, author, notes}) =>
-      <li key={id}>
-        "{title}"
-        {' '}
-        <Author name={author} />
-        {notes?.split?.(/\s*;\s*/).map(note => note.startsWith('http')
-        ? <Link to={note}>(link)</Link>
-        : note
-        )}
-      </li>)}
-    </ul>
+    <SortableTable columns={notyetColumns} data={notyetData} link={false} />
   </Layout>
 }
 
