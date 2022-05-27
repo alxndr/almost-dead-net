@@ -142,7 +142,7 @@ function SongsComponent({data: {allSongsCsv: {nodes: songs}, allTeasesCsv: {node
     <p>These are songs which have been hinted at by one or more members of the band while playing another song.</p>
     <SortableTable columns={teasedColumns} data={teasedData} />
 
-    {'#notyet' === window?.location?.hash /* TODO this can trigger a runtime error in browser */ && <>
+    {'#notyet' === global?.window?.location?.hash /* TODO this can trigger a runtime error in browser */ && <>
       <h1 id="songs__notyet-headline">Not Yet Played from the GD Repertoire</h1>
       <p>This is an incomplete list of songs which the Grateful Dead or their members recorded or played live (either together or in other projects), but have been neither played nor teased by JRAD...</p>
       <SortableTable
