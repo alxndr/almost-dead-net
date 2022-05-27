@@ -1,4 +1,4 @@
-.songs > main {
+.layout.songs > main {
   padding: 1em;
 }
 
@@ -12,6 +12,17 @@
   .songs__list {
     column-count: 3;
   }
+}
+
+.layout.songs table thead {
+  text-align: center;
+}
+.layout.songs table tbody {
+  font-size: 0.9em;
+}
+.songs__performed-table__column-sort {
+  padding: 0 1em;
+  cursor: pointer;
 }
 
 .songs__list > li {

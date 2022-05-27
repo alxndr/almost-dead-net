@@ -1,13 +1,16 @@
-import React from 'react'
-import {graphql, Link, StaticQuery} from 'gatsby'
-
-import {filter, groupBy, prop, propEq, sortBy} from 'ramda'
+import React, {useMemo} from 'react'
+import {useRowState, useSortBy, useTable} from 'react-table'
 import {Tooltip} from 'react-tippy'
+import {graphql, Link, StaticQuery} from 'gatsby'
+import {filter, groupBy, prop, propEq, sortBy} from 'ramda'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import './songs.css'
+
+const removeCertainSongs = ({title}) => title && !['[unknown]', 'Drums', 'Jam', 'Space'].includes(title)
+const sortByTitle = sortBy(prop('title')) // TODO ignore "A", "The", etc
 
 function Author({name}) {
   if (!name || name === 'traditional') {
@@ -28,69 +31,132 @@ function PerformanceCount({perfIds, text = 'performed'}) {
     </span>
   </Tooltip>
 }
-function SongLink({data: {author, core_gd, cover_gd, id, suite, title, performances, ...rest}}) {
+function SongLink({data: {author, core_gd, cover_gd, id, suite, title, performances}, full}) {
   return <Link to={`/song/${id}`}>
     "{title}"
-    {' '}
-    {suite && <span className="song__suite">{suite} suite</span>}
-    {' '}
-    {(!core_gd || cover_gd) && <Author name={author} />}
+    {full && <>
+      {' '}
+      {suite && <span className="song__suite">{suite} suite</span>}
+      {' '}
+      {(!core_gd || cover_gd) && <Author name={author} />}
+    </>}
   </Link>
 }
 
-function SongsComponent({data: {allSongsCsv: {nodes: songs}, allTeasesCsv: {nodes: teases}}}) {
-  const songsClean = songs.filter(songData => songData.title && songData.title !== '[unknown]')
-  const groupedByPerformedVsTeased = groupBy(
-    (songData) => Boolean(songData.performances),
-    songsClean
-  )
-  const performedSongs = groupedByPerformedVsTeased[true]
-  const teasedSongs = groupedByPerformedVsTeased[false]
+function SortableTable({columns, data, link=true}) {
+  const {
+    getTableProps,
+    getTableBodyProps,
+    headerGroups,
+    rows,
+    prepareRow
+  } = useTable({columns, data}, useRowState, useSortBy)
+  return <table {...getTableProps()}>
+    <thead>
+      {headerGroups.map(headerGroup =>
+        <tr {...headerGroup.getHeaderGroupProps()}>
+          {headerGroup.headers.map(column =>
+            <th {...column.getHeaderProps(column.getSortByToggleProps())} style={{borderBottom: 'solid 3px gray', background: 'aliceblue', fontWeight: 'bold'}}>
+              {column.render('Header')}
+              <span className="songs__performed-table__column-sort">
+                {column.isSorted ? column.isSortedDesc ? '⬇︎' : '⬆︎' : '⇅'}
+              </span>
+            </th>
+          )}
+        </tr>
+      )}
+    </thead>
+    <tbody {...getTableBodyProps()}>
+      {rows.map(row => {
+        prepareRow(row) // no return value; mutates `row`?
+        return <tr {...row.getRowProps()}>
+          {row.cells.map(cell =>
+            <td {...cell.getCellProps()}>
+              {cell.column?.id === 'title' && link
+                ? <SongLink data={cell.row.original} />
+                : cell.render('Cell')}
+            </td>
+          )}
+        </tr>
+      })}
+    </tbody>
+  </table>
+}
 
-  //const groupedBySuite = groupBy(
-  //  (songData) => songData.suite,
-  //  performedSongs
-  //)
-  //const songsAndSuites = [
-  //  ...groupedBySuite[''],
-  //  {title: 'Terrapin Suite',       sections: groupedBySuite['Terrapin']},
-  //  {title: 'Weather Report Suite', sections: groupedBySuite['Weather Report']},
-  //]
+function SongsComponent({data: {allSongsCsv: {nodes: songs}, allTeasesCsv: {nodes: teases}}}) {
+  const groupedByPerformed = groupBy((songData) => Boolean(songData.performances), songs.filter(removeCertainSongs))
+  const performedData = useMemo(
+    () => groupedByPerformed[true].map(songData => ({
+      ...songData,
+      performances: String(songData.performances).split(':').length,
+    })),
+    []
+  )
+  const performedColumns = useMemo(
+    () => [
+      { Header: "title", accessor: "title" },
+      { Header: "author", accessor: "author" },
+      { Header: "suite", accessor: "suite" },
+      { Header: "plays", accessor: "performances" },
+    ],
+    []
+  )
+
+  const allSongIdsFromTeases = teases.reduce((a,e) => a.concat(e.song_id), [])
+  const groupedByTeased = groupBy(songData => allSongIdsFromTeases.includes(songData.id), groupedByPerformed[false])
+  const teasedData = useMemo(
+    () => groupedByTeased[true].map(songData => ({
+      ...songData,
+      teases: filter(propEq('song_id', songData.id))(teases).map((row) => row.performance_id).length,
+    })),
+    []
+  )
+  const teasedColumns = useMemo(
+    () => [
+      { Header: "title", accessor: "title" },
+      { Header: "author", accessor: "author" },
+      { Header: "teases", accessor: "teases" },
+    ],
+    []
+  )
+  const notyetData = useMemo(
+    () => groupedByTeased[false],
+    []
+  )
+  const notyetColumns = useMemo(
+    () => [
+      { Header: "title", accessor: "title" },
+      { Header: "author", accessor: "author" },
+    ],
+    []
+  )
 
   return <Layout className="songs">
     <SEO
-      title="JRAD — all songs played or teased"
-      description="Almost-complete repertoire of Joe Russo's Almost Dead (JRAD) songs and teases"
+      title="JRAD songs played or teased"
+      description="Repertoire of songs and teases performed by Joe Russo's Almost Dead, plus setlists of each concert"
     />
-    <p><a href="#songs__headline--teased">Jump down to "Teases Only"</a></p>
-    <h1>Songs Performed / Jammed</h1>
-    <ul className="songs__list">
-      {sortBy((prop('title')))(performedSongs)
-        .map(songData =>
-          songData.sections
-          ? songData.title
-          : <li key={songData.id}>
-            <SongLink data={songData} />
-            <PerformanceCount perfIds={String(songData.performances).split(':')} />
-          </li>
-        )
-      }
-    </ul>
-    <h1 id="songs__headline--teased">Songs Teased</h1>
-    <ul className="songs__list">
-      {sortBy((prop('title')))(teasedSongs)
-          .map(songData => {
-            const teaseRows = filter(propEq('song_id', songData.id))(teases)
-            const teasePerfIds = teaseRows.map((row) => row.performance_id)
-            return songData.sections
-                ? songData.title
-                : <li key={songData.id}>
-                  <SongLink data={songData} />
-                  <PerformanceCount text="teased" perfIds={teasePerfIds} />
-                </li>
-          }
-      )}
-    </ul>
+
+    <div id="songs__toc" className="tableofcontents">
+      <p>Table of Contents</p>
+      <ol>
+        <li><a href="#songs__performed-headline">Songs Performed / Jammed</a></li>
+        <li><a href="#songs__teased-headline">Songs Teased</a></li>
+        <li><a href="#songs__notyet-headline">Not Yet Played from the GD Repertoire</a></li>
+      </ol>
+    </div>
+
+    <h1 href="#songs__performed-headline">Songs Performed / Jammed</h1>
+    <p>These songs have been performed in their entirety, or played as an extended theme by the entire band.</p>
+    <SortableTable columns={performedColumns} data={performedData} />
+
+    <h1 id="songs__teased-headline">Songs Teased</h1>
+    <p>These are songs which have been hinted at by one or more members of the band while playing another song.</p>
+    <SortableTable columns={teasedColumns} data={teasedData} />
+
+    <h1 id="songs__notyet-headline">Not Yet Played from the GD Repertoire</h1>
+    <p>This is an incomplete list of songs which the Grateful Dead or their members recorded or played live (either together or in other projects), but have been neither played nor teased by JRAD...</p>
+    <SortableTable columns={notyetColumns} data={notyetData} link={false} />
   </Layout>
 }
 

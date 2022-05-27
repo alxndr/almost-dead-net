@@ -1,468 +1,758 @@
-id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,core_jrad,written
-46,Chinatown Shuffle,"""Pigpen"" Ron McKernan (Grateful Dead)",,,2482,46,TRUE,,,
-390,Operator,"""Pigpen"" Ron McKernan (Grateful Dead)",,,3727,390,TRUE,,,
-238,The Stranger (Two Souls In Communion),"""Pigpen"" Ron McKernan (Grateful Dead)",Two Souls,,472:760:1031:1636:1694:1751,238,TRUE,,,
-288,[unknown],[unknown],?,,,288,,,,
-367,Hoedown,Aaron Copeland,,,,367,,,,
-357,Same Old Song & Dance,Aerosmith,,,,357,,,,
-309,Man in the Box,Alice In Chains,,,,309,,,,
-77,Fortune Teller,Allen Toussaint,,,1346,77,,,,
-337,"Get Out of My Life, Woman",Allen Toussaint (Lee Dorsey),,,,337,TRUE,TRUE,,
-411,Dreams,Allman Brothers Band,,,3805,411,,,,
-116,In Memory of Elizabeth Reed,Allman Brothers Band,Liz Reed,,1137:1862:2006:2827:3721:3806:4159,116,,,,
-298,Jessica,Allman Brothers Band,,,3971:4084,298,,,,
-296,Mountain Jam,Allman Brothers Band,,,,296,,,,
-419,Jolene,American Babies,,,,419,,,TRUE,
-301,Winter War Games,American Babies,,,,301,,,TRUE,
-94,Harry Hood,Anastasio – Gordon – Fishman – McConnell – Long (Phish),,,,94,,,,
-304,First Tube,Anastasio – Lawton – Markellis (Trey Anastasio Band),,,,304,,,,
-454,Cavern,Anastasio – Marshall – Herman (Phish),,,,454,,,,
-303,Wilson,Anastasio – Marshall – Woolf (Phish),,,,303,,,,
-340,Roundabout,Anderson Bruford & Wakeman Howe (Yes),,,,340,,,,
-324,Tighten Up,Archie Bell & the Drells,,,,324,,,,
-439,Celebrated Chop Waltz aka Chopsticks,Arthur de Lulli aka Euphemia Allen,,,,439,,,,
-87,Good Lovin',Arthur Resnick & Rudy Clark,,,958:1120:1254:1330:1364:1422:1469:1536:1538:1670:1804:1884:1960:2021:2102:2166:2303:2346:2449:2498:2605:2699:2750:2894:2964:3064:3139:3195:3274:3347:3399:3422:3492:3521:3642:3734:3852:4049,87,TRUE,TRUE,,
-3,9x9,Benevento/Russo Duo,,,1480,3,,,TRUE,
-375,Abduction Pose,Benevento/Russo Duo,,,,375,,,TRUE,
-16,Becky,Benevento/Russo Duo,,,771:1646,16,,,TRUE,
-21,Big Whopper,Benevento/Russo Duo,,,1017,21,,,TRUE,
-354,Mephisto,Benevento/Russo Duo,,,,354,,,TRUE,
-157,My Pet Goat,Benevento/Russo Duo,,,,157,,,TRUE,
-177,"Play, Pause, Stop",Benevento/Russo Duo,,,2055,177,,,TRUE,
-360,Scratchitti,Benevento/Russo Duo,,,,360,,,TRUE,
-58,Dark Hollow,Bill Browning,,,962:1371:2027:2397:3948,58,TRUE,TRUE,,
-322,War Pigs,Black Sabbath,,,,322,,,,
-432,But Anyway,Blues Traveler,,,,432,,,,
-102,Hey! Bo Diddley,Bo Diddley,,,1270,102,,,,
-4,A Hard Rain's a-Gonna Fall,Bob Dylan,Hard Rain,,1431:3501:3566,4,,,,
-461,Absolutely Sweet Marie,Bob Dylan,,,4146,461,,,,
-7,All Along the Watchtower,Bob Dylan,Watchtower,,157:3699,7,,,,
-118,"It's All Over Now, Baby Blue",Bob Dylan,,,2048:2577:2929,118,TRUE,TRUE,,
-123,Just Like Tom Thumb's Blues,Bob Dylan,Tom Thumb's Blues,,2174,123,TRUE,TRUE,,
-320,Knockin' on Heaven's Door,Bob Dylan,,,,320,TRUE,TRUE,,
-135,Lonesome Whistle Blues,Bob Dylan,,,,135,,,,
-420,Queen Jane Approximately,Bob Dylan,,,3920:4090,420,TRUE,TRUE,,
-355,Rainy Day Women #12 & 35,Bob Dylan,Rainy Day Women,,,355,TRUE,TRUE,,
-198,Shelter From the Storm,Bob Dylan,,,1912:2164:3460,198,TRUE,TRUE,,
-212,Stuck Inside of Mobile With the Memphis Blues Again,Bob Dylan,Memphis Blues,,2771:3772,212,,,,
-220,"Tell Me, Momma",Bob Dylan,,,1898:2220:2319:2321:2376:2688:2844:3004:3101:3253:3461:3591:3702:3875:4026,220,,,,
-181,The Mighty Quinn,Bob Dylan,Quinn the Eskimo,,400:624:840:1389:1586:3055:3423:3917,181,TRUE,TRUE,,
-248,Tonight I'll Be Staying Here with You,Bob Dylan,,,74:262:466:1727:1963:2564:2795:3646:3860,248,,,,
-250,Tough Mama,Bob Dylan,,,1363:3040:3678,250,TRUE,TRUE,,
-418,What Was It You Wanted,Bob Dylan,,,,418,,,,
-266,When I Paint My Masterpiece,Bob Dylan,Masterpiece,,1433:3660:3833:3931,266,TRUE,TRUE,,
-271,Yazoo Street Scandal,Bob Dylan and The Band,,,2153:2669:2861:3299:3762,271,,,,
-364,Exodus,Bob Marley,,,,364,,,,
-383,Redemption Song,Bob Marley,,,,383,,,,
-39,Catfish John,Bob McDill – Allen Reynolds,,,633:3934,39,,,,
-86,Gonesville,Bob Weir,,,1921:1969:2035:2081:2149:2331:2531:2759:3211:3445:3711:3928,86,,,,
-27,Born Cross Eyed,Bob Weir (Grateful Dead),Xeyed,,733:797:1078:1083:1141:1502:1519:1604:1661:1795:1833:1894:2135:2155:2219:2352:2422:2623:2783:3192:3193:3607:3955,27,TRUE,,,
-169,One More Saturday Night,Bob Weir (Grateful Dead),Saturday Night,,77:322:429:467:481:556:603:683:730:863:898:924:1007:1115:1182:1218:1274:1310:1441:1683:1740:1818:1936:2111:2257:2411:2598:2660:2807:2942:3076:3173:3373:3410:3641:3887:3986:4101:4177,169,TRUE,,,
-276,Part I,Bob Weir (Grateful Dead),,Weather Report,85:200:368:666:831:943:1067:1205:1386:1549:2205:2273:3305:3395,276,TRUE,,,
-235,The Other One,Bob Weir (Grateful Dead),,,19:60:179:261:428:449:488:562:761:798:951:1079:1154:1381:1418:1545:1721:1820:1934:1954:2019:2083:2190:2270:2307:2341:2408:2431:2495:2580:2711:2737:2792:2954:2981:2982:3024:3026:3032:3142:3157:3238:3259:3369:3381:3442:3490:3514:3571:3614:3707:3750:3866:3908:3914:3983:4004:4012:4103,235,TRUE,,,
-436,Ode to Billy Joe,Bobbie Gentry,,,,436,,,,
-352,My Perogative,Bobby Brown,,,,352,,,,
-151,Morning Dew,Bonnie Dobson; Tim Rose,,,87:234:336:414:480:622:789:839:952:1092:1396:1449:1621:1769:2078:2133:2403:2547:2676:2762:2956:3001:3144:3239:3450:3579:3886:3984:4088,151,TRUE,TRUE,,
-107,Hoodoo Voodoo,Bragg – Wilco – Harris (Woody Guthrie),,,1649:1946:3487,107,,,,
-441,Flash aka Flash's Theme,Brian May (Queen),,,,441,,,,
-446,Boy,Brothers Past,,,,446,,,TRUE,
-300,Simple Gift of Man,Brothers Past,,,,300,,,TRUE,
-12,Atlantic City,Bruce Springsteen,,,563:749:1612:1900:2436:2824:2921:3010:3171:3701,12,,,,
-28,Born to Run,Bruce Springsteen,,,982:1834:1943:3358:3695,28,,,,
-467,Havana,Camila Cabello,,,,467,,,,2017
-382,Going Up the Country,Canned Heat,,,,382,,,,
-189,Rosalie McFall,Charlie Monroe,Rosa Lee McFall,,2434,189,,,,
-202,Smokestack Lightning,"Chester ""Howlin' Wolf"" Burnett",,,2790:4122,202,TRUE,TRUE,,
-444,I Want a New Drug,Chris Hayes & Huey Lewis (Huey Lewis and the News),,,,444,,,,
-10,Around and Around,Chuck Berry,,,2785:3585:3838,10,TRUE,TRUE,,
-391,Let It Rock,Chuck Berry,,,3735,391,,TRUE,,
-180,Promised Land,Chuck Berry,,,776:841:1857:2180:2405:2615:3451,180,TRUE,TRUE,,
-230,The Festival,Chuck Berry,,,2465:2931,230,,,,
-342,What's Going On,Cleveland – Benson – Gaye (Marvin Gaye),,,,342,,,,
-83,God Put a Smile upon Your Face,Coldplay,,,2041,83,,,,
-425,Down Under,Colin Hay & Ron Strykert (Men At Work),,,,425,,,,
-111,Iko Iko,Crawford – Hawkins – Hawkins – Johnson,,,213:361:1729:2571:2751:3524:3724,111,TRUE,TRUE,,
-222,Tequila,Daniel Flores (The Champs),,,,222,,,,
-438,The Simpsons theme,Danny Elfman,,,,438,,,,
-72,Fame,David Bowie,,,,72,,,,
-82,Girlfriend Is Better,David Byrne (Talking Heads),,,,82,,,,
-415,Comfortably Numb,David Gilmour & Roger Waters (Pink Floyd),,,3885,415,,,,
-463,Run Like Hell,David Gilmour & Roger Waters (Pink Floyd),,,,463,,,,
-430,Come Sail Away,Dennis DeYoung (Styx),,,,430,,,,
-188,Romeo and Juliet,Dire Straits,,,639:3966,188,,,,
-325,A Night in Tunisia,Dizzy Gillespie,,,,325,,,,
-2,9 to 5,Dolly Parton,,,,2,,,,
-370,Boys of Summer,Don Henley,,,,370,,,,
-182,The Race Is On,Don Rollins (George Jones),,,1351:3162:4123,182,TRUE,TRUE,,
-237,There Is a Mountain,Donovan,,,2130:2238,237,,,,
-141,Magnificent Sanctuary Band,Dorsey Burnette,,,49:362:946:1072:1400:2489:2632:2893:3060:3895,141,TRUE,TRUE,,
-399,La Di Da Di,Doug E. Fresh & Slick Rick,,,,399,,,,
-448,Poison,Dr Freeze (Bell Biv DeVoe),,,,448,,,,
-197,She Does It Right,Dr. Feelgood,,,2481,197,,,,
-213,Such a Night,Dr. John,,,291:568:1880:1955:2241:3284:3480:3674,213,,,,
-319,Take the 'A' Train,Duke Ellington,,,,319,,,,
-286,Serpentine Fire,Earth Wind & Fire,,,,286,,,,
-317,Saturday Night's Alright for Fighting,Elton John,,,,317,,,,
-429,Bad Love,Eric Clapton,,,,429,,,,
-330,Lay Down Sally,Eric Clapton,,,,330,,,,
-327,Epic,Faith No More,,,,327,,,,
-114,I'm Writing a Novel,Father John Misty,,,1143,114,,,,
-314,Rhiannon,Fleetwood Mac,,,,314,,,,
-279,Inca Roads,Frank Zappa,,,,279,,,,
-267,When U Love Somebody,Fruit Bats,,,3548:3770,267,,,,
-416,That's All,Genesis,,,,416,,,,
-423,Stayin' Alive,Gibb – Gibb – Gibb (Bee Gees),,,,423,,,,
-283,Manteca,Gillespie – Pozo – Fuller,,,,283,,,,
-389,Shine On You Crazy Diamond,Gilmour – Waters – Wright (Pink Floyd),,,,389,,,,
-183,Radar Love,Golden Earring,,,2320,183,,,,
-6,Alice D. Millionaire,Grateful Dead,,,205:1551:3937,6,TRUE,,,
-41,Caution (Do Not Stop on Tracks),Grateful Dead,Caution,,18:293:690,41,TRUE,,,
-85,Golden Road (To Unlimited Devotion),Grateful Dead,Golden Road,,103:184:393:1524:1706:1858:2233:2556:2994:3089:3458:3763:3861,85,TRUE,,,
-201,Slipknot!,Grateful Dead,Slip,,14:82:145:175:231:257:317:371:440:445:484:492:519:591:606:641:676:695:712:787:815:867:895:939:994:1036:1041:1049:1105:1152:1187:1239:1307:1337:1402:1425:1451:1453:1579:1581:1658:1690:1757:1918:1967:2005:2007:2095:2139:2214:2400:2437:2439:2445:2500:2590:2618:2663:2726:2739:2927:2987:3020:3051:3093:3164:3244:3297:3332:3378:3418:3420:3469:3618:3648:3663:3687:3743:3819:3855:3881:3982:4097:4144:4160,201,TRUE,,,
-388,Whipping Post,Gregg Allman (Allman Brothers Band),,,3803,388,,,,
-379,Your Kiss Is On My List,Hall & Oates,,,,379,,,,
-414,Over the Rainbow,Harold Arlen & Yip Harburg (Judy Garland),,,,414,,,,
-356,The 'Pink Panther' Theme,Henry Mancini,,,,356,,,,
-385,Fat Mama,Herbie Hancock,,,,385,,,,
-312,Hang Up Your Hangups,Herbie Hancock,,,,312,,,,
-348,Tell Me a Bedtime Story,Herbie Hancock,,,,348,,,,
-159,Mystery Train,"Herman ""Junior"" Parker",,,642,159,TRUE,TRUE,,
-392,(I'm A) Road Runner,Holland – Dozier – Holland (Marvin Gaye),,,3736,392,,TRUE,,
-14,Baby Don't You Do It,Holland – Dozier – Holland (Marvin Gaye),,,1046,14,,,,
-152,Morning in Marin,Howard Wales & Jerry Garcia,,,3551,152,,,,
-292,Here Comes The Hotstepper,Ini Kamoze,,,,292,,,,
-336,Cheek to Cheek,Irving Berlin,,,,336,,,,
-328,Paint It Black,Jagger – Richards (Rolling Stones),,,,328,,,,
-232,The Last Time,Jagger – Richards (The Rolling Stones),,,2578:2925,232,,,,
-398,Sex Machine,James Brown,,,,398,,,,
-315,Shortnin' Bread,James Whitcomb Riley,,,,315,,,,
-17,Been Caught Stealing,Jane's Addiction,,,2096,17,,,,
-338,Mountain Song,Jane's Addiction,,,,338,,,,
-402,She Has Funny Cars,Jefferson Airplane,,,,402,,,,
-52,Cream Puff War,Jerry Garcia (Grateful Dead),CPW,,22:302:1155:1606:1852:2886:3180:3675,52,TRUE,,,
-53,Cryptical Envelopment,Jerry Garcia (Grateful Dead),Cryptical,,487:762:1080:1380:1382:2191:3367:3370:3705,53,TRUE,,,
-15,Beat It on Down the Line,Jesse Fuller,BIODTL,,54:168:417:937:1633:1753:3146:3269:3691:3893,15,TRUE,TRUE,,
-216,Summer Lovin' aka Summer Nights,Jim Jacobs & Warren Casey (John Travolta & Olivia Newton-John),,,,216,,,,
-129,L.A. Woman,Jim Morrison (The Doors),,,1842,129,,,,
-378,Purple Haze,Jimi Hendrix,,,,378,,,,
-243,Third Stone from the Sun,Jimi Hendrix,,,,243,,,,
-460,Voodoo Chile,Jimi Hendrix,,,,460,,,,
-170,Only Daddy That'll Walk the Line,Jimmy Bryant (Waylon Jennings),,,226:2554:3903,170,,,,
-285,Night Train,Jimmy Forrest,,,1504,285,,,,
-80,Friends,Jimmy Page & Robert Plant (Led Zeppelin),,,,80,,,,
-376,Ramble On,Jimmy Page & Robert Plant (Led Zeppelin),,,,376,,,,
-226,That's the Way,Jimmy Page & Robert Plant (Led Zeppelin),,,,226,,,,
-377,Girl From Ipanema,"Jobim, de Moraes, Gimbel",,,,377,,,,
-125,Keeping It Simple,Joe Russo & Tom Hamilton (Joe Russo's Almost Dead),,,1761:1907:2071,125,,,TRUE,
-306,Rocky Mountain Way,Joe Walsh,,,,306,,,,
-372,On the Darkside,John Cafferty & the Beaver Brown Band,,,,372,,,,
-91,Halloween Theme – Main Title,John Carpenter,,,864,91,,,,
-323,A Love Supreme,John Coltrane,,,,323,,,,
-332,Have You Ever Seen the Rain?,John Fogerty (Creedence Clearwater Revival),,,,332,,,,
-88,Good Morning Little Schoolgirl,"John Lee ""Sonny Boy"" Williamson",,,1343:2211:2865:3248:3824,88,TRUE,TRUE,,
-291,Come Together,John Lennon & Paul McCartney (The Beatles),,,,291,,,,
-280,Dear Prudence,John Lennon & Paul McCartney (The Beatles),,,4048,280,,,,
-417,Drive My Car,John Lennon & Paul McCartney (The Beatles),,,,417,,,,
-341,Eleanor Rigby,John Lennon & Paul McCartney (The Beatles),,,,341,,,,
-103,Hey Bulldog,John Lennon & Paul McCartney (The Beatles),,,1255:2255:3333:4038,103,,,,
-104,Hey Jude,John Lennon & Paul McCartney (The Beatles),,,,104,,,,
-109,I Am The Walrus,John Lennon & Paul McCartney (The Beatles),,,182,109,,,,
-427,I've Got a Feeling,John Lennon & Paul McCartney (the Beatles),,,4005,427,,,,
-311,Norwegian Wood,John Lennon & Paul McCartney (The Beatles),,,,311,,,,
-186,Revolution 9,John Lennon & Paul McCartney (The Beatles),,,178,186,TRUE,TRUE,,
-25,Black Throated Wind,John Perry Barlow & Bob Weir (Grateful Dead),BTW,,424:486:680:835:837:911:1075:1432:1463:1583:1827:1999:2101:2206:2517:2572:2930:2978:3084:3149:3261:3311:3454:3504:3610:3758:3830:3936:4029:4082:4108,25,TRUE,,,
-38,Cassidy,John Perry Barlow & Bob Weir (Grateful Dead),,,284:470:554:877:1174:1369:1434:1489:1793:2058:2093:2169:2484:2937:3256:3413:3683:3792:3904:4093:4167,38,TRUE,,,
-69,Estimated Prophet,John Perry Barlow & Bob Weir (Grateful Dead),,,11:118:149:242:251:390:456:538:616:779:809:888:906:1027:1052:1179:1210:1246:1318:1403:1437:1455:1560:1591:1637:1720:1767:1926:1952:2045:2216:2276:2402:2430:2539:2603:2652:2774:2803:2859:2953:2984:2999:3044:3079:3104:3220:3265:3355:3393:3448:3502:3558:3615:3682:3794:3862:3961:3988:4034:4062:4137:4181,69,TRUE,,,
-74,Feel Like a Stranger,John Perry Barlow & Bob Weir (Grateful Dead),Stranger,,211:237:319:422:567:627:677:735:829:893:940:1050:1150:1242:1303:1414:1450:1543:1634:1741:1773:2013:2068:2125:2224:2262:2311:2368:2412:2441:2492:2574:2616:2650:2675:2733:2817:2846:2878:3013:3015:3018:3042:3107:3219:3242:3325:3407:3419:3465:3518:3552:3589:3732:3808:3856:3879:3967:4008:4051:4148,74,TRUE,,,
-115,I Need A Miracle,John Perry Barlow & Bob Weir (Grateful Dead),Miracle,,240:637:986:1156:2052:2182:2349:2370:2457:2591:2655:2667:2705:2756:2870:2944:2983:3061:3155:3217:3289:3366:3434:3479:3554:3640:3774:3867:3987:4056:4142,115,TRUE,,,
-130,Lazy Lightning,John Perry Barlow & Bob Weir (Grateful Dead),,,44:52:308:662:1118:2235:3151:3975,130,TRUE,,,
-137,Looks Like Rain,John Perry Barlow & Bob Weir (Grateful Dead),,,766:2898:3944,137,TRUE,,,
-140,Lost Sailor,John Perry Barlow & Bob Weir (Grateful Dead),,,208:313:327:548:754:1614:1723:1775:1904:1971:2061:2248:2502:2610:2922:3122:3277:3327:3389:3427:3541:3627:3765:3898:3979:4023:4064,140,TRUE,,,
-156,My Brother Esau,John Perry Barlow & Bob Weir (Grateful Dead),,,672:725:782:827:1259:1853:2867:2919:3161:3271:3723:3791:3925:4054:4118:4168,156,TRUE,,,
-261,Prelude,John Perry Barlow & Bob Weir (Grateful Dead),,Weather Report,84:199:367:665:830:942:1066:1204:1385:1548:2204:2272:3304:3394,261,TRUE,,,
-193,Saint of Circumstance,John Perry Barlow & Bob Weir (Grateful Dead),,,209:314:328:392:549:621:755:1483:1615:1724:1776:1905:1972:2062:2249:2336:2503:2611:2875:2923:3123:3278:3328:3390:3428:3542:3628:3766:3899:3980:4024:4065:4175,193,TRUE,,,
-219,Supplication,John Perry Barlow & Bob Weir (Grateful Dead),,,309,219,TRUE,,,
-233,The Music Never Stopped,John Perry Barlow & Bob Weir (Grateful Dead),TMNS,,131:192:228:248:403:447:475:635:658:757:811:913:1034:1086:1181:1200:1224:1293:1335:1426:1460:1509:1568:1663:1686:1762:1984:2001:2118:2136:2152:2296:2298:2354:2420:2460:2511:2568:2622:2691:2722:2862:2864:2950:3082:3129:3194:3302:3510:3622:3673:3741:3788:3853:4077:4079:4120,233,TRUE,,,
-245,Throwing Stones,John Perry Barlow & Bob Weir (Grateful Dead),,,127:155:287:363:406:441:523:592:612:714:788:845:886:916:1003:1107:1189:1287:1339:1440:1497:1499:1652:1691:1693:1758:1802:1919:1982:2008:2010:2107:2140:2142:2200:2260:2286:2333:2367:2435:2525:2593:2721:2730:2839:2907:2962:3021:3066:3091:3201:3353:3405:3437:3483:3563:3630:3777:3845:3882:3884:3910:3912:4046:4158,245,TRUE,,,
-97,Hell In A Bucket,"John Perry Barlow, Brent Mydland, Bob Weir (Grateful Dead)",,,188:351:1134:1611:1627:1859:2558:2768:2895:3587:3664:3843:3890:4068,97,TRUE,,,
-145,Me and My Uncle,John Phillips (Judy Collins),,,357:387:989:2884:3177:3386:3508:3670:4128,145,TRUE,TRUE,,
-20,Big River,Johnny Cash,,,964:1095:1799:2694:2696:2797:3452:3703:4153,20,TRUE,TRUE,,
-447,Black Dog,Jones – Page – Plant (Led Zeppelin),,,,447,,,,
-273,Your Time Is Gonna Come,Jones – Page – Plant (Led Zeppelin),,,2458,273,,,,
-239,The Three Question Marks,Joseph Lukasik,,,1547,239,,,,
-252,Turn On Your Lovelight,Joseph Scott (Bobby Bland),Love Light,,34:1336:1650:1734:1851:2882:3916,252,TRUE,TRUE,,
-464,Entrance of the Gladiators,Julius Fučík,,,,464,,,,
-166,Next Time You See Me,Junior Parker,,,2570,166,TRUE,TRUE,,
-458,Mercury Blues,KC Douglas & Robert Geddins,,,4075,458,,,,
-365,Footloose,Kenny Loggins,,,,365,,,,
-449,"Mama, I'm Coming Home",Kilmister – Osbourne – Wylde (Ozzy Osbourne),,,,449,,,,
-400,Memphis Soul Stew,King Curtis,,,,400,,,,
-318,Me and Bobby McGee,Kristofferson – Miler (Janis Joplin),,,,318,TRUE,TRUE,,
-437,Stranger Things theme,Kyle Dixon & Michael Stein (Survive),,,,437,,,,
-468,Theme from 'Enter the Dragon',Lalo Schifrin,,,,468,,,,
-362,All of My Love,Led Zeppelin,,,,362,,,,
-363,Communication Breakdown,Led Zeppelin,,,,363,,,,
-368,Fool in the Rain,Led Zeppelin,,,,368,,,,
-89,Good Times Bad Times,Led Zeppelin,GTBT,,,89,,,,
-96,Heartbreaker,Led Zeppelin,,,1807,96,,,,
-108,How Many More Times,Led Zeppelin,,,3280,108,,,,
-113,Immigrant Song,Led Zeppelin,,,,113,,,,
-124,Kashmir,Led Zeppelin,,,1682,124,,,,
-149,Moby Dick,Led Zeppelin,,,372,149,,,,
-167,No Quarter,Led Zeppelin,,,139:1265:1915,167,,,,
-366,Rock and Roll,Led Zeppelin,,,,366,,,,
-278,Song Remains the Same,Led Zeppelin,,,,278,,,,
-334,Stairway to Heaven,Led Zeppelin,Stairway,,,334,,,,
-295,Ten Years Gone,Led Zeppelin,,,,295,,,,
-268,Whole Lotta Love,Led Zeppelin,,,2009,268,,,,
-353,Rumble,Link Wray,,,,353,,,,
-54,Cult of Personality,Living Colour,,,,54,,,,
-191,Royals,Lorde,,,,191,,,,
-466,Respect Yourself,Luther Ingram & Mack Rice (The Staple Singers),,,,466,,,,
-431,Sweet Home Alabama,Lynyrd Skynyrd,,,,431,,,,
-442,Borderline,Madonna,,,,442,,,,
-386,Material Girl,Madonna,,,,386,,,,
-263,Werewolves of London,Marinell – Wachtel – Zevon (Warren Zevon),,,865:1362:2064:2991:3268:3709:3957:4115,263,TRUE,TRUE,,
-445,Money for Nothing,Mark Knopfler & Sting (Dire Straits),,,,445,,,,
-410,One Way Out,Marshall Sehorn & Elmore James (Sonny Boy Williamson II & Elmore James; Allman Brothers Band),,,3804,410,,,,
-68,El Paso,Marty Robbins,,,636,68,TRUE,TRUE,,
-253,Tzofeh,Masada Quartet (John Zorn),,,1668,253,,,,
-374,Bubblehouse,Medeski Martin & Wood,,,,374,,,,
-426,Where's Sly?,Medeski Martin & Wood,,,3993,426,,,,
-424,Dracula,Medeski Martin and Wood,,,,424,,,,
-142,Mama Tried,Merle Haggard,,,604:685:1395:1571:1755:2116:2900:3165:3345:3482:3876,142,TRUE,TRUE,,
-339,Don't Stop 'Til You Get Enough,Michael Jackson,,,,339,,,,
-275,Terrapin,Mickey Hart & Bill Kreutzmann (Grateful Dead),,Terrapin,375:506:578:848:976:1110:1195:1324:1474:1528:1673:1813:2280:2360:2542:2833:2910:3233:3474:3781,275,TRUE,,,
-223,Terrapin Flyer,Mickey Hart & Bill Kreutzmann (Grateful Dead),Flyer,Terrapin,40:72:124:281:334:378:509:581:851:979:1113:1171:1198:1283:1299:1327:1377:1477:1531:1676:1717:1816:1932:2197:2283:2363:2545:2747:2836:2913:3073:3137:3236:3343:3477:3784:3998:4074,223,TRUE,,,
-225,Terrapin Transit,Mickey Hart & Bill Kreutzmann (Grateful Dead),Transit,Terrapin,38:61:70:122:279:332:376:507:579:849:977:1111:1169:1196:1281:1297:1325:1375:1475:1529:1674:1814:1930:2195:2281:2361:2543:2745:2834:3071:3135:3234:3341:3475:3782:3996:4072,225,TRUE,,,
-440,Four,Miles Davis,,,,440,,,,
-335,Jean Pierre,Miles Davis,,,,335,,,,
-205,So What,Miles Davis,,,,205,TRUE,TRUE,,
-73,Fast and Loose,Motörhead,,,3156,73,,,,
-259,Walking Through the Park,Muddy Waters,,,2749,259,,,,
-70,Everybody Knows This Is Nowhere,Neil Young,,,3191:3902,70,,,,
-81,Fuckin' Up,Neil Young,,,646:3667,81,,,,
-95,Harvest Moon,Neil Young,,,2477,95,,,,
-106,Hippie Dream,Neil Young,,,1404:3000,106,,,,
-257,Vampire Blues,Neil Young,,,844:1410:1505:1981:2326:3330,257,,,,
-270,Words (Between the Lines of Age),Neil Young,,,3190,270,,,,
-345,Ballroom Blitz,Nicky Chin & Mike Chapman (The Sweet),,,,345,,,,
-369,Flight of the Bumblebee,Nikolai Rimsky-Korsakov,,,,369,,,,
-19,Big Railroad Blues,Noah Lewis,,,210:247:806:1061:1163:1203:1273:1542:2387:3041:3322:3872:3911,19,TRUE,TRUE,,
-258,Viola Lee Blues,Noah Lewis,VLB,,20:57:109:185:187:189:243:266:386:442:444:520:522:664:770:772:793:1015:1019:1033:1097:1099:1188:1256:1320:1514:1590:1643:1648:1707:1866:1895:1897:1956:2256:2300:2409:2523:2626:2822:2849:3005:3140:3213:3288:3352:3404:3459:3515:3561:3602:3715:3834:3930:4039:4127:4129,258,TRUE,TRUE,,
-168,Not Fade Away,Norman Petty & Buddy Holly,NFA,,90:136:203:246:283:366:396:474:501:557:596:645:682:717:731:801:936:999:1024:1124:1146:1192:1233:1340:1406:1485:1487:1577:1656:1728:1730:1850:1886:1939:1970:2025:2141:2143:2158:2160:2302:2486:2567:2659:2706:2940:2989:3016:3027:3145:3174:3241:3324:3384:3397:3517:3550:3620:3654:3836:3901:4060,168,TRUE,TRUE,,
-143,Man Smart (Woman Smarter),Norman Span (King Radio),Women Smarter,,236:564:1104:1771:2146:2317:2474:2566:2661:2811:2847:2945:3028:3090:3223:3308:3498:3720:4095:4165,143,TRUE,TRUE,,
-316,Head Over Heels,Orzabal – Smith (Tears for Fears),,,,316,,,,
-462,Crazy Train,Osbourne — Rhoads — Daisley (Ozzy Osbourne),,,,462,,,,
-93,Hard To Handle,Otis Redding,,,1148:2251:3729:3959,93,TRUE,TRUE,,
-35,I Can't Turn You Loose,"Otis Redding, Steve Cropper, William Robinson",,,,35,,,,
-269,Why Don't We Do It in the Road?,Paul McCartney (The Beatles),,,3581:3728,269,TRUE,TRUE,,
-1,50 Ways to Leave Your Lover,Paul Simon,,,614,1,,,,
-272,You Can Call Me Al,Paul Simon,,,,272,,,,
-452,Let My Love Open the Door,Pete Townshend,,,,452,,,,
-174,Passenger,Peter Monk & Phil Lesh (Grateful Dead),,,1642,174,TRUE,,,
-192,Runnin' Down a Dream,Petty – Lynne – Campbell (Tom Petty),,,2157,192,,,,
-210,Stronger Than Dirt,Phil Lesh (Grateful Dead),,,,210,TRUE,,,
-29,Box of Rain,Phil Lesh & Robert Hunter (Grateful Dead),,,153:991:1091:1662:1800:2121:2335:2512:2716:2881:3258:3357:3430:3768,29,TRUE,,,
-127,King Solomon's Marbles,"Phil Lesh, Mickey Hart, Bill Kreutzmann (Grateful Dead)",KSM,,112:152:311:413:476:628:728:781:857:1073:1384:1435:1506:1533:1640:1826:2050:2069:2176:2339:2553:3108:3291:3415:3599:3761:3922:4172,127,TRUE,,,
-297,Another Brick in the Wall,Pink Floyd,ABITW,,,297,,,,
-405,Echoes,Pink Floyd,,,3798:3942,405,,,,
-333,Fearless,Pink Floyd,,,,333,,,,
-150,Money,Pink Floyd,,,2277:2297,150,,,,
-394,On the Run,Pink Floyd,,,,394,,,,
-404,Pigs (Three Different Ones),Pink Floyd,,,3800:3963,404,,,,
-412,Set the Controls for the Heart of the Sun,Pink Floyd,,,3810,412,,,,
-307,Peaches,Presidents of the United States of America,,,,307,,,,
-343,Rum & Coca Cola,Professor Longhair,,,,343,,,,
-321,Don't Stop Me Now,Queen,,,,321,,,,
-456,Airbag,Radiohead,,,,456,,,,
-387,Everything in Its Right Place,Radiohead,,,,387,,,,
-126,Killer Cars,Radiohead,,,859:2787,126,,,,
-160,"Myxomatosis. (Judge, Jury & Executioner.)",Radiohead,,,861,160,,,,
-308,Optimistic,Radiohead,,,,308,,,,
-173,Paranoid Android,Radiohead,,,1573,173,,,,
-227,The Bends,Radiohead,,,854:2215:2988:4176,227,,,,
-161,The National Anthem,Radiohead,,,1715,161,,,,
-380,There There. (The Boney King of Nowhere.),Radiohead,There There,,,380,,,,
-231,The 'In' Crowd,Ramsey Lewis (Billy Page),,,2032,231,,,,
-443,Shake Your Body (Down to the Ground),Randy Jackson & Michael Jackson (The Jacksons),,,,443,,,,
-358,Powerhouse,Raymond Scott,,,,358,,,,
-406,2001 (Also Sprach Zarathustra),Richard Strauss (Phish),,,,406,,,,
-31,Broken Arrow,Robbie Robertson,,,2779:3776,31,,,,
-43,Chest Fever,Robbie Robertson (The Band),,,4164,43,,,,
-172,Ophelia,Robbie Robertson (The Band),,,224:409:910:1122:1248:1484:1881:2366:2887:3009:3198:3726,172,,,,
-393,Rag Mama Rag,Robbie Robertson (The Band),,,3737,393,,,,
-67,Easy Wind,Robert Hunter (Grateful Dead),,,28:135:265:398:436:560:1087:1214:1235:1575:1836:2039:2179:2391:2522:2724:2877:2995:3229:3310:4041,67,TRUE,,,
-155,It Must Have Been the Roses,Robert Hunter (Grateful Dead),Maybe It Was the Roses,,990:1125:1243:1352:1430:1920:2334:2871:3199:3613,155,TRUE,,,
-8,Alligator,"Robert Hunter & ""Pigpen"" Ron McKernan (Grateful Dead)",,,91:110:219:410:483:629:791:866:1001:1047:1511:1576:1735:1845:2015:2066:2173:2258:2550:2814:2883:3033:3287:3719:3848:4105,8,TRUE,,,
-154,Mr. Charlie,"Robert Hunter & ""Pigpen"" Ron McKernan (Grateful Dead)",,,5:105:253:412:529:600:794:879:1058:1290:1446:1710:2017:2144:2398:2476:2947:3097:3457:3714,154,TRUE,,,
-199,Silvio,Robert Hunter & Bob Dylan,,,1354:2056:2304:2388:2613:3282:3432:3668:3827,199,TRUE,TRUE,,
-90,Greatest Story Ever Told,Robert Hunter & Bob Weir (Grateful Dead),Greatest Story,,206:295:297:338:420:497:540:584:669:687:796:869:901:903:919:972:1090:1249:1367:1525:1726:1738:1777:1964:2132:2222:2314:2404:2473:2505:2507:2636:2682:2799:2958:3046:3095:3207:3294:3463:3575:3597:3700:3820:3822:4020:4110,90,TRUE,,,
-176,Playing in the Band,Robert Hunter & Bob Weir (Grateful Dead),Playing,,32:79:89:190:272:359:380:531:552:722:752:842:949:1071:1264:1266:1360:1457:1830:2031:2033:2109:2184:2269:2316:2371:2452:2576:2634:2672:2717:2794:2802:2975:3048:3110:3183:3251:3263:3360:3425:3471:3488:3570:3595:3619:3693:3744:3797:3864:3949:3965:4044:4114:4171,176,TRUE,,,
-215,Sugar Magnolia,Robert Hunter & Bob Weir (Grateful Dead),,,215:299:360:401:453:499:512:573:631:802:873:969:1128:1161:1262:1540:1679:1748:1788:1961:2162:2765:2915:3187:3786:3888:4132,215,TRUE,,,
-217,Sunshine Daydream,Robert Hunter & Bob Weir (Grateful Dead),SSDD,,216:300:364:402:454:500:513:574:632:803:874:981:1129:1162:1263:1541:1680:1749:1789:1962:2163:2766:3188:4133:4163,217,TRUE,,,
-5,Alabama Getaway,Robert Hunter & Jerry Garcia (Grateful Dead),,,204:345:559:1004:2936:3731:4031,5,TRUE,,,
-9,Althea,Robert Hunter & Jerry Garcia (Grateful Dead),,,2:33:78:169:267:320:423:545:686:824:941:1123:1153:1225:1467:1569:1801:1973:2028:2100:2229:2530:2635:2758:2820:3047:3121:3176:3216:3411:3489:3512:3596:3764:3839:3953,9,TRUE,,,
-18,Bertha,Robert Hunter & Jerry Garcia (Grateful Dead),,,1:27:76:227:250:337:416:494:524:634:663:719:792:885:1002:1076:1142:1213:1229:1302:1407:1610:1754:1913:1977:2000:2063:2106:2145:2299:2348:2369:2475:2519:2573:2677:2728:2729:2906:2960:3085:3131:3150:3209:3267:3329:3505:3632:3669:3751:3837:3958:4007:4107,18,TRUE,,,
-22,Bird Song,Robert Hunter & Jerry Garcia (Grateful Dead),,,133:202:271:561:799:1060:1258:1344:1544:1639:1948:1950:2264:2266:2374:2681:2976:3279:3281:3588:3775:3841:3913:4015:4170,22,TRUE,,,
-23,Black Muddy River,Robert Hunter & Jerry Garcia (Grateful Dead),,,2889:3698,23,TRUE,,,
-24,Black Peter,Robert Hunter & Jerry Garcia (Grateful Dead),,,207:551:887:2340:2731:3672,24,TRUE,,,
-26,Blues for Allah,Robert Hunter & Jerry Garcia (Grateful Dead),B4A,,1390:3168:3323,26,TRUE,,,
-30,Brokedown Palace,Robert Hunter & Jerry Garcia (Grateful Dead),,,42:130:301:753:1421:1878:1992:2098:2292:3240:3527:3593:3946,30,TRUE,,,
-32,Brown-Eyed Women,Robert Hunter & Jerry Garcia (Grateful Dead),BEW,,6:132:170:235:254:388:502:597:679:808:881:915:1006:1117:1219:1260:1316:1412:1486:1605:1618:1688:1847:1849:1890:2097:2137:2187:2285:2426:2501:2638:2703:2723:2951:3030:3083:3127:3167:3246:3346:3383:3431:3484:3525:3545:3625:3651:3716:3835:3897:4047,32,TRUE,,,
-33,Built To Last,Robert Hunter & Jerry Garcia (Grateful Dead),,,745,33,TRUE,,,
-34,Candyman,Robert Hunter & Jerry Garcia (Grateful Dead),,,419:870:1020:1350:1712:1781:2223:2313:2690:2784:2961:3096:3196:3326:3462:3629:3685:3877:4052,34,TRUE,,,
-37,Casey Jones,Robert Hunter & Jerry Garcia (Grateful Dead),,,47:173:304:418:905:1059:1241:1445:1589:1868:2036:2175:2678:2904:3172:3273:3572:3730:3896,37,TRUE,,,
-44,China Cat Sunflower,Robert Hunter & Jerry Garcia (Grateful Dead),China Cat,,9:63:172:244:263:323:383:477:532:601:726:816:925:956:1063:1212:1275:1332:1415:1461:1616:1742:1772:1899:2127:2253:2322:2468:2493:2604:2657:2687:2763:2816:2848:2938:3011:3062:3114:3178:3227:3401:3523:3556:3725:3868:3927:4042:4106,44,TRUE,,,
-45,China Doll,Robert Hunter & Jerry Garcia (Grateful Dead),,,2236:3767,45,TRUE,,,
-50,Cosmic Charlie,Robert Hunter & Jerry Garcia (Grateful Dead),,,973:2227:2788:3295:3362:3918,50,TRUE,,,
-51,Crazy Fingers,Robert Hunter & Jerry Garcia (Grateful Dead),,,104:143:151:241:252:411:448:657:826:1081:1398:1454:1602:1766:1953:2053:2226:2538:2582:2858:2917:3103:3214:3292:3361:3392:3424:3494:3608:3706:3962:4061,51,TRUE,,,
-60,Deal,Robert Hunter & Jerry Garcia (Grateful Dead),,,4:48:307:566:724:918:1100:1211:1493:1803:2513:2955:3088:3254:3945,60,TRUE,,,
-62,Dire Wolf,Robert Hunter & Jerry Garcia (Grateful Dead),,,469:778:963:3290:3952,62,TRUE,,,
-63,Doin' That Rag,Robert Hunter & Jerry Garcia (Grateful Dead),,,984:2488:3947,63,TRUE,,,
-66,Dupree's Diamond Blues,Robert Hunter & Jerry Garcia (Grateful Dead),Dupree's,,24:2552:3262:3960,66,TRUE,,,
-71,Eyes of the World,Robert Hunter & Jerry Garcia (Grateful Dead),Eyes,,12:51:111:150:273:356:391:438:473:528:659:780:810:948:997:1069:1180:1215:1222:1292:1391:1439:1456:1496:1567:1664:1733:1837:1935:1993:2185:2306:2415:2478:2490:2563:2637:2709:2773:2805:2826:2857:2868:2946:2977:3058:3119:3184:3224:3368:3382:3447:3509:3531:3577:3623:3681:3817:3869:3905:3977:4043:4086:4113:4183,71,TRUE,,,
-76,Foolish Heart,Robert Hunter & Jerry Garcia (Grateful Dead),,,Camila Cabello,76,TRUE,,,
-100,He's Gone,Robert Hunter & Jerry Garcia (Grateful Dead),,,106:259:435:547:611:950:1051:1178:1190:1286:1321:1427:1482:1696:1784:1949:1951:2108:2122:2171:2287:2526:2653:2710:2791:2952:3022:3098:3186:3250:3349:3388:3470:3636:3638:3692:3814:3964:4092:4121,100,TRUE,,,
-98,Help on the Way,Robert Hunter & Jerry Garcia (Grateful Dead),Help,,13:81:144:174:230:256:316:370:439:491:518:590:605:640:675:711:786:813:894:938:993:1035:1048:1151:1186:1306:1401:1424:1578:1657:1689:1756:1917:1966:2004:2094:2138:2213:2399:2440:2499:2589:2617:2662:2725:2738:2926:2986:3019:3050:3092:3163:3243:3331:3377:3417:3468:3617:3647:3662:3742:3818:3854:3880:3981:4096:4143,98,TRUE,,,
-99,Here Comes Sunshine,Robert Hunter & Jerry Garcia (Grateful Dead),,,404:892:1103:1238:1253:1359:1444:1861:1863:1896:2113:2231:2379:2433:2485:2815:2920:3111:3113:3182:3276:3403:3416:3491:3717:3793:3915:4025:4036:4067:4126,99,TRUE,,,
-105,High Time,Robert Hunter & Jerry Garcia (Grateful Dead),,,3067,105,TRUE,,,
-120,Jack Straw,Robert Hunter & Jerry Garcia (Grateful Dead),,,3:148:285:394:572:671:836:838:1011:1348:1429:1464:1745:1768:1828:1892:1979:1995:2075:2103:2124:2201:2275:2386:2427:2518:2535:2557:2628:2707:2775:2810:2840:2880:2966:2979:3054:3081:3126:3293:3350:3374:3449:3495:3555:3616:3759:3812:3935:4032:4098:4135,120,TRUE,,,
-128,Lady With a Fan,Robert Hunter & Jerry Garcia (Grateful Dead),,Terrapin,35:67:96:119:159:276:329:373:459:504:576:704:738:846:929:974:1108:1157:1193:1278:1294:1322:1372:1472:1526:1671:1697:1809:1927:2085:2192:2278:2358:2455:2540:2742:2831:2908:2967:3068:3132:3231:3315:3472:3533:3779:3994:4006:4070:4161,128,TRUE,,,
-131,Lazy River Road,Robert Hunter & Jerry Garcia (Grateful Dead),,,2150:4018:4130,131,TRUE,,,
-138,Loose Lucy,Robert Hunter & Jerry Garcia (Grateful Dead),,,365:1665:3303:3906,138,TRUE,,,
-139,Loser,Robert Hunter & Jerry Garcia (Grateful Dead),,,107:1356:1520:1588:1719:1841:1887:1980:2012:2225:2328:2389:2520:2644:2769:2801:2845:3099:3503:3600:3745:3891:4009,139,TRUE,,,
-146,Might as Well,Robert Hunter & Jerry Garcia (Grateful Dead),,,3594:3889,146,TRUE,,,
-148,Mississippi Halfstep Uptown Toodleloo,Robert Hunter & Jerry Garcia (Grateful Dead),Half Step,,214:350:421:537:912:1085:1145:1267:1546:1580:1722:1774:1925:2018:2154:2268:2315:2401:2528:2602:2714:2804:2935:2980:3045:3230:3356:3435:3497:3733:3816:3919:4091:4111,148,TRUE,,,
-165,New Speedway Boogie,Robert Hunter & Jerry Garcia (Grateful Dead),,,987:1383:1508:2117:2120:2183:2357:2789:2896:3078:3441:3493:3696:3863:4033:4040,165,TRUE,,,
-184,Ramble On Rose,Robert Hunter & Jerry Garcia (Grateful Dead),,,191:225:339:381:498:721:909:1127:1247:1394:1500:1597:1760:2020:2203:2261:2459:2656:2757:2860:3043:3218:3426:3951,184,TRUE,,,
-187,Ripple,Robert Hunter & Jerry Garcia (Grateful Dead),,,116:482:965:1790:1942:2309:3159:3666:4178,187,TRUE,,,
-190,Row Jimmy,Robert Hunter & Jerry Garcia (Grateful Dead),,,26:673:759:795:875:992:1057:1217:1227:1304:1436:1534:1725:1765:2014:2245:2393:2453:2533:2609:2712:2798:2873:2996:3039:3252:3354:3598:3713:3851:3940:4076:4136,190,TRUE,,,
-195,Scarlet Begonias,Robert Hunter & Jerry Garcia (Grateful Dead),Scarlet,,30:92:114:194:238:249:407:489:553:732:764:833:890:920:970:1054:1236:1488:1494:1584:1609:1854:1906:1965:2057:2067:2207:2446:2508:2559:2612:2664:2829:2885:2959:3034:3147:3202:3206:3363:3519:3644:3689:3807:3938:3990:4030:4058:4134,195,TRUE,,,
-196,Shakedown Street,Robert Hunter & Jerry Garcia (Grateful Dead),Shakedown,,8:29:62:117:167:232:315:343:344:425:455:495:530:569:593:613:692:734:860:899:927:959:1029:1121:1135:1250:1331:1503:1523:1651:1708:1737:1825:1922:1958:2080:2250:2271:2308:2406:2432:2496:2579:2654:2700:2753:2781:2813:2838:2874:2943:2965:3014:3029:3141:3249:3260:3365:3391:3443:3444:3453:3499:3507:3543:3583:3634:3671:3748:3826:3883:3929:4027:4066:4141:4179,196,TRUE,,,
-403,Ship of Fools,Robert Hunter & Jerry Garcia (Grateful Dead),,,3778,403,TRUE,,,
-207,Stagger Lee,Robert Hunter & Jerry Garcia (Grateful Dead),,,212:3160:3771,207,TRUE,,,
-208,Standing on the Moon,Robert Hunter & Jerry Garcia (Grateful Dead),,,736:2418:3564,208,TRUE,,,
-209,Stella Blue,Robert Hunter & Jerry Garcia (Grateful Dead),,,128:312:571:773:917:1419:1983:2161:2188:2562:2793:3166:3307:3408:3496:3708:3846:4002:4069,209,TRUE,,,
-214,Sugaree,Robert Hunter & Jerry Garcia (Grateful Dead),,,108:558:729:756:1098:2037:2447:3657:3790:4045:4078:4119:4169,214,TRUE,,,
-221,Tennessee Jed,Robert Hunter & Jerry Garcia (Grateful Dead),,,7:768:828:878:902:907:1028:1053:1268:1319:1553:1626:1628:1685:1796:1976:1998:2217:2372:2472:2536:2569:2671:2715:2924:3080:3130:3221:3414:3609:3704:3795:3973:4166,221,TRUE,,,
-274,Terrapin Refrain,Robert Hunter & Jerry Garcia (Grateful Dead),Refrain,Terrapin,41:73:125:282:335:379:510:582:852:980:1114:1172:1199:1284:1300:1328:1378:1478:1532:1677:1817:1933:2198:2293:2364:2546:2748:2837:2914:3074:3138:3237:3344:3478:3785,274,TRUE,,,
-224,Terrapin Station,Robert Hunter & Jerry Garcia (Grateful Dead),Station,Terrapin,36:68:97:120:160:277:330:374:460:505:577:705:739:847:930:975:1109:1158:1194:1279:1295:1323:1373:1473:1527:1595:1672:1698:1812:1928:2086:2193:2279:2359:2456:2541:2743:2832:2909:2968:3069:3133:3232:3316:3473:3534:3780:3943:3995:4071:4162,224,TRUE,,,
-242,They Love Each Other,Robert Hunter & Jerry Garcia (Grateful Dead),TLEO,,218:326:539:1130:1226:1559:1848:2034:2355:2450:2876:3112:3272:3710:3926:4156:4182,242,TRUE,,,
-247,Til the Morning Comes,Robert Hunter & Jerry Garcia (Grateful Dead),,,1641:2918:3924,247,TRUE,,,
-249,Touch of Grey,Robert Hunter & Jerry Garcia (Grateful Dead),,,352:1272:1388:1408:1462:1561:1829:2046:2167:2327:2344:2381:2444:2555:2852:2899:3285:3455:3611:3643:3653:3659:3859:3933:3985:4063:4174,249,TRUE,,,
-256,U.S. Blues,Robert Hunter & Jerry Garcia (Grateful Dead),,,21:1791:1911:3075:3398:3429:3605:3932:4116,256,TRUE,,,
-255,Uncle John's Band,Robert Hunter & Jerry Garcia (Grateful Dead),UJB,,43:53:58:138:197:223:275:389:434:525:550:607:668:701:777:856:858:945:1021:1038:1089:1240:1342:1353:1438:1479:1481:1510:1582:1599:1601:1645:1647:1713:1782:1947:2082:2189:2338:2514:2620:2760:2772:2855:2869:2949:3117:3226:3275:3376:3578:3626:3649:3718:3831:4022,255,TRUE,,,
-264,West LA Fadeaway,Robert Hunter & Jerry Garcia (Grateful Dead),,,358:1074:2208:2291:3052:3773,264,TRUE,,,
-265,Wharf Rat,Robert Hunter & Jerry Garcia (Grateful Dead),,,298:638:1355:1678:1831:2301:3586:3760:3865:3950:4138,265,TRUE,,,
-40,Cats Under the Stars,Robert Hunter & Jerry Garcia (Jerry Garcia Band),Cats,,2318:2332:2410:2461:2524:2606:2649:2777:2796:2843:2901:2903:2905:3003:3065:3106:3210:3296:3385:3464:3590:3738:3789:3874:3970:4050:4151,40,TRUE,,,
-147,Mission in the Rain,Robert Hunter & Jerry Garcia (Jerry Garcia Band),,,217:703:1138:1840:2581:3335:3559:3749:3829:4173,147,TRUE,,,
-153,Mountains of the Moon,Robert Hunter & Jerry Garcia (Jerry Garcia Band),,,177,153,TRUE,,,
-185,Reuben and Cherise,Robert Hunter & Jerry Garcia (Jerry Garcia Band),Ruben,,50:126:183:286:395:437:527:626:843:904:1025:1119:1132:1221:1341:1409:1465:1592:1655:1732:1865:1885:1985:2114:2147:2259:2305:2347:2375:2469:2487:2625:2720:2818:2825:2932:3017:3057:3118:3200:3338:3406:3466:3567:3655:3809:3844:3909:3989:4094:4157,185,TRUE,,,
-204,So Many Roads,Robert Hunter & Jerry Garcia (Jerry Garcia Band),,,643:1368:1787:2043:2629:3264:3900,204,TRUE,,,
-75,Fire on the Mountain,Robert Hunter & Mickey Hart (Grateful Dead),Fire,,31:93:115:195:239:288:408:490:555:765:834:891:921:971:1055:1202:1237:1490:1585:1629:1750:1855:1908:1968:2060:2072:2168:2448:2510:2614:2888:2963:3036:3148:3205:3314:3520:3631:3645:3690:3842:3939:4000:4017:4053:4140,75,TRUE,,,
-229,The Eleven,Robert Hunter & Phil Lesh (Grateful Dead),11,,17:46:64:181:294:347:384:457:478:516:588:655:678:689:784:800:872:955:1064:1144:1209:1230:1315:1416:1492:1522:1632:1824:1888:2070:2128:2177:2310:2491:2645:2674:2732:2812:2821:2863:3007:3077:3100:3309:3379:3601:3686:3892:3969:4010,229,TRUE,,,
-79,Friend of the Devil,"Robert Hunter, ""Marmaduke"" John Dawson, Jerry Garcia (Grateful Dead)",,,55:960:1165:1191:3152:3756,79,TRUE,,,
-78,Franklin's Tower,"Robert Hunter, Bill Kreutzmann, Jerry Garcia (Grateful Dead)",Frank's,,15:83:146:176:258:318:415:446:485:630:713:820:868:923:995:1032:1106:1149:1338:1452:1871:1910:1991:2016:2077:2242:2413:2438:2592:2693:2734:2823:2928:2992:3298:3337:3421:3511:3562:3603:3688:3858:4081,78,TRUE,,,
-241,The Wheel,"Robert Hunter, Bill Kreutzmann, Jerry Garcia (Grateful Dead)",,,66:274:296:321:399:433:511:583:618:700:720:737:855:908:1010:1037:1039:1088:1175:1177:1285:1291:1317:1393:1428:1448:1537:1556:1558:1600:1625:1714:1716:1718:1785:1945:2040:2042:2105:2129:2247:2289:2429:2516:2619:2651:2704:2754:2770:2809:2854:2948:3086:3109:3153:3225:3348:3387:3440:3500:3573:3576:3637:3658:3796:3850:3921:3923:4021:4100:4117,241,TRUE,,,
-251,Truckin',"Robert Hunter, Bob Weir, Phil Lesh, Jerry Garcia (Grateful Dead)",,,23:59:137:147:233:260:349:382:432:503:546:587:595:656:699:763:825:876:928:954:1044:1082:1084:1140:1277:1305:1313:1399:1417:1501:1516:1518:1603:1660:1684:1832:1893:1975:1996:2092:2123:2218:2265:2267:2274:2351:2419:2421:2470:2527:2584:2621:2713:2736:2782:3023:3025:3031:3125:3170:3247:3351:3380:3412:3506:3526:3546:3604:3635:3676:3752:3815:3840:3878:3954:4003:4011:4104:4139,251,TRUE,,,
-277,Part II: Let It Grow,"Robert Hunter, Eric Andersen, Bob Weir (Grateful Dead)",Let It Grow,Weather Report,86:142:201:270:369:536:610:644:667:696:748:832:944:1068:1206:1228:1387:1420:1550:1557:1593:1596:1617:1620:1622:1695:1794:1872:1914:1916:1987:1989:2022:2065:2074:2244:2290:2356:2417:2443:2506:2537:2643:2679:2851:2916:2997:3059:3143:3181:3215:3306:3396:3485:3532:3544:3612:3697:3811:3847:3941:3999:4001:4016:4099:4131,277,TRUE,,,
-55,Cumberland Blues,"Robert Hunter, Jerry Garcia, Phil Lesh (Grateful Dead)",Cumberland,,25:56:186:229:305:342:443:493:543:570:585:615:723:862:897:914:1005:1043:1070:1160:1185:1244:1251:1289:1423:1443:1498:1572:1574:1635:1736:1808:1957:2051:2170:2172:2295:2377:2479:2532:2689:2695:2697:2752:2778:2879:3087:3212:3270:3456:3560:3712:3832:3894:4028:4055:4152:4154,55,TRUE,,,
-59,Dark Star,"Robert Hunter, Jerry Garcia, Phil Lesh, Bill Kreutzmann, Mickey Hart, ""Pigpen"" Ron McKernan, Bob Weir (Grateful Dead)",,,113:156:158:310:355:783:1365:1692:1821:1924:2044:2156:2159:2830:2897:3787:4035,59,TRUE,,,
-144,Mason's Children,"Robert Hunter, Jerry Garcia, Phil Lesh, Bob Weir (Grateful Dead)",,,154:1164:3154,144,TRUE,,,
-211,St. Stephen,"Robert Hunter, Phil Lesh, Jerry Garcia (Grateful Dead)","Saint Stephen, Saint Steven",,16:45:88:94:180:292:346:427:451:471:541:599:653:688:691:767:769:785:853:871:884:900:947:1012:1014:1065:1168:1207:1269:1271:1314:1345:1413:1491:1512:1517:1747:1822:2054:2254:2382:2394:2551:2828:2933:2985:3006:3008:3049:3169:3197:3266:3359:3400:3467:3486:3553:3639:3677:3849:3992:4037:4149,211,TRUE,,,
-299,Samba in the Rain,"Robert Hunter, Phil Lesh, Jerry Garcia (Jerry Garcia Band)",,,,299,TRUE,,,
-11,At a Siding,"Robert Hunter, Phil Lesh, Mickey Hart, Jim McPherson (Grateful Dead) (Grateful Dead)",Siding,Terrapin,39:71:123:280:333:377:508:580:850:978:1112:1170:1197:1282:1298:1326:1376:1476:1530:1675:1815:1931:2196:2282:2362:2544:2746:2835:3072:3136:3235:3342:3476:3783:3997:4073,11,TRUE,,,
-132,Lemon Song,Robert Johnson (Led Zeppelin),,,1045,132,,,,
-465,Sneaking Sally Through the Alley,Robert Palmer,,,,465,,,,
-179,Pride of Cucamonga,Robert Petersen & Phil Lesh (Grateful Dead),,,171:2451,179,TRUE,,,
-254,Unbroken Chain,Robert Petersen & Phil Lesh (Grateful Dead),,,80:193:702:1358:2252:3540,254,TRUE,,,
-351,If You Think I'm Sexy,Rod Stewart,,,,351,,,,
-294,My Favorite Things,Rodgers & Hammerstein,,,,294,,,,
-408,Breathe,Roger Waters (Pink Floyd),,,3801,408,,,,
-384,Cupid,Sam Cooke,,,,384,,,,
-421,The Entertainer,Scott Joplin,,,,421,,,,
-453,Paradise City,Slash – Rose – Stradlin – McKagan – Adler (Guns N' Roses),,,,453,,,,
-112,I'm a King Bee,Slim Harpo (James Moore),,,1357:1631,112,TRUE,TRUE,,
-434,Everyday People,Sly Stone,,,,434,,,,
-433,Thank You (Falettinme Be Mice Elf Agin),Sly Stone,,,,433,,,,
-346,St. Thomas,Sonny Rollins,Saint Thomas,,,346,,,,
-117,In the Meantime,Spacehog,,,2740:2892:3409:4102,117,,,,
-396,School Days,Stanley Clarke,,,,396,,,,
-48,Cinnamon and Lesbians,Stephen Malkmus and the Jicks,,,1823,48,,,,
-349,Fly Like an Eagle,Steve Miller,,,,349,,,,
-290,Swingtown,Steve Miller Band,,,,290,,,,
-459,Boogie On Reggae Woman,Stevie Wonder,,,,459,,,,
-310,Living for the City,Stevie Wonder,,,,310,,,,
-218,Superstition,Stevie Wonder,,,,218,,,,
-347,Tom's Diner,Suzanne Vega,,,,347,,,,
-373,Crosseyed and Painless,Talking Heads,,,,373,,,,
-428,Life During Wartime,Talking Heads,,,,428,,,,
-56,Dance of the Sugar Plum Fairy,Tchaikovsky,,,1018,56,,,,
-359,Everybody Wants to Rule the World,Tears for Fears,,,,359,,,,
-133,Life is a Carnival,The Band,,,1659:2776,133,,,,
-136,Look Out Cleveland,The Band,,,3372,136,,,,
-234,The Night They Drove Old Dixie Down,The Band,,,1000:1882:2350:3740,234,TRUE,TRUE,,
-240,The Weight,The Band,,,889:1022:1093:1653:1856:2365:2890,240,TRUE,TRUE,,
-302,Walk Like an Egyptian,The Bangles,,,,302,,,,
-287,Day Tripper,The Beatles,,,,287,,,,
-381,Please Please Me,The Beatles,,,,381,,,,
-331,Something in the Way She Moves,The Beatles,,,,331,,,,
-260,Waterloo Sunset,The Kinks,,,2941,260,,,,
-158,My Sharona,The Knack,,,1565,158,,,,
-413,I Hate Love,The Slip,,,3821,413,,,,
-305,I Want Candy,The Strangeloves,,,,305,,,,
-293,Baba O'Riley,The Who,,,,293,,,,
-371,Who Are You,The Who,,,,371,,,,
-244,This Will Be Our Year,The Zombies,,,3547,244,,,,
-361,Bemsha Swing,Thelonious Monk,,,,361,,,,
-162,Never Been to Spain,Three Dog Night,,,3116:3222:3580:3769,162,,,,
-122,Joeline,Tom Hamilton,,,1176:3574,122,,,TRUE,
-344,Breakdown,Tom Petty,,,,344,,,,
-350,Amazing Grace,traditional,,,,350,,,,
-13,Auld Lang Syne,traditional,ALS,,968,13,,,,
-42,C.C. Rider,traditional,,,3565:3739,42,,,,
-49,Cold Rain and Snow,traditional,CRS,,75,49,TRUE,,,
-61,Deep Elem Blues,traditional,Deep Elem,,2038:2148,61,TRUE,,,
-64,Don't Ease Me In,traditional,,,652:1513:1770:3286:3873,64,TRUE,,,
-84,Going Down The Road Feeling Bad,traditional,GDTRFB,,289:324:430:452:542:774:804:882:1013:1026:1077:1133:1231:1308:1458:1539:1704:1843:2023:2151:2342:2383:2423:2462:2630:2692:2718:3035:3204:3312:3529:3684:3828:4147,84,TRUE,,,
-92,Happy Birthday,traditional,,,129:196:966:1008:1681:2047:2049:2209,92,TRUE,,,
-101,He Was a Friend of Mine,traditional,,,1405,101,TRUE,,,
-110,I Know You Rider,traditional,Rider,,10:65:95:134:166:245:264:385:458:479:533:565:589:602:681:715:727:750:819:926:957:1056:1166:1208:1276:1333:1347:1466:1552:1587:1607:1743:1877:1891:1902:1986:2131:2239:2323:2343:2466:2494:2561:2607:2658:2666:2764:2819:2850:2902:2939:3012:3063:3115:3179:3203:3228:3283:3364:3402:3433:3516:3557:3592:3633:3679:3871:3991:4059:4083:4109,110,TRUE,,,
-422,It Hurts Me Too,traditional,,,3968:4085,422,TRUE,,,
-119,Jack A Roe,traditional,,,222:698:896:1042:1261:1370:1869:2866:3094:3257:3446:3757,119,TRUE,,,
-163,New Minglewood Blues,traditional,Minglewood,,306:598:674:1216:1392:1759:2232:2329:2380:2640:2685:2806:2842:3120:3334:3522:3568:3606:3652:3656:4014:4087:4125,163,TRUE,,,
-164,New Orleans March,traditional,,,1654,164,,,,
-175,Peggy-O,traditional,,,2575:3105:3158:3301:3436:3569:3621:3722:3857:3976,175,TRUE,,,
-407,Reveille,traditional,,,,407,,,,
-194,Samson and Delilah,traditional,If I Had My Way,,303:340:544:623:718:790:1126:1630:1752:1839:1978:2079:2110:2199:2324:2395:2467:2549:2727:2891:2957:2974:3053:3102:3255:3300:3336:3438:3481:3528:3694:3755:3823:3972:4019:4089:4145,194,TRUE,,,
-326,Streets of Cairo,traditional,,,,326,,,,
-457,The Farmer in the Dell,traditional,,,,457,,,,
-262,We Bid You Goodnight,traditional,WBYGN,,290:325:431:775:805:883:1309:1459:1705:1879:2024:2134:2384:2424:2463:2631:2719:3038:3189:3313:3650,262,TRUE,,,
-451,Divided Sky,Trey Anastasio (Phish),,,,451,,,,
-289,Foam,Trey Anastasio (Phish),,,,289,,,,
-455,Llama,Trey Anastasio (Phish),,,,455,,,,
-284,Bathtub Gin,Trey Anastasio & Susannah Goodman (Phish),,,,284,,,,
-450,Chalk Dust Torture,Trey Anastasio & Tom Marshall (Phish),,,,450,,,,
-329,Stash,Trey Anastasio & Tom Marshall (Phish),,,,329,,,,
-313,I'll Wait,Van Halen,,,,313,,,,
-36,Caravan,Van Morrison,,,3549,36,,,,
-200,Sittin' on Top of the World,Walter Jacobs & Lonnie Carter (the Mississippi Sheiks),Sitting on Top of the World,,983:1096:1234:1835:2767:4150,200,TRUE,TRUE,,
-282,Walk the Dinosaur,Was (Not Was),,,,282,,,,
-409,Time,Waters — Wright — Gilmour (Pink Floyd),,,3799,409,,,,
-203,So Long Jerry,Ween,,,1349,203,,,TRUE,
-228,The Blarney Stone,Ween,,,2646,228,,,TRUE,
-57,Dancing in the Streets,"William Stevenson, Marvin Gaye, Ivy Joe Hunter",Dancing,,468:515:521:660:758:807:880:922:996:1030:1116:1159:1184:1223:1334:1411:1495:1562:1564:1566:1666:1687:1709:1870:1889:1909:1990:2002:2076:2119:2186:2284:2337:2414:2480:2529:2565:2639:2683:2702:2708:2856:2872:2934:2998:3037:3128:3185:3245:3371:3375:3439:3530:3624:3665:3746:3747:3813:3870:3907:3978:4080:4112:4155:4180,57,TRUE,TRUE,,
-134,Little Red Rooster,Willie Dixon,,,2084,134,,,,
-281,Spoonful,Willie Dixon,,,,281,,,,
-395,Wang Dang Doodle,Willie Dixon,,,4057,395,,TRUE,,
-171,On the Road Again,Willie Nelson,,,961:1608:3680,171,TRUE,TRUE,,
-47,Chuckles,WOLF!,,,,47,,,TRUE,
-435,Get in the Van,WOLF!,,,,435,,,TRUE,
-401,Humdinger,WOLF!,,,,401,,,TRUE,
-178,Pork & Slaw,WOLF!,,,1563,178,,,TRUE,
-246,Tico-Tico no fubá,Zequinha de Abreu,,,1988,246,TRUE,TRUE,,
-65,Drums,,,,353:716:998:1201:1232:1535:1667:1838:1959:2548:2780:3056:3513,65,TRUE,,,
-121,Jam,,,,405:496:670:684:697:751:953:985:988:1009:1016:1023:1040:1062:1094:1147:1173:1183:1220:1245:1252:1288:1301:1312:1329:1361:1397:1468:1507:1521:1570:1594:1598:1644:1669:1711:1731:1739:1744:1746:1901:1903:1944:1974:1994:2003:2011:2026:2059:2073:2099:2104:2165:2178:2181:2202:2210:2212:2288:2294:2312:2325:2330:2345:2353:2373:2378:2385:2390:2392:2396:2407:2416:2454:2464:2471:2483:2497:2504:2509:2515:2521:2560:2665:2668:2670:2673:2680:2686:2698:2701:2755:2800:2808:2853:2990:2993:3002:3124:3208,121,,,,
-206,Space,,,,198:255:354:450:617:967:1136:1167:1257:1311:1515:1613:1638:1923:2761,206,TRUE,,,
-397,Theme from 'The Office',,,,,397,,,,
+id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,core_jrad,aka,debut_gd
+683,(Baby) Hully Gully,Fred Smith & Clifford Goldsmith,,,,683,,TRUE,,,1981
+501,(I Can't Get No) Satisfaction,Mick Jagger & Keith Richards (The Rolling Stones),Satisfaction,,,501,,TRUE,,,1980
+392,(I'm A) Road Runner,Holland – Dozier – Holland (Marvin Gaye),Roadrunner,,3736,392,,TRUE,,,1986
+288,[unknown],[unknown],?,,,288,,,,,
+406,2001 (Also Sprach Zarathustra),Richard Strauss (Phish),2001,,,406,,,,,
+1,50 Ways to Leave Your Lover,Paul Simon,,,614,1,,,,,
+2,9 to 5,Dolly Parton,,,,2,,,,,
+3,9x9,Benevento/Russo Duo,,,1480,3,,,TRUE,,
+4,A Hard Rain's a-Gonna Fall,Bob Dylan,Hard Rain,,1431:3501:3566,4,,,,,
+323,A Love Supreme,John Coltrane,,,,323,,,,,
+325,A Night in Tunisia,Dizzy Gillespie,,,,325,,,,,
+503,A Voice from on High,Bill Monroe & Bessie Lee Mauldin,,,,503,,TRUE,,I Hear a Voice Calling,1970
+375,Abduction Pose,Benevento/Russo Duo,,,,375,,,TRUE,,
+461,Absolutely Sweet Marie,Bob Dylan,,,4146,461,,,,,
+758,Ain't That Peculiar,"Warren Moore, William Robinson, Bobby Rogers, Marv Tarplin (Marvin Gaye)",,,,758,,TRUE,,,1983
+456,Airbag,Radiohead,,,,456,,,,,
+757,Alabama Bound,traditional,,,,757,,TRUE,,,1970
+5,Alabama Getaway,Robert Hunter & Jerry Garcia (Grateful Dead),,,204:345:559:1004:2936:3731:4031,5,TRUE,,,,1979
+6,Alice D. Millionaire,Grateful Dead,,,205:1551:3937,6,TRUE,,,,1966
+7,All Along the Watchtower,Bob Dylan,Watchtower,,157:3699,7,,TRUE,,,1987
+756,All I Really Want to Do,Bob Dylan,,,,747,,TRUE,,,1987
+362,All of My Love,Led Zeppelin,,,,362,,,,,
+8,Alligator,"Robert Hunter & ""Pigpen"" Ron McKernan (Grateful Dead)",,,91:110:219:410:483:629:791:866:1001:1047:1511:1576:1735:1845:2015:2066:2173:2258:2550:2814:2883:3033:3287:3719:3848:4105,8,TRUE,,,,1967?
+9,Althea,Robert Hunter & Jerry Garcia (Grateful Dead),,,2:33:78:169:267:320:423:545:686:824:941:1123:1153:1225:1467:1569:1801:1973:2028:2100:2229:2530:2635:2758:2820:3047:3121:3176:3216:3411:3489:3512:3596:3764:3839:3953,9,TRUE,,,,1979
+350,Amazing Grace,traditional,,,,350,,,,,
+297,Another Brick in the Wall,Pink Floyd,ABITW,,,297,,,,,
+755,Antwerp's Placebo (The Plumber),Bill Kreutzmann & Mickey Hart (Grateful Dead),,,,755,TRUE,,,,1980
+754,"Are You Lonely for Me, Baby?",Bert Berns (Freddie Scott),,,,754,,TRUE,,Last Train to Jacksonville,1972
+753,Arizona Lightning,Robert Hunter,,,,753,,,,,1974
+10,Around and Around,Chuck Berry,,,2785:3585:3838,10,TRUE,TRUE,,,1970
+11,At a Siding,"Robert Hunter, Phil Lesh, Mickey Hart, Jim McPherson (Grateful Dead) (Grateful Dead)",Siding,Terrapin,39:71:123:280:333:377:508:580:850:978:1112:1170:1197:1282:1298:1326:1376:1476:1530:1675:1815:1931:2196:2282:2362:2544:2746:2835:3072:3136:3235:3342:3476:3783:3997:4073,11,TRUE,,,,1977
+12,Atlantic City,Bruce Springsteen,,,563:749:1612:1900:2436:2824:2921:3010:3171:3701,12,,,,,
+469,Attics of My Life,Robert Hunter & Jerry Garcia (Grateful Dead),Attics,,,469,TRUE,,,,1970
+13,Auld Lang Syne,traditional,ALS,,968,13,,,,,
+293,Baba O'Riley,The Who,,,,293,,TRUE,,,1992
+14,Baby Don't You Do It,Holland – Dozier – Holland (Marvin Gaye),,,1046,14,,,,,
+751,Baby What You Want Me to Do,Jimmy Reed,,,,751,,TRUE,,,1969
+429,Bad Love,Eric Clapton,,,,429,,,,,
+750,Bad Moon Rising,John Fogerty (Creedence Clearwater Revival),,,,750,,TRUE,,,1989
+749,Ballad of a Thin Man,Bob Dylan,,,,747,,TRUE,,,1987
+747,Ballad of Ira Hayes,Peter LaFarge (Johnny Cash),,,,747,,TRUE,,,1987
+345,Ballroom Blitz,Nicky Chin & Mike Chapman (The Sweet),,,,345,,,,,
+746,Banana Boat Song,"Erik Darling, Bob Carey, Alan Arkin (The Tarriers; Harry Belafonte)",Day-O,,,746,,TRUE,,,1987
+745,Banks of the Ohio,traditional,,,,745,,TRUE,,Down on the Banks of the Ohio,1981
+744,Barbara Allen,traditional,,,,744,,TRUE,,Barbarous Ellen; Sweet William,1981
+284,Bathtub Gin,Trey Anastasio & Susannah Goodman (Phish),,,,284,,,,,
+15,Beat It on Down the Line,Jesse Fuller,BIODTL,,54:168:417:937:1633:1753:3146:3269:3691:3893,15,TRUE,TRUE,,,1964
+16,Becky,Benevento/Russo Duo,,,771:1646,16,,,TRUE,,
+17,Been Caught Stealing,Jane's Addiction,,,2096,17,,,,,
+743,Beer Barrel Polka,"Jaromir Vejvoda, Vaclav Zeman, Lew Brown, Wladimir Timm",,,,743,,TRUE,,Modranská Polka; Skoda Lasky; Roll Out the Barrel,
+742,Believe It or Not,Robert Hunter & Jerry Garcia (Grateful Dead),,,,742,TRUE,,,,1988
+361,Bemsha Swing,Thelonious Monk,,,,361,,,,,
+18,Bertha,Robert Hunter & Jerry Garcia (Grateful Dead),,,1:27:76:227:250:337:416:494:524:634:663:719:792:885:1002:1076:1142:1213:1229:1302:1407:1610:1754:1913:1977:2000:2063:2106:2145:2299:2348:2369:2475:2519:2573:2677:2728:2729:2906:2960:3085:3131:3150:3209:3267:3329:3505:3632:3669:3751:3837:3958:4007:4107,18,TRUE,,,,1971
+470,Big Boss Man,Al Smith & Luther Dixon,,,,470,,TRUE,,,1966
+741,Big Boy Pete,Don Harris & Dewey Terry,,,,741,,TRUE,,,1966
+19,Big Railroad Blues,Noah Lewis,,,210:247:806:1061:1163:1203:1273:1542:2387:3041:3322:3872:3911,19,TRUE,TRUE,,,1971
+20,Big River,Johnny Cash,,,964:1095:1799:2694:2696:2797:3452:3703:4153,20,TRUE,TRUE,,,1971
+21,Big Whopper,Benevento/Russo Duo,,,1017,21,,,TRUE,,
+22,Bird Song,Robert Hunter & Jerry Garcia (Grateful Dead),,,133:202:271:561:799:1060:1258:1344:1544:1639:1948:1950:2264:2266:2374:2681:2976:3279:3281:3588:3775:3841:3913:4015:4170,22,TRUE,,,,1971
+447,Black Dog,Jones – Page – Plant (Led Zeppelin),,,,447,,,,,
+23,Black Muddy River,Robert Hunter & Jerry Garcia (Grateful Dead),,,2889:3698,23,TRUE,,,,1986
+24,Black Peter,Robert Hunter & Jerry Garcia (Grateful Dead),,,207:551:887:2340:2731:3672,24,TRUE,,,,1969
+740,Black Queen,Stephen Stills (Crosby Stills & Nash),,,,740,,TRUE,,,1969
+25,Black Throated Wind,John Perry Barlow & Bob Weir (Grateful Dead),BTW,,424:486:680:835:837:911:1075:1432:1463:1583:1827:1999:2101:2206:2517:2572:2930:2978:3084:3149:3261:3311:3454:3504:3610:3758:3830:3936:4029:4082:4108,25,TRUE,,,,1972
+739,Blackbird,John Lennon & Paul McCartney (The Beatles),,,,739,,TRUE,,,1988
+738,Blow Away,John Perry Barlow & Brent Mydland (Grateful Dead),,,,738,TRUE,,,,1988
+737,Blue Moon,Lorenz Hart & Richard Rodgers,,,,737,,TRUE,,,1969
+736,Blue Suede Shoes,Carl Perkins (Elvis Presley),,,,736,,TRUE,,,1973?
+26,Blues for Allah,Robert Hunter & Jerry Garcia (Grateful Dead),B4A,,1390:3168:3323,26,TRUE,,,,1975
+735,Blues Stand Away from Me,"Alton Delmore, Rabon Delmore, Henry Glover, Wayne Raney (Delmore Brothers)",,,,720,,TRUE,,,1987
+689,Bo Diddley,Ellas McDaniel (Bo Diddley),,,,689,,TRUE,,,1972
+459,Boogie On Reggae Woman,Stevie Wonder,Boogie,,,459,,,,,
+442,Borderline,Madonna,,,,442,,,,,
+27,Born Cross Eyed,Bob Weir (Grateful Dead),BxE,,733:797:1078:1083:1141:1502:1519:1604:1661:1795:1833:1894:2135:2155:2219:2352:2422:2623:2783:3192:3193:3607:3955,27,TRUE,,,,1968
+734,Born on the Bayou,John Fogerty (Creedence Clearwater Revival),,,,734,,TRUE,,,1989
+28,Born to Run,Bruce Springsteen,,,982:1834:1943:3358:3695,28,,,,,
+29,Box of Rain,Phil Lesh & Robert Hunter (Grateful Dead),,,153:991:1091:1662:1800:2121:2335:2512:2716:2881:3258:3357:3430:3768,29,TRUE,,,,1972
+446,Boy,Brothers Past,,,,446,,,TRUE,,
+732,Boy in the Bubble,Bob Dylan,,,,732,,TRUE,,,1987
+370,Boys of Summer,Don Henley,,,,370,,,,,
+640,Break You Down,Brent Mydland (Grateful Dead),,,,640,,TRUE,,Only a Fool,1984
+344,Breakdown,Tom Petty,,,,344,,,,,
+408,Breathe,Roger Waters (Pink Floyd),,,3801,408,,,,,
+30,Brokedown Palace,Robert Hunter & Jerry Garcia (Grateful Dead),,,42:130:301:753:1421:1878:1992:2098:2292:3240:3527:3593:3946,30,TRUE,,,,1970
+31,Broken Arrow,Robbie Robertson,,,2779:3776,31,,TRUE,,,1993
+32,Brown-Eyed Women,Robert Hunter & Jerry Garcia (Grateful Dead),BEW,,6:132:170:235:254:388:502:597:679:808:881:915:1006:1117:1219:1260:1316:1412:1486:1605:1618:1688:1847:1849:1890:2097:2137:2187:2285:2426:2501:2638:2703:2723:2951:3030:3083:3127:3167:3246:3346:3383:3431:3484:3525:3545:3625:3651:3716:3835:3897:4047,32,TRUE,,,,1971
+374,Bubblehouse,Medeski Martin & Wood,,,,374,,,,,
+33,Built To Last,Robert Hunter & Jerry Garcia (Grateful Dead),,,745,33,TRUE,,,,1988
+432,But Anyway,Blues Traveler,,,,432,,,,,
+731,Bye Bye Love,Felice Bryant & Boudleaux Bryant (Everly Brothers),,,,731,,TRUE,,,1981
+42,C.C. Rider,traditional,,,3565:3739,42,,TRUE,,,1979
+730,California Earthquake (A Whole Lotta Shakin' Goin' On),Rodney Crowell,,,,730,,TRUE,,,1989
+729,Can't Come Down,Garcia – Kreutzmann – Lesh – McKernan – Weir (Grateful Dead),,,,729,TRUE,,,,1965
+34,Candyman,Robert Hunter & Jerry Garcia (Grateful Dead),,,419:870:1020:1350:1712:1781:2223:2313:2690:2784:2961:3096:3196:3326:3462:3629:3685:3877:4052,34,TRUE,,,,1970
+36,Caravan,Van Morrison,,,3549,36,,,,,
+572,Cardboard Cowboy,Phil Lesh (Grateful Dead),,,,572,TRUE,,,The Monster; No Turn Left Unstoned,1966
+37,Casey Jones,Robert Hunter & Jerry Garcia (Grateful Dead),,,47:173:304:418:905:1059:1241:1445:1589:1868:2036:2175:2678:2904:3172:3273:3572:3730:3896,37,TRUE,,,,1969
+38,Cassidy,John Perry Barlow & Bob Weir (Grateful Dead),,,284:470:554:877:1174:1369:1434:1489:1793:2058:2093:2169:2484:2937:3256:3413:3683:3792:3904:4093:4167,38,TRUE,,,,1974
+39,Catfish John,Bob McDill & Allen Reynolds,,,633:3934,39,,TRUE,,,1973
+728,Cathy's Clown,Don Everly & Phil Everly (Everly Brothers),,,,728,,TRUE,,,1969?
+40,Cats Under the Stars,Robert Hunter & Jerry Garcia (Jerry Garcia Band),Cats,,2318:2332:2410:2461:2524:2606:2649:2777:2796:2843:2901:2903:2905:3003:3065:3106:3210:3296:3385:3464:3590:3738:3789:3874:3970:4050:4151,40,TRUE,,,,1977
+41,Caution (Do Not Stop on Tracks),"Ron ""Pigpen"" McKernan (Grateful Dead)",Caution,,18:293:690,41,TRUE,,,,1965
+454,Cavern,Anastasio – Marshall – Herman (Phish),,,,454,,,,,
+439,Celebrated Chop Waltz,Arthur de Lulli aka Euphemia Allen,,,,439,,,,Chopsticks,
+450,Chalk Dust Torture,Trey Anastasio & Tom Marshall (Phish),,,,450,,,,,
+727,Checkin' Up on My Baby,Sonny Boy Williamson,,,,727,,TRUE,,,1969
+336,Cheek to Cheek,Irving Berlin,,,,336,,,,,
+43,Chest Fever,Robbie Robertson (The Band),,,4164,43,,,,,
+726,Childhood's End,Phil Lesh (Grateful Dead),,,,726,TRUE,,,,1994
+725,Children of the Eighties,Joan Baez,,,,725,,TRUE,,(For the) Children of the Eighties,1981
+724,Chimes of Freedom,Bob Dylan,,,,720,,TRUE,,,1987
+44,China Cat Sunflower,Robert Hunter & Jerry Garcia (Grateful Dead),China Cat,,9:63:172:244:263:323:383:477:532:601:726:816:925:956:1063:1212:1275:1332:1415:1461:1616:1742:1772:1899:2127:2253:2322:2468:2493:2604:2657:2687:2763:2816:2848:2938:3011:3062:3114:3178:3227:3401:3523:3556:3725:3868:3927:4042:4106,44,TRUE,,,,1968
+45,China Doll,Robert Hunter & Jerry Garcia (Grateful Dead),,,2236:3767,45,TRUE,,,,1973
+46,Chinatown Shuffle,"Ron ""Pigpen"" McKernan (Grateful Dead)",,,2482,46,TRUE,,,,1971
+723,Chinese Bones,Robyn Hitchcock,,,,723,,TRUE,,,1988
+47,Chuckles,WOLF!,,,,47,,,TRUE,,
+48,Cinnamon and Lesbians,Stephen Malkmus and the Jicks,,,1823,48,,,,,
+722,Clementine,Robert Hunter & Phil Lesh (Grateful Dead),,,,722,TRUE,,,,1968
+49,Cold Rain and Snow,traditional,CRS,,75,49,TRUE,,,Rain and Snow,1967
+430,Come Sail Away,Dennis DeYoung (Styx),,,,430,,,,,
+291,Come Together,John Lennon & Paul McCartney (The Beatles),,,,291,,,,,
+472,Comes a Time,Robert Hunter & Jerry Garcia (Grateful Dead),,,,472,TRUE,,,,1971
+415,Comfortably Numb,David Gilmour & Roger Waters (Pink Floyd),,,3885,415,,,,,
+363,Communication Breakdown,Led Zeppelin,,,,363,,,,,
+473,Corrina,"Robert Hunter, Bob Weir, Phil Lesh, Mickey Hart (Grateful Dead)",,,,473,TRUE,,,,1992
+50,Cosmic Charlie,Robert Hunter & Jerry Garcia (Grateful Dead),,,973:2227:2788:3295:3362:3918,50,TRUE,,,,1968
+51,Crazy Fingers,Robert Hunter & Jerry Garcia (Grateful Dead),,,104:143:151:241:252:411:448:657:826:1081:1398:1454:1602:1766:1953:2053:2226:2538:2582:2858:2917:3103:3214:3292:3361:3392:3424:3494:3608:3706:3962:4061,51,TRUE,,,,1975
+462,Crazy Train,Osbourne — Rhoads — Daisley (Ozzy Osbourne),,,,462,,,,,
+52,Cream Puff War,Jerry Garcia (Grateful Dead),CPW,,22:302:1155:1606:1852:2886:3180:3675,52,TRUE,,,,1966
+373,Crosseyed and Painless,Talking Heads,,,,373,,,,,
+53,Cryptical Envelopment,Jerry Garcia (Grateful Dead),Cryptical,,487:762:1080:1380:1382:2191:3367:3370:3705,53,TRUE,,,,1967
+54,Cult of Personality,Living Colour,,,,54,,,,,
+55,Cumberland Blues,"Robert Hunter, Jerry Garcia, Phil Lesh (Grateful Dead)",Cumberland,,25:56:186:229:305:342:443:493:543:570:585:615:723:862:897:914:1005:1043:1070:1160:1185:1244:1251:1289:1423:1443:1498:1572:1574:1635:1736:1808:1957:2051:2170:2172:2295:2377:2479:2532:2689:2695:2697:2752:2778:2879:3087:3212:3270:3456:3560:3712:3832:3894:4028:4055:4152:4154,55,TRUE,,,,1969
+384,Cupid,Sam Cooke,,,,384,,,,,
+56,Dance of the Sugar Plum Fairy,Tchaikovsky,,,1018,56,,,,,
+57,Dancing in the Streets,"William Stevenson, Marvin Gaye, Ivy Joe Hunter",Dancing,,468:515:521:660:758:807:880:922:996:1030:1116:1159:1184:1223:1334:1411:1495:1562:1564:1566:1666:1687:1709:1870:1889:1909:1990:2002:2076:2119:2186:2284:2337:2414:2480:2529:2565:2639:2683:2702:2708:2856:2872:2934:2998:3037:3128:3185:3245:3371:3375:3439:3530:3624:3665:3746:3747:3813:3870:3907:3978:4080:4112:4155:4180,57,,TRUE,,Dancin' in the Street,1966
+58,Dark Hollow,Bill Browning,,,962:1371:2027:2397:3948,58,,TRUE,,,1970
+59,Dark Star,"Robert Hunter, Jerry Garcia, Phil Lesh, Bill Kreutzmann, Mickey Hart, ""Pigpen"" Ron McKernan, Bob Weir (Grateful Dead)",,,113:156:158:310:355:783:1365:1692:1821:1924:2044:2156:2159:2830:2897:3787:4035,59,TRUE,,,,1967
+721,Darling Corey,traditional,,,,721,,TRUE,,Darlin' Cory; Little Cora,1970
+287,Day Tripper,The Beatles,,,,287,,TRUE,,,1984
+474,Days Between,Robert Hunter & Jerry Garcia (Grateful Dead),,,,474,TRUE,,,,1993
+720,"Dead Man, Dead Man",Bob Dylan,,,,720,,TRUE,,,1987
+60,Deal,Robert Hunter & Jerry Garcia (Grateful Dead),,,4:48:307:566:724:918:1100:1211:1493:1803:2513:2955:3088:3254:3945,60,TRUE,,,,1971
+475,Dear Mr Fantasy,"Steve Winwood, Jim Capaldi, Chris Wood (Traffic)",Mr Fantasy,,,475,,TRUE,,,1984
+280,Dear Prudence,John Lennon & Paul McCartney (The Beatles),,,4048,280,,TRUE,,,1982
+476,Death Don't Have No Mercy,traditional,DDHNM,,,476,,TRUE,,,1966
+61,Deep Elem Blues,traditional,Deep Elem,,2038:2148,61,TRUE,,,,1966
+477,Desolation Row,Bob Dylan,,,,477,,TRUE,,,1986
+478,Devil with the Blue Dress On,Frederick Long & William Stevenson,Devil with Blue Dress,,,478,,TRUE,,,1987
+62,Dire Wolf,Robert Hunter & Jerry Garcia (Grateful Dead),,,469:778:963:3290:3952,62,TRUE,,,,1969
+719,Distorto,Jerry Garcia (Grateful Dead),,,,719,TRUE,,,,1975
+451,Divided Sky,Trey Anastasio (Phish),,,,451,,,,,
+718,Do You Believe in Magic?,John Sebastian (The Lovin' Spoonful),,,,718,,TRUE,,,1965?
+717,Do You Wanna Dance?,Bobby Freeman,,,,717,,TRUE,,,1987
+63,Doin' That Rag,Robert Hunter & Jerry Garcia (Grateful Dead),,,984:2488:3947,63,TRUE,,,,1969
+716,Don't Blame My Mother,Joan Baez,,,,716,,TRUE,,,1981?
+64,Don't Ease Me In,traditional,,,652:1513:1770:3286:3873,64,TRUE,,,,1965?
+479,Don't Mess Up a Good Thing,Oliver Sain (Oliver Sain Revue),,,,479,,TRUE,,,1966
+480,Don't Need Love,Brent Mydland (Grateful Dead),,,,480,TRUE,,,,1984
+339,Don't Stop 'Til You Get Enough,Michael Jackson,,,,339,,,,,
+321,Don't Stop Me Now,Queen,,,,321,,,,,
+715,"Don't Think Twice, It's Alright",Bob Dylan,,,,715,,TRUE,,,1986
+481,Down in the Bottom,WIllie Dixon (Howlin' Wolf),,,,481,,TRUE,,,1984
+482,Down So Long,Grateful Dead,,,,482,TRUE,,,,1966
+425,Down Under,Colin Hay & Ron Strykert (Men At Work),,,,425,,,,,
+424,Dracula,Medeski Martin and Wood,,,,424,,,,,
+411,Dreams,Allman Brothers Band,,,3805,411,,,,,
+714,Drink Up and Go Home,traditional,,,,714,,TRUE,,,1970
+417,Drive My Car,John Lennon & Paul McCartney (The Beatles),,,,417,,,,,
+65,Drums,,,,353:716:998:1201:1232:1535:1667:1838:1959:2548:2780:3056:3513,65,TRUE,,,,
+66,Dupree's Diamond Blues,Robert Hunter & Jerry Garcia (Grateful Dead),Dupree's,,24:2552:3262:3960,66,TRUE,,,,1969
+713,Early Morning Rain,Gordon Lightfoot (Peter Paul & Mary),,,,713,,TRUE,,,1966
+483,Easy Answers,Hunter – Bralove – Weir – Welnick – Wasserman (Grateful Dead),,,,483,TRUE,,,,1993
+484,Easy to Love You,John Perry Barlow & Brent Mydland (Grateful Dead),,,,484,TRUE,,,,1979
+67,Easy Wind,Robert Hunter (Grateful Dead),,,28:135:265:398:436:560:1087:1214:1235:1575:1836:2039:2179:2391:2522:2724:2877:2995:3229:3310:4041,67,TRUE,,,,1969
+405,Echoes,Pink Floyd,,,3798:3942,405,,,,,
+68,El Paso,Marty Robbins,,,636,68,,TRUE,,,1970
+341,Eleanor Rigby,John Lennon & Paul McCartney (The Beatles),,,,341,,,,,
+485,Empty Heart,Jagger – Richards – Wyman – Jones – Watts (Rolling Stones),,,,485,,TRUE,,,1966
+486,Empty Pages,"Ron ""Pigpen"" McKernan (Grateful Dead)",,,,486,TRUE,,,,1971
+464,Entrance of the Gladiators,Julius Fučík,,,,464,,,,,
+327,Epic,Faith No More,,,,327,,,,,
+712,Equinox,Phil Lesh (Grateful Dead),,,,712,TRUE,,,,1977
+69,Estimated Prophet,John Perry Barlow & Bob Weir (Grateful Dead),Estimated,,11:118:149:242:251:390:456:538:616:779:809:888:906:1027:1052:1179:1210:1246:1318:1403:1437:1455:1560:1591:1637:1720:1767:1926:1952:2045:2216:2276:2402:2430:2539:2603:2652:2774:2803:2859:2953:2984:2999:3044:3079:3104:3220:3265:3355:3393:3448:3502:3558:3615:3682:3794:3862:3961:3988:4034:4062:4137:4181,69,TRUE,,,,1977
+487,Eternity,Willie Dixon & Bob Weir,,,,487,TRUE,,,,1993
+70,Everybody Knows This Is Nowhere,Neil Young,,,3191:3902,70,,,,,
+359,Everybody Wants to Rule the World,Tears for Fears,,,,359,,,,,
+434,Everyday People,Sly Stone,,,,434,,,,,
+387,Everything in Its Right Place,Radiohead,,,,387,,,,,
+711,Everytime You Go Away,Daryl Hall (Hall & Oates),,,,711,,TRUE,,Every Time You Go Away,1988
+364,Exodus,Bob Marley,,,,364,,,,,
+71,Eyes of the World,Robert Hunter & Jerry Garcia (Grateful Dead),Eyes,,12:51:111:150:273:356:391:438:473:528:659:780:810:948:997:1069:1180:1215:1222:1292:1391:1439:1456:1496:1567:1664:1733:1837:1935:1993:2185:2306:2415:2478:2490:2563:2637:2709:2773:2805:2826:2857:2868:2946:2977:3058:3119:3184:3224:3368:3382:3447:3509:3531:3577:3623:3681:3817:3869:3905:3977:4043:4086:4113:4183,71,TRUE,,,,1973
+72,Fame,David Bowie,,,,72,,,,,
+488,Far From Me,Brent Mydland (Grateful Dead),,,,488,TRUE,,,,1984
+73,Fast and Loose,Motörhead,,,3156,73,,,,,
+385,Fat Mama,Herbie Hancock,,,,385,,,,,
+333,Fearless,Pink Floyd,,,,333,,,,,
+74,Feel Like a Stranger,John Perry Barlow & Bob Weir (Grateful Dead),Stranger,,211:237:319:422:567:627:677:735:829:893:940:1050:1150:1242:1303:1414:1450:1543:1634:1741:1773:2013:2068:2125:2224:2262:2311:2368:2412:2441:2492:2574:2616:2650:2675:2733:2817:2846:2878:3013:3015:3018:3042:3107:3219:3242:3325:3407:3419:3465:3518:3552:3589:3732:3808:3856:3879:3967:4008:4051:4148,74,TRUE,,,,1980
+710,Fever,John Davenport & Eddie Cooley,,,,710,,TRUE,,,1987?
+709,Fire in the City,Peter Krug (Jon Hendricks),,,,709,,TRUE,,,1967
+75,Fire on the Mountain,Robert Hunter & Mickey Hart (Grateful Dead),Fire,,31:93:115:195:239:288:408:490:555:765:834:891:921:971:1055:1202:1237:1490:1585:1629:1750:1855:1908:1968:2060:2072:2168:2448:2510:2614:2888:2963:3036:3148:3205:3314:3520:3631:3645:3690:3842:3939:4000:4017:4053:4140,75,TRUE,,,,1977
+304,First Tube,Anastasio – Lawton – Markellis (Trey Anastasio Band),,,,304,,,,,
+441,Flash,Brian May (Queen),,,,441,,,,Flash's Theme,
+708,Flibberty Jib,Ken Nordine,,,,708,,TRUE,,,1993
+369,Flight of the Bumblebee,Nikolai Rimsky-Korsakov,,,,369,,,,,
+349,Fly Like an Eagle,Steve Miller,,,,349,,,,,
+289,Foam,Trey Anastasio (Phish),,,,289,,,,,
+707,Folsom Prison Blues,Johnny Cash,,,,705,,TRUE,,,1987
+368,Fool in the Rain,Led Zeppelin,,,,368,,,,,
+76,Foolish Heart,Robert Hunter & Jerry Garcia (Grateful Dead),,,2588:2684:2786:2841:3582:3661:3825:3956:4013:4124,76,TRUE,,,,1988
+365,Footloose,Kenny Loggins,,,,365,,,,,
+706,Forever Young,Bob Dylan,,,,706,,TRUE,,,1987
+77,Fortune Teller,Allen Toussaint,,,1346,77,,,,,
+440,Four,Miles Davis,,,,440,,,,,
+489,France,"Robert Hunter, Bob Weir, Mickey Hart (Grateful Dead)",,,,489,TRUE,,,,1978
+78,Franklin's Tower,"Robert Hunter, Bill Kreutzmann, Jerry Garcia (Grateful Dead)",Frank's,,15:83:146:176:258:318:415:446:485:630:713:820:868:923:995:1032:1106:1149:1338:1452:1871:1910:1991:2016:2077:2242:2413:2438:2592:2693:2734:2823:2928:2992:3298:3337:3421:3511:3562:3603:3688:3858:4081,78,TRUE,,,,1975
+79,Friend of the Devil,"Robert Hunter, John ""Marmaduke"" Dawson, Jerry Garcia (Grateful Dead)",FOTD,,55:960:1165:1191:3152:3756,79,TRUE,,,,1970
+80,Friends,Jimmy Page & Robert Plant (Led Zeppelin),,,,80,,,,,
+490,From the Heart of Me,Donna Godchaux (Grateful Dead),,,,490,TRUE,,,,1978
+81,Fuckin' Up,Neil Young,,,646:3667,81,,,,,
+704,"Funiculì, Funiculà",Luigi Denza,,,,704,,TRUE,,,1977?
+492,Games People Play,Joe South,,,,492,,TRUE,,,1969
+703,Gangster of Love,"Johnny ""Guitar"" Watson (The Cadets)",,,,703,,TRUE,,Love Bandit,1966
+702,Gathering Flowers for the Master's Bouquet,Marvin Baumgardner,,,,702,,TRUE,,,1969
+493,"Gentlemen, Start Your Engines",John Perry Barlow & Brent Mydland (Grateful Dead),,,,493,TRUE,,,,1988
+435,Get in the Van,WOLF!,,,,435,,,TRUE,,
+337,"Get Out of My Life, Woman",Allen Toussaint (Lee Dorsey),,,,337,,TRUE,,,1987?
+494,Gimme Some Lovin',"Spencer Davis, Steve Winwood, Muff Winwood (Spencer David Group)",,,,494,,TRUE,,,1984
+377,Girl From Ipanema,"Jobim, de Moraes, Gimbel",,,,377,,,,,1975
+82,Girlfriend Is Better,David Byrne (Talking Heads),,,,82,,,,,
+495,Gloria,Van Morrison (Them),,,,495,,TRUE,,,1981
+701,Go Ahead Baby,Luke McDaniel,,,,696,,TRUE,,Don't Keep Me Waiting Too Long,1987
+83,God Put a Smile upon Your Face,Coldplay,,,2041,83,,,,,
+84,Going Down The Road Feeling Bad,traditional,GDTRFB,,289:324:430:452:542:774:804:882:1013:1026:1077:1133:1231:1308:1458:1539:1704:1843:2023:2151:2342:2383:2423:2462:2630:2692:2718:3035:3204:3312:3529:3684:3828:4147,84,TRUE,,,Goin' Down the Road Feelin' Bad,1971
+382,Going Up the Country,Canned Heat,,,,382,,,,,
+85,Golden Road (To Unlimited Devotion),Grateful Dead,Golden Road,,103:184:393:1524:1706:1858:2233:2556:2994:3089:3458:3763:3861,85,TRUE,,,,1967
+86,Gonesville,Bob Weir,,,1921:1969:2035:2081:2149:2331:2531:2759:3211:3445:3711:3928,86,,,,,
+700,Gonna Change My Way of Thinking,Bob Dylan,,,,700,,TRUE,,,1987
+87,Good Lovin',Arthur Resnick & Rudy Clark,,,958:1120:1254:1330:1364:1422:1469:1536:1538:1670:1804:1884:1960:2021:2102:2166:2303:2346:2449:2498:2605:2699:2750:2894:2964:3064:3139:3195:3274:3347:3399:3422:3492:3521:3642:3734:3852:4049,87,,TRUE,,,1966
+88,Good Morning Little Schoolgirl,"John Lee ""Sonny Boy"" Williamson",GMLS,,1343:2211:2865:3248:3824,88,,TRUE,,,1966
+699,Good Times,Sam Cooke,LTGTR,,,699,,TRUE,,Let the Good Times Roll,1990
+89,Good Times Bad Times,Led Zeppelin,GTBT,,,89,,,,,
+698,Goodnight Irene,traditional,,,,698,,TRUE,,,1986
+697,Got My Mojo Workin',Ann Cole & Preston Foster (Muddy Waters),,,,697,,TRUE,,Got My Mojo Workin (But It Just Won't Work on You),1978
+696,Gotta Serve Somebody,Bob Dylan,,,,696,,TRUE,,,1987
+90,Greatest Story Ever Told,Robert Hunter & Bob Weir (Grateful Dead),Greatest Story; GSET,,206:295:297:338:420:497:540:584:669:687:796:869:901:903:919:972:1090:1249:1367:1525:1726:1738:1777:1964:2132:2222:2314:2404:2473:2505:2507:2636:2682:2799:2958:3046:3095:3207:3294:3463:3575:3597:3700:3820:3822:4020:4110,90,TRUE,,,,1971
+695,Green Onions,Cropper – Jackson – Jones – Steinberg (Booker T & the MGs),,,,695,,TRUE,,,1988
+694,Green River,John Fogerty (Creedence Clearwater Revival),,,,694,,TRUE,,,1991
+91,Halloween Theme – Main Title,John Carpenter,,,864,91,,,,,
+693,Handsome Cabin Boy,traditional,,,,693,,TRUE,,,1990
+312,Hang Up Your Hangups,Herbie Hancock,,,,312,,,,,
+92,Happy Birthday,traditional,,,129:196:966:1008:1681:2047:2049:2209,92,TRUE,,,,
+93,Hard To Handle,"Otis Redding, Alvertis Isbell, Allen Jones",,,1148:2251:3729:3959,93,,TRUE,,,1969
+94,Harry Hood,Anastasio – Gordon – Fishman – McConnell – Long (Phish),,,,94,,,,,
+95,Harvest Moon,Neil Young,,,2477,95,,,,,
+467,Havana,Camila Cabello,,,,467,,,,,2017
+332,Have You Ever Seen the Rain?,John Fogerty (Creedence Clearwater Revival),,,,332,,,,,
+101,He Was a Friend of Mine,traditional,,,1405,101,,TRUE,,Just a Hand to Hold,1966
+100,He's Gone,Robert Hunter & Jerry Garcia (Grateful Dead),,,106:259:435:547:611:950:1051:1178:1190:1286:1321:1427:1482:1696:1784:1949:1951:2108:2122:2171:2287:2526:2653:2710:2791:2952:3022:3098:3186:3250:3349:3388:3470:3636:3638:3692:3814:3964:4092:4121,100,TRUE,,,,1972
+316,Head Over Heels,Orzabal – Smith (Tears for Fears),,,,316,,,,,
+692,Heads Up,Freddie King & Sonny Thompson,,,,692,,TRUE,,,1966
+691,Heart of Mine,Bob Dylan,,,,691,,TRUE,,,1987
+96,Heartbreaker,Led Zeppelin,,,1807,96,,,,,
+496,Heaven Help the Fool,John Perry Barlow & Bob Weir,,,,,TRUE,,,,1980
+97,Hell In A Bucket,"John Perry Barlow, Brent Mydland, Bob Weir (Grateful Dead)",,,188:351:1134:1611:1627:1859:2558:2768:2895:3587:3664:3843:3890:4068,97,TRUE,,,,1983
+690,Help Me Rhonda,Brian Wilson (The Beach Boys),,,,690,,TRUE,,,1971
+98,Help on the Way,Robert Hunter & Jerry Garcia (Grateful Dead),Help,,13:81:144:174:230:256:316:370:439:491:518:590:605:640:675:711:786:813:894:938:993:1035:1048:1151:1186:1306:1401:1424:1578:1657:1689:1756:1917:1966:2004:2094:2138:2213:2399:2440:2499:2589:2617:2662:2725:2738:2926:2986:3019:3050:3092:3163:3243:3331:3377:3417:3468:3617:3647:3662:3742:3818:3854:3880:3981:4096:4143,98,TRUE,,,,1975
+99,Here Comes Sunshine,Robert Hunter & Jerry Garcia (Grateful Dead),,,404:892:1103:1238:1253:1359:1444:1861:1863:1896:2113:2231:2379:2433:2485:2815:2920:3111:3113:3182:3276:3403:3416:3491:3717:3793:3915:4025:4036:4067:4126,99,TRUE,,,,1973
+292,Here Comes The Hotstepper,Ini Kamoze,,,,292,,,,,
+688,Hey Bo Diddley,Ellas McDaniel (Bo Diddley),,,,688,,TRUE,,,1972
+103,Hey Bulldog,John Lennon & Paul McCartney (The Beatles),,,1255:2255:3333:4038,103,,,,,
+104,Hey Jude,John Lennon & Paul McCartney (The Beatles),,,,104,,TRUE,,,1969
+497,Hey Little One,Barry De Vorzon (Dorsey Burnette),,,,497,,TRUE,,,1966
+498,Hey Pocky Way,Modeliste – Neville – Nocentelli – Porter (The Meters),,,,498,,TRUE,,,1987
+102,Hey! Bo Diddley,Bo Diddley,,,1270,102,,TRUE,,,1972
+499,Hi-Heel Sneakers,Robert Higginbotham (Tommy Tucker),Put On Your Red Dress Baby,,,499,,TRUE,,,1960s
+105,High Time,Robert Hunter & Jerry Garcia (Grateful Dead),,,3067,105,TRUE,,,,1969
+687,Highway 61 Revisited,Bob Dylan,,,,687,,TRUE,,,1987
+106,Hippie Dream,Neil Young,,,1404:3000,106,,,,,
+367,Hoedown,Aaron Copeland,,,,367,,,,,
+686,Hollywood Cantata,Robert Hunter & Bob Weir (Grateful Dead),,,,686,TRUE,,,,1975
+685,Hoochie Coochie Man,Willie Dixon (Muddy Waters),,,,685,,TRUE,,I'm Your Hoochie Coochie Man,1995
+107,Hoodoo Voodoo,Bragg – Wilco – Harris (Woody Guthrie),,,1649:1946:3487,107,,,,,
+108,How Many More Times,Led Zeppelin,,,3280,108,,,,,
+684,How Sweet It Is (To Be Loved by You),"Brian Holland, Lamont Dozier, Eddie Holland (Marvin Gaye)",,,,684,,TRUE,,,1972
+401,Humdinger,WOLF!,,,,401,,,TRUE,,
+500,I Ain't Superstitious,Willie Dixon (Howlin' Wolf),,,,500,,TRUE,,,1984
+109,I Am The Walrus,John Lennon & Paul McCartney (The Beatles),,,182,109,,,,,
+35,I Can't Turn You Loose,"Otis Redding, Steve Cropper, William Robinson",,,,35,,,,,
+502,I Fought the Law,Sonny Curtis (The Crickets),,,,502,,TRUE,,,1993
+682,I Got a Mind to Give Up Livin',traditional,,,,682,,TRUE,,,1982
+413,I Hate Love,The Slip,,,3821,413,,,,,
+681,I Heard it Through the Grapevine,Barrett Strong & Norman Whitfield (Gladys Knight & the Pips; Marvin Gaye),,,,681,,TRUE,,,1986
+504,I Just Want to Make Love to You,Willie Dixon (Muddy Waters),,,,504,,TRUE,,,1966
+505,I Know It's a Sin,Jimmy Reed,,,,505,,TRUE,,It's a Sin,1966
+110,I Know You Rider,traditional,Rider,,10:65:95:134:166:245:264:385:458:479:533:565:589:602:681:715:727:750:819:926:957:1056:1166:1208:1276:1333:1347:1466:1552:1587:1607:1743:1877:1891:1902:1986:2131:2239:2323:2343:2466:2494:2561:2607:2658:2666:2764:2819:2850:2902:2939:3012:3063:3115:3179:3203:3228:3283:3364:3402:3433:3516:3557:3592:3633:3679:3871:3991:4059:4083:4109,110,TRUE,,,,1965
+115,I Need A Miracle,John Perry Barlow & Bob Weir (Grateful Dead),Miracle,,240:637:986:1156:2052:2182:2349:2370:2457:2591:2655:2667:2705:2756:2870:2944:2983:3061:3155:3217:3289:3366:3434:3479:3554:3640:3774:3867:3987:4056:4142,115,TRUE,,,,1978
+506,I Second That Emotion,William Robinson & Al Cleveland (Smokey Robinson),Second That Emotion,,,506,,TRUE,,,1971
+444,I Want a New Drug,Chris Hayes & Huey Lewis (Huey Lewis and the News),,,,444,,,,,
+305,I Want Candy,The Strangeloves,,,,305,,,,,
+507,I Want to Tell You,George Harrison (The Beatles),,,,507,,TRUE,,,1994
+680,I Want You,Bob Dylan,,,,680,,TRUE,,,1987
+679,I Washed My Hands in Muddy Water,Joe Babcock (Stonewall Jackson),,,,679,,TRUE,,,1971
+508,I Will Take You Home,John Perry Barlow & Brent Mydland (Grateful Dead),,,,508,TRUE,,,,1988
+678,I'll Be Your Baby Tonight,Bob Dylan,,,,678,,TRUE,,,1987
+509,I'll Go Crazy,James Brown,,,,509,,TRUE,,,1966
+313,I'll Wait,Van Halen,,,,313,,,,,
+510,I'm a Hog for You,Jerry Leiber & Mike Stoller (The Coasters),,,,510,,TRUE,,,1966
+112,I'm a King Bee,Slim Harpo (James Moore),,,1357:1631,112,TRUE,TRUE,,,1966
+676,I'm a Man,Ellas McDaniel (Bo Diddley),,,,676,,TRUE,,,1972
+677,I'm a Man (2),Steve Winwood & Jimmy Miller (Spencer Davis Group),,,,677,,TRUE,,,1989
+675,I'm Free,Mick Jagger & Keith Richards (The Rolling Stones),,,,675,,TRUE,,,1987
+674,I'm So Lonesome I Could Cry,Hank Williams,,,,674,,TRUE,,,1987
+114,I'm Writing a Novel,Father John Misty,,,1143,114,,,,,
+511,I've Been All Around This World,traditional,Been All Around This World,,,511,,TRUE,,,1969
+427,I've Got a Feeling,John Lennon & Paul McCartney (the Beatles),,,4005,427,,,,,
+673,I've Seen Them All,Bo Diddley,,,,673,,TRUE,,,1972
+512,If I Had the World to Give,Robert Hunter & Jerry Garcia (Grateful Dead),,,,512,TRUE,,,,1978
+672,If Not for You,Bob Dylan,,,,672,,TRUE,,,1987
+513,If the Shoe Fits,Phil Lesh & Andrew Charles,,,,513,TRUE,,,,1994
+351,If You Think I'm Sexy,Rod Stewart,,,,351,,,,,
+111,Iko Iko,Crawford – Hawkins – Hawkins – Johnson,,,213:361:1729:2571:2751:3524:3724,111,TRUE,TRUE,,Aiko Aiko,1977
+113,Immigrant Song,Led Zeppelin,,,,113,,,,,
+116,In Memory of Elizabeth Reed,Allman Brothers Band,Liz Reed,,1137:1862:2006:2827:3721:3806:4159,116,,,,,
+117,In the Meantime,Spacehog,,,2740:2892:3409:4102,117,,,,,
+514,In the Midnight Hour,Steve Cropper (Wilson Pickett),,,,514,,TRUE,,,1966
+671,In the Pines,traditional,,,,671,,TRUE,,,1966
+279,Inca Roads,Frank Zappa,,,,279,,,,,
+422,It Hurts Me Too,traditional,Hurts Me Too,,3968:4085,422,TRUE,,,,1966
+155,It Must Have Been the Roses,Robert Hunter (Grateful Dead),,,990:1125:1243:1352:1430:1920:2334:2871:3199:3613,155,TRUE,,,Maybe It Was the Roses,1974
+515,"It Takes a Lot to Laugh, It Takes a Train to Cry",Bob Dylan,,,,515,,TRUE,,,1973
+669,"It's a Man's, Man's, Man's World (But It Wouldn't Be Nothing Without a Woman or Girl)",James Brown,It's a Man's World,,,669,,TRUE,,,1970
+668,It's All Over Now,Bobby Womack & Shirley Womack,,,,668,,TRUE,,,1976
+118,"It's All Over Now, Baby Blue",Bob Dylan,Baby Blue,,2048:2577:2929,118,,TRUE,,,1966
+516,It's All Too Much,George Harrison (The Beatles),,,,516,,TRUE,,,1995
+667,It's My Own Fault,B.B. King,,,,667,,TRUE,,,1966
+119,Jack A Roe,traditional,,,222:698:896:1042:1261:1370:1869:2866:3094:3257:3446:3757,119,TRUE,,,Jackaroe,1977
+120,Jack Straw,Robert Hunter & Jerry Garcia (Grateful Dead),,,3:148:285:394:572:671:836:838:1011:1348:1429:1464:1745:1768:1828:1892:1979:1995:2075:2103:2124:2201:2275:2386:2427:2518:2535:2557:2628:2707:2775:2810:2840:2880:2966:2979:3054:3081:3126:3293:3350:3374:3449:3495:3555:3616:3759:3812:3935:4032:4098:4135,120,TRUE,,,,1971
+121,Jam,,,,405:496:670:684:697:751:953:985:988:1009:1016:1023:1040:1062:1094:1147:1173:1183:1220:1245:1252:1288:1301:1312:1329:1361:1397:1468:1507:1521:1570:1594:1598:1644:1669:1711:1731:1739:1744:1746:1901:1903:1944:1974:1994:2003:2011:2026:2059:2073:2099:2104:2165:2178:2181:2202:2210:2212:2288:2294:2312:2325:2330:2345:2353:2373:2378:2385:2390:2392:2396:2407:2416:2454:2464:2471:2483:2497:2504:2509:2515:2521:2560:2665:2668:2670:2673:2680:2686:2698:2701:2755:2800:2808:2853:2990:2993:3002:3124:3208,121,,,,,
+335,Jean Pierre,Miles Davis,,,,335,,,,,
+298,Jessica,Allman Brothers Band,,,3971:4084,298,,,,,
+122,Joeline,Tom Hamilton,,,1176:3574,122,,,TRUE,,
+666,Joey,Bob Dylan & Jaques Levy,,,,666,,TRUE,,Ballad of Joey Gallo,1987
+665,John Brown,Bob Dylan,,,,665,,TRUE,,,1987
+664,John Hardy,traditional,,,,664,,TRUE,,John Hardy (Was a Desperate Little Man),1987
+663,John's Other,Papa John Creach (Jefferson Airplane; Hot Tuna),,,,663,,TRUE,,,1970
+517,Johnny B Goode,Chuck Berry,,,,517,,TRUE,,,1969
+419,Jolene,American Babies,,,,419,,,TRUE,,
+471,Jordan,traditional,,,,471,,TRUE,,Cold Jordan,1969
+518,Just a Little Light,Brent Mydland (Grateful Dead),,,,518,TRUE,,,,1989
+123,Just Like Tom Thumb's Blues,Bob Dylan,Tom Thumb's Blues,,2174,123,,TRUE,,,1985
+124,Kashmir,Led Zeppelin,,,1682,124,,,,,
+661,Katie Mae,Lightnin' Hopkins,,,,661,,TRUE,,,1970
+662,KC Moan,traditional,,,,662,,TRUE,,,1978
+519,Keep on Growing,Eric Clapton & Bobby Whitlock,,,,519,,TRUE,,,1985
+660,Keep Rolling By,traditional,,,,660,,TRUE,,,1966
+520,Keep Your Day Job,Robert Hunter & Jerry Garcia (Grateful Dead),,,,520,TRUE,,,,1982
+125,Keeping It Simple,Joe Russo & Tom Hamilton (Joe Russo's Almost Dead),,,1761:1907:2071,125,,,TRUE,,2017
+126,Killer Cars,Radiohead,,,859:2787,126,,,,,
+127,King Solomon's Marbles,"Phil Lesh, Mickey Hart, Bill Kreutzmann (Grateful Dead)",KSM,King Solomon's Marbles,112:152:311:413:476:628:728:781:857:1073:1384:1435:1506:1533:1640:1826:2050:2069:2176:2339:2553:3108:3291:3415:3599:3761:3922:4172,127,TRUE,,,,1975
+320,Knockin' on Heaven's Door,Bob Dylan,,,,320,,TRUE,,,1987
+129,L.A. Woman,Jim Morrison (The Doors),,,1842,129,,,,,
+521,L'Alhambra,Robert Hunter & Mickey Hart (Grateful Dead),,,,521,TRUE,,,,
+659,La Bamba,traditional,,,,659,,TRUE,,,1987
+399,La Di Da Di,Doug E. Fresh & Slick Rick,,,,399,,,,,
+658,Lady Di and I,Joan Baez,,,,658,,TRUE,,,1981
+128,Lady With a Fan,Robert Hunter & Jerry Garcia (Grateful Dead),Lady,Terrapin,35:67:96:119:159:276:329:373:459:504:576:704:738:846:929:974:1108:1157:1193:1278:1294:1322:1372:1472:1526:1671:1697:1809:1927:2085:2192:2278:2358:2455:2540:2742:2831:2908:2967:3068:3132:3231:3315:3472:3533:3779:3994:4006:4070:4161,128,TRUE,,,,1977
+330,Lay Down Sally,Eric Clapton,,,,330,,,,,
+130,Lazy Lightning,John Perry Barlow & Bob Weir (Grateful Dead),,,44:52:308:662:1118:2235:3151:3975,130,TRUE,,,,1976
+131,Lazy River Road,Robert Hunter & Jerry Garcia (Grateful Dead),,,2150:4018:4130,131,TRUE,,,,1993
+132,Lemon Song,Robert Johnson (Led Zeppelin),,,1045,132,,,,,
+391,Let It Rock,Chuck Berry,,,3735,391,,TRUE,,,1974
+522,Let Me In,Gene Crysler (Porter Wagoner),,,,522,,TRUE,,,1969
+523,Let Me Sing Your Blues Away,Robert Hunter & Keith Godchaux (Grateful Dead),,,,523,TRUE,,,,1973
+452,Let My Love Open the Door,Pete Townshend,,,,452,,,,,
+524,Liberty,Robert Hunter & Jerry Garcia (Grateful Dead),,,,524,TRUE,,,,1993
+428,Life During Wartime,Talking Heads,,,,428,,,,,
+133,Life is a Carnival,The Band,,,1659:2776,133,,,,,
+657,Linda Lu,Ray Sharpe,,,,657,,,,,1979
+134,Little Red Rooster,Willie Dixon,,,2084,134,TRUE,TRUE,,,1981?
+525,Little Sadie,traditional,,,,525,,TRUE,,,1969
+656,Little Star,Bob Weir (Ratdog),,,,656,,,,Bob Star,1983
+310,Living for the City,Stevie Wonder,,,,310,,,,,
+455,Llama,Trey Anastasio (Phish),,,,455,,,,,
+135,Lonesome Whistle Blues,Bob Dylan,,,,135,,,,,
+526,Long Black Limousine,Bobby George & Vern Stovall (Wynn Stewart?),,,,526,,TRUE,,,1969
+655,Long Tall Sally,"Enortis Johnson, Robert Blackwell, Richard Penniman (Little Richard)",,,,655,,,,,1988
+136,Look Out Cleveland,The Band,,,3372,136,,,,,
+137,Looks Like Rain,John Perry Barlow & Bob Weir (Grateful Dead),LLR,,766:2898:3944,137,TRUE,,,,1972
+138,Loose Lucy,Robert Hunter & Jerry Garcia (Grateful Dead),,,365:1665:3303:3906,138,TRUE,,,,1973
+139,Loser,Robert Hunter & Jerry Garcia (Grateful Dead),,,107:1356:1520:1588:1719:1841:1887:1980:2012:2225:2328:2389:2520:2644:2769:2801:2845:3099:3503:3600:3745:3891:4009,139,TRUE,,,,1971
+140,Lost Sailor,John Perry Barlow & Bob Weir (Grateful Dead),Sailor,,208:313:327:548:754:1614:1723:1775:1904:1971:2061:2248:2502:2610:2922:3122:3277:3327:3389:3427:3541:3627:3765:3898:3979:4023:4064,140,TRUE,,,,1979
+654,Love the One You're With,Stephen Stills,,,,654,,TRUE,,,1983
+653,Lucifer's Eyes,Joan Baez,,,,653,,TRUE,,,1981
+527,Lucy in the Sky with Diamonds,John Lennon & Paul McCartney (The Beatles),,,,527,,TRUE,,,1993
+652,Maggie's Farm,Bob Dylan,,,,652,,TRUE,,,1987
+141,Magnificent Sanctuary Band,Dorsey Burnette,MSB,,49:362:946:1072:1400:2489:2632:2893:3060:3895,141,,TRUE,,,1976
+142,Mama Tried,Merle Haggard,,,604:685:1395:1571:1755:2116:2900:3165:3345:3482:3876,142,,TRUE,,Momma Tried,1969
+449,"Mama, I'm Coming Home",Kilmister – Osbourne – Wylde (Ozzy Osbourne),,,,449,,,,,
+309,Man in the Box,Alice In Chains,,,,309,,,,,
+651,Man of Peace,Bob Dylan,,,,651,,TRUE,,,1987
+143,Man Smart (Woman Smarter),Norman Span (King Radio),Women Smarter,,236:564:1104:1771:2146:2317:2474:2566:2661:2811:2847:2945:3028:3090:3223:3308:3498:3720:4095:4165,143,,TRUE,,,1981
+283,Manteca,Gillespie – Pozo – Fuller,,,,283,,,,,
+650,Marriott USA,Joan Baez,,,,650,,TRUE,,You Won't Find Me,1981
+144,Mason's Children,"Robert Hunter, Jerry Garcia, Phil Lesh, Bob Weir (Grateful Dead)",,,154:1164:3154,144,TRUE,,,,1969
+386,Material Girl,Madonna,,,,386,,,,,
+528,Maybe You Know,Brent Mydland (Grateful Dead),,,,528,TRUE,,,,1983
+318,Me and Bobby McGee,Kris Kristofferson & Fred Foster (Janis Joplin),,,,318,,TRUE,,,1970
+145,Me and My Uncle,John Phillips (Judy Collins),,,357:387:989:2884:3177:3386:3508:3670:4128,145,,TRUE,,,1970
+400,Memphis Soul Stew,King Curtis,,,,400,,,,,
+354,Mephisto,Benevento/Russo Duo,,,,354,,,TRUE,,
+458,Mercury Blues,KC Douglas & Robert Geddins,,,4075,458,,,,,
+529,Mexicali Blues,John Perry Barlow & Bob Weir (Grateful Dead),Mexicali,,,529,TRUE,,,,1971
+146,Might as Well,Robert Hunter & Jerry Garcia (Grateful Dead),,,3594:3889,146,TRUE,,,,1976
+566,Milkin' the Turkey,"Phil Lesh, Mickey Hart, Bill Kreutzmann (Grateful Dead)",,,,566,TRUE,,,,1975
+530,Mind Left Body,Grateful Dead,MLB,,,530,TRUE,,,Mud Love Buddy,1973
+531,Mindbender (Confusion's Prince),Jerry Garcia & Phil Lesh (The Emergency Crew),Mindbender,,,531,TRUE,,,,1965
+147,Mission in the Rain,Robert Hunter & Jerry Garcia (Jerry Garcia Band),,,217:703:1138:1840:2581:3335:3559:3749:3829:4173,147,TRUE,,,,1976
+148,Mississippi Halfstep Uptown Toodleloo,Robert Hunter & Jerry Garcia (Grateful Dead),Half Step,,214:350:421:537:912:1085:1145:1267:1546:1580:1722:1774:1925:2018:2154:2268:2315:2401:2528:2602:2714:2804:2935:2980:3045:3230:3356:3435:3497:3733:3816:3919:4091:4111,148,TRUE,,,Mississippi Half-step Uptown Toodle-oo,1972
+149,Moby Dick,Led Zeppelin,,,372,149,,,,,
+532,Mona,Ellas McDaniel (Bo Diddley),,,,532,,TRUE,,,1972
+150,Money,Pink Floyd,,,2277:2297,150,,,,,
+445,Money for Nothing,Mark Knopfler & Sting (Dire Straits),,,,445,,,,,
+533,Money Money,John Perry Barlow & Bob Weir (Grateful Dead),,,,533,TRUE,,,,1974
+534,Monkey and the Engineer,Jesse Fuller,,,,534,,TRUE,,,1964
+151,Morning Dew,Bonnie Dobson; Tim Rose,Dew,,87:234:336:414:480:622:789:839:952:1092:1396:1449:1621:1769:2078:2133:2403:2547:2676:2762:2956:3001:3144:3239:3450:3579:3886:3984:4088,151,,TRUE,,,1967
+152,Morning in Marin,Howard Wales & Jerry Garcia,,,3551,152,,,,,
+296,Mountain Jam,Allman Brothers Band,,,,296,,TRUE,,,1970
+338,Mountain Song,Jane's Addiction,,,,338,,,,,
+153,Mountains of the Moon,Robert Hunter & Jerry Garcia (Jerry Garcia Band),,,177,153,TRUE,,,,1968
+649,Mr Tambourine Man,Bob Dylan,,,,649,,TRUE,,,1987
+154,Mr. Charlie,"Robert Hunter & ""Pigpen"" Ron McKernan (Grateful Dead)",,,5:105:253:412:529:600:794:879:1058:1290:1446:1710:2017:2144:2398:2476:2947:3097:3457:3714,154,TRUE,,,,1971
+156,My Brother Esau,John Perry Barlow & Bob Weir (Grateful Dead),Esau,,672:725:782:827:1259:1853:2867:2919:3161:3271:3723:3791:3925:4054:4118:4168,156,TRUE,,,,1983
+294,My Favorite Things,Rodgers & Hammerstein,,,,294,,,,,
+352,My Perogative,Bobby Brown,,,,352,,,,,
+157,My Pet Goat,Benevento/Russo Duo,,,,157,,,TRUE,,
+158,My Sharona,The Knack,,,1565,158,,,,,
+159,Mystery Train,"Herman ""Junior"" Parker",,,642,159,,TRUE,,,1973?
+160,"Myxomatosis. (Judge, Jury & Executioner.)",Radiohead,,,861,160,,,,,
+648,"Neighbor, Neighbor",Alton Joseph Valier (Jimmy Hughes),,,,648,,TRUE,,,1974?
+647,Neighborhood Girls,Suzanne Vega,,,,647,,TRUE,,,1988
+162,Never Been to Spain,Three Dog Night,,,3116:3222:3580:3769,162,,,,,
+535,Never Trust a Woman,Brent Mydland (Grateful Dead),,,,535,TRUE,,,,1981
+163,New Minglewood Blues,traditional,Minglewood,,306:598:674:1216:1392:1759:2232:2329:2380:2640:2685:2806:2842:3120:3334:3522:3568:3606:3652:3656:4014:4087:4125,163,TRUE,,,New New Minglewood Blues; All New Minglewood Blues,1967
+646,New Orleans,Frank Guida & Joseph Royster,,,,646,,TRUE,,,1969
+164,New Orleans March,traditional,,,,164,,,,,
+536,New Potato Caboose,Phil Lesh & Robert Petersen (Grateful Dead),,,,536,TRUE,,,,1967
+165,New Speedway Boogie,Robert Hunter & Jerry Garcia (Grateful Dead),Speedway,,987:1383:1508:2117:2120:2183:2357:2789:2896:3078:3441:3493:3696:3863:4033:4040,165,TRUE,,,,1969
+166,Next Time You See Me,Junior Parker,,,2570,166,,TRUE,,,1966
+285,Night Train,Jimmy Forrest,,,1504,285,,,,,
+167,No Quarter,Led Zeppelin,,,139:1265:1915,167,,,,,
+537,Nobody's Fault but Mine,traditional,,,,537,,TRUE,,,1966
+311,Norwegian Wood,John Lennon & Paul McCartney (The Beatles),,,,311,,,,,
+168,Not Fade Away,Norman Petty & Buddy Holly,NFA,,90:136:203:246:283:366:396:474:501:557:596:645:682:717:731:801:936:999:1024:1124:1146:1192:1233:1340:1406:1485:1487:1577:1656:1728:1730:1850:1886:1939:1970:2025:2141:2143:2158:2160:2302:2486:2567:2659:2706:2940:2989:3016:3027:3145:3174:3241:3324:3384:3397:3517:3550:3620:3654:3836:3901:4060,168,,TRUE,,,1968
+645,Ode for Billy Dean,Jorma Kaukonen (Hot Tuna),,,,645,,TRUE,,,1970
+436,Ode to Billy Joe,Bobbie Gentry,,,,436,,,,,
+538,Oh Babe It Ain't No Lie,traditional,,,,538,,TRUE,,,1980
+644,Oh Boy!,Bill Tilghman & Norman Petty (Sonny West),,,,644,,TRUE,,,1987
+643,Okie From Muskogee,Roy Burris & Merle Haggard,,,,643,,TRUE,,,1971
+539,Old Old House,Hal Bynam (George Jones),,,,539,,TRUE,,"The Old House; There's An Old, Old House",1969
+540,Ollin Arrageed,Hamza El Din,,,,540,,TRUE,,,1978?
+372,On the Darkside,John Cafferty & the Beaver Brown Band,,,,372,,,,,
+171,On the Road Again,Willie Nelson,,,961:1608:3680,171,,TRUE,,,1966
+394,On the Run,Pink Floyd,,,,394,,,,,
+169,One More Saturday Night,Bob Weir (Grateful Dead),OMSN,,77:322:429:467:481:556:603:683:730:863:898:924:1007:1115:1182:1218:1274:1310:1441:1683:1740:1818:1936:2111:2257:2411:2598:2660:2807:2942:3076:3173:3373:3410:3641:3887:3986:4101:4177,169,TRUE,,,,1971
+410,One Way Out,Marshall Sehorn & Elmore James (Sonny Boy Williamson II; Allman Brothers Band),,,3804,410,,,,,1995
+170,Only Daddy That'll Walk the Line,Jimmy Bryant (Waylon Jennings),Only Daddy,,226:2554:3903,170,,,,,
+390,Operator,"Ron ""Pigpen"" McKernan (Grateful Dead)",,,3727,390,TRUE,,,,1970
+172,Ophelia,Robbie Robertson (The Band),,,224:409:910:1122:1248:1484:1881:2366:2887:3009:3198:3726,172,,,,,
+308,Optimistic,Radiohead,,,,308,,,,,
+414,Over the Rainbow,Harold Arlen & Yip Harburg (Judy Garland),,,,414,,,,,
+639,Overseas Stomp,traditional,,,,639,,TRUE,,Lindy; Lindbergh Hop,1971
+542,Pain in My Heart,Naomi Neville/Allen Toussaint (Irma Thomas; Otis Redding),,,,542,,TRUE,,Ruler of My Heart,1966
+328,Paint It Black,Jagger – Richards (Rolling Stones),,,,328,,,,,
+638,Paperback Writer,Paul McCartney (The Beatles),,,,638,,TRUE,,,1995
+453,Paradise City,Slash – Rose – Stradlin – McKagan – Adler (Guns N' Roses),,,,453,,,,,
+173,Paranoid Android,Radiohead,,,1573,173,,,,,
+276,Part I,Bob Weir (Grateful Dead),,Weather Report,85:200:368:666:831:943:1067:1205:1386:1549:2205:2273:3305:3395,276,TRUE,,,,1973
+277,Part II: Let It Grow,"Robert Hunter, Eric Andersen, Bob Weir (Grateful Dead)",LIG,Weather Report,86:142:201:270:369:536:610:644:667:696:748:832:944:1068:1206:1228:1387:1420:1550:1557:1593:1596:1617:1620:1622:1695:1794:1872:1914:1916:1987:1989:2022:2065:2074:2244:2290:2356:2417:2443:2506:2537:2643:2679:2851:2916:2997:3059:3143:3181:3215:3306:3396:3485:3532:3544:3612:3697:3811:3847:3941:3999:4001:4016:4099:4131,277,TRUE,,,Let It Grow,1973
+174,Passenger,Peter Monk & Phil Lesh (Grateful Dead),,,1642,174,TRUE,,,,1977
+307,Peaches,Presidents of the United States of America,,,,307,,,,,
+637,Peggy Sue,Norman Petty & Jerry Allison (Buddy Holly),,,,637,,TRUE,,,1969
+175,Peggy-O,traditional,Fennario,,2575:3105:3158:3301:3436:3569:3621:3722:3857:3976,175,,TRUE,,,1973
+543,Picasso Moon,"Bob Bralove, Bob Weir, John Perry Barlow (Grateful Dead)",,,,543,TRUE,,,,1989
+404,Pigs (Three Different Ones),Pink Floyd,,,3800:3963,404,,,,,
+635,Pipeline,Bob Spickard & Brian Carman (The Chantays),,,,635,,TRUE,,,1969
+177,"Play, Pause, Stop",Benevento/Russo Duo,,,2055,177,,,TRUE,,
+176,Playing in the Band,Robert Hunter & Bob Weir (Grateful Dead),Playing,,32:79:89:190:272:359:380:531:552:722:752:842:949:1071:1264:1266:1360:1457:1830:2031:2033:2109:2184:2269:2316:2371:2452:2576:2634:2672:2717:2794:2802:2975:3048:3110:3183:3251:3263:3360:3425:3471:3488:3570:3595:3619:3693:3744:3797:3864:3949:3965:4044:4114:4171,176,TRUE,,,,1971
+381,Please Please Me,The Beatles,,,,381,,,,,
+634,Pledging My Time,Bob Dylan,,,,634,,TRUE,,,1987
+448,Poison,Dr Freeze (Bell Biv DeVoe),,,,448,,,,,
+633,Pollution,Kay McDaniel (Bo Diddley),,,,633,,TRUE,,,1972
+178,Pork & Slaw,WOLF!,,,1563,178,,,TRUE,,
+358,Powerhouse,Raymond Scott,,,,358,,,,,
+261,Prelude,John Perry Barlow & Bob Weir (Grateful Dead),,Weather Report,84:199:367:665:830:942:1066:1204:1385:1548:2204:2272:3304:3394,261,TRUE,,,,1973
+179,Pride of Cucamonga,Robert Petersen & Phil Lesh (Grateful Dead),,,171:2451,179,TRUE,,,,1974
+180,Promised Land,Chuck Berry,,,776:841:1857:2180:2405:2615:3451,180,,TRUE,,,1971
+636,Proto 18 Proper,Garcia – Godchaux – Hart – Kreutzmann – Lesh – Weir (Grateful Dead),,,,636,,TRUE,,,1975
+378,Purple Haze,Jimi Hendrix,,,,378,,,,,
+420,Queen Jane Approximately,Bob Dylan,Queen Jane,,3920:4090,420,,TRUE,,,1987
+183,Radar Love,Golden Earring,,,2320,183,,,,,
+393,Rag Mama Rag,Robbie Robertson (The Band),,,3737,393,,,,,
+544,Rain,John Lennon & Paul McCartney (The Beatles),,,,544,,TRUE,,,1992
+355,Rainy Day Women #12 & 35,Bob Dylan,Rainy Day Women,,,355,,TRUE,,,1987
+376,Ramble On,Jimmy Page & Robert Plant (Led Zeppelin),,,,376,,,,,
+184,Ramble On Rose,Robert Hunter & Jerry Garcia (Grateful Dead),,,191:225:339:381:498:721:909:1127:1247:1394:1500:1597:1760:2020:2203:2261:2459:2656:2757:2860:3043:3218:3426:3951,184,TRUE,,,,1971
+383,Redemption Song,Bob Marley,,,,383,,,,,
+466,Respect Yourself,Luther Ingram & Mack Rice (The Staple Singers),,,,466,,,,,
+185,Reuben and Cherise,Robert Hunter & Jerry Garcia (Jerry Garcia Band),R&C,,50:126:183:286:395:437:527:626:843:904:1025:1119:1132:1221:1341:1409:1465:1592:1655:1732:1865:1885:1985:2114:2147:2259:2305:2347:2375:2469:2487:2625:2720:2818:2825:2932:3017:3057:3118:3200:3338:3406:3466:3567:3655:3809:3844:3909:3989:4094:4157,185,TRUE,,,Rubin and Cerise,1991
+407,Reveille,traditional,,,,407,,,,,
+186,Revolution 9,John Lennon & Paul McCartney (The Beatles),,,178,186,,TRUE,,,
+632,Revolutionary Hamstrung Blues,"Phil Lesh, Brent Mydland, Robert Petersen (Grateful Dead)",,,,632,TRUE,,,,1986
+314,Rhiannon,Fleetwood Mac,,,,314,,,,,
+631,Riot in Cell Block #9,Jerry Leiber & Mike Stoller (The Robins; the Coasters),,,,631,,TRUE,,,1971
+630,Rip It Up,Robert Blackwell & John Marascalco (Little Richard),,,,630,,TRUE,,,1973
+187,Ripple,Robert Hunter & Jerry Garcia (Grateful Dead),,,116:482:965:1790:1942:2309:3159:3666:4178,187,TRUE,,,,1970
+629,River Deep Mountain High,"Jeff Barry, Ellie Greenwich, Phil Spector (Keith & Donna Godchaux)",,,,629,,,,,1975
+366,Rock and Roll,Led Zeppelin,,,,366,,,,,
+545,Rockin' Pneumonia and the Boogie Woogie Flu,Johnny Vincent (Huey Smith),,,,545,,TRUE,,,1972
+306,Rocky Mountain Way,Joe Walsh,,,,306,,,,,
+628,Roll in My Sweet Baby's Arms,traditional,,,,628,,,,,1963
+188,Romeo and Juliet,Dire Straits,,,639:3966,188,,,,,
+189,Rosalie McFall,Charlie Monroe,,,2434,189,,TRUE,,Rosa Lee McFall,1970
+546,Rosemary,Robert Hunter & Jerry Garcia (Grateful Dead),,,,546,TRUE,,,,1968
+340,Roundabout,Anderson Bruford & Wakeman Howe (Yes),,,,340,,,,,
+190,Row Jimmy,Robert Hunter & Jerry Garcia (Grateful Dead),,,26:673:759:795:875:992:1057:1217:1227:1304:1436:1534:1725:1765:2014:2245:2393:2453:2533:2609:2712:2798:2873:2996:3039:3252:3354:3598:3713:3851:3940:4076:4136,190,TRUE,,,,1973
+191,Royals,Lorde,,,,191,,,,,
+343,Rum & Coca Cola,Professor Longhair,,,,343,,,,,
+353,Rumble,Link Wray,,,,353,,,,,
+463,Run Like Hell,David Gilmour & Roger Waters (Pink Floyd),,,,463,,,,,
+548,Run Rudolph Run,Marvin Brodie & Johnny Marks (Chuck Berry),,,,548,,TRUE,,,1971
+627,Run Rudolph Run,Marvin Brodie & Johnny Marks (Chuck Berry),,,,627,,TRUE,,,1971
+192,Runnin' Down a Dream,Petty – Lynne – Campbell (Tom Petty),,,2157,192,,,,,
+549,Sage and Spirit,Bob Weir (Grateful Dead),,,,549,TRUE,,,,1975
+193,Saint of Circumstance,John Perry Barlow & Bob Weir (Grateful Dead),Saint,,209:314:328:392:549:621:755:1483:1615:1724:1776:1905:1972:2062:2249:2336:2503:2611:2875:2923:3123:3278:3328:3390:3428:3542:3628:3766:3899:3980:4024:4065:4175,193,TRUE,,,,1979
+626,Salt Lake City,John Perry Barlow & Bob Weir (Grateful Dead),SLC,,,626,TRUE,,,,1978
+299,Samba in the Rain,"Robert Hunter, Phil Lesh, Jerry Garcia (Jerry Garcia Band)",Samba,,,299,TRUE,,,,1994
+357,Same Old Song & Dance,Aerosmith,,,,357,,,,,
+194,Samson and Delilah,traditional,,,303:340:544:623:718:790:1126:1630:1752:1839:1978:2079:2110:2199:2324:2395:2467:2549:2727:2891:2957:2974:3053:3102:3255:3300:3336:3438:3481:3528:3694:3755:3823:3972:4019:4089:4145,194,TRUE,,,If I Had My Way,1976
+558,Sand Castles and Glass Camels,Garcia – Godchaux – Godchaux – Hart – Kreutzmann – Lesh – Weir (Grateful Dead),,,,558,TRUE,,,,1975
+317,Saturday Night's Alright for Fighting,Elton John,,,,317,,,,,
+551,Sawmill,Horace Whatley (Mel Tillis),,,,551,,TRUE,,,1970
+625,Say Boss Man,Ellas McDaniel (Bo Diddley),,,,625,,TRUE,,Eighteen Children,1972
+195,Scarlet Begonias,Robert Hunter & Jerry Garcia (Grateful Dead),Scarlet,,30:92:114:194:238:249:407:489:553:732:764:833:890:920:970:1054:1236:1488:1494:1584:1609:1854:1906:1965:2057:2067:2207:2446:2508:2559:2612:2664:2829:2885:2959:3034:3147:3202:3206:3363:3519:3644:3689:3807:3938:3990:4030:4058:4134,195,TRUE,,,,1974
+396,School Days,Stanley Clarke,,,,396,,,,,
+360,Scratchitti,Benevento/Russo Duo,,,,360,,,TRUE,,
+552,Seasons of My Heart,Darrell Edwards (George Jones),Seasons,,,552,,TRUE,,,1970
+553,Seastones,Phil Lesh & Ned Lagin,,,,553,TRUE,,,,1975
+641,See That My Grave is Kept Clean,traditional,,,,641,,TRUE,,One Kind Favor; Two White Horses in a Line; Dig My Grave with a Silver Spade,1966
+624,Señor (Tales of Yankee Power),Bob Dylan,Señor,,,624,,TRUE,,,1987
+554,Serengetti,Mickey Hart & Bill Kreutzmann (Grateful Dead),,,,554,TRUE,,,,1978
+286,Serpentine Fire,Earth Wind & Fire,,,,286,,,,,
+412,Set the Controls for the Heart of the Sun,Pink Floyd,Set the Controls,,3810,412,,,,,
+398,Sex Machine,James Brown,,,,398,,,,,
+623,Sgt Pepper's Band,Joan Baez,,,,623,,TRUE,,,1981
+443,Shake Your Body (Down to the Ground),Randy Jackson & Michael Jackson (The Jacksons),Shake Your Body,,,443,,,,,
+196,Shakedown Street,Robert Hunter & Jerry Garcia (Grateful Dead),Shakedown,,8:29:62:117:167:232:315:343:344:425:455:495:530:569:593:613:692:734:860:899:927:959:1029:1121:1135:1250:1331:1503:1523:1651:1708:1737:1825:1922:1958:2080:2250:2271:2308:2406:2432:2496:2579:2654:2700:2753:2781:2813:2838:2874:2943:2965:3014:3029:3141:3249:3260:3365:3391:3443:3444:3453:3499:3507:3543:3583:3634:3671:3748:3826:3883:3929:4027:4066:4141:4179,196,TRUE,,,,1978
+555,She Belongs to Me,Bob Dylan,,,,555,,TRUE,,,1966
+197,She Does It Right,Dr. Feelgood,,,2481,197,,,,,
+402,She Has Funny Cars,Jefferson Airplane,Funny Cars,,,402,,,,,
+556,She's Mine,Lightnin' Hopkins,,,,556,,TRUE,,,1970
+198,Shelter From the Storm,Bob Dylan,,,1912:2164:3460,198,TRUE,TRUE,,,
+622,Shenandoah,traditional,,,,622,,TRUE,,Shenandoah Lullaby,1992
+389,Shine On You Crazy Diamond,Gilmour – Waters – Wright (Pink Floyd),Shine On,,,389,,,,,
+403,Ship of Fools,Robert Hunter & Jerry Garcia (Grateful Dead),,,3778,403,TRUE,,,,1974
+315,Shortnin' Bread,James Whitcomb Riley,,,,315,,,,,
+621,Sick and Tired,Dave Bartholomew & Chris Kenner,,,,621,,TRUE,,,1966
+557,Silver Threads and Golden Needles,Dick Reynolds & Jack Rhodes,,,,557,,TRUE,,,1966
+199,Silvio,Robert Hunter & Bob Dylan,,,1354:2056:2304:2388:2613:3282:3432:3668:3827,199,,TRUE,,,
+300,Simple Gift of Man,Brothers Past,,,,300,,,TRUE,,
+560,Simple Twist of Fate,Bob Dylan,,,,560,,TRUE,,,1976
+561,Sing Me Back Home,Merle Haggard,,,,561,,TRUE,,,1971
+200,Sittin' on Top of the World,Walter Jacobs & Lonnie Carter (the Mississippi Sheiks),,,983:1096:1234:1835:2767:4150,200,,TRUE,,Sitting on Top of the World,1966
+642,Slewfoot,traditional,,,,642,,TRUE,,Ol' Slewfoot; Ole Slew Foot; Sluefoot; Slewfoot the Bear,1969
+201,Slipknot!,Grateful Dead,Slip,,14:82:145:175:231:257:317:371:440:445:484:492:519:591:606:641:676:695:712:787:815:867:895:939:994:1036:1041:1049:1105:1152:1187:1239:1307:1337:1402:1425:1451:1453:1579:1581:1658:1690:1757:1918:1967:2005:2007:2095:2139:2214:2400:2437:2439:2445:2500:2590:2618:2663:2726:2739:2927:2987:3020:3051:3093:3164:3244:3297:3332:3378:3418:3420:3469:3618:3648:3663:3687:3743:3819:3855:3881:3982:4097:4144:4160,201,TRUE,,,,1974
+562,Slow Train,Bob Dylan,,,,562,,TRUE,,,1987
+202,Smokestack Lightning,"Chester ""Howlin' Wolf"" Burnett",,,2790:4122,202,TRUE,TRUE,,,1970
+465,Sneaking Sally Through the Alley,Robert Palmer,,,,465,,,,,
+203,So Long Jerry,Ween,,,1349,203,,,TRUE,,
+204,So Many Roads,Robert Hunter & Jerry Garcia (Jerry Garcia Band),,,643:1368:1787:2043:2629:3264:3900,204,TRUE,,,,1992
+619,So Sad (To Watch Good Love Go Bad),Don Everly (Everly Brothers),So Sad,,,619,,TRUE,,,1970
+205,So What,Miles Davis,,,,205,,TRUE,,,1998
+331,Something in the Way She Moves,The Beatles,,,,331,,,,,
+278,Song Remains the Same,Led Zeppelin,,,,278,,,,,
+206,Space,,,,198:255:354:450:617:967:1136:1167:1257:1311:1515:1613:1638:1923:2761,206,TRUE,,,,
+281,Spoonful,Willie Dixon (Howlin' Wolf; Cream),,,,281,,TRUE,,,1985
+211,St. Stephen,"Robert Hunter, Phil Lesh, Jerry Garcia (Grateful Dead)",,,16:45:88:94:180:292:346:427:451:471:541:599:653:688:691:767:769:785:853:871:884:900:947:1012:1014:1065:1168:1207:1269:1271:1314:1345:1413:1491:1512:1517:1747:1822:2054:2254:2382:2394:2551:2828:2933:2985:3006:3008:3049:3169:3197:3266:3359:3400:3467:3486:3553:3639:3677:3849:3992:4037:4149,211,TRUE,,,Saint Steven,1968
+346,St. Thomas,Sonny Rollins,,,,346,,,,,
+207,Stagger Lee,Robert Hunter & Jerry Garcia (Grateful Dead),,,212:3160:3771,207,TRUE,,,,1978
+334,Stairway to Heaven,Led Zeppelin,Stairway,,,334,,,,,
+563,Stander on the Mountain,Bruce Hornsby,,,,563,TRUE,,,,1990
+564,Standing on the Corner,Garcia – Kreutzmann – Lesh – McKernan – Weir (Grateful Dead),,,,564,TRUE,,,,1966
+208,Standing on the Moon,Robert Hunter & Jerry Garcia (Grateful Dead),,,736:2418:3564,208,TRUE,,,,1989
+329,Stash,Trey Anastasio & Tom Marshall (Phish),,,,329,,,,,
+423,Stayin' Alive,Gibb – Gibb – Gibb (Bee Gees),,,,423,,TRUE,,,1978
+565,Stealin',traditional,,,,565,,TRUE,,,1966
+209,Stella Blue,Robert Hunter & Jerry Garcia (Grateful Dead),,,128:312:571:773:917:1419:1983:2161:2188:2562:2793:3166:3307:3408:3496:3708:3846:4002:4069,209,TRUE,,,,1972
+618,Stir It Up,Bob Marley (The Wailers),,,,618,,TRUE,,,1977?
+437,Stranger Things theme,Kyle Dixon & Michael Stein (Survive),,,,437,,,,,
+326,Streets of Cairo,traditional,,,,326,,,,,
+210,Stronger Than Dirt,Phil Lesh (Grateful Dead),,King Solomon's Marbles,,210,TRUE,,,,1975
+212,Stuck Inside of Mobile With the Memphis Blues Again,Bob Dylan,Memphis Blues,,2771:3772,212,,TRUE,,,1987
+213,Such a Night,Dr. John,,,291:568:1880:1955:2241:3284:3480:3674,213,,,,,
+215,Sugar Magnolia,Robert Hunter & Bob Weir (Grateful Dead),,,215:299:360:401:453:499:512:573:631:802:873:969:1128:1161:1262:1540:1679:1748:1788:1961:2162:2765:2915:3187:3786:3888:4132,215,TRUE,,,,1970
+214,Sugaree,Robert Hunter & Jerry Garcia (Grateful Dead),,,108:558:729:756:1098:2037:2447:3657:3790:4045:4078:4119:4169,214,TRUE,,,,1971
+216,Summer Lovin' aka Summer Nights,Jim Jacobs & Warren Casey (John Travolta & Olivia Newton-John),,,,216,,,,,
+567,Sunrise,Donna Godchaux (Grateful Dead),,,,567,TRUE,,,,1978
+217,Sunshine Daydream,Robert Hunter & Bob Weir (Grateful Dead),SSDD,,216:300:364:402:454:500:513:574:632:803:874:981:1129:1162:1263:1541:1680:1749:1789:1962:2163:2766:3188:4133:4163,217,TRUE,,,,1970?
+218,Superstition,Stevie Wonder,,,,218,,,,,
+219,Supplication,John Perry Barlow & Bob Weir (Grateful Dead),,,309,219,TRUE,,,,1976
+431,Sweet Home Alabama,Lynyrd Skynyrd,,,,431,,,,,
+568,Swing Low Sweet Chariot,traditional,Swing Low,,,568,,TRUE,,,1970
+290,Swingtown,Steve Miller Band,,,,290,,,,,
+617,Take It All Off,Eva Darby,,,,617,,TRUE,,,1972
+569,Take Me to the River,Mabon Hodges (Al Green),,,,569,,TRUE,,,1995
+319,Take the 'A' Train,Duke Ellington,,,,319,,,,,
+570,Tangled Up in Blue,Bob Dylan,,,,570,,TRUE,,,1976
+571,Tastebud,"Ron ""Pigpen"" McKernan (Grateful Dead)",,,,571,TRUE,,,,1966
+573,Tell It to Me,traditional,,,,573,,TRUE,,,1970
+616,Tell Mama,"Clarence Carter, Marcus Daniel, Wilbur Terrell (Etta James)",,,,616,,TRUE,,,1982
+348,Tell Me a Bedtime Story,Herbie Hancock,,,,348,,,,,
+220,"Tell Me, Momma",Bob Dylan,,,1898:2220:2319:2321:2376:2688:2844:3004:3101:3253:3461:3591:3702:3875:4026,220,,,,,
+295,Ten Years Gone,Led Zeppelin,,,,295,,,,,
+221,Tennessee Jed,Robert Hunter & Jerry Garcia (Grateful Dead),,,7:768:828:878:902:907:1028:1053:1268:1319:1553:1626:1628:1685:1796:1976:1998:2217:2372:2472:2536:2569:2671:2715:2924:3080:3130:3221:3414:3609:3704:3795:3973:4166,221,TRUE,,,,1971
+222,Tequila,Daniel Flores (The Champs),,,,222,,,,,
+275,Terrapin,Mickey Hart & Bill Kreutzmann (Grateful Dead),,Terrapin,375:506:578:848:976:1110:1195:1324:1474:1528:1673:1813:2280:2360:2542:2833:2910:3233:3474:3781,275,TRUE,,,,1977
+223,Terrapin Flyer,Mickey Hart & Bill Kreutzmann (Grateful Dead),Flyer,Terrapin,40:72:124:281:334:378:509:581:851:979:1113:1171:1198:1283:1299:1327:1377:1477:1531:1676:1717:1816:1932:2197:2283:2363:2545:2747:2836:2913:3073:3137:3236:3343:3477:3784:3998:4074,223,TRUE,,,,1977
+274,Terrapin Refrain,Robert Hunter & Jerry Garcia (Grateful Dead),Refrain,Terrapin,41:73:125:282:335:379:510:582:852:980:1114:1172:1199:1284:1300:1328:1378:1478:1532:1677:1817:1933:2198:2293:2364:2546:2748:2837:2914:3074:3138:3237:3344:3478:3785,274,TRUE,,,,1977
+224,Terrapin Station,Robert Hunter & Jerry Garcia (Grateful Dead),Station,Terrapin,36:68:97:120:160:277:330:374:460:505:577:705:739:847:930:975:1109:1158:1194:1279:1295:1323:1373:1473:1527:1595:1672:1698:1812:1928:2086:2193:2279:2359:2456:2541:2743:2832:2909:2968:3069:3133:3232:3316:3473:3534:3780:3943:3995:4071:4162,224,TRUE,,,,1977
+225,Terrapin Transit,Mickey Hart & Bill Kreutzmann (Grateful Dead),Transit,Terrapin,38:61:70:122:279:332:376:507:579:849:977:1111:1169:1196:1281:1297:1325:1375:1475:1529:1674:1814:1930:2195:2281:2361:2543:2745:2834:3071:3135:3234:3341:3475:3782:3996:4072,225,TRUE,,,,1977
+433,Thank You (Falettinme Be Mice Elf Agin),Sly Stone,,,,433,,,,,
+574,That Would Be Something,Paul McCartney,,,,574,,TRUE,,,1991
+615,That'll Be the Day,Jerry Allison (Buddy Holly),,,,615,,TRUE,,,1969
+416,That's All,Genesis,,,,416,,,,,
+590,That's All Right,James Lane (Jimmy Rogers),,,,590,,TRUE,,Who's Lovin' You; Who's Loving You Tonight?,1969
+614,That's All Right (Mama),Arthur Crudup,,,,614,,TRUE,,That's Alright Mama,1973
+226,That's the Way,Jimmy Page & Robert Plant (Led Zeppelin),,,,226,,,,,
+231,The 'In' Crowd,Ramsey Lewis (Billy Page),,,2032,231,,,,,
+356,The 'Pink Panther' Theme,Henry Mancini,,,,356,,,,,
+752,The Ascent,Grateful Dead,,,,752,TRUE,,,,1977
+748,The Ballad of Frankie Lee and Judas Priest,Bob Dylan,,,,747,,TRUE,,,1987
+227,The Bends,Radiohead,,,854:2215:2988:4176,227,,,,,
+228,The Blarney Stone,Ween,,,2646,228,,,TRUE,,
+733,The Boxer,Paul Simon,,,,733,,TRUE,,,1981
+229,The Eleven,Robert Hunter & Phil Lesh (Grateful Dead),11,,17:46:64:181:294:347:384:457:478:516:588:655:678:689:784:800:872:955:1064:1144:1209:1230:1315:1416:1492:1522:1632:1824:1888:2070:2128:2177:2310:2491:2645:2674:2732:2812:2821:2863:3007:3077:3100:3309:3379:3601:3686:3892:3969:4010,229,TRUE,,,,1968
+421,The Entertainer,Scott Joplin,,,,421,,,,,
+457,The Farmer in the Dell,traditional,,,,457,,,,,
+230,The Festival,Chuck Berry,,,2465:2931,230,,,,,
+705,The French Girl,Sylvia Fricker & Ian Tyson,,,,705,,TRUE,,,1987
+491,The Frozen Logger,James Stevens (Ivar Haglund),,,,491,,TRUE,,,1970
+670,The Island,Ken Nordine,,,,670,,TRUE,,,1993
+232,The Last Time,Mick Jagger & Keith Richards (The Rolling Stones),,,2578:2925,232,,TRUE,,,1990
+181,The Mighty Quinn,Bob Dylan,Mighty Quinn,,400:624:840:1389:1586:3055:3423:3917,181,,TRUE,,Quinn the Eskimo,1986
+233,The Music Never Stopped,John Perry Barlow & Bob Weir (Grateful Dead),TMNS,,131:192:228:248:403:447:475:635:658:757:811:913:1034:1086:1181:1200:1224:1293:1335:1426:1460:1509:1568:1663:1686:1762:1984:2001:2118:2136:2152:2296:2298:2354:2420:2460:2511:2568:2622:2691:2722:2862:2864:2950:3082:3129:3194:3302:3510:3622:3673:3741:3788:3853:4077:4079:4120,233,TRUE,,,,1975
+161,The National Anthem,Radiohead,,,1715,161,,,,,
+234,The Night They Drove Old Dixie Down,The Band,,,1000:1882:2350:3740,234,,TRUE,,,
+541,The Only Time Is Now,Parker – Garcia – Kreutzmann – Lesh – McKernan – Weir (Grateful Dead),Only Time is Now,,,541,TRUE,,,,1966
+235,The Other One,Bob Weir (Grateful Dead),,,19:60:179:261:428:449:488:562:761:798:951:1079:1154:1381:1418:1545:1721:1820:1934:1954:2019:2083:2190:2270:2307:2341:2408:2431:2495:2580:2711:2737:2792:2954:2981:2982:3024:3026:3032:3142:3157:3238:3259:3369:3381:3442:3490:3514:3571:3614:3707:3750:3866:3908:3914:3983:4004:4012:4103,235,TRUE,,,That's It for the Other One,1967
+182,The Race Is On,Don Rollins (George Jones),,,1351:3162:4123,182,,TRUE,,,1969
+547,The Rub,traditional,,,,547,,TRUE,,Ain't It Crazy,1970
+550,The Same Thing,Willie Dixon (Muddy Waters),,,,550,,TRUE,,,1966
+620,The Sidewalks of New York,Charles Lawlor & James Blake (Lottie Gilson),,,,620,,TRUE,,,1972
+438,The Simpsons theme,Danny Elfman,,,,438,,,,,
+238,The Stranger (Two Souls In Communion),"Ron ""Pigpen"" McKernan (Grateful Dead)",Two Souls,,472:760:1031:1636:1694:1751,238,TRUE,,,,1972
+611,The Things I Used to Do,Eddie Jones (Guitar Slim),,,,611,,TRUE,,,1969
+239,The Three Question Marks,Joseph Lukasik,,,1547,239,,,,,
+608,The Times They Are A-Changin',Bob Dylan,,,,608,,TRUE,,,1987
+240,The Weight,The Band,,,889:1022:1093:1653:1856:2365:2890,240,,TRUE,,,1990
+241,The Wheel,"Robert Hunter, Bill Kreutzmann, Jerry Garcia (Grateful Dead)",,,66:274:296:321:399:433:511:583:618:700:720:737:855:908:1010:1037:1039:1088:1175:1177:1285:1291:1317:1393:1428:1448:1537:1556:1558:1600:1625:1714:1716:1718:1785:1945:2040:2042:2105:2129:2247:2289:2429:2516:2619:2651:2704:2754:2770:2809:2854:2948:3086:3109:3153:3225:3348:3387:3440:3500:3573:3576:3637:3658:3796:3850:3921:3923:4021:4100:4117,241,TRUE,,,,1976
+468,Theme from 'Enter the Dragon',Lalo Schifrin,,,,468,,,,,
+397,Theme from 'The Office',,,,,397,,,,,
+237,There Is a Mountain,Donovan,,,2130:2238,237,,,,,
+380,There There. (The Boney King of Nowhere.),Radiohead,There There,,,380,,,,,
+613,There's Something on Your Mind,Big Jay McNeely,,,,613,,TRUE,,,1966
+612,They Killed Him,Kris Kristofferson (Bob Dylan),,,,612,,TRUE,,,1987
+242,They Love Each Other,Robert Hunter & Jerry Garcia (Grateful Dead),TLEO,,218:326:539:1130:1226:1559:1848:2034:2355:2450:2876:3112:3272:3710:3926:4156:4182,242,TRUE,,,,1973
+243,Third Stone from the Sun,Jimi Hendrix,,,,243,,,,,
+610,Thirty Days,Chuck Berry,,,,610,,TRUE,,,1973
+609,This Time Forever,John Perry Barlow & Bob Weir (Grateful Dead),,,,609,TRUE,,,,1978
+244,This Will Be Our Year,The Zombies,,,3547,244,,,,,
+245,Throwing Stones,John Perry Barlow & Bob Weir (Grateful Dead),,,127:155:287:363:406:441:523:592:612:714:788:845:886:916:1003:1107:1189:1287:1339:1440:1497:1499:1652:1691:1693:1758:1802:1919:1982:2008:2010:2107:2140:2142:2200:2260:2286:2333:2367:2435:2525:2593:2721:2730:2839:2907:2962:3021:3066:3091:3201:3353:3405:3437:3483:3563:3630:3777:3845:3882:3884:3910:3912:4046:4158,245,TRUE,,,,1982
+246,Tico-Tico no fubá,Zequinha de Abreu,,,1988,246,,TRUE,,,
+324,Tighten Up,Archie Bell & the Drells,,,,324,,,,,
+247,Til the Morning Comes,Robert Hunter & Jerry Garcia (Grateful Dead),,,1641:2918:3924,247,TRUE,,,,1970
+409,Time,Waters — Wright — Gilmour (Pink Floyd),,,3799,409,,,,,
+575,To Lay Me Down,Robert Hunter & Jerry Garcia (Grateful Dead),,,,575,TRUE,,,,1970
+607,Tom Dooley,traditional,,,,607,,TRUE,,,1978
+347,Tom's Diner,Suzanne Vega,,,,347,,,,,
+606,Tomorrow Is a Long Time,Bob Dylan,,,,606,,TRUE,,,1987
+576,Tomorrow Is Forever,Porter Wagoner & Dolly Parton,,,,576,,TRUE,,,1972
+577,Tomorrow Never Knows,John Lennon & Paul McCartney (The Beatles),,,,577,,TRUE,,,1992
+248,Tonight I'll Be Staying Here with You,Bob Dylan,,,74:262:466:1727:1963:2564:2795:3646:3860,248,,,,,
+578,Tons of Steel,Brent Mydland (Grateful Dead),,,,578,TRUE,,,,1984
+249,Touch of Grey,Robert Hunter & Jerry Garcia (Grateful Dead),,,352:1272:1388:1408:1462:1561:1829:2046:2167:2327:2344:2381:2444:2555:2852:2899:3285:3455:3611:3643:3653:3659:3859:3933:3985:4063:4174,249,TRUE,,,,1982
+250,Tough Mama,Bob Dylan,,,1363:3040:3678,250,,TRUE,,,1974
+251,Truckin',"Robert Hunter, Bob Weir, Phil Lesh, Jerry Garcia (Grateful Dead)",,,23:59:137:147:233:260:349:382:432:503:546:587:595:656:699:763:825:876:928:954:1044:1082:1084:1140:1277:1305:1313:1399:1417:1501:1516:1518:1603:1660:1684:1832:1893:1975:1996:2092:2123:2218:2265:2267:2274:2351:2419:2421:2470:2527:2584:2621:2713:2736:2782:3023:3025:3031:3125:3170:3247:3351:3380:3412:3506:3526:3546:3604:3635:3676:3752:3815:3840:3878:3954:4003:4011:4104:4139,251,TRUE,,,,1970
+252,Turn On Your Lovelight,Joseph Scott (Bobby Bland),Love Light,,34:1336:1650:1734:1851:2882:3916,252,,TRUE,,,1967
+605,Twist and Shout,Phil Medley & Bert Russell (The Top Notes; the Isley Brothers; the Beatles),,,,605,,TRUE,,,1969
+253,Tzofeh,Masada Quartet (John Zorn),,,1668,253,,,,,
+256,U.S. Blues,Robert Hunter & Jerry Garcia (Grateful Dead),,,21:1791:1911:3075:3398:3429:3605:3932:4116,256,TRUE,,,Wave That Flag,1974
+254,Unbroken Chain,Robert Petersen & Phil Lesh (Grateful Dead),,,80:193:702:1358:2252:3540,254,TRUE,,,,1974
+255,Uncle John's Band,Robert Hunter & Jerry Garcia (Grateful Dead),UJB,,43:53:58:138:197:223:275:389:434:525:550:607:668:701:777:856:858:945:1021:1038:1089:1240:1342:1353:1438:1479:1481:1510:1582:1599:1601:1645:1647:1713:1782:1947:2082:2189:2338:2514:2620:2760:2772:2855:2869:2949:3117:3226:3275:3376:3578:3626:3649:3718:3831:4022,255,TRUE,,,,1969
+604,Uncle Sam Blues,traditional,,,,604,,TRUE,,,1970
+603,Under Your Spell,Bob Dylan,,,,603,,TRUE,,,1987
+602,Union Sundown,Bob Dylan,,,,602,,TRUE,,,1987
+559,Unusual Occurrences in the Desert,Garcia – Godchaux – Godchaux – Hart – Kreutzmann – Lesh – Weir (Grateful Dead),,,,559,TRUE,,,,1975
+579,Valley Road,Bruce Hornsby,,,,579,TRUE,,,,1990
+257,Vampire Blues,Neil Young,,,844:1410:1505:1981:2326:3330,257,,,,,
+580,Victim or the Crime,Bob Weir & Gerrit Graham (Grateful Dead),,,,580,TRUE,,,,1988
+258,Viola Lee Blues,Noah Lewis,VLB,,20:57:109:185:187:189:243:266:386:442:444:520:522:664:770:772:793:1015:1019:1033:1097:1099:1188:1256:1320:1514:1590:1643:1648:1707:1866:1895:1897:1956:2256:2300:2409:2523:2626:2822:2849:3005:3140:3213:3288:3352:3404:3459:3515:3561:3602:3715:3834:3930:4039:4127:4129,258,,TRUE,,,1966
+581,Visions of Johanna,Bob Dylan,,,,581,,TRUE,,,1986
+460,Voodoo Chile,Jimi Hendrix,,,,460,,,,,
+601,Wabash Cannonball,traditional,,,,601,,TRUE,,,1969
+582,Wake Up Little Susie,Felice Bryant & Boudleaux Bryant (Everly Brothers),,,,582,,TRUE,,,1970
+302,Walk Like an Egyptian,The Bangles,,,,302,,,,,
+282,Walk the Dinosaur,Was (Not Was),,,,282,,,,,
+600,Walkin' Down the Line,Bob Dylan,,,,600,,TRUE,,,1987
+583,Walking the Dog,Rufus Thomas,,,,583,,TRUE,,,1966
+259,Walking Through the Park,Muddy Waters,,,2749,259,,,,,
+395,Wang Dang Doodle,Willie Dixon,,,4057,395,,TRUE,,,1983
+322,War Pigs,Black Sabbath,,,,322,,,,,
+599,Warriors of the Sun,Joan Baez,,,,599,,TRUE,,,1981
+598,Watching the River Flow,Bob Dylan,,,,598,,TRUE,,,1987
+260,Waterloo Sunset,The Kinks,,,2941,260,,,,,
+584,Wave to the Wind,Robert Hunter & Phil Lesh (Grateful Dead),,,,584,TRUE,,,,1992
+585,Way to Go Home,Robert Hunter & Vince Welnick (Grateful Dead),,,,585,TRUE,,,,1992
+262,We Bid You Goodnight,traditional,WBYGN,,290:325:431:775:805:883:1309:1459:1705:1879:2024:2134:2384:2424:2463:2631:2719:3038:3189:3313:3650,262,TRUE,,,And We Bid You Good Night,1968
+597,We Can Run,Robert Hunter & Brent Mydland (Grateful Dead),,,,597,TRUE,,,,1989
+263,Werewolves of London,Marinell – Wachtel – Zevon (Warren Zevon),,,865:1362:2064:2991:3268:3709:3957:4115,263,,TRUE,,,1978
+264,West LA Fadeaway,Robert Hunter & Jerry Garcia (Grateful Dead),,,358:1074:2208:2291:3052:3773,264,TRUE,,,,1982
+265,Wharf Rat,Robert Hunter & Jerry Garcia (Grateful Dead),,,298:638:1355:1678:1831:2301:3586:3760:3865:3950:4138,265,TRUE,,,,1971
+418,What Was It You Wanted,Bob Dylan,,,,418,,,,,
+586,What'll You Raise,Robert Hunter,,,,586,TRUE,,,,1979
+587,What's Become of the Baby,Robert Hunter & Jerry Garcia (Grateful Dead),,,,587,TRUE,,,,1969
+342,What's Going On,Cleveland – Benson – Gaye (Marvin Gaye),,,,342,,TRUE,,,1988
+266,When I Paint My Masterpiece,Bob Dylan,Masterpiece,,1433:3660:3833:3931,266,,TRUE,,,1987
+588,When Push Comes to Shove,Robert Hunter & Jerry Garcia (Grateful Dead),,,,588,TRUE,,,,1986
+267,When U Love Somebody,Fruit Bats,,,3548:3770,267,,,,,
+426,Where's Sly?,Medeski Martin & Wood,,,3993,426,,,,,
+388,Whipping Post,Gregg Allman (Allman Brothers Band),,,3803,388,,,,,
+371,Who Are You,The Who,,,,371,,,,,
+589,Who Do You Love?,Ellas McDaniel (Bo Diddley),,,,589,,TRUE,,,1972
+268,Whole Lotta Love,Led Zeppelin,,,2009,268,,,,,
+269,Why Don't We Do It in the Road?,Paul McCartney (The Beatles),,,3581:3728,269,,TRUE,,,1984
+591,Willie and the Hand Jive,Johnny Otis,,,,591,,TRUE,,,1980s
+303,Wilson,Anastasio – Marshall – Woolf (Phish),,,,303,,,,,
+301,Winter War Games,American Babies,,,,301,,,TRUE,,
+270,Words (Between the Lines of Age),Neil Young,,,3190,270,,,,,
+271,Yazoo Street Scandal,Bob Dylan and The Band,,,2153:2669:2861:3299:3762,271,,,,,
+592,You Ain't Woman Enough (To Take My Man),Loretta Lynn,Ain't Woman Enough,,,592,,TRUE,,,1973
+272,You Can Call Me Al,Paul Simon,,,,272,,,,,
+593,You Don't Have to Ask,Garcia – Kreutzmann – Lesh – McKernan – Weir (Grateful Dead),,,,593,TRUE,,,Otis on a Shakedown Cruise,1966
+594,You Don't Love Me,Willie Cobbs (Allman Brothers),,,,594,,TRUE,,,1966
+595,You See a Broken Heart,"Ron ""Pigpen"" McKernan (Grateful Dead)",,,,595,TRUE,,,,1966
+596,You Win Again,Hank Williams,,,,596,,TRUE,,If I Lose,1971
+379,Your Kiss Is On My List,Hall & Oates,,,,379,,,,,
+273,Your Time Is Gonna Come,Jones – Page – Plant (Led Zeppelin),,,2458,273,,,,,
