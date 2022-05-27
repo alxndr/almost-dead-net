@@ -1,9 +1,60 @@
-.songpage > main {
+.layout.songpage > main {
   padding: 1em;
 }
 
-.songpage h2 {
+.layout.songpage h2 {
   margin-bottom: 0.7em;
+}
+
+.songpage__performances {
+  margin-bottom: 2em;
+}
+
+.layout.songpage .sortable {
+  width: auto;
+  margin: 0 auto;
+}
+.layout.songpage th,
+.layout.songpage td {
+  padding: 0.5em 0.1em;
+}
+.layout.songpage th {
+  background: aliceblue;
+}
+.layout.songpage .sorted-asc,
+.layout.songpage .sorted-desc {
+  font-weight: bold;
+}
+.layout.songpage .sorted-asc {
+  background: linear-gradient(0deg, #0babee, transparent);
+}
+.layout.songpage .sorted-desc {
+  background: linear-gradient(180deg, #0babee, transparent);
+  border-bottom: 0;
+}
+.layout.songpage tbody {
+  font-size: 0.9em;
+}
+.layout.songpage .sortable__cell-show {
+  padding-right: 1em;
+}
+.layout.songpage .sortable__cell-show,
+.layout.songpage .sortable__cell-prior {
+  text-align: right;
+}
+.layout.songpage .sortable__cell-prior.blank,
+.layout.songpage .sortable__cell-after.blank {
+  padding: 0 1em;
+  font-size: 0.7em;
+  color: gray;
+}
+.layout.songpage .sortable__cell-segue_prior,
+.layout.songpage .sortable__cell-segue_after {
+  text-align: center;
+}
+.layout.songpage .sortable__cell-whichSet {
+  padding-left: 1em;
+  text-align: center;
 }
 
 .songpage__name:before {
@@ -14,7 +65,7 @@
 }
 
 @media all and (min-width: 35em) {
-  .songpage ul {
+  .layout.songpage ul {
     column-count: 2;
   }
 }

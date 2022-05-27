@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useMemo} from 'react'
+import {useSortBy, useTable} from 'react-table'
 import {graphql} from 'gatsby'
 import {find, propEq} from 'ramda'
 import classnames from 'classnames'
@@ -59,6 +60,12 @@ export const query = graphql`
       title
       performances
     }
+    allSeguesCsv { nodes {
+      id
+      from_perf_id
+      to_perf_id
+      type
+    }}
     allSetsCsv { nodes {
       id
       setlist
@@ -75,6 +82,8 @@ export const query = graphql`
     } }
     allSongperformancesCsv { nodes {
       id
+      song_id
+      song_name
     } }
     allTeasesCsv(filter: {song_id: {eq: $songId}}) { nodes {
       id
@@ -84,8 +93,55 @@ export const query = graphql`
   }
 `
 
+function SortableTable({columns, data}) {
+  const {
+    getTableProps,
+    getTableBodyProps,
+    headerGroups,
+    rows,
+    prepareRow
+  } = useTable({columns, data}, useSortBy)
+  // global.console.log({previousUrl: location?.state?.previousUrl}) // TODO why not working??
+  return <table {...getTableProps()} className="sortable">
+    <thead>
+      {headerGroups.map(headerGroup =>
+        <tr {...headerGroup.getHeaderGroupProps()}>
+          {headerGroup.headers.map(column =>
+            <th {...column.getHeaderProps(column.getSortByToggleProps())}
+                className={`sortable__cell-${column.id} ${column.isSorted ? column.isSortedDesc ? 'sorted-desc' : 'sorted-asc' : ''}`}>
+              {column.render('Header')}
+            </th>
+          )}
+        </tr>
+      )}
+    </thead>
+    <tbody {...getTableBodyProps()}>
+      {rows.map(row => {
+        prepareRow(row) // no return value; mutates `row`?
+        return <tr {...row.getRowProps()}>
+          {row.cells.map(cell => {
+            const url = `/show/${cell.row.original.fullData.showData.id}`
+            const classNameTd = classnames({
+              blank: cell.value === '[opener]' || cell.value === '[closer]',
+              highlight: location?.state?.previousUrl?.endsWith(url),
+              [`sortable__cell-${cell.column.id}`]: true,
+            })
+            return <td {...cell.getCellProps()} className={classNameTd}>
+              {cell.column.id === 'show'
+                ? <Link to={url}>{cell.render('Cell')}</Link>
+                : cell.render('Cell')
+              }
+            </td>
+          })}
+        </tr>
+      })}
+    </tbody>
+  </table>
+}
+
 export default function Song({data: {
   songsCsv: song,
+  allSeguesCsv: {nodes: allSegues},
   allSetsCsv: {nodes: allSets},
   allShowsCsv: {nodes: allShows},
   allSongperformancesCsv: {nodes: allSongPerformances},
@@ -104,7 +160,10 @@ export default function Song({data: {
   if (!allSets.length) {
     throw new Error('No data for allSets')
   }
-  const performancesGroupedByDate = allSongPerformances
+  if (!allSegues.length) {
+    throw new Error('No data for allSegues')
+  }
+  const onlyThisSongsPerformancesData = allSongPerformances
     .filter((songPerformance) => onlyThisSongsPerformanceIds.includes(songPerformance.id))
     .map((performanceData) => {
       const performanceIdStr = performanceData.id.toString()
@@ -123,73 +182,49 @@ export default function Song({data: {
       if (!showData) {
         console.warn('Missing showData...', {song, performanceData, setData})
       }
+      const setIdsInts = String(setData.setlist).split(':')
+      const perfPositionInSet = setIdsInts.indexOf(performanceIdStr)
+      let prior;
+      if (perfPositionInSet > 0) {
+        const perfPriorId = setIdsInts[perfPositionInSet - 1]
+        prior = allSongPerformances.find(songPerf => songPerf.id === perfPriorId) // TODO refactor to use an object lookup
+        prior.segue = find(propEq('to_perf_id', performanceIdStr))(allSegues)
+      } else prior = {song_name: '[opener]'}
+      let after;
+      if (perfPositionInSet < setIdsInts.length - 1) {
+        after = allSongPerformances.find(songPerf => songPerf.id === setIdsInts[perfPositionInSet + 1])
+        after.segue = find(propEq('from_perf_id', performanceIdStr))(allSegues)
+      } else after = {song_name: '[closer]'}
       const whichSet = Object.entries(SET_MAPPING)
         .find(([col_name, readable_name]) => showData[col_name] === setData.id)[1]
       const variation = performanceData.variation
         ? `(${performanceData.variation})`
         : false
-      return {performanceData, showData, variation, whichSet}
-    })
-    .filter((data) => data && data.showData)
-    .reduce((acc, elem) => {
-      if (!acc[elem.showData.date])
-        acc[elem.showData.date] = []
       return {
-        ...acc,
-        [elem.showData.date]: [
-          ...acc[elem.showData.date],
-          elem,
-        ],
+        show: showData.date,
+        prior: prior?.song_name,
+        'segue_prior': prior?.segue?.type,
+        title: song.title,
+        'segue_after': after?.segue?.type,
+        after: after?.song_name,
+        whichSet,
+        fullData: {performanceData, showData, variation, whichSet, prior, after}
       }
-    }, {})
-  const performancesSorted = Object.entries(performancesGroupedByDate)
-    .sort(([dateStringA], [dateStringB]) => {
-      const dateA = new Date(dateStringA.split('/'))
-      const dateB = new Date(dateStringB.split('/'))
-      if (dateA > dateB) {
-        return -1
-      }
-      if (dateA < dateB) {
-        return 1
-      }
-      return 0
     })
-  const performances = performancesSorted
-    .map(([date, performancesOnDate]) =>
-      <ListItem
-        key={date}
-        date={date}
-        performancesOnDate={performancesOnDate}
-        previousUrl={location?.state?.previousUrl}
-      />)
-  const performancesComponent = performancesSorted.length > 0
-    ? <>
-      <h2>Performed at {pluralize(performancesSorted.length, 'Show')}</h2>
-      <ul>
-        {performances}
-      </ul>
-    </>
-    : false
 
-  const teasesComponent = teases.length > 0
-    ? <>
-      <h2>Teases</h2>
-      <ul>
-        {teases.map(teaseData => {
-          const performanceData = find(propEq('id', teaseData.performance_id))(allSongPerformances)
-          if (!(performanceData?.id)) {
-            return false
-          }
-          const setData = find((set) => set.setlist.toString().split(':').includes(performanceData.id.toString()))(allSets)
-          const showData = find((show) => [show.soundcheck, show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(allShows)
-          const url = `/show/${showData.id}`
-          return <li key={teaseData.id} className={classnames({highlight: location?.state?.previousUrl?.endsWith(url)})}>
-            <Link to={url}>{showData.date} within {teaseData.within} {performanceData.variation && `(${performanceData.variation})`}</Link>
-          </li>
-        })}
-      </ul>
-    </>
-    : false
+  const performancesData = useMemo(() => onlyThisSongsPerformancesData, [])
+  const performancesColumns = useMemo(
+    () => [
+      {accessor: 'show', Header: 'show', sortType: (a,b) => new Date(a.values.show).getTime() - new Date(b.values.show).getTime()}, // TODO memoize this fn
+      {accessor: 'prior', Header: 'prior song'},
+      {accessor: 'segue_prior', Header: '>'},
+      {accessor: 'title', disableSortBy: true},
+      {accessor: 'segue_after', Header: '>'},
+      {accessor: 'after', Header: 'following song'},
+      {accessor: 'whichSet', Header: 'where'},
+    ],
+    []
+  )
 
   return <Layout className="songpage">
     <SEO
@@ -202,7 +237,32 @@ export default function Song({data: {
       {authorInfo(song.author)}
       {song.suite && <p>Part of the {song.suite} suite</p>}
     </div>
-    <div className="songpage__performances">{performancesComponent}</div>
-    <div className="songpage__teases">{teasesComponent}</div>
+
+    {Boolean(performancesData.length) && // TODO verify that this count is accurate if a song is played twice in one show...
+      <div className="songpage__performances">
+        <h2>Performed at {pluralize(performancesData.length, 'Show')}</h2>
+        <SortableTable data={performancesData} columns={performancesColumns} />
+      </div>
+    }
+
+    {Boolean(teases.length) &&
+      <div className="songpage__teases">
+        <h2>Teases</h2>
+        <ul>
+          {teases.map(teaseData => {
+            const performanceData = find(propEq('id', teaseData.performance_id))(allSongPerformances)
+            if (!(performanceData?.id)) {
+              return false
+            }
+            const setData = find((set) => set.setlist.toString().split(':').includes(performanceData.id.toString()))(allSets)
+            const showData = find((show) => [show.soundcheck, show.set1, show.set2, show.set3, show.encore1, show.encore2].includes(setData.id))(allShows)
+            const url = `/show/${showData.id}`
+            return <li key={teaseData.id} className={classnames({highlight: location?.state?.previousUrl?.endsWith(url)})}>
+              <Link to={url}>{showData.date} within {teaseData.within} {performanceData.variation && `(${performanceData.variation})`}</Link>
+            </li>
+          })}
+        </ul>
+      </div>
+    }
   </Layout>
 }
