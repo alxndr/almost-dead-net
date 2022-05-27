@@ -93,7 +93,7 @@ export const query = graphql`
   }
 `
 
-function SortableTable({columns, data}) {
+function SortableTable({columns, data, previousUrl}) {
   const {
     getTableProps,
     getTableBodyProps,
@@ -101,7 +101,6 @@ function SortableTable({columns, data}) {
     rows,
     prepareRow
   } = useTable({columns, data}, useSortBy)
-  // global.console.log({previousUrl: location?.state?.previousUrl}) // TODO why not working??
   return <table {...getTableProps()} className="sortable">
     <thead>
       {headerGroups.map(headerGroup =>
@@ -123,7 +122,7 @@ function SortableTable({columns, data}) {
             const url = `/show/${cell.row.original.fullData.showData.id}`
             const classNameTd = classnames({
               blank: cell.value === '[opener]' || cell.value === '[closer]',
-              highlight: location?.state?.previousUrl?.endsWith(url),
+              highlight: previousUrl?.endsWith(url),
               [`sortable__cell-${cell.column.id}`]: true,
             })
             return <td {...cell.getCellProps()} className={classNameTd}>
@@ -241,7 +240,7 @@ export default function Song({data: {
     {Boolean(performancesData.length) && // TODO verify that this count is accurate if a song is played twice in one show...
       <div className="songpage__performances">
         <h2>Performed at {pluralize(performancesData.length, 'Show')}</h2>
-        <SortableTable data={performancesData} columns={performancesColumns} />
+        <SortableTable data={performancesData} columns={performancesColumns} previousUrl={location?.state?.previousUrl} />
       </div>
     }
 
