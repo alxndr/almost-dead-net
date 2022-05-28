@@ -12,10 +12,6 @@ describe('Song page', () => {
       .contains(/Performed at [1-9]\d* Shows/)
   })
 
-  describe('links', () => {
-    it('indicate when the song has been played multiple times within the show')
-  })
-
   describe('teases', () => {
     it('include label and links', () => {
       cy.get('h2')
@@ -25,4 +21,21 @@ describe('Song page', () => {
         .should('have.attr', 'href', '/show/15')
     })
   })
+
+  describe('segues', () => {
+    it('show the preceding and following songs', () => {
+      cy.get('.songpage__performances')
+        .find('.sortable__cell-show')
+        .contains('11/27/2015')
+        .closest('tr')
+        .contains('Alligator')
+        .closest('td')
+        .find(' + td')
+        .contains('->')
+        .closest('tr')
+        .contains(`Franklin's Tower`)
+    })
+  })
+
+  it('indicates when the song has been played multiple times within the show')
 })
