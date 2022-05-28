@@ -34,7 +34,7 @@
 
     "serve": "gatsby serve",
 
-    "start": "echo 'npm run dev' or 'npm run serve' && exit 1",
+    "start": "echo 'npm run dev' or 'npm run build:serve' && exit 1",
 
     "pretest": "npm run lint",
     "test": "npm run test:e2e",
