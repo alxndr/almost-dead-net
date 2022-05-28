@@ -75,7 +75,20 @@ export const query = graphql`
   }
 `
 
-function SortableTable({columns, data, previousUrl}) {
+function renderCell({column, render, row}, previousUrl='') {
+  let url;
+  if (column.id === 'show')
+    url = `/show/${row.original.fullData.showData.id}`
+  else if (column.id === 'prior' && row.original.fullData.prior.song_id)
+    url = `/song/${row.original.fullData.prior.song_id}`
+  else if (column.id ===  'after' && row.original.fullData.after.song_id)
+    url = `/song/${row.original.fullData.after.song_id}`
+  if (url)
+    return <Link to={url} className={previousUrl.endsWith(url) ? 'highlight' : ''}>{render('Cell')}</Link>
+  return render('Cell')
+}
+
+function SortableTable({columns, data, previousUrl=''}) {
   const {
     getTableProps,
     getTableBodyProps,
@@ -104,15 +117,9 @@ function SortableTable({columns, data, previousUrl}) {
             const url = `/show/${cell.row.original.fullData.showData.id}`
             const classNameTd = classnames({
               blank: cell.value === '[opener]' || cell.value === '[closer]',
-              highlight: previousUrl?.endsWith(url),
               [`sortable__cell-${cell.column.id}`]: true,
             })
-            return <td {...cell.getCellProps()} className={classNameTd}>
-              {cell.column.id === 'show'
-                ? <Link to={url}>{cell.render('Cell')}</Link>
-                : cell.render('Cell')
-              }
-            </td>
+            return <td {...cell.getCellProps()} className={classNameTd}>{renderCell(cell, previousUrl)}</td>
           })}
         </tr>
       })}
@@ -169,12 +176,12 @@ export default function Song({data: {
       if (perfPositionInSet > 0) {
         const perfPriorId = setIdsInts[perfPositionInSet - 1]
         prior = allSongPerformances.find(songPerf => songPerf.id === perfPriorId) // TODO refactor to use an object lookup
-        prior.segue = find(propEq('to_perf_id', performanceIdStr))(allSegues)
+        prior.segue = find(propEq('to_perf_id', performanceIdStr))(allSegues)?.type || ','
       } else prior = {song_name: '[opener]'}
       let after;
       if (perfPositionInSet < setIdsInts.length - 1) {
         after = allSongPerformances.find(songPerf => songPerf.id === setIdsInts[perfPositionInSet + 1])
-        after.segue = find(propEq('from_perf_id', performanceIdStr))(allSegues)
+        after.segue = find(propEq('from_perf_id', performanceIdStr))(allSegues)?.type || ','
       } else after = {song_name: '[closer]'}
       const whichSet = Object.entries(SET_MAPPING)
         .find(([col_name, readable_name]) => showData[col_name] === setData.id)[1]
@@ -184,9 +191,9 @@ export default function Song({data: {
       return {
         show: showData.date,
         prior: prior?.song_name,
-        'segue_prior': prior?.segue?.type,
+        'segue_prior': prior?.segue,
         title: song.title,
-        'segue_after': after?.segue?.type,
+        'segue_after': after?.segue,
         after: after?.song_name,
         whichSet,
         fullData: {performanceData, showData, variation, whichSet, prior, after}
