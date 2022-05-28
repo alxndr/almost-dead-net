@@ -200,17 +200,43 @@ export default function Song({data: {
         fullData: {performanceData, showData, variation, whichSet, prior, after}
       }
     })
+  // global.console.log({onlyThisSongsPerformancesData })
 
   const performancesData = useMemo(() => onlyThisSongsPerformancesData, [])
   const performancesColumns = useMemo(
     () => [
       {accessor: 'show', Header: 'show', sortType: (a,b) => new Date(a.values.show).getTime() - new Date(b.values.show).getTime()}, // TODO memoize this fn
-      {accessor: 'prior', Header: 'prior song'},
+      {accessor: 'prior', Header: 'prior song'}, // TODO Filter out the/a
       {accessor: 'segue_prior', Header: '>'},
       {accessor: 'title', disableSortBy: true},
       {accessor: 'segue_after', Header: '>'},
-      {accessor: 'after', Header: 'following song'},
-      {accessor: 'whichSet', Header: 'where'},
+      {accessor: 'after', Header: 'following song'}, // TODO Filter out the/a
+      {accessor: 'whichSet', Header: 'where', sortType: (a,b) => {
+        if (a.values.whichSet === 'soundcheck')
+          return -1;
+        if (b.values.whichSet === 'soundcheck')
+          return 1;
+        if (a.values.whichSet === 'set 1')
+          return -1;
+        if (b.values.whichSet === 'set 1')
+          return 1;
+        if (a.values.whichSet === 'set 2')
+          return -1;
+        if (b.values.whichSet === 'set 2')
+          return 1;
+        if (a.values.whichSet === 'set 3')
+          return -1;
+        if (b.values.whichSet === 'set 3')
+          return 1;
+        if (a.values.whichSet === 'encore')
+          return -1;
+        if (b.values.whichSet === 'encore')
+          return 1;
+        if (a.values.whichSet === 'double encore')
+          return -1;
+        if (b.values.whichSet === 'double encore')
+          return 1;
+      }},
     ],
     []
   )
