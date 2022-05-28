@@ -158,7 +158,8 @@ export default function Song({data: {
       const setData = find((set) =>
         set.setlist && set.setlist.toString().split(':').includes(performanceIdStr)
       )(allSets)
-      if (!setData) return;
+      if (!setData)
+        throw new Error('No setData', {song, performanceData, allSets})
       const showData = find((show) => [
         show.soundcheck,
         show.set1,
@@ -168,7 +169,7 @@ export default function Song({data: {
         show.encore2
       ].includes(setData.id))(allShows)
       if (!showData) {
-        console.warn('Missing showData...', {song, performanceData, setData})
+        throw new Error('No showData', {song, performanceData, setData, allShows})
       }
       const setIdsInts = String(setData.setlist).split(':')
       const perfPositionInSet = setIdsInts.indexOf(performanceIdStr)
