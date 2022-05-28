@@ -13,14 +13,7 @@ describe('Song page', () => {
   })
 
   describe('links', () => {
-    it('indicate when the song has been played multiple times within the show', () => {
-      cy.get('a')
-        .contains('6/3/2017 in set 1…')
-        .should('have.attr', 'href', '/show/112')
-      cy.get('a')
-        .contains('5/16/2015 in set 1 & set 2')
-        .should('have.attr', 'href', '/show/29')
-    })
+    it('indicate when the song has been played multiple times within the show')
   })
 
   describe('teases', () => {
