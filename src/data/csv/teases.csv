@@ -961,7 +961,7 @@ id,within,performance_id,song_name,notes,by,song_id
 970,Cassidy,1793,I Know You Rider,China>Rider transition,TH,110
 971,Born Cross Eyed,1795,Rainy Day Women #12 & 35,,band,355
 972,Tennessee Jed,1796,Spoonful,,SM,281
-973,Tennessee Jed,1796,Celebrated Chop Waltz aka Chopsticks,in Marco solo,SM,439
+973,Tennessee Jed,1796,Celebrated Chop Waltz,in Marco solo,SM,439
 974,Tennessee Jed,1796,Big River,,,20
 975,Althea,1801,So What,,SM,205
 976,Althea,1801,All of My Love,jam,,362
@@ -981,7 +981,7 @@ id,within,performance_id,song_name,notes,by,song_id
 990,Not Fade Away,1850,Hoedown,,MB,367
 991,Not Fade Away,1850,I Want Candy,,MB,305
 992,Not Fade Away,1850,[unknown],,MB,288
-993,My Brother Esau,1853,Flash aka Flash's Theme,,MB,441
+993,My Brother Esau,1853,Flash,,MB,441
 994,Fire on the Mountain,1855,Borderline,,MB,442
 995,Viola Lee Blues,1866,China Cat Sunflower,jam,,44
 996,Casey Jones,1868,Hoedown,,MB,367
@@ -1134,3 +1134,6 @@ id,within,performance_id,song_name,notes,by,song_id
 1143,Cassidy,4167,Jack Straw,in intro??,band,120
 1144,My Brother Esau,4168,[unknown],in intro,SM,288
 1145,Sugaree,4169,[unknown],Allman brothers,band,288
+1146,The Other One,179,Kashmir,,,124
+1147,Cats Under the Stars,4186,2001 (Also Sprach Zarathustra),,MB,406
+1148,Jessica,4193,Terrapin Station,in solo,MB,224
