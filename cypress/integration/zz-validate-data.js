@@ -235,35 +235,53 @@ const allShows = { // TODO replace with proper Cypress fixtures... hopefully hoo
   234: {id: 234, date: '9/4/2021', venue: 'Westville Music Bowl'},
   235: {id: 235, date: '9/24/2021', venue: 'Salvage Station'},
   236: {id: 236, date: '9/25/2021', venue: 'Salvage Station'},
-  237: {id: 237, date: '10/7/2021', venue: 'Wellmont Theater'},
-  238: {id: 238, date: '10/8/2021', venue: 'Wellmont Theater'},
-  239: {id: 239, date: '10/9/2021', venue: 'Wellmont Theater'},
-  240: {id: 240, date: '10/22/2021', venue: 'Hollywood Palladium'},
-  241: {id: 241, date: '10/23/2021', venue: 'Frost Ampitheater'},
-  242: {id: 242, date: '12/3/2021', venue: '1stBank Center'},
-  243: {id: 243, date: '2/10/2022', venue: 'Brooklyn Bowl'},
-  244: {id: 244, date: '2/11/2022', venue: 'Fillmore'},
-  245: {id: 245, date: '2/12/2022', venue: 'Fillmore'},
-  246: {id: 246, date: '3/17/2022', venue: 'Sylvee'},
+  237: {id: 237, date: '10/1/2021', venue: 'private'},
+  238: {id: 238, date: '10/7/2021', venue: 'Wellmont Theater'},
+  239: {id: 239, date: '10/8/2021', venue: 'Wellmont Theater'},
+  240: {id: 240, date: '10/9/2021', venue: 'Wellmont Theater'},
+  241: {id: 241, date: '10/22/2021', venue: 'Hollywood Palladium'},
+  242: {id: 242, date: '10/23/2021', venue: 'Frost Ampitheater'},
+  243: {id: 243, date: '12/3/2021', venue: '1stBank Center'},
+  244: {id: 244, date: '2/10/2022', venue: 'Brooklyn Bowl'},
+  245: {id: 245, date: '2/11/2022', venue: 'Fillmore'},
+  246: {id: 246, date: '2/12/2022', venue: 'Fillmore'},
+  247: {id: 247, date: '3/17/2022', venue: 'Sylvee'},
+  248: {id: 248, date: '3/18/2022', venue: 'Sylvee'},
+  249: {id: 249, date: '3/19/2022', venue: 'Pageant'},
+  250: {id: 250, date: '3/20/2022', venue: 'Pageant'},
+  251: {id: 251, date: '4/28/2022', venue: 'Ovation'},
+  252: {id: 252, date: '4/29/2022', venue: 'Rabbit Rabbit'},
+  253: {id: 253, date: '4/30/2022', venue: 'Rabbit Rabbit'},
+  254: {id: 254, date: '5/1/2022', venue: 'Centennial Olympic'},
+  255: {id: 255, date: '5/14/2022', venue: 'Westville'},
+  256: {id: 256, date: '5/15/2022', venue: 'BeachLife'},
+  257: {id: 257, date: '5/27/2022', venue: 'Summer Camp'},
+  258: {id: 258, date: '6/1/2022', venue: 'Ford'},
+  259: {id: 259, date: '6/2/2022', venue: 'Ford'},
+  260: {id: 260, date: '6/3/2022', venue: 'Red Rocks'},
 }
 
+function validate(show) {
+  const {id, date, venue} = allShows[show.id]
+  it(`#${show.id} is ${date} @ ${venue}`, () => {
+    cy.visit(`/show/${id}`)
+    cy.get('main')
+      .find('h1')
+      .as('h1')
+    cy.get('@h1')
+      .contains(date)
+    cy.get('@h1')
+      .contains(venue)
+  })
+}
+
+const isSampling = !Cypress.env('VALIDATE_ALL')
+
 describe('data validation', () => {
-  describe('random shows', () => {
+  describe(`when isSampling = ${isSampling}`, () => {
     const timestamp = String(Date.now());
     Object.values(allShows)
-      .filter(({id}) => timestamp.includes(id))
-      .forEach((show) => {
-        const {id, date, venue} = allShows[show.id]
-        it(`#${show.id} is ${date} @ ${venue}`, () => {
-          cy.visit(`/show/${id}`)
-          cy.get('main')
-            .find('h1')
-            .as('h1')
-          cy.get('@h1')
-            .contains(date)
-          cy.get('@h1')
-            .contains(venue)
-        })
-      })
+      .filter(({id}) => isSampling ? timestamp.includes(id) : true)
+      .forEach(validate)
   })
 })
