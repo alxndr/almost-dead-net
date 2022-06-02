@@ -1131,7 +1131,7 @@ id,within,performance_id,song_name,notes,by,song_id
 1140,Man Smart (Woman Smarter),4165,Not Fade Away,?,,168
 1141,Tennessee Jed,4166,[unknown],right before start of recognizable TJ,,288
 1142,Tennessee Jed,4166,[unknown],middle of things,TH,288
-1143,Cassidy,4167,Jack Straw,in intro??,band,120
+1143,Cassidy,4167,Jack Straw,in intro?? or is it BTW...,band,120
 1144,My Brother Esau,4168,[unknown],in intro,SM,288
 1145,Sugaree,4169,[unknown],Allman brothers,band,288
 1146,The Other One,179,Kashmir,,,124
@@ -1142,8 +1142,21 @@ id,within,performance_id,song_name,notes,by,song_id
 1151,Not Fade Away,4208,Throwing Stones,,,245
 1152,Not Fade Away,4208,Feel Like a Stranger,,,74
 1153,Not Fade Away,4208,"Myxomatosis. (Judge, Jury & Executioner.)",,,160
-1154,Not Fade Away,4208,Foolish Heart,,,76
-1155,Throwing Stones,4209,"Myxomatosis. (Judge, Jury & Executioner.)",,,160
-1156,Throwing Stones,4209,I'm Your Captain (Closer to Home),,,759
+1154,Throwing Stones,4209,Foolish Heart,,band,76
+1155,Throwing Stones,4209,"Myxomatosis. (Judge, Jury & Executioner.)",,TH,160
+1156,Throwing Stones,4209,I'm Your Captain (Closer to Home),,band,759
 1157,Throwing Stones,4209,Another Brick in the Wall,,,297
 1158,Fire on the Mountain,4211,Becky,,MB,16
+1159,Man Smart (Woman Smarter),4165,Turn On Your Lovelight,,band,252
+1160,Man Smart (Woman Smarter),4165,Raindrops Whisper Words,,band,760
+1161,King Solomon's Marbles,4172,Emergency,,,761
+1162,Saint of Circumstance,4175,Emergency,jam,,761
+1163,Dancing in the Streets,4180,Emergency,jam,,761
+1164,Eyes of the World,4183,Playing in the Band,,band,176
+1165,Eyes of the World,4183,Part II: Let It Grow,jam,,277
+1166,West LA Fadeaway,4188,Throwing Stones,,band,245
+1167,He's Gone,4189,New Speedway Boogie,jam,,165
+1168,Truckin',4190,Nobody's Fault but Mine,jam,,537
+1169,Truckin',4190,Emergency,jam,,761
+1170,Viola Lee Blues,4192,Here Comes Sunshine,jam,,99
+1171,Viola Lee Blues,4192,Cats Under the Stars,,TH,40
