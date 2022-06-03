@@ -288,7 +288,6 @@ id,from_perf_id,type,to_perf_id,notes
 291,493,->,494,
 292,494,->,495,
 293,495,->,496,
-294,496,->,497,
 295,499,>,500,
 296,504,>,505,
 297,505,>,506,
@@ -373,19 +372,16 @@ id,from_perf_id,type,to_perf_id,notes
 393,666,>,667,
 394,667,>,668,
 395,668,->,669,
-396,670,->,671,
 397,673,->,674,
 398,675,>,676,
 399,676,->,677,
 400,677,->,678,
 401,678,->,679,
 402,680,->,681,
-403,684,->,685,presumptive (no known recordings)
 404,688,>,689,presumptive (no known recordings)
 405,689,>,690,presumptive (no known recordings)
 406,690,>,691,presumptive (no known recordings)
 409,695,>,696,presumptive (no known recordings)
-410,697,->,698,presumptive (no known recordings)
 411,711,>,712,presumptive (no known recordings)
 412,712,>,713,presumptive (no known recordings)
 413,720,->,721,
