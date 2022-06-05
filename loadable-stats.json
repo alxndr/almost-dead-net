@@ -1,13 +1,13 @@
 {
-  "hash": "e3c33a3cfbede33963e3",
+  "hash": "e894581c155e616ece17",
   "publicPath": "/",
-  "outputPath": "/Users/xander/workspace/almost-dead-net/public",
+  "outputPath": "/Users/alxndr/workspace/almost-dead-net/public",
   "assetsByChunkName": {
     "polyfill": [
-      "polyfill-80c418b966a82fc50892.js"
+      "polyfill-5bad101dbf0d5d58baa8.js"
     ],
     "app": [
-      "app-410bcb2d16a3240d6b95.js"
+      "app-c966ea99ee4812a55ba8.js"
     ],
     "webpack-runtime": [
       "webpack-runtime-514a117c65b003af2b1d.js"
@@ -70,19 +70,19 @@
   "assets": [
     {
       "type": "asset",
-      "name": "app-410bcb2d16a3240d6b95.js",
+      "name": "app-c966ea99ee4812a55ba8.js",
       "size": 217104,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "410bcb2d16a3240d6b95",
+        "contenthash": "c966ea99ee4812a55ba8",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "license": "app-410bcb2d16a3240d6b95.js.LICENSE.txt",
-          "sourceMap": "app-410bcb2d16a3240d6b95.js.map"
+          "license": "app-c966ea99ee4812a55ba8.js.LICENSE.txt",
+          "sourceMap": "app-c966ea99ee4812a55ba8.js.map"
         }
       },
       "chunkNames": [
@@ -130,18 +130,18 @@
     },
     {
       "type": "asset",
-      "name": "polyfill-80c418b966a82fc50892.js",
+      "name": "polyfill-5bad101dbf0d5d58baa8.js",
       "size": 82850,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "80c418b966a82fc50892",
+        "contenthash": "5bad101dbf0d5d58baa8",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "polyfill-80c418b966a82fc50892.js.map"
+          "sourceMap": "polyfill-5bad101dbf0d5d58baa8.js.map"
         }
       },
       "chunkNames": [
@@ -247,7 +247,7 @@
     },
     {
       "type": "asset",
-      "name": "/Users/xander/workspace/almost-dead-net/.cache/page-ssr/loadable-stats-build-javascript.json",
+      "name": "/Users/alxndr/workspace/almost-dead-net/.cache/page-ssr/loadable-stats-build-javascript.json",
       "size": 32357,
       "emitted": false,
       "comparedForEmit": false,
@@ -775,7 +775,7 @@
           "name": "webpack-runtime-514a117c65b003af2b1d.js"
         },
         {
-          "name": "polyfill-80c418b966a82fc50892.js"
+          "name": "polyfill-5bad101dbf0d5d58baa8.js"
         }
       ],
       "filteredAssets": 0,
@@ -800,7 +800,7 @@
           "name": "framework-943f47733ecbc6e2cf7a.js"
         },
         {
-          "name": "app-410bcb2d16a3240d6b95.js"
+          "name": "app-c966ea99ee4812a55ba8.js"
         }
       ],
       "filteredAssets": 0,
@@ -1156,13 +1156,13 @@
     {
       "id": 920,
       "files": [
-        "polyfill-80c418b966a82fc50892.js"
+        "polyfill-5bad101dbf0d5d58baa8.js"
       ]
     },
     {
       "id": 143,
       "files": [
-        "app-410bcb2d16a3240d6b95.js"
+        "app-c966ea99ee4812a55ba8.js"
       ]
     },
     {
