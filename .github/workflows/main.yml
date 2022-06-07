@@ -1,22 +1,39 @@
 name: End-to-end tests
 on: [push]
 jobs:
-  cypress-run:
+
+  cypress-default:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-
       - name: Setup node 16.13.2
         uses: actions/setup-node@v1
         with:
           node-version: 16.13.2
-
-      - name: Cypress run
+      - name: Cypress integration tests
         uses: cypress-io/github-action@v2
         with:
           start: npm run build:serve
           wait-on: 'http://localhost:9000'
-          wait-on-timeout: 300 # seconds = 5 mins
-          config: 'baseUrl=http://localhost:9000,retries=1'
+          wait-on-timeout: 500 # seconds = 6 mins
+          config: 'baseUrl=http://localhost:9000'
 
+  cypress-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup node 16.13.2
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.13.2
+      - name: Cypress data validation
+        uses: cypress-io/github-action@v2
+        with:
+          env: VALIDATE_ALL=true
+          spec: cypress/integration/zz-validate-data.js
+          start: npm run build:serve:9001
+          wait-on: 'http://localhost:9001'
+          wait-on-timeout: 500 # seconds = 6 mins
+          config: 'baseUrl=http://localhost:9001'

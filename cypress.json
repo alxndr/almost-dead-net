@@ -2,6 +2,6 @@
   "baseUrl": "http://localhost:8000/",
   "chromeWebSecurity": false,
   "defaultCommandTimeout": 15000,
-  "retries": 1,
+  "retries": 2,
   "video": false
 }

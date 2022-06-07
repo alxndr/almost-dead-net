@@ -8,7 +8,8 @@
   "author": "@alxndr",
   "scripts": {
     "build": "gatsby build",
-    "build:serve": "npm run build && npm run serve",
+    "build:serve": "npm run build && npm run serve -- --port 9000",
+    "build:serve:9001": "npm run build && npm run serve -- --port 9001",
 
     "clean": "gatsby clean",
 
