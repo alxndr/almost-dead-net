@@ -5,7 +5,6 @@ module.exports = defineConfig({
   defaultCommandTimeout: 15000,
   retries: 2,
   video: false,
-
   e2e: {
     // We've imported your old cypress plugins here.
     // You may want to clean this up later by importing these.
@@ -13,12 +12,5 @@ module.exports = defineConfig({
       return require("./cypress/plugins/index.js")(on, config);
     },
     baseUrl: "http://localhost:8000/",
-  },
-
-  component: {
-    devServer: {
-      framework: "react",
-      bundler: "webpack",
-    },
   },
 });
