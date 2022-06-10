@@ -33,7 +33,7 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           env: VALIDATE_ALL=true
-          spec: cypress/integration/zz-validate-data.js
+          spec: cypress/integration/zz-validate-data.cy.js
           start: npm run build:serve:9001
           wait-on: 'http://localhost:9001'
           wait-on-timeout: 500 # seconds = 6 mins
