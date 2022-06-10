@@ -12,12 +12,13 @@ jobs:
         with:
           node-version: 16.13.2
       - name: Cypress integration tests
-        uses: cypress-io/github-action
+        uses: cypress-io/github-action@v2
         with:
           start: npm run build:serve
           wait-on: 'http://localhost:9000'
           wait-on-timeout: 500 # seconds = 6 mins
           config: 'baseUrl=http://localhost:9000'
+          config-file: cypress.config.js
 
   cypress-validate:
     runs-on: ubuntu-latest
@@ -29,7 +30,7 @@ jobs:
         with:
           node-version: 16.13.2
       - name: Cypress data validation
-        uses: cypress-io/github-action
+        uses: cypress-io/github-action@v2
         with:
           env: VALIDATE_ALL=true
           spec: cypress/integration/zz-validate-data.js
@@ -37,3 +38,4 @@ jobs:
           wait-on: 'http://localhost:9001'
           wait-on-timeout: 500 # seconds = 6 mins
           config: 'baseUrl=http://localhost:9001'
+          config-file: cypress.config.js
