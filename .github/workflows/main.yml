@@ -1,8 +1,8 @@
-name: End-to-end tests
+name: integrations tests
 on: [push]
 jobs:
 
-  cypress-default:
+  smoke:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -19,7 +19,7 @@ jobs:
           wait-on-timeout: 500 # seconds = 6 mins
           config: 'baseUrl=http://localhost:9000'
 
-  cypress-validate:
+  validation:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
