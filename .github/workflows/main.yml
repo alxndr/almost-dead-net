@@ -1,8 +1,8 @@
-name: End-to-end tests
+name: integrations tests
 on: [push]
 jobs:
 
-  cypress-default:
+  smoke:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -12,14 +12,14 @@ jobs:
         with:
           node-version: 16.13.2
       - name: Cypress integration tests
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v4.1.0
         with:
           start: npm run build:serve
           wait-on: 'http://localhost:9000'
           wait-on-timeout: 500 # seconds = 6 mins
           config: 'baseUrl=http://localhost:9000'
 
-  cypress-validate:
+  validation:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,10 +29,10 @@ jobs:
         with:
           node-version: 16.13.2
       - name: Cypress data validation
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v4.1.0
         with:
           env: VALIDATE_ALL=true
-          spec: cypress/integration/zz-validate-data.js
+          spec: cypress/e2e/zz-validate-data.cy.js
           start: npm run build:serve:9001
           wait-on: 'http://localhost:9001'
           wait-on-timeout: 500 # seconds = 6 mins
