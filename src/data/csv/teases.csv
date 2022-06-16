@@ -918,16 +918,16 @@ id,within,performance_id,song_name,notes,by,song_id
 927,Throwing Stones,4046,That's All,,,416
 928,Greatest Story Ever Told,4020,Becky,,MB,16
 929,The Wheel,4021,Loose Lucy,in intro solo,MB,138
-930,"Tell Me, Momma",4026,Hey Bulldog,,,103
+930,"Tell Me, Momma",4026,Hey Bulldog,,SM; band,103
 931,Saint of Circumstance,4024,Halloween Theme – Main Title,in transition into HCS,MB,91
-932,Black Throated Wind,4029,[unknown],Miles Davis??,guitar,288
+932,Black Throated Wind,4029,Mephisto,...not Miles Davis,SM,354
 933,Scarlet Begonias,4030,Black Throated Wind,in intro,guitar,25
 934,Alabama Getaway,4031,One More Saturday Night,,SM?,169
 935,New Speedway Boogie,4033,Part II: Let It Grow,,,277
 936,New Speedway Boogie,4033,Estimated Prophet,,,69
 937,Estimated Prophet,4034,New Speedway Boogie,,,165
-938,Dark Star,4035,Part II: Let It Grow,,,277
-939,Shakedown Street,4027,Here Comes Sunshine,,,99
+938,Dark Star,4035,Part II: Let It Grow,,TH/JR,277
+939,Shakedown Street,4027,Here Comes Sunshine,,TH,99
 940,Lost Sailor,4023,Looks Like Rain,,,137
 941,New Speedway Boogie,3078,Eleanor Rigby,,TH/band,341
 942,New Speedway Boogie,3078,The Eleven,,TH,229
@@ -1190,3 +1190,18 @@ id,within,performance_id,song_name,notes,by,song_id
 1200,Part II: Let It Grow,1593,Terrapin Station,,band,224
 1201,Ramble On Rose,1597,[unknown],American Babies tune,TH?,288
 1202,Truckin',1603,The Other One,,band,235
+1203,Cassidy,4167,Black Throated Wind,,SM,25
+1204,Cassidy,4167,Hell In A Bucket,jam,,97
+1205,Lost Sailor,4023,The Wheel,,SM,241
+1206,Truckin',4139,Born Cross Eyed,finale quote,band,27
+1207,Fire on the Mountain,4140,Poison,right before start,JR & MB?,448
+1208,Saint of Circumstance,4024,The Wheel,? box score is unclear https://archive.org/details/jrad2022-02-11.cmc621.cmc64.sbd.matrix.flac16,SM/TH ,241
+1209,"Tell Me, Momma",4026,Mama Tried,"jam; nested ""mama""",,142
+1210,Shakedown Street,4027,Stash,,SM,329
+1211,Shakedown Street,4027,It Hurts Me Too,jam,,422
+1212,Cumberland Blues,4028,Black Throated Wind,,band,25
+1213,Jack Straw,4032,Setting Me Up,,TH,766
+1214,Jack Straw,4032,Stash,,SM,329
+1215,New Speedway Boogie,4033,Easy Wind,,S?,67
+1216,Viola Lee Blues,4039,Dark Star,,MB,59
+1217,Viola Lee Blues,4039,Deep Elem Blues,,TH/SM,61
