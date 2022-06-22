@@ -1138,7 +1138,7 @@ id,within,performance_id,song_name,notes,by,song_id
 1147,Cats Under the Stars,4186,2001 (Also Sprach Zarathustra),,MB,406
 1148,Jessica,4193,Terrapin Station,in solo,MB,224
 1149,Tangled Up in Blue,4200,Foolish Heart,,,76
-1150,Scarlet Begonias,4207,I Know You Rider,transition,,110
+1150,Scarlet Begonias,4207,I Know You Rider,transition,TH,110
 1151,Not Fade Away,4208,Throwing Stones,,,245
 1152,Not Fade Away,4208,Feel Like a Stranger,,,74
 1153,Not Fade Away,4208,"Myxomatosis. (Judge, Jury & Executioner.)",,,160
@@ -1164,7 +1164,7 @@ id,within,performance_id,song_name,notes,by,song_id
 1173,I Need A Miracle,4213,Pigs (Three Different Ones),,,404
 1174,I Need A Miracle,4213,Spoonful,,,281
 1175,I Need A Miracle,4213,Loser,,,139
-1176,Bertha,4216,Scarlet Begonias,,,195
+1176,Bertha,4216,Scarlet Begonias,,TH,195
 1177,The Wheel,4220,Pigs (Three Different Ones),headfake and tease,,404
 1178,Sunshine Daydream,4225,We Bid You Goodnight,,,262
 1179,The Wheel,4220,Lost Sailor,starts 7:45 in to Wheel,,140
@@ -1205,3 +1205,14 @@ id,within,performance_id,song_name,notes,by,song_id
 1215,New Speedway Boogie,4033,Easy Wind,,S?,67
 1216,Viola Lee Blues,4039,Dark Star,,MB,59
 1217,Viola Lee Blues,4039,Deep Elem Blues,,TH/SM,61
+1218,Feel Like a Stranger,4203,Another Brick in the Wall,,TH,297
+1219,Scarlet Begonias,4207,Going Down The Road Feeling Bad,,TH,84
+1220,Throwing Stones,4209,Scarlet Begonias,,band,195
+1221,Throwing Stones,4209,Renegade,,,767
+1222,China Doll,4210,Another Brick in the Wall,,TH,297
+1223,China Doll,4210,Stella Blue,,TH,209
+1224,Crazy Fingers,4212,The Eleven,,TH,229
+1225,Silvio,4215,Bertha,,TH,18
+1226,Looks Like Rain,4217,Stella Blue,,TH,209
+1227,Greatest Story Ever Told,4221,The Wheel,,band,241
+1228,Greatest Story Ever Told,4221,Swimming at Night,jam,,768
