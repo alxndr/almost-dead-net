@@ -78,13 +78,14 @@ id,name,location,capacity,generic name,tagname
 110,Promowest Pavilion at Ovation,"Newport, KY",2700 / 7000,,Promowest Pavilion at Ovation
 70,Last Breath Farm,"Norridgewock, ME",,,Last Breath Farm
 26,Clay's Park Resort,"North Lawrence, OH",,,Clay's Park Resort
+115,Cheshire Fairgrounds,"North Swanzey, NH",,,Cheshire Fair?
 71,Fox Theater,"Oakland, CA",2800,TRUE,Fox Theater (Oakland)
 72,Mulberry Mountain,"Ozark, AR",,,Mulberry Mountain
 109,Brooklyn Bowl,"Philadelphia, PA",1000,TRUE,Brooklyn Bowl (Philadelphia)
 73,Metropolitan Opera House,"Philadelphia, PA",3500,,Metropolitan Opera House
 74,The Fillmore,"Philadelphia, PA",2500,TRUE,The Fillmore (Philadelphia)
 75,Theater of the Living Arts,"Philadelphia, PA",,,Theater of the Living Arts
-76,Capitol Theatre,"Port Chester, NY",1800,TRUE,Capitol Theatre (Port Chester)
+76,Capitol Theatre,"Port Chester, NY",1800,,Capitol Theatre
 77,State Theater,"Portland, ME",1680,TRUE,State Theater (Portland)
 79,Fete Ballroom,"Providence, RI",930,,Fete Ballroom
 78,Lupo's Heartbreak Hotel,"Providence, RI",1980,,Lupo's Heartbreak Hotel
@@ -109,7 +110,7 @@ id,name,location,capacity,generic name,tagname
 95,Telluride Town Park,"Telluride, CO",,,Telluride Town Park
 96,Legend Valley,"Thornville, OH",,,Legend Valley
 97,Tower Theater,"Upper Darby, PA",3119,,Tower Theater
-114,Ford Ampitheater,"Vail, CO",2560,,Ford Ampitheater
+114,Gerald R. Ford Amphitheater,"Vail, CO",2560,,Gerald R. Ford Amphitheater
 112,(private show),"Washington, CT",,,(private show)
 99,The 9:30 Club,"Washington, DC",1200,,The 9:30 Club
 98,The Anthem,"Washington, DC",,,The Anthem
