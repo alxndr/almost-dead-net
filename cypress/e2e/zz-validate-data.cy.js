@@ -259,7 +259,7 @@ const allShows = { // TODO replace with proper Cypress fixtures... hopefully hoo
   258: {id: 258, date: '6/1/2022', venue: 'Ford'},
   259: {id: 259, date: '6/2/2022', venue: 'Ford'},
   260: {id: 260, date: '6/3/2022', venue: 'Red Rocks'},
-  261: {id: 261, date: '6/22/2022', venue: 'Northlands'},
+  261: {id: 261, date: '6/24/2022', venue: 'Northlands'},
 }
 
 function validate(show) {
