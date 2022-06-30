@@ -8,13 +8,13 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 7,10/10/2014,18,15,16,,17,,,first multi-venue multi-night run; sold out,,https://i.imgur.com/1G3XmLd.jpg,2,10/10/14 @ Boulder Theater,
 8,10/11/2014,37,18,19,,20,,,first multi-venue multi-night run; sold out,,https://i.imgur.com/1G3XmLd.jpg,4,10/11/14 @ Ogden Theatre,
 9,11/2/2014,51,21,,,,,,no available audio recording,Suwannee Hulaween,,1,11/2/14 @ Suwannee Hulaween,
-10,12/29/2014,76,22,23,,24,,,Phil Lesh (bass guitar) replaced Dave for the three-night run; first night of their first three-night-run,,https://i.imgur.com/VirzmvT.jpg,3,12/29/14 @ Capitol Theatre,
-11,12/30/2014,76,25,26,,27,,,Phil Lesh (bass guitar) replaced Dave for the three-night run; middle night of first three-night-run,,https://i.imgur.com/VirzmvT.jpg,3,12/30/14 @ Capitol Theatre,
-12,12/31/2014,76,28,29,,30,,,Phil Lesh (bass guitar) replaced Dave for the three-night run; last night of first three-night-run; first NYE show,,https://i.imgur.com/VirzmvT.jpg,4,12/31/14 @ Capitol Theatre,
+10,12/29/2014,76,22,23,,24,,,no Dave; first night of their first three-night-run,,https://i.imgur.com/VirzmvT.jpg,3,12/29/14 @ Capitol Theatre,
+11,12/30/2014,76,25,26,,27,,,no Dave; middle night of first three-night-run,,https://i.imgur.com/VirzmvT.jpg,3,12/30/14 @ Capitol Theatre,
+12,12/31/2014,76,28,29,,30,,,no Dave; last night of first three-night-run; first NYE show,,https://i.imgur.com/VirzmvT.jpg,4,12/31/14 @ Capitol Theatre,
 13,1/23/2015,22,31,32,,33,,,all songs were debuts,Freaks Ball,https://i.imgur.com/CuNWMLP.jpg,2,1/23/15 @ Brooklyn Bowl (Brooklyn),
 14,1/24/2015,22,34,35,,36,,,,Freaks Ball,https://i.imgur.com/CuNWMLP.jpg,3,1/24/15 @ Brooklyn Bowl (Brooklyn),
 15,2/5/2015,24,39,40,,41,,,,,,2,2/5/15 @ Higher Ground,TRUE
-16,2/6/2015,15,42,43,,44,,,first show with two Suite songs,,,2,2/6/15 @ Paradise Rock Club,TRUE
+16,2/6/2015,15,42,43,,44,,,,,,2,2/6/15 @ Paradise Rock Club,TRUE
 17,2/7/2015,77,45,46,,47,,,,,,3,2/7/15 @ State Theater (Portland),
 18,2/8/2015,79,48,49,,50,,,,,,1,2/8/15 @ Fete Ballroom,
 19,2/14/2015,37,51,52,,53,,,,,https://i.imgur.com/w8yImAX.jpg,3,2/14/15 @ Ogden Theatre,TRUE
@@ -111,7 +111,7 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 110,5/6/2017,68,294,295,,296,,,,,https://i.imgur.com/Pka7CIK.jpg,1,5/6/17 @ Joy Theater,TRUE
 111,5/7/2017,68,297,298,,299,,,,,https://i.imgur.com/Pka7CIK.jpg,1,5/7/17 @ Joy Theater,TRUE
 112,6/3/2017,7,300,,,,,,,Candler Park Music & Food Festival,https://i.imgur.com/CV9z58T.jpg,2,6/3/17 @ Candler Park Music & Food Festival,
-113,7/16/2017,43,301,,,302,,,no Marco; no Dave; first ('official') show without two core members,Green River Festival,https://i.imgur.com/ERUOeBL.jpg,3,7/16/17 @ Green River Festival,
+113,7/16/2017,43,301,,,302,,,no Marco nor Dave; first ('official') show without two core members,Green River Festival,https://i.imgur.com/ERUOeBL.jpg,3,7/16/17 @ Green River Festival,
 114,7/21/2017,76,303,304,,305,,,,,https://i.imgur.com/6ACQRQl.jpg,1,7/21/17 @ Capitol Theatre,TRUE
 115,7/22/2017,76,306,307,,308,,,,,https://i.imgur.com/6ACQRQl.jpg,1,7/22/17 @ Capitol Theatre,TRUE
 116,8/10/2017,88,309,310,,311,,,,Peach Music Festival,,6,8/10/17 @ Peach Music Festival,
@@ -228,10 +228,10 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 227,7/31/2021,102,607,608,,609,,,,,https://i.imgur.com/O2rbVNk.jpg,1,7/31/21 @ Westville Music Bowl,
 228,8/14/2021,3,610,611,,,,,"Andrew and Brad Barr (Barr Brothers) sat in for end of first set; the second set was the first ""JRAD Plays Other Shit"" set (featuring Pink Floyd songs)",LOCKN',,1,8/14/21 @ LOCKN',
 229,8/15/2021,3,613,614,,615,,,"First set was the second ""JRAD Plays Other Shit"" set (featuring Allman Brothers songs) with Andrew Barr sitting in; Andrew and Brad Barr joined for some songs in second set. Before the first set, Medeski Martin & Friends performed an hour+ all-improv set with guests joining throughout the set, guests comprised all members of JRAD and the Slip (Andrew and Brad Barr, Mar Friedman) as well as Evan Roque (Joe's drum tech and also co-drummer)",LOCKN',,3,8/15/21 @ LOCKN',
-230,8/19/2021,103,616,617,,618,,,no Dave; John Shaw on bass,,https://imgur.com/IBFS5Fa.jpg https://i.imgur.com/5aibg8m.jpg,4,8/19/21 @ Jacobs Pavilion at Nautica,
-231,8/20/2021,104,619,620,,626,,,no Dave; John Shaw on bass,,https://imgur.com/IBFS5Fa.jpg https://www.reddit.com/r/JRADs/comments/p8h8fw/anyone_need_else_streaming_the_show_tonight/,2,8/20/21 @ Artpark,
-232,8/21/2021,105,621,622,,623,,,no Dave; John Shaw on bass,,https://imgur.com/IBFS5Fa.jpg https://www.reddit.com/r/JRADs/comments/p92pz9/mecu_pavilion_tonight/,1,8/21/21 @ MECU Pavilion,
-233,8/23/2021,106,624,625,,,,,no Dave; John Shaw on bass; this show was initially scheduled to be the day prior (Sunday) but was moved due to weather; at the end of second set Joe thanked the crowd and suggested that nearby lightning precluded an encore,,https://imgur.com/IBFS5Fa.jpg https://www.reddit.com/r/JRADs/comments/pab1kr/beautiful_under_the_pavilion_in_boston/,0,8/23/21 @ Leader Bank Pavilion,
+230,8/19/2021,103,616,617,,618,,,no Dave,,https://imgur.com/IBFS5Fa.jpg https://i.imgur.com/5aibg8m.jpg,5,8/19/21 @ Jacobs Pavilion at Nautica,
+231,8/20/2021,104,619,620,,626,,,no Dave,,https://imgur.com/IBFS5Fa.jpg https://www.reddit.com/r/JRADs/comments/p8h8fw/anyone_need_else_streaming_the_show_tonight/,2,8/20/21 @ Artpark,
+232,8/21/2021,105,621,622,,623,,,no Dave,,https://imgur.com/IBFS5Fa.jpg https://www.reddit.com/r/JRADs/comments/p92pz9/mecu_pavilion_tonight/,1,8/21/21 @ MECU Pavilion,
+233,8/23/2021,106,624,625,,,,,no Dave; this show was initially scheduled to be the day prior (Sunday) but was moved due to weather; at the end of second set Joe thanked the crowd and suggested that nearby lightning precluded an encore,,https://imgur.com/IBFS5Fa.jpg https://www.reddit.com/r/JRADs/comments/pab1kr/beautiful_under_the_pavilion_in_boston/,0,8/23/21 @ Leader Bank Pavilion,
 234,9/4/2021,102,627,628,,629,,,ninth show in ~3 months at Westville; during setbreak Dave Niedbalski from Westville thanked the crowd & a sports-championship-style banner was hung from the top deck,,,3,9/4/21 @ Westville Music Bowl,
 235,9/24/2021,107,630,631,,632,,,,,,11,9/24/21 @ Salvage Station,
 236,9/25/2021,107,633,634,,635,,,,,,4,9/25/21 @ Salvage Station,
@@ -259,4 +259,4 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 258,6/1/2022,114,693,694,,695,,,,,,2,6/1/22 @ Gerald R. Ford Amphitheater,
 259,6/2/2022,114,696,697,,698,,,,,,2,6/2/22 @ Gerald R. Ford Amphitheater,TRUE
 260,6/3/2022,63,699,700,,701,,,Marco's daughter on lead vocals for a song in first set; Stu Bogie joins for second set & encore; Marco using new keyboards: Moog Sub Fatty & Sequential Prophet Rev2 16 Voice,,,1,6/3/22 @ Red Rocks,
-261,6/24/2022,115,702,,,,,,,Northlands Music & Art Festival,,1,6/24/22 @ Northlands Music & Art Festival,
+261,6/24/2022,115,702,,,,,,no Dave nor Marco,Northlands Music & Art Festival,,1,6/24/22 @ Northlands Music & Art Festival,
