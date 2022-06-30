@@ -71,7 +71,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
-    "cypress": "10.1.0",
+    "cypress": "10.3.0",
     "eslint": "8.18.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-cypress": "^2.12.1",
