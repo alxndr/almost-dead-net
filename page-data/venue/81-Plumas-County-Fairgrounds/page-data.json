@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/81-Plumas-County-Fairgrounds",
-    "result": {"data":{"venuesCsv":{"id":"81","location":"Quincy, CA","name":"Plumas County Fairgrounds"},"allShowsCsv":{"nodes":[{"id":"38","date":"7/5/2015"},{"id":"73","date":"6/30/2016"}]}},"pageContext":{"venueId":"81"}},
+    "result": {"data":{"venuesCsv":{"id":"81","location":"Quincy, CA","name":"Plumas County Fairgrounds"},"allShowsCsv":{"nodes":[{"id":"38","date":"7/5/2015"},{"id":"73","date":"6/30/2016"},{"id":"263","date":"7/3/2022"}]}},"pageContext":{"venueId":"81"}},
     "staticQueryHashes": ["3000541721"]}
