@@ -85,6 +85,7 @@ id,name,location,capacity,generic name,tagname
 73,Metropolitan Opera House,"Philadelphia, PA",3500,,Metropolitan Opera House
 74,The Fillmore,"Philadelphia, PA",2500,TRUE,The Fillmore (Philadelphia)
 75,Theater of the Living Arts,"Philadelphia, PA",,,Theater of the Living Arts
+117,Stage AE,"Pittsburgh, PA",5500,,Stage AE
 76,Capitol Theatre,"Port Chester, NY",1800,,Capitol Theatre
 77,State Theater,"Portland, ME",1680,TRUE,State Theater (Portland)
 79,Fete Ballroom,"Providence, RI",930,,Fete Ballroom
@@ -100,7 +101,7 @@ id,name,location,capacity,generic name,tagname
 87,Golden Gate Park,"San Francisco, CA",,,Golden Gate Park
 88,Montage Mountain,"Scranton, PA",,,Montage Mountain
 89,The Showbox,"Seattle, WA",1100,,The Showbox
-116,Snowshoe Mountain Resort,"Snowshoe, WV",,,
+116,Snowshoe Mountain Resort,"Snowshoe, WV",,,Snowshoe Mountain Resort
 24,Higher Ground,"South Burlington, VT",,,Higher Ground
 91,St Augustine Amphitheatre,"St Augustine, FL",,,St Augustine Amphitheatre
 92,The Pageant,"St Louis, MO",2300,,The Pageant
