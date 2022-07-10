@@ -263,6 +263,8 @@ const allShows = { // TODO replace with proper Cypress fixtures... hopefully hoo
   262: {id: 262, date: '7/1/2022', venue: 'Peach'},
   263: {id: 263, date: '7/3/2022', venue: 'High Sierra'},
   264: {id: 264, date: '7/7/2022', venue: 'Snowshoe'},
+  265: {id: 265, date: '7/8/2022', venue: 'Stage AE'},
+  266: {id: 266, date: '7/9/2022', venue: 'Great South Bay'},
 }
 
 function validate(show) {
