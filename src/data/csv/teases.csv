@@ -1233,9 +1233,9 @@ id,within,performance_id,song_name,notes,by,song_id
 1243,Brown-Eyed Women,3835,Part II: Let It Grow,,band,277
 1244,Cats Under the Stars,4259,Norwegian Wood,,,311
 1245,My Brother Esau,4258,[unknown],,MB then JR,288
-1246,He's Gone,4269,Dark Star,,,59
+1246,He's Gone,4269,Bird Song,,,22
 1247,He's Gone,4271,Bird Song,,,22
-1248,Mississippi Halfstep Uptown Toodleloo,4262,Terrapin Station,,,224
+1248,Mississippi Halfstep Uptown Toodleloo,4262,Terrapin Station,,TH / band,224
 1249,Mississippi Halfstep Uptown Toodleloo,4262,Stash,,,329
 1250,"Tell Me, Momma",4260,Echoes,before segue to Estimated,,405
 1251,Black Throated Wind,4272,Lost Sailor,,,140
@@ -1244,7 +1244,7 @@ id,within,performance_id,song_name,notes,by,song_id
 1254,Foolish Heart,4279,I Know You Rider,transition,,110
 1255,Playing in the Band,4285,St. Stephen,,,211
 1256,Playing in the Band,4285,The Wheel,,,241
-1257,Lady With a Fan,4263,[unknown],,,288
+1257,Lady With a Fan,4263,Part II: Let It Grow,,TH,277
 1258,Foolish Heart,4279,The Music Never Stopped,,,233
 1259,I Need A Miracle,4283,Tennessee Jed,,,221
 1260,Playing in the Band,4285,No Quarter,,band,167
@@ -1253,3 +1253,7 @@ id,within,performance_id,song_name,notes,by,song_id
 1263,Viola Lee Blues,4315,Dancing in the Streets,,band,57
 1264,Viola Lee Blues,4315,[unknown],,MB,288
 1265,I Know You Rider,4319,Morning Dew,,TH / band,151
+1266,"Tell Me, Momma",4260,Mama Tried,,SM,142
+1267,"Tell Me, Momma",4260,Jessica,,MB,298
+1268,Throwing Stones,4268,Comfortably Numb,,TH,415
+1269,Throwing Stones,4268,[unknown],"""Spanish Jam""",SM,288
