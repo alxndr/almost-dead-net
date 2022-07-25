@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/119-Horning's-Hideout",
-    "result": {"data":{"venuesCsv":{"id":"119","location":"North Plains, OR","name":"Horning's Hideout"},"allShowsCsv":{"nodes":[{"id":"268","date":"7/2/2022"}]}},"pageContext":{"venueId":"119"}},
+    "result": {"data":{"venuesCsv":{"id":"119","location":"North Plains, OR","name":"Horning's Hideout"},"allShowsCsv":{"nodes":[{"id":"268","date":"7/22/2022"}]}},"pageContext":{"venueId":"119"}},
     "staticQueryHashes": ["3000541721"]}
