@@ -785,12 +785,12 @@ id,within,performance_id,song_name,notes,by,song_id
 793,Estimated Prophet,3862,Becky,tentative,,16
 794,I Need A Miracle,3867,New Speedway Boogie,,TH,165
 795,Dancing in the Streets,3870,West LA Fadeaway,,,264
-796,Dancing in the Streets,3870,Runnin' Down a Dream,,,192
+796,I Know You Rider,3871,Runnin' Down a Dream,,,192
 797,Alligator,3848,China Cat Sunflower,,,44
 798,St. Stephen,3849,The Wheel,,,241
 799,Good Lovin',3852,[unknown],50s tune??,,288
 800,Throwing Stones,3845,Big Railroad Blues,,,19
-801,New Speedway Boogie,3863,[unknown],,MB,288
+801,New Speedway Boogie,3863,Spoonful,,TH,281
 802,Playing in the Band,3864,The Wheel,jam,,241
 803,Only Daddy That'll Walk the Line,3903,I Know You Rider,"intro/transition from China Cat, in segue into Cassidy",,110
 804,Dancing in the Streets,3907,Loose Lucy,,,138
@@ -1268,3 +1268,6 @@ id,within,performance_id,song_name,notes,by,song_id
 1278,Truckin',4302,Bird Song,,TH,22
 1279,Part II: Let It Grow,4296,Black Magic Woman,,band,771
 1280,Catfish John,4336,Row Jimmy,headfake?,,190
+1281,The Other One,3866,Terrapin Station,,TH,224
+1282,I Need A Miracle,3867,Terrapin Station,,band,224
+1283,Dancing in the Streets,3870,Chameleon,,band,772
