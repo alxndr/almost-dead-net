@@ -3637,7 +3637,7 @@ id,song_id,song_name,id_rhs,variation,notes,set_id,show_id,prev_perfid,prev_show
 3867,115,I Need A Miracle,,,,625,233,,,,,,,
 3868,44,China Cat Sunflower,,,,625,233,,,,,,,
 3869,71,Eyes of the World,,,with Dave solo,625,233,,,,,,,
-3870,57,Dancing in the Streets,,,"Marco wearing a ""Motor City"" shirt",625,233,,,,,,,
+3870,57,Dancing in the Streets,,,"Marco wearing a ""Motor City"" shirt",625,233,,,,,,1,
 3871,110,I Know You Rider,,,,625,233,,,,,,,
 3872,19,Big Railroad Blues,,,,626,231,,,,,,,
 3873,64,Don't Ease Me In,,,,627,234,,,,,,,
