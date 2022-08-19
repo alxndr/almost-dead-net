@@ -10,36 +10,25 @@
     "build": "gatsby build",
     "build:serve": "npm run build && npm run serve -- --port 9000",
     "build:serve:9001": "npm run build && npm run serve -- --port 9001",
-
     "clean": "gatsby clean",
-
     "cy:open": "cypress open",
-
     "cy:run": "cypress run",
     "cy:run:single": "cypress run --spec cypress/e2e/${SPEC:?specify specfile to run, as SPEC var (no .js)}.js",
-
     "predata:cp": "export N=${N:?how many files to copy}",
     "data:cp": "ls -tl ~/Downloads/*.csv | head -$N | awk '{print $9}' | xargs -pJ% cp % src/data/csv",
     "postdata:cp": "dos2unix src/data/csv/*",
-
     "predeploy:prod": "npm run clean",
     "deploy:prod": "export TAG=deploy-$(date '+%F-%H%M%S-%Z') && gatsby build && gh-pages --dist public --dotfiles --branch gh-pages --tag $TAG --message \"Deploy $TAG\" && echo cleaning up... && gh-pages-clean",
     "postdeploy:prod": "npm run clean",
-
     "predev": "npm run clean",
     "dev": "gatsby develop",
-
     "prelint": "echo linting...",
     "lint": "eslint src/ cypress/",
     "postlint": "echo ... linting success",
-
     "serve": "gatsby serve",
-
     "start": "echo 'npm run dev' or 'npm run build:serve' && exit 1",
-
     "pretest": "npm run lint",
     "test": "npm run test:e2e",
-
     "pretest:e2e": "echo Starting Cypress integration tests...",
     "test:e2e": "WAIT_ON_TIMEOUT=${WAIT_ON_TIMEOUT:-240000} start-server-and-test dev :8000 cy:run"
   },
@@ -59,11 +48,13 @@
     "gatsby-source-filesystem": "^3.14.0",
     "gatsby-transformer-csv": "^3.14.0",
     "prop-types": "^15.8.1",
+    "qrcode": "^1.5.1",
     "ramda": "^0.28.0",
     "react": "^17.0.2",
     "react-autosuggest": "^10.0.2",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
+    "react-router-dom": "^6.3.0",
     "react-table": "7.8.0",
     "react-tabs": "^4.2.1",
     "react-tippy": "^1.4.0",

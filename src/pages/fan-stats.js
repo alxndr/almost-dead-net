@@ -33,7 +33,7 @@ const uniqBySongId = uniqBy(extractSongId)
 
 const FanStats = ({user, shows, songs, teases}) => {
   const showIDs = Object.keys(shows)
-  const songIDs = Object.keys(songs)
+  // const songIDs = Object.keys(songs)
   const venues = uniq(Object.values(shows).map(({venue}) => venue))
   const uniqSongs = uniqBySongId(songs)
   const uniqTeases = uniqBySongId(teases)

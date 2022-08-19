@@ -1,0 +1,17 @@
+.statspage .showslist {
+  font-size: 0.8em;
+  line-height: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #dabbff;
+}
+.statspage .showslist {
+  list-style: none;
+  margin-left: 0;
+}
+.statspage .showslist li {
+  margin-bottom: 0;
+}
+.statspage .showslist input {
+  margin: 0.3em;
+}
