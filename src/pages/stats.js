@@ -12,7 +12,7 @@ import './stats.css'
 const venueURL = ({id, name}) => `/venue/${id}-${slugify(name)}`
 
 const Stats = ({shows, songs, teases}) => {
-  const showIDs = Object.keys(shows)
+  // const showIDs = Object.keys(shows)
   const venues = uniq(Object.values(shows).map(({venue}) => venue))
   return <>
     {/*<h2>Shows</h2>
@@ -41,7 +41,7 @@ const Stats = ({shows, songs, teases}) => {
   </>
 }
 
-const numericalSort = (a, b) => a - b
+// const numericalSort = (a, b) => a - b
 const reverseIntoBinary = (acc, elem) => `${elem ? '1' : '0'}${acc}`
 
 function toHex(arr) {
@@ -111,8 +111,14 @@ export default function StatsPage({data, location}) {
   return <Layout className="statspage">
     <SEO title="JRAD Show Stats" />
     <h1>Show Stats</h1>
-    {qrSrc
-      ? <p><a href={url}><img src={qrSrc || ''} alt={showsCode} style={{position:'absolute',top:0,right:0,maxWidth:'25%',maxHeight:'100px'}}/></a></p>
+    {qrSrc && <p><a href={url}><img src={qrSrc || ''} alt={showsCode} style={{position:'absolute',top:0,right:0,maxWidth:'25%',maxHeight:'100px'}}/></a></p>}
+    {selectedIds.length
+      ? <>
+          <p>
+            <span className="nowrap">{selectedIds.length} shows:</span>
+            <ul className="selected">{selectedIds.map(id => <li className="nowrap"><Link to={`/show/${id}`}>#{id}</Link></li>)}</ul>
+          </p>
+        </>
       : <p>Select some shows!</p>
     }
     <form>

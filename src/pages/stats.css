@@ -1,3 +1,18 @@
+.statspage > main {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1em;
+}
+
+.statspage .selected {
+  display: inline;
+  list-style: none;
+}
+.statspage .selected li {
+  display: inline;
+  margin: 0.5em;
+}
+
 .statspage .showslist {
   font-size: 0.8em;
   line-height: 1em;
@@ -14,4 +29,8 @@
 }
 .statspage .showslist input {
   margin: 0.3em;
+}
+
+.statspage .nowrap {
+  white-space: nowrap;
 }
