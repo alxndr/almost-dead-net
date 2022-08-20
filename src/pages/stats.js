@@ -109,7 +109,7 @@ export default function StatsPage({data, location}) {
     [perfsData])
 
   return <Layout className="statspage">
-    <SEO title="JRAD Show Stats" />
+    <SEO title="JRAD Show Stats" description="Select the concerts you were at and run the stats!" />
     <h1>Show Stats</h1>
     {qrSrc && <p><a href={url}><img src={qrSrc || ''} alt={showsCode} style={{position:'absolute',top:0,right:0,maxWidth:'25%',maxHeight:'100px'}}/></a></p>}
     {selectedIds.length
