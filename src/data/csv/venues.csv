@@ -23,6 +23,7 @@ id,name,location,capacity,generic name,tagname
 15,Paradise Rock Club,"Boston, MA",933,,Paradise Rock Club
 18,Boulder Theater,"Boulder, CO",850,,Boulder Theater
 19,Seaside Park,"Bridgeport, CT",,,Seaside Park
+121,SeatGeek Stadium,"Bridgeview, IL",,,SeatGeek Stadium
 22,Brooklyn Bowl,"Brooklyn, NY",600,TRUE,Brooklyn Bowl (Brooklyn)
 20,Prospect Park,"Brooklyn, NY",,,Prospect Park
 21,Threes Brewing,"Brooklyn, NY",,,Threes Brewing
@@ -101,6 +102,7 @@ id,name,location,capacity,generic name,tagname
 85,The Depot,"Salt Lake City, UT",1200,,The Depot
 86,House of Blues,"San Diego, CA",1500,TRUE,House of Blues (San Diego)
 87,Golden Gate Park,"San Francisco, CA",,,Golden Gate Park
+120,Saratoga Performing Arts Center,"Saratoga Springs, NY",25100,,Saratoga Performing Arts Center
 88,Montage Mountain,"Scranton, PA",,,Montage Mountain
 89,The Showbox,"Seattle, WA",1100,,The Showbox
 116,Snowshoe Mountain Resort,"Snowshoe, WV",,,Snowshoe Mountain Resort
