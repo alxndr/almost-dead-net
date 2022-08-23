@@ -20,10 +20,6 @@ export default function Index() {
     />
 
     <section className="homepage__links">
-      <ul>
-        <li><Link to="/stats">/stats</Link></li>
-        <li><Link to="/stats#0x20400000000060000340000030000005428210460000001001000080002000000000">/stats#</Link></li>
-      </ul>
       <h1>Links</h1>
       <ul>
         <li className="homepage__links-all">
