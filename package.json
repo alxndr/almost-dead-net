@@ -22,7 +22,7 @@
     "postdeploy:prod": "npm run clean",
     "predev": "npm run clean",
     "dev": "gatsby develop",
-    "docs": "hads --open",
+    "docs": "hads",
     "prelint": "echo linting...",
     "lint": "eslint src/ cypress/",
     "postlint": "echo ... linting success",
