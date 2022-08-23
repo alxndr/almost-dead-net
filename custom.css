@@ -1,0 +1,6 @@
+.file > .readme a[href="/README.md"] {
+  color: gray;
+}
+.file > .readme a[href="/README.md"]:after {
+  content: ' [YOU ARE HERE]';
+}

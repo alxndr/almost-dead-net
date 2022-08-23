@@ -22,6 +22,7 @@
     "postdeploy:prod": "npm run clean",
     "predev": "npm run clean",
     "dev": "gatsby develop",
+    "docs": "hads",
     "prelint": "echo linting...",
     "lint": "eslint src/ cypress/",
     "postlint": "echo ... linting success",
@@ -68,6 +69,7 @@
     "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-react": "^7.30.1",
     "gh-pages": "^4.0.0",
+    "hads": "^3.0.3",
     "start-server-and-test": "^1.14.0"
   },
   "eslintConfig": {
