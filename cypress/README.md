@@ -19,7 +19,7 @@ Options such as `--headed --no-exit` can be passed to the above commands, but th
     $ SPEC=home-page nr cy:run:single -- --headed --no-exit
 
 
-## Continuous Integration!!!!
+## Continuous Integration
 
 The test suite should be configured to run on every commit pushed to GitHub, [via GitHub Actions](https://github.com/alxndr/almost-dead-net/actions).
 
