@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/120-Saratoga-Performing-Arts-Center",
+    "result": {"data":{"venuesCsv":{"id":"120","location":"Saratoga Springs, NY","name":"Saratoga Performing Arts Center"},"allShowsCsv":{"nodes":[{"id":"271","date":"8/25/2022"}]}},"pageContext":{"venueId":"120"}},
+    "staticQueryHashes": ["3000541721"]}

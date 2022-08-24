@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/121-SeatGeek-Stadium",
+    "result": {"data":{"venuesCsv":{"id":"121","location":"Bridgeview, IL","name":"SeatGeek Stadium"},"allShowsCsv":{"nodes":[{"id":"274","date":"8/28/2022"}]}},"pageContext":{"venueId":"121"}},
+    "staticQueryHashes": ["3000541721"]}
