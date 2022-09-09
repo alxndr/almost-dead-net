@@ -10,7 +10,7 @@ Start a dev server and run the entire test suite:
 
     $ npm run test:e2e
 
-A single test file can be run by setting `SPEC` (to the filename, without the `.cy.js` suffix) and using `cy:run:single`:
+A single test file can be run (against an already-running server, configured via `CYPRESS_BASE_URL` as above) by setting `SPEC` (to the filename, without the `.cy.js` suffix) and using `cy:run:single`:
 
     $ SPEC=home-page nr cy:run:single
 
