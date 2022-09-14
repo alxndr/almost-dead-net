@@ -68,7 +68,9 @@ function Set({show, shows, which, isEncore = false, sets, performances, segues, 
 }
 
 function isImage(url) {
-  return url.startsWith('https://lot.almost-dead.net/uploads/') || url.match(/\bimgur\b/)
+  return url.startsWith('https://lot.almost-dead.net/uploads/') ||
+    url.startsWith('https://archive.org/download/') ||
+    url.match(/\bimgur\b/)
 }
 
 const recordingsSorter = objectSorterFactory('type', [
