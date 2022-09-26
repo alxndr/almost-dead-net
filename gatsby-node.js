@@ -186,3 +186,38 @@ exports.onCreateWebpackConfig = ({ actions, stage }) => {
     });
   }
 };
+
+exports.plugins = [
+  {
+    resolve: 'gatsby-source-sql',
+    options: {
+      typeName: 'Songs',
+      // This is the field under which the data will be accessible in a future version
+      fieldName: 'songs',
+      dbEngine: {
+        client: 'sqlite3',
+        connection: {
+          filename: './sqlite/test.db',
+        },
+        useNullAsDefault: true
+      },
+      queryChain: function(x) {
+        return x
+          .select('id', 'title', 'author')
+          .from('songs')
+          .limit('50')
+          // .select(
+          //   "Track.TrackId as TrackId",
+          //   "Track.Name as Track",
+          //   "Album.Title as Album",
+          //   "Genre.Name as Genre"
+          // )
+          // .from("Track")
+          // .innerJoin("Album", "Album.AlbumId", "Track.AlbumId")
+          // .innerJoin("Artist", "Artist.ArtistId", "Album.ArtistId")
+          // .innerJoin("Genre", "Genre.GenreId", "Track.GenreId")
+          // .where("Artist.Name", "=", "Nirvana")
+      }
+    }
+  },
+]

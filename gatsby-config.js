@@ -53,4 +53,10 @@ module.exports = {
       },
     },
   ],
+  dbEngine: {
+    client: 'sqlite3',
+    connection: {
+      filename: './sqlite/test.db',
+    },
+  },
 }
