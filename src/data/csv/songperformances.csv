@@ -4109,7 +4109,7 @@ id,song_id,song_name,id_rhs,variation,notes,set_id,show_id,prev_perfid,prev_show
 4347,196,Shakedown Street,,,,715,269,,,,,,,
 4348,220,"Tell Me, Momma",,,,715,269,,,,,,,
 4349,242,They Love Each Other,,,,715,269,,,,,,,
-4350,252,Turn On Your Lovelight,,,,715,269,,,,,,,
+4350,252,Turn On Your Lovelight,,,"with Joe solo, plus Tom joining Joe on drums",715,269,,,,,,,
 4351,185,Reuben and Cherise,,,,716,269,,,,,,,
 4352,458,Mercury Blues,,,,716,269,,,,,,,
 4353,34,Candyman,,,,716,269,,,,,,,
@@ -4186,3 +4186,4 @@ id,song_id,song_name,id_rhs,variation,notes,set_id,show_id,prev_perfid,prev_show
 4424,517,Johnny B Goode,,,,729,272,,,,,,,
 4425,110,I Know You Rider,,,,730,271,,,,,,,
 4426,241,The Wheel,,,,730,271,,,,,,,
+4427,262,We Bid You Goodnight,,instrumental,,728,272,,,,,,,
