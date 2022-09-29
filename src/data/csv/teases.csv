@@ -456,7 +456,6 @@ id,within,performance_id,song_name,notes,by,song_id
 208,He's Gone,3186,Stella Blue,,,209
 209,He's Gone,3186,St. Stephen,,,211
 210,He's Gone,3186,Cassidy,,,38
-223,I Know You Rider,3203,Me and Bobby McGee,,,318
 224,Tennessee Jed,3221,Take the 'A' Train,,,319
 225,Morning Dew,3239,Terrapin Station,,,224
 29,Help on the Way,3243,Slipknot!,,MB,201
@@ -1310,3 +1309,7 @@ id,within,performance_id,song_name,notes,by,song_id
 1320,Truckin',4417,Hey Bulldog,jam,,103
 1321,St. Stephen,4421,Good Lovin',jam; FTP like this,,87
 1322,Going Down The Road Feeling Bad,4423,Moby Dick,,MB,149
+1323,Good Lovin',3195,Candyman,,band,34
+1324,Throwing Stones,3201,Chest Fever,,MB,43
+1325,Scarlet Begonias,3202,Throwing Stones,,TH,245
+1326,Going Down The Road Feeling Bad,3204,"Memphis, Tennessee",jam,,776
