@@ -1,3 +1,5 @@
+/* this is used by the hads package to style the Docs site */
+
 .file > .readme a[href="/README.md"] {
   color: gray;
 }
