@@ -265,6 +265,13 @@ const allShows = { // TODO replace with proper Cypress fixtures... hopefully hoo
   264: {id: 264, date: '7/7/2022', venue: 'Snowshoe'},
   265: {id: 265, date: '7/8/2022', venue: 'Stage AE'},
   266: {id: 266, date: '7/9/2022', venue: 'Great South Bay'},
+  267: {id: 267, date: '7/21/2022', venue: 'KettleHouse'},
+  268: {id: 268, date: '7/22/2022', venue: 'String Summit'},
+  269: {id: 269, date: '8/12/2022', venue: 'Palladium'},
+  270: {id: 270, date: '8/13/2022', venue: 'Frost'},
+  271: {id: 271, date: '8/25/2022', venue: 'Saratoga'},
+  272: {id: 272, date: '8/26/2022', venue: 'Pavilion'},
+  273: {id: 273, date: '8/27/2022', venue: 'Pavilion'},
 }
 
 function validate(show) {
