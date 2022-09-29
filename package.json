@@ -1,0 +1,34 @@
+{
+  "name": "Almost-Dead.net",
+  "homepage": "http://almost-dead.net",
+  "version": "4.0.0-alpha",
+  "repository": "https://github.com/alxndr/almost-dead-net",
+  "private": true,
+  "license": "UNLICENSED",
+  "author": "@alxndr",
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "gatsby": "^4.24.0",
+    "gatsby-plugin-manifest": "^4.24.0",
+    "gatsby-plugin-sass": "^5.24.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "sass": "^1.55.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.45",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "typescript": "^4.8.3"
+  },
+  "engines": {
+    "node": ">=16.13"
+  }
+}
