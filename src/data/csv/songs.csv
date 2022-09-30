@@ -1,5 +1,5 @@
 id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,core_jrad,aka,debut_gd,notes
-288,[unknown],[unknown],?,,4440,288,,,,,,
+288,[unknown],[unknown],?,,,288,,,,,,
 367,Hoedown,Aaron Copeland,,,,367,,,,,,
 357,Same Old Song & Dance,Aerosmith,,,,357,,,,,,
 470,Big Boss Man,Al Smith & Luther Dixon,,,,470,,TRUE,,,1966,
@@ -65,6 +65,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,core_jrad,
 696,Gotta Serve Somebody,Bob Dylan,,,,696,,TRUE,,,1987,
 691,Heart of Mine,Bob Dylan,,,,691,,TRUE,,,1987,
 687,Highway 61 Revisited,Bob Dylan,,,,687,,TRUE,,,1987,
+777,I Shall Be Released,Bob Dylan,,,4440,777,,,,,,https://en.wikipedia.org/wiki/I_Shall_Be_Released
 680,I Want You,Bob Dylan,,,,680,,TRUE,,,1987,
 678,I'll Be Your Baby Tonight,Bob Dylan,,,,678,,TRUE,,,1987,
 672,If Not for You,Bob Dylan,,,,672,,TRUE,,,1987,
