@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/62-The-Wellmont-Theater",
-    "result": {"data":{"venuesCsv":{"id":"62","location":"Montclair, NJ","name":"The Wellmont Theater"},"allShowsCsv":{"nodes":[{"id":"187","date":"3/15/2019"},{"id":"238","date":"10/7/2021"},{"id":"239","date":"10/8/2021"},{"id":"240","date":"10/9/2021"},{"id":"274","date":"9/29/2022"}]}},"pageContext":{"venueId":"62"}},
+    "result": {"data":{"venuesCsv":{"id":"62","location":"Montclair, NJ","name":"The Wellmont Theater"},"allShowsCsv":{"nodes":[{"id":"187","date":"3/15/2019"},{"id":"238","date":"10/7/2021"},{"id":"239","date":"10/8/2021"},{"id":"240","date":"10/9/2021"},{"id":"274","date":"9/29/2022"},{"id":"275","date":"9/30/2022"},{"id":"276","date":"10/1/2022"}]}},"pageContext":{"venueId":"62"}},
     "staticQueryHashes": ["3000541721"]}
