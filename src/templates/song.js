@@ -33,6 +33,34 @@ const SET_MAPPING = { // 'show table column name' to 'human readable set name'
   encore2: 'double encore',
 }
 
+const sortDates = (a,b) => new Date(a.values.show).getTime() - new Date(b.values.show).getTime()
+function sortSets(a,b) {
+  if (a.values.whichSet === 'soundcheck')
+    return -1;
+  if (b.values.whichSet === 'soundcheck')
+    return 1;
+  if (a.values.whichSet === 'set 1')
+    return -1;
+  if (b.values.whichSet === 'set 1')
+    return 1;
+  if (a.values.whichSet === 'set 2')
+    return -1;
+  if (b.values.whichSet === 'set 2')
+    return 1;
+  if (a.values.whichSet === 'set 3')
+    return -1;
+  if (b.values.whichSet === 'set 3')
+    return 1;
+  if (a.values.whichSet === 'encore')
+    return -1;
+  if (b.values.whichSet === 'encore')
+    return 1;
+  if (a.values.whichSet === 'double encore')
+    return -1;
+  if (b.values.whichSet === 'double encore')
+    return 1;
+}
+
 export const query = graphql`
   query SongTemplate($songId: String!) {
     songsCsv(id: {eq: $songId}) {
@@ -200,43 +228,17 @@ export default function Song({data: {
         fullData: {performanceData, showData, variation, whichSet, prior, after}
       }
     })
-  // global.console.log({onlyThisSongsPerformancesData })
 
   const performancesData = useMemo(() => onlyThisSongsPerformancesData, [])
   const performancesColumns = useMemo(
     () => [
-      {accessor: 'show', Header: 'show', sortType: (a,b) => new Date(a.values.show).getTime() - new Date(b.values.show).getTime()}, // TODO memoize this fn
+      {accessor: 'show', Header: 'show', sortType: sortDates},
       {accessor: 'prior', Header: 'prior song'}, // TODO Filter out the/a
       {accessor: 'segue_prior', Header: '>'},
       {accessor: 'title', disableSortBy: true},
       {accessor: 'segue_after', Header: '>'},
       {accessor: 'after', Header: 'following song'}, // TODO Filter out the/a
-      {accessor: 'whichSet', Header: 'where', sortType: (a,b) => {
-        if (a.values.whichSet === 'soundcheck')
-          return -1;
-        if (b.values.whichSet === 'soundcheck')
-          return 1;
-        if (a.values.whichSet === 'set 1')
-          return -1;
-        if (b.values.whichSet === 'set 1')
-          return 1;
-        if (a.values.whichSet === 'set 2')
-          return -1;
-        if (b.values.whichSet === 'set 2')
-          return 1;
-        if (a.values.whichSet === 'set 3')
-          return -1;
-        if (b.values.whichSet === 'set 3')
-          return 1;
-        if (a.values.whichSet === 'encore')
-          return -1;
-        if (b.values.whichSet === 'encore')
-          return 1;
-        if (a.values.whichSet === 'double encore')
-          return -1;
-        if (b.values.whichSet === 'double encore')
-          return 1;
-      }},
+      {accessor: 'whichSet', Header: 'where', sortType: sortSets},
     ],
     []
   )
