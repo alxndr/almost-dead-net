@@ -142,7 +142,7 @@ function SortableTable({columns, data, previousUrl=''}) {
         prepareRow(row) // no return value; mutates `row`?
         return <tr {...row.getRowProps()}>
           {row.cells.map(cell => {
-            const url = `/show/${cell.row.original.fullData.showData.id}`
+            // const url = `/show/${cell.row.original.fullData.showData.id}`
             const classNameTd = classnames({
               blank: cell.value === '[opener]' || cell.value === '[closer]',
               [`sortable__cell-${cell.column.id}`]: true,
@@ -213,7 +213,7 @@ export default function Song({data: {
         after.segue = find(propEq('from_perf_id', performanceIdStr))(allSegues)?.type || ','
       } else after = {song_name: '[closer]'}
       const whichSet = Object.entries(SET_MAPPING)
-        .find(([col_name, readable_name]) => showData[col_name] === setData.id)[1]
+        .find(([col_name, _readable_name]) => showData[col_name] === setData.id)[1]
       const variation = performanceData.variation
         ? `(${performanceData.variation})`
         : false

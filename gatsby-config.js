@@ -5,6 +5,7 @@ module.exports = {
     siteUrl: 'https://almost-dead.net',
   },
   plugins: [
+    'gatsby-plugin-meta-redirect',
     {
       resolve: `gatsby-source-filesystem`,
       options: {

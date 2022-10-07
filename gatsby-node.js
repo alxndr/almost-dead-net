@@ -6,6 +6,10 @@ const ShowEmbedTemplate = require.resolve('./src/templates/show-embed.js')
 const SongTemplate = require.resolve('./src/templates/song.js')
 const VenueTemplate = require.resolve('./src/templates/venue.js')
 
+function urlify(string) {
+ return slugify(string, {remove: /[^a-z\d ]/gi}) 
+}
+
 exports.createSchemaCustomization = ({actions: {createTypes}}) => {
   // n.b. this is GraphQL "SDL"
   createTypes(`
@@ -77,7 +81,7 @@ exports.createSchemaCustomization = ({actions: {createTypes}}) => {
   `)
 }
 
-exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => {
+exports.createPages = async ({graphql, actions: {createPage, createRedirect} }) => {
   const result = await graphql(`
     query Everything {
       allVenuesCsv {
@@ -150,13 +154,18 @@ exports.createPages = async ({graphql, actions: {createPage, createTypes} }) => 
   })
 
   songs.filter(song => song.title && song.title !== '[unknown]').forEach((song) => {
+    const songPageUrl = `/song/${song.id}-${urlify(song.title)}`
+    createRedirect({
+      fromPath: `/song/${song.id}`,
+      toPath: songPageUrl,
+    })
     createPage({
-      path: `/song/${song.id}`,
+      path: songPageUrl,
       component: SongTemplate,
       context: {
         songId: song.id,
-      }
-    })
+      },
+    });
   })
 
   venues.filter(venue => venue.name).forEach(venue => {
