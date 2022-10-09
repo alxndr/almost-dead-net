@@ -272,6 +272,9 @@ const allShows = { // TODO replace with proper Cypress fixtures... hopefully hoo
   271: {id: 271, date: '8/25/2022', venue: 'Saratoga'},
   272: {id: 272, date: '8/26/2022', venue: 'Pavilion'},
   273: {id: 273, date: '8/27/2022', venue: 'Pavilion'},
+  274: {id: 274, date: '9/29/2022', venue: 'Wellmont'},
+  275: {id: 275, date: '9/30/2022', venue: 'Wellmont'},
+  276: {id: 276, date: '10/1/2022', venue: 'Wellmont'},
 }
 
 function validate(show) {
