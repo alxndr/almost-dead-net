@@ -1,11 +1,11 @@
 import React, {useMemo} from 'react'
-import {useRowState, useSortBy, useTable} from 'react-table'
-import {Tooltip} from 'react-tippy'
-import {graphql, Link, StaticQuery} from 'gatsby'
+// import {useRowState, useSortBy, useTable} from 'react-table'
+// import {Tooltip} from 'react-tippy'
+import {graphql, Link, _StaticQuery} from 'gatsby'
 import {filter, groupBy, prop, propEq, sortBy} from 'ramda'
 
 import Layout from '../components/layout'
-import SEO from '../components/seo'
+// import SEO from '../components/seo'
 
 import './songs.css'
 
@@ -121,10 +121,10 @@ function SongsComponent({data: {allSongsCsv: {nodes: songs}, allTeasesCsv: {node
   )
 
   return <Layout className="songs">
-    <SEO
+    {/*<SEO
       title="JRAD songs played or teased"
       description="Repertoire of songs and teases performed by Joe Russo's Almost Dead, plus setlists of each concert"
-    />
+    />*/}
 
     <div id="songs__toc" className="tableofcontents">
       <p>Table of Contents</p>
@@ -134,7 +134,7 @@ function SongsComponent({data: {allSongsCsv: {nodes: songs}, allTeasesCsv: {node
       </ol>
     </div>
 
-    <h1 href="#songs__performed-headline">Songs Performed / Jammed</h1>
+    <h1 id="#songs__performed-headline">Songs Performed / Jammed</h1>
     <p>These songs have been performed in their entirety, or played as an extended theme by the entire band.</p>
     <SortableTable columns={performedColumns} data={performedData} />
 
@@ -142,42 +142,48 @@ function SongsComponent({data: {allSongsCsv: {nodes: songs}, allTeasesCsv: {node
     <p>These are songs which have been hinted at by one or more members of the band while playing another song.</p>
     <SortableTable columns={teasedColumns} data={teasedData} />
 
-    {'#notyet' === global?.window?.location?.hash /* TODO this can trigger a runtime error in browser */ && <>
+    {/*{'#notyet' === global?.window?.location?.hash && <>
       <h1 id="songs__notyet-headline">Not Yet Played from the GD Repertoire</h1>
       <p>This is an incomplete list of songs which the Grateful Dead or their members recorded or played live (either together or in other projects), but have been neither played nor teased by JRAD...</p>
       <SortableTable
-        columns={useMemo(() => [{Header: "title", accessor: "title"}, {Header: "author", accessor: "author"}], [])}
-        data={useMemo(() => groupedByTeased[false], [])}
-        link={false}
+      columns={useMemo(() => [{Header: "title", accessor: "title"}, {Header: "author", accessor: "author"}], [])}
+      data={useMemo(() => groupedByTeased[false], [])}
+      link={false}
       />
-    </>}
+    </>}*/}
   </Layout>
 }
 
-const SongsPage = () => <StaticQuery
-  query={graphql`
-    query SongsPageData {
-      allSongsCsv { nodes {
-        author
-        core_gd
-        core_jrad
-        cover_gd
-        id
-        performances
-        suite
-        title
-      } }
-      allTeasesCsv { nodes {
-        id
-        by
-        notes
-        performance_id
-        song_id
-        song_name
-        within
-      } }
-    }
-  `}
-  render={data => <SongsComponent data={data} />}
-/>
+// const SongsPage = () => <StaticQuery
+//   query={graphql`
+//     query SongsPageData {
+//       allSongsCsv { nodes {
+//         author
+//         core_gd
+//         core_jrad
+//         cover_gd
+//         id
+//         performances
+//         suite
+//         title
+//       } }
+//       allTeasesCsv { nodes {
+//         id
+//         by
+//         notes
+//         performance_id
+//         song_id
+//         song_name
+//         within
+//       } }
+//     }
+//   `}
+//   render={data => <SongsComponent data={data} />}
+// />
+// export default SongsPage
+
+function SongsPage(props: any) {
+  global.console.log('SongsPage', props);
+  return <h1>Songs Page!</h1>
+}
 export default SongsPage
