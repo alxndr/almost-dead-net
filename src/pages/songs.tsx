@@ -84,6 +84,7 @@ function SortableTable({columns, data, link=true}) {
 }
 
 function SongsComponent({data: {allSongsCsv: {nodes: songs}, allTeasesCsv: {nodes: teases}}}) {
+  global.console.log({songs})
   const groupedByPerformed = groupBy((songData) => Boolean(songData.performances), songs.filter(removeCertainSongs))
   const performedData = useMemo(
     () => groupedByPerformed[true].map(songData => ({
@@ -184,6 +185,8 @@ function SongsComponent({data: {allSongsCsv: {nodes: songs}, allTeasesCsv: {node
 
 function SongsPage(props: any) {
   global.console.log('SongsPage', props);
-  return <h1>Songs Page!</h1>
+  return <Layout className="songs">
+    <h1>Songs Page!</h1>
+  </Layout>
 }
 export default SongsPage

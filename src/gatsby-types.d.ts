@@ -2257,5 +2257,10 @@ type StringQueryOperatorInput = {
   readonly regex: InputMaybe<Scalars['String']>;
 };
 
+type LayoutDataQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type LayoutDataQuery = { readonly site: { readonly siteMetadata: { readonly title: string | null, readonly description: string | null } | null } | null };
+
 
 }
