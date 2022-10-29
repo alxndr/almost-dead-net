@@ -7,7 +7,7 @@ import icon from '../images/icon-almost-dead.png'
 import './reset.css'
 import './layout.css'
 
-const toTag = (TagName) => (props) => <TagName {...props} />
+const toTag = (TagName, index) => (props) => <TagName key={`${index}-${TagName}`} {...props} />
 
 const Layout = ({children, className = '', description, image, lang = 'en', meta, title}) => {
   const {site} = useStaticQuery(graphql`
