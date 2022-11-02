@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/51-Spirit-of-the-Suwannee-Music-Park",
-    "result": {"data":{"venuesCsv":{"id":"51","location":"Live Oak, FL","name":"Spirit of the Suwannee Music Park"},"allShowsCsv":{"nodes":[{"id":"9","date":"11/2/2014"},{"id":"50","date":"10/29/2015"},{"id":"127","date":"10/26/2017"},{"id":"170","date":"10/25/2018"},{"id":"211","date":"10/27/2019"}]}},"pageContext":{"venueId":"51"}},
+    "result": {"data":{"venuesCsv":{"id":"51","location":"Live Oak, FL","name":"Spirit of the Suwannee Music Park"},"allShowsCsv":{"nodes":[{"id":"9","date":"11/2/2014"},{"id":"50","date":"10/29/2015"},{"id":"127","date":"10/26/2017"},{"id":"170","date":"10/25/2018"},{"id":"211","date":"10/27/2019"},{"id":"277","date":"10/30/2022"}]}},"pageContext":{"venueId":"51"}},
     "staticQueryHashes": ["3000541721"]}
