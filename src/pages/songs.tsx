@@ -1,7 +1,7 @@
 import React, {useMemo} from 'react'
 // import {useRowState, useSortBy, useTable} from 'react-table'
 // import {Tooltip} from 'react-tippy'
-import {graphql, Link, _StaticQuery} from 'gatsby'
+import {graphql, Link, StaticQuery} from 'gatsby'
 import {filter, groupBy, prop, propEq, sortBy} from 'ramda'
 
 import Layout from '../components/layout'
@@ -84,6 +84,7 @@ function SortableTable({columns, data, link=true}) {
 }
 
 function SongsComponent({data: {allSongsCsv: {nodes: songs}, allTeasesCsv: {nodes: teases}}}) {
+  global.console.log('SongsComponent');
   global.console.log({songs})
   const groupedByPerformed = groupBy((songData) => Boolean(songData.performances), songs.filter(removeCertainSongs))
   const performedData = useMemo(
@@ -155,38 +156,38 @@ function SongsComponent({data: {allSongsCsv: {nodes: songs}, allTeasesCsv: {node
   </Layout>
 }
 
-// const SongsPage = () => <StaticQuery
-//   query={graphql`
-//     query SongsPageData {
-//       allSongsCsv { nodes {
-//         author
-//         core_gd
-//         core_jrad
-//         cover_gd
-//         id
-//         performances
-//         suite
-//         title
-//       } }
-//       allTeasesCsv { nodes {
-//         id
-//         by
-//         notes
-//         performance_id
-//         song_id
-//         song_name
-//         within
-//       } }
-//     }
-//   `}
-//   render={data => <SongsComponent data={data} />}
-// />
-// export default SongsPage
-
-function SongsPage(props: any) {
-  global.console.log('SongsPage', props);
-  return <Layout className="songs">
-    <h1>Songs Page!</h1>
-  </Layout>
-}
+const SongsPage = () => <StaticQuery
+  query={graphql`
+    query SongsPageData {
+      allSongsCsv { nodes {
+        author
+        core_gd
+        core_jrad
+        cover_gd
+        id
+        performances
+        suite
+        title
+      } }
+      allTeasesCsv { nodes {
+        id
+        by
+        notes
+        performance_id
+        song_id
+        song_name
+        within
+      } }
+    }
+  `}
+  render={data => <SongsComponent data={data} />}
+/>
 export default SongsPage
+
+// function SongsPage(props: any) {
+//   global.console.log('SongsPage', props);
+//   return <Layout className="songs">
+//     <h1>Songs Page!</h1>
+//   </Layout>
+// }
+// export default SongsPage
