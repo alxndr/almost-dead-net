@@ -52,6 +52,9 @@
   background: left center / contain no-repeat;
   padding-left: 1.1em;
 }
+.homepage__links a.icon.mastodon {
+  background-image: url(https://i.imgur.com/ycZRrHX.png);
+}
 .homepage__links a.icon.twitter {
   background-image: url(https://i.imgur.com/sFunDTP.png);
 }
