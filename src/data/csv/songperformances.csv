@@ -4078,7 +4078,7 @@ id,song_id,song_name,id_rhs,variation,notes,set_id,show_id,prev_perfid,prev_show
 4324,98,Help on the Way,,,,711,267,,,,,,,
 4325,193,Saint of Circumstance,,,,711,267,,,,,,,
 4326,85,Golden Road (To Unlimited Devotion),,,,712,267,,,,,,,
-4327,251,Truckin',,,,712,267,,,,,,,
+4327,251,Truckin',,unfinished,,712,267,,,,,,,
 4328,100,He's Gone,,,,712,267,,,,,,,
 4329,38,Cassidy,,,with Space jam,712,267,,,,,,,
 4330,128,Lady With a Fan,,,,712,267,,,,,,,
@@ -4224,3 +4224,4 @@ id,song_id,song_name,id_rhs,variation,notes,set_id,show_id,prev_perfid,prev_show
 4470,151,Morning Dew,,,,739,276,,,,,,,
 4471,59,Dark Star,,,,732,274,,,,,,,
 4472,217,Sunshine Daydream,,,,732,274,,,,,,,
+4473,201,Slipknot!,,,,711,267,,,,,,,
