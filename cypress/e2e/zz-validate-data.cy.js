@@ -275,6 +275,7 @@ const allShows = { // TODO replace with proper Cypress fixtures... hopefully hoo
   274: {id: 274, date: '9/29/2022', venue: 'Wellmont'},
   275: {id: 275, date: '9/30/2022', venue: 'Wellmont'},
   276: {id: 276, date: '10/1/2022', venue: 'Wellmont'},
+  277: {id: 277, date: '10/30/2022', venue: 'Hulaween'},
 }
 
 function validate(show) {
