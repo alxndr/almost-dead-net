@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/73-Metropolitan-Opera-House",
-    "result": {"data":{"venuesCsv":{"id":"73","location":"Philadelphia, PA","name":"Metropolitan Opera House"},"allShowsCsv":{"nodes":[{"id":"208","date":"9/26/2019"},{"id":"209","date":"9/27/2019"}]}},"pageContext":{"venueId":"73"}},
+    "result": {"data":{"venuesCsv":{"id":"73","location":"Philadelphia, PA","name":"Metropolitan Opera House"},"allShowsCsv":{"nodes":[{"id":"208","date":"9/26/2019"},{"id":"209","date":"9/27/2019"},{"id":"278","date":"11/11/2022"}]}},"pageContext":{"venueId":"73"}},
     "staticQueryHashes": ["3000541721"]}
