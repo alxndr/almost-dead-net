@@ -51,7 +51,9 @@
 .layout.songpage .sortable__cell-segue_prior,
 .layout.songpage .sortable__cell-segue_after {
   text-align: center;
+  white-space: nowrap;
 }
+
 .layout.songpage .sortable__cell-whichSet {
   padding-left: 1em;
   text-align: center;

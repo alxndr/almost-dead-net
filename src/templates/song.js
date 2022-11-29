@@ -40,6 +40,7 @@ export const query = graphql`
       author
       suite
       title
+      nicknames
       performances
     }
     allSeguesCsv { nodes {
@@ -193,14 +194,13 @@ export default function Song({data: {
         show: showData.date,
         prior: prior?.song_name,
         'segue_prior': prior?.segue,
-        title: song.title,
+        title: song.nicknames.split('; ')[0] || song.title,
         'segue_after': after?.segue,
         after: after?.song_name,
         whichSet,
         fullData: {performanceData, showData, variation, whichSet, prior, after}
       }
     })
-  // global.console.log({onlyThisSongsPerformancesData })
 
   const performancesData = useMemo(() => onlyThisSongsPerformancesData, [])
   const performancesColumns = useMemo(
