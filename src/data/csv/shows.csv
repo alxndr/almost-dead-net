@@ -25,14 +25,14 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 24,4/24/2015,31,66,67,,68,,,,,https://i.imgur.com/ik3y9a6.jpg,1,4/24/15 @ Concord Music Hall,
 25,4/25/2015,92,69,70,,71,,,,,https://i.imgur.com/ik3y9a6.jpg,4,4/25/15 @ The Pageant,
 26,5/1/2015,68,72,73,,74,,,,,https://i.imgur.com/CN6AuT6.jpg,3,5/1/15 @ Joy Theater,
-27,5/2/2015,68,75,76,,77,,,sold out,,https://i.imgur.com/CN6AuT6.jpg,2,5/2/15 @ Joy Theater,TRUE
-28,5/9/2015,76,78,79,,80,,,sold out,,https://i.imgur.com/lPPYH2M.jpg,8,5/9/15 @ Capitol Theatre,TRUE
+27,5/2/2015,68,75,76,,77,,,,,https://i.imgur.com/CN6AuT6.jpg,2,5/2/15 @ Joy Theater,TRUE
+28,5/9/2015,76,78,79,,80,,,,,https://i.imgur.com/lPPYH2M.jpg,8,5/9/15 @ Capitol Theatre,TRUE
 29,5/16/2015,75,81,82,,83,,,,,https://i.imgur.com/HxL4RmJ.jpg,1,5/16/15 @ Theater of the Living Arts,
 30,5/22/2015,49,84,,,,,,no available recording,CounterPoint Music Festival,,0,5/22/15 @ CounterPoint Music Festival,
 31,5/23/2015,32,85,,,86,,,,Summer Camp,,1,5/23/15 @ Summer Camp,
 32,5/24/2015,26,87,88,,89,,,,Ville Festival,,2,5/24/15 @ Ville Festival,
 33,5/30/2015,13,90,91,,92,,,,Beanstalk Festival,https://i.imgur.com/kcbbdPB.jpg,1,5/30/15 @ Beanstalk Festival,
-34,6/3/2015,69,93,94,,95,,,sold out: private benefit in the Marlin Room (silent auction at set break),Songs of Love,,2,6/3/15 @ Songs of Love,TRUE
+34,6/3/2015,69,93,94,,95,,,private benefit in the Marlin Room (silent auction at set break),Songs of Love,,2,6/3/15 @ Songs of Love,TRUE
 35,6/5/2015,45,96,,,,,,East Stage,Mountain Jam,,4,6/5/15 @ Mountain Jam,
 36,6/6/2015,72,97,,,,,,started after midnight on the 7th,Wakarusa,https://i.imgur.com/VsEgRvN.jpg,1,6/6/15 @ Wakarusa,
 37,6/26/2015,84,98,,,,,,no available recordings; show started at 1:12am on the 27th,,,0,6/26/15 @ Electric Forest,
