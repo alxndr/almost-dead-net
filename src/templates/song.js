@@ -94,6 +94,7 @@ export const query = graphql`
       id
       song_id
       song_name
+      stars
     } }
     allTeasesCsv(filter: {song_id: {eq: $songId}}) { nodes {
       id
@@ -112,7 +113,7 @@ function renderCell({column, render, row}, previousUrl='') {
   else if (column.id ===  'after' && row.original.fullData.after.song_id)
     url = `/song/${row.original.fullData.after.song_id}`
   if (url)
-    return <Link to={url} className={previousUrl.endsWith(url) ? 'highlight' : ''}>{render('Cell')}</Link>
+    return <Link to={url} className={classnames({highlight: previousUrl.endsWith(url)})}>{render('Cell')}</Link>;
   return render('Cell')
 }
 
@@ -140,9 +141,8 @@ function SortableTable({columns, data, previousUrl=''}) {
     <tbody {...getTableBodyProps()}>
       {rows.map(row => {
         prepareRow(row) // no return value; mutates `row`?
-        return <tr {...row.getRowProps()}>
+        return <tr {...row.getRowProps()} className={classnames({[`stars-${row.original.stars}`]: row.original.stars})}>
           {row.cells.map(cell => {
-            const url = `/show/${cell.row.original.fullData.showData.id}`
             const classNameTd = classnames({
               blank: cell.value === '[opener]' || cell.value === '[closer]',
               [`sortable__cell-${cell.column.id}`]: true,
@@ -222,6 +222,7 @@ export default function Song({data: {
         prior: prior?.song_name,
         'segue_prior': prior?.segue,
         title: song.nicknames.split('; ')[0] || song.title,
+        stars: performanceData.stars,
         'segue_after': after?.segue,
         after: after?.song_name,
         whichSet,
@@ -258,7 +259,11 @@ export default function Song({data: {
     {Boolean(performancesData.length) && // TODO verify that this count is accurate if a song is played twice in one show...
       <div className="songpage__performances">
         <h2>Performed at {pluralize(performancesData.length, 'Show')}</h2>
-        <SortableTable data={performancesData} columns={performancesColumns} previousUrl={location?.state?.previousUrl} />
+        <SortableTable
+          data={performancesData}
+          columns={performancesColumns}
+          previousUrl={location?.state?.previousUrl}
+        />
       </div>
     }
 

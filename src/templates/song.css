@@ -19,7 +19,9 @@
   padding: 0.5em 0.1em;
 }
 .layout.songpage th {
+  font-size: 0.8em;
   background: aliceblue;
+  font-weight: normal;
 }
 .layout.songpage .sorted-asc,
 .layout.songpage .sorted-desc {
@@ -55,8 +57,19 @@
 }
 
 .layout.songpage .sortable__cell-whichSet {
-  padding-left: 1em;
   text-align: center;
+}
+
+.stars-1 .sortable__cell-show:before,
+.stars-2 .sortable__cell-show:before {
+  padding-right: 0.2em;
+  color: #ee0000cc;
+}
+.stars-1 .sortable__cell-show:before {
+  content: '★';
+}
+.stars-2 .sortable__cell-show:before {
+  content: '★★';
 }
 
 .songpage__name:before {
