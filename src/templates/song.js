@@ -24,6 +24,33 @@ function authorInfo(author = null) {
   }
 }
 
+function sortSets(a,b) {
+  if (a.values.whichSet === 'soundcheck')
+    return -1;
+  if (b.values.whichSet === 'soundcheck')
+    return 1;
+  if (a.values.whichSet === 'set 1')
+    return -1;
+  if (b.values.whichSet === 'set 1')
+    return 1;
+  if (a.values.whichSet === 'set 2')
+    return -1;
+  if (b.values.whichSet === 'set 2')
+    return 1;
+  if (a.values.whichSet === 'set 3')
+    return -1;
+  if (b.values.whichSet === 'set 3')
+    return 1;
+  if (a.values.whichSet === 'encore')
+    return -1;
+  if (b.values.whichSet === 'encore')
+    return 1;
+  if (a.values.whichSet === 'double encore')
+    return -1;
+  if (b.values.whichSet === 'double encore')
+    return 1;
+}
+
 const SET_MAPPING = { // 'show table column name' to 'human readable set name'
   soundcheck: 'soundcheck',
   set1: 'set 1',
@@ -186,7 +213,7 @@ export default function Song({data: {
         after.segue = find(propEq('from_perf_id', performanceIdStr))(allSegues)?.type || ','
       } else after = {song_name: '[closer]'}
       const whichSet = Object.entries(SET_MAPPING)
-        .find(([col_name, readable_name]) => showData[col_name] === setData.id)[1]
+        .find(([col_name, _readable_name]) => showData[col_name] === setData.id)[1]
       const variation = performanceData.variation
         ? `(${performanceData.variation})`
         : false
@@ -211,32 +238,7 @@ export default function Song({data: {
       {accessor: 'title', disableSortBy: true},
       {accessor: 'segue_after', Header: '>'},
       {accessor: 'after', Header: 'following song'}, // TODO Filter out the/a
-      {accessor: 'whichSet', Header: 'where', sortType: (a,b) => {
-        if (a.values.whichSet === 'soundcheck')
-          return -1;
-        if (b.values.whichSet === 'soundcheck')
-          return 1;
-        if (a.values.whichSet === 'set 1')
-          return -1;
-        if (b.values.whichSet === 'set 1')
-          return 1;
-        if (a.values.whichSet === 'set 2')
-          return -1;
-        if (b.values.whichSet === 'set 2')
-          return 1;
-        if (a.values.whichSet === 'set 3')
-          return -1;
-        if (b.values.whichSet === 'set 3')
-          return 1;
-        if (a.values.whichSet === 'encore')
-          return -1;
-        if (b.values.whichSet === 'encore')
-          return 1;
-        if (a.values.whichSet === 'double encore')
-          return -1;
-        if (b.values.whichSet === 'double encore')
-          return 1;
-      }},
+      {accessor: 'whichSet', Header: 'where', sortType: sortSets},
     ],
     []
   )
