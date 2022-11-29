@@ -801,7 +801,7 @@ id,song_id,song_name,id_rhs,variation,notes,set_id,show_id,prev_perfid,prev_show
 883,262,We Bid You Goodnight,883,,,136,53,,,,,,,
 884,211,St. Stephen,884,return,,134,53,,,,,,,
 885,18,Bertha,885,,,137,54,,,,,,,
-886,245,Throwing Stones,886,,,137,54,,,,,,1,
+886,245,Throwing Stones,886,,,137,54,,,,,,1,20m
 887,24,Black Peter,887,,,137,54,,,,,,,
 888,69,Estimated Prophet,888,,,137,54,,,,,,,
 889,240,The Weight,889,,,137,54,,,,,,,
@@ -861,7 +861,6 @@ id,song_id,song_name,id_rhs,variation,notes,set_id,show_id,prev_perfid,prev_show
 950,100,He's Gone,950,,,148,57,,,,,,,
 951,235,The Other One,951,,,148,57,,,,,,,
 952,151,Morning Dew,952,,,148,57,,,,,,,
-953,121,Jam,953,,,149,58,,,,,,,
 954,251,Truckin',954,,,149,58,,,,,,,
 955,229,The Eleven,955,,,149,58,,,,,,,
 956,44,China Cat Sunflower,956,,,149,58,,,,,,,
