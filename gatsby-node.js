@@ -49,6 +49,7 @@ exports.createSchemaCustomization = ({actions: {createTypes}}) => {
       variation: String
     }
     type songsCsv implements Node {
+      abbrev: String
       author: String
       core_jrad: Boolean
       core_gd: Boolean
