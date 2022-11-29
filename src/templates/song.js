@@ -270,7 +270,7 @@ export default function Song({data: {
 
     {Boolean(teases.length) &&
       <div className="songpage__teases">
-        <h2>Teases</h2>
+        <h2>Teases / Jams</h2>
         <ul>
           {teases.map(teaseData => {
             const performanceData = find(propEq('id', teaseData.performance_id))(allSongPerformances)
