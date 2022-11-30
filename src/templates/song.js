@@ -64,7 +64,6 @@ export const query = graphql`
   query SongTemplate($songId: String!) {
     songsCsv(id: {eq: $songId}) {
       id
-      abbrev
       author
       suite
       title
@@ -222,7 +221,7 @@ export default function Song({data: {
         show: showData.date,
         prior: prior?.song_name,
         'segue_prior': prior?.segue,
-        title: song.abbrev || song.nicknames.split('; ')[0] || song.title,
+        title: song.nicknames.split('; ')[0] || song.title,
         stars: performanceData.stars,
         'segue_after': after?.segue,
         after: after?.song_name,
