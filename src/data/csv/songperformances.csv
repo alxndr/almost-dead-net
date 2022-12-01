@@ -3989,7 +3989,7 @@ id,song_id,song_name,id_rhs,variation,notes,set_id,show_id,prev_perfid,prev_show
 4246,194,Samson and Delilah,,,,701,260,,,,,,,
 4247,262,We Bid You Goodnight,,instrumental,,684,253,,,,,,,
 4248,165,New Speedway Boogie,,,,702,261,,,,,,,
-4249,69,Estimated Prophet,,,,702,261,,,,,,,
+4249,69,Estimated Prophet,,,,702,261,,,,,,1,
 4250,97,Hell In A Bucket,,,,702,261,,,,,,,
 4251,34,Candyman,,,,702,261,,,,,,,
 4252,75,Fire on the Mountain,,,,702,261,,,,,,,
