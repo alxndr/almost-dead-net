@@ -1,16 +1,16 @@
 {
-  "hash": "51996eaf5fd1c5ddfeb8",
+  "hash": "0760f8faf0469e110ee3",
   "publicPath": "/",
   "outputPath": "/Users/alxndr/workspace/almost-dead-net/public",
   "assetsByChunkName": {
     "polyfill": [
-      "polyfill-fad0bac793474b10092f.js"
+      "polyfill-e48ed144262539c1ff68.js"
     ],
     "app": [
-      "app-536b2ef0489c61a97df0.js"
+      "app-3ae77a2fb63e1d8bde45.js"
     ],
     "webpack-runtime": [
-      "webpack-runtime-bdbbe7f8c3052c9f80dd.js"
+      "webpack-runtime-9a88c336574b48291662.js"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-348c6184f43464a30f5e.js"
@@ -25,7 +25,7 @@
       "component---src-pages-guests-js-a9369d9c9657cb510ed2.js"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-c43a78abda956acb835c.js"
+      "component---src-pages-index-js-63076b472a4a89a6dd9a.js"
     ],
     "component---src-pages-songs-js": [
       "component---src-pages-songs-js-35cd04bc3b557c214d72.js"
@@ -43,7 +43,7 @@
       "component---src-templates-show-js-fa02714bbd734759f087.js"
     ],
     "component---src-templates-song-js": [
-      "component---src-templates-song-js-bac297c6a9a4c3dea8ac.js"
+      "component---src-templates-song-js-32fda864cd873e03b036.js"
     ],
     "component---src-templates-venue-js": [
       "component---src-templates-venue-js-5bdbc32eaf81f85598ca.js"
@@ -79,19 +79,19 @@
   "assets": [
     {
       "type": "asset",
-      "name": "app-536b2ef0489c61a97df0.js",
+      "name": "app-3ae77a2fb63e1d8bde45.js",
       "size": 272053,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "536b2ef0489c61a97df0",
+        "contenthash": "3ae77a2fb63e1d8bde45",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "license": "app-536b2ef0489c61a97df0.js.LICENSE.txt",
-          "sourceMap": "app-536b2ef0489c61a97df0.js.map"
+          "license": "app-3ae77a2fb63e1d8bde45.js.LICENSE.txt",
+          "sourceMap": "app-3ae77a2fb63e1d8bde45.js.map"
         }
       },
       "chunkNames": [
@@ -139,18 +139,18 @@
     },
     {
       "type": "asset",
-      "name": "polyfill-fad0bac793474b10092f.js",
+      "name": "polyfill-e48ed144262539c1ff68.js",
       "size": 82850,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "fad0bac793474b10092f",
+        "contenthash": "e48ed144262539c1ff68",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "polyfill-fad0bac793474b10092f.js.map"
+          "sourceMap": "polyfill-e48ed144262539c1ff68.js.map"
         }
       },
       "chunkNames": [
@@ -167,18 +167,18 @@
     },
     {
       "type": "asset",
-      "name": "component---src-pages-index-js-c43a78abda956acb835c.js",
-      "size": 59573,
+      "name": "component---src-pages-index-js-63076b472a4a89a6dd9a.js",
+      "size": 59659,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "c43a78abda956acb835c",
+        "contenthash": "63076b472a4a89a6dd9a",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "component---src-pages-index-js-c43a78abda956acb835c.js.map"
+          "sourceMap": "component---src-pages-index-js-63076b472a4a89a6dd9a.js.map"
         }
       },
       "chunkNames": [
@@ -513,6 +513,35 @@
     },
     {
       "type": "asset",
+      "name": "component---src-templates-song-js-32fda864cd873e03b036.js",
+      "size": 7728,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "contenthash": "32fda864cd873e03b036",
+        "javascriptModule": false,
+        "minimized": true,
+        "related": {
+          "license": "component---src-templates-song-js-32fda864cd873e03b036.js.LICENSE.txt",
+          "sourceMap": "component---src-templates-song-js-32fda864cd873e03b036.js.map"
+        }
+      },
+      "chunkNames": [
+        "component---src-templates-song-js"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 2,
+      "chunks": [
+        208
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
       "name": "939a82a7a34f927a1b39c216a89c5dd99a3d6688-96363919f217a2b4e08a.js",
       "size": 7502,
       "emitted": false,
@@ -543,47 +572,18 @@
     },
     {
       "type": "asset",
-      "name": "component---src-templates-song-js-bac297c6a9a4c3dea8ac.js",
-      "size": 7464,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "immutable": true,
-        "contenthash": "bac297c6a9a4c3dea8ac",
-        "javascriptModule": false,
-        "minimized": true,
-        "related": {
-          "license": "component---src-templates-song-js-bac297c6a9a4c3dea8ac.js.LICENSE.txt",
-          "sourceMap": "component---src-templates-song-js-bac297c6a9a4c3dea8ac.js.map"
-        }
-      },
-      "chunkNames": [
-        "component---src-templates-song-js"
-      ],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 2,
-      "chunks": [
-        208
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "webpack-runtime-bdbbe7f8c3052c9f80dd.js",
+      "name": "webpack-runtime-9a88c336574b48291662.js",
       "size": 6286,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "bdbbe7f8c3052c9f80dd",
+        "contenthash": "9a88c336574b48291662",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "webpack-runtime-bdbbe7f8c3052c9f80dd.js.map"
+          "sourceMap": "webpack-runtime-9a88c336574b48291662.js.map"
         }
       },
       "chunkNames": [
@@ -854,10 +854,10 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-bdbbe7f8c3052c9f80dd.js"
+          "name": "webpack-runtime-9a88c336574b48291662.js"
         },
         {
-          "name": "polyfill-fad0bac793474b10092f.js"
+          "name": "polyfill-e48ed144262539c1ff68.js"
         }
       ],
       "filteredAssets": 0,
@@ -876,13 +876,13 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-bdbbe7f8c3052c9f80dd.js"
+          "name": "webpack-runtime-9a88c336574b48291662.js"
         },
         {
           "name": "framework-32184bd0f1f807e0608e.js"
         },
         {
-          "name": "app-536b2ef0489c61a97df0.js"
+          "name": "app-3ae77a2fb63e1d8bde45.js"
         }
       ],
       "filteredAssets": 0,
@@ -1019,7 +1019,7 @@
           "name": "commons-98c49e0b81fddc6cbe8e.js"
         },
         {
-          "name": "component---src-pages-index-js-c43a78abda956acb835c.js"
+          "name": "component---src-pages-index-js-63076b472a4a89a6dd9a.js"
         }
       ],
       "filteredAssets": 0,
@@ -1229,7 +1229,7 @@
           "name": "c06ff84875a4b413940077939436a2aeb4174256-3d4d84ec0059ea8a919c.js"
         },
         {
-          "name": "component---src-templates-song-js-bac297c6a9a4c3dea8ac.js"
+          "name": "component---src-templates-song-js-32fda864cd873e03b036.js"
         }
       ],
       "filteredAssets": 0,
@@ -1287,19 +1287,19 @@
     {
       "id": 920,
       "files": [
-        "polyfill-fad0bac793474b10092f.js"
+        "polyfill-e48ed144262539c1ff68.js"
       ]
     },
     {
       "id": 143,
       "files": [
-        "app-536b2ef0489c61a97df0.js"
+        "app-3ae77a2fb63e1d8bde45.js"
       ]
     },
     {
       "id": 658,
       "files": [
-        "webpack-runtime-bdbbe7f8c3052c9f80dd.js"
+        "webpack-runtime-9a88c336574b48291662.js"
       ]
     },
     {
@@ -1347,7 +1347,7 @@
     {
       "id": 678,
       "files": [
-        "component---src-pages-index-js-c43a78abda956acb835c.js"
+        "component---src-pages-index-js-63076b472a4a89a6dd9a.js"
       ]
     },
     {
@@ -1383,7 +1383,7 @@
     {
       "id": 208,
       "files": [
-        "component---src-templates-song-js-bac297c6a9a4c3dea8ac.js"
+        "component---src-templates-song-js-32fda864cd873e03b036.js"
       ]
     },
     {
