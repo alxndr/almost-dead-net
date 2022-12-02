@@ -2991,7 +2991,7 @@ id,song_id,song_name,id_rhs,variation,notes,set_id,show_id,prev_perfid,prev_show
 3230,148,Mississippi Halfstep Uptown Toodleloo,3230,,,506,180,,,,,,,
 3231,128,Lady With a Fan,3231,,,506,180,,,,,,1,
 3232,224,Terrapin Station,3232,,,506,180,,,,,,,
-3233,275,Terrapin,3233,,,506,180,,,,,,,
+3233,275,Terrapin,3233,,synthy noises,506,180,,,,,,,~1:30
 3234,225,Terrapin Transit,3234,,,506,180,,,,,,,
 3235,11,At a Siding,3235,,,506,180,,,,,,,
 3236,223,Terrapin Flyer,3236,,,506,180,,,,,,,
