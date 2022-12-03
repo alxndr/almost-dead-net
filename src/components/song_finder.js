@@ -22,11 +22,13 @@ export default function SongFinder() {
     query SongFinderData {
       allSongsCsv { nodes {
         id
+        aka
         author
         core_gd
         core_jrad
         cover_gd
         id
+        nicknames
         performances
         suite
         title
@@ -44,8 +46,14 @@ export default function SongFinder() {
       return []
     }
     const searchRegex = new RegExp(`\\b${searchString}`)
-    return songs.filter(({title = '', author = ''}) => {
+    return songs.filter(({title = '', author = '', nicknames = '', aka = ''}) => {
       if (title && searchRegex.test(sanitizeString(title))) {
+        return true
+      }
+      if (nicknames && searchRegex.test(sanitizeString(nicknames))) {
+        return true
+      }
+      if (aka && searchRegex.test(sanitizeString(aka))) {
         return true
       }
       if (author && searchRegex.test(sanitizeString(author))) {
