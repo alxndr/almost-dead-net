@@ -1,13 +1,13 @@
 {
-  "hash": "c42af0b73d31f4eb487d",
+  "hash": "5579dcfe1923cb78c3df",
   "publicPath": "/",
   "outputPath": "/Users/alxndr/workspace/almost-dead-net/public",
   "assetsByChunkName": {
     "polyfill": [
-      "polyfill-193eb490e7de1febb2bb.js"
+      "polyfill-7483c60f3f58cd1e4de9.js"
     ],
     "app": [
-      "app-d6a1ee0088f39a5871e6.js"
+      "app-844f777d91421f47bd1b.js"
     ],
     "webpack-runtime": [
       "webpack-runtime-b1a147059155b17ef2db.js"
@@ -79,19 +79,19 @@
   "assets": [
     {
       "type": "asset",
-      "name": "app-d6a1ee0088f39a5871e6.js",
+      "name": "app-844f777d91421f47bd1b.js",
       "size": 272053,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "d6a1ee0088f39a5871e6",
+        "contenthash": "844f777d91421f47bd1b",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "license": "app-d6a1ee0088f39a5871e6.js.LICENSE.txt",
-          "sourceMap": "app-d6a1ee0088f39a5871e6.js.map"
+          "license": "app-844f777d91421f47bd1b.js.LICENSE.txt",
+          "sourceMap": "app-844f777d91421f47bd1b.js.map"
         }
       },
       "chunkNames": [
@@ -139,18 +139,18 @@
     },
     {
       "type": "asset",
-      "name": "polyfill-193eb490e7de1febb2bb.js",
+      "name": "polyfill-7483c60f3f58cd1e4de9.js",
       "size": 82850,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "193eb490e7de1febb2bb",
+        "contenthash": "7483c60f3f58cd1e4de9",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "polyfill-193eb490e7de1febb2bb.js.map"
+          "sourceMap": "polyfill-7483c60f3f58cd1e4de9.js.map"
         }
       },
       "chunkNames": [
@@ -857,7 +857,7 @@
           "name": "webpack-runtime-b1a147059155b17ef2db.js"
         },
         {
-          "name": "polyfill-193eb490e7de1febb2bb.js"
+          "name": "polyfill-7483c60f3f58cd1e4de9.js"
         }
       ],
       "filteredAssets": 0,
@@ -882,7 +882,7 @@
           "name": "framework-32184bd0f1f807e0608e.js"
         },
         {
-          "name": "app-d6a1ee0088f39a5871e6.js"
+          "name": "app-844f777d91421f47bd1b.js"
         }
       ],
       "filteredAssets": 0,
@@ -1287,13 +1287,13 @@
     {
       "id": 920,
       "files": [
-        "polyfill-193eb490e7de1febb2bb.js"
+        "polyfill-7483c60f3f58cd1e4de9.js"
       ]
     },
     {
       "id": 143,
       "files": [
-        "app-d6a1ee0088f39a5871e6.js"
+        "app-844f777d91421f47bd1b.js"
       ]
     },
     {
