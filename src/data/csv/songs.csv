@@ -111,10 +111,10 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,cover_jg,c
 635,Pipeline,Bob Spickard & Brian Carman (The Chantays),,,,635,,TRUE,,,,1969,,
 86,Gonesville,Bob Weir,,,1921:1969:2035:2081:2149:2331:2531:2759:3211:3445:3711:3928:4187:4275,86,,,,,,,,
 27,Born Cross Eyed,Bob Weir (Grateful Dead),,,733:797:1078:1083:1141:1502:1519:1604:1661:1795:1833:1894:2135:2155:2219:2352:2422:2623:2783:3192:3193:3607:3955:4191:4488,27,TRUE,,,,,1968,,BCE
-169,One More Saturday Night,Bob Weir (Grateful Dead),Saturday Night,,77:322:429:467:481:556:603:683:730:863:898:924:1007:1115:1182:1218:1274:1310:1441:1683:1740:1818:1936:2111:2257:2411:2598:2660:2807:2942:3076:3173:3373:3410:3641:3887:3986:4101:4177:4278,169,TRUE,,,,,1971,,
+169,One More Saturday Night,Bob Weir (Grateful Dead),Saturday Night,,77:322:429:467:481:556:603:683:730:863:898:924:1007:1115:1182:1218:1274:1310:1441:1683:1740:1818:1936:2111:2257:2411:2598:2660:2807:2942:3076:3173:3373:3410:3641:3887:3986:4101:4177:4278:4535,169,TRUE,,,,,1971,,
 276,Part I,Bob Weir (Grateful Dead),,Weather Report,85:368:2205:2273:3305:3395:4242,276,TRUE,,,,,1973,,WRS1
 549,Sage and Spirit,Bob Weir (Grateful Dead),,,4245,549,TRUE,,,,,1975,,
-235,The Other One,Bob Weir (Grateful Dead),,,19:60:179:261:428:449:488:562:761:798:951:1079:1154:1381:1418:1545:1721:1820:1934:1954:2019:2083:2190:2270:2307:2341:2408:2431:2495:2580:2711:2737:2792:2954:2981:2982:3024:3026:3032:3142:3157:3238:3259:3369:3381:3442:3490:3514:3571:3614:3707:3750:3866:3908:3914:3983:4004:4012:4103:4291:4435:4479,235,TRUE,,,,That's It for the Other One,1967,,TOO
+235,The Other One,Bob Weir (Grateful Dead),,,19:60:179:261:428:449:488:562:761:798:951:1079:1154:1381:1418:1545:1721:1820:1934:1954:2019:2083:2190:2270:2307:2341:2408:2431:2495:2580:2711:2737:2792:2954:2981:2982:3024:3026:3032:3142:3157:3238:3259:3369:3381:3442:3490:3514:3571:3614:3707:3750:3866:3908:3914:3983:4004:4012:4103:4291:4435:4479:4533,235,TRUE,,,,That's It for the Other One,1967,,TOO
 656,Little Star,Bob Weir (Ratdog),,,,656,,,,,Bob Star,1983,,
 580,Victim or the Crime,Bob Weir & Gerrit Graham (Grateful Dead),Victim,,,580,TRUE,,,,,1988,,
 436,Ode to Billy Joe,Bobbie Gentry,,,,436,,,,,,,,
@@ -228,7 +228,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,cover_jg,c
 765,Careless Whisper,"George Michael, Andrew Ridgeley (Wham!)",,,,765,,,,,,,https://en.wikipedia.org/wiki/Careless_Whisper,
 423,Stayin' Alive,Gibb – Gibb – Gibb (Bee Gees),,,,423,,TRUE,,,,1978,,
 283,Manteca,Gillespie – Pozo – Fuller,,,,283,,,,,,,,
-389,Shine On You Crazy Diamond,Gilmour – Waters – Wright (Pink Floyd),Shine On,,4244,389,,,,,,,,
+389,Shine On You Crazy Diamond,Gilmour – Waters – Wright (Pink Floyd),Shine On,,4244:4534,389,,,,,,,,
 183,Radar Love,Golden Earring,,,2320,183,,,,,,,,
 713,Early Morning Rain,Gordon Lightfoot (Peter Paul & Mary),,,,713,,TRUE,,,,1966,,
 6,Alice D. Millionaire,Grateful Dead,,,205:1551:3937,6,TRUE,,,,,1966,,
@@ -255,6 +255,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,cover_jg,c
 551,Sawmill,Horace Whatley (Mel Tillis),,,,551,,TRUE,,,,1970,,
 152,Morning in Marin,Howard Wales & Jerry Garcia,,,3551,152,,,,,,,,
 483,Easy Answers,Hunter – Bralove – Weir – Welnick – Wasserman (Grateful Dead),,,,483,TRUE,,,,,1993,,
+786,Locomotive Breath,Ian Anderson (Jethro Tull),,,4532,786,,,,,,,https://en.wikipedia.org/wiki/Locomotive_Breath,
 781,Aqualung,Ian Anderson & Jennie Anderson (Jethro Tull),,,,781,,,,,,,https://en.wikipedia.org/wiki/Aqualung_(song),
 292,Here Comes The Hotstepper,Ini Kamoze,,,,292,,,,,,,,
 336,Cheek to Cheek,Irving Berlin,,,,336,,,,,,,,
@@ -577,7 +578,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,cover_jg,c
 546,Rosemary,Robert Hunter & Jerry Garcia (Grateful Dead),,,,546,TRUE,,,,,1968,,
 190,Row Jimmy,Robert Hunter & Jerry Garcia (Grateful Dead),,,26:673:759:795:875:992:1057:1217:1227:1304:1436:1534:1725:1765:2014:2245:2393:2453:2533:2609:2712:2798:2873:2996:3039:3252:3354:3598:3713:3851:3940:4076:4136:4287:4398,190,TRUE,,,,,1973,,
 195,Scarlet Begonias,Robert Hunter & Jerry Garcia (Grateful Dead),Scarlet,,30:92:114:194:238:249:407:489:553:732:764:833:890:920:970:1054:1236:1488:1494:1584:1609:1854:1906:1965:2057:2067:2207:2446:2508:2559:2612:2664:2829:2885:2959:3034:3147:3202:3363:3519:3644:3689:3807:3938:3990:4030:4058:4134:4207:4309:4341:4365:4378:4481:4513,195,TRUE,,,,,1974,,
-196,Shakedown Street,Robert Hunter & Jerry Garcia (Grateful Dead),Shakedown,,8:29:62:117:167:232:315:343:344:425:455:495:530:569:593:613:692:734:860:899:927:959:1029:1121:1135:1250:1331:1503:1523:1651:1708:1737:1825:1922:1958:2080:2250:2271:2308:2406:2432:2496:2579:2654:2700:2753:2781:2813:2838:2874:2943:2965:3014:3029:3141:3249:3260:3365:3391:3443:3444:3453:3499:3507:3543:3583:3634:3671:3748:3826:3883:3929:4027:4066:4141:4179:4240:4277:4347:4397:4433,196,TRUE,,,,,1978,,
+196,Shakedown Street,Robert Hunter & Jerry Garcia (Grateful Dead),Shakedown,,8:29:62:117:167:232:315:343:344:425:455:495:530:569:593:613:692:734:860:899:927:959:1029:1121:1135:1250:1331:1503:1523:1651:1708:1737:1825:1922:1958:2080:2250:2271:2308:2406:2432:2496:2579:2654:2700:2753:2781:2813:2838:2874:2943:2965:3014:3029:3141:3249:3260:3365:3391:3443:3444:3453:3499:3507:3543:3583:3634:3671:3748:3826:3883:3929:4027:4066:4141:4179:4240:4277:4347:4397:4433:4528,196,TRUE,,,,,1978,,
 403,Ship of Fools,Robert Hunter & Jerry Garcia (Grateful Dead),,,3778,403,TRUE,,,,,1974,,
 207,Stagger Lee,Robert Hunter & Jerry Garcia (Grateful Dead),,,212:3160:3771:4444,207,TRUE,,,,,1978,,
 208,Standing on the Moon,Robert Hunter & Jerry Garcia (Grateful Dead),,,736:2418:3564:4461,208,TRUE,,,,,1989,,SOTM
@@ -596,7 +597,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,cover_jg,c
 265,Wharf Rat,Robert Hunter & Jerry Garcia (Grateful Dead),,,298:638:1355:1678:1831:2301:3586:3760:3865:3950:4138:4284,265,TRUE,,,,,1971,,
 587,What's Become of the Baby,Robert Hunter & Jerry Garcia (Grateful Dead),,,,587,TRUE,,,,,1969,,
 588,When Push Comes to Shove,Robert Hunter & Jerry Garcia (Grateful Dead),,,,588,TRUE,,,,,1986,,
-40,Cats Under the Stars,Robert Hunter & Jerry Garcia (Jerry Garcia Band),Cats,,2318:2332:2410:2461:2524:2606:2649:2777:2796:2843:2901:2903:2905:3003:3065:3106:3210:3296:3385:3464:3590:3738:3789:3874:3970:4050:4151:4186:4259:4413:4457,40,TRUE,,,,,1977,,
+40,Cats Under the Stars,Robert Hunter & Jerry Garcia (Jerry Garcia Band),Cats,,2318:2332:2410:2461:2524:2606:2649:2777:2796:2843:2901:2903:2905:3003:3065:3106:3210:3296:3385:3464:3590:3738:3789:3874:3970:4050:4151:4186:4259:4413:4457:4531,40,TRUE,,,,,1977,,
 147,Mission in the Rain,Robert Hunter & Jerry Garcia (Jerry Garcia Band),Mission,,217:703:1138:1840:2581:3335:3559:3749:3829:4173:4317,147,TRUE,,,,,1976,,
 153,Mountains of the Moon,Robert Hunter & Jerry Garcia (Jerry Garcia Band),,,177,153,TRUE,,,,,1968,,MOTM
 185,Reuben and Cherise,Robert Hunter & Jerry Garcia (Jerry Garcia Band),,,50:126:183:286:395:437:527:626:843:904:1025:1119:1132:1221:1341:1409:1465:1592:1655:1732:1865:1885:1985:2114:2147:2259:2305:2347:2375:2469:2487:2625:2720:2818:2825:2932:3017:3057:3118:3200:3338:3406:3466:3567:3655:3809:3844:3909:3989:4094:4157:4273:4351:4422:4428:4499,185,TRUE,,,,Rubin and Cerise,1991,,R&C
@@ -605,7 +606,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,cover_jg,c
 75,Fire on the Mountain,Robert Hunter & Mickey Hart (Grateful Dead),Fire,,31:93:115:195:239:288:408:490:555:765:834:891:921:971:1055:1202:1237:1490:1585:1629:1750:1855:1908:1968:2060:2072:2168:2448:2510:2614:2888:2963:3036:3148:3205:3314:3520:3631:3645:3690:3842:3939:4000:4017:4053:4140:4211:4252:4318:4379:4519,75,TRUE,,,,,1977,,
 521,L'Alhambra,Robert Hunter & Mickey Hart (Grateful Dead),,,,521,TRUE,,,,,,,
 722,Clementine,Robert Hunter & Phil Lesh (Grateful Dead),,,,722,TRUE,,,,,1968,,
-229,The Eleven,Robert Hunter & Phil Lesh (Grateful Dead),Eleven,,17:46:64:181:294:347:384:457:478:516:588:655:678:689:784:800:872:955:1064:1144:1209:1230:1315:1416:1492:1522:1632:1824:1888:2070:2128:2177:2310:2491:2645:2674:2732:2812:2821:2863:3007:3077:3100:3309:3379:3601:3686:3892:3969:4010:4202:4306:4420,229,TRUE,,,,,1968,,
+229,The Eleven,Robert Hunter & Phil Lesh (Grateful Dead),Eleven,,17:46:64:181:294:347:384:457:478:516:588:655:678:689:784:800:872:955:1064:1144:1209:1230:1315:1416:1492:1522:1632:1824:1888:2070:2128:2177:2310:2491:2645:2674:2732:2812:2821:2863:3007:3077:3100:3309:3379:3601:3686:3892:3969:4010:4202:4306:4420:4530,229,TRUE,,,,,1968,,
 584,Wave to the Wind,Robert Hunter & Phil Lesh (Grateful Dead),,,,584,TRUE,,,,,1992,,
 585,Way to Go Home,Robert Hunter & Vince Welnick (Grateful Dead),,,,585,TRUE,,,,,1992,,
 78,Franklin's Tower,"Robert Hunter, Bill Kreutzmann, Jerry Garcia (Grateful Dead)",Frank's,,15:83:146:176:258:318:415:446:485:630:713:820:868:923:995:1032:1106:1149:1338:1452:1871:1910:1991:2016:2077:2242:2413:2438:2592:2693:2734:2823:2928:2992:3298:3337:3421:3511:3562:3603:3688:3858:4081:4219:4407:4468,78,TRUE,,,,,1975,,
@@ -618,7 +619,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,cover_jg,c
 59,Dark Star,"Robert Hunter, Jerry Garcia, Phil Lesh, Bill Kreutzmann, Mickey Hart, ""Pigpen"" Ron McKernan, Bob Weir (Grateful Dead)",,,113:156:158:310:355:783:1365:1692:1821:1924:2044:2156:2159:2830:2897:3787:4035:4471,59,TRUE,,,,,1967,,
 144,Mason's Children,"Robert Hunter, Jerry Garcia, Phil Lesh, Bob Weir (Grateful Dead)",,,154:1164:3154,144,TRUE,,,,,1969,,
 79,Friend of the Devil,"Robert Hunter, John ""Marmaduke"" Dawson, Jerry Garcia (Grateful Dead)",FOTD,,55:960:1165:1191:3152:3756:4337:4466,79,TRUE,,,,,1970,,
-211,St. Stephen,"Robert Hunter, Phil Lesh, Jerry Garcia (Grateful Dead)",St S,,16:45:88:94:180:292:346:427:451:471:541:599:653:688:691:767:769:785:853:871:884:900:947:1012:1014:1065:1168:1207:1269:1271:1314:1345:1413:1491:1512:1517:1747:1822:2054:2254:2382:2394:2551:2828:2933:2985:3006:3008:3049:3169:3197:3266:3359:3400:3467:3486:3553:3639:3677:3849:3992:4037:4149:4270:4419:4421:4449,211,TRUE,,,,Saint Steven,1968,,
+211,St. Stephen,"Robert Hunter, Phil Lesh, Jerry Garcia (Grateful Dead)",St S,,16:45:88:94:180:292:346:427:451:471:541:599:653:688:691:767:769:785:853:871:884:900:947:1012:1014:1065:1168:1207:1269:1271:1314:1345:1413:1491:1512:1517:1747:1822:2054:2254:2382:2394:2551:2828:2933:2985:3006:3008:3049:3169:3197:3266:3359:3400:3467:3486:3553:3639:3677:3849:3992:4037:4149:4270:4419:4421:4449:4529,211,TRUE,,,,Saint Steven,1968,,
 299,Samba in the Rain,"Robert Hunter, Phil Lesh, Jerry Garcia (Jerry Garcia Band)",Samba,,,299,TRUE,,,,,1994,,
 11,At a Siding,"Robert Hunter, Phil Lesh, Mickey Hart, Jim McPherson (Grateful Dead) (Grateful Dead)",Siding,Terrapin,39:71:123:280:333:377:508:580:850:978:1112:1170:1197:1282:1298:1326:1376:1476:1530:1675:1815:1931:2196:2282:2362:2544:2746:2835:3072:3136:3235:3342:3476:3783:3997:4073:4197:4387,11,TRUE,,,,,1977,,
 132,Lemon Song,Robert Johnson (Led Zeppelin),,,1045,132,,,,,,,,
