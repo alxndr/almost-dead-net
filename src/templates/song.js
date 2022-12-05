@@ -234,12 +234,12 @@ export default function Song({data: {
   const performancesColumns = useMemo(
     () => [
       {accessor: 'show', Header: 'show', sortType: (a,b) => new Date(a.values.show).getTime() - new Date(b.values.show).getTime()}, // TODO memoize this fn
+      {accessor: 'whichSet', Header: 'where', sortType: sortSets},
       {accessor: 'prior', Header: 'prior song'}, // TODO Filter out the/a
       {accessor: 'segue_prior', Header: '>'},
       {accessor: 'title', disableSortBy: true},
       {accessor: 'segue_after', Header: '>'},
       {accessor: 'after', Header: 'following song'}, // TODO Filter out the/a
-      {accessor: 'whichSet', Header: 'where', sortType: sortSets},
     ],
     []
   )
