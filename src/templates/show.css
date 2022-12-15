@@ -13,17 +13,19 @@
 
 .showpage__setlist {
   order: 2;
-  min-width: 15em;
-  max-width: 35em;
+  flex-basis: 100%;
+  min-width: 20em;
+  max-width: 40em;
 }
 
 .showpage__leadimage {
   order: 5;
+  margin: 1em;
 }
 
 .showpage__recordings {
   order: 4;
-  text-align:right;
+  text-align: center;
   width: 380px; /* width of Archive.org iframe */
 }
 .showpage__recordings ul {
