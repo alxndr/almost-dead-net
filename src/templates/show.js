@@ -236,30 +236,30 @@ export default function Show({
   const linksArray = links.split(/\s+/)
 
   const guestsDescription = showGuests.length
-    ? `with ${showGuests.map(({name}) => name).join(' and ')}`
-    : ''
-  const seoDescription = `Setlist and recordings of Joe Russo's Almost Dead ${guestsDescription} ${date} at ${event ? `${event}, ` : ``}${venue.name} (${venue.location}) including song segues, teases, and show notes`
+    ? `with ${showGuests.map(({name}) => name).join(' and ')} `
+    : ' '
+  const seoDescription = `Setlist and recordings of Joe Russo's Almost Dead ${guestsDescription}${date} at ${event ? `${event}, ` : ``}${venue.name} (${venue.location}) including song segues, teases, and show notes`
   const imageSrcs = filter(isImage)(linksArray)
 
   const showId = Number(show.id)
-  return <Layout className="showpage">
+  return <Layout className="showpage" itemscope itemtype="http://schema.org/MusicEvent">
     <SEO
-      title={`JRAD ${tagline}`}
+      title={`JRAD ${guestsDescription}${tagline}`}
       description={seoDescription}
       image={imageSrcs.length && imageSrcs[0]}
     />
 
-    <h1 className="showpage__pagetitle">
-      <span className="showpage__pagetitle--band">Joe Russo's Almost Dead</span>
+    <h1 className="showpage__pagetitle" itemprop="name">
+      <span className="showpage__pagetitle--band" itemprop="performer">Joe Russo's Almost Dead</span>
       {' '}
-      <span className="showpage__pagetitle--date">{date}</span>
+      <span className="showpage__pagetitle--date" itemprop="">{date}</span>
       {' '}
-      {event && <span className="showpage__pagetitle--event">{event}</span>}
+      {event && <span className="showpage__pagetitle--event" itemprop="superEvent">{event}</span>}
       {' '}
-      {venue && <span className="showpage__pagetitle--venue">
+      {venue && <span className="showpage__pagetitle--venue" itemprop="location" itemscope itemtype="https://schema.org/Place">
         {' '}
         <Link to={`/venue/${venue.id}-${slugify(venue.name)}`}>
-          {venue.name}, {venue.location}
+          <span itemprop="name">{venue.name}</span>, {venue.location}
         </Link>
       </span>}
     </h1>
