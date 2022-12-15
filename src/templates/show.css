@@ -6,20 +6,25 @@
 }
 
 .showpage > main > section {
-  flex: 2 1 33%; /* child rule for flex context of parent */
+  flex: 1 1 400px; /* child rule for flex context of parent */
   display: flex; /* establish flex context for child elements */
   flex-direction: column; /* customize flex behavior of child elements */
 }
 
 .showpage__setlist {
+  order: 2;
   min-width: 15em;
   max-width: 35em;
 }
 
+.showpage__leadimage {
+  order: 5;
+}
+
 .showpage__recordings {
+  order: 4;
   text-align:right;
-  flex-grow: 1;
-  max-width: 400px;
+  width: 380px; /* width of Archive.org iframe */
 }
 .showpage__recordings ul {
   list-style: none;
@@ -50,13 +55,31 @@
   box-shadow: 0.1em 0.1em 0.5em rgba(0,0,0, 0.5);
 }
 
+.showpage__corrections {
+  order: 3;
+  display: flex; /* establish flex context for child elements */
+  flex-direction: column; /* customize flex behavior of child elements */
+  margin-bottom: 3em;
+  font-size: 0.8em;
+  text-align: center;
+}
+.showpage__corrections > :first-child {
+  font-weight: bold;
+  font-style: italic;
+}
+.showpage__corrections a {
+  text-decoration: underline;
+}
+
 .showpage__nav {
-  display: flex;
+  order: 6;
   width: 100%;
-  justify-content: space-between;
   margin-bottom: 0.5em;
+  display: flex;
+  justify-content: space-between;
 }
 .showpage__nav a {
+  margin-top: 1em;
   padding: 0.5em;
   border-radius: 1em;
 }
