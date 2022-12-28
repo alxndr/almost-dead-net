@@ -282,7 +282,7 @@ export default function Show({
       {encores.length && encores}
       <p className="showpage__corrections">
         <span>Something wrong or missing?</span>
-        <span>Please <a href="https://lot.almost-dead.net/t/setlist-corrections/17" target="_blank">submit a correction</a>!</span>
+        <span>Please <a href="https://lot.almost-dead.net/t/setlist-corrections/17" target="_blank">let us know</a>!</span>
       </p>
     </section>
     {imageSrcs.length
