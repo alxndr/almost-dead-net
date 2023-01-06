@@ -1395,8 +1395,8 @@ id,within,performance_id,song_name,notes,by,song_id
 1406,Lady With a Fan,4521,Part II: Let It Grow,,,277
 1407,Dancing in the Streets,4526,Bathtub Gin,,MB?,284
 1408,St. Stephen,4529,The Eleven,jam,,229
-1409,Cats Under the Stars,4531,The Eleven,,SM? then SB,229
-1410,Cats Under the Stars,4531,Feel Like a Stranger,,,74
+1409,Cats Under the Stars,4531,The Eleven,,SM; SB,229
+1410,Cats Under the Stars,4531,Feel Like a Stranger,,band,74
 1411,The Other One,4533,Locomotive Breath,...or was it Aqualung,,786
 1412,St. Stephen,4529,Whipping Post,,,388
 1413,Playing in the Band,4540,No Quarter,jam,,167
@@ -1424,3 +1424,5 @@ id,within,performance_id,song_name,notes,by,song_id
 1435,Fire on the Mountain,4519,Estimated Prophet,,TH,69
 1436,Fire on the Mountain,4519,Where's Sly?,,"MB, etc",426
 1437,Terrapin Station,4522,Tennessee Jed,,,221
+1438,Dancing in the Streets,4526,Body Movin',,TH,789
+1439,The Eleven,4530,Terrapin Station,,band,224
