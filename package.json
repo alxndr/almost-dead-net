@@ -13,7 +13,7 @@
     "clean": "gatsby clean",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "cy:run:single": "cypress run --spec cypress/e2e/${SPEC:?specify specfile to run, as SPEC var (no .js)}.js",
+    "cy:run:single": "cypress run --spec cypress/e2e/${SPEC:?specify specfile to run, as SPEC var (no .cy.js)}.cy.js",
     "predata:cp": "export N=${N:?how many files to copy}",
     "data:cp": "ls -tl ~/Downloads/*.csv | head -$N | awk '{print $9}' | xargs -pJ% cp % src/data/csv",
     "postdata:cp": "dos2unix src/data/csv/*",
