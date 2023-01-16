@@ -283,22 +283,6 @@ const allShows = [ // TODO replace with proper Cypress fixtures... hopefully hoo
    {id: 282, date: '12/4/2022', venue: 'Riviera'},
 ]
 
-function validate(show) {
-  const {id, date, venue} = allShows[show.id - 1]
-  it(`#${show.id} is ${date} @ ${venue}`, () => {
-    cy.visit(`/show/${id}`)
-    cy.get('main')
-      .find('h1')
-      .as('h1')
-    cy.get('@h1')
-      .contains(date)
-    cy.get('@h1')
-      .contains(venue)
-    cy.contains('Video unavailable')
-      .should('not.exist')
-  })
-}
-
 const isSampling = !Cypress.env('VALIDATE_ALL')
 
 describe('data validation', () => {
@@ -306,6 +290,20 @@ describe('data validation', () => {
     const timestamp = String(Date.now());
     allShows
       .filter(({id}) => isSampling ? timestamp.includes(id) : true)
-      .forEach(validate)
+      .forEach((show) => {
+        const {id, date, venue} = show
+        it(`#${show.id} is ${date} @ ${venue}`, () => {
+          cy.visit(`/show/${id}`)
+          cy.get('main')
+            .find('h1')
+            .as('h1')
+          cy.get('@h1')
+            .contains(date)
+          cy.get('@h1')
+            .contains(venue)
+          cy.contains('Video unavailable')
+            .should('not.exist')
+        })
+      })
   })
 })
