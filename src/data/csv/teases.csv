@@ -295,15 +295,14 @@ id,within,performance_id,song_name,notes,by,song_id
 63,Shakedown Street,2654,Eyes of the World,"""73 Changes"" ending jam??",,71
 65,Shakedown Street,2654,Stronger Than Dirt,,,210
 64,Not Fade Away,2659,Turn On Your Lovelight,,,252
-66,Man Smart (Woman Smarter),2661,Iko Iko,,,111
+66,Man Smart (Woman Smarter),2661,Iko Iko,headfake...,SM,111
 67,Slipknot!,2663,Terrapin Station,,,224
 68,Slipknot!,2663,Foam,,,289
-69,Scarlet Begonias,2664,Terrapin Station,,,224
-70,Jam,2665,Terrapin Station,,,224
-71,Jam,2670,Good Lovin',,,87
-72,Tennessee Jed,2671,[unknown],"""Revelry""?",,288
-73,Jam,2673,Swingtown,,,290
-74,Jam,2673,Come Together,,,291
+69,Scarlet Begonias,2664,Terrapin Station,,"SM, MB, TH",224
+71,Yazoo Street Scandal,2669,Good Lovin',,,87
+72,Tennessee Jed,2671,Reveille,?,SM,407
+73,Playing in the Band,2672,Swingtown,,KJ,290
+74,Playing in the Band,2672,Come Together,,KJ,291
 75,Feel Like a Stranger,2675,Here Comes The Hotstepper,,,292
 76,Morning Dew,2676,Baba O'Riley,,,293
 77,Part II: Let It Grow,2679,Ten Years Gone,,,295
@@ -1426,3 +1425,39 @@ id,within,performance_id,song_name,notes,by,song_id
 1437,Terrapin Station,4522,Tennessee Jed,,,221
 1438,Dancing in the Streets,4526,Body Movin',,TH,789
 1439,The Eleven,4530,Terrapin Station,,band,224
+1440,Sugaree,2447,I'm the Only One,,TH?,790
+1441,Sugaree,2447,Fire on the Mountain,,TH,75
+1442,Good Lovin',2449,Fire on the Mountain,jam,,75
+1443,They Love Each Other,2450,Shakedown Street,,band,196
+1444,Row Jimmy,2453,Playing in the Band,,TH,176
+1445,Row Jimmy,2453,Terrapin Station,,TH,224
+1446,I Need A Miracle,2457,Dear Mr Fantasy,,TH,475
+1447,The Music Never Stopped,2460,Fire on the Mountain,,TH,75
+1448,Cats Under the Stars,2461,Hey Bulldog,jam,,103
+1449,Going Down The Road Feeling Bad,2462,Mountain Jam,,TH then MB,296
+1450,We Bid You Goodnight,2463,Cold Rain and Snow,jam,,49
+1451,I Know You Rider,2466,Morning Dew,,TH,151
+1452,Truckin',2470,Reuben and Cherise,,TH,185
+1453,Greatest Story Ever Told,2473,She Does It Right,first instance of a song being teased before being debuted later in the same show?,SM,197
+1454,Mr. Charlie,2476,Rainy Day Women #12 & 35,jam,,355
+1455,Dancing in the Streets,2480,Don't Stop 'Til You Get Enough,jam,,339
+1456,Dancing in the Streets,2480,Money for Nothing,jam,,445
+1457,Cassidy,2484,Going Down The Road Feeling Bad,headfake?,band,84
+1458,Cassidy,2484,New Speedway Boogie,,band,165
+1459,Here Comes Sunshine,2485,Fearless,,MB,333
+1460,Not Fade Away,2486,I Want Candy,jam,,305
+1461,Not Fade Away,2486,The Simpsons theme,,SM,438
+1462,Not Fade Away,2486,Throwing Stones,,band,245
+1463,Reuben and Cherise,2487,Terrapin Station,,band,224
+1464,Reuben and Cherise,2487,[unknown],,,288
+1465,Lost Sailor,2502,The World is a Ghetto,jam,,791
+1466,Saint of Circumstance,2503,"Rocket Man (I Think It's Going to Be a Long, Long Time)",,MB,792
+1467,Greatest Story Ever Told,2505,Part II: Let It Grow,jam,,277
+1468,Fire on the Mountain,2510,Saturday Night's Alright for Fighting,,MB,317
+1469,The Music Never Stopped,2511,Fire on the Mountain,jam,,75
+1470,Uncle John's Band,2514,9x9,,MB,3
+1471,Cumberland Blues,2532,Dark Star,,MB,59
+1472,Slipknot!,2663,In Memory of Elizabeth Reed,jam,,116
+1473,Cumberland Blues,3270,L.A. Woman,,MB,129
+1474,Good Lovin',3274,La Bamba,,MB,659
+1475,Bird Song,3279,Bertha,,TH,18
