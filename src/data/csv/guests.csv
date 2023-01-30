@@ -5,7 +5,7 @@ id,name,shows,instrument,sortVal
 37,Andrew Barr,228:229,drums,
 35,Ben Perowsky,199,drums,
 21,Billy Martin,108,percussion,
-24,Bob Weir,85:118,guitar; vocals,
+24,Bob Weir,85:118:283,guitar; vocals,
 38,Brad Barr,228:229,guitar; vocals,
 3,Chris Harford,83:164:177:215:219,guitar; vocals,
 29,Chris Robinson,155,guitar; vocals,
@@ -35,7 +35,7 @@ id,name,shows,instrument,sortVal
 1,Phil Lesh,10:11:12,bass,
 8,Raymond Mason,59:69:95:224,trombone; bells; flute,
 31,Red Baraat,176,full band,Red Baraat
-7,Stuart Bogie,59:64:69:95:103:105:107:108:123:138:187:201:202:204:221:224:246:260:262:272:281:282,tenor sax; flute; clarinet; bass harmonica; mouth harp; bells,
+7,Stuart Bogie,59:64:69:95:103:105:107:108:123:138:187:201:202:204:221:224:246:260:262:272:281:282:283,tenor sax; flute; clarinet; bass harmonica; mouth harp; bells,
 30,Tyrone Cotton,175,guitar; vocals,
 40,Ila Benevento,260,vocals,
 41,Paul Hoffman,268,"mandolin, vocals",

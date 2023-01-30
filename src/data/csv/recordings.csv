@@ -428,7 +428,6 @@ id,show,date,type,url
 386,192,5/31/19,video,https://www.youtube.com/watch?v=5k2xdtQ09fI
 296,193,6/1/19,soundboard,https://archive.org/details/jrad2019-06-01.cmc621.cmc64.sbd.matrix.flac24
 297,193,6/1/19,audience,https://archive.org/details/jrad2019-06-01.Nak300.CP4.flac24
-395,193,6/1/19,video,https://www.youtube.com/watch?v=WTSnTf-nDng
 298,194,6/2/19,soundboard,https://archive.org/details/jrad2019-06-02.cmc64.sbd.matrix.flac16
 299,194,6/2/19,audience,https://archive.org/details/jrad2019-06-02
 300,195,6/14/19,audience,https://archive.org/details/jrad2019-06-14
@@ -660,3 +659,9 @@ id,show,date,type,url
 706,229,8/15/21,soundboard,https://archive.org/details/jrad2021-08-15.cmc621.cmc64.sbd.matrix.flac16
 707,280,12/2/22,soundboard,https://archive.org/details/jrad2022-12-02.cmc621.cmc64.sbd.matrix.flac16
 708,281,12/3/22,soundboard,https://archive.org/details/jrad2022-12-03.cmc621.cmc64.sbd.matrix.flac16
+709,277,10/30/22,audience,https://archive.org/details/jrad2022-10-30
+710,283,1/26/23,audience,https://archive.org/details/jrad2023-01-26
+711,283,1/26/23,audience,https://archive.org/details/jrad2023-01-26.Flac16
+712,284,1/27/23,audience,https://archive.org/details/jrad2023-01-27
+713,284,1/27/23,audience,https://archive.org/details/jrad2023-01-27.BSC1.AKG463
+714,284,1/27/23,audience,http://bt.etree.org/details.php?id=618001
