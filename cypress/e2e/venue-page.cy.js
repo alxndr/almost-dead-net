@@ -12,12 +12,12 @@ describe('Venue page', () => {
 
   it('includes show count', () => {
     cy.get('main')
-      .contains('29 Shows')
+      .contains('30 Shows')
     cy.get('main')
       .find('a')
       .as('links')
       .contains('1/26/2013')
     cy.get('@links')
-      .contains('11/25/2019')
+      .contains('1/26/2023')
   })
 })
