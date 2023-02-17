@@ -1474,12 +1474,12 @@ id,within,performance_id,song_name,notes,by,song_id
 1486,Lady With a Fan,4564,Eleanor Rigby,...or is it in Station?,,341
 1487,Black Peter,4570,Dark Star,,,59
 1488,The Eleven,4571,There Is a Mountain,,,237
-1489,The Eleven,4571,Fire on the Mountain,,,75
+1489,The Eleven,4571,Scarlet Begonias,,,195
 1490,Cats Under the Stars,4574,Fire on the Mountain,,,75
 1491,Cats Under the Stars,4574,My Name Is Mud,,,795
 1492,Cats Under the Stars,4574,China Cat Sunflower,,,44
 1493,Cats Under the Stars,4574,One More Saturday Night,,,169
-1494,Throwing Stones,4577,[unknown],,,288
+1494,Throwing Stones,4577,Tomorrow Never Knows,,MB,577
 1495,Tennessee Jed,4553,The Wheel,,,241
 1496,Hard To Handle,4589,Hey Bulldog,,,103
 1497,Slipknot!,4582,Casey Jones,,,37
@@ -1503,3 +1503,11 @@ id,within,performance_id,song_name,notes,by,song_id
 1515,Viola Lee Blues,4560,Moby Dick,,JR,149
 1516,Viola Lee Blues,4560,Here Comes Sunshine,,TH,99
 1517,The Other One,4562,Morning in Marin,jam,,152
+1518,Scarlet Begonias,4567,Big Railroad Blues,,TH,19
+1519,Black Peter,4570,Wharf Rat,,TH,265
+1520,The Eleven,4571,Morning Dew,,TH,151
+1521,Cats Under the Stars,4574,Bathtub Gin,,,284
+1522,Cats Under the Stars,4574,Fame,,band,72
+1523,Feel Like a Stranger,4575,Viola Lee Blues,,MB,258
+1524,Feel Like a Stranger,4575,Part II: Let It Grow,,TH,277
+1525,Not Fade Away,4579,Going Down The Road Feeling Bad,,TH,84
