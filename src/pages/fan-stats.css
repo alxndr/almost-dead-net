@@ -9,6 +9,10 @@
   font-family: 'Shadows Into Light', fantasy;
 }
 
+.fanstatspage ol {
+  columns: 2;
+}
+
 .fanstatspage ol ::marker {
   font-size: 0.8em;
 }
