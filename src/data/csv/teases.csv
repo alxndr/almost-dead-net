@@ -1462,7 +1462,7 @@ id,within,performance_id,song_name,notes,by,song_id
 1474,Good Lovin',3274,La Bamba,,MB,659
 1475,Bird Song,3279,Bertha,,TH,18
 1476,Feel Like a Stranger,2492,Passin' Me By,,MB,793
-1477,Til the Morning Comes,4554,Day Tripper,,,287
+1477,Tennessee Jed,4553,Day Tripper,,TH,287
 1478,Til the Morning Comes,4554,Cats Under the Stars,,,40
 1479,Truckin',4559,Shakedown Street,,,196
 1480,Truckin',4559,Born Cross Eyed,,,27
@@ -1495,3 +1495,11 @@ id,within,performance_id,song_name,notes,by,song_id
 1507,Wharf Rat,4606,Big River,,,20
 1508,Dancing in the Streets,4611,West LA Fadeaway,,,264
 1509,Going Down The Road Feeling Bad,4614,We Bid You Goodnight,,,262
+1510,Tennessee Jed,4553,The Other One,in intro,,235
+1511,Tennessee Jed,4553,Part II: Let It Grow,,band,277
+1512,Tennessee Jed,4553,Loose Lucy,,band,138
+1513,Shakedown Street,4558,Swimming at Night,,TH,768
+1514,Viola Lee Blues,4560,China Cat Sunflower,,MB,44
+1515,Viola Lee Blues,4560,Moby Dick,,JR,149
+1516,Viola Lee Blues,4560,Here Comes Sunshine,,TH,99
+1517,The Other One,4562,Morning in Marin,jam,,152
