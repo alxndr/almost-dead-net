@@ -39,7 +39,7 @@ export default function Index() {
         <li className="homepage__links-offsite">
           offsite
           <ul>
-            <li><a className="icon mastodon" href="https://shakedown.social/@AlmostDeadNet" title="Mastodon: @AlmostDeadNet@linernotes.club" rel="me" target="_blank"><kbd>@AlmostDeadNet@linernotes.club</kbd></a></li>
+            <li><a className="icon mastodon" href="https://shakedown.social/@AlmostDeadNet" title="Mastodon: @AlmostDeadNet@shakedown.social" rel="me" target="_blank"><kbd>@AlmostDeadNet@shakedown.social</kbd></a></li>
             <li><a className="icon twitter" href="https://twitter.com/AlmostDeadNet" title="Twitter: @AlmostDeadNet" target="_blank"><kbd>@AlmostDeadNet</kbd></a></li>
             <li><a className="icon github" href="https://github.com/alxndr/almost-dead-net" title="code on GitHub" target="_blank"><kbd>alxndr/almost-dead-net</kbd></a></li>
           </ul>
