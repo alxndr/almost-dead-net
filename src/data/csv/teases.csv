@@ -1482,18 +1482,17 @@ id,within,performance_id,song_name,notes,by,song_id
 1494,Throwing Stones,4577,Tomorrow Never Knows,,MB,577
 1495,Tennessee Jed,4553,The Wheel,,,241
 1496,Hard To Handle,4589,Hey Bulldog,,,103
-1497,Slipknot!,4582,Casey Jones,,,37
+1497,Slipknot!,4582,Casey Jones,,band,37
 1498,Playing in the Band,4587,Days Between,,,474
 1499,Reuben and Cherise,4588,Hard To Handle,,,93
 1500,Eyes of the World,4590,Brown-Eyed Women,,,32
-1501,Dancing in the Streets,4611,New Speedway Boogie,tease & jam,,165
-1502,Saint of Circumstance,4598,Part II: Let It Grow,jam,,277
-1503,St. Stephen,4599,Within You Without You,,,796
+1502,Saint of Circumstance,4598,Part II: Let It Grow,jam,band,277
+1503,St. Stephen,4599,Within You Without You,,TH?,796
 1504,St. Stephen,4599,Dazed & Confused,jam,,779
-1505,King Solomon's Marbles,4603,Tom's Diner,,,347
+1505,King Solomon's Marbles,4603,Tom's Diner,,band,347
 1506,Wharf Rat,4606,Tennessee Jed,,,221
 1507,Wharf Rat,4606,Big River,,,20
-1508,Dancing in the Streets,4611,West LA Fadeaway,,,264
+1508,Dancing in the Streets,4618,West LA Fadeaway,,,264
 1509,Going Down The Road Feeling Bad,4614,We Bid You Goodnight,,,262
 1510,Tennessee Jed,4553,The Other One,in intro,,235
 1511,Tennessee Jed,4553,Part II: Let It Grow,,band,277
@@ -1511,3 +1510,23 @@ id,within,performance_id,song_name,notes,by,song_id
 1523,Feel Like a Stranger,4575,Viola Lee Blues,,MB,258
 1524,Feel Like a Stranger,4575,Part II: Let It Grow,,TH,277
 1525,Not Fade Away,4579,Going Down The Road Feeling Bad,,TH,84
+1526,Slipknot!,4582,In Memory of Elizabeth Reed,,band,116
+1527,Slipknot!,4582,Here Comes Sunshine,,band,99
+1528,Slipknot!,4582,Things Can Only Get Better,,,797
+1529,Cumberland Blues,4584,China Cat Sunflower,,band,44
+1530,Box of Rain,4586,Wharf Rat,,band,265
+1531,Box of Rain,4586,Playing in the Band,,band,176
+1532,Reuben and Cherise,4588,My Pet Goat,,band,157
+1533,Eyes of the World,4590,Tom Sawyer,,band,798
+1534,Brown-Eyed Women,4591,The Eleven,,,229
+1535,Lost Sailor,4597,My Brother Esau,,band,156
+1536,St. Stephen,4599,Good Lovin',,,87
+1537,King Solomon's Marbles,4603,Tico-Tico no fubá,,band,246
+1538,Wharf Rat,4606,Dark Star,,,59
+1539,Wharf Rat,4606,Row Jimmy,,,190
+1540,Jack A Roe,4607,Big River,headfake?,,20
+1541,Jack A Roe,4607,Marche funèbre,,MB?,799
+1542,Mission in the Rain,4610,Shine On You Crazy Diamond,headfake?,,389
+1543,Dancing in the Streets,4611,Bathtub Gin,,SM,284
+1544,New Speedway Boogie,4616,Love Me Two Times,,band,800
+1545,West LA Fadeaway,4612,Dancing in the Streets,,SM,57
