@@ -46,7 +46,7 @@
     "gatsby-plugin-image": "^1.11.0",
     "gatsby-plugin-loadable-components-ssr": "^4.3.2",
     "gatsby-plugin-react-helmet": "^4.14.0",
-    "gatsby-source-filesystem": "^3.14.0",
+    "gatsby-source-filesystem": "^3.15.0",
     "gatsby-transformer-csv": "^3.15.0",
     "prop-types": "^15.8.1",
     "qrcode": "^1.5.1",
