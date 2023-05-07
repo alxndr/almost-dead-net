@@ -180,6 +180,7 @@ export default function Show({
   }
 
   const {date, event, notes, links, tagline} = show
+  const day = new Date(date).toString().slice(0,3)
 
   const guestsWithSplitShows = guests.map((guestData) => {
     if (!guestData) {
@@ -242,9 +243,9 @@ export default function Show({
   const imageSrcs = filter(isImage)(linksArray)
 
   const showId = Number(show.id)
-  return <Layout className="showpage" itemscope itemtype="http://schema.org/MusicEvent">
+  return <Layout className="showpage" itemScope itemType="http://schema.org/MusicEvent">
     <SEO
-      title={`JRAD ${guestsDescription}${tagline}`}
+      title={`JRAD ${guestsDescription} — ${tagline}`}
       description={seoDescription}
       image={imageSrcs.length && imageSrcs[0]}
     />
@@ -252,7 +253,7 @@ export default function Show({
     <h1 className="showpage__pagetitle" itemprop="name">
       <span className="showpage__pagetitle--band" itemprop="performer">Joe Russo's Almost Dead</span>
       {' '}
-      <span className="showpage__pagetitle--date" itemprop="">{date}</span>
+      <span className="showpage__pagetitle--date" itemprop="">{day} {date}</span>
       {' '}
       {event && <span className="showpage__pagetitle--event" itemprop="superEvent">{event}</span>}
       {' '}
