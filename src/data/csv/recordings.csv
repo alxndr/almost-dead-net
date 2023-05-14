@@ -664,7 +664,7 @@ id,show,date,type,url
 711,283,1/26/23,audience,https://archive.org/details/jrad2023-01-26.Flac16
 712,284,1/27/23,audience,https://archive.org/details/jrad2023-01-27
 713,284,1/27/23,audience,https://archive.org/details/jrad2023-01-27.BSC1.AKG463
-714,284,1/27/23,audience,http://bt.etree.org/details.php?id=618001
+714,284,1/27/23,audience,https://bt.etree.org/details.php?torrentId=618001
 715,285,1/28/23,audience,https://archive.org/details/jrad2023-01-28
 716,285,1/28/23,audience,https://bt.etree.org/details.php?torrentId=618031
 717,285,1/28/23,audience,https://archive.org/details/jrad2023-01-28.AKGCK63.AKGCK62
@@ -688,7 +688,7 @@ id,show,date,type,url
 735,288,3/4/23,audience,https://archive.org/details/jrad2023-03-04.mg20
 736,287,3/3/23,audience,https://archive.org/details/jrad2023-03-03
 737,289,3/5/23,audience,https://archive.org/details/jrad2023-03-05.jraddd
-738,289,3/5/23,audience,http://bt.etree.org/details.php?id=618324
+738,289,3/5/23,audience,https://bt.etree.org/details.php?torrentId=618324
 739,288,3/4/23,audience,https://archive.org/details/jrad2023-03-04.jrad
 740,288,3/4/23,audience,https://bt.etree.org/details.php?torrentId=618316
 741,159,8/2/18,audience,https://archive.org/details/jrad2018-08-02.mk4.60v-pfa.mixpre6.bean.flac1644
@@ -697,8 +697,11 @@ id,show,date,type,url
 744,290,4/30/23,audience,https://archive.org/details/jrad2023-04-30
 745,294,5/10/23,audience,https://archive.org/details/jrad2023-05-10.mg20
 746,294,5/10/23,audience,https://archive.org/details/jrad2023-05-10.m20.flac24
-747,294,5/10/23,audience,http://bt.etree.org/details.php?id=619025
+747,294,5/10/23,audience,https://bt.etree.org/details.php?torrentId=619025
 748,294,5/10/23,audience,https://archive.org/details/jrad2023-05-10.41v
 749,294,5/10/23,audience,https://archive.org/details/jrad2023-05-10.flac.24
 750,295,5/11/23,audience,https://archive.org/details/jrad2023-05-11
 751,297,5/13/23,audience,https://archive.org/details/jrad2023-05-13
+752,297,5/13/23,audience,https://bt.etree.org/details.php?torrentId=619045
+753,297,5/13/23,audience,https://archive.org/details/jrad2023-05-13.Z
+754,297,5/13/23,audience,https://archive.org/details/jrad2023-05-13.akg483.bsc1
