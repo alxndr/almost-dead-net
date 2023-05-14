@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/126-Pier-Six-Pavilion",
+    "result": {"data":{"venuesCsv":{"id":"126","location":"Baltimore, MD","name":"Pier Six Pavilion"},"allShowsCsv":{"nodes":[{"id":"296","date":"5/12/2023"}]}},"pageContext":{"venueId":"126"}},
+    "staticQueryHashes": ["3000541721"]}

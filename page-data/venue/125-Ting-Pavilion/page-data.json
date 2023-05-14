@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/125-Ting-Pavilion",
+    "result": {"data":{"venuesCsv":{"id":"125","location":"Charlottesville, VA","name":"Ting Pavilion"},"allShowsCsv":{"nodes":[{"id":"295","date":"5/11/2023"}]}},"pageContext":{"venueId":"125"}},
+    "staticQueryHashes": ["3000541721"]}
