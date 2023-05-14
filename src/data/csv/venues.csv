@@ -31,6 +31,7 @@ id,name,location,capacity,generic name,tagname
 23,1stBank Center,"Broomfield, CO",6500,,1stBank Center
 25,Waterfront Park,"Burlington, VT",,,Waterfront Park
 27,Music Farm,"Charleston, SC",800,,Music Farm
+125,Ting Pavilion,"Charlottesville, VA",3500,,Ting Pavilion
 31,Concord Music Hall,"Chicago, IL",,,Concord Music Hall
 30,Huntington Bank Pavilion at Northerly Island,"Chicago, IL",,,Huntington Bank Pavilion at Northerly Island
 29,Riviera Theatre,"Chicago, IL",2500,,Riviera Theatre
@@ -76,6 +77,7 @@ id,name,location,capacity,generic name,tagname
 102,Westville Music Bowl,"New Haven, CT",,,Westville Music Bowl
 68,Joy Theater,"New Orleans, LA",1200,,Joy Theater
 67,Mardi Gras World Ballroom,"New Orleans, LA",,,Mardi Gras World Ballroom
+124,The Fillmore,"New Orleans, LA",,TRUE,The Fillmore (New Orleans)
 69,Webster Hall,"New York, NY",1500,,Webster Hall
 110,Promowest Pavilion at Ovation,"Newport, KY",2700 / 7000,,Promowest Pavilion at Ovation
 70,Last Breath Farm,"Norridgewock, ME",,,Last Breath Farm
@@ -114,6 +116,7 @@ id,name,location,capacity,generic name,tagname
 90,Frost Ampitheater,"Stanford, CA",8000,,Frost Ampitheater
 93,Berry Hill Farm,"Summit Point, WV",,,Berry Hill Farm
 94,Landmark Theatre,"Syracuse, NY",3000,TRUE,Landmark Theatre (Syracuse)
+123,Curtis Hixon Waterfront Park,"Tampa, FL",,,Curtis Hixon Waterfront Park
 95,Telluride Town Park,"Telluride, CO",,,Telluride Town Park
 96,Legend Valley,"Thornville, OH",,,Legend Valley
 97,Tower Theater,"Upper Darby, PA",3119,,Tower Theater
@@ -121,5 +124,4 @@ id,name,location,capacity,generic name,tagname
 112,(private show),"Washington, CT",,,(private show)
 99,The 9:30 Club,"Washington, DC",1200,,The 9:30 Club
 98,The Anthem,"Washington, DC",,,The Anthem
-123,Curtis Hixon Waterfront Park,"Tampa, FL",,,Curtis Hixon Waterfront Park
-124,The Fillmore,"New Orleans, LA",,TRUE,The Fillmore (New Orleans)
+126,Pier Six Pavilion,"Baltimore, MD",4340,,Pier Six Pavilion
