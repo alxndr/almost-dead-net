@@ -35,7 +35,7 @@
   },
   "dependencies": {
     "@loadable/babel-plugin": "^5.13.2",
-    "@loadable/component": "^5.15.2",
+    "@loadable/component": "^5.15.3",
     "@loadable/server": "^5.15.2",
     "@loadable/webpack-plugin": "^5.15.2",
     "@sentry/gatsby": "^7.40.0",
