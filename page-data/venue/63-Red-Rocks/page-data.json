@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/63-Red-Rocks",
-    "result": {"data":{"venuesCsv":{"id":"63","location":"Morrison, CO","name":"Red Rocks"},"allShowsCsv":{"nodes":[{"id":"76","date":"7/3/2016"},{"id":"119","date":"8/31/2017"},{"id":"163","date":"8/16/2018"},{"id":"204","date":"8/29/2019"},{"id":"260","date":"6/3/2022"}]}},"pageContext":{"venueId":"63"}},
+    "result": {"data":{"venuesCsv":{"id":"63","location":"Morrison, CO","name":"Red Rocks"},"allShowsCsv":{"nodes":[{"id":"76","date":"7/3/2016"},{"id":"119","date":"8/31/2017"},{"id":"163","date":"8/16/2018"},{"id":"204","date":"8/29/2019"},{"id":"260","date":"6/3/2022"},{"id":"298","date":"6/3/2023"},{"id":"299","date":"6/4/2023"}]}},"pageContext":{"venueId":"63"}},
     "staticQueryHashes": ["3000541721"]}
