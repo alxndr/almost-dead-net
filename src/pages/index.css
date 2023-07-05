@@ -13,10 +13,6 @@
   letter-spacing: 0.05em;
 }
 
-.homepage__forum {
-  order: 2;
-}
-
 .homepage__songfinder {
   order: 1;
   flex-grow: 1;
@@ -60,11 +56,6 @@
 }
 .homepage__links a.icon.github {
   background-image: url(https://i.imgur.com/8Sp9Ndd.png);
-}
-
-.homepage__forum iframe {
-  border-radius: 0.5em;
-  box-shadow: 1px 2px 2px #000000aa;
 }
 
 .homepage__showsbyyear {

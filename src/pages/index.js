@@ -56,12 +56,5 @@ export default function Index() {
       <SongFinder />
     </section>
 
-    <section className="homepage__forum">
-      <h1>
-        <a href="https://lot.almost-dead.net" title="JRAD Forum, aka The Lot"><img src="https://i.imgur.com/Qi2NhJO.png" alt="The Lot (message board / forum)" style={{maxHeight:'1.7em',verticalAlign:'middle'}} /></a>
-      </h1>
-      <LoadableTopicsList />
-    </section>
-
   </Layout>
 }
