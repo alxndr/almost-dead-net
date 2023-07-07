@@ -35,14 +35,15 @@ function ShowRecordings({date, recordings}) {
 }
 
 function Guests({guests}) {
-  if (guests.length) {
-    const lastIndex = guests.length - 1
-    const allButLast = guests.slice(0, lastIndex)
-    const last = guests[lastIndex]
-    return <p>With {allButLast.map((guest) => guest.name).join(', ')}
-      {guests.length > 2 && ',' /* what up Oxford */}
-      {guests.length > 1 && ' and '}
-      {last.name}
+  const howMany = guests.length
+  if (howMany) {
+    const lastIndex = howMany - 1
+    const allButLastGuest = guests.slice(0, lastIndex)
+    const lastGuest = guests[lastIndex]
+    return <p>With {allButLastGuest.map((guest) => guest.name).join(', ')}
+      {howMany >= 3 && ',' /* what up Oxford */}
+      {howMany >= 2 && ' and '}
+      {lastGuest.name}
     </p>
   }
   return false
