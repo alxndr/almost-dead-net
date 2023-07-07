@@ -257,17 +257,17 @@ export default function Show({
       image={imageSrcs.length && imageSrcs[0]}
     />
 
-    <h1 className="showpage__pagetitle" itemprop="name">
-      <span className="showpage__pagetitle--band" itemprop="performer">Joe Russo's Almost Dead</span>
+    <h1 className="showpage__pagetitle" itemProp="name">
+      <span className="showpage__pagetitle--band" itemProp="performer">Joe Russo's Almost Dead</span>
       {' '}
-      <span className="showpage__pagetitle--date" itemprop="">{day} {date}</span>
+      <span className="showpage__pagetitle--date" itemProp="">{day} {date}</span>
       {' '}
-      {event && <span className="showpage__pagetitle--event" itemprop="superEvent">{event}</span>}
+      {event && <span className="showpage__pagetitle--event" itemProp="superEvent">{event}</span>}
       {' '}
-      {venue && <span className="showpage__pagetitle--venue" itemprop="location" itemscope itemtype="https://schema.org/Place">
+      {venue && <span className="showpage__pagetitle--venue" itemProp="location" itemScope itemType="https://schema.org/Place">
         {' '}
         <Link to={`/venue/${venue.id}-${slugify(venue.name)}`}>
-          <span itemprop="name">{venue.name}</span>, {venue.location}
+          <span itemProp="name">{venue.name}</span>, {venue.location}
         </Link>
       </span>}
     </h1>
