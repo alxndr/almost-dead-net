@@ -1,10 +1,11 @@
 [![Almost-Dead.net logo](https://i.imgur.com/q5cBEHG.png)][Almost-Dead.net]
 
 This is the source code for the fan site [Almost-Dead.net].
-It is not officially associated with the band [Joe Russo's Almost Dead].
+(It is not officially associated with the band [Joe Russo's Almost Dead].)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-The website uses the [Gatsby] framework.
+The website uses the [Gatsby] framework (v3).
+
 The forum sub-site [`lot.almost-dead.net`][the-lot] is powered by [Discourse].
 
 
