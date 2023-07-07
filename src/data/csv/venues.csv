@@ -10,9 +10,12 @@ id,name,location,capacity,generic name,tagname
 101,Centennial Olympic Park,"Atlanta, GA",,,Centennial Olympic Park
 6,Tabernacle,"Atlanta, GA",2600,,Tabernacle
 122,The Eastern,"Atlanta, GA",2200,,The Eastern
+131,The Music Box @ Borgata Resort Spa & Casino,"Atlantic City, NJ",,,The Music Box @ Borgata Resort Spa & Casino
 9,Carson Creek Ranch,"Austin, TX",,,Carson Creek Ranch
 8,Moody Theater,"Austin, TX",2750,,Moody Theater
 105,MECU Pavilion,"Baltimore, MD",4600,,MECU Pavilion
+126,Pier Six Pavilion,"Baltimore, MD",4340,,Pier Six Pavilion
+129,Maine Savings Amphitheater,"Bangor, ME",,,Maine Savings Amphitheater
 10,Athletic Club of Bend,"Bend, OR",,,Athletic Club of Bend
 11,Bethel Woods Center for the Arts,"Bethel, NY",,,Bethel Woods Center for the Arts
 12,Mizner Park Amphitheater,"Boca Raton, FL",,,Mizner Park Amphitheater
@@ -49,10 +52,12 @@ id,name,location,capacity,generic name,tagname
 41,Moose Light Blues Tent,"Fredericton, NB (Canada)",,,Moose Light Blues Tent
 42,Founders Brewing Company,"Grand Rapids, MI",,,Founders Brewing Company
 43,Greenfield Community College,"Greenfield, MA",,,Greenfield Community College
+128,Hampton Beach Casino Ballroom,"Hampton Beach, NH",,,Hampton Beach Casino Ballroom
 44,House of Blues,"Houston, TX",2500,TRUE,House of Blues (Houston)
 45,Hunter Mountain,"Hunter, NY",,,Hunter Mountain
 47,Pantheon Theater,Jam Cruise,1600,TRUE,Pantheon Theater (Jam Cruise)
 46,Pool Deck,Jam Cruise,,TRUE,Pool Deck (Jam Cruise)
+132,Stateside Amphitheater at Jay Peak Resort,"Jay, VT",,,Stateside Amphitheater at Jay Peak Resort
 48,Penn's Peak,"Jim Thorpe, PA",,,Penn's Peak
 49,CounterPoint Music Festival,"Kingston Downs, GA",,,CounterPoint Music Festival
 50,Brooklyn Bowl,"Las Vegas, NV",600,TRUE,Brooklyn Bowl (Las Vegas)
@@ -67,7 +72,9 @@ id,name,location,capacity,generic name,tagname
 56,The Sylvee,"Madison, WI",,,The Sylvee
 58,Great Stage Park,"Manchester, TN",,,Great Stage Park
 59,Marshfield Fairgrounds,"Marshfield, MA",,,Marshfield Fairgrounds
+134,Radians Amphitheater @ Memphis Botanical Garden,"Memphis, TN",,,Radians Amphitheater @ Memphis Botanical Garden
 60,Turner Hall Ballroom,"Milwaukee, WI",300,,Turner Hall Ballroom
+127,Oasis Stage,"Milwaukee, WI",,,Oasis Stage
 61,First Avenue,"Minneapolis, MN",1500,TRUE,First Avenue (Minneapolis)
 62,The Wellmont Theater,"Montclair, NJ",2137,,The Wellmont Theater
 63,Red Rocks,"Morrison, CO",9525,,Red Rocks
@@ -85,6 +92,7 @@ id,name,location,capacity,generic name,tagname
 119,Horning's Hideout,"North Plains, OR",,,Horning's Hideout
 115,Cheshire Fairgrounds,"North Swanzey, NH",,,Cheshire Fairgrounds
 71,Fox Theater,"Oakland, CA",2800,TRUE,Fox Theater (Oakland)
+130,Roanoke Island Festival Park,"Outer Banks, NC",,,Roanoke Island Festival Park
 72,Mulberry Mountain,"Ozark, AR",,,Mulberry Mountain
 118,Shorefront Park,"Patchogue, NY",,,Shorefront Park
 109,Brooklyn Bowl,"Philadelphia, PA",1000,TRUE,Brooklyn Bowl (Philadelphia)
@@ -123,5 +131,5 @@ id,name,location,capacity,generic name,tagname
 114,Gerald R. Ford Amphitheater,"Vail, CO",2560,,Gerald R. Ford Amphitheater
 112,(private show),"Washington, CT",,,(private show)
 99,The 9:30 Club,"Washington, DC",1200,,The 9:30 Club
-98,The Anthem,"Washington, DC",,,The Anthem
-126,Pier Six Pavilion,"Baltimore, MD",4340,,Pier Six Pavilion
+98,The Anthem,"Washington, DC",6000,,The Anthem
+133,Windham Mountain,"Windham, NY",,,Windham Mountain
