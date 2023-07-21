@@ -1,6 +1,5 @@
 import React from "react"
 import {Link} from "gatsby"
-import loadable from '@loadable/component'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -10,7 +9,6 @@ import ShowsByYear from '../components/shows_by_year'
 
 import './index.css'
 
-const LoadableTopicsList = loadable(() => import('../components/forum-topics.js'))
 
 export default function Index() {
   return <Layout className="homepage">
@@ -31,10 +29,6 @@ export default function Index() {
         </li>
         <li className="homepage__links__meta">
           <Link to="/about" title="About Almost-Dead.net">About the site</Link>
-          <ul>
-            <li><a href="https://lot.almost-dead.net/t/setlist-corrections/17" title="forum discussion about Setlist corrections">errors?</a></li>
-            <li><a href="https://lot.almost-dead.net/t/suggestions-for-the-main-site/18" title="forum discussion about Suggestions">suggestions?</a></li>
-          </ul>
         </li>
         <li className="homepage__links-offsite">
           offsite
