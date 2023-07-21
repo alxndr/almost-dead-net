@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/131-The-Music-Box-@-Borgata-Resort-Spa-and-Casino",
+    "result": {"data":{"venuesCsv":{"id":"131","location":"Atlantic City, NJ","name":"The Music Box @ Borgata Resort Spa & Casino"},"allShowsCsv":{"nodes":[]}},"pageContext":{"venueId":"131"}},
+    "staticQueryHashes": ["3000541721"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/134-Radians-Amphitheater-@-Memphis-Botanical-Garden",
+    "result": {"data":{"venuesCsv":{"id":"134","location":"Memphis, TN","name":"Radians Amphitheater @ Memphis Botanical Garden"},"allShowsCsv":{"nodes":[]}},"pageContext":{"venueId":"134"}},
+    "staticQueryHashes": ["3000541721"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/133-Windham-Mountain",
+    "result": {"data":{"venuesCsv":{"id":"133","location":"Windham, NY","name":"Windham Mountain"},"allShowsCsv":{"nodes":[]}},"pageContext":{"venueId":"133"}},
+    "staticQueryHashes": ["3000541721"]}
