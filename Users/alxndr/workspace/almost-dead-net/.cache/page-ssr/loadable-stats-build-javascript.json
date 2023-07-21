@@ -1,16 +1,16 @@
 {
-  "hash": "79d7dda19bc7cffe42d9",
+  "hash": "e268b10ff7d28e178b8c",
   "publicPath": "/",
   "outputPath": "/Users/alxndr/workspace/almost-dead-net/public",
   "assetsByChunkName": {
     "polyfill": [
-      "polyfill-2de245d7a39e7f7a3e73.js"
+      "polyfill-6e5f08770f3a2aa3ceb0.js"
     ],
     "app": [
-      "app-dd433f7fa3186f626899.js"
+      "app-dd73d55443db336b60bb.js"
     ],
     "webpack-runtime": [
-      "webpack-runtime-46a97efaea2ad678c71f.js"
+      "webpack-runtime-7478b90b12f92f9b2726.js"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-348c6184f43464a30f5e.js"
@@ -25,7 +25,7 @@
       "component---src-pages-guests-js-a9369d9c9657cb510ed2.js"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-492fecbefb4b96929474.js"
+      "component---src-pages-index-js-624e8cb13d88a6848bd9.js"
     ],
     "component---src-pages-songs-js": [
       "component---src-pages-songs-js-35cd04bc3b557c214d72.js"
@@ -47,9 +47,6 @@
     ],
     "component---src-templates-venue-js": [
       "component---src-templates-venue-js-5bdbc32eaf81f85598ca.js"
-    ],
-    "components-forum-topics": [
-      "components-forum-topics-72f3aae795309cc7e281.js"
     ],
     "styles": [
       "styles.e926caae8d79951ab4f9.css"
@@ -79,19 +76,19 @@
   "assets": [
     {
       "type": "asset",
-      "name": "app-dd433f7fa3186f626899.js",
+      "name": "app-dd73d55443db336b60bb.js",
       "size": 292996,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "dd433f7fa3186f626899",
+        "contenthash": "dd73d55443db336b60bb",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "license": "app-dd433f7fa3186f626899.js.LICENSE.txt",
-          "sourceMap": "app-dd433f7fa3186f626899.js.map"
+          "license": "app-dd73d55443db336b60bb.js.LICENSE.txt",
+          "sourceMap": "app-dd73d55443db336b60bb.js.map"
         }
       },
       "chunkNames": [
@@ -169,18 +166,18 @@
     },
     {
       "type": "asset",
-      "name": "polyfill-2de245d7a39e7f7a3e73.js",
+      "name": "polyfill-6e5f08770f3a2aa3ceb0.js",
       "size": 82850,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "2de245d7a39e7f7a3e73",
+        "contenthash": "6e5f08770f3a2aa3ceb0",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "polyfill-2de245d7a39e7f7a3e73.js.map"
+          "sourceMap": "polyfill-6e5f08770f3a2aa3ceb0.js.map"
         }
       },
       "chunkNames": [
@@ -192,34 +189,6 @@
       "filteredRelated": 1,
       "chunks": [
         920
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
-      "name": "component---src-pages-index-js-492fecbefb4b96929474.js",
-      "size": 59105,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "immutable": true,
-        "contenthash": "492fecbefb4b96929474",
-        "javascriptModule": false,
-        "minimized": true,
-        "related": {
-          "sourceMap": "component---src-pages-index-js-492fecbefb4b96929474.js.map"
-        }
-      },
-      "chunkNames": [
-        "component---src-pages-index-js"
-      ],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        678
       ],
       "auxiliaryChunks": []
     },
@@ -250,6 +219,34 @@
       "filteredRelated": 1,
       "chunks": [
         142
+      ],
+      "auxiliaryChunks": []
+    },
+    {
+      "type": "asset",
+      "name": "component---src-pages-index-js-624e8cb13d88a6848bd9.js",
+      "size": 58054,
+      "emitted": false,
+      "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "contenthash": "624e8cb13d88a6848bd9",
+        "javascriptModule": false,
+        "minimized": true,
+        "related": {
+          "sourceMap": "component---src-pages-index-js-624e8cb13d88a6848bd9.js.map"
+        }
+      },
+      "chunkNames": [
+        "component---src-pages-index-js"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 1,
+      "chunks": [
+        678
       ],
       "auxiliaryChunks": []
     },
@@ -572,18 +569,18 @@
     },
     {
       "type": "asset",
-      "name": "webpack-runtime-46a97efaea2ad678c71f.js",
-      "size": 6212,
+      "name": "webpack-runtime-7478b90b12f92f9b2726.js",
+      "size": 6155,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "46a97efaea2ad678c71f",
+        "contenthash": "7478b90b12f92f9b2726",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "webpack-runtime-46a97efaea2ad678c71f.js.map"
+          "sourceMap": "webpack-runtime-7478b90b12f92f9b2726.js.map"
         }
       },
       "chunkNames": [
@@ -792,34 +789,6 @@
     },
     {
       "type": "asset",
-      "name": "components-forum-topics-72f3aae795309cc7e281.js",
-      "size": 1016,
-      "emitted": false,
-      "comparedForEmit": false,
-      "cached": true,
-      "info": {
-        "immutable": true,
-        "contenthash": "72f3aae795309cc7e281",
-        "javascriptModule": false,
-        "minimized": true,
-        "related": {
-          "sourceMap": "components-forum-topics-72f3aae795309cc7e281.js.map"
-        }
-      },
-      "chunkNames": [
-        "components-forum-topics"
-      ],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 1,
-      "chunks": [
-        868
-      ],
-      "auxiliaryChunks": []
-    },
-    {
-      "type": "asset",
       "name": "175-2b91e102e28547caf3ba.js",
       "size": 811,
       "emitted": false,
@@ -854,10 +823,10 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-46a97efaea2ad678c71f.js"
+          "name": "webpack-runtime-7478b90b12f92f9b2726.js"
         },
         {
-          "name": "polyfill-2de245d7a39e7f7a3e73.js"
+          "name": "polyfill-6e5f08770f3a2aa3ceb0.js"
         }
       ],
       "filteredAssets": 0,
@@ -877,7 +846,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-46a97efaea2ad678c71f.js"
+          "name": "webpack-runtime-7478b90b12f92f9b2726.js"
         },
         {
           "name": "framework-32184bd0f1f807e0608e.js"
@@ -886,7 +855,7 @@
           "name": "b3a13d7d-53fbf7f31bb27a4ac282.js"
         },
         {
-          "name": "app-dd433f7fa3186f626899.js"
+          "name": "app-dd73d55443db336b60bb.js"
         }
       ],
       "filteredAssets": 0,
@@ -1023,7 +992,7 @@
           "name": "commons-98c49e0b81fddc6cbe8e.js"
         },
         {
-          "name": "component---src-pages-index-js-492fecbefb4b96929474.js"
+          "name": "component---src-pages-index-js-624e8cb13d88a6848bd9.js"
         }
       ],
       "filteredAssets": 0,
@@ -1255,23 +1224,6 @@
       "auxiliaryAssetsSize": null,
       "children": {},
       "childAssets": {}
-    },
-    "components-forum-topics": {
-      "name": "components-forum-topics",
-      "chunks": [
-        868
-      ],
-      "assets": [
-        {
-          "name": "components-forum-topics-72f3aae795309cc7e281.js"
-        }
-      ],
-      "filteredAssets": 0,
-      "assetsSize": null,
-      "filteredAuxiliaryAssets": 1,
-      "auxiliaryAssetsSize": null,
-      "children": {},
-      "childAssets": {}
     }
   },
   "generator": "loadable-components",
@@ -1279,19 +1231,19 @@
     {
       "id": 920,
       "files": [
-        "polyfill-2de245d7a39e7f7a3e73.js"
+        "polyfill-6e5f08770f3a2aa3ceb0.js"
       ]
     },
     {
       "id": 143,
       "files": [
-        "app-dd433f7fa3186f626899.js"
+        "app-dd73d55443db336b60bb.js"
       ]
     },
     {
       "id": 658,
       "files": [
-        "webpack-runtime-46a97efaea2ad678c71f.js"
+        "webpack-runtime-7478b90b12f92f9b2726.js"
       ]
     },
     {
@@ -1339,7 +1291,7 @@
     {
       "id": 678,
       "files": [
-        "component---src-pages-index-js-492fecbefb4b96929474.js"
+        "component---src-pages-index-js-624e8cb13d88a6848bd9.js"
       ]
     },
     {
@@ -1382,12 +1334,6 @@
       "id": 706,
       "files": [
         "component---src-templates-venue-js-5bdbc32eaf81f85598ca.js"
-      ]
-    },
-    {
-      "id": 868,
-      "files": [
-        "components-forum-topics-72f3aae795309cc7e281.js"
       ]
     },
     {
