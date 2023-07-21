@@ -18,7 +18,7 @@ describe('Fan Stats page', () => {
       .contains('generate stats')
   })
 
-  describe('entering a username', () => {
+  describe.skip('(SKIPPED — forum is dead) entering a username', () => {
     it('shows some totals', () => {
       cy.log('note: entering username all-lowercase')
       cy.get('@main')
