@@ -64,10 +64,10 @@ export default function ShowsByYear() {
       )}
     </TabList>
     {Object.entries(showsWithVenueByYear).reverse().map(([year, showsInYear]) =>
-      <TabPanel data-year={year}>
+      <TabPanel data-year={year} key={year}>
         <ul className="showsbyyear__shows">
           {Object.entries(showsInYear).map(([monthAndDay, show]) =>
-            <li className={`showsbyyear__shows__${monthAndDay}`} key={monthAndDay}>
+            <li className={`showsbyyear__shows__${monthAndDay}`} key={`${monthAndDay}/${year}`}>
               <ShowEntry key={show.id} show={show}>{monthAndDay}</ShowEntry>
             </li>
           )}
