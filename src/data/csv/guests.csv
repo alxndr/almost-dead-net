@@ -22,7 +22,7 @@ id,name,shows,instrument,sortVal
 36,John Kimock,200,drums,
 16,John Mayer,82:125:172,guitar; vocals,
 22,John Medeski,108,Hammond organ; percussion,
-11,Jon Shaw,63:64:65:66:67:86:112:113:127:230:231:232:233:247:248:249:250:251:252:253:254:261:262:263,bass,
+11,Jon Shaw,63:64:65:66:67:86:112:113:127:230:231:232:233:247:248:249:250:251:252:253:254:261:262:263:301,bass,
 32,Jonathan Goldberger,176,guitar,
 25,Jonathan Wilson,128,guitar; vocals,
 9,Jordan McLean,59:95:224,trumpet,
@@ -35,7 +35,7 @@ id,name,shows,instrument,sortVal
 1,Phil Lesh,10:11:12,bass,
 8,Raymond Mason,59:69:95:224,trombone; bells; flute,
 31,Red Baraat,176,full band,Red Baraat
-7,Stuart Bogie,59:64:69:95:103:105:107:108:123:138:187:201:202:204:221:224:246:260:262:272:281:282:283:284:285:293,tenor sax; flute; clarinet; bass harmonica; mouth harp; bells,
+7,Stuart Bogie,59:64:69:95:103:105:107:108:123:138:187:201:202:204:221:224:246:260:262:272:281:282:283:284:285:293:302,tenor sax; flute; clarinet; bass harmonica; mouth harp; bells,
 30,Tyrone Cotton,175,guitar; vocals,
 40,Ila Benevento,260:297,vocals,
 41,Paul Hoffman,268,"mandolin, vocals",
