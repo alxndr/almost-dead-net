@@ -4536,7 +4536,6 @@ id,song_id,song_name,id_rhs,variation,notes,set_id,show_id,prev_perfid,prev_show
 4814,224,Terrapin Station,,,,803,299,,,,,,,
 4815,215,Sugar Magnolia,,,,804,299,,,,,,,
 4816,217,Sunshine Daydream,,,,804,299,,,,,,,
-4817,235,The Other One,,reprise,,803,299,,,,,,,
 4818,74,Feel Like a Stranger,,,,805,300,,,,,,,
 4819,195,Scarlet Begonias,,,,805,300,,,,,,,
 4820,185,Reuben and Cherise,,,,805,300,,,,,,,
@@ -4552,3 +4551,4 @@ id,song_id,song_name,id_rhs,variation,notes,set_id,show_id,prev_perfid,prev_show
 4830,32,Brown-Eyed Women,,,,806,301,,,,,,,
 4831,277,Part II: Let It Grow,,,,806,301,,,,,,,
 4832,120,Jack Straw,,,,806,301,,,,,,,
+4833,262,We Bid You Goodnight,,instrumental,,804,299,,,,,,,

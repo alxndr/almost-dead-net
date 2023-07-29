@@ -1579,9 +1579,9 @@ id,within,performance_id,song_name,notes,by,song_id
 1592,New Minglewood Blues,4792,Another Brick in the Wall,,,297
 1593,Saint of Circumstance,4790,The Wheel,,,241
 1594,The Wheel,4784,Uncle John's Band,?,,255
-1595,The Other One,4811,Part II: Let It Grow,,,277
+1595,The Other One,4811,Part II: Let It Grow,multiple,band,277
 1596,Born Cross Eyed,4800,The Eleven,,,229
-1597,New Speedway Boogie,4810,Easy Wind,,,67
+1597,New Speedway Boogie,4810,Easy Wind,,SM,67
 1598,Bertha,4775,[unknown],"""Gloria Gloria""?",MB,288
 1599,Playing in the Band,4823,One Way Out,,,410
 1600,Cumberland Blues,4824,Big River,,,20
@@ -1589,3 +1589,12 @@ id,within,performance_id,song_name,notes,by,song_id
 1602,Part II: Let It Grow,4831,Papa Don't Preach,(Madonna had just been in & out of hospital),,811
 1603,Jack Straw,4832,Day Tripper,,SM,287
 1604,Jack Straw,4832,Tennessee Jed,,,221
+1605,Shakedown Street,4801,Bathtub Gin,,band,284
+1606,Black Throated Wind,4806,Hey You,in intro,TH & SM,810
+1607,Cream Puff War,4807,Cats Under the Stars,,band,40
+1608,Bertha,4808,Fearless,,MB,333
+1609,Playing in the Band,4809,The Eleven,,SM,229
+1610,Playing in the Band,4809,Borderline,close to 40th anniv of this album,band,442
+1611,New Speedway Boogie,4810,Playing in the Band,,TH,176
+1612,New Speedway Boogie,4810,Another Brick in the Wall,,TH,297
+1613,Born Cross Eyed,4800,Another Brick in the Wall,,SM,297
