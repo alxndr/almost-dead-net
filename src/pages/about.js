@@ -13,18 +13,7 @@ export default function About() {
     <h1>About Almost-Dead.net</h1>
     <p>This site is not officially affiliated with <a href="http://www.joerussosalmostdead.com/" target="_blank" rel="noopener noreferrer">Joe Russo's Almost Dead</a>.</p>
     <p>It is inspired by fan-run sites such as Deadbase (RIP), <a href="http://phish.net" target="_blank" rel="noopener noreferrer">phish.net</a>, and <a href="http://brownbase.org" target="_blank" rel="noopener noreferrer">brownbase.org</a>.</p>
-    <p>
-      <a href="https://lot.almost-dead.net/t/setlist-corrections/17" title="discussion about setlist corrections">Corrections</a>,
-      {' '}
-      <a href="https://lot.almost-dead.net/t/suggestions-for-the-main-site/18" title="suggestions for the site">suggestions</a>,
-      {' '}
-      or complaints can be directed to the Twitter account
-      {' '}
-      <a href="https://twitter.com/AlmostDeadNet" title="twitter: @AlmostDeadNet">@AlmostDeadNet</a>,
-      or to
-      {' '}
-      <a href="https://lot.almost-dead.net/u/TheEngineer" title="I'm somewhat responsible for this mess">TheEngineer on The Lot</a>.
-    </p>
+    <p>Corrections, suggestions, or complaints can be directed to the Mastodon account <a href="https://shakedown.social/@AlmostDeadNet" title="mastodon: @AlmostDeadNet@shakedown.social" target="_blank" rel="noopener noreferrer">@AlmostDeadNet@shakedown.social</a>.</p>
 
     <h1>❤️</h1>
     <p>In Memory of <Link to="/show/184">David Kay</Link>, creator of the <a href="https://docs.google.com/spreadsheets/d/1qxTKvLkiQgHycuC530OU3j-O5ggijHelXRXVjTiZLis/htmlview" target="_blank" rel="noopener noreferrer">JRAD-base spreadsheet</a>.</p>
@@ -41,7 +30,6 @@ export default function About() {
 
     <h1>Colophon</h1>
     <p>The site on <tt>almost-dead.net</tt> is powered by <a href="https://github.com/alxndr/almost-dead-net" target="_blank" rel="noopener noreferrer">some JavaScript</a> using <a href="https://www.gatsbyjs.com/" target="_blank" rel="noopener noreferrer">Gatsby</a>, hosted on GitHub Pages.</p>
-    <p>The site on <tt>lot.almost-dead.net</tt> is <a href="https://lot.almost-dead.net/" title="JRAD Forum — The Lot">The Lot</a>, a forum powered by <a href="https://discourse.org" target="_blank" rel="noopener noreferrer">Discourse</a>, running on Google Cloud.</p>
     <p>The domain name is managed by NameCheap.</p>
 
     <h1>☮️🖤🌈</h1>

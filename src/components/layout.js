@@ -24,9 +24,6 @@ const Layout = ({children, className = ''}) => {
         <Link className="footer__link-about" to="/about" title="About the Site">
           About
         </Link>
-        <a href="https://lot.almost-dead.net" className="footer__forum" title="JRAD Forum — The Lot">
-          Forum
-        </a>
       </footer>
 
     </div>
