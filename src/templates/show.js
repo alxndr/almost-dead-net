@@ -289,10 +289,6 @@ export default function Show({
         />}
       {setlist.length ? setlist : <p>Uh oh, no sets found.</p>}
       {encores.length && encores}
-      <p className="showpage__corrections">
-        <span>Something wrong or missing?</span>
-        <span>Please <a href="https://lot.almost-dead.net/t/setlist-corrections/17" target="_blank">let us know</a>!</span>
-      </p>
     </section>
     {imageSrcs.length
       ? <section className="showpage__leadimage">{imageSrcs.map((imageSrc) => <img key={imageSrc} src={imageSrc} alt="a poster or photograph from the show" />)}</section>
