@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/128-Hampton-Beach-Casino-Ballroom",
-    "result": {"data":{"venuesCsv":{"id":"128","location":"Hampton Beach, NH","name":"Hampton Beach Casino Ballroom"},"allShowsCsv":{"nodes":[]}},"pageContext":{"venueId":"128"}},
+    "result": {"data":{"venuesCsv":{"id":"128","location":"Hampton Beach, NH","name":"Hampton Beach Casino Ballroom"},"allShowsCsv":{"nodes":[{"id":"304","date":"8/5/2023"}]}},"pageContext":{"venueId":"128"}},
     "staticQueryHashes": ["3000541721"]}

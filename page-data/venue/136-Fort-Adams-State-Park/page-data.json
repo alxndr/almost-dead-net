@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/136-Fort-Adams-State-Park",
+    "result": {"data":{"venuesCsv":{"id":"136","location":"Newport, RI","name":"Fort Adams State Park"},"allShowsCsv":{"nodes":[{"id":"303","date":"8/4/2023"}]}},"pageContext":{"venueId":"136"}},
+    "staticQueryHashes": ["3000541721"]}

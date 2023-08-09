@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/129-Maine-Savings-Amphitheater",
-    "result": {"data":{"venuesCsv":{"id":"129","location":"Bangor, ME","name":"Maine Savings Amphitheater"},"allShowsCsv":{"nodes":[]}},"pageContext":{"venueId":"129"}},
+    "result": {"data":{"venuesCsv":{"id":"129","location":"Bangor, ME","name":"Maine Savings Amphitheater"},"allShowsCsv":{"nodes":[{"id":"305","date":"8/6/2023"}]}},"pageContext":{"venueId":"129"}},
     "staticQueryHashes": ["3000541721"]}
