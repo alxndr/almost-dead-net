@@ -34,7 +34,7 @@
     "test:e2e": "WAIT_ON_TIMEOUT=${WAIT_ON_TIMEOUT:-240000} start-server-and-test dev :8000 cy:run"
   },
   "dependencies": {
-    "@loadable/babel-plugin": "^5.13.2",
+    "@loadable/babel-plugin": "^5.16.1",
     "@loadable/component": "^5.15.3",
     "@loadable/server": "^5.15.2",
     "@loadable/webpack-plugin": "^5.15.2",
