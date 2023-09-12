@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/138-Indiana-State-Fairgrounds",
+    "result": {"data":{"venuesCsv":{"id":"138","location":"Indianapolis, IN","name":"Indiana State Fairgrounds"},"allShowsCsv":{"nodes":[{"id":"311","date":"9/9/2023"}]}},"pageContext":{"venueId":"138"}},
+    "staticQueryHashes": ["3000541721"]}

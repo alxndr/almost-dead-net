@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/117-Stage-AE",
-    "result": {"data":{"venuesCsv":{"id":"117","location":"Pittsburgh, PA","name":"Stage AE"},"allShowsCsv":{"nodes":[{"id":"265","date":"7/8/2022"}]}},"pageContext":{"venueId":"117"}},
+    "result": {"data":{"venuesCsv":{"id":"117","location":"Pittsburgh, PA","name":"Stage AE"},"allShowsCsv":{"nodes":[{"id":"265","date":"7/8/2022"},{"id":"310","date":"9/8/2023"}]}},"pageContext":{"venueId":"117"}},
     "staticQueryHashes": ["3000541721"]}

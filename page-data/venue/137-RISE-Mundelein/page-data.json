@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/137-RISE-Mundelein",
+    "result": {"data":{"venuesCsv":{"id":"137","location":"Mundelein, IL","name":"RISE Mundelein"},"allShowsCsv":{"nodes":[{"id":"312","date":"9/10/2023"}]}},"pageContext":{"venueId":"137"}},
+    "staticQueryHashes": ["3000541721"]}
