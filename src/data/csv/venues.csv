@@ -55,6 +55,7 @@ id,name,location,capacity,generic name,tagname
 128,Hampton Beach Casino Ballroom,"Hampton Beach, NH",,,Hampton Beach Casino Ballroom
 44,House of Blues,"Houston, TX",2500,TRUE,House of Blues (Houston)
 45,Hunter Mountain,"Hunter, NY",,,Hunter Mountain
+138,Indiana State Fairgrounds,"Indianapolis, IN",,,Indiana State Fairgrounds
 47,Pantheon Theater,Jam Cruise,1600,TRUE,Pantheon Theater (Jam Cruise)
 46,Pool Deck,Jam Cruise,,TRUE,Pool Deck (Jam Cruise)
 132,Stateside Amphitheater at Jay Peak Resort,"Jay, VT",,,Stateside Amphitheater at Jay Peak Resort
@@ -79,6 +80,7 @@ id,name,location,capacity,generic name,tagname
 62,The Wellmont Theater,"Montclair, NJ",2137,,The Wellmont Theater
 130,Roanoke Island Festival Park,"Monteo, NC",,,Roanoke Island Festival Park
 63,Red Rocks,"Morrison, CO",9525,,Red Rocks
+137,RISE Mundelein,"Mundelein, IL",,,RISE Mundelein
 65,Ryman Auditorium,"Nashville, TN",2362,,Ryman Auditorium
 64,War Memorial Auditorium,"Nashville, TN",2000,,War Memorial Auditorium
 66,College Street Music Hall,"New Haven, CT",2000,,College Street Music Hall
