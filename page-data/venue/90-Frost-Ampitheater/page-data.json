@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/90-Frost-Ampitheater",
-    "result": {"data":{"venuesCsv":{"id":"90","location":"Stanford, CA","name":"Frost Ampitheater"},"allShowsCsv":{"nodes":[{"id":"202","date":"8/17/2019"},{"id":"242","date":"10/23/2021"},{"id":"270","date":"8/13/2022"}]}},"pageContext":{"venueId":"90"}},
+    "result": {"data":{"venuesCsv":{"id":"90","location":"Stanford, CA","name":"Frost Ampitheater"},"allShowsCsv":{"nodes":[{"id":"202","date":"8/17/2019"},{"id":"242","date":"10/23/2021"},{"id":"270","date":"8/13/2022"},{"id":"314","date":"10/13/2023"}]}},"pageContext":{"venueId":"90"}},
     "staticQueryHashes": ["3000541721"]}
