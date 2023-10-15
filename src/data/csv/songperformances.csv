@@ -4724,7 +4724,7 @@ id,song_id,song_name,id_rhs,variation,notes,set_id,show_id,prev_perfid,prev_show
 5005,69,Estimated Prophet,,,,837,315,,,,,,,
 5006,138,Loose Lucy,,,,837,315,,,,,,,
 5007,74,Feel Like a Stranger,,,,837,315,,,,,,,
-5008,201,Slipknot!,,,,837,315,,,,,,,
+5008,201,Slipknot!,,,,837,315,,,,,,1,
 5009,43,Chest Fever,,,with Eric D Johnson,837,315,,,,,,,
 5010,251,Truckin',,,,838,315,,,,,,,
 5011,190,Row Jimmy,,,,838,315,,,,,,,
@@ -4734,3 +4734,4 @@ id,song_id,song_name,id_rhs,variation,notes,set_id,show_id,prev_perfid,prev_show
 5015,110,I Know You Rider,,,,838,315,,,,,,,
 5016,176,Playing in the Band,,,,838,315,,,,,,,
 5017,447,Black Dog,,,with Eric D Johnson,839,315,,,,,,,
+5018,98,Help on the Way,,,,837,315,,,,,,,
