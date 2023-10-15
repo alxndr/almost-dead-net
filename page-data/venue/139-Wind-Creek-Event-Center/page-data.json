@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/139-Wind-Creek-Event-Center",
+    "result": {"data":{"venuesCsv":{"id":"139","location":"Bethlehem, PA","name":"Wind Creek Event Center"},"allShowsCsv":{"nodes":[]}},"pageContext":{"venueId":"139"}},
+    "staticQueryHashes": ["3000541721"]}
