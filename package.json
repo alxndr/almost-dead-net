@@ -39,7 +39,7 @@
     "@loadable/server": "^5.15.2",
     "@loadable/webpack-plugin": "^5.15.2",
     "classnames": "^2.3.2",
-    "gatsby": "3.15.0",
+    "gatsby": "5.12.8",
     "gatsby-plugin-gatsby-cloud": "^3.2.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^1.11.0",
