@@ -174,7 +174,7 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 173,11/10/2018,71,484,485,,486,,,,,https://i.imgur.com/nCUh9JE.jpg,1,11/10/18 @ Fox Theater (Oakland),
 174,11/11/2018,71,487,488,,489,,,,,https://i.imgur.com/nCUh9JE.jpg,2,11/11/18 @ Fox Theater (Oakland),
 175,1/18/2019,76,490,491,,492,,,Tyrone Cotton joined for encore,,https://i.imgur.com/8mbAC0s.jpg,3,1/18/19 @ Capitol Theatre,TRUE
-176,1/19/2019,76,493,494,,495,,,"Jonathan Goldberger joined for second set; the encore began with Red Baraat (who had played an opening set next door at Garcia's) marching from the back of crowd to the stage to join Joe for a jam, before the remainder of JRAD plus Goldberger joined for NFA",,https://i.imgur.com/8mbAC0s.jpg,2,1/19/19 @ Capitol Theatre,TRUE
+176,1/19/2019,76,493,494,,495,,,"Jonathan Goldberger joined for second set; the encore began with Red Baraat (who had played an opening set next door at Garcia's) marching from the back of crowd to the stage to join Joe for a jam, before the remainder of JRAD plus Goldberger joined for NFA",,https://i.imgur.com/8mbAC0s.jpg,3,1/19/19 @ Capitol Theatre,TRUE
 177,1/20/2019,76,496,497,,498,,,"After WBYG, Joe (?) said Thank You to Aaron Gittleman (JRAD's monitors engineer)",,https://i.imgur.com/8mbAC0s.jpg,2,1/20/19 @ Capitol Theatre,TRUE
 178,2/14/2019,6,499,500,,501,,,,,https://i.imgur.com/1JBu5cD.jpg,4,2/14/19 @ Tabernacle,TRUE
 179,2/15/2019,92,502,503,,504,,,,,https://i.imgur.com/1JBu5cD.jpg,2,2/15/19 @ The Pageant,
@@ -314,7 +314,18 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 313,9/29/2023,134,833,,,,,,Zyn stage,Mempho Music Festival,,0,9/29/23 @ Mempho Music Festival,
 314,10/13/2023,90,834,835,,836,,,"Eric D Johnson opened (2 solo songs + 3 (?) songs accompanied by JRAD including ""When U Love Somebody"")",,,3,10/13/23 @ Frost Ampitheater,
 315,10/14/2023,54,837,838,,839,,,Eric D Johnson opened,,,1,10/14/23 @ Greek Theatre (Los Angeles),
-316,10/26/2023,51,,,,,,,,Hulaween,,0,10/26/23 @ Hulaween,
-317,11/16/2023,139,846,847,,848,,,,,https://www.reddit.com/r/JRADs/comments/17x2ye5/jrad_111623_discussion_thread/,1,11/16/23 @ Wind Creek Event Center,
+316,10/26/2023,51,849,,,,,,,Hulaween,,0,10/26/23 @ Hulaween,
+317,11/16/2023,139,846,847,,848,,,,,https://www.reddit.com/r/JRADs/comments/17x2ye5/jrad_111623_discussion_thread/,4,11/16/23 @ Wind Creek Event Center,
 318,11/17/2023,73,840,841,,842,,,,,https://www.reddit.com/r/JRADs/comments/17xvbtz/jrad_setlist_thread_111723/,3,11/17/23 @ Metropolitan Opera House,
-319,11/18/2023,98,843,844,,845,,,,,https://www.reddit.com/r/JRADs/comments/17z0l9w/set_list_from_dc_111822/ https://www.reddit.com/r/JRADs/comments/17ymyuf/dc/,1,11/18/23 @ The Anthem,
+319,11/18/2023,98,843,844,,845,,,,,https://www.reddit.com/r/JRADs/comments/17z0l9w/set_list_from_dc_111822/ https://www.reddit.com/r/JRADs/comments/17ymyuf/dc/,2,11/18/23 @ The Anthem,
+320,11/30/2023,56,850,851,,852,853,,,,https://www.reddit.com/r/JRADs/comments/187z43h/jrad_113023_madison_wi_discussion_thread/,0,11/30/23 @ The Sylvee,
+321,12/1/2023,29,854,855,,856,,,,,https://www.reddit.com/r/JRADs/comments/188s9w5/jrad_12123_chicago_il_discussion_thread/,1,12/1/23 @ Riviera Theatre,
+322,12/2/2023,29,857,858,,859,,,,,https://www.reddit.com/r/JRADs/comments/189hfqx/jrad_12223_chicago_il_discussion_thread/,1,12/2/23 @ Riviera Theatre,
+323,1/12/2024,76,,,,,,,,,,0,1/12/24 @ Capitol Theatre,
+324,1/13/2024,76,,,,,,,,,,0,1/13/24 @ Capitol Theatre,
+325,1/14/2024,76,,,,,,,,,,0,1/14/24 @ Capitol Theatre,
+326,2/8/2024,142,,,,,,,,,,0,2/8/24 @ The Fillmore Charlotte,
+327,2/9/2024,122,,,,,,,,,,0,2/9/24 @ The Eastern,
+328,2/10/2024,122,,,,,,,,,,0,2/10/24 @ The Eastern,
+329,4/5/2024,140,,,,,,,,Texas Eclipse Fest,,0,4/5/24 @ Texas Eclipse Fest,
+330,7/25/2024,141,,,,,,,,FloydFest,,0,7/25/24 @ FloydFest,
