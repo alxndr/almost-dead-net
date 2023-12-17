@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/140-Reveille-Peak-Ranch",
+    "result": {"data":{"venuesCsv":{"id":"140","location":"Burnet, TX","name":"Reveille Peak Ranch"},"allShowsCsv":{"nodes":[{"id":"329","date":"4/5/2024"}]}},"pageContext":{"venueId":"140"}},
+    "staticQueryHashes": ["3000541721"]}

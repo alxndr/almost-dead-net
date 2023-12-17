@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/142-The-Fillmore-Charlotte",
+    "result": {"data":{"venuesCsv":{"id":"142","location":"Charlotte, NC","name":"The Fillmore Charlotte"},"allShowsCsv":{"nodes":[{"id":"326","date":"2/8/2024"}]}},"pageContext":{"venueId":"142"}},
+    "staticQueryHashes": ["3000541721"]}
