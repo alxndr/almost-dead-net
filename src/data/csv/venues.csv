@@ -36,12 +36,14 @@ id,name,location,capacity,generic name,tagname
 25,Waterfront Park,"Burlington, VT",,,Waterfront Park
 140,Reveille Peak Ranch,"Burnet, TX",,,Reveille Peak Ranch
 27,Music Farm,"Charleston, SC",800,,Music Farm
+142,The Fillmore,"Charlotte, NC",,TRUE,The Fillmore (Charlotte)
 125,Ting Pavilion,"Charlottesville, VA",3500,,Ting Pavilion
+141,FloydFest,"Check, VA",,,FloydFest
 31,Concord Music Hall,"Chicago, IL",,,Concord Music Hall
 30,Huntington Bank Pavilion at Northerly Island,"Chicago, IL",,,Huntington Bank Pavilion at Northerly Island
 29,Riviera Theatre,"Chicago, IL",2500,,Riviera Theatre
 28,Union Park,"Chicago, IL",,,Union Park
-32,Three Sisters Park,"Chillicoothe, IL",,,Three Sisters Park
+32,Three Sisters Park,"Chillicothe, IL",,,Three Sisters Park
 103,Jacobs Pavilion at Nautica,"Cleveland, OH",5000,,Jacobs Pavilion at Nautica
 33,Masonic Cleveland Auditorium,"Cleveland, OH",,,Masonic Cleveland Auditorium
 34,The Music Box,"Cleveland, OH",340,,The Music Box
@@ -139,5 +141,3 @@ id,name,location,capacity,generic name,tagname
 99,The 9:30 Club,"Washington, DC",1200,,The 9:30 Club
 98,The Anthem,"Washington, DC",6000,,The Anthem
 133,Windham Mountain,"Windham, NY",,,Windham Mountain
-141,FloydFest...,"Check, VA",,,FloydFest...
-142,The Fillmore Charlotte,"Charlotte, NC",,,The Fillmore Charlotte
