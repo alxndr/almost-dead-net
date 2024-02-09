@@ -13,8 +13,8 @@ import './index.css'
 export default function Index() {
   return <Layout className="homepage">
     <SEO
-      title="JRAD setlists, teases, segues, recordings, forum"
-      description="Joe Russo's Almost Dead setlists, teases, performance recordings, discussion forum"
+      title="JRAD Info Database — setlists, recordings, teases, guests, songs, and segues"
+      description="Comprehensive resource for the setlist of every Joe Russo's Almost Dead (JRAD) concert, with links to all known recordings plus notes for individual teases, guest sit-ins, every song played, and the venues where the band has performed."
     />
 
     <section className="homepage__links">

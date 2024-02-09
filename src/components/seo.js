@@ -35,7 +35,7 @@ function SEO({ description, image, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={`%s | Joe Russo's Almost Dead`}
       meta={[
         {
           name: `description`,
