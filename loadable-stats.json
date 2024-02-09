@@ -1,5 +1,5 @@
 {
-  "hash": "f372940a08185e9cde23",
+  "hash": "9ffd588c89a9ce0782d4",
   "publicPath": "/",
   "outputPath": "/Users/alxndr/workspace/almost-dead-net/public",
   "assetsByChunkName": {
@@ -10,7 +10,7 @@
       "app-ff27260acade30adc777.js"
     ],
     "webpack-runtime": [
-      "webpack-runtime-d3c08f1663d4bfbf6647.js"
+      "webpack-runtime-f391168ff66de5f2d885.js"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-b01e214f0971a05f1232.js"
@@ -25,7 +25,7 @@
       "component---src-pages-guests-js-993c1dec3f3ed9c41cb5.js"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-4e53ff60a432c2052699.js"
+      "component---src-pages-index-js-1f1dfe9b9630ec3b5809.js"
     ],
     "component---src-pages-songs-js": [
       "component---src-pages-songs-js-035b09fdf9a1933f2cf8.js"
@@ -55,7 +55,7 @@
       "framework-725445fcf5906a74dbbf.js"
     ],
     "commons": [
-      "commons-3b031f81a1451e269184.js"
+      "commons-f468a2047b4e8474b542.js"
     ],
     "a73c003a8dfc2498fe3ce2864026b20c2de6e978": [
       "a73c003a8dfc2498fe3ce2864026b20c2de6e978-592ad66b9b95590b6bad.js"
@@ -192,18 +192,18 @@
     },
     {
       "type": "asset",
-      "name": "component---src-pages-index-js-4e53ff60a432c2052699.js",
-      "size": 57869,
+      "name": "component---src-pages-index-js-1f1dfe9b9630ec3b5809.js",
+      "size": 58052,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "4e53ff60a432c2052699",
+        "contenthash": "1f1dfe9b9630ec3b5809",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "component---src-pages-index-js-4e53ff60a432c2052699.js.map"
+          "sourceMap": "component---src-pages-index-js-1f1dfe9b9630ec3b5809.js.map"
         }
       },
       "chunkNames": [
@@ -320,18 +320,18 @@
     },
     {
       "type": "asset",
-      "name": "commons-3b031f81a1451e269184.js",
-      "size": 28317,
+      "name": "commons-f468a2047b4e8474b542.js",
+      "size": 28323,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "3b031f81a1451e269184",
+        "contenthash": "f468a2047b4e8474b542",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "commons-3b031f81a1451e269184.js.map"
+          "sourceMap": "commons-f468a2047b4e8474b542.js.map"
         }
       },
       "chunkNames": [
@@ -553,18 +553,18 @@
     },
     {
       "type": "asset",
-      "name": "webpack-runtime-d3c08f1663d4bfbf6647.js",
+      "name": "webpack-runtime-f391168ff66de5f2d885.js",
       "size": 5939,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "d3c08f1663d4bfbf6647",
+        "contenthash": "f391168ff66de5f2d885",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "webpack-runtime-d3c08f1663d4bfbf6647.js.map"
+          "sourceMap": "webpack-runtime-f391168ff66de5f2d885.js.map"
         }
       },
       "chunkNames": [
@@ -807,7 +807,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-d3c08f1663d4bfbf6647.js"
+          "name": "webpack-runtime-f391168ff66de5f2d885.js"
         },
         {
           "name": "polyfill-223d0156067b17fc28f4.js"
@@ -829,7 +829,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-d3c08f1663d4bfbf6647.js"
+          "name": "webpack-runtime-f391168ff66de5f2d885.js"
         },
         {
           "name": "framework-725445fcf5906a74dbbf.js"
@@ -857,7 +857,7 @@
           "name": "styles.6b4c3a77a4f1f8c2a938.css"
         },
         {
-          "name": "commons-3b031f81a1451e269184.js"
+          "name": "commons-f468a2047b4e8474b542.js"
         },
         {
           "name": "component---src-pages-404-js-b01e214f0971a05f1232.js"
@@ -882,7 +882,7 @@
           "name": "styles.6b4c3a77a4f1f8c2a938.css"
         },
         {
-          "name": "commons-3b031f81a1451e269184.js"
+          "name": "commons-f468a2047b4e8474b542.js"
         },
         {
           "name": "component---src-pages-about-js-30ecf2ca1e79e09ccacd.js"
@@ -909,7 +909,7 @@
           "name": "styles.6b4c3a77a4f1f8c2a938.css"
         },
         {
-          "name": "commons-3b031f81a1451e269184.js"
+          "name": "commons-f468a2047b4e8474b542.js"
         },
         {
           "name": "a73c003a8dfc2498fe3ce2864026b20c2de6e978-592ad66b9b95590b6bad.js"
@@ -941,7 +941,7 @@
           "name": "styles.6b4c3a77a4f1f8c2a938.css"
         },
         {
-          "name": "commons-3b031f81a1451e269184.js"
+          "name": "commons-f468a2047b4e8474b542.js"
         },
         {
           "name": "a73c003a8dfc2498fe3ce2864026b20c2de6e978-592ad66b9b95590b6bad.js"
@@ -969,10 +969,10 @@
           "name": "styles.6b4c3a77a4f1f8c2a938.css"
         },
         {
-          "name": "commons-3b031f81a1451e269184.js"
+          "name": "commons-f468a2047b4e8474b542.js"
         },
         {
-          "name": "component---src-pages-index-js-4e53ff60a432c2052699.js"
+          "name": "component---src-pages-index-js-1f1dfe9b9630ec3b5809.js"
         }
       ],
       "filteredAssets": 0,
@@ -997,7 +997,7 @@
           "name": "styles.6b4c3a77a4f1f8c2a938.css"
         },
         {
-          "name": "commons-3b031f81a1451e269184.js"
+          "name": "commons-f468a2047b4e8474b542.js"
         },
         {
           "name": "a73c003a8dfc2498fe3ce2864026b20c2de6e978-592ad66b9b95590b6bad.js"
@@ -1033,7 +1033,7 @@
           "name": "styles.6b4c3a77a4f1f8c2a938.css"
         },
         {
-          "name": "commons-3b031f81a1451e269184.js"
+          "name": "commons-f468a2047b4e8474b542.js"
         },
         {
           "name": "a73c003a8dfc2498fe3ce2864026b20c2de6e978-592ad66b9b95590b6bad.js"
@@ -1065,7 +1065,7 @@
           "name": "styles.6b4c3a77a4f1f8c2a938.css"
         },
         {
-          "name": "commons-3b031f81a1451e269184.js"
+          "name": "commons-f468a2047b4e8474b542.js"
         },
         {
           "name": "a73c003a8dfc2498fe3ce2864026b20c2de6e978-592ad66b9b95590b6bad.js"
@@ -1095,7 +1095,7 @@
           "name": "styles.6b4c3a77a4f1f8c2a938.css"
         },
         {
-          "name": "commons-3b031f81a1451e269184.js"
+          "name": "commons-f468a2047b4e8474b542.js"
         },
         {
           "name": "a73c003a8dfc2498fe3ce2864026b20c2de6e978-592ad66b9b95590b6bad.js"
@@ -1128,7 +1128,7 @@
           "name": "styles.6b4c3a77a4f1f8c2a938.css"
         },
         {
-          "name": "commons-3b031f81a1451e269184.js"
+          "name": "commons-f468a2047b4e8474b542.js"
         },
         {
           "name": "a73c003a8dfc2498fe3ce2864026b20c2de6e978-592ad66b9b95590b6bad.js"
@@ -1161,7 +1161,7 @@
           "name": "styles.6b4c3a77a4f1f8c2a938.css"
         },
         {
-          "name": "commons-3b031f81a1451e269184.js"
+          "name": "commons-f468a2047b4e8474b542.js"
         },
         {
           "name": "a73c003a8dfc2498fe3ce2864026b20c2de6e978-592ad66b9b95590b6bad.js"
@@ -1192,7 +1192,7 @@
           "name": "styles.6b4c3a77a4f1f8c2a938.css"
         },
         {
-          "name": "commons-3b031f81a1451e269184.js"
+          "name": "commons-f468a2047b4e8474b542.js"
         },
         {
           "name": "component---src-templates-venue-js-3489ae7fd4101a723183.js"
@@ -1223,7 +1223,7 @@
     {
       "id": 658,
       "files": [
-        "webpack-runtime-d3c08f1663d4bfbf6647.js"
+        "webpack-runtime-f391168ff66de5f2d885.js"
       ]
     },
     {
@@ -1271,7 +1271,7 @@
     {
       "id": 678,
       "files": [
-        "component---src-pages-index-js-4e53ff60a432c2052699.js"
+        "component---src-pages-index-js-1f1dfe9b9630ec3b5809.js"
       ]
     },
     {
@@ -1331,7 +1331,7 @@
     {
       "id": 351,
       "files": [
-        "commons-3b031f81a1451e269184.js"
+        "commons-f468a2047b4e8474b542.js"
       ]
     },
     {
