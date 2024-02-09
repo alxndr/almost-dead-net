@@ -245,15 +245,15 @@ export default function Show({
   const linksArray = links.split(/\s+/)
 
   const guestsDescription = showGuests.length
-    ? `with ${showGuests.map(({name}) => name).join(' and ')} `
+    ? ` with ${showGuests.map(({name}) => name).join(' and ')} `
     : ' '
-  const seoDescription = `Setlist and recordings of Joe Russo's Almost Dead ${guestsDescription}${date} at ${event ? `${event}, ` : ``}${venue.name} (${venue.location}) including song segues, teases, and show notes`
+  const seoDescription = `Setlist of Joe Russo's Almost Dead${guestsDescription}${date} at ${event ? `${event}, ` : ``}${venue.name} (${venue.location}) including song segues, teases, show notes, plus streamable recordings and links`
   const imageSrcs = filter(isImage)(linksArray)
 
   const showId = Number(show.id)
   return <Layout className="showpage" itemScope itemType="http://schema.org/MusicEvent">
     <SEO
-      title={`JRAD ${guestsDescription} — ${tagline}`}
+      title={`JRAD${guestsDescription} — ${tagline}`}
       description={seoDescription}
       image={imageSrcs.length && imageSrcs[0]}
     />
