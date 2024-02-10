@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/122-The-Eastern",
-    "result": {"data":{"venuesCsv":{"id":"122","location":"Atlanta, GA","name":"The Eastern"},"allShowsCsv":{"nodes":[{"id":"287","date":"3/3/2023"},{"id":"288","date":"3/4/2023"},{"id":"289","date":"3/5/2023"}]}},"pageContext":{"venueId":"122"}},
+    "result": {"data":{"venuesCsv":{"id":"122","location":"Atlanta, GA","name":"The Eastern"},"allShowsCsv":{"nodes":[{"id":"287","date":"3/3/2023"},{"id":"288","date":"3/4/2023"},{"id":"289","date":"3/5/2023"},{"id":"327","date":"2/9/2024"},{"id":"328","date":"2/10/2024"}]}},"pageContext":{"venueId":"122"}},
     "staticQueryHashes": ["3000541721"]}
