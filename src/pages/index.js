@@ -48,7 +48,7 @@ export default function Index() {
     <section className="homepage__songfinder">
       <h1>Find a song</h1>
       <SongFinder />
-      <p style={{maxWidth:'25rem',margin:'1em auto',fontSize:'0.9em'}}>Almost-Dead.net tracks every setlist of every show, each tease within each song, and links to all the recordings available to share online. Search for a song by title, songwriter, or the band / performer who made it famous, and find when and where Joe Russo's Almost Dead has played or teased it, then listen for yourself!</p>
+      <p style={{maxWidth:'25rem',margin:'1em auto',fontSize:'0.9em'}}>Almost-Dead.net tracks every setlist of every <b>Joe Russo's Almost Dead</b> concert — noting each tease within each song, with links to all the recordings available to share online. Search for a song by title, songwriter, or the band / performer who made it famous, and find when and where Joe Russo's Almost Dead has played or teased it, then listen for yourself!</p>
     </section>
 
   </Layout>
