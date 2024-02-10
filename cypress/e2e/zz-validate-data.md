@@ -10,3 +10,9 @@ It should probably not be automatically derived from the CSV data, for example.
 ## Options
 
 If the `CYPRESS_VALIDATE_ALL` environment variable is set, the test will verify every (hardcoded) concert entry.
+
+
+## Mystery
+
+Show #75 times out in CI for an unknown reason.
+Seems to load fine locally and [in prod](https://almost-dead.net/show/75)...
