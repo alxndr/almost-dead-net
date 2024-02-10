@@ -4,12 +4,12 @@ describe('Home page', () => {
   beforeEach(() => {
     cy.visit('/')
     cy.title()
-      .should('include', 'Almost-Dead.net')
+      .should('include', 'JRAD Info Database')
  })
 
   describe('Setlists section', () => {
     beforeEach(() => {
-      cy.contains('Setlists').closest('section').as('setlistsSection')
+      cy.contains('Setlist').closest('section').as('setlistsSection')
     })
 
     it('organized by year', () => {
