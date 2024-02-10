@@ -311,7 +311,6 @@ describe('data validation', () => {
       .filter(({id}) => isSampling ? timestamp.includes(id) : true)
       .forEach((show) => {
         const {id, date, venue} = show
-        if (id === 75) return;
         it(`#${show.id} is ${date} @ ${venue}`, () => {
           cy.visit(`/show/${id}`)
           cy.get('main')
