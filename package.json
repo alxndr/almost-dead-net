@@ -7,7 +7,7 @@
   "license": "UNLICENSED",
   "author": "@alxndr",
   "scripts": {
-    "build": "gatsby build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider gatsby build",
     "build:serve": "npm run build && npm run serve -- --port 9000",
     "build:serve:9001": "npm run build && npm run serve -- --port 9001",
     "clean": "gatsby clean",
@@ -21,7 +21,7 @@
     "deploy:prod": "export TAG=deploy-$(date '+%F-%H%M%S-%Z') && gatsby build && gh-pages --dist public --dotfiles --branch gh-pages --tag $TAG --message \"Deploy $TAG\" && echo cleaning up... && gh-pages-clean",
     "postdeploy:prod": "npm run clean",
     "predev": "npm run clean",
-    "dev": "gatsby develop",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider gatsby develop",
     "docs": "hads",
     "prelint": "echo linting...",
     "lint": "eslint src/ cypress/",
