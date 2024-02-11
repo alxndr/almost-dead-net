@@ -1,39 +1,25 @@
 {
-  "name": "Almost-Dead.net",
-  "homepage": "http://almost-dead.net",
-  "version": "4.0.0-alpha",
-  "repository": "https://github.com/alxndr/almost-dead-net",
+  "name": "almost-dead.net",
+  "version": "1.0.0",
   "private": true,
-  "license": "UNLICENSED",
-  "author": "@alxndr",
+  "description": "almost-dead.net",
+  "author": "Alexander",
+  "keywords": [
+    "gatsby"
+  ],
   "scripts": {
-    "dev": "gatsby develop",
+    "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "clean": "gatsby clean"
   },
   "dependencies": {
-    "@types/ramda": "^0.28.16",
-    "better-sqlite3": "^7.6.2",
-    "gatsby": "^4.24.0",
-    "gatsby-plugin-manifest": "^4.24.0",
-    "gatsby-plugin-sass": "^5.24.0",
-    "gatsby-source-sql": "github:edgarrmondragon/gatsby-source-sql",
-    "ramda": "^0.28.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-helmet": "^6.1.0",
-    "sass": "^1.55.0"
-  },
-  "devDependencies": {
-    "@types/node": "^17.0.45",
-    "@types/react": "^18.0.21",
-    "@types/react-dom": "^18.0.6",
-    "typescript": "^4.8.3"
-  },
-  "engines": {
-    "node": ">=16.13"
+    "gatsby": "^5.13.3",
+    "gatsby-plugin-sass": "^6.13.1",
+    "gatsby-source-filesystem": "^5.13.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.70.0"
   }
 }

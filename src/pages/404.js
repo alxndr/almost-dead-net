@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link, HeadFC } from "gatsby"
+import { Link } from "gatsby"
 
 const pageStyles = {
   color: "#232129",
@@ -46,4 +46,4 @@ const NotFoundPage = () => {
 
 export default NotFoundPage
 
-export const Head: HeadFC = () => <title>Not found</title>
+export const Head = () => <title>Not found</title>
