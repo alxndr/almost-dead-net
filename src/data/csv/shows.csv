@@ -92,7 +92,7 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 91,12/17/2016,5,240,241,,242,,,,,https://i.imgur.com/RSYFdQL.jpg,3,12/17/16 @ Belly Up,TRUE
 92,12/28/2016,21,243,,,244,,,"acoustic show: ""Marco on Upright Piano, Tommy & Scott on Acoustic Guitars thru their amps, Dave on Upright Bass & Joe on a small kit, with Kick, Snare, Hat & 1 cymbal. Only the piano & vocals were sent thru the PA""; first all-acoustic show; free show performed as pseudonym ""Data Models"" (which is an anagram of ""Almost Dead"")",,,1,12/28/16 @ Threes Brewing,
 93,12/29/2016,22,245,246,,247,,,,,https://i.imgur.com/cu32MSc.jpg,1,12/29/16 @ Brooklyn Bowl (Brooklyn),TRUE
-94,12/30/2016,76,248,249,,250,,,,,https://i.imgur.com/cu32MSc.jpg,2,12/30/16 @ Capitol Theatre,TRUE
+94,12/30/2016,76,248,249,,250,,,,,https://i.imgur.com/cu32MSc.jpg,3,12/30/16 @ Capitol Theatre,TRUE
 95,12/31/2016,76,251,252,253,254,,,,,https://i.imgur.com/cu32MSc.jpg,1,12/31/16 @ Capitol Theatre,TRUE
 96,1/12/2017,65,255,256,,257,,,,,https://i.imgur.com/BSpovev.jpg,1,1/12/17 @ Ryman Auditorium,
 97,1/13/2017,27,258,259,,260,,,,,https://i.imgur.com/BSpovev.jpg,4,1/13/17 @ Music Farm,
@@ -326,4 +326,4 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 325,1/14/2024,76,866,867,,868,,,,,https://i.imgur.com/c0dENpl.jpg,5,1/14/24 @ Capitol Theatre,
 326,2/8/2024,142,869,870,,871,,,,,https://www.reddit.com/r/JRADs/comments/1amc5oa/2824_the_fillmore_charlotte_nc/,0,2/8/24 @ The Fillmore (Charlotte),
 327,2/9/2024,122,872,873,,874,,,,,https://www.reddit.com/r/JRADs/comments/1an4hzo/jrad_2924_atlanta_ga_discussion_thread/,7,2/9/24 @ The Eastern,
-328,2/10/2024,122,,,,,,,,,,0,2/10/24 @ The Eastern,
+328,2/10/2024,122,875,876,,877,,,,,,0,2/10/24 @ The Eastern,
