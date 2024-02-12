@@ -11,13 +11,13 @@ import Link from './link-with-previous-url'
 import './setlist.css'
 import 'react-tippy/dist/tippy.css'
 
-const findById = (id) => find(propEq('id', id))
-const filterBySongId = (id) => filter(propEq('song_id', id))
+const findById = (id) => find(propEq(id, 'id'))
+const filterBySongId = (id) => filter(propEq(id, 'song_id'))
 
 function SetlistEntry({inSuite, performanceData, songData, segues, teases, previousUrl}) {
   const displayName = songData.title
-  const segueData = find(propEq('from_perf_id', performanceData.id))(segues)
-  const teasesArray = filter(propEq('performance_id', performanceData.id))(teases)
+  const segueData = find(propEq(performanceData.id, 'from_perf_id'))(segues)
+  const teasesArray = filter(propEq(performanceData.id, 'performance_id'))(teases)
   const url = `/song/${performanceData.song_id}`
   const classes = classnames('setlist__track', {
     highlight: previousUrl?.endsWith(url),
@@ -121,7 +121,7 @@ export default function Setlist(props) {
               })}
             </ul>
             {lastSong?.performanceData &&
-              <Segue {...find(propEq('from_perf_id', lastSong.performanceData.id))(segues)} className="setlist__suite__segue" />
+              <Segue {...find(propEq(lastSong.performanceData.id, 'from_perf_id'))(segues)} className="setlist__suite__segue" />
             }
           </li>
         }

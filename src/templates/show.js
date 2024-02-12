@@ -57,7 +57,7 @@ function Set({show, shows, which, isEncore = false, sets, performances, segues, 
   if (!setId || !(sets?.length)) {
     return false
   }
-  const setData = find(propEq('id', setId))(sets)
+  const setData = find(propEq(setId, 'id'))(sets)
   const setlist = normalizeSetlist(setData.setlist)
   return <Setlist
     showId={show.id}

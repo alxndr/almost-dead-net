@@ -25,7 +25,7 @@ function Set({show, which, isEncore = false, sets, performances, segues, teases,
   if (!setId || !sets || !sets.length) {
     return false
   }
-  const setData = find(propEq('id', setId))(sets)
+  const setData = find(propEq(setId, 'id'))(sets)
   const setlist = normalizeSetlist(setData.setlist)
   return <Setlist
     isEncore={isEncore}

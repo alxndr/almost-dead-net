@@ -1,6 +1,5 @@
 import React from 'react'
 import {graphql, Link, StaticQuery} from 'gatsby'
-import {groupBy, find, propEq} from 'ramda'
 import slugify from 'slugify'
 
 import Layout from '../components/layout'
