@@ -111,9 +111,9 @@ export default function FanStatsPage({location, data}) {
     if (userJson?.shows) {
       const shows = userJson.shows.reduce((showsData, showDateString) => {
         const showDMYYYY = showDateString.split(' ')[0].replace(/\/(\d{2})$/, '/20$1')
-        const showData = findShow(propEq('date', showDMYYYY))
+        const showData = findShow(propEq(showDMYYYY, 'date'))
         if (showData?.id) {
-          const venue = findVenue(propEq('id', showData.venue_id))
+          const venue = findVenue(propEq(showData.venue_id, 'id'))
           return {
             ...showsData,
             [showData.id]: {
@@ -129,15 +129,15 @@ export default function FanStatsPage({location, data}) {
       const perfsData = Object.values(shows)
         .reduce((setIDs, show) => setIDs.concat([show.set1, show.set2, show.set3, show.encore1, show.encore2].filter((id) => Boolean(id))), [])
         // now it is an array of set ID strings...
-        .map((setID) => findSet(propEq('id', setID)))
+        .map((setID) => findSet(propEq(setID, 'id')))
         .flatMap(({setlist}) => String(setlist).split(':'))
         // now it is an array of songperf ID strings
-        .map((songPerfID) => findSongPerf(propEq('id', songPerfID)))
+        .map((songPerfID) => findSongPerf(propEq(songPerfID, 'id')))
         // now it is an array of songperf objs
       setPerfsData(perfsData)
 
       const teasesData = perfsData
-        .flatMap((perf) => filterTeases(propEq('performance_id', perf.id)))
+        .flatMap((perf) => filterTeases(propEq(perf.id, 'performance_id')))
       setTeasesData(teasesData)
     }
   }, [userJson])

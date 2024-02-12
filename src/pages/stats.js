@@ -95,17 +95,17 @@ export default function StatsPage({data, location}) {
   const showsData = useMemo(() =>
     allShows
       .filter(show => selectedIds.includes(show.id))
-      .map(show => ({...show, venue: findVenue(propEq('id', show.venue_id))})),
+      .map(show => ({...show, venue: findVenue(propEq(show.venue_id, 'id'))})),
     [allShows, selectedIds])
   const perfsData = useMemo(() =>
     uniqBySongId(Object.values(showsData)
       .reduce((setIDs, show) => setIDs.concat([show.set1, show.set2, show.set3, show.encore1, show.encore2].filter((id) => Boolean(id))), []) // now it is an array of set ID strings...
-      .map(setID => findSet(propEq('id', setID))) // now it is an array of set objects
+      .map(setID => findSet(propEq(setID, 'id'))) // now it is an array of set objects
       .flatMap(({setlist}) => String(setlist).split(':')) // now it is an array of songperf ID strings
-      .map(songPerfID => findSongPerf(propEq('id', songPerfID)))), // now it is an array of songperf objs
+      .map(songPerfID => findSongPerf(propEq(songPerfID, 'id')))), // now it is an array of songperf objs
     [showsData])
   const teasesData = useMemo(() =>
-    uniqBySongId(perfsData.flatMap(perf => filterTeases(propEq('performance_id', perf.id)))),
+    uniqBySongId(perfsData.flatMap(perf => filterTeases(propEq(perf.id, 'performance_id')))),
     [perfsData])
 
   return <Layout className="statspage">

@@ -107,7 +107,7 @@ function SongsComponent({data: {allSongsCsv: {nodes: songs}, allTeasesCsv: {node
   const teasedData = useMemo(
     () => groupedByTeased[true].map(songData => ({
       ...songData,
-      teases: filter(propEq('song_id', songData.id))(teases).map((row) => row.performance_id).length,
+      teases: filter(propEq(songData.id, 'song_id'))(teases).map((row) => row.performance_id).length,
     })),
     []
   )

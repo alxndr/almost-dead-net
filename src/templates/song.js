@@ -205,12 +205,12 @@ export default function Song({data: {
       if (perfPositionInSet > 0) {
         const perfPriorId = setIdsInts[perfPositionInSet - 1]
         prior = allSongPerformances.find(songPerf => songPerf.id === perfPriorId) // TODO refactor to use an object lookup
-        prior.segue = find(propEq('to_perf_id', performanceIdStr))(allSegues)?.type || ','
+        prior.segue = find(propEq(performanceIdStr, 'to_perf_id'))(allSegues)?.type || ','
       } else prior = {song_name: '[opener]'}
       let after;
       if (perfPositionInSet < setIdsInts.length - 1) {
         after = allSongPerformances.find(songPerf => songPerf.id === setIdsInts[perfPositionInSet + 1])
-        after.segue = find(propEq('from_perf_id', performanceIdStr))(allSegues)?.type || ','
+        after.segue = find(propEq(performanceIdStr, 'from_perf_id'))(allSegues)?.type || ','
       } else after = {song_name: '[closer]'}
       const whichSet = Object.entries(SET_MAPPING)
         .find(([col_name, _readable_name]) => showData[col_name] === setData.id)[1]
@@ -272,7 +272,7 @@ export default function Song({data: {
         <h2>Teases / Jams</h2>
         <ul>
           {teases.map(teaseData => {
-            const performanceData = find(propEq('id', teaseData.performance_id))(allSongPerformances)
+            const performanceData = find(propEq(teaseData.performance_id, 'id'))(allSongPerformances)
             if (!(performanceData?.id)) {
               return false
             }
