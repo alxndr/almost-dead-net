@@ -1,9 +1,16 @@
 import * as React from 'react'
 import { graphql } from 'gatsby';
 
-export default function SongsPage({}) {
+export default function SongsPage({data}) {
+  const {allSqliteSongs: {nodes: allSongs}} = data;
   return (
     <main>
+      <p>Songs go here!</p>
+      <ul>
+        {allSongs.map(songData =>
+          <li><a href={`/song/${songData.id.replace(/\D/g, '')}`}>{songData.title}</a></li>
+        )}
+      </ul>
     </main>
   )
 }
