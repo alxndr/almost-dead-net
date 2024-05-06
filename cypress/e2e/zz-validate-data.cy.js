@@ -327,6 +327,9 @@ const allShows = [ // TODO replace with proper Cypress fixtures... hopefully hoo
    {id: 326, date: '2/8/2024', venue: 'The Fillmore'},
    {id: 327, date: '2/9/2024', venue: 'The Eastern'},
    {id: 328, date: '2/10/2024', venue: 'The Eastern'},
+   {id: 329, date: '5/2/2024', venue: 'New Orleans'},
+   {id: 330, date: '5/3/2024', venue: 'New Orleans'},
+   {id: 331, date: '5/4/2024', venue: 'New Orleans'},
 ]
 
 const isSampling = !Cypress.env('VALIDATE_ALL')
