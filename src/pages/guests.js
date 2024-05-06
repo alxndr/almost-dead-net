@@ -40,7 +40,7 @@ function GuestsComponent({data: {
     <ul className="guests__list">
       {guests.map((guest) =>
         <li key={guest.id}>
-          <h2>{guest.name}
+          <h2 id={slugify(guest.name)}>{guest.name}
             <span className="guest-instrument">{guest.instrument}</span>
           </h2>
           <ul>
