@@ -32,7 +32,7 @@ function GuestsComponent({data: {
   return <Layout className="guests">
     <SEO
       title="JRAD — Guests"
-      description="All guests who have performed with Joe Russo's Almost Dead"
+      description="All guest musicians and vocalists who have performed with Joe Russo's Almost Dead, with links to the setlist for each concert"
     />
 
     <h1>Guests</h1>
