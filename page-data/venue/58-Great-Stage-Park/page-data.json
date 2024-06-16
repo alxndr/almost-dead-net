@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/58-Great-Stage-Park",
-    "result": {"data":{"venuesCsv":{"id":"58","location":"Manchester, TN","name":"Great Stage Park"},"allShowsCsv":{"nodes":[{"id":"196","date":"6/15/2019"}]}},"pageContext":{"venueId":"58"}},
+    "result": {"data":{"venuesCsv":{"id":"58","location":"Manchester, TN","name":"Great Stage Park"},"allShowsCsv":{"nodes":[{"id":"196","date":"6/15/2019"},{"id":"337","date":"6/14/2024"}]}},"pageContext":{"venueId":"58"}},
     "staticQueryHashes": ["3000541721"]}
