@@ -3,14 +3,15 @@ id,name,location,capacity,generic name,tagname
 2,Grand Targhee Resort,"Alta, WY",,,Grand Targhee Resort
 3,Infinity Downs Farm,"Arrington, VA",,,Infinity Downs Farm
 143,The Stone Pony Summer Stage,"Asbury Park, NJ",,,The Stone Pony Summer Stage
+111,Rabbit Rabbit,"Asheville, NC",4000,,Rabbit Rabbit
 107,Salvage Station,"Asheville, NC",2500,,Salvage Station
 4,The Orange Peel,"Asheville, NC",1050,,The Orange Peel
-111,Rabbit Rabbit,"Asheville, NC",4000,,Rabbit Rabbit
 5,Belly Up,"Aspen, CO",450,,Belly Up
 7,Candler Park,"Atlanta, GA",,,Candler Park
 101,Centennial Olympic Park,"Atlanta, GA",,,Centennial Olympic Park
 6,Tabernacle,"Atlanta, GA",2600,,Tabernacle
 122,The Eastern,"Atlanta, GA",2200,,The Eastern
+148,Island Water Park @ Showboat Resort,"Atlantic City, NJ",,,Island Water Park @ Showboat Resort
 131,The Music Box @ Borgata Resort Spa & Casino,"Atlantic City, NJ",,,The Music Box @ Borgata Resort Spa & Casino
 9,Carson Creek Ranch,"Austin, TX",,,Carson Creek Ranch
 8,Moody Theater,"Austin, TX",2750,,Moody Theater
@@ -78,9 +79,10 @@ id,name,location,capacity,generic name,tagname
 56,The Sylvee,"Madison, WI",,,The Sylvee
 58,Great Stage Park,"Manchester, TN",,,Great Stage Park
 59,Marshfield Fairgrounds,"Marshfield, MA",,,Marshfield Fairgrounds
+144,Saint Louis Music Park,"Maryland Heights, MO",4500,,Saint Louis Music Park
 134,Radians Amphitheater @ Memphis Botanical Garden,"Memphis, TN",,,Radians Amphitheater @ Memphis Botanical Garden
-60,Turner Hall Ballroom,"Milwaukee, WI",300,,Turner Hall Ballroom
 127,Oasis Stage,"Milwaukee, WI",,,Oasis Stage
+60,Turner Hall Ballroom,"Milwaukee, WI",300,,Turner Hall Ballroom
 61,First Avenue,"Minneapolis, MN",1500,TRUE,First Avenue (Minneapolis)
 62,The Wellmont Theater,"Montclair, NJ",2137,,The Wellmont Theater
 130,Roanoke Island Festival Park,"Monteo, NC",,,Roanoke Island Festival Park
@@ -93,8 +95,8 @@ id,name,location,capacity,generic name,tagname
 68,Joy Theater,"New Orleans, LA",1200,,Joy Theater
 67,Mardi Gras World Ballroom,"New Orleans, LA",,,Mardi Gras World Ballroom
 124,The Fillmore,"New Orleans, LA",,TRUE,The Fillmore (New Orleans)
-69,Webster Hall,"New York, NY",1500,,Webster Hall
 135,Pier 17,"New York, NY",,,Pier 17
+69,Webster Hall,"New York, NY",1500,,Webster Hall
 110,Promowest Pavilion at Ovation,"Newport, KY",2700 / 7000,,Promowest Pavilion at Ovation
 136,Fort Adams State Park,"Newport, RI",,,Fort Adams State Park
 70,Last Breath Farm,"Norridgewock, ME",,,Last Breath Farm
@@ -104,6 +106,7 @@ id,name,location,capacity,generic name,tagname
 71,Fox Theater,"Oakland, CA",2800,TRUE,Fox Theater (Oakland)
 72,Mulberry Mountain,"Ozark, AR",,,Mulberry Mountain
 118,Shorefront Park,"Patchogue, NY",,,Shorefront Park
+145,Perinton Center Park Amphitheater,"Perinton, NY",,,Perinton Center Park Amphitheater
 109,Brooklyn Bowl,"Philadelphia, PA",1000,TRUE,Brooklyn Bowl (Philadelphia)
 73,Metropolitan Opera House,"Philadelphia, PA",3500,,Metropolitan Opera House
 74,The Fillmore,"Philadelphia, PA",2500,TRUE,The Fillmore (Philadelphia)
@@ -111,6 +114,7 @@ id,name,location,capacity,generic name,tagname
 117,Stage AE,"Pittsburgh, PA",2400,,Stage AE
 76,Capitol Theatre,"Port Chester, NY",1800,,Capitol Theatre
 77,State Theater,"Portland, ME",1680,TRUE,State Theater (Portland)
+147,Thompson's Point,"Portland, ME",,,Thompson's Point
 79,Fete Ballroom,"Providence, RI",930,,Fete Ballroom
 78,Lupo's Heartbreak Hotel,"Providence, RI",1980,,Lupo's Heartbreak Hotel
 80,Breathless & Now Onyx Resorts,"Punta Cana, Dominican Republic",,,Breathless & Now Onyx Resorts
@@ -125,6 +129,7 @@ id,name,location,capacity,generic name,tagname
 120,Saratoga Performing Arts Center,"Saratoga Springs, NY",25100,,Saratoga Performing Arts Center
 88,Montage Mountain,"Scranton, PA",,,Montage Mountain
 89,The Showbox,"Seattle, WA",1100,,The Showbox
+146,Shelburne Museum,"Shelburne, VT",,,Shelburne Museum
 116,Snowshoe Mountain Resort,"Snowshoe, WV",,,Snowshoe Mountain Resort
 24,Higher Ground,"South Burlington, VT",,,Higher Ground
 91,St Augustine Amphitheatre,"St Augustine, FL",,,St Augustine Amphitheatre
