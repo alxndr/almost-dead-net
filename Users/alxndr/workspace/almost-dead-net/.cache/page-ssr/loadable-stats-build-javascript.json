@@ -1,5 +1,5 @@
 {
-  "hash": "7cad75b2cb415d993623",
+  "hash": "108128b905ad065eb824",
   "publicPath": "/",
   "outputPath": "/Users/alxndr/workspace/almost-dead-net/public",
   "assetsByChunkName": {
@@ -7,7 +7,7 @@
       "app-8065507b0dda4b1aab6d.js"
     ],
     "webpack-runtime": [
-      "webpack-runtime-9d4615f97b9fafa018f5.js"
+      "webpack-runtime-61e8f7cb44becf47b31e.js"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-cb98636b2534e0ba6d6c.js"
@@ -19,7 +19,7 @@
       "component---src-pages-guests-js-f8398d99a1407ed22ffd.js"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-5dad4f59bce966ac6244.js"
+      "component---src-pages-index-js-3f2af9588fe9604eba31.js"
     ],
     "component---src-pages-songs-js": [
       "component---src-pages-songs-js-4de0e8c82b0abcfb7122.js"
@@ -158,18 +158,18 @@
     },
     {
       "type": "asset",
-      "name": "component---src-pages-index-js-5dad4f59bce966ac6244.js",
-      "size": 58502,
+      "name": "component---src-pages-index-js-3f2af9588fe9604eba31.js",
+      "size": 58547,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "5dad4f59bce966ac6244",
+        "contenthash": "3f2af9588fe9604eba31",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "component---src-pages-index-js-5dad4f59bce966ac6244.js.map"
+          "sourceMap": "component---src-pages-index-js-3f2af9588fe9604eba31.js.map"
         }
       },
       "chunkNames": [
@@ -502,18 +502,18 @@
     },
     {
       "type": "asset",
-      "name": "webpack-runtime-9d4615f97b9fafa018f5.js",
+      "name": "webpack-runtime-61e8f7cb44becf47b31e.js",
       "size": 5876,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "9d4615f97b9fafa018f5",
+        "contenthash": "61e8f7cb44becf47b31e",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "webpack-runtime-9d4615f97b9fafa018f5.js.map"
+          "sourceMap": "webpack-runtime-61e8f7cb44becf47b31e.js.map"
         }
       },
       "chunkNames": [
@@ -729,7 +729,7 @@
       ],
       "assets": [
         {
-          "name": "webpack-runtime-9d4615f97b9fafa018f5.js"
+          "name": "webpack-runtime-61e8f7cb44becf47b31e.js"
         },
         {
           "name": "framework-516b8f6e618227f24496.js"
@@ -835,7 +835,7 @@
           "name": "commons-b8a36b0f05d5e1dd20d2.js"
         },
         {
-          "name": "component---src-pages-index-js-5dad4f59bce966ac6244.js"
+          "name": "component---src-pages-index-js-3f2af9588fe9604eba31.js"
         }
       ],
       "filteredAssets": 0,
@@ -1076,7 +1076,7 @@
     {
       "id": 640,
       "files": [
-        "webpack-runtime-9d4615f97b9fafa018f5.js"
+        "webpack-runtime-61e8f7cb44becf47b31e.js"
       ]
     },
     {
@@ -1118,7 +1118,7 @@
     {
       "id": 936,
       "files": [
-        "component---src-pages-index-js-5dad4f59bce966ac6244.js"
+        "component---src-pages-index-js-3f2af9588fe9604eba31.js"
       ]
     },
     {
