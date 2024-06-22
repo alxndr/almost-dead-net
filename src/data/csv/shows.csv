@@ -33,7 +33,7 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 32,5/24/2015,26,87,88,,89,,,,Ville Festival,,2,5/24/15 @ Ville Festival,
 33,5/30/2015,13,90,91,,92,,,,Beanstalk Festival,https://i.imgur.com/kcbbdPB.jpg,1,5/30/15 @ Beanstalk Festival,
 34,6/3/2015,69,93,94,,95,,,private benefit in the Marlin Room (silent auction at set break),Songs of Love,,2,6/3/15 @ Songs of Love,TRUE
-35,6/5/2015,45,96,,,,,,East Stage,Mountain Jam,,4,6/5/15 @ Mountain Jam,
+35,6/5/2015,45,96,,,,,,East Stage,Mountain Jam,,5,6/5/15 @ Mountain Jam,
 36,6/6/2015,72,97,,,,,,started after midnight on the 7th,Wakarusa,https://i.imgur.com/VsEgRvN.jpg,1,6/6/15 @ Wakarusa,
 37,6/26/2015,84,98,,,,,,no available recordings; show started at 1:12am on the 27th,,,0,6/26/15 @ Electric Forest,
 38,7/5/2015,81,99,100,,101,,,,High Sierra Music Festival,,1,7/5/15 @ High Sierra Music Festival,
@@ -336,4 +336,6 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 335,5/31/2024,114,896,897,,898,,,,,https://www.reddit.com/r/JRADs/comments/1d5cpw9/vail_setlist/,2,5/31/24 @ Gerald R. Ford Amphitheater,
 336,6/1/2024,63,899,900,,901,,,,,https://www.reddit.com/r/JRADs/comments/1d61utv/jrad_6124_morrison_co_discussion_thread/,3,6/1/24 @ Red Rocks,
 337,6/14/2024,58,902,,,,,,,Bonnaroo,,0,6/14/24 @ Bonnaroo,
-338,6/15/2024,144,903,904,,905,,,,,,1,6/15/24 @ Saint Louis Music Park,
+338,6/15/2024,144,903,904,,905,,,,,,8,6/15/24 @ Saint Louis Music Park,
+339,6/20/2024,128,906,907,,908,,,,,https://i.imgur.com/ZrcCUGY.png https://www.reddit.com/r/JRADs/comments/1dke98v/who_is_ready_for_a_hot_night_at_hampton_beach/,1,6/20/24 @ Hampton Beach Casino Ballroom,
+340,6/21/2024,128,,,,,,,,,https://i.imgur.com/ZrcCUGY.png https://www.reddit.com/r/JRADs/comments/1dljlth/jrad_6202024_hampton_beach_casino_hampton_beach_nh/,1,6/21/24 @ Hampton Beach Casino Ballroom,
