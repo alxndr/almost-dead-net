@@ -49,7 +49,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,cover_jg,c
 755,Antwerp's Placebo (The Plumber),Bill Kreutzmann & Mickey Hart (Grateful Dead),,,,755,TRUE,,,,,1980,,
 503,A Voice from on High,Bill Monroe & Bessie Lee Mauldin,,,,503,,TRUE,,,I Hear a Voice Calling,1970,,
 644,Oh Boy!,Bill Tilghman & Norman Petty (Sonny West),,,,644,,TRUE,,,,1987,,
-825,Waitin' For The Bus,Billy Gibbons & Dusty Hill (ZZ Top),,,5197:5354,825,,,,,,1973,https://en.wikipedia.org/wiki/Waitin'_for_the_Bus_/_Jesus_Just_Left_Chicago,
+825,Waitin' For The Bus,Billy Gibbons & Dusty Hill (ZZ Top),,,5197:5354,825,,,,,Have Mercy,1973,https://en.wikipedia.org/wiki/Waitin'_for_the_Bus_/_Jesus_Just_Left_Chicago,
 821,La Grange,"Billy Gibbons, Dusty Hill, Frank Beard (ZZ Top)",,,5144,821,,,,,,1973,https://en.wikipedia.org/wiki/La_Grange_(song),
 826,Jesus Just Left Chicago,"Billy Gibbons, Dusty Hill, Frank Beard (ZZ Top)",,,,826,,,,,,,,
 322,War Pigs,Black Sabbath,,,,322,,,,,,,,
@@ -579,7 +579,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,cover_jg,c
 23,Black Muddy River,Robert Hunter & Jerry Garcia (Grateful Dead),,,2889:3698:4344,23,TRUE,,,,,1986,,
 24,Black Peter,Robert Hunter & Jerry Garcia (Grateful Dead),,,207:551:887:2340:2731:3672:4570:4941:5110:5113:5169,24,TRUE,,,,,1969,,
 26,Blues for Allah,Robert Hunter & Jerry Garcia (Grateful Dead),,,1390:3168:3323:4624:5227,26,TRUE,,,,,1975,,
-30,Brokedown Palace,Robert Hunter & Jerry Garcia (Grateful Dead),,,42:130:301:753:1421:1878:1992:2098:2292:3240:3527:3593:3946:4332:4855,30,TRUE,,,,,1970,,
+30,Brokedown Palace,Robert Hunter & Jerry Garcia (Grateful Dead),,,42:130:301:753:1421:1878:1992:2098:2292:3240:3527:3593:3946:4332:4855:5374,30,TRUE,,,,,1970,,
 32,Brown-Eyed Women,Robert Hunter & Jerry Garcia (Grateful Dead),,,6:132:170:235:254:388:502:597:679:808:881:915:1006:1117:1219:1260:1316:1412:1486:1605:1618:1688:1847:1849:1890:2097:2137:2187:2285:2426:2501:2638:2703:2723:2951:3030:3083:3127:3167:3246:3346:3383:3431:3484:3525:3545:3625:3651:3716:3835:3897:4047:4235:4311:4404:4489:4591:4692:4830:4864:5049:5154:5292:5296,32,TRUE,,,,,1971,,BEW
 33,Built To Last,Robert Hunter & Jerry Garcia (Grateful Dead),,,745,33,TRUE,,,,,1988,,
 34,Candyman,Robert Hunter & Jerry Garcia (Grateful Dead),,,419:870:1020:1350:1712:1781:2223:2313:2690:2784:2961:3096:3196:3326:3462:3629:3685:3877:4052:4204:4251:4353:4731:4859:5065:5198:5206,34,TRUE,,,,,1970,,
