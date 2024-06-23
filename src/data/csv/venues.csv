@@ -55,6 +55,7 @@ id,name,location,capacity,generic name,tagname
 38,The Fillmore,"Denver, CO",3700,TRUE,The Fillmore (Denver)
 39,Cuthbert Amphitheater,"Eugene, OR",4000,,Cuthbert Amphitheater
 40,McDonald Theatre,"Eugene, OR",759,,McDonald Theatre
+145,Perinton Center Park Amphitheater,"Fairport, NY",,,Perinton Center Park Amphitheater
 41,Moose Light Blues Tent,"Fredericton, NB (Canada)",,,Moose Light Blues Tent
 42,Founders Brewing Company,"Grand Rapids, MI",,,Founders Brewing Company
 43,Greenfield Community College,"Greenfield, MA",,,Greenfield Community College
@@ -106,7 +107,6 @@ id,name,location,capacity,generic name,tagname
 71,Fox Theater,"Oakland, CA",2800,TRUE,Fox Theater (Oakland)
 72,Mulberry Mountain,"Ozark, AR",,,Mulberry Mountain
 118,Shorefront Park,"Patchogue, NY",,,Shorefront Park
-145,Perinton Center Park Amphitheater,"Perinton, NY",,,Perinton Center Park Amphitheater
 109,Brooklyn Bowl,"Philadelphia, PA",1000,TRUE,Brooklyn Bowl (Philadelphia)
 73,Metropolitan Opera House,"Philadelphia, PA",3500,,Metropolitan Opera House
 74,The Fillmore,"Philadelphia, PA",2500,TRUE,The Fillmore (Philadelphia)
