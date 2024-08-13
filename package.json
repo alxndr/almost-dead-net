@@ -65,7 +65,7 @@
     "cypress": "^13",
     "eslint": "8.57.0",
     "eslint-config-react-app": "^7.0.1",
-    "eslint-plugin-cypress": "^3.3.0",
+    "eslint-plugin-cypress": "^3.5.0",
     "eslint-plugin-react": "^7.34.4",
     "gh-pages": "^6.1.1",
     "hads": "^3.0.3",
