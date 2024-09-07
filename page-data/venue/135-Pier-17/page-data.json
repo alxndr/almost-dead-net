@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/135-Pier-17",
-    "result": {"data":{"venuesCsv":{"id":"135","location":"New York, NY","name":"Pier 17"},"allShowsCsv":{"nodes":[{"id":"302","date":"7/27/2023"}]}},"pageContext":{"venueId":"135"}},
+    "result": {"data":{"venuesCsv":{"id":"135","location":"New York, NY","name":"Pier 17"},"allShowsCsv":{"nodes":[{"id":"302","date":"7/27/2023"},{"id":"347","date":"9/6/2024"}]}},"pageContext":{"venueId":"135"}},
     "staticQueryHashes": ["3000541721"]}
