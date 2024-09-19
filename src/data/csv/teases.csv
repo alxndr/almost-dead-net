@@ -212,7 +212,7 @@ id,within,performance_id,song_name,notes,by,song_id
 378,Slipknot!,1187,[unknown],Jimi?,,288
 38,Jack A Roe,1261,Hey Bulldog,,,103
 379,Mr. Charlie,1290,[unknown],Zeppelin?,,288
-380,Jam,1301,[unknown],Radiohead?,,288
+380,Bertha,1302,[unknown],Radiohead?,,288
 381,Truckin',1305,Born Cross Eyed,,,27
 39,Truckin',1313,China Cat Sunflower,,,44
 382,Viola Lee Blues,1320,[unknown],Zeppelin?,,288
@@ -258,7 +258,7 @@ id,within,performance_id,song_name,notes,by,song_id
 471,Truckin',2265,Bird Song,,MB,22
 473,Truckin',2267,Bird Song,,band,22
 474,Playing in the Band,2269,Feel Like a Stranger,,band,74
-412,Jam,2407,A Love Supreme,,TH or SM,323
+412,Shakedown Street,2406,A Love Supreme,in outro jam,TH or SM,323
 413,The Other One,2408,Playing in the Band,,,176
 414,Viola Lee Blues,2409,Throwing Stones,,,245
 415,Viola Lee Blues,2409,China Cat Sunflower,,TH,44
@@ -272,7 +272,7 @@ id,within,performance_id,song_name,notes,by,song_id
 423,Feel Like a Stranger,2412,Slipknot!,,,201
 424,Dancing in the Streets,2414,Tell Me a Bedtime Story,jam,MB,348
 425,Dancing in the Streets,2414,Eyes of the World,,,71
-426,Jam,2416,Fly Like an Eagle,,MB,349
+426,Eyes of the World,2415,Fly Like an Eagle,in outro jam,MB,349
 427,Part II: Let It Grow,2417,Amazing Grace,,TH,350
 428,Part II: Let It Grow,2417,If You Think I'm Sexy,,,351
 429,Part II: Let It Grow,2417,My Perogative,,,352
@@ -306,9 +306,9 @@ id,within,performance_id,song_name,notes,by,song_id
 75,Feel Like a Stranger,2675,Here Comes The Hotstepper,,,292
 76,Morning Dew,2676,Baba O'Riley,,,293
 77,Part II: Let It Grow,2679,Ten Years Gone,,,295
-78,Jam,2680,My Favorite Things,,,294
-79,Jam,2680,Part II: Let It Grow,,,277
-80,Jam,2680,Bird Song,,,22
+78,Part II: Let It Grow,2679,My Favorite Things,in outro jam,,294
+79,Part II: Let It Grow,2679,Part II: Let It Grow,in outro jam,,277
+80,Part II: Let It Grow,2679,Bird Song,in outro jam,,22
 81,New Minglewood Blues,2685,Throwing Stones,,,245
 385,Candyman,2690,[unknown],"""Revelry""?",,288
 82,Big River,2696,Cumberland Blues,,,55
@@ -421,7 +421,7 @@ id,within,performance_id,song_name,notes,by,song_id
 479,He's Gone,3098,Black Throated Wind,h/t preston99@archive,,25
 188,Uncle John's Band,3117,Becky,,,16
 386,Saint of Circumstance,3123,Reuben and Cherise,,,185
-189,Jam,3124,Born Cross Eyed,...or is this a separate jam?,,27
+189,Truckin',3125,Born Cross Eyed,...or is this a separate jam?,,27
 190,Dancing in the Streets,3128,Living for the City,,,310
 192,Dancing in the Streets,3128,Slipknot!,,,201
 193,Dancing in the Streets,3128,King Solomon's Marbles,,,127
