@@ -53,7 +53,7 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 52,10/31/2015,82,131,132,,133,,,,,https://i.imgur.com/BBBKpg8.png,1,10/31/15 @ The Ritz,
 53,11/27/2015,15,134,135,,136,,,,,,1,11/27/15 @ Paradise Rock Club,TRUE
 54,11/28/2015,15,137,138,,139,,,,,,1,11/28/15 @ Paradise Rock Club,TRUE
-55,12/11/2015,50,140,141,,142,,143,first known recorded soundcheck; webcast on nugs.tv,,https://i.imgur.com/mSkWh5I.jpg,1,12/11/15 @ Brooklyn Bowl (Las Vegas),
+55,12/11/2015,50,140,141,,142,,143,webcast on nugs.tv,,https://i.imgur.com/mSkWh5I.jpg,1,12/11/15 @ Brooklyn Bowl (Las Vegas),
 56,12/12/2015,71,144,145,,146,,582,,,https://i.imgur.com/mSkWh5I.jpg,2,12/12/15 @ Fox Theater (Oakland),
 57,12/19/2015,38,147,148,,,,,,,https://i.imgur.com/o7CRfo6.jpg,3,12/19/15 @ The Fillmore (Denver),TRUE
 58,12/31/2015,74,149,150,151,152,,,acoustic set 2; first acoustic set; first three-set show; first NYE with full band,,https://i.imgur.com/7Pt8HyE.jpg,2,12/31/15 @ The Fillmore (Philadelphia),
@@ -73,7 +73,7 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 72,4/30/2016,68,188,189,,190,,,,, ,1,4/30/16 @ Joy Theater,TRUE
 73,6/30/2016,81,191,192,,,,,no available recording,High Sierra Music Festival,https://i.imgur.com/v1atQHR.png,0,6/30/16 @ High Sierra Music Festival,
 74,7/1/2016,85,193,194,,195,,,no available recording,,https://i.imgur.com/v1atQHR.png,0,7/1/16 @ The Depot,
-75,7/2/2016,5,196,197,,198,,,,,https://i.imgur.com/v1atQHR.png https://lot.almost-dead.net/uploads/default/optimized/1X/2a10dfe2b902eedf94abcaba6c215368d99346f5_2_666x500.jpeg,1,7/2/16 @ Belly Up,TRUE
+75,7/2/2016,5,196,197,,198,,,,,https://i.imgur.com/v1atQHR.png,1,7/2/16 @ Belly Up,TRUE
 76,7/3/2016,63,199,,,,,,,,https://i.imgur.com/v1atQHR.png,1,7/3/16 @ Red Rocks,
 77,8/13/2016,88,200,,,,,,,Peach Music Festival,,6,8/13/16 @ Peach Music Festival,
 78,8/20/2016,35,201,,,,,,,Hot August Music Festival,,1,8/20/16 @ Hot August Music Festival,
@@ -345,5 +345,6 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 344,8/1/2024,146,917,918,,919,,923,Joe(?)'s dog Teddy got loose as the band took the stage; no Dave; soundcheck is incomplete,Ben & Jerry's Concerts On The Green,,6,8/1/24 @ Ben & Jerry's Concerts On The Green,
 345,8/2/2024,147,920,921,,922,,,,,,1,8/2/24 @ Thompson's Point,
 346,8/3/2024,106,924,925,,926,,,,,https://www.reddit.com/r/JRADs/comments/1ejikdi/boston_tonight_absolutely_smoking_first_set/,3,8/3/24 @ Leader Bank Pavilion,
-347,9/6/2024,135,928,929,,930,,,,,https://i.imgur.com/e2pXlrx.png,1,9/6/24 @ Pier 17,
-348,9/7/2024,135,931,932,,933,,,Lee Ranaldo (Sonic Youth) joined to open 2nd set and encore,,https://i.imgur.com/e2pXlrx.png,0,9/7/24 @ Pier 17,
+347,9/6/2024,135,928,929,,930,,,,,https://i.imgur.com/e2pXlrx.png,3,9/6/24 @ Pier 17,
+348,9/7/2024,135,931,932,,933,,,Lee Ranaldo (Sonic Youth) joined to open 2nd set and encore,,https://i.imgur.com/e2pXlrx.png,3,9/7/24 @ Pier 17,
+349,10/3/2024,125,934,935,,936,,,,,,1,10/3/24 @ Ting Pavilion,
