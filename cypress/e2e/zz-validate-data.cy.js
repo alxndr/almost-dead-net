@@ -330,9 +330,28 @@ const allShows = [ // TODO replace with proper Cypress fixtures... hopefully hoo
    {id: 329, date: '5/2/2024', venue: 'New Orleans'},
    {id: 330, date: '5/3/2024', venue: 'New Orleans'},
    {id: 331, date: '5/4/2024', venue: 'New Orleans'},
+   {id: 332, date: '5/16/2024', venue: 'Pier Six'},
+   {id: 333, date: '5/17/2024', venue: 'Stone Pony'},
+   {id: 334, date: '5/18/2024', venue: 'Westville'},
+   {id: 335, date: '5/31/2024', venue: 'Ford Amphitheater'},
+   {id: 336, date: '6/1/2024', venue: 'Red Rocks'},
+   {id: 337, date: '6/14/2024', venue: 'Bonnaroo'},
+   {id: 338, date: '6/15/2024', venue: 'Saint Louis Music Park'},
+   {id: 339, date: '6/20/2024', venue: 'Hampton Beach'},
+   {id: 340, date: '6/21/2024', venue: 'Hampton Beach'},
+   {id: 341, date: '6/22/2024', venue: 'Perinton Center'},
+   {id: 342, date: '7/13/2024', venue: 'Peach at the Beach'},
+   {id: 343, date: '7/25/2024', venue: 'FloydFest'},
+   {id: 344, date: '8/1/2024', venue: 'Concerts On The Green'},
+   {id: 345, date: '8/2/2024', venue: 'Thompson\'s Point'},
+   {id: 346, date: '8/3/2024', venue: 'Leader Bank'},
+   {id: 347, date: '9/6/2024', venue: 'Pier 17'},
+   {id: 348, date: '9/7/2024', venue: 'Pier 17'},
+   {id: 349, date: '10/3/2024', venue: 'Ting Pavilion'},
+   {id: 350, date: '10/24/2024', venue: 'The Fox'},
 ]
 
-const isSampling = !Cypress.env('VALIDATE_ALL')
+const isSampling = !Cypress.env('VALIDATE_ALL') // corresponds to CYPRESS_VALIDATE_ALL env var
 
 describe('data validation', () => {
   describe(`when isSampling = ${isSampling}`, () => {

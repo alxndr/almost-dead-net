@@ -31,7 +31,7 @@ jobs:
       - name: Cypress data validation
         uses: cypress-io/github-action@v6
         with:
-          env: VALIDATE_ALL=true
+          env: VALIDATE_ALL=true # corresponds to CYPRESS_VALIDATE_ALL env var
           spec: cypress/e2e/zz-validate-data.cy.js
           start: npm run build:serve:9001
           wait-on: 'http://localhost:9001'
