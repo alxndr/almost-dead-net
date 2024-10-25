@@ -13,6 +13,17 @@
   letter-spacing: 0.05em;
 }
 
+.homepage__banner {
+  width: 100%;
+  font-size: 1.75em;
+  line-height: 2em;
+  text-align: center;
+  span {
+    white-space: nowrap;
+    padding: 0.2em;
+  }
+}
+
 .homepage__songfinder {
   order: 1;
   flex-grow: 1;

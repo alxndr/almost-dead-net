@@ -17,6 +17,14 @@ export default function Index() {
       description="Comprehensive resource for the setlist of every Joe Russo's Almost Dead (JRAD) concert, with links to all known recordings plus notes for individual teases, guest sit-ins, every song played, and the venues where the band has performed."
     />
 
+    <section className="homepage__banner">
+      <p>
+        <span><a href="https://www.jambase.com/article/grateful-dead-bassist-phil-lesh-obituary" title="obit on JamBase" target="_blank" referrer="noopener">RIP</a> <a href="https://www.instagram.com/p/DBjvWcHPbQB/" title="Instagram @phillesh" target="_blank" referrer="noopener">Phil Lesh</a>...</span>
+        <span>thank you for all the music</span>
+        <span>❤️🧡💛💚🩵💙💜🩷🤎🖤</span>
+      </p>
+    </section>
+
     <section className="homepage__links">
       <h1>Links</h1>
       <ul>
