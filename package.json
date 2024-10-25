@@ -31,7 +31,7 @@
     "pretest": "npm run lint",
     "test": "npm run test:e2e",
     "pretest:e2e": "echo Starting Cypress integration tests...",
-    "test:e2e": "WAIT_ON_TIMEOUT=${WAIT_ON_TIMEOUT:-240000} start-server-and-test dev :8000 cy:run"
+    "test:e2e": "WAIT_ON_TIMEOUT=${WAIT_ON_TIMEOUT:-240000} start-server-and-test dev ${URL:-http://localhost:${PORT:-8000}} cy:run"
   },
   "dependencies": {
     "@loadable/babel-plugin": "^5.16.1",
