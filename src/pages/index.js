@@ -9,7 +9,6 @@ import ShowsByYear from '../components/shows_by_year'
 
 import './index.css'
 
-
 export default function Index() {
   return <Layout className="homepage">
     <SEO
@@ -20,7 +19,7 @@ export default function Index() {
     <section className="homepage__banner">
       <p>
         <span><a href="https://www.jambase.com/article/grateful-dead-bassist-phil-lesh-obituary" title="obit on JamBase" target="_blank" referrer="noopener">RIP</a> <a href="https://www.instagram.com/p/DBjvWcHPbQB/" title="Instagram @phillesh" target="_blank" referrer="noopener">Phil Lesh</a>...</span>
-        <span>thank you for all the music</span>
+        thank you for all the music
         <span>❤️🧡💛💚🩵💙💜🩷🤎🖤</span>
       </p>
     </section>
