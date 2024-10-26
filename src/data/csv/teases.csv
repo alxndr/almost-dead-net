@@ -876,7 +876,7 @@ id,within,performance_id,song_name,notes,by,song_id
 887,Wharf Rat,3950,Come Sail Away,,MB,430
 888,Ramble On Rose,3951,Tennessee Jed,,SM,221
 889,Althea,3953,King Solomon's Marbles,headfake,band,127
-890,Foolish Heart,3956,I Know You Rider,China>Rider transition,TH,110
+890,Foolish Heart,3956,I Know You Rider,intro/transition from China Cat,TH,110
 891,Werewolves of London,3957,Sweet Home Alabama,,MB,431
 892,Werewolves of London,3957,Saturday Night's Alright for Fighting,,MB,317
 893,Bertha,3958,Jessica,,SM,298
@@ -1763,3 +1763,17 @@ id,within,performance_id,song_name,notes,by,song_id
 1777,The Wheel,5512,Alligator,,,8
 1778,He's Gone,5515,There Is a Mountain,,,237
 1779,He's Gone,5515,Black Throated Wind,,,25
+1780,Bird Song,5516,Cassidy,,,38
+1781,Bird Song,5516,I Know You Rider,intro/transition from China Cat,,110
+1782,Cumberland Blues,5533,Unbroken Chain,jam,,254
+1783,Cumberland Blues,5533,Split Open and Melt,,,773
+1784,Cumberland Blues,5533,Shortnin' Bread,,,315
+1785,Cumberland Blues,5533,Throwing Stones,,,245
+1786,I Need A Miracle,5520,Friend of the Devil,,,79
+1787,I Need A Miracle,5520,They Love Each Other,,,242
+1788,I Need A Miracle,5520,Uncle John's Band,,,255
+1789,Playing in the Band,5521,Saint of Circumstance,,,193
+1790,Eyes of the World,5522,Friend of the Devil,,,79
+1791,Eyes of the World,5522,Mind Left Body,,,530
+1792,St. Stephen,5526,Mind Left Body,,,530
+1793,I Shall Be Released,5531,Stella Blue,,,209
