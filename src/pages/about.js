@@ -13,7 +13,7 @@ export default function About() {
     <h1>About Almost-Dead.net</h1>
     <p>This site is not officially affiliated with <a href="http://www.joerussosalmostdead.com/" target="_blank" rel="noopener noreferrer">Joe Russo's Almost Dead</a>.</p>
     <p>It is inspired by fan-run sites such as Deadbase (RIP), <a href="http://phish.net" target="_blank" rel="noopener noreferrer">phish.net</a>, and <a href="http://brownbase.org" target="_blank" rel="noopener noreferrer">brownbase.org</a>.</p>
-    <p>Corrections or suggestions can be directed to the Mastodon account <a href="https://shakedown.social/@AlmostDeadNet" title="mastodon: @AlmostDeadNet@shakedown.social" target="_blank" rel="noopener noreferrer">@AlmostDeadNet@shakedown.social</a> or Reddit account <a href="https://www.reddit.com/user/drwxrxrx/" title="Reddit: /u/drwxrxrx" target="_blank" rel="noopener noreferrer">/u/drwxrxrx</a>.</p>
+    <p>Corrections or suggestions can be directed to the Mastodon account <a href="https://shakedown.social/@AlmostDeadNet" title="mastodon: @AlmostDeadNet@shakedown.social" target="_blank" rel="noopener noreferrer">@AlmostDeadNet@shakedown.social</a> or Reddit account <a href="https://www.reddit.com/user/AlmostDeadDotNet" title="Reddit: /u/AlmostDeadDotNet" target="_blank" rel="noopener noreferrer">/u/drwxrxrx</a>.</p>
 
     <h1>❤️</h1>
     <p>In Memory of <Link to="/show/184">David Kay</Link>, creator of the <a href="https://docs.google.com/spreadsheets/d/1qxTKvLkiQgHycuC530OU3j-O5ggijHelXRXVjTiZLis/htmlview" target="_blank" rel="noopener noreferrer">JRAD-base spreadsheet</a>.</p>
