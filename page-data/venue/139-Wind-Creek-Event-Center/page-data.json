@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/139-Wind-Creek-Event-Center",
-    "result": {"data":{"venuesCsv":{"id":"139","location":"Bethlehem, PA","name":"Wind Creek Event Center"},"allShowsCsv":{"nodes":[{"id":"317","date":"11/16/2023"}]}},"pageContext":{"venueId":"139"}},
+    "result": {"data":{"venuesCsv":{"id":"139","location":"Bethlehem, PA","name":"Wind Creek Event Center"},"allShowsCsv":{"nodes":[{"id":"317","date":"11/16/2023"},{"id":"353","date":"11/14/2024"}]}},"pageContext":{"venueId":"139"}},
     "staticQueryHashes": ["3000541721"]}
