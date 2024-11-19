@@ -350,6 +350,10 @@ const allShows = [ // TODO replace with proper Cypress fixtures... hopefully hoo
    {id: 349, date: '10/3/2024', venue: 'Ting Pavilion'},
    {id: 350, date: '10/24/2024', venue: 'Fox Theater'},
    {id: 351, date: '10/25/2024', venue: 'Fox Theater'},
+   {id: 352, date: '10/26/2024', venue: 'Greek Theatre'},
+   {id: 353, date: '11/14/2024', venue: 'Wind Creek Event Center'},
+   {id: 354, date: '11/15/2024', venue: 'Metropolitan Opera House'},
+   {id: 355, date: '11/16/2024', venue: 'The Anthem'},
 ]
 
 const isSampling = !Cypress.env('VALIDATE_ALL') // corresponds to CYPRESS_VALIDATE_ALL env var
