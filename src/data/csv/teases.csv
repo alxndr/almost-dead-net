@@ -1779,14 +1779,26 @@ id,within,performance_id,song_name,notes,by,song_id
 1793,I Shall Be Released,5531,Stella Blue,,,209
 1794,Part II: Let It Grow,5541,Pigs (Three Different Ones),,,404
 1795,Foolish Heart,5535,Victim or the Crime,https://www.reddit.com/r/JRADs/comments/1gdgqev/comment/lu84mkh/,,580
-1796,Shelter From the Storm,5549,Feel Like a Stranger,,,74
-1797,Shelter From the Storm,5549,Foolish Heart,,,76
-1798,Shelter From the Storm,5549,The Mighty Quinn,,,181
+1796,Shelter From the Storm,5549,Feel Like a Stranger,,band,74
+1797,Shelter From the Storm,5549,Foolish Heart,,band,76
+1798,Shelter From the Storm,5549,The Mighty Quinn,,TH,181
 1799,Black Throated Wind,5556,Jack Straw,,,120
-1800,Jack Straw,5557,New Speedway Boogie,,,165
-1801,Crazy Fingers,5558,New Speedway Boogie,,,165
-1802,Truckin',5559,Hell In A Bucket,,,97
-1803,Truckin',5559,The Other One,,,235
-1804,Truckin',5559,Hell In A Bucket,reprise/with lyrics,,97
-1805,Playing in the Band,5521,Part II: Let It Grow,,,277
+1800,Jack Straw,5557,New Speedway Boogie,,band,165
+1801,Crazy Fingers,5558,New Speedway Boogie,,band,165
+1802,Truckin',5559,Hell In A Bucket,,band,97
+1803,Truckin',5559,The Other One,,band,235
+1805,Playing in the Band,5521,Part II: Let It Grow,,band,277
 1806,Cumberland Blues,5573,Jessica,,,298
+1807,Scarlet Begonias,5563,The Wheel,in intro jam,TH,241
+1808,Scarlet Begonias,5563,Foolish Heart,,TH,76
+1809,Greatest Story Ever Told,5565,Hell In A Bucket,,SM,97
+1810,Here Comes Sunshine,5569,Today,in intro jam,band,834
+1811,Here Comes Sunshine,5569,China Cat Sunflower,,band,44
+1812,Easy Wind,5570,War Pigs / Luke's Wall,jam,,835
+1813,Easy Wind,5570,Good Times Bad Times,before transition out,band,89
+1814,Cumberland Blues,5573,Here Comes Sunshine,,band,99
+1815,Cumberland Blues,5573,Jessica,,SM,298
+1816,Cumberland Blues,5573,Mama Tried,,SM,142
+1817,Cumberland Blues,5573,China Cat Sunflower,,band,44
+1818,Mississippi Halfstep Uptown Toodleloo,5566,Scarlet Begonias,jam,,195
+1819,New Speedway Boogie,5552,The Other One,,band,235

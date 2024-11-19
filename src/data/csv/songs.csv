@@ -49,6 +49,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,cover_jg,c
 755,Antwerp's Placebo (The Plumber),Bill Kreutzmann & Mickey Hart (Grateful Dead),,,,755,TRUE,,,,,1980,,
 503,A Voice from on High,Bill Monroe & Bessie Lee Mauldin,,,,503,,TRUE,,,I Hear a Voice Calling,1970,,
 644,Oh Boy!,Bill Tilghman & Norman Petty (Sonny West),,,,644,,TRUE,,,,1987,,
+834,Today,Billy Corgan (The Smashing Pumpkins),,,,834,,,,,,1993,https://en.wikipedia.org/wiki/Today_(The_Smashing_Pumpkins_song),
 825,Waitin' For The Bus,Billy Gibbons & Dusty Hill (ZZ Top),,,5197:5354,825,,,,,Have Mercy,1973,https://en.wikipedia.org/wiki/Waitin'_for_the_Bus_/_Jesus_Just_Left_Chicago,
 826,Jesus Just Left Chicago,"Billy Gibbons, Dusty Hill, Frank Beard (ZZ Top)",,,,826,,,,,,,,
 821,La Grange,"Billy Gibbons, Dusty Hill, Frank Beard (ZZ Top)",,,5144,821,,,,,,1973,https://en.wikipedia.org/wiki/La_Grange_(song),
@@ -143,7 +144,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,cover_jg,c
 684,How Sweet It Is (To Be Loved by You),"Brian Holland, Lamont Dozier, Eddie Holland (Marvin Gaye)",,,,684,,TRUE,,,,1972,,
 831,You Keep Me Hangin' On,"Brian Holland, Lamont Dozier, Eddie Holland (The Supremes; Vanilla Fudge)",,,5370:5496,831,,,,,You Just Keep Me Hanging On,1966,,
 441,Flash,Brian May (Queen),,,,441,,,,,Flash's Theme,,,
-690,Help Me Rhonda,Brian Wilson (The Beach Boys),,,5571,690,,TRUE,,,,1971,,
+690,Help Me Rhonda,Brian Wilson (The Beach Boys),,,,690,,TRUE,,,,1971,,
 446,Boy,Brothers Past,,,,446,,,,TRUE,,,,
 300,Simple Gift of Man,Brothers Past,,,,300,,,,TRUE,,,,
 563,Stander on the Mountain,Bruce Hornsby,,,,563,TRUE,,,,,1990,,
@@ -378,7 +379,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,cover_jg,c
 484,Easy to Love You,John Perry Barlow & Brent Mydland (Grateful Dead),,,,484,TRUE,,,,,1979,,
 493,"Gentlemen, Start Your Engines",John Perry Barlow & Brent Mydland (Grateful Dead),,,,493,TRUE,,,,,1988,,
 508,I Will Take You Home,John Perry Barlow & Brent Mydland (Grateful Dead),,,,508,TRUE,,,,,1988,,
-97,Hell In A Bucket,"John Perry Barlow, Brent Mydland, Bob Weir (Grateful Dead)",Bucket,,188:351:1134:1611:1627:1859:2558:2768:2895:3587:3664:3843:3890:4068:4250:4362:4569:4742:4829:5020:5212:5278:5537:5551,97,TRUE,,,,,1983,,
+97,Hell In A Bucket,"John Perry Barlow, Brent Mydland, Bob Weir (Grateful Dead)",Bucket,,188:351:1134:1611:1627:1859:2558:2768:2895:3587:3664:3843:3890:4068:4250:4362:4569:4742:4829:5020:5212:5278:5537:5551:5578,97,TRUE,,,,,1983,,
 145,Me and My Uncle,John Phillips (Judy Collins),Uncle,,357:387:989:2884:3177:3386:3508:3670:4128:4314:4802:4908:5068:5412,145,,TRUE,,,,1970,,
 718,Do You Believe in Magic?,John Sebastian (The Lovin' Spoonful),,,,718,,TRUE,,,,1965?,,
 703,Gangster of Love,"Johnny ""Guitar"" Watson (The Cadets)",,,,703,,TRUE,,,Love Bandit,1966,,
@@ -571,7 +572,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,cover_jg,c
 686,Hollywood Cantata,Robert Hunter & Bob Weir (Grateful Dead),,,,686,TRUE,,,,,1975,,
 176,Playing in the Band,Robert Hunter & Bob Weir (Grateful Dead),Playin',,32:79:89:190:272:359:380:531:552:722:752:842:949:1071:1264:1266:1360:1457:1830:2031:2033:2109:2184:2269:2316:2371:2452:2576:2634:2672:2717:2794:2802:2975:3048:3110:3183:3251:3263:3360:3425:3471:3488:3570:3595:3619:3693:3744:3797:3864:3949:3965:4044:4114:4171:4254:4285:4335:4402:4430:4504:4540:4587:4676:4730:4732:4809:4823:4834:4914:4979:5016:5099:5153:5236:5291:5322:5360:5400:5469:5521,176,TRUE,,,,Playin' in the Band,1971,,PITB
 215,Sugar Magnolia,Robert Hunter & Bob Weir (Grateful Dead),Sugar,,215:299:360:401:453:499:512:573:631:802:873:969:1128:1161:1262:1540:1679:1748:1788:1961:2162:2765:2915:3187:3786:3888:4132:4224:4333:4439:4703:4815:4970:5085:5345:5409:5568,215,TRUE,,,,,1970,,
-217,Sunshine Daydream,Robert Hunter & Bob Weir (Grateful Dead),SSDD,,216:300:364:402:454:500:513:574:632:803:874:981:1129:1162:1263:1541:1680:1749:1789:1962:2163:2766:3188:4133:4163:4225:4472:4816,217,TRUE,,,,,1970?,,SSDD
+217,Sunshine Daydream,Robert Hunter & Bob Weir (Grateful Dead),SSDD,,216:300:364:402:454:500:513:574:632:803:874:981:1129:1162:1263:1541:1680:1749:1789:1962:2163:2766:3188:4133:4163:4225:4472:4816:5577,217,TRUE,,,,,1970?,,SSDD
 597,We Can Run,Robert Hunter & Brent Mydland (Grateful Dead),,,,597,TRUE,,,,,1989,,
 5,Alabama Getaway,Robert Hunter & Jerry Garcia (Grateful Dead),Getaway,,204:345:559:1004:2936:3731:4031:4459:4787:5555,5,TRUE,,,,,1979,,
 9,Althea,Robert Hunter & Jerry Garcia (Grateful Dead),,,2:33:78:169:267:320:423:545:686:824:941:1123:1153:1225:1467:1569:1801:1973:2028:2100:2229:2530:2635:2758:2820:3047:3121:3176:3216:3411:3489:3512:3596:3764:3839:3953:4227:4484:4561:4720:4937:5102:5157:5272,9,TRUE,,,,,1979,,
@@ -600,7 +601,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,cover_jg,c
 71,Eyes of the World,Robert Hunter & Jerry Garcia (Grateful Dead),Eyes,,12:51:111:150:273:356:391:438:473:528:659:780:810:948:997:1069:1180:1215:1222:1292:1391:1439:1456:1496:1567:1664:1733:1837:1935:1993:2185:2306:2415:2478:2490:2563:2637:2709:2773:2805:2826:2857:2868:2946:2977:3058:3119:3184:3224:3368:3382:3447:3509:3531:3577:3623:3681:3817:3869:3905:3977:4043:4086:4113:4183:4289:4503:4525:4590:4674:4769:4803:4907:4947:5000:5048:5080:5158:5184:5231:5265:5300:5326:5435:5491:5522,71,TRUE,,,,,1973,,
 76,Foolish Heart,Robert Hunter & Jerry Garcia (Grateful Dead),,,2588:2684:2786:2841:3582:3661:3825:3956:4013:4124:4199:4279:4374:4505:4581:4754:4826:4953:4999:5087:5180:5216:5285:5324:5429:5463:5535,76,TRUE,,,,,1988,,
 100,He's Gone,Robert Hunter & Jerry Garcia (Grateful Dead),,,106:259:435:547:611:950:1051:1178:1190:1286:1321:1427:1482:1696:1784:1949:1951:2108:2122:2171:2287:2526:2653:2710:2791:2952:3022:3098:3186:3250:3349:3388:3470:3636:3638:3692:3814:3964:4092:4121:4189:4269:4271:4328:4478:4661:4667:4696:4822:4950:5053:5056:5150:5274:5515,100,TRUE,,,,,1972,,
-98,Help on the Way,Robert Hunter & Jerry Garcia (Grateful Dead),Help,,13:81:144:174:230:256:316:370:439:491:518:590:605:640:675:711:786:813:894:938:993:1035:1048:1151:1186:1306:1401:1424:1578:1657:1689:1756:1917:1966:2004:2094:2138:2213:2399:2440:2499:2589:2617:2662:2725:2738:2926:2986:3019:3050:3092:3163:3243:3331:3377:3417:3468:3617:3647:3662:3742:3818:3854:3880:3981:4096:4143:4229:4281:4324:4411:4450:4538:4658:4665:4711:4745:4899:4975:5018:5041:5126:5269:5310:5387:5447:5474:5504,98,TRUE,,,,,1975,,
+98,Help on the Way,Robert Hunter & Jerry Garcia (Grateful Dead),Help,,13:81:144:174:230:256:316:370:439:491:518:590:605:640:675:711:786:813:894:938:993:1035:1048:1151:1186:1306:1401:1424:1578:1657:1689:1756:1917:1966:2004:2094:2138:2213:2399:2440:2499:2589:2617:2662:2725:2738:2926:2986:3019:3050:3092:3163:3243:3331:3377:3417:3468:3617:3647:3662:3742:3818:3854:3880:3981:4096:4143:4229:4281:4324:4411:4450:4538:4658:4665:4711:4745:4899:4975:5018:5041:5126:5269:5310:5387:5447:5474:5504:5571,98,TRUE,,,,,1975,,
 99,Here Comes Sunshine,Robert Hunter & Jerry Garcia (Grateful Dead),Sunshine,,404:892:1103:1238:1253:1359:1444:1861:1863:1896:2113:2231:2379:2433:2485:2815:2920:3111:3113:3182:3276:3403:3416:3491:3717:3793:3915:4025:4036:4067:4126:4297:4416:4465:4753:4842:4980:4995:5097:5194:5407:5569,99,TRUE,,,,,1973,,
 105,High Time,Robert Hunter & Jerry Garcia (Grateful Dead),,,3067,105,TRUE,,,,,1969,,
 512,If I Had the World to Give,Robert Hunter & Jerry Garcia (Grateful Dead),,,4541,512,TRUE,,,,,1978,,IIHTWTG
@@ -736,6 +737,7 @@ id,title,author,nicknames,suite,performances,copy_id,core_gd,cover_gd,cover_jg,c
 344,Breakdown,Tom Petty,,,,344,,,,,,,,
 812,Time to Move On,Tom Petty,,,4887:4967:5361:5543,812,,,,,,1994,https://en.wikipedia.org/wiki/Time_to_Move_On_(song),
 767,Renegade,Tommy Shaw (Styx),,,,767,,,,,,,https://en.wikipedia.org/wiki/Renegade_(Styx_song),
+835,War Pigs / Luke's Wall,"Tony Iommi, Ozzy Osbourne, Geezer Butler, Bill Ward (Black Sabbath)",,,,835,,,,,,1970,https://en.wikipedia.org/wiki/War_Pigs,
 802,Can't You See,Toy Caldwell (The Marshall Tucker Band),,,,802,,,,,,1973,https://en.wikipedia.org/wiki/Can't_You_See_(The_Marshall_Tucker_Band_song),
 757,Alabama Bound,traditional,,,,757,,TRUE,,,,1970,,
 350,Amazing Grace,traditional,,,,350,,,,,,,,
