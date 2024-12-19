@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/155-The-Dome",
+    "result": {"data":{"venuesCsv":{"id":"155","location":"Virginia Beach, VA","name":"The Dome"},"allShowsCsv":{"nodes":[]}},"pageContext":{"venueId":"155"}},
+    "staticQueryHashes": ["3000541721"]}

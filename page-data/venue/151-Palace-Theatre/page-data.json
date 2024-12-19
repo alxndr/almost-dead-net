@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/151-Palace-Theatre",
-    "result": {"data":{"venuesCsv":{"id":"151","location":"St Paul, MN","name":"Palace Theatre"},"allShowsCsv":{"nodes":[]}},"pageContext":{"venueId":"151"}},
+    "result": {"data":{"venuesCsv":{"id":"151","location":"St Paul, MN","name":"Palace Theatre"},"allShowsCsv":{"nodes":[{"id":"358","date":"12/7/2024"}]}},"pageContext":{"venueId":"151"}},
     "staticQueryHashes": ["3000541721"]}
