@@ -18,6 +18,7 @@ id,name,location,capacity,generic name,tagname
 105,MECU Pavilion,"Baltimore, MD",4600,,MECU Pavilion
 126,Pier Six Pavilion,"Baltimore, MD",4340,,Pier Six Pavilion
 129,Maine Savings Amphitheater,"Bangor, ME",,,Maine Savings Amphitheater
+154,Mountain Jam Festival,"Belleayre Mountain, NY",,,Mountain Jam Festival
 10,Athletic Club of Bend,"Bend, OR",,,Athletic Club of Bend
 11,Bethel Woods Center for the Arts,"Bethel, NY",,,Bethel Woods Center for the Arts
 139,Wind Creek Event Center,"Bethlehem, PA",,,Wind Creek Event Center
@@ -51,6 +52,7 @@ id,name,location,capacity,generic name,tagname
 34,The Music Box,"Cleveland, OH",340,,The Music Box
 103,Jacobs Pavilion at Nautica,"Cleveland, OH",5000,,Jacobs Pavilion at Nautica
 35,Oregon Ridge Park,"Cockeysville, MD",,,Oregon Ridge Park
+153,Merriweather Post Pavilion,"Columbia, MD",,,Merriweather Post Pavilion
 36,House of Blues,"Dallas, TX",2500,TRUE,House of Blues (Dallas)
 37,Ogden Theatre,"Denver, CO",1600,,Ogden Theatre
 38,The Fillmore,"Denver, CO",3700,TRUE,The Fillmore (Denver)
@@ -129,6 +131,7 @@ id,name,location,capacity,generic name,tagname
 86,House of Blues,"San Diego, CA",1500,TRUE,House of Blues (San Diego)
 87,Golden Gate Park,"San Francisco, CA",,,Golden Gate Park
 120,Saratoga Performing Arts Center,"Saratoga Springs, NY",25100,,Saratoga Performing Arts Center
+152,Johnny Mercer Theatre,"Savannah, GA",2566,,Johnny Mercer Theatre
 88,Montage Mountain,"Scranton, PA",,,Montage Mountain
 89,The Showbox,"Seattle, WA",1100,,The Showbox
 146,Shelburne Museum,"Shelburne, VT",,,Shelburne Museum
@@ -138,7 +141,7 @@ id,name,location,capacity,generic name,tagname
 92,The Pageant,"St Louis, MO",2300,,The Pageant
 151,Palace Theatre,"St Paul, MN",,TRUE,Palace Theatre (St Paul)
 100,Vinoy Park,"St Petersburg, FL",,,Vinoy Park
-90,Frost Ampitheater,"Stanford, CA",8000,,Frost Ampitheater
+90,Frost Amphitheater,"Stanford, CA",8000,,Frost Amphitheater
 93,Berry Hill Farm,"Summit Point, WV",,,Berry Hill Farm
 94,Landmark Theatre,"Syracuse, NY",3000,TRUE,Landmark Theatre (Syracuse)
 123,Curtis Hixon Waterfront Park,"Tampa, FL",,,Curtis Hixon Waterfront Park
@@ -146,6 +149,7 @@ id,name,location,capacity,generic name,tagname
 96,Legend Valley,"Thornville, OH",,,Legend Valley
 97,Tower Theater,"Upper Darby, PA",3119,,Tower Theater
 114,Gerald R. Ford Amphitheater,"Vail, CO",2560,,Gerald R. Ford Amphitheater
+155,The Dome,"Virginia Beach, VA",,,The Dome
 112,(private show),"Washington, CT",,,(private show)
 98,The Anthem,"Washington, DC",6000,,The Anthem
 99,The 9:30 Club,"Washington, DC",1200,,The 9:30 Club
