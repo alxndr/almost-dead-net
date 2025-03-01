@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/152-Johnny-Mercer-Theatre",
-    "result": {"data":{"venuesCsv":{"id":"152","location":"Savannah, GA","name":"Johnny Mercer Theatre"},"allShowsCsv":{"nodes":[]}},"pageContext":{"venueId":"152"}},
+    "result": {"data":{"venuesCsv":{"id":"152","location":"Savannah, GA","name":"Johnny Mercer Theatre"},"allShowsCsv":{"nodes":[{"id":"362","date":"2/13/2025"}]}},"pageContext":{"venueId":"152"}},
     "staticQueryHashes": ["3000541721"]}
