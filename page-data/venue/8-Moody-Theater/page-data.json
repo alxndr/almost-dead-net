@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/8-Moody-Theater",
-    "result": {"data":{"venuesCsv":{"id":"8","location":"Austin, TX","name":"Moody Theater"},"allShowsCsv":{"nodes":[{"id":"207","date":"9/14/2019"}]}},"pageContext":{"venueId":"8"}},
+    "result": {"data":{"venuesCsv":{"id":"8","location":"Austin, TX","name":"Moody Theater"},"allShowsCsv":{"nodes":[{"id":"207","date":"9/14/2019"},{"id":"371","date":"5/1/2025"}]}},"pageContext":{"venueId":"8"}},
     "staticQueryHashes": ["3000541721"]}
