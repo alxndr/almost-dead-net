@@ -6,8 +6,6 @@ This is the source code for the fan site [Almost-Dead.net].
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 The website uses the [Gatsby] framework (v3).
 
-The forum sub-site [`lot.almost-dead.net`][the-lot] is powered by [Discourse].
-
 
 ## Documentation
 
