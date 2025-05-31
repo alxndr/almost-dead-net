@@ -1776,7 +1776,7 @@ id,within,performance_id,song_name,notes,by,song_id
 1790,Eyes of the World,5522,Friend of the Devil,,,79
 1791,Eyes of the World,5522,Mind Left Body,,,530
 1792,St. Stephen,5526,Mind Left Body,,,530
-1793,I Shall Be Released,5531,Stella Blue,,,209
+1793,I Shall Be Released,5531,Stella Blue,,TH,209
 1794,Part II: Let It Grow,5541,Pigs (Three Different Ones),,,404
 1795,Foolish Heart,5535,Victim or the Crime,https://www.reddit.com/r/JRADs/comments/1gdgqev/comment/lu84mkh/,,580
 1796,Shelter From the Storm,5549,Feel Like a Stranger,,band,74
@@ -1819,7 +1819,7 @@ id,within,performance_id,song_name,notes,by,song_id
 1834,Lost Sailor,5585,Estimated Prophet,,,69
 1835,Good Lovin',5597,Scarlet Begonias,,MB,195
 1836,Shakedown Street,5598,Terrapin Station,,TH,224
-1837,Throwing Stones,5530,[unknown],Zeppelin?,,288
+1837,Throwing Stones,5530,Unbroken Chain,,MB,254
 1838,Not Fade Away,5532,Black Throated Wind,,,25
 1839,Truckin',5599,Good Lovin',,SM,87
 1840,I Know You Rider,5614,Morning Dew,,TH,151
@@ -1894,3 +1894,10 @@ id,within,performance_id,song_name,notes,by,song_id
 1909,Cassidy,5778,I Know You Rider,headfake,,110
 1910,Waitin' For The Bus,5799,Slipknot!,?,,201
 1911,Slipknot!,5780,Turn On Your Lovelight,jam?,,252
+1912,Bird Song,5516,The Real Morning Party,,TH,807
+1913,The Music Never Stopped,5523,Candyman,,MB,34
+1914,Good Lovin',5534,The Eleven,jam,,229
+1915,Cumberland Blues,5533,Yakety Sax,,SM,848
+1916,Feel Like a Stranger,5529,Another Brick in the Wall,,band,297
+1917,Black Hearted Woman,5818,Whipping Post,jam,,388
+1918,Tangled Up in Blue,5805,Eyes of the World,intro... headfake??,,71
