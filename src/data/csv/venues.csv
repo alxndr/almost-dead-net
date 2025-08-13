@@ -56,6 +56,7 @@ id,name,location,capacity,generic name,tagname
 36,House of Blues,"Dallas, TX",2500,TRUE,House of Blues (Dallas)
 37,Ogden Theatre,"Denver, CO",1600,,Ogden Theatre
 38,The Fillmore,"Denver, CO",3700,TRUE,The Fillmore (Denver)
+157,Dillon Amphitheater,"Dillon, CO",3656,,Dillon Amphitheater
 39,Cuthbert Amphitheater,"Eugene, OR",4000,,Cuthbert Amphitheater
 40,McDonald Theatre,"Eugene, OR",759,,McDonald Theatre
 145,Perinton Center Park Amphitheater,"Fairport, NY",,,Perinton Center Park Amphitheater
@@ -65,6 +66,7 @@ id,name,location,capacity,generic name,tagname
 128,Hampton Beach Casino Ballroom,"Hampton Beach, NH",,,Hampton Beach Casino Ballroom
 44,House of Blues,"Houston, TX",2500,TRUE,House of Blues (Houston)
 45,Hunter Mountain,"Hunter, NY",,,Hunter Mountain
+156,Cape Cod Melody Tent,"Hyannis, MA",2300,,Cape Cod Melody Tent
 138,Indiana State Fairgrounds,"Indianapolis, IN",,,Indiana State Fairgrounds
 46,Pool Deck,Jam Cruise,,TRUE,Pool Deck (Jam Cruise)
 47,Pantheon Theater,Jam Cruise,1600,TRUE,Pantheon Theater (Jam Cruise)
@@ -127,6 +129,7 @@ id,name,location,capacity,generic name,tagname
 83,Marymoor Amphitheater,"Redmond, WA",5000,,Marymoor Amphitheater
 113,Seaside Lagoon,"Redondo Beach, CA",,,Seaside Lagoon
 84,Electric Forest,"Rothbury, MI",,,Electric Forest
+158,Channel 24,"Sacramento, CA",,,Channel 24
 85,The Depot,"Salt Lake City, UT",1200,,The Depot
 86,House of Blues,"San Diego, CA",1500,TRUE,House of Blues (San Diego)
 87,Golden Gate Park,"San Francisco, CA",,,Golden Gate Park
@@ -154,5 +157,3 @@ id,name,location,capacity,generic name,tagname
 98,The Anthem,"Washington, DC",6000,,The Anthem
 99,The 9:30 Club,"Washington, DC",1200,,The 9:30 Club
 133,Windham Mountain,"Windham, NY",,,Windham Mountain
-156,Cape Cod Melody Tent,"Hyannis, MA",2300,,Cape Cod Melody Tent
-157,Dillon Amphitheater,"Dillon, CO",3656,,Dillon Amphitheater
