@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/145-Perinton-Center-Park-Amphitheater",
-    "result": {"data":{"venuesCsv":{"id":"145","location":"Fairport, NY","name":"Perinton Center Park Amphitheater"},"allShowsCsv":{"nodes":[{"id":"341","date":"6/22/2024"}]}},"pageContext":{"venueId":"145"}},
+    "result": {"data":{"venuesCsv":{"id":"145","location":"Fairport, NY","name":"Perinton Center Park Amphitheater"},"allShowsCsv":{"nodes":[{"id":"341","date":"6/22/2024"},{"id":"381","date":"8/8/2025"},{"id":"382","date":"8/9/2025"}]}},"pageContext":{"venueId":"145"}},
     "staticQueryHashes": ["3000541721"]}
