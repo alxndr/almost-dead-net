@@ -18,7 +18,6 @@ id,name,location,capacity,generic name,tagname
 105,MECU Pavilion,"Baltimore, MD",4600,,MECU Pavilion
 126,Pier Six Pavilion,"Baltimore, MD",4340,,Pier Six Pavilion
 129,Maine Savings Amphitheater,"Bangor, ME",,,Maine Savings Amphitheater
-154,Mountain Jam Festival,"Belleayre Mountain, NY",,,Mountain Jam Festival
 10,Athletic Club of Bend,"Bend, OR",,,Athletic Club of Bend
 11,Bethel Woods Center for the Arts,"Bethel, NY",,,Bethel Woods Center for the Arts
 139,Wind Creek Event Center,"Bethlehem, PA",,,Wind Creek Event Center
@@ -29,6 +28,7 @@ id,name,location,capacity,generic name,tagname
 16,Blue Hills Bank Pavilion,"Boston, MA",5200,,Blue Hills Bank Pavilion
 17,House of Blues,"Boston, MA",2500,TRUE,House of Blues (Boston)
 106,Leader Bank Pavilion,"Boston, MA",5200,,Leader Bank Pavilion
+162,MGM Music Hall at Fenway,"Boston, MA",,,MGM Music Hall at Fenway
 18,Boulder Theater,"Boulder, CO",850,,Boulder Theater
 19,Seaside Park,"Bridgeport, CT",,,Seaside Park
 121,SeatGeek Stadium,"Bridgeview, IL",,,SeatGeek Stadium
@@ -53,10 +53,12 @@ id,name,location,capacity,generic name,tagname
 103,Jacobs Pavilion at Nautica,"Cleveland, OH",5000,,Jacobs Pavilion at Nautica
 35,Oregon Ridge Park,"Cockeysville, MD",,,Oregon Ridge Park
 153,Merriweather Post Pavilion,"Columbia, MD",,,Merriweather Post Pavilion
+160,Township Auditorium,"Columbia, SC",,,Township Auditorium
 36,House of Blues,"Dallas, TX",2500,TRUE,House of Blues (Dallas)
 37,Ogden Theatre,"Denver, CO",1600,,Ogden Theatre
 38,The Fillmore,"Denver, CO",3700,TRUE,The Fillmore (Denver)
 157,Dillon Amphitheater,"Dillon, CO",3656,,Dillon Amphitheater
+159,Durham Performing Arts Center,"Durham, NC",,,Durham Performing Arts Center
 39,Cuthbert Amphitheater,"Eugene, OR",4000,,Cuthbert Amphitheater
 40,McDonald Theatre,"Eugene, OR",759,,McDonald Theatre
 145,Perinton Center Park Amphitheater,"Fairport, NY",,,Perinton Center Park Amphitheater
@@ -64,6 +66,7 @@ id,name,location,capacity,generic name,tagname
 42,Founders Brewing Company,"Grand Rapids, MI",,,Founders Brewing Company
 43,Greenfield Community College,"Greenfield, MA",,,Greenfield Community College
 128,Hampton Beach Casino Ballroom,"Hampton Beach, NH",,,Hampton Beach Casino Ballroom
+154,Belleayre Mountain Ski Center,"Highmount, NY",,,Belleayre Mountain Ski Center
 44,House of Blues,"Houston, TX",2500,TRUE,House of Blues (Houston)
 45,Hunter Mountain,"Hunter, NY",,,Hunter Mountain
 156,Cape Cod Melody Tent,"Hyannis, MA",2300,,Cape Cod Melody Tent
@@ -84,6 +87,7 @@ id,name,location,capacity,generic name,tagname
 56,The Sylvee,"Madison, WI",,,The Sylvee
 57,Orpheum Theatre,"Madison, WI",1700,,Orpheum Theatre
 58,Great Stage Park,"Manchester, TN",,,Great Stage Park
+130,Roanoke Island Festival Park,"Manteo, NC",,,Roanoke Island Festival Park
 59,Marshfield Fairgrounds,"Marshfield, MA",,,Marshfield Fairgrounds
 144,Saint Louis Music Park,"Maryland Heights, MO",4500,,Saint Louis Music Park
 134,Radians Amphitheater @ Memphis Botanical Garden,"Memphis, TN",,,Radians Amphitheater @ Memphis Botanical Garden
@@ -92,7 +96,6 @@ id,name,location,capacity,generic name,tagname
 149,The Riverside Theater,"Milwaukee, WI",,,The Riverside Theater
 61,First Avenue,"Minneapolis, MN",1500,TRUE,First Avenue (Minneapolis)
 62,The Wellmont Theater,"Montclair, NJ",2137,,The Wellmont Theater
-130,Roanoke Island Festival Park,"Monteo, NC",,,Roanoke Island Festival Park
 63,Red Rocks,"Morrison, CO",9525,,Red Rocks
 137,RISE Mundelein,"Mundelein, IL",,,RISE Mundelein
 64,War Memorial Auditorium,"Nashville, TN",2000,,War Memorial Auditorium
@@ -128,6 +131,7 @@ id,name,location,capacity,generic name,tagname
 82,The Ritz,"Raleigh, NC",1400,,The Ritz
 83,Marymoor Amphitheater,"Redmond, WA",5000,,Marymoor Amphitheater
 113,Seaside Lagoon,"Redondo Beach, CA",,,Seaside Lagoon
+161,Allianz Amphitheater at Riverfront,"Richmond, VA",,,Allianz Amphitheater at Riverfront
 84,Electric Forest,"Rothbury, MI",,,Electric Forest
 158,Channel 24,"Sacramento, CA",,,Channel 24
 85,The Depot,"Salt Lake City, UT",1200,,The Depot

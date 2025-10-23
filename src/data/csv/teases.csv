@@ -1905,7 +1905,7 @@ id,within,performance_id,song_name,notes,by,song_id
 1920,Row Jimmy,5832,Tennessee Jed,,band,221
 1921,Greatest Story Ever Told,5833,Brown-Eyed Women,,TH,32
 1922,Cats Under the Stars,5836,Hard To Handle,,band,93
-1923,Cats Under the Stars,5836,Mama Tried,,band,142
+1923,Cats Under the Stars,5836,Mama Tried,,TH/band,142
 1924,Cats Under the Stars,5836,Brown-Eyed Women,,band,32
 1925,Cats Under the Stars,5836,Tennessee Jed,,TH,221
 1926,Good Lovin',5839,Radar Love,in intro segue,TH/JR,183
@@ -1913,8 +1913,34 @@ id,within,performance_id,song_name,notes,by,song_id
 1928,Good Lovin',5839,Mountain Jam,,TH,296
 1929,I Know You Rider,5843,Third Stone from the Sun,in intro segue,band,243
 1930,I Know You Rider,5843,You Keep Me Hangin' On,multiple teases,band,831
-1931,Promised Land,5845,One More Saturday Night,,band,169
+1931,Promised Land,5845,One More Saturday Night,,TH/band,169
 1932,New Minglewood Blues,5887,Foxy Lady,,,851
 1933,The Music Never Stopped,5895,Black Peter,,,24
 1934,Part II: Let It Grow,5901,Terrapin Station,,,224
 1935,Part II: Let It Grow,5853,In Memory of Elizabeth Reed,jam?,,116
+1936,Row Jimmy,5832,Dancing in the Streets,,TH,57
+1937,Scarlet Begonias,5838,Good Lovin',?,,87
+1938,Bertha,5988,Fearless,,,333
+1939,Bird Song,6001,The Other One,,,235
+1940,Shakedown Street,6003,In Memory of Elizabeth Reed,,,116
+1941,Foolish Heart,6011,Eminence Front,headfake,,857
+1942,Waitin' For The Bus,6012,Jesus Just Left Chicago,,,826
+1943,Silvio,6015,Lay Down Sally,,,330
+1944,Silvio,6015,Third Stone from the Sun,,,243
+1945,Tennessee Jed,6017,Loser,headfake,,139
+1946,The Wheel,6018,War Pigs,,,322
+1947,The Wheel,6018,Part II: Let It Grow,,,277
+1948,Uncle John's Band,6019,Baba O'Riley,,,293
+1949,Dancing in the Streets,6040,Aquí Como Allá,jam,,764
+1950,They Love Each Other,6041,Jessica,,,298
+1951,They Love Each Other,6041,Row Jimmy,jam,,190
+1952,Bertha,6045,Saturday Night's Alright for Fighting,,,317
+1953,Reuben and Cherise,6048,I Know You Rider,,,110
+1954,New Minglewood Blues,6049,Whole Lotta Love,,,268
+1955,Catfish John,5943,They Love Each Other,,,242
+1956,Part II: Let It Grow,6058,Reuben and Cherise,,,185
+1957,The Wheel,6059,They Love Each Other,,,242
+1958,One More Saturday Night,6060,Saturday Night's Alright for Fighting,,,317
+1959,Shakedown Street,6065,In Memory of Elizabeth Reed,,,116
+1960,Days Between,6066,No Quarter,,MB?,167
+1961,Romeo and Juliet,5949,Slipknot!,??,,201
