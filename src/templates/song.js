@@ -96,6 +96,11 @@ export const query = graphql`
       song_name
       stars
     } }
+    allSongsCsv { nodes {
+      id
+      nicknames
+      title
+    } }
     allTeasesCsv(filter: {song_id: {eq: $songId}}) { nodes {
       id
       performance_id
@@ -161,6 +166,7 @@ export default function Song({data: {
   allSetsCsv: {nodes: allSets},
   allShowsCsv: {nodes: allShows},
   allSongperformancesCsv: {nodes: allSongPerformances},
+  allSongsCsv: {nodes: allSongs},
   allTeasesCsv: {nodes: teases},
 }, location}) {
   if (!song) {
@@ -179,58 +185,72 @@ export default function Song({data: {
   if (!allSegues.length) {
     throw new Error('No data for allSegues')
   }
-  const onlyThisSongsPerformancesData = allSongPerformances
-    .filter((songPerformance) => onlyThisSongsPerformanceIds.includes(songPerformance.id))
-    .map((performanceData) => {
-      const performanceIdStr = performanceData.id.toString()
-      const setData = find((set) =>
-        set.setlist && set.setlist.toString().split(':').includes(performanceIdStr)
-      )(allSets)
-      if (!setData)
-        throw new Error('No setData', {song, performanceData, allSets})
-      const showData = find((show) => [
-        show.soundcheck,
-        show.set1,
-        show.set2,
-        show.set3,
-        show.encore1,
-        show.encore2
-      ].includes(setData.id))(allShows)
-      if (!showData) {
-        throw new Error('No showData', {song, performanceData, setData, allShows})
-      }
-      const setIdsInts = String(setData.setlist).split(':')
-      const perfPositionInSet = setIdsInts.indexOf(performanceIdStr)
-      let prior;
-      if (perfPositionInSet > 0) {
-        const perfPriorId = setIdsInts[perfPositionInSet - 1]
-        prior = allSongPerformances.find(songPerf => songPerf.id === perfPriorId) // TODO refactor to use an object lookup
-        prior.segue = find(propEq(performanceIdStr, 'to_perf_id'))(allSegues)?.type || ','
-      } else prior = {song_name: '[opener]'}
-      let after;
-      if (perfPositionInSet < setIdsInts.length - 1) {
-        after = allSongPerformances.find(songPerf => songPerf.id === setIdsInts[perfPositionInSet + 1])
-        after.segue = find(propEq(performanceIdStr, 'from_perf_id'))(allSegues)?.type || ','
-      } else after = {song_name: '[closer]'}
-      const whichSet = Object.entries(SET_MAPPING)
-        .find(([col_name, _readable_name]) => showData[col_name] === setData.id)[1]
-      const variation = performanceData.variation
-        ? `(${performanceData.variation})`
-        : false
-      return {
-        show: showData.date,
-        prior: prior?.song_name,
-        'segue_prior': prior?.segue,
-        title: song.nicknames.split('; ')[0] || song.title,
-        stars: performanceData.stars,
-        'segue_after': after?.segue,
-        after: after?.song_name,
-        whichSet,
-        fullData: {performanceData, showData, variation, whichSet, prior, after}
-      }
-    })
-
-  const performancesData = useMemo(() => onlyThisSongsPerformancesData, [])
+  const songIdToSongData = useMemo(() => {
+    const m = new Map()
+    for (const songData of allSongs)
+      m.set(songData.id, songData)
+    return m
+  }, [allSongs])
+  const performancesData = useMemo(
+    () =>
+      allSongPerformances
+        .filter((songPerformance) => onlyThisSongsPerformanceIds.includes(songPerformance.id))
+        .map((performanceData) => {
+          const performanceIdStr = performanceData.id.toString()
+          const setData = find((set) =>
+            set.setlist && set.setlist.toString().split(':').includes(performanceIdStr)
+          )(allSets)
+          if (!setData)
+            throw new Error('No setData', {song, performanceData, allSets})
+          const showData = find((show) => [
+            show.soundcheck,
+            show.set1,
+            show.set2,
+            show.set3,
+            show.encore1,
+            show.encore2
+          ].includes(setData.id))(allShows)
+          if (!showData) {
+            throw new Error('No showData', {song, performanceData, setData, allShows})
+          }
+          const setIdsInts = String(setData.setlist).split(':')
+          const perfPositionInSet = setIdsInts.indexOf(performanceIdStr)
+          let prior;
+          if (perfPositionInSet > 0) {
+            const perfPriorId = setIdsInts[perfPositionInSet - 1]
+            prior = allSongPerformances.find(songPerf => songPerf.id === perfPriorId) // TODO refactor to use an object lookup
+            prior.segue = find(propEq(performanceIdStr, 'to_perf_id'))(allSegues)?.type || ','
+            const priorSongData = songIdToSongData.get(prior.song_id)
+            if (priorSongData)
+              prior.song_name = priorSongData.nicknames || priorSongData.title
+          } else prior = {song_name: '[opener]'}
+          let after;
+          if (perfPositionInSet < setIdsInts.length - 1) {
+            after = allSongPerformances.find(songPerf => songPerf.id === setIdsInts[perfPositionInSet + 1])
+            after.segue = find(propEq(performanceIdStr, 'from_perf_id'))(allSegues)?.type || ','
+            const afterSongData = songIdToSongData.get(after.song_id)
+            if (afterSongData)
+              after.song_name = afterSongData.nicknames || afterSongData.title
+          } else after = {song_name: '[closer]'}
+          const whichSet = Object.entries(SET_MAPPING)
+            .find(([col_name, _readable_name]) => showData[col_name] === setData.id)[1]
+          const variation = performanceData.variation
+            ? `(${performanceData.variation})`
+            : false
+          return {
+            show: showData.date,
+            prior: prior?.song_name,
+            'segue_prior': prior?.segue,
+            title: song.nicknames.split('; ')[0] || song.title,
+            stars: performanceData.stars,
+            'segue_after': after?.segue,
+            after: after?.song_name,
+            whichSet,
+            fullData: {performanceData, showData, variation, whichSet, prior, after}
+          }
+        }),
+    [allSongPerformances, onlyThisSongsPerformanceIds, allSets, allShows]
+  )
   const performancesColumns = useMemo(
     () => [
       {accessor: 'show', Header: 'show', sortType: (a,b) => new Date(a.values.show).getTime() - new Date(b.values.show).getTime()}, // TODO memoize this fn
