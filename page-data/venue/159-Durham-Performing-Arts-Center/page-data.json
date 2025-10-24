@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/159-Durham-Performing-Arts-Center",
+    "result": {"data":{"venuesCsv":{"id":"159","location":"Durham, NC","name":"Durham Performing Arts Center"},"allShowsCsv":{"nodes":[]}},"pageContext":{"venueId":"159"}},
+    "staticQueryHashes": ["3000541721"]}

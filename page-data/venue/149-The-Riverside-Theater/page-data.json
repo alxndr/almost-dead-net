@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/149-The-Riverside-Theater",
-    "result": {"data":{"venuesCsv":{"id":"149","location":"Milwaukee, WI","name":"The Riverside Theater"},"allShowsCsv":{"nodes":[{"id":"356","date":"12/5/2024"}]}},"pageContext":{"venueId":"149"}},
+    "result": {"data":{"venuesCsv":{"id":"149","location":"Milwaukee, WI","name":"The Riverside Theater"},"allShowsCsv":{"nodes":[{"id":"356","date":"12/5/2024"},{"id":"387","date":"10/3/2025"}]}},"pageContext":{"venueId":"149"}},
     "staticQueryHashes": ["3000541721"]}

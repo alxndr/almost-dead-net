@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/161-Allianz-Amphitheater-at-Riverfront",
+    "result": {"data":{"venuesCsv":{"id":"161","location":"Richmond, VA","name":"Allianz Amphitheater at Riverfront"},"allShowsCsv":{"nodes":[]}},"pageContext":{"venueId":"161"}},
+    "staticQueryHashes": ["3000541721"]}

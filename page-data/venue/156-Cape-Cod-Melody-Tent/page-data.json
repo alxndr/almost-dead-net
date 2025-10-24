@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/156-Cape-Cod-Melody-Tent",
-    "result": {"data":{"venuesCsv":{"id":"156","location":"Hyannis, MA","name":"Cape Cod Melody Tent"},"allShowsCsv":{"nodes":[{"id":"378","date":"6/13/2025"}]}},"pageContext":{"venueId":"156"}},
+    "result": {"data":{"venuesCsv":{"id":"156","location":"Hyannis, MA","name":"Cape Cod Melody Tent"},"allShowsCsv":{"nodes":[{"id":"375","date":"6/13/2025"}]}},"pageContext":{"venueId":"156"}},
     "staticQueryHashes": ["3000541721"]}

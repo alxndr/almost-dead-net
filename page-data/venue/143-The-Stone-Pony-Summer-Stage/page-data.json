@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/143-The-Stone-Pony-Summer-Stage",
-    "result": {"data":{"venuesCsv":{"id":"143","location":"Asbury Park, NJ","name":"The Stone Pony Summer Stage"},"allShowsCsv":{"nodes":[{"id":"333","date":"5/17/2024"},{"id":"375","date":"5/23/2025"}]}},"pageContext":{"venueId":"143"}},
+    "result": {"data":{"venuesCsv":{"id":"143","location":"Asbury Park, NJ","name":"The Stone Pony Summer Stage"},"allShowsCsv":{"nodes":[{"id":"333","date":"5/17/2024"},{"id":"372","date":"5/23/2025"}]}},"pageContext":{"venueId":"143"}},
     "staticQueryHashes": ["3000541721"]}

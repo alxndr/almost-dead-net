@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/153-Merriweather-Post-Pavilion",
-    "result": {"data":{"venuesCsv":{"id":"153","location":"Columbia, MD","name":"Merriweather Post Pavilion"},"allShowsCsv":{"nodes":[{"id":"379","date":"6/14/2025"}]}},"pageContext":{"venueId":"153"}},
+    "result": {"data":{"venuesCsv":{"id":"153","location":"Columbia, MD","name":"Merriweather Post Pavilion"},"allShowsCsv":{"nodes":[{"id":"376","date":"6/14/2025"}]}},"pageContext":{"venueId":"153"}},
     "staticQueryHashes": ["3000541721"]}

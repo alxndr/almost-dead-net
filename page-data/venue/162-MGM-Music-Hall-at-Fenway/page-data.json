@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/162-MGM-Music-Hall-at-Fenway",
+    "result": {"data":{"venuesCsv":{"id":"162","location":"Boston, MA","name":"MGM Music Hall at Fenway"},"allShowsCsv":{"nodes":[{"id":"384","date":"9/11/2025"}]}},"pageContext":{"venueId":"162"}},
+    "staticQueryHashes": ["3000541721"]}

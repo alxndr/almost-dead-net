@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/160-Township-Auditorium",
+    "result": {"data":{"venuesCsv":{"id":"160","location":"Columbia, SC","name":"Township Auditorium"},"allShowsCsv":{"nodes":[]}},"pageContext":{"venueId":"160"}},
+    "staticQueryHashes": ["3000541721"]}
