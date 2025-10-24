@@ -337,7 +337,7 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 336,6/1/2024,63,899,900,,901,,,,,https://www.reddit.com/r/JRADs/comments/1d61utv/jrad_6124_morrison_co_discussion_thread/,3,6/1/24 @ Red Rocks,
 337,6/14/2024,58,902,,,,,,,Bonnaroo,,0,6/14/24 @ Bonnaroo,
 338,6/15/2024,144,903,904,,905,,,,,,8,6/15/24 @ Saint Louis Music Park,
-339,6/20/2024,128,906,907,,908,,,,,https://i.imgur.com/ZrcCUGY.png https://www.reddit.com/r/JRADs/comments/1dke98v/who_is_ready_for_a_hot_night_at_hampton_beach/,1,6/20/24 @ Hampton Beach Casino Ballroom,
+339,6/20/2024,128,906,907,,908,,,,,https://i.imgur.com/ZrcCUGY.png https://www.reddit.com/r/JRADs/comments/1dke98v/who_is_ready_for_a_hot_night_at_hampton_beach/,2,6/20/24 @ Hampton Beach Casino Ballroom,
 340,6/21/2024,128,909,910,,911,,,,,https://i.imgur.com/ZrcCUGY.png https://www.reddit.com/r/JRADs/comments/1dljlth/jrad_6202024_hampton_beach_casino_hampton_beach_nh/,1,6/21/24 @ Hampton Beach Casino Ballroom,
 341,6/22/2024,145,912,913,,914,,,,,,1,6/22/24 @ Perinton Center Park Amphitheater,
 342,7/13/2024,148,915,,,,,,,Peach at the Beach,https://www.reddit.com/r/JRADs/comments/1e2ounr/jrad_71324_setlist_thread/?sort=old,2,7/13/24 @ Peach at the Beach,
@@ -354,7 +354,7 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 353,11/14/2024,139,946,947,,948,,,,,https://i.imgur.com/pSaARrN.jpeg,2,11/14/24 @ Wind Creek Event Center,
 354,11/15/2024,73,949,950,,951,,,,,https://i.imgur.com/pSaARrN.jpeg,4,11/15/24 @ Metropolitan Opera House,TRUE
 355,11/16/2024,98,952,953,,954,,,,,https://i.imgur.com/pSaARrN.jpeg https://i.imgur.com/3zqz4Sj.png,3,11/16/24 @ The Anthem,
-356,12/5/2024,149,955,956,,957,,,,,https://i.imgur.com/liie8Xz.png https://www.reddit.com/r/JRADs/comments/1h7p0dx/jrad_12524_milwaukee_wi_setlist_thread/,4,12/5/24 @ The Riverside Theater,
+356,12/5/2024,149,955,956,,957,,,,,https://i.imgur.com/liie8Xz.png https://www.reddit.com/r/JRADs/comments/1h7p0dx/jrad_12524_milwaukee_wi_setlist_thread/,3,12/5/24 @ The Riverside Theater,
 357,12/6/2024,150,958,959,,960,,,,,https://i.imgur.com/liie8Xz.png https://www.reddit.com/r/JRADs/comments/1h8jgf2/12624_salt_shed_chicago/,1,12/6/24 @ The Salt Shed,TRUE
 358,12/7/2024,151,961,962,,963,,,,,https://i.imgur.com/liie8Xz.png https://www.reddit.com/r/JRADs/comments/1h988z6/12724_palace_theatre_st_paul_mn/,4,12/7/24 @ Palace Theatre (St Paul),TRUE
 359,1/17/2025,76,964,965,,966,,,,,https://i.imgur.com/MmR6y8j.jpeg https://www.reddit.com/r/JRADs/comments/1i3r07q/jrad_11725_port_chester_ny_setlist_thread/,5,1/17/25 @ Capitol Theatre,
@@ -385,6 +385,8 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 384,9/11/2025,162,1038,1039,,1040,,,,,,0,9/11/25 @ MGM Music Hall at Fenway,
 385,9/12/2025,135,1041,1042,,1043,,,,,,0,9/12/25 @ Pier 17,
 386,9/13/2025,135,1044,1045,,1046,,,,,,0,9/13/25 @ Pier 17,
-387,10/3/2025,149,1023,1024,,1025,,,,,https://i.imgur.com/BzcqMkm.jpeg https://i.imgur.com/2YVcngG.png,1,10/3/25 @ The Riverside Theater,
-388,10/4/2025,150,1047,1048,,1049,,,,,https://i.imgur.com/BzcqMkm.jpeg,0,10/4/25 @ The Salt Shed,
-389,10/5/2025,151,1050,1051,,1052,,,,,https://i.imgur.com/BzcqMkm.jpeg,0,10/5/25 @ Palace Theatre (St Paul),
+387,10/3/2025,149,1023,1024,,1025,,,,,https://i.imgur.com/BzcqMkm.jpeg https://i.imgur.com/2YVcngG.png,2,10/3/25 @ The Riverside Theater,
+388,10/4/2025,150,1047,1048,,1049,,,,,https://i.imgur.com/BzcqMkm.jpeg,1,10/4/25 @ The Salt Shed,
+389,10/5/2025,151,1050,1051,,1052,,,,,https://i.imgur.com/BzcqMkm.jpeg,3,10/5/25 @ Palace Theatre (St Paul),
+390,10/23/2025,158,1053,1054,,1055,,,,,,0,10/23/25 @ Channel 24,
+391,10/24/2025,71,,,,,,,,,,0,10/24/25 @ Fox Theater (Oakland),
