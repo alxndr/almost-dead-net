@@ -23,7 +23,7 @@ describe('Song page', () => {
   })
 
   describe('segues', () => {
-    it('show the preceding and following songs', () => {
+    it('show the (nickname of) preceding and following songs', () => {
       cy.get('.songpage__performances')
         .find('.sortable__cell-show')
         .contains('11/27/2015')
@@ -33,7 +33,7 @@ describe('Song page', () => {
         .find(' + td')
         .contains('->')
         .closest('tr')
-        .contains(`Franklin's Tower`)
+        .contains(`Frank's`)
     })
   })
 
