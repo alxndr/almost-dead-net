@@ -389,4 +389,5 @@ id,date,venue_id,set1,set2,set3,encore1,encore2,soundcheck,notes,event,links,num
 388,10/4/2025,150,1047,1048,,1049,,,,,https://i.imgur.com/BzcqMkm.jpeg,1,10/4/25 @ The Salt Shed,
 389,10/5/2025,151,1050,1051,,1052,,,,,https://i.imgur.com/BzcqMkm.jpeg,3,10/5/25 @ Palace Theatre (St Paul),
 390,10/23/2025,158,1053,1054,,1055,,,,,https://i.imgur.com/ZDBlBWJ.png,1,10/23/25 @ Channel 24,
-391,10/24/2025,71,,,,,,,,,https://i.imgur.com/ZDBlBWJ.png,0,10/24/25 @ Fox Theater (Oakland),
+391,10/24/2025,71,1056,1057,,1058,,,,,https://i.imgur.com/ZDBlBWJ.png,0,10/24/25 @ Fox Theater (Oakland),
+392,10/25/2025,54,,,,,,,,,https://i.imgur.com/ZDBlBWJ.png,0,10/25/25 @ Greek Theatre (Los Angeles),
