@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/54-Greek-Theatre",
-    "result": {"data":{"venuesCsv":{"id":"54","location":"Los Angeles, CA","name":"Greek Theatre"},"allShowsCsv":{"nodes":[{"id":"201","date":"8/16/2019"},{"id":"315","date":"10/14/2023"},{"id":"352","date":"10/26/2024"}]}},"pageContext":{"venueId":"54"}},
+    "result": {"data":{"venuesCsv":{"id":"54","location":"Los Angeles, CA","name":"Greek Theatre"},"allShowsCsv":{"nodes":[{"id":"201","date":"8/16/2019"},{"id":"315","date":"10/14/2023"},{"id":"352","date":"10/26/2024"},{"id":"392","date":"10/25/2025"}]}},"pageContext":{"venueId":"54"}},
     "staticQueryHashes": ["3000541721"]}
