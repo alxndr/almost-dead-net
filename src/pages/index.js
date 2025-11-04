@@ -34,6 +34,7 @@ export default function Index() {
           <ul>
             <li><a className="icon mastodon" href="https://shakedown.social/@AlmostDeadNet" title="Mastodon: @AlmostDeadNet@shakedown.social" rel="me" target="_blank"><kbd>@AlmostDeadNet@shakedown.social</kbd></a></li>
             <li><a className="icon github" href="https://github.com/alxndr/almost-dead-net" title="code on GitHub" target="_blank"><kbd>alxndr/almost-dead-net</kbd></a></li>
+            <li><a className="icon gitlab" href="https://gitlab.com/alxndr/almost-dead-dot-net" title="next-gen code on GitLab" target="_blank"><kbd>alxndr/almost-dead-dot-net</kbd></a></li>
           </ul>
         </li>
       </ul>

@@ -47,26 +47,24 @@
 .homepage__links > ul ul li {
   margin-bottom: 0;
 }
-.homepage__links img {
-  max-height: 1em;
-  margin: 0 0.2em;
-  vertical-align: middle;
-}
 .homepage__links kbd {
   font-size: 1.1em;
 }
 .homepage__links a.icon {
   background: left center / contain no-repeat;
-  padding-left: 1.1em;
-}
-.homepage__links a.icon.mastodon {
-  background-image: url(https://i.imgur.com/ycZRrHX.png);
-}
-.homepage__links a.icon.twitter {
-  background-image: url(https://i.imgur.com/sFunDTP.png);
-}
-.homepage__links a.icon.github {
-  background-image: url(https://i.imgur.com/8Sp9Ndd.png);
+  padding-left: 1.33em;
+  &.mastodon {
+    background-image: url(https://i.imgur.com/ycZRrHX.png);
+  }
+  &.twitter {
+    background-image: url(https://i.imgur.com/sFunDTP.png);
+  }
+  &.github {
+    background-image: url(https://i.imgur.com/8Sp9Ndd.png);
+  }
+  &.gitlab {
+    background-image: url(https://i.imgur.com/j7O0U8a.png);
+  }
 }
 
 .homepage__showsbyyear {
