@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-venue-js",
     "path": "/venue/48-Penn's-Peak",
-    "result": {"data":{"venuesCsv":{"id":"48","location":"Jim Thorpe, PA","name":"Penn's Peak"},"allShowsCsv":{"nodes":[{"id":"185","date":"3/13/2019"}]}},"pageContext":{"venueId":"48"}},
+    "result": {"data":{"venuesCsv":{"id":"48","location":"Jim Thorpe, PA","name":"Penn's Peak"},"allShowsCsv":{"nodes":[{"id":"185","date":"3/13/2019"},{"id":"394","date":"11/13/2025"}]}},"pageContext":{"venueId":"48"}},
     "staticQueryHashes": ["3000541721"]}
