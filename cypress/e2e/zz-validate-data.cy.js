@@ -415,7 +415,7 @@ describe('data validation', () => {
             .contains(date)
           cy.get('@h1')
             .contains(venue)
-          cy.contains('Video unavailable')
+          cy.contains('Video unavailable', {timeout: 10})
             .should('not.exist')
         })
       })
