@@ -356,7 +356,7 @@ const allShows = [ // TODO replace with proper Cypress fixtures... hopefully hoo
    {id: 355, date: '11/16/2024', venue: 'The Anthem'},
    {id: 356, date: '12/5/2024', venue: 'The Riverside Theater'},
    {id: 357, date: '12/6/2024', venue: 'The Salt Shed'},
-   {id: 358, date: '12/7/2024', venue: 'Palace Theatre (St Paul)'},
+   {id: 358, date: '12/7/2024', venue: 'Palace Theatre'},
    {id: 359, date: '1/17/2025', venue: 'Capitol Theatre'},
    {id: 360, date: '1/18/2025', venue: 'Capitol Theatre'},
    {id: 361, date: '1/19/2025', venue: 'Capitol Theatre'},
