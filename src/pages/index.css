@@ -14,10 +14,32 @@
 }
 
 .homepage__banner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
   font-size: 1.75em;
   line-height: 2em;
   text-align: center;
+  justify-content: center;
+
+  h1 {
+    font-family: fantasy;
+  }
+  img {
+    max-height: 7em;
+    border-radius: 2.5em;
+    object-fit: cover;
+    aspect-ratio: 76 / 110;
+  }
+  blockquote {
+    font-size: 0.9em;
+    font-style: italic;
+    line-height: 1.2em;
+    a {
+      font-size: 0.8em;
+    }
+  }
   span {
     white-space: nowrap;
     padding: 0.2em;

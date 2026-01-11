@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import SongFinder from '../components/song_finder'
 import ShowsByYear from '../components/shows_by_year'
 
+import bobby_photo from '../images/photo-bobby-young.jpg'
 import './index.css'
 
 export default function Index() {
@@ -15,6 +16,21 @@ export default function Index() {
       title="JRAD Info Database — setlists, recordings, teases, guests, songs, and segues"
       description="Comprehensive resource for the setlist of every Joe Russo's Almost Dead (JRAD) concert, with links to all known recordings plus notes for individual teases, guest sit-ins, every song played, and the venues where the band has performed."
     />
+
+    <section className="homepage__banner">
+      <h1>
+        <a href="https://www.jambase.com/article/bob-weir-grateful-dead-obituary" title="Bob Weir has passed… obituary from Jambase" target="_blank" referrer="noopener">Thanks, Bob</a>
+      </h1>
+      <img src="https://i.redd.it/ulg5jp26emcg1.jpeg" alt="photograph of a young Bob Weir, long-haired and holding a guitar" style={{objectPosition:'85%'}}/>
+      <blockquote>
+        <p>Flight of the seabirds
+          <br/>Scattered like lost words
+          <br/>Wheel to the storm and fly
+          <br/><a href="/song/38" title="'Cassidy' performed by JRAD">"Cassidy"</a>
+        </p>
+      </blockquote>
+      <img src={bobby_photo} alt="photograph of a young Bob Weir, long-haired and looking directly at the camera" />
+    </section>
 
     <section className="homepage__links">
       <h1>Links</h1>
