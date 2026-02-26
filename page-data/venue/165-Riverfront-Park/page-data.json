@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/165-Riverfront-Park",
+    "result": {"data":{"venuesCsv":{"id":"165","location":"Harrisburg, PA","name":"Riverfront Park"},"allShowsCsv":{"nodes":[]}},"pageContext":{"venueId":"165"}},
+    "staticQueryHashes": ["3000541721"]}

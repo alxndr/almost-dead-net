@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/166-OC-Fair-and-Event-Center",
+    "result": {"data":{"venuesCsv":{"id":"166","location":"Costa Mesa, CA","name":"OC Fair & Event Center"},"allShowsCsv":{"nodes":[]}},"pageContext":{"venueId":"166"}},
+    "staticQueryHashes": ["3000541721"]}

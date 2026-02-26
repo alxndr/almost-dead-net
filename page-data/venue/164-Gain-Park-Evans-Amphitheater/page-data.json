@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/164-Gain-Park-Evans-Amphitheater",
+    "result": {"data":{"venuesCsv":{"id":"164","location":"Cleveland Heights, OH","name":"Gain Park Evans Amphitheater"},"allShowsCsv":{"nodes":[]}},"pageContext":{"venueId":"164"}},
+    "staticQueryHashes": ["3000541721"]}

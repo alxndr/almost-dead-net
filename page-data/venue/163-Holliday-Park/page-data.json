@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/163-Holliday-Park",
+    "result": {"data":{"venuesCsv":{"id":"163","location":"Indianapolis, IN","name":"Holliday Park"},"allShowsCsv":{"nodes":[]}},"pageContext":{"venueId":"163"}},
+    "staticQueryHashes": ["3000541721"]}

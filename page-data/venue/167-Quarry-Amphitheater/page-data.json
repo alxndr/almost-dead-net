@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/167-Quarry-Amphitheater",
+    "result": {"data":{"venuesCsv":{"id":"167","location":"Santa Cruz, CA","name":"Quarry Amphitheater"},"allShowsCsv":{"nodes":[]}},"pageContext":{"venueId":"167"}},
+    "staticQueryHashes": ["3000541721"]}

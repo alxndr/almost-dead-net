@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/169-Remlinger-Farms",
+    "result": {"data":{"venuesCsv":{"id":"169","location":"Eugene, OR","name":"Remlinger Farms"},"allShowsCsv":{"nodes":[]}},"pageContext":{"venueId":"169"}},
+    "staticQueryHashes": ["3000541721"]}

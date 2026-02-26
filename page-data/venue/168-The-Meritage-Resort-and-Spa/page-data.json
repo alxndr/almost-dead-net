@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-venue-js",
+    "path": "/venue/168-The-Meritage-Resort-and-Spa",
+    "result": {"data":{"venuesCsv":{"id":"168","location":"Napa, CA","name":"The Meritage Resort and Spa"},"allShowsCsv":{"nodes":[]}},"pageContext":{"venueId":"168"}},
+    "staticQueryHashes": ["3000541721"]}
