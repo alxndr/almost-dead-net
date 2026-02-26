@@ -18,6 +18,7 @@ id,name,location,capacity,generic name,tagname
 105,MECU Pavilion,"Baltimore, MD",4600,,MECU Pavilion
 126,Pier Six Pavilion,"Baltimore, MD",4340,,Pier Six Pavilion
 129,Maine Savings Amphitheater,"Bangor, ME",,,Maine Savings Amphitheater
+172,Beech Mountain,"Beech Mountain, NC",,,Beech Mountain
 10,Athletic Club of Bend,"Bend, OR",,,Athletic Club of Bend
 11,Bethel Woods Center for the Arts,"Bethel, NY",,,Bethel Woods Center for the Arts
 139,Wind Creek Event Center,"Bethlehem, PA",,,Wind Creek Event Center
@@ -48,29 +49,35 @@ id,name,location,capacity,generic name,tagname
 31,Concord Music Hall,"Chicago, IL",,,Concord Music Hall
 150,The Salt Shed,"Chicago, IL",,,The Salt Shed
 32,Three Sisters Park,"Chillicothe, IL",,,Three Sisters Park
+164,Gain Park Evans Amphitheater,"Cleveland Heights, OH",,,Gain Park Evans Amphitheater
 33,Masonic Cleveland Auditorium,"Cleveland, OH",,,Masonic Cleveland Auditorium
 34,The Music Box,"Cleveland, OH",340,,The Music Box
 103,Jacobs Pavilion at Nautica,"Cleveland, OH",5000,,Jacobs Pavilion at Nautica
 35,Oregon Ridge Park,"Cockeysville, MD",,,Oregon Ridge Park
 153,Merriweather Post Pavilion,"Columbia, MD",,,Merriweather Post Pavilion
 160,Township Auditorium,"Columbia, SC",,,Township Auditorium
+166,OC Fair & Event Center,"Costa Mesa, CA",,,OC Fair & Event Center
 36,House of Blues,"Dallas, TX",2500,TRUE,House of Blues (Dallas)
 37,Ogden Theatre,"Denver, CO",1600,,Ogden Theatre
 38,The Fillmore,"Denver, CO",3700,TRUE,The Fillmore (Denver)
+170,Mission Ballroom,"Denver, CO",,,Mission Ballroom
 157,Dillon Amphitheater,"Dillon, CO",3656,,Dillon Amphitheater
 159,Durham Performing Arts Center,"Durham, NC",,,Durham Performing Arts Center
 39,Cuthbert Amphitheater,"Eugene, OR",4000,,Cuthbert Amphitheater
 40,McDonald Theatre,"Eugene, OR",759,,McDonald Theatre
+169,Remlinger Farms,"Eugene, OR",,,Remlinger Farms
 145,Perinton Center Park Amphitheater,"Fairport, NY",,,Perinton Center Park Amphitheater
 41,Moose Light Blues Tent,"Fredericton, NB (Canada)",,,Moose Light Blues Tent
 42,Founders Brewing Company,"Grand Rapids, MI",,,Founders Brewing Company
 43,Greenfield Community College,"Greenfield, MA",,,Greenfield Community College
 128,Hampton Beach Casino Ballroom,"Hampton Beach, NH",,,Hampton Beach Casino Ballroom
+165,Riverfront Park,"Harrisburg, PA",,,Riverfront Park
 154,Belleayre Mountain Ski Center,"Highmount, NY",,,Belleayre Mountain Ski Center
 44,House of Blues,"Houston, TX",2500,TRUE,House of Blues (Houston)
 45,Hunter Mountain,"Hunter, NY",,,Hunter Mountain
 156,Cape Cod Melody Tent,"Hyannis, MA",2300,,Cape Cod Melody Tent
 138,Indiana State Fairgrounds,"Indianapolis, IN",,,Indiana State Fairgrounds
+163,Holliday Park,"Indianapolis, IN",,,Holliday Park
 46,Pool Deck,Jam Cruise,,TRUE,Pool Deck (Jam Cruise)
 47,Pantheon Theater,Jam Cruise,1600,TRUE,Pantheon Theater (Jam Cruise)
 132,Stateside Amphitheater at Jay Peak Resort,"Jay, VT",,,Stateside Amphitheater at Jay Peak Resort
@@ -98,6 +105,7 @@ id,name,location,capacity,generic name,tagname
 62,The Wellmont Theater,"Montclair, NJ",2137,,The Wellmont Theater
 63,Red Rocks,"Morrison, CO",9525,,Red Rocks
 137,RISE Mundelein,"Mundelein, IL",,,RISE Mundelein
+168,The Meritage Resort and Spa,"Napa, CA",,,The Meritage Resort and Spa
 64,War Memorial Auditorium,"Nashville, TN",2000,,War Memorial Auditorium
 65,Ryman Auditorium,"Nashville, TN",2362,,Ryman Auditorium
 66,College Street Music Hall,"New Haven, CT",2000,,College Street Music Hall
@@ -124,6 +132,7 @@ id,name,location,capacity,generic name,tagname
 76,Capitol Theatre,"Port Chester, NY",1800,,Capitol Theatre
 77,State Theater,"Portland, ME",1680,TRUE,State Theater (Portland)
 147,Thompson's Point,"Portland, ME",,,Thompson's Point
+171,Pioneer Courthouse Square,"Portland, OR",,,Pioneer Courthouse Square
 78,Lupo's Heartbreak Hotel,"Providence, RI",1980,,Lupo's Heartbreak Hotel
 79,Fete Ballroom,"Providence, RI",930,,Fete Ballroom
 80,Breathless & Now Onyx Resorts,"Punta Cana, Dominican Republic",,,Breathless & Now Onyx Resorts
@@ -137,6 +146,7 @@ id,name,location,capacity,generic name,tagname
 85,The Depot,"Salt Lake City, UT",1200,,The Depot
 86,House of Blues,"San Diego, CA",1500,TRUE,House of Blues (San Diego)
 87,Golden Gate Park,"San Francisco, CA",,,Golden Gate Park
+167,Quarry Amphitheater,"Santa Cruz, CA",,,Quarry Amphitheater
 120,Saratoga Performing Arts Center,"Saratoga Springs, NY",25100,,Saratoga Performing Arts Center
 152,Johnny Mercer Theatre,"Savannah, GA",2566,,Johnny Mercer Theatre
 88,Montage Mountain,"Scranton, PA",,,Montage Mountain
