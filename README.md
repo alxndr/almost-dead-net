@@ -1,5 +1,7 @@
 [![Almost-Dead.net logo](https://i.imgur.com/q5cBEHG.png)][Almost-Dead.net]
 
+**Old version** — the live Almost-Dead.net site is now powered by Svelte/SwelteKit and [hosted on GitLab](https://gitlab.com/alxndr/almost-dead-dot-net).
+
 This is the source code for the fan site [Almost-Dead.net].
 (It is not officially associated with the band [Joe Russo's Almost Dead].)
 
